@@ -1,0 +1,118 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------------------------------------------------------
+    // PILLAR 0: Global Safety Net
+    // ---------------------------------------------------------
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // ---------------------------------------------------------
+    // Phase 3: Primitive Definitions & Helpers
+    // ---------------------------------------------------------
+    function isSignedIn() { return request.auth != null; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+
+    // PILLAR 4: Tiered Identity Logic
+    function isOwner(userId) { return isSignedIn() && request.auth.uid == userId; }
+    
+    // Auth tokens never contain roles. Explicitly look up role from trusted source.
+    function isAdmin() { 
+      return isSignedIn() && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'; 
+    }
+    
+    // Approval Gate
+    function isApproved() {
+      return isSignedIn() && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isApproved == true;
+    }
+
+    // ---------------------------------------------------------
+    // PILLAR 1 & 2: Collection Rules & Validation Blueprints
+    // ---------------------------------------------------------
+
+    // USERS COLLECTION
+    match /users/{userId} {
+      function isValidUser(data) {
+        return data.keys().hasAll(['email', 'role', 'isApproved']) && 
+               data.keys().size() <= 6 && // displayName, photoURL, uid (stored as doc id)
+               data.email is string && data.email.size() <= 100 &&
+               data.role in ['admin', 'aspirante'] &&
+               data.isApproved is bool;
+      }
+
+      allow get: if isOwner(userId) || isAdmin();
+      
+      // ADMINS can list all users to approve them
+      // EVALUATION WARNING: O(N) cost if many results, but required for AdminView
+      allow list: if isAdmin(); 
+
+      allow create: if isOwner(userId) && 
+                      isValidUser(incoming()) && 
+                      incoming().role == 'aspirante' && 
+                      incoming().isApproved == false;
+      
+      allow update: if (
+        isSignedIn() && (
+          // ACTION: Admin Management (Approve/Revoke)
+          (isAdmin() && incoming().diff(existing()).affectedKeys().hasOnly(['isApproved', 'role'])) ||
+          
+          // ACTION: User Profile Edit
+          (isOwner(userId) && 
+           incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL']) &&
+           incoming().role == existing().role && 
+           incoming().isApproved == existing().isApproved)
+        )
+      );
+    }
+
+    // SESSIONS COLLECTION
+    match /sessions/{sessionId} {
+      function isValidSession(data) {
+        return data.keys().hasAll(['user_id', 'materia', 'tema', 'total_questions', 'score', 'date']) &&
+               data.user_id == request.auth.uid &&
+               data.materia is string && data.materia.size() <= 100 &&
+               data.total_questions is int && data.total_questions >= 0 &&
+               data.score is int && data.score >= 0 &&
+               data.date is string && data.date.size() <= 100;
+      }
+
+      // PILLAR 8: Secure List Queries
+      // Evaluation order: 1. Auth, 2. Owner, 3. Admin (DB Read)
+      allow list: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
+      allow get: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
+
+      allow create: if isApproved() && isValidId(sessionId) && isValidSession(incoming());
+      
+      // PILLAR 3: Path Variable Hardening
+      allow delete: if (isAdmin() || (isSignedIn() && existing().user_id == request.auth.uid));
+      
+      // Terminal State: Sessions are immutable after creation
+      allow update: if false;
+    }
+
+    // PROGRESS COLLECTION
+    match /progress/{progressId} {
+      function isValidProgress(data) {
+        return data.keys().hasAll(['user_id', 'question_id', 'is_correct', 'date', 'materia', 'tema', 'subtema', 'subtema_grupo']) &&
+               data.user_id == request.auth.uid &&
+               data.question_id is string && data.question_id.size() <= 100 &&
+               data.is_correct is bool &&
+               data.materia is string && data.materia.size() <= 100 &&
+               data.subtema is string && data.subtema.size() <= 150;
+      }
+
+      allow list: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
+      allow get: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
+
+      allow create: if isApproved() && isValidId(progressId) && isValidProgress(incoming());
+      allow delete: if isAdmin() || (isSignedIn() && existing().user_id == request.auth.uid);
+      allow update: if false;
+    }
+  }
+}

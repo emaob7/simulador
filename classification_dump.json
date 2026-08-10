@@ -1,0 +1,2056 @@
+[
+  {
+    "semana": 1,
+    "materia": "Pediatría",
+    "module": "Semana 1 - Pediatría",
+    "totalQuestions": 43,
+    "temasCount": 1,
+    "temas": [
+      {
+        "tema": "Neonatología",
+        "count": 43,
+        "subtemas": [
+          {
+            "subtema": "Atención inmediata del recién nacido",
+            "count": 13
+          },
+          {
+            "subtema": "RECIEN NACIDO NORMAL",
+            "count": 9
+          },
+          {
+            "subtema": "MUERTE SÚBITA DEL LACTANTE (SMSL)",
+            "count": 1
+          },
+          {
+            "subtema": "REANIMACIÓN NEONATAL",
+            "count": 6
+          },
+          {
+            "subtema": "ENFERMEDAD DE MEMBRANA HIALINA (EMH)",
+            "count": 3
+          },
+          {
+            "subtema": "DUCTUS ARTERIOSO (DAP)",
+            "count": 4
+          },
+          {
+            "subtema": "ENTEROCOLITIS NECROTIZANTE (ECN)",
+            "count": 2
+          },
+          {
+            "subtema": "Encefalopatía hipóxico-isquémica",
+            "count": 1
+          },
+          {
+            "subtema": "Taquipnea transitoria del recién nacido",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de aspiración de meconio (SALAM)",
+            "count": 1
+          },
+          {
+            "subtema": "Sepsis neonatal",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 2,
+    "materia": "Medicina Interna",
+    "module": "Semana 2 - Medicina Interna",
+    "totalQuestions": 109,
+    "temasCount": 7,
+    "temas": [
+      {
+        "tema": "MÓDULO 1: FISIOLOGÍA ENDOCRINA E HIPOFISARIA",
+        "count": 22,
+        "subtemas": [
+          {
+            "subtema": "Hiperprolactinemia",
+            "count": 3
+          },
+          {
+            "subtema": "Hipopituitarismo",
+            "count": 1
+          },
+          {
+            "subtema": "Acromegalia",
+            "count": 3
+          },
+          {
+            "subtema": "SIADH",
+            "count": 2
+          },
+          {
+            "subtema": "Mecanismos de Acción Hormonal y Fisiología de la Adenohipófisis",
+            "count": 3
+          },
+          {
+            "subtema": "ADENOHIPÓFISIS, NEUROHIPÓFISIS Y ACCIÓN HORMONAL",
+            "count": 8
+          },
+          {
+            "subtema": "Deficiencia de GH",
+            "count": 1
+          },
+          {
+            "subtema": "Diabetes insípida",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "MÓDULO 2: PATOLOGÍA TIROIDEA",
+        "count": 25,
+        "subtemas": [
+          {
+            "subtema": "Hipotiroidismo",
+            "count": 1
+          },
+          {
+            "subtema": "Enfermedad de Graves",
+            "count": 2
+          },
+          {
+            "subtema": "Adenoma Tóxico",
+            "count": 1
+          },
+          {
+            "subtema": "Cáncer de Tiroides",
+            "count": 1
+          },
+          {
+            "subtema": "Tiroiditis",
+            "count": 2
+          },
+          {
+            "subtema": "Bocio Multinodular",
+            "count": 1
+          },
+          {
+            "subtema": "PATOLOGÍA TIROIDEA",
+            "count": 6
+          },
+          {
+            "subtema": "Patología Tiroidea",
+            "count": 1
+          },
+          {
+            "subtema": "Tiroiditis de Hashimoto",
+            "count": 1
+          },
+          {
+            "subtema": "Patología Tiroidea - Imagen",
+            "count": 1
+          },
+          {
+            "subtema": "Hipotiroidismo Subclínico",
+            "count": 1
+          },
+          {
+            "subtema": "Hipertiroidismo",
+            "count": 1
+          },
+          {
+            "subtema": "Tirotoxicosis facticia",
+            "count": 1
+          },
+          {
+            "subtema": "Bocio multinodular tóxico",
+            "count": 1
+          },
+          {
+            "subtema": "Adenoma tóxico",
+            "count": 1
+          },
+          {
+            "subtema": "Carcinoma de Tiroides",
+            "count": 1
+          },
+          {
+            "subtema": "Carcinoma Medular de Tiroides",
+            "count": 1
+          },
+          {
+            "subtema": "Nódulo Tiroideo",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "MÓDULO 4: PATOLOGÍA SUPRARRENAL",
+        "count": 22,
+        "subtemas": [
+          {
+            "subtema": "Síndrome de Cushing",
+            "count": 4
+          },
+          {
+            "subtema": "Feocromocitoma",
+            "count": 1
+          },
+          {
+            "subtema": "Insuficiencia Suprarrenal",
+            "count": 1
+          },
+          {
+            "subtema": "PATOLOGÍA SUPRARRENAL",
+            "count": 6
+          },
+          {
+            "subtema": "Enfermedad de Cushing",
+            "count": 1
+          },
+          {
+            "subtema": "Patología Suprarrenal (Síndrome de Cushing)",
+            "count": 4
+          },
+          {
+            "subtema": "Patología Suprarrenal (Hiperaldosteronismo)",
+            "count": 1
+          },
+          {
+            "subtema": "Patología Suprarrenal (Insuficiencia Suprarrenal)",
+            "count": 3
+          },
+          {
+            "subtema": "Patología Suprarrenal (Hiperplasia Suprarrenal Congénita)",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "MÓDULO 3: DIABETES Y METABOLISMO",
+        "count": 11,
+        "subtemas": [
+          {
+            "subtema": "Diabetes",
+            "count": 3
+          },
+          {
+            "subtema": "Hemocromatosis",
+            "count": 1
+          },
+          {
+            "subtema": "DIABETES MELLITUS",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "tema": "MÓDULO 6: METABOLISMO ÓSEO",
+        "count": 1,
+        "subtemas": [
+          {
+            "subtema": "Osteoporosis",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "MÓDULO 5: NEOPLASIAS ENDOCRINAS",
+        "count": 1,
+        "subtemas": [
+          {
+            "subtema": "MEN",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "MÓDULO 7: CASOS CLÍNICOS",
+        "count": 27,
+        "subtemas": [
+          {
+            "subtema": "Feocromocitoma (Casos Clínicos)",
+            "count": 2
+          },
+          {
+            "subtema": "Enfermedad de Graves (Casos Clínicos)",
+            "count": 1
+          },
+          {
+            "subtema": "Tiroiditis (Casos Clínicos)",
+            "count": 2
+          },
+          {
+            "subtema": "Tiroides y Amiodarona (Casos Clínicos)",
+            "count": 1
+          },
+          {
+            "subtema": "Bocio multinodular tóxico (Casos Clínicos)",
+            "count": 1
+          },
+          {
+            "subtema": "Adenoma tóxico (Casos Clínicos)",
+            "count": 1
+          },
+          {
+            "subtema": "Cáncer de tiroides (Casos Clínicos)",
+            "count": 2
+          },
+          {
+            "subtema": "Síndrome de Cushing (Casos Clínicos)",
+            "count": 2
+          },
+          {
+            "subtema": "Hiperaldosteronismo (Casos Clínicos)",
+            "count": 2
+          },
+          {
+            "subtema": "Insuficiencia suprarrenal (Casos Clínicos)",
+            "count": 2
+          },
+          {
+            "subtema": "Hiperplasia suprarrenal congénita (Casos Clínicos)",
+            "count": 1
+          },
+          {
+            "subtema": "Diabetes mellitus (Casos Clínicos)",
+            "count": 5
+          },
+          {
+            "subtema": "Manejo agudo de las complicaciones de la diabetes (Casos Clínicos)",
+            "count": 3
+          },
+          {
+            "subtema": "Complicaciones crónicas de la diabetes (Casos Clínicos)",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 3,
+    "materia": "Cirugía",
+    "module": "Semana 3 - Cirugía",
+    "totalQuestions": 43,
+    "temasCount": 6,
+    "temas": [
+      {
+        "tema": "La piel y el tejido subcutáneo",
+        "count": 10,
+        "subtemas": [
+          {
+            "subtema": "Hidradenitis supurativa",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Stevens-Johnson y TEN",
+            "count": 1
+          },
+          {
+            "subtema": "Carcinoma basocelular",
+            "count": 1
+          },
+          {
+            "subtema": "Carcinoma epidermoide cutáneo",
+            "count": 1
+          },
+          {
+            "subtema": "Melanoma cutáneo",
+            "count": 1
+          },
+          {
+            "subtema": "Infecciones por HPV",
+            "count": 1
+          },
+          {
+            "subtema": "Melanoma cutáneo - Metástasis",
+            "count": 1
+          },
+          {
+            "subtema": "Sarcoma de Kaposi",
+            "count": 1
+          },
+          {
+            "subtema": "Lesiones por presión",
+            "count": 1
+          },
+          {
+            "subtema": "Infecciones necrosantes",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Infecciones quirúrgicas",
+        "count": 10,
+        "subtemas": [
+          {
+            "subtema": "Principios generales",
+            "count": 1
+          },
+          {
+            "subtema": "Infecciones del sitio quirúrgico (SSI)",
+            "count": 1
+          },
+          {
+            "subtema": "Respuesta inflamatoria sistémica",
+            "count": 1
+          },
+          {
+            "subtema": "Manejo de heridas infectadas",
+            "count": 1
+          },
+          {
+            "subtema": "Microbiología",
+            "count": 1
+          },
+          {
+            "subtema": "Profilaxis antibiótica",
+            "count": 1
+          },
+          {
+            "subtema": "Infecciones necrosantes",
+            "count": 1
+          },
+          {
+            "subtema": "Abscesos hepáticos",
+            "count": 1
+          },
+          {
+            "subtema": "Septicemia y choque séptico",
+            "count": 1
+          },
+          {
+            "subtema": "Necrosis pancreática infectada",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Cicatrización de heridas",
+        "count": 14,
+        "subtemas": [
+          {
+            "subtema": "Fases celulares",
+            "count": 1
+          },
+          {
+            "subtema": "Fases celulares y bioquímicas",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Ehlers-Danlos",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Marfan",
+            "count": 1
+          },
+          {
+            "subtema": "Osteogénesis imperfecta",
+            "count": 1
+          },
+          {
+            "subtema": "Cicatrización ósea",
+            "count": 1
+          },
+          {
+            "subtema": "Tipos de cicatrización",
+            "count": 1
+          },
+          {
+            "subtema": "Heridas crónicas",
+            "count": 1
+          },
+          {
+            "subtema": "Úlceras diabéticas",
+            "count": 1
+          },
+          {
+            "subtema": "Cicatrices hipertróficas y queloides",
+            "count": 1
+          },
+          {
+            "subtema": "Fases celulares de cicatrización",
+            "count": 1
+          },
+          {
+            "subtema": "Biosíntesis de colágeno",
+            "count": 1
+          },
+          {
+            "subtema": "Epitelización de heridas",
+            "count": 1
+          },
+          {
+            "subtema": "Células de la cicatrización",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "SIRS, Sepsis e Infección en Cirugía",
+        "count": 5,
+        "subtemas": [
+          {
+            "subtema": "Variables de perfusión tisular en SIRS",
+            "count": 1
+          },
+          {
+            "subtema": "Infección del sitio quirúrgico",
+            "count": 1
+          },
+          {
+            "subtema": "Clasificación de heridas quirúrgicas",
+            "count": 1
+          },
+          {
+            "subtema": "Tipos de peritonitis",
+            "count": 1
+          },
+          {
+            "subtema": "Infecciones de tejidos blandos",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Piel y Tejido Subcutáneo",
+        "count": 1,
+        "subtemas": [
+          {
+            "subtema": "Úlceras por presión",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Oncología Quirúrgica",
+        "count": 3,
+        "subtemas": [
+          {
+            "subtema": "Subtipos de melanoma",
+            "count": 1
+          },
+          {
+            "subtema": "Carcinoma espinocelular cutáneo",
+            "count": 1
+          },
+          {
+            "subtema": "Carcinoma basocelular",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 4,
+    "materia": "Ginecología y Obstetricia",
+    "module": "Semana 4 - Ginecología y Obstetricia",
+    "totalQuestions": 38,
+    "temasCount": 3,
+    "temas": [
+      {
+        "tema": "Trastornos anatómicos",
+        "count": 15,
+        "subtemas": [
+          {
+            "subtema": "Estructuras urogenitales embrionarias",
+            "count": 1
+          },
+          {
+            "subtema": "Determinación del sexo gonadal",
+            "count": 1
+          },
+          {
+            "subtema": "Conductos mesonéfricos",
+            "count": 1
+          },
+          {
+            "subtema": "Embriología de la vagina",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Turner",
+            "count": 1
+          },
+          {
+            "subtema": "Disgenesia gonadal 46,XY",
+            "count": 1
+          },
+          {
+            "subtema": "Exceso de andrógenos en feto femenino",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Mayer-Rokitansky-Küster-Hauser",
+            "count": 1
+          },
+          {
+            "subtema": "Extrofia vesical",
+            "count": 1
+          },
+          {
+            "subtema": "Estrías gonadales",
+            "count": 1
+          },
+          {
+            "subtema": "Asignación de género en DSD",
+            "count": 1
+          },
+          {
+            "subtema": "Conductos paramesonéfricos",
+            "count": 1
+          },
+          {
+            "subtema": "Defectos del himen",
+            "count": 1
+          },
+          {
+            "subtema": "Ligamento gubernáculo",
+            "count": 1
+          },
+          {
+            "subtema": "Anomalías del clítoris",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Anatomía",
+        "count": 18,
+        "subtemas": [
+          {
+            "subtema": "Soporte vaginal y sostén pélvico",
+            "count": 1
+          },
+          {
+            "subtema": "Glándulas de Bartholin",
+            "count": 1
+          },
+          {
+            "subtema": "Aponeurosis visceral y parietal",
+            "count": 1
+          },
+          {
+            "subtema": "Endometrio y serosa uterina",
+            "count": 1
+          },
+          {
+            "subtema": "Cuello uterino",
+            "count": 1
+          },
+          {
+            "subtema": "Medios de fijación uterina",
+            "count": 1
+          },
+          {
+            "subtema": "Ligamentos uterosacros y relaciones anatómicas",
+            "count": 1
+          },
+          {
+            "subtema": "Niveles de soporte de DeLancey",
+            "count": 1
+          },
+          {
+            "subtema": "Anatomía de la vulva",
+            "count": 1
+          },
+          {
+            "subtema": "Anatomía del perineo",
+            "count": 1
+          },
+          {
+            "subtema": "División anatómica del perineo",
+            "count": 1
+          },
+          {
+            "subtema": "División del triángulo urogenital",
+            "count": 1
+          },
+          {
+            "subtema": "Triángulo posterior del perineo",
+            "count": 1
+          },
+          {
+            "subtema": "Cuerpo perineal",
+            "count": 1
+          },
+          {
+            "subtema": "Drenaje linfático de la vulva",
+            "count": 1
+          },
+          {
+            "subtema": "Uretra femenina",
+            "count": 1
+          },
+          {
+            "subtema": "Esfínter uretral",
+            "count": 1
+          },
+          {
+            "subtema": "Anatomía del recto",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Prolapso de órganos pélvicos",
+        "count": 5,
+        "subtemas": [
+          {
+            "subtema": "Factores de riesgo",
+            "count": 1
+          },
+          {
+            "subtema": "Clasificación POP-Q",
+            "count": 2
+          },
+          {
+            "subtema": "Niveles de soporte de DeLancey",
+            "count": 1
+          },
+          {
+            "subtema": "Tratamiento con pesarios",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 5,
+    "materia": "Pediatría",
+    "module": "Semana 5 - Pediatría",
+    "totalQuestions": 55,
+    "temasCount": 1,
+    "temas": [
+      {
+        "tema": "Nutrición, desnutrición y antropometría",
+        "count": 55,
+        "subtemas": [
+          {
+            "subtema": "Requerimientos y Alimentación Complementaria",
+            "count": 18
+          },
+          {
+            "subtema": "Desnutrición Infantil",
+            "count": 2
+          },
+          {
+            "subtema": "Guías Alimentarias del Paraguay",
+            "count": 5
+          },
+          {
+            "subtema": "Lactancia Materna",
+            "count": 5
+          },
+          {
+            "subtema": "Clasificación de Prematuros y Peso al Nacer",
+            "count": 2
+          },
+          {
+            "subtema": "Evaluación Antropométrica",
+            "count": 14
+          },
+          {
+            "subtema": "Manejo de la Desnutrición",
+            "count": 1
+          },
+          {
+            "subtema": "Ictericia por Lactancia y Leche Materna",
+            "count": 5
+          },
+          {
+            "subtema": "Desnutrición Grave",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 6,
+    "materia": "Medicina Interna",
+    "module": "Semana 6 - Medicina Interna",
+    "totalQuestions": 94,
+    "temasCount": 2,
+    "temas": [
+      {
+        "tema": "Cuidados Críticos",
+        "count": 21,
+        "subtemas": [
+          {
+            "subtema": "Sepsis y Choque Séptico",
+            "count": 7
+          },
+          {
+            "subtema": "Insuficiencia Respiratoria y SDRA",
+            "count": 3
+          },
+          {
+            "subtema": "Choque Cardiógeno y Reanimación",
+            "count": 2
+          },
+          {
+            "subtema": "TROMBOSIS VENOSA PROFUNDA.",
+            "count": 1
+          },
+          {
+            "subtema": "DISFUNCIÓN NEUROLÓGICA DE PACIENTES GRAVES. MUERTE CEREBRAL",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de dificultad respiratoria aguda.",
+            "count": 1
+          },
+          {
+            "subtema": "VALORACIÓN DEL PACIENTE CON CHOQUE.",
+            "count": 1
+          },
+          {
+            "subtema": "CHOQUE CARDIÓGENO",
+            "count": 1
+          },
+          {
+            "subtema": "Edema pulmonar TRATAMIENTO",
+            "count": 1
+          },
+          {
+            "subtema": "Sin Subtema Especificado",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "tema": "Oncohematología",
+        "count": 73,
+        "subtemas": [
+          {
+            "subtema": "Leucemias Mieloides",
+            "count": 7
+          },
+          {
+            "subtema": "Mieloma Múltiple",
+            "count": 1
+          },
+          {
+            "subtema": "Insuficiencia Medular y Neoplasias Mieloproliferativas",
+            "count": 13
+          },
+          {
+            "subtema": "Anemias",
+            "count": 29
+          },
+          {
+            "subtema": "Leucemias Linfoides",
+            "count": 3
+          },
+          {
+            "subtema": "Linfomas",
+            "count": 1
+          },
+          {
+            "subtema": "Urgencias Oncológicas y Soporte",
+            "count": 5
+          },
+          {
+            "subtema": "Trastornos de la Coagulación",
+            "count": 4
+          },
+          {
+            "subtema": "Sin Subtema Especificado",
+            "count": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 7,
+    "materia": "Cirugía",
+    "module": "Semana 7 - Cirugía",
+    "totalQuestions": 82,
+    "temasCount": 1,
+    "temas": [
+      {
+        "tema": "Traumatismos y Quemaduras",
+        "count": 82,
+        "subtemas": [
+          {
+            "subtema": "Trauma",
+            "count": 55
+          },
+          {
+            "subtema": "Quemaduras",
+            "count": 27
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 8,
+    "materia": "Ginecología y Obstetricia",
+    "module": "Semana 8 - Ginecología",
+    "totalQuestions": 104,
+    "temasCount": 3,
+    "temas": [
+      {
+        "tema": "Endocrinología de la reproducción",
+        "count": 37,
+        "subtemas": [
+          {
+            "subtema": "Eje Hipotálamo-Hipófisis y Hormonas Glucoproteicas",
+            "count": 17
+          },
+          {
+            "subtema": "Esteroidogénesis y Dinámica Folicular Ovárica",
+            "count": 8
+          },
+          {
+            "subtema": "Ciclo Ovárico, Endometrial e Implantación",
+            "count": 12
+          }
+        ]
+      },
+      {
+        "tema": "Infecciones ginecológicas",
+        "count": 52,
+        "subtemas": [
+          {
+            "subtema": "Microbioma Vaginal, Vaginosis y Vaginitis",
+            "count": 15
+          },
+          {
+            "subtema": "ITS Ulcerativas y Lesiones Dermatológicas Genitales",
+            "count": 17
+          },
+          {
+            "subtema": "ITS No Ulcerativas y Patología Infecciosa Local/Sistémica",
+            "count": 18
+          },
+          {
+            "subtema": "Diagnóstico y Tamizaje de la Infección por VIH",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "tema": "Dolor pélvico crónico",
+        "count": 15,
+        "subtemas": [
+          {
+            "subtema": "Dolor Pélvico Crónico",
+            "count": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 9,
+    "materia": "Pediatría",
+    "module": "Semana 9 - Pediatría",
+    "totalQuestions": 139,
+    "temasCount": 2,
+    "temas": [
+      {
+        "tema": "Crecimiento y Desarrollo",
+        "count": 93,
+        "subtemas": [
+          {
+            "subtema": "Crecimiento y Desarrollo",
+            "count": 93
+          }
+        ]
+      },
+      {
+        "tema": "Vacunas",
+        "count": 46,
+        "subtemas": [
+          {
+            "subtema": "Vacunas",
+            "count": 46
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 10,
+    "materia": "Medicina Interna",
+    "module": "Semana 10 - Medicina Interna",
+    "totalQuestions": 102,
+    "temasCount": 1,
+    "temas": [
+      {
+        "tema": "Cardiología",
+        "count": 102,
+        "subtemas": [
+          {
+            "subtema": "Examen Físico Cardiovascular",
+            "count": 3
+          },
+          {
+            "subtema": "Electrocardiografía (ECG)",
+            "count": 4
+          },
+          {
+            "subtema": "Valvulopatías",
+            "count": 6
+          },
+          {
+            "subtema": "Enfermedades Pericárdicas",
+            "count": 5
+          },
+          {
+            "subtema": "Arritmias Supraventriculares",
+            "count": 11
+          },
+          {
+            "subtema": "Insuficiencia Cardíaca",
+            "count": 9
+          },
+          {
+            "subtema": "Miocardiopatías",
+            "count": 13
+          },
+          {
+            "subtema": "Epidemiología y Factores de Riesgo",
+            "count": 1
+          },
+          {
+            "subtema": "Antiarrítmicos y Tratamiento",
+            "count": 2
+          },
+          {
+            "subtema": "Arritmias Ventriculares and Paro",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome Coronario Agudo (SCASEST)",
+            "count": 2
+          },
+          {
+            "subtema": "Infarto Agudo de Miocardio (SCACEST)",
+            "count": 2
+          },
+          {
+            "subtema": "Métodos de Imagen Cardiovascular",
+            "count": 1
+          },
+          {
+            "subtema": "Alteraciones Electrolíticas (ECG)",
+            "count": 1
+          },
+          {
+            "subtema": "Bloqueos de Rama",
+            "count": 1
+          },
+          {
+            "subtema": "Tromboembolismo Pulmonar",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Wellens",
+            "count": 1
+          },
+          {
+            "subtema": "Hipertrofia Ventricular (ECG)",
+            "count": 1
+          },
+          {
+            "subtema": "Crecimiento Auricular (ECG)",
+            "count": 1
+          },
+          {
+            "subtema": "Eje Eléctrico (ECG)",
+            "count": 1
+          },
+          {
+            "subtema": "Fibrilación Auricular (FA)",
+            "count": 6
+          },
+          {
+            "subtema": "Bloqueos Auriculoventriculares (AV)",
+            "count": 7
+          },
+          {
+            "subtema": "Taquicardias Supraventriculares (TSV)",
+            "count": 4
+          },
+          {
+            "subtema": "Miocarditis",
+            "count": 1
+          },
+          {
+            "subtema": "Farmacología Cardiovascular",
+            "count": 4
+          },
+          {
+            "subtema": "Síndromes Coronarios Agudos",
+            "count": 6
+          },
+          {
+            "subtema": "Angina de Prinzmetal",
+            "count": 1
+          },
+          {
+            "subtema": "Hipertensión Arterial",
+            "count": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 11,
+    "materia": "Cirugía",
+    "module": "Semana 11 - Cirugía",
+    "totalQuestions": 59,
+    "temasCount": 2,
+    "temas": [
+      {
+        "tema": "Esófago y Hernia Diafragmática",
+        "count": 49,
+        "subtemas": [
+          {
+            "subtema": "Te Voy a Cargar Semana 11, Cirugia, Esofago y Hernia Diafragmatica. Esófago y Estómago. Cirugía - Reflujo Gastroesofágico",
+            "count": 1
+          },
+          {
+            "subtema": "Valoración de la Función Esofágica",
+            "count": 2
+          },
+          {
+            "subtema": "Enfermedad por Reflujo Gastroesofágico - Fisiología",
+            "count": 1
+          },
+          {
+            "subtema": "Enfermedad por Reflujo Gastroesofágico - Complicaciones",
+            "count": 2
+          },
+          {
+            "subtema": "Enfermedad por Reflujo Gastroesofágico - Tratamiento Quirúrgico",
+            "count": 1
+          },
+          {
+            "subtema": "Hernias Hiatales - Clasificación",
+            "count": 1
+          },
+          {
+            "subtema": "Hernia Hiatal - Diagnóstico",
+            "count": 1
+          },
+          {
+            "subtema": "Esofagitis Eosinofílica",
+            "count": 2
+          },
+          {
+            "subtema": "Trastornos de Motilidad - Acalasia",
+            "count": 1
+          },
+          {
+            "subtema": "Trastornos de Motilidad - Acalasia. Tratamiento Quirúrgico.",
+            "count": 1
+          },
+          {
+            "subtema": "Cáncer Esofágico - Estadificación",
+            "count": 1
+          },
+          {
+            "subtema": "Lesión por Sustancias Cáusticas",
+            "count": 1
+          },
+          {
+            "subtema": "Perforación Esofágica",
+            "count": 1
+          },
+          {
+            "subtema": "Linfoma Gástrico",
+            "count": 1
+          },
+          {
+            "subtema": "Gastropatía Hipertrófica (enfermedad de Ménétrier)",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome de Vaciamiento Rápido (dumping)",
+            "count": 1
+          },
+          {
+            "subtema": "- Gastritis y Esofagitis por Reflujo Biliar",
+            "count": 1
+          },
+          {
+            "subtema": "- Diarrea Posquirúrgica",
+            "count": 1
+          },
+          {
+            "subtema": "Estrechamientos Anatómicos Normales del Esófago",
+            "count": 1
+          },
+          {
+            "subtema": "General",
+            "count": 5
+          },
+          {
+            "subtema": "Reflujo Gastroesofágico Fisiológico",
+            "count": 1
+          },
+          {
+            "subtema": "Valoración Endoscópica de la Enfermedad Esofágica",
+            "count": 1
+          },
+          {
+            "subtema": "Estudios Complementarios en la Enfermedad Esofágica",
+            "count": 1
+          },
+          {
+            "subtema": "Esfínter Esofágico Inferior (eei)",
+            "count": 1
+          },
+          {
+            "subtema": "Esófago de Barrett",
+            "count": 1
+          },
+          {
+            "subtema": "Tratamiento Quirúrgico de la Enfermedad por Reflujo Gastroesofágico (erge)",
+            "count": 1
+          },
+          {
+            "subtema": "Principios del Tratamiento Quirúrgico de la Erge",
+            "count": 1
+          },
+          {
+            "subtema": "Funduplicatura Parcial Posterior (toupet)",
+            "count": 1
+          },
+          {
+            "subtema": "Manifestaciones Clínicas de la Hernia Hiatal Gigante (paraesofágica)",
+            "count": 1
+          },
+          {
+            "subtema": "Anillo de Schatzki",
+            "count": 1
+          },
+          {
+            "subtema": "Hernia Hiatal Paraesofágica",
+            "count": 1
+          },
+          {
+            "subtema": "Esclerodermia Esofágica",
+            "count": 1
+          },
+          {
+            "subtema": "Disfagia de Tránsito",
+            "count": 1
+          },
+          {
+            "subtema": "Divertículo de Zenker",
+            "count": 1
+          },
+          {
+            "subtema": "Acalasia",
+            "count": 2
+          },
+          {
+            "subtema": "Espasmo Esofágico Difuso",
+            "count": 1
+          },
+          {
+            "subtema": "Tratamiento de la Acalasia",
+            "count": 1
+          },
+          {
+            "subtema": "Cáncer de Esófago",
+            "count": 3
+          },
+          {
+            "subtema": "Clasificación de Disfagia",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Estómago",
+        "count": 10,
+        "subtemas": [
+          {
+            "subtema": "Anatomía. Irrigación del Estómago",
+            "count": 1
+          },
+          {
+            "subtema": "Hormonas Gástricas",
+            "count": 1
+          },
+          {
+            "subtema": "Diagnóstico de la Enfermedad Gástrica",
+            "count": 1
+          },
+          {
+            "subtema": "Enfermedad Ulcerosa Péptica - Fisiopatología",
+            "count": 1
+          },
+          {
+            "subtema": "Enfermedad Ulcerosa Péptica - Clasificación",
+            "count": 1
+          },
+          {
+            "subtema": "Enfermedad Ulcerosa Péptica - Clínica y Diagnóstico",
+            "count": 1
+          },
+          {
+            "subtema": "Enfermedad Ulcerosa Péptica - Tratamiento Médico",
+            "count": 1
+          },
+          {
+            "subtema": "Úlcera Péptica Sangrante - Tratamiento",
+            "count": 1
+          },
+          {
+            "subtema": "Adenocarcinoma Gástrico - Etiología",
+            "count": 1
+          },
+          {
+            "subtema": "Adenocarcinoma Gástrico - Tratamiento Quirúrgico",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 12,
+    "materia": "Ginecología y Obstetricia",
+    "module": "Semana 12 - Ginecología y Obstetricia",
+    "totalQuestions": 80,
+    "temasCount": 3,
+    "temas": [
+      {
+        "tema": "Amenorrea",
+        "count": 33,
+        "subtemas": [
+          {
+            "subtema": "Amenorrea Primaria",
+            "count": 1
+          },
+          {
+            "subtema": "Amenorrea Primaria con Factores Asociados",
+            "count": 1
+          },
+          {
+            "subtema": "Amenorrea Secundaria",
+            "count": 1
+          },
+          {
+            "subtema": "Evaluación Anticipada de Amenorrea",
+            "count": 1
+          },
+          {
+            "subtema": "Ciclo Menstrual Normal",
+            "count": 2
+          },
+          {
+            "subtema": "Clasificación de la Amenorrea no Fisiológica",
+            "count": 6
+          },
+          {
+            "subtema": "Categorías de Amenorrea",
+            "count": 2
+          },
+          {
+            "subtema": "Trastornos Anatómicos de la Amenorrea",
+            "count": 1
+          },
+          {
+            "subtema": "Defectos de los Conductos de Müller",
+            "count": 1
+          },
+          {
+            "subtema": "Adherencias Intrauterinas (Síndrome de Asherman)",
+            "count": 1
+          },
+          {
+            "subtema": "Disgenesia Gonadal",
+            "count": 3
+          },
+          {
+            "subtema": "Galactosemia e Insuficiencia Ovárica Prematura",
+            "count": 1
+          },
+          {
+            "subtema": "Hipogonadismo Hipogonadotrópico",
+            "count": 3
+          },
+          {
+            "subtema": "Disfunción Hipofisaria Adquirida",
+            "count": 1
+          },
+          {
+            "subtema": "Amenorrea Eugonadotrópica",
+            "count": 1
+          },
+          {
+            "subtema": "Definición de Amenorrea",
+            "count": 1
+          },
+          {
+            "subtema": "Trastornos Anatómicos Hereditarios",
+            "count": 1
+          },
+          {
+            "subtema": "Hipogonadismo Hipergonadotrópico",
+            "count": 1
+          },
+          {
+            "subtema": "Trastornos Hipotalámicos Hereditarios",
+            "count": 1
+          },
+          {
+            "subtema": "Disfunción Hipotalámica Adquirida",
+            "count": 1
+          },
+          {
+            "subtema": "Hiperprolactinemia e Hipotiroidismo",
+            "count": 1
+          },
+          {
+            "subtema": "Evaluación Hormonal",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Anticonceptivos",
+        "count": 29,
+        "subtemas": [
+          {
+            "subtema": "Métodos Anticonceptivos",
+            "count": 2
+          },
+          {
+            "subtema": "Criterios de Elegibilidad Médica",
+            "count": 1
+          },
+          {
+            "subtema": "Dispositivos Intrauterinos",
+            "count": 1
+          },
+          {
+            "subtema": "Dispositivo Intrauterino e Infección Pélvica",
+            "count": 1
+          },
+          {
+            "subtema": "Implantes de Progestágeno",
+            "count": 3
+          },
+          {
+            "subtema": "Anticonceptivos Hormonales Combinados",
+            "count": 3
+          },
+          {
+            "subtema": "Anticonceptivos Orales Combinados",
+            "count": 1
+          },
+          {
+            "subtema": "Anillo Transvaginal",
+            "count": 2
+          },
+          {
+            "subtema": "Interacciones Farmacológicas",
+            "count": 2
+          },
+          {
+            "subtema": "Beneficios de los ACO",
+            "count": 1
+          },
+          {
+            "subtema": "Anticonceptivos con Progestágeno Solo",
+            "count": 2
+          },
+          {
+            "subtema": "Acetato de Medroxiprogesterona de Depósito",
+            "count": 1
+          },
+          {
+            "subtema": "Anticoncepción de Urgencia",
+            "count": 2
+          },
+          {
+            "subtema": "Eficacia de Métodos Anticonceptivos",
+            "count": 1
+          },
+          {
+            "subtema": "Anticoncepción Durante la Lactancia",
+            "count": 1
+          },
+          {
+            "subtema": "T de Cobre",
+            "count": 1
+          },
+          {
+            "subtema": "Implante de Etonogestrel",
+            "count": 1
+          },
+          {
+            "subtema": "Esterilización Tubaria",
+            "count": 1
+          },
+          {
+            "subtema": "Parche Transdérmico",
+            "count": 1
+          },
+          {
+            "subtema": "Inyectables de Progestágeno Solo",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "tema": "Menopausia",
+        "count": 18,
+        "subtemas": [
+          {
+            "subtema": "Transición Menopáusica",
+            "count": 2
+          },
+          {
+            "subtema": "Clasificación STRAW+10",
+            "count": 1
+          },
+          {
+            "subtema": "Síntomas de la Menopausia",
+            "count": 1
+          },
+          {
+            "subtema": "Reserva Ovárica",
+            "count": 1
+          },
+          {
+            "subtema": "Trastornos Menstruales",
+            "count": 2
+          },
+          {
+            "subtema": "Síntomas Vasomotores",
+            "count": 1
+          },
+          {
+            "subtema": "Osteoporosis Posmenopáusica",
+            "count": 2
+          },
+          {
+            "subtema": "Cambios Fisiológicos del Ovario",
+            "count": 1
+          },
+          {
+            "subtema": "Etapas de la Transición Menopáusica",
+            "count": 1
+          },
+          {
+            "subtema": "Tratamiento de Síntomas Vasomotores",
+            "count": 1
+          },
+          {
+            "subtema": "Osteopenia y Osteoporosis",
+            "count": 1
+          },
+          {
+            "subtema": "Síndrome Genitourinario de la Menopausia",
+            "count": 1
+          },
+          {
+            "subtema": "Disfunción del Sueño y Fatiga",
+            "count": 1
+          },
+          {
+            "subtema": "Peso Corporal y Distribución de Grasa",
+            "count": 1
+          },
+          {
+            "subtema": "Cambios Mamarios",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 13,
+    "materia": "Pediatría",
+    "module": "Semana 13 - Pediatría",
+    "totalQuestions": 101,
+    "temasCount": 1,
+    "temas": [
+      {
+        "tema": "Pediatría General y Emergencias",
+        "count": 101,
+        "subtemas": [
+          {
+            "subtema": "Evaluación y reanimación de emergencias cardiorrespiratorias pediátricas",
+            "count": 4
+          },
+          {
+            "subtema": "Triángulo de Evaluación Pediátrica",
+            "count": 1
+          },
+          {
+            "subtema": "BLS pediátrico – Reanimador único",
+            "count": 1
+          },
+          {
+            "subtema": "BLS pediátrico – Ventilación de rescate",
+            "count": 1
+          },
+          {
+            "subtema": "BLS pediátrico – Inicio de RCP",
+            "count": 1
+          },
+          {
+            "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+            "count": 6
+          },
+          {
+            "subtema": "Evaluación de las emergencias cardiorrespiratorias pediátricas",
+            "count": 6
+          },
+          {
+            "subtema": "Evaluación de la circulación en las emergencias cardiorrespiratorias pediátricas",
+            "count": 1
+          },
+          {
+            "subtema": "Evaluación neurológica pediátrica – Respuesta pupilar",
+            "count": 3
+          },
+          {
+            "subtema": "Evaluación neurológica pediátrica – Paciente en coma",
+            "count": 2
+          },
+          {
+            "subtema": "Evaluación secundaria pediátrica",
+            "count": 3
+          },
+          {
+            "subtema": "Obstrucción de la vía aérea por cuerpo extraño",
+            "count": 5
+          },
+          {
+            "subtema": "Intubación endotraqueal pediátrica",
+            "count": 1
+          },
+          {
+            "subtema": "Reconocimiento y manejo del shock pediátrico",
+            "count": 4
+          },
+          {
+            "subtema": "Bradicardia pediátrica con pulso",
+            "count": 6
+          },
+          {
+            "subtema": "Taquicardia pediátrica con pulso",
+            "count": 7
+          },
+          {
+            "subtema": "Paro cardiorrespiratorio pediátrico",
+            "count": 2
+          },
+          {
+            "subtema": "Reanimación cardiopulmonar (RCP) pediátrica",
+            "count": 3
+          },
+          {
+            "subtema": "Paro cardiorrespiratorio pediátrico – Algoritmo de soporte vital avanzado",
+            "count": 5
+          },
+          {
+            "subtema": "Atención inicial del paciente pediátrico politraumatizado",
+            "count": 4
+          },
+          {
+            "subtema": "Trauma pediátrico – Circulación",
+            "count": 2
+          },
+          {
+            "subtema": "Principios de neurocuidados críticos",
+            "count": 1
+          },
+          {
+            "subtema": "Presión de perfusión cerebral (PPC)",
+            "count": 2
+          },
+          {
+            "subtema": "Presión intracraneal",
+            "count": 3
+          },
+          {
+            "subtema": "Hipertensión intracraneal en el traumatismo craneoencefálico",
+            "count": 2
+          },
+          {
+            "subtema": "Tipos de shock en pediatría",
+            "count": 5
+          },
+          {
+            "subtema": "Fisiología y manejo hemodinámico del shock",
+            "count": 5
+          },
+          {
+            "subtema": "Ahogamiento – Epidemiología",
+            "count": 4
+          },
+          {
+            "subtema": "Ahogamiento – Factores de riesgo",
+            "count": 1
+          },
+          {
+            "subtema": "Quemaduras – Epidemiología",
+            "count": 4
+          },
+          {
+            "subtema": "Estimación de la superficie corporal total quemada (SCTQ)",
+            "count": 2
+          },
+          {
+            "subtema": "Clasificación de las quemaduras",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "semana": 14,
+    "materia": "Medicina Interna",
+    "module": "Módulo: Clasificación de las enfermedades respiratorias",
+    "totalQuestions": 88,
+    "temasCount": 1,
+    "temas": [
+      {
+        "tema": "Neumología",
+        "count": 88,
+        "subtemas": [
+          {
+            "subtema": "Clasificación de las enfermedades respiratorias",
+            "count": 3
+          },
+          {
+            "subtema": "Manifestaciones clínicas",
+            "count": 3
+          },
+          {
+            "subtema": "Inflamación tipo 2 y no tipo 2",
+            "count": 1
+          },
+          {
+            "subtema": "Inflamación alérgica y no alérgica",
+            "count": 1
+          },
+          {
+            "subtema": "Desencadenantes del estrechamiento de las vías respiratorias",
+            "count": 1
+          },
+          {
+            "subtema": "Neumonía eosinofílica aguda",
+            "count": 1
+          },
+          {
+            "subtema": "Diagnóstico de neumonía eosinofílica aguda",
+            "count": 1
+          },
+          {
+            "subtema": "Manifestaciones clínicas y evolución",
+            "count": 1
+          },
+          {
+            "subtema": "Diagnóstico y evolución",
+            "count": 1
+          },
+          {
+            "subtema": "Diferencias entre la forma aguda y crónica",
+            "count": 1
+          },
+          {
+            "subtema": "Características generales",
+            "count": 1
+          },
+          {
+            "subtema": "Diagnóstico y tratamiento",
+            "count": 1
+          },
+          {
+            "subtema": "Causas infecciosas y síndrome de Löffler",
+            "count": 1
+          },
+          {
+            "subtema": "Exposición a asbesto",
+            "count": 1
+          },
+          {
+            "subtema": "Exposición al sílice",
+            "count": 1
+          },
+          {
+            "subtema": "Polvo de carbón",
+            "count": 1
+          },
+          {
+            "subtema": "Asbestosis y neoplasias asociadas",
+            "count": 1
+          },
+          {
+            "subtema": "Silicosis aguda",
+            "count": 1
+          },
+          {
+            "subtema": "Silicosis crónica",
+            "count": 1
+          },
+          {
+            "subtema": "Estudios etiológicos según el patrón de compromiso",
+            "count": 1
+          },
+          {
+            "subtema": "Causas genéticas",
+            "count": 1
+          },
+          {
+            "subtema": "Inmunodeficiencias",
+            "count": 1
+          },
+          {
+            "subtema": "Diagnóstico por tomografía",
+            "count": 1
+          },
+          {
+            "subtema": "Valoración etiológica",
+            "count": 1
+          },
+          {
+            "subtema": "Patogenia y progresión",
+            "count": 1
+          },
+          {
+            "subtema": "Tipos anatomopatológicos de enfisema",
+            "count": 1
+          },
+          {
+            "subtema": "Distribución anatómica del enfisema",
+            "count": 1
+          },
+          {
+            "subtema": "Intercambio gaseoso",
+            "count": 1
+          },
+          {
+            "subtema": "Deficiencia de α1-antitripsina",
+            "count": 1
+          },
+          {
+            "subtema": "Objetivos del tratamiento",
+            "count": 1
+          },
+          {
+            "subtema": "Cese del tabaquismo",
+            "count": 1
+          },
+          {
+            "subtema": "Broncodilatadores",
+            "count": 1
+          },
+          {
+            "subtema": "Corticosteroides inhalados",
+            "count": 2
+          },
+          {
+            "subtema": "Oxigenoterapia",
+            "count": 1
+          },
+          {
+            "subtema": "Tratamiento de aumento de α1-antitripsina",
+            "count": 1
+          },
+          {
+            "subtema": "Exacerbaciones",
+            "count": 1
+          },
+          {
+            "subtema": "Glucocorticoides orales",
+            "count": 1
+          },
+          {
+            "subtema": "Teofilina",
+            "count": 1
+          },
+          {
+            "subtema": "Roflumilast y azitromicina",
+            "count": 1
+          },
+          {
+            "subtema": "Tratamiento de las exacerbaciones agudas",
+            "count": 1
+          },
+          {
+            "subtema": "Antibióticos y glucocorticoides",
+            "count": 1
+          },
+          {
+            "subtema": "Fibrosis pulmonar idiopática",
+            "count": 3
+          },
+          {
+            "subtema": "Exposiciones asociadas",
+            "count": 1
+          },
+          {
+            "subtema": "Hallazgos en tomografía computarizada de alta resolución",
+            "count": 1
+          },
+          {
+            "subtema": "Histopatología",
+            "count": 1
+          },
+          {
+            "subtema": "Exploración física",
+            "count": 1
+          },
+          {
+            "subtema": "Evolución clínica",
+            "count": 1
+          },
+          {
+            "subtema": "Neumonía intersticial inespecífica",
+            "count": 1
+          },
+          {
+            "subtema": "Pruebas de función pulmonar",
+            "count": 1
+          },
+          {
+            "subtema": "Neumonía intersticial aguda",
+            "count": 1
+          },
+          {
+            "subtema": "Hallazgos diagnósticos de neumonía intersticial aguda",
+            "count": 1
+          },
+          {
+            "subtema": "Exacerbación aguda de enfermedad pulmonar intersticial",
+            "count": 1
+          },
+          {
+            "subtema": "Esclerosis sistémica",
+            "count": 1
+          },
+          {
+            "subtema": "Artritis reumatoide",
+            "count": 1
+          },
+          {
+            "subtema": "Clasificación de los derrames pleurales",
+            "count": 1
+          },
+          {
+            "subtema": "Derrame paraneumónico",
+            "count": 1
+          },
+          {
+            "subtema": "Derrame maligno",
+            "count": 1
+          },
+          {
+            "subtema": "Hidrotórax hepático",
+            "count": 1
+          },
+          {
+            "subtema": "Quilotórax",
+            "count": 1
+          },
+          {
+            "subtema": "Hemotórax",
+            "count": 1
+          },
+          {
+            "subtema": "Pleuritis tuberculosa",
+            "count": 1
+          },
+          {
+            "subtema": "Neumotórax espontáneo primario",
+            "count": 1
+          },
+          {
+            "subtema": "Neumotórax a tensión",
+            "count": 1
+          },
+          {
+            "subtema": "Mesotelioma pleural",
+            "count": 1
+          },
+          {
+            "subtema": "Causa más frecuente de derrame pleural",
+            "count": 1
+          },
+          {
+            "subtema": "Causas principales de trasudado",
+            "count": 1
+          },
+          {
+            "subtema": "Causas principales de exudado",
+            "count": 1
+          },
+          {
+            "subtema": "Derrame pleural exudativo más frecuente",
+            "count": 1
+          },
+          {
+            "subtema": "Segundo exudado más frecuente",
+            "count": 1
+          },
+          {
+            "subtema": "Neoplasias causantes de derrame pleural",
+            "count": 1
+          },
+          {
+            "subtema": "Diagnóstico diferencial del derrame no explicado",
+            "count": 1
+          },
+          {
+            "subtema": "Causa más frecuente de quilotórax",
+            "count": 1
+          },
+          {
+            "subtema": "Causa más frecuente de hemotórax",
+            "count": 1
+          },
+          {
+            "subtema": "Causa más frecuente de neumotórax secundario",
+            "count": 1
+          },
+          {
+            "subtema": "Factores de riesgo del síndrome de apnea/hipopnea obstructiva del sueño",
+            "count": 1
+          },
+          {
+            "subtema": "Obesidad como factor de riesgo",
+            "count": 1
+          },
+          {
+            "subtema": "Causas de apnea central del sueño",
+            "count": 1
+          },
+          {
+            "subtema": "Clasificación de gravedad",
+            "count": 2
+          },
+          {
+            "subtema": "Tratamiento de elección",
+            "count": 1
+          },
+          {
+            "subtema": "Dispositivos orales",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  }
+]

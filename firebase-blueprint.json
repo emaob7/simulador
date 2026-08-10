@@ -1,0 +1,57 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "User profile data including academic role and approval status.",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "aspirante"] },
+        "isApproved": { "type": "boolean" }
+      },
+      "required": ["email", "role", "isApproved"]
+    },
+    "Session": {
+      "title": "Study Session",
+      "description": "Record of a simulated exam session.",
+      "type": "object",
+      "properties": {
+        "user_id": { "type": "string" },
+        "topic": { "type": "string" },
+        "total_questions": { "type": "integer" },
+        "score": { "type": "integer" },
+        "date": { "type": "string", "format": "date-time" }
+      },
+      "required": ["user_id", "topic", "total_questions", "score", "date"]
+    },
+    "Progress": {
+      "title": "Question Progress",
+      "description": "Individual results for each question answered.",
+      "type": "object",
+      "properties": {
+        "user_id": { "type": "string" },
+        "question_id": { "type": "string" },
+        "topic": { "type": "string" },
+        "is_correct": { "type": "boolean" },
+        "date": { "type": "string", "format": "date-time" }
+      },
+      "required": ["user_id", "question_id", "is_correct", "date"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "Stores user account information."
+    },
+    "sessions/{sessionId}": {
+      "schema": "Session",
+      "description": "Stores results of completed exam simulations."
+    },
+    "progress/{progressId}": {
+      "schema": "Progress",
+      "description": "Stores granular progress for every question answered."
+    }
+  }
+}

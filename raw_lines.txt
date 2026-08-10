@@ -1,0 +1,2381 @@
+0: 1.
+1: Tema: Clasificación de las enfermedades respiratorias
+2: ¿Cuál de las siguientes enfermedades pertenece al grupo de fisiopatología obstructiva de las vías respiratorias?
+3: a) Asma
+4: b) Fibrosis pulmonar idiopática
+5: c) Embolia pulmonar
+6: d) Miastenia grave
+7: e) Derrame pleural crónico
+8: ✅ Respuesta correcta: a) Asma
+9: 🧠 ANÁLISIS DE LA PREGUNTA
+10: El asma se caracteriza por una limitación reversible del flujo aéreo, por lo que se clasifica como enfermedad obstructiva. La fibrosis pulmonar idiopática es restrictiva parenquimatosa, la embolia pulmonar corresponde a una neumopatía vascular, la miastenia grave produce restricción por debilidad neuromuscular y el derrame pleural crónico ocasiona restricción por compromiso pleural.
+11: 🔑 CONCEPTOS CLAVE
+12: El asma pertenece al grupo de enfermedades obstructivas.
+13: Las enfermedades obstructivas afectan principalmente las vías respiratorias.
+14: No todas las enfermedades pulmonares producen el mismo patrón funcional.
+15: ⚡ REPASO ACTIVO
+16: Fisiopatología obstructiva (vías respiratorias)
+17: Asma.
+18: Enfermedad pulmonar obstructiva crónica (EPOC).
+19: Bronquiectasias.
+20: Bronquiolitis.
+21: Fisiopatología restrictiva (enfermedad parenquimatosa)
+22: Fibrosis pulmonar idiopática.
+23: Asbestosis.
+24: Neumonitis intersticial descamativa.
+25: Sarcoidosis.
+26: Fisiopatología restrictiva (debilidad neuromuscular)
+27: Esclerosis lateral amiotrófica.
+28: Síndrome de Guillain-Barré.
+29: Miastenia grave.
+30: Fisiopatología restrictiva (enfermedad pleural o de la pared torácica)
+31: Cifoescoliosis.
+32: Espondilitis anquilosante.
+33: Derrame pleural crónico.
+34: Neumopatías vasculares
+35: Embolia pulmonar.
+36: Hipertensión arterial pulmonar.
+37: Enfermedad pulmonar venooclusiva.
+38: Vasculitis.
+39: Neoplasias malignas
+40: Carcinoma broncógeno.
+41: Enfermedad metastásica.
+42: Enfermedades infecciosas
+43: Neumonía.
+44: Bronquitis.
+45: Traqueítis.
+46: 📖 Referencia: Harrison. Principios de Medicina Interna, 21.ª edición, capítulo 284, cuadro 284-1.
+47: 2.
+48: Tema: Clasificación de las enfermedades respiratorias
+49: Todas las siguientes enfermedades pertenecen al grupo de fisiopatología obstructiva, EXCEPTO:
+50: a) Bronquiectasias
+51: b) Asbestosis
+52: c) Bronquiolitis
+53: d) Asma
+54: e) EPOC
+55: ✅ Respuesta correcta: b) Asbestosis
+56: 🧠 ANÁLISIS DE LA PREGUNTA
+57: La asbestosis es una enfermedad intersticial que produce un patrón restrictivo por afectación del parénquima pulmonar. Las demás opciones corresponden al grupo de enfermedades obstructivas.
+58: 🔑 CONCEPTOS CLAVE
+59: La asbestosis produce restricción pulmonar.
+60: La EPOC, el asma, las bronquiectasias y la bronquiolitis son obstructivas.
+61: Las preguntas con "EXCEPTO" buscan identificar la opción que no pertenece al grupo.
+62: ⚡ REPASO ACTIVO
+63: Fisiopatología obstructiva (vías respiratorias)
+64: Asma.
+65: EPOC.
+66: Bronquiectasias.
+67: Bronquiolitis.
+68: Fisiopatología restrictiva (enfermedad parenquimatosa)
+69: Fibrosis pulmonar idiopática.
+70: Asbestosis.
+71: Neumonitis intersticial descamativa.
+72: Sarcoidosis.
+73: Fisiopatología restrictiva (debilidad neuromuscular)
+74: Esclerosis lateral amiotrófica.
+75: Síndrome de Guillain-Barré.
+76: Miastenia grave.
+77: Fisiopatología restrictiva (enfermedad pleural o de la pared torácica)
+78: Cifoescoliosis.
+79: Espondilitis anquilosante.
+80: Derrame pleural crónico.
+81: Neumopatías vasculares
+82: Embolia pulmonar.
+83: Hipertensión arterial pulmonar.
+84: Enfermedad pulmonar venooclusiva.
+85: Vasculitis.
+86: Neoplasias malignas
+87: Carcinoma broncógeno.
+88: Enfermedad metastásica.
+89: Enfermedades infecciosas
+90: Neumonía.
+91: Bronquitis.
+92: Traqueítis.
+93: 📖 Referencia: Harrison. Principios de Medicina Interna, 21.ª edición, capítulo 284, cuadro 284-1.
+94: 3.
+95: Tema: Clasificación de las enfermedades respiratorias
+96: ¿Cuál de las siguientes enfermedades pertenece al grupo de neumopatías vasculares?
+97: a) Hipertensión arterial pulmonar
+98: b) Sarcoidosis
+99: c) Bronquiolitis
+100: d) Miastenia grave
+101: e) Carcinoma broncógeno
+102: ✅ Respuesta correcta: a) Hipertensión arterial pulmonar
+103: 🧠 ANÁLISIS DE LA PREGUNTA
+104: La hipertensión arterial pulmonar forma parte de las neumopatías vasculares. La sarcoidosis es restrictiva parenquimatosa, la bronquiolitis es obstructiva, la miastenia grave es neuromuscular y el carcinoma broncógeno corresponde a una neoplasia maligna.
+105: 🔑 CONCEPTOS CLAVE
+106: La hipertensión arterial pulmonar es una enfermedad vascular.
+107: Las neumopatías vasculares constituyen un grupo independiente.
+108: Deben diferenciarse de las enfermedades obstructivas y restrictivas.
+109: ⚡ REPASO ACTIVO
+110: Fisiopatología obstructiva (vías respiratorias)
+111: Asma.
+112: EPOC.
+113: Bronquiectasias.
+114: Bronquiolitis.
+115: Fisiopatología restrictiva (enfermedad parenquimatosa)
+116: Fibrosis pulmonar idiopática.
+117: Asbestosis.
+118: Neumonitis intersticial descamativa.
+119: Sarcoidosis.
+120: Fisiopatología restrictiva (debilidad neuromuscular)
+121: Esclerosis lateral amiotrófica.
+122: Síndrome de Guillain-Barré.
+123: Miastenia grave.
+124: Fisiopatología restrictiva (enfermedad pleural o de la pared torácica)
+125: Cifoescoliosis.
+126: Espondilitis anquilosante.
+127: Derrame pleural crónico.
+128: Neumopatías vasculares
+129: Embolia pulmonar.
+130: Hipertensión arterial pulmonar.
+131: Enfermedad pulmonar venooclusiva.
+132: Vasculitis.
+133: Neoplasias malignas
+134: Carcinoma broncógeno.
+135: Enfermedad metastásica.
+136: Enfermedades infecciosas
+137: Neumonía.
+138: Bronquitis.
+139: Traqueítis.
+140: 📖 Referencia: Harrison. Principios de Medicina Interna, 21.ª edición, capítulo 284, cuadro 284-1.
+141: Tema: Asma
+142: Subtema: Manifestaciones clínicas
+143: ¿Cuál es la presentación clínica más frecuente del asma?
+144: a) Fiebre, tos y expectoración purulenta.
+145: b) Disnea, sibilancias y tos episódicas.
+146: c) Hemoptisis, estridor y dolor pleurítico.
+147: d) Ortopnea, edema y disnea nocturna.
+148: e) Síncope, palpitaciones y diaforesis.
+149: ✅ Respuesta correcta: b) Disnea, sibilancias y tos episódicas.
+150: 🧠 ANÁLISIS DE LA PREGUNTA
+151: El asma se manifiesta con mayor frecuencia por episodios de disnea, sibilancias y tos. Estos síntomas pueden presentarse juntos o por separado, asociados a desencadenantes o de manera espontánea.
+152: 🔑 CONCEPTOS CLAVE
+153: La presentación típica incluye disnea, sibilancias y tos.
+154: Los síntomas pueden aparecer combinados o aislados.
+155: Las exacerbaciones graves pueden requerir hospitalización.
+156: ⚡ REPASO ACTIVO
+157: Manifestaciones principales:
+158: Disnea.
+159: Sibilancias.
+160: Tos.
+161: Otras manifestaciones:
+162: Constricción torácica.
+163: Producción de moco.
+164: Forma de aparición:
+165: Relacionada con desencadenantes.
+166: Espontánea.
+167: Evolución:
+168: Resolución espontánea.
+169: Mejoría con tratamiento.
+170: Persistencia en algunos pacientes.
+171: Exacerbaciones potencialmente mortales.
+172: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 287.
+173: Tema: Asma
+174: Subtema: Inflamación tipo 2 y no tipo 2
+175: Respecto a las diferencias entre inflamación tipo 2 y no tipo 2, señale la afirmación INCORRECTA:
+176: a) La inflamación tipo 2 aparece solo ante exposición a alérgenos.
+177: b) La inflamación no tipo 2 puede presentar predominio neutrofílico.
+178: c) Ambos patrones inflamatorios pueden coexistir en un mismo paciente.
+179: d) La inflamación neutrofílica es frecuente en casos de asma grave.
+180: e) El asma paucigranulocítica carece de infiltración inflamatoria evidente.
+181: ✅ Respuesta correcta: a) La inflamación tipo 2 aparece solo ante exposición a alérgenos.
+182: 🧠 ANÁLISIS DE LA PREGUNTA
+183: La inflamación tipo 2 no se limita a los alérgenos. También puede iniciarse por irritantes, contaminantes, agentes oxidantes, hongos o virus. Los procesos tipo 2 y no tipo 2 pueden coexistir.
+184: 🔑 CONCEPTOS CLAVE
+185: La inflamación tipo 2 puede ser alérgica o no alérgica.
+186: La inflamación no tipo 2 puede ser neutrofílica.
+187: Ambos patrones pueden presentarse simultáneamente.
+188: ⚡ REPASO ACTIVO
+189: Inflamación tipo 2:
+190: Puede relacionarse con alérgenos.
+191: Puede originarse por estímulos no alérgicos.
+192: Se asocia con IgE y eosinófilos.
+193: Participan IL-4, IL-5 e IL-13.
+194: Inflamación no tipo 2:
+195: Puede coexistir con inflamación tipo 2.
+196: Puede presentar predominio neutrofílico.
+197: Es frecuente en el asma grave refractaria.
+198: Puede relacionarse con infección crónica.
+199: Incluye el asma paucigranulocítica.
+200: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 287.
+201: Tema: Asma
+202: Subtema: Inflamación alérgica y no alérgica
+203: Respecto a los mecanismos que originan inflamación tipo 2, señale la afirmación INCORRECTA:
+204: a) Los alérgenos pueden inducir una respuesta relacionada con IgE.
+205: b) Los estímulos no alérgicos producen únicamente inflamación neutrofílica.
+206: c) Los irritantes pueden activar una respuesta inflamatoria con eosinofilia.
+207: d) Los hongos pueden inducir producción de citocinas de tipo 2.
+208: e) Los virus pueden participar en respuestas inflamatorias no alérgicas.
+209: ✅ Respuesta correcta: b) Los estímulos no alérgicos producen únicamente inflamación neutrofílica.
+210: 🧠 ANÁLISIS DE LA PREGUNTA
+211: Los estímulos no alérgicos también pueden inducir inflamación tipo 2 y eosinofilia. Entre ellos se describen irritantes, contaminantes, agentes oxidantes, hongos y virus.
+212: 🔑 CONCEPTOS CLAVE
+213: La inflamación tipo 2 no siempre implica alergia.
+214: Los estímulos no alérgicos pueden causar eosinofilia.
+215: La clasificación actual considera el patrón inflamatorio.
+216: ⚡ REPASO ACTIVO
+217: Inflamación tipo 2 alérgica:
+218: Se relaciona con sensibilidad a alérgenos.
+219: Puede acompañarse de producción de IgE.
+220: Se observa con mayor frecuencia en niños.
+221: Inflamación tipo 2 no alérgica:
+222: Puede ser inducida por irritantes.
+223: Puede ser inducida por contaminantes.
+224: Puede ser inducida por oxidantes.
+225: Puede ser inducida por hongos.
+226: Puede ser inducida por virus.
+227: También puede relacionarse con eosinofilia.
+228: Clasificación actual:
+229: Inflamación tipo 2.
+230: Inflamación no tipo 2.
+231: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 287.
+232: Tema: Asma
+233: Subtema: Inflamación no tipo 2
+234: Respecto a los procesos inflamatorios no tipo 2, señale la afirmación INCORRECTA:
+235: a) La inflamación neutrofílica responde generalmente bien a corticosteroides.
+236: b) La inflamación neutrofílica puede asociarse con infección respiratoria crónica.
+237: c) El asma paucigranulocítica no presenta infiltración inflamatoria tisular evidente.
+238: d) La inflamación no tipo 2 puede coexistir con inflamación tipo 2.
+239: e) El patrón neutrofílico puede observarse en pacientes con asma grave.
+240: ✅ Respuesta correcta: a) La inflamación neutrofílica responde generalmente bien a corticosteroides.
+241: 🧠 ANÁLISIS DE LA PREGUNTA
+242: La inflamación neutrofílica aparece con mayor frecuencia en el asma grave que no responde al tratamiento antiinflamatorio habitual, incluidos los corticosteroides.
+243: 🔑 CONCEPTOS CLAVE
+244: El patrón neutrofílico se asocia con asma grave.
+245: Puede existir resistencia al tratamiento habitual.
+246: El asma paucigranulocítica carece de infiltrado evidente.
+247: ⚡ REPASO ACTIVO
+248: Inflamación neutrofílica:
+249: Puede coexistir con inflamación tipo 2.
+250: Es frecuente en el asma grave.
+251: Responde mal al tratamiento antiinflamatorio habitual.
+252: Puede relacionarse con infección crónica.
+253: Puede asociarse con patógenos como Mycoplasma.
+254: Puede observarse en la disfunción reactiva de las vías respiratorias.
+255: Asma paucigranulocítica:
+256: Ocurre en un pequeño subgrupo.
+257: No presenta infiltración inflamatoria tisular evidente.
+258: Su causa no está clara.
+259: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 287.
+260: ma: Asma
+261: Subtema: Desencadenantes del estrechamiento de las vías respiratorias
+262: Todos los siguientes pueden desencadenar o agravar el estrechamiento de las vías respiratorias en pacientes con asma, EXCEPTO:
+263: a) Exposición inhalatoria a alérgenos específicos.
+264: b) Ejercicio con aire frío y seco.
+265: c) Alergias alimentarias como causa habitual del asma.
+266: d) Infecciones respiratorias de vías superiores.
+267: e) Exposición ambiental a humo e irritantes.
+268: ✅ Respuesta correcta: c) Alergias alimentarias como causa habitual del asma.
+269: 🧠 ANÁLISIS DE LA PREGUNTA
+270: Las alergias alimentarias pueden provocar broncoespasmo durante una anafilaxia, pero no suelen tener una relación causal habitual con el asma. En cambio, los alérgenos inhalados, el ejercicio, las infecciones respiratorias y los irritantes sí pueden desencadenar exacerbaciones.
+271: 🔑 CONCEPTOS CLAVE
+272: Los alérgenos inhalados pueden producir respuestas tempranas y tardías.
+273: El ejercicio favorece broncoconstricción, especialmente con aire frío y seco.
+274: Las alergias alimentarias no suelen ser una causa habitual de asma.
+275: ⚡ REPASO ACTIVO
+276: Alérgenos inhalados.
+277: Irritantes, humo y productos de combustión.
+278: Infecciones respiratorias virales.
+279: Ejercicio, especialmente con aire frío y seco.
+280: Contaminación por ozono, dióxido de azufre y dióxido de nitrógeno.
+281: Fármacos como β-bloqueadores, ácido acetilsalicílico e inhibidores de la enzima convertidora de angiotensina.
+282: Exposiciones laborales.
+283: Estrés.
+284: Factores hormonales.
+285: Alergias alimentarias: pueden causar broncoespasmo por anafilaxia, pero no suelen causar asma.
+286: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 287.
+287: Tema: Neumonitis por hipersensibilidad e infiltrados pulmonares con eosinofilia
+288: Subtema: Neumonía eosinofílica aguda
+289: Respecto a la neumonía eosinofílica aguda, señale la afirmación INCORRECTA:
+290: a) Suele presentarse en individuos previamente sanos.
+291: b) Se caracteriza por insuficiencia respiratoria aguda.
+292: c) Es frecuente la recidiva tras suspender corticosteroides.
+293: d) Puede requerir ventilación mecánica.
+294: e) Presenta infiltrados pulmonares difusos con eosinófilos.
+295: ✅ Respuesta correcta: c) Es frecuente la recidiva tras suspender corticosteroides.
+296: 🧠 ANÁLISIS DE LA PREGUNTA
+297: La neumonía eosinofílica aguda suele presentarse en personas previamente sanas con fiebre, insuficiencia respiratoria aguda e infiltrados pulmonares difusos. Una característica distintiva es que no recidiva tras la suspensión de los corticosteroides.
+298: 🔑 CONCEPTOS CLAVE
+299: Inicio agudo en individuos previamente sanos.
+300: Puede causar insuficiencia respiratoria grave.
+301: La respuesta a corticosteroides es rápida y no suele haber recaídas.
+302: ⚡ REPASO ACTIVO
+303: Criterios diagnósticos:
+304: Enfermedad febril aguda con síntomas respiratorios <1 mes.
+305: Insuficiencia respiratoria hipoxémica.
+306: Infiltrados pulmonares difusos.
+307: Eosinófilos en lavado broncoalveolar >25%.
+308: Ausencia de parasitosis, micosis u otras infecciones.
+309: Ausencia de fármacos causantes de eosinofilia pulmonar.
+310: Respuesta rápida a corticosteroides.
+311: Ausencia de recidiva tras suspender corticosteroides.
+312: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+313: Tema: Neumonitis por hipersensibilidad e infiltrados pulmonares con eosinofilia
+314: Subtema: Diagnóstico de neumonía eosinofílica aguda
+315: ¿Cuál de los siguientes hallazgos forma parte de los criterios diagnósticos de neumonía eosinofílica aguda?
+316: a) Eosinófilos en lavado broncoalveolar mayores del 25%.
+317: b) Hemocultivos positivos para bacterias comunes.
+318: c) Derrame pleural purulento con neutrofilia marcada.
+319: d) Hipercapnia crónica con fibrosis pulmonar difusa.
+320: e) Granulomas caseificantes en biopsia pulmonar.
+321: ✅ Respuesta correcta: a) Eosinófilos en lavado broncoalveolar mayores del 25%.
+322: 🧠 ANÁLISIS DE LA PREGUNTA
+323: El criterio más característico es la presencia de más del 25% de eosinófilos en el lavado broncoalveolar, junto con un cuadro febril agudo, insuficiencia respiratoria e infiltrados pulmonares difusos.
+324: 🔑 CONCEPTOS CLAVE
+325: El lavado broncoalveolar confirma eosinofilia pulmonar.
+326: Los infiltrados pulmonares son difusos.
+327: Deben excluirse causas infecciosas y farmacológicas.
+328: ⚡ REPASO ACTIVO
+329: Criterios diagnósticos:
+330: Enfermedad febril aguda (<1 mes).
+331: Insuficiencia respiratoria hipoxémica.
+332: Infiltrados pulmonares difusos.
+333: BAL con eosinófilos >25%.
+334: Sin parasitosis, micosis u otras infecciones.
+335: Sin fármacos causantes.
+336: Respuesta rápida a corticosteroides.
+337: Sin recidiva tras suspender el tratamiento.
+338: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+339: Tema: Neumonitis por hipersensibilidad e infiltrados pulmonares con eosinofilia
+340: Subtema: Manifestaciones clínicas y evolución
+341: Respecto a la neumonía eosinofílica aguda, señale la afirmación INCORRECTA:
+342: a) La eosinofilia periférica suele estar presente desde el inicio.
+343: b) El cuadro puede confundirse con síndrome de dificultad respiratoria aguda.
+344: c) La tomografía suele mostrar opacidades reticulares o en vidrio esmerilado.
+345: d) El derrame pleural puede presentar eosinofilia.
+346: e) La respuesta clínica a corticosteroides suele ser rápida.
+347: ✅ Respuesta correcta: a) La eosinofilia periférica suele estar presente desde el inicio.
+348: 🧠 ANÁLISIS DE LA PREGUNTA
+349: La eosinofilia periférica no suele observarse al inicio de la enfermedad; habitualmente aparece varios días después. En cambio, la enfermedad puede simular un síndrome de dificultad respiratoria aguda y responde rápidamente al tratamiento con corticosteroides.
+350: 🔑 CONCEPTOS CLAVE
+351: La eosinofilia periférica puede ser tardía.
+352: La respuesta a corticosteroides es rápida.
+353: El pronóstico suele ser excelente con tratamiento.
+354: ⚡ REPASO ACTIVO
+355: Fiebre, tos, disnea y malestar general.
+356: Puede confundirse con SDRA.
+357: BAL con eosinófilos >25%.
+358: Eosinofilia periférica habitualmente tardía.
+359: Opacidades reticulares o en vidrio esmerilado en HRCT.
+360: Derrame pleural con eosinofilia en algunos pacientes.
+361: Recuperación clínica y radiológica rápida con corticosteroides.
+362: No suele haber recidiva tras suspender el tratamiento.
+363: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+364: Tema: Neumonía eosinofílica crónica
+365: Subtema: Manifestaciones clínicas
+366: Respecto a la neumonía eosinofílica crónica, señale la afirmación INCORRECTA:
+367: a) Suele presentarse como un cuadro agudo de pocos días.
+368: b) Es más frecuente en mujeres no fumadoras.
+369: c) Puede acompañarse de fiebre, tos y pérdida de peso.
+370: d) Se asocia con frecuencia a asma o alergias.
+371: e) Puede producir insuficiencia respiratoria notable.
+372: ✅ Respuesta correcta: a) Suele presentarse como un cuadro agudo de pocos días.
+373: 🧠 ANÁLISIS DE LA PREGUNTA
+374: La neumonía eosinofílica crónica tiene un curso más indolente y suele evolucionar durante semanas o meses. Son frecuentes la fiebre, tos, disnea, pérdida de peso y los antecedentes de asma o alergias.
+375: 🔑 CONCEPTOS CLAVE
+376: El inicio suele ser subagudo o crónico.
+377: Predomina en mujeres no fumadoras.
+378: El asma aparece en muchos pacientes.
+379: ⚡ REPASO ACTIVO
+380: Evolución durante semanas o meses.
+381: Fiebre, tos, disnea y pérdida de peso.
+382: Sibilancias, malestar y sudoración nocturna.
+383: Mayor frecuencia en mujeres no fumadoras.
+384: Asociación con asma y antecedentes alérgicos.
+385: Posible insuficiencia respiratoria grave.
+386: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+387: Tema: Neumonía eosinofílica crónica
+388: Subtema: Diagnóstico y evolución
+389: ¿Cuál de los siguientes hallazgos apoya con mayor fuerza el diagnóstico de neumonía eosinofílica crónica?
+390: a) Eosinofilia periférica superior al 30% de los leucocitos.
+391: b) Neutrofilia periférica superior al 30% de los leucocitos.
+392: c) Linfocitosis periférica superior al 30% de los leucocitos.
+393: d) Monocitosis periférica superior al 30% de los leucocitos.
+394: e) Basofilia periférica superior al 30% de los leucocitos.
+395: ✅ Respuesta correcta: a) Eosinofilia periférica superior al 30% de los leucocitos.
+396: 🧠 ANÁLISIS DE LA PREGUNTA
+397: Cerca del 90% de los pacientes presenta eosinofilia periférica, con un promedio mayor del 30% del total de leucocitos. La eosinofilia en el lavado broncoalveolar también apoya el diagnóstico.
+398: 🔑 CONCEPTOS CLAVE
+399: La eosinofilia periférica es frecuente.
+400: El lavado broncoalveolar puede mostrar eosinofilia.
+401: La respuesta a corticosteroides suele ser rápida.
+402: ⚡ REPASO ACTIVO
+403: Eosinofilia periférica en aproximadamente 90%.
+404: Promedio de eosinófilos mayor del 30%.
+405: Eosinófilos en lavado broncoalveolar cercanos al 40%.
+406: Infiltrados periféricos o pleurales migratorios.
+407: Respuesta rápida a corticosteroides.
+408: Recidiva frecuente al suspender el tratamiento.
+409: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+410: Tema: Neumonías eosinofílicas
+411: Subtema: Diferencias entre la forma aguda y crónica
+412: Respecto a las diferencias entre neumonía eosinofílica aguda y crónica, señale la afirmación CORRECTA:
+413: a) La forma aguda suele mostrar eosinofilia periférica intensa desde el inicio.
+414: b) La forma crónica presenta opacidades periféricas, descritas como edema pulmonar negativo.
+415: c) La forma crónica causa insuficiencia respiratoria grave en pocos días.
+416: d) La forma aguda recidiva habitualmente al suspender los corticosteroides.
+417: e) La forma crónica aparece principalmente en varones jóvenes previamente sanos.
+418: ✅ Respuesta correcta: b) La forma crónica presenta opacidades periféricas, descritas como edema pulmonar negativo.
+419: 🧠 ANÁLISIS DE LA PREGUNTA
+420: La neumonía eosinofílica crónica presenta opacidades migratorias periféricas o pleurales, patrón denominado “negativo fotográfico del edema pulmonar”. La forma aguda tiene inicio rápido, infiltrados difusos y eosinofilia periférica generalmente tardía.
+421: 🔑 CONCEPTOS CLAVE
+422: Aguda: inicio menor de un mes e insuficiencia respiratoria hipoxémica.
+423: Crónica: evolución de semanas o meses y eosinofilia periférica frecuente.
+424: El edema pulmonar negativo corresponde a infiltrados periféricos de la forma crónica.
+425: ⚡ REPASO ACTIVO
+426: Neumonía eosinofílica aguda:
+427: Inicio menor de un mes.
+428: Infiltrados pulmonares difusos.
+429: Eosinófilos en lavado broncoalveolar mayores del 25%.
+430: Eosinofilia periférica ausente o tardía.
+431: Insuficiencia respiratoria que puede requerir ventilación mecánica.
+432: Respuesta rápida a corticosteroides.
+433: No suele recidivar al suspenderlos.
+434: Neumonía eosinofílica crónica:
+435: Evolución durante semanas o meses.
+436: Frecuente en mujeres no fumadoras.
+437: Asociación habitual con asma o alergias.
+438: Eosinofilia periférica presente en cerca del 90%.
+439: Opacidades periféricas o pleurales migratorias.
+440: Patrón de “negativo fotográfico del edema pulmonar”.
+441: Respuesta rápida a corticosteroides.
+442: Recidiva frecuente al suspenderlos.
+443: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+444: Tema: Síndromes hipereosinófilos
+445: Subtema: Evolución y tratamiento
+446: Respecto al tratamiento de los síndromes hipereosinófilos, señale la afirmación INCORRECTA:
+447: a) Los corticosteroides constituyen el tratamiento inicial en muchos pacientes.
+448: b) La hidroxiurea, ciclosporina e interferón pueden emplearse como alternativas terapéuticas.
+449: c) El imatinib es una opción importante en la variante mieloproliferativa con fusión FIP1L1-PDGFRA.
+450: d) Menos del 50% de los pacientes mejora con corticosteroides como tratamiento inicial.
+451: e) Mepolizumab y benralizumab representan opciones terapéuticas prometedoras.
+452: ✅ Respuesta correcta: d) Menos del 50% de los pacientes mejora con corticosteroides como tratamiento inicial.
+453: 🧠 ANÁLISIS DE LA PREGUNTA
+454: El fragmento menciona que, a diferencia de otros síndromes eosinofílicos pulmonares, más del 50% de los pacientes con síndrome hipereosinófilo mejora con corticosteroides como tratamiento de primera línea. Además, el imatinib es especialmente útil en la variante mieloproliferativa con fusión FIP1L1-PDGFRA.
+455: 🔑 CONCEPTOS CLAVE
+456: Los corticosteroides son el tratamiento inicial más utilizado.
+457: El imatinib es eficaz en la variante mieloproliferativa con FIP1L1-PDGFRA.
+458: Mepolizumab y benralizumab son terapias prometedoras.
+459: ⚡ REPASO ACTIVO
+460: Tratamiento de primera línea:
+461: Corticosteroides (>50% responde).
+462: Otras opciones:
+463: Hidroxiurea.
+464: Ciclosporina.
+465: Interferón.
+466: Terapia dirigida:
+467: Imatinib en variante mieloproliferativa con fusión FIP1L1-PDGFRA.
+468: Tratamientos biológicos:
+469: Mepolizumab.
+470: Benralizumab.
+471: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+472: Subtema: Características generales
+473: Respecto a los síndromes hipereosinófilos, señale la afirmación INCORRECTA:
+474: a) Presentan eosinofilia persistente mayor de 1.500 eosinófilos/μL.
+475: b) Pueden acompañarse de disfunción orgánica atribuible a eosinofilia.
+476: c) Comprenden variantes mieloproliferativas, linfocíticas y familiares.
+477: d) Se diagnostican únicamente cuando existe compromiso pulmonar aislado.
+478: e) Pueden asociarse con alteraciones clonales de linfocitos T.
+479: ✅ Respuesta correcta: d) Se diagnostican únicamente cuando existe compromiso pulmonar aislado.
+480: 🧠 ANÁLISIS DE LA PREGUNTA
+481: Los síndromes hipereosinófilos constituyen un grupo heterogéneo con eosinofilia persistente y posible daño de distintos órganos. El compromiso pulmonar puede aparecer, pero no es obligatorio ni exclusivo.
+482: 🔑 CONCEPTOS CLAVE
+483: Eosinofilia persistente mayor de 1.500 eosinófilos/μL.
+484: Puede existir disfunción orgánica por eosinofilia.
+485: Hay variantes mieloproliferativas y linfocíticas.
+486: ⚡ REPASO ACTIVO
+487: Variantes principales:
+488: Mieloproliferativa.
+489: Linfocítica.
+490: Familiar.
+491: Indefinida.
+492: Hallazgos posibles:
+493: Esplenomegalia.
+494: Anemia.
+495: Trombocitopenia.
+496: Elevación de vitamina B12.
+497: Elevación de triptasa.
+498: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+499: Tema: Aspergilosis broncopulmonar alérgica
+500: Subtema: Diagnóstico y tratamiento
+501: Respecto a la aspergilosis broncopulmonar alérgica, señale la afirmación INCORRECTA:
+502: a) Se relaciona con sensibilización alérgica frente a antígenos de Aspergillus.
+503: b) Puede presentarse en pacientes con asma o con fibrosis quística.
+504: c) Suele acompañarse de eosinofilia e incremento marcado de IgE sérica.
+505: d) El tratamiento principal consiste únicamente en antifúngicos prolongados.
+506: e) Los corticosteroides sistémicos se emplean en la enfermedad persistente sintomática.
+507: ✅ Respuesta correcta: d) El tratamiento principal consiste únicamente en antifúngicos prolongados.
+508: 🧠 ANÁLISIS DE LA PREGUNTA
+509: La afirmación es incorrecta porque el tratamiento principal de la ABPA persistente y sintomática se basa en corticosteroides sistémicos. Los antifúngicos, como itraconazol o voriconazol, pueden utilizarse para disminuir la carga antigénica, pero no constituyen el único tratamiento.
+510: 🔑 CONCEPTOS CLAVE
+511: La ABPA aparece por sensibilización alérgica a Aspergillus.
+512: Se asocia principalmente con asma y fibrosis quística.
+513: El tratamiento incluye corticosteroides y, en casos seleccionados, antifúngicos.
+514: ⚡ REPASO ACTIVO
+515: Asociación clínica:
+516: Asma.
+517: Fibrosis quística.
+518: Hallazgos diagnósticos:
+519: Eosinofilia periférica.
+520: IgE sérica elevada, generalmente mayor de 1.000 UI/mL.
+521: Sensibilización a Aspergillus.
+522: Bronquiectasias centrales.
+523: Infiltrados pulmonares irregulares.
+524: Tapones de moco.
+525: Tratamiento:
+526: Corticosteroides sistémicos.
+527: Itraconazol.
+528: Voriconazol.
+529: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288.
+530: Tema: Eosinofilia pulmonar
+531: Subtema: Causas infecciosas y síndrome de Löffler
+532: Respecto a las causas infecciosas de eosinofilia pulmonar, señale la afirmación INCORRECTA:
+533: a) La paragonimiasis forma parte del síndrome clásico de Löffler.
+534: b) La estrongiloidiasis puede asociarse con gran número de parásitos.
+535: c) La filariasis puede causar respuesta inmunitaria pulmonar.
+536: d) La equinococosis puede producir enfermedad quística pulmonar.
+537: e) La coccidioidomicosis constituye una causa no parasitaria.
+538: ✅ Respuesta correcta: a) La paragonimiasis forma parte del síndrome clásico de Löffler.
+539: 🧠 ANÁLISIS DE LA PREGUNTA
+540: La paragonimiasis produce eosinofilia pulmonar por penetración pulmonar directa. El síndrome de Löffler se relaciona en el cuadro con Ascaris, anquilostomas y esquistosomiasis.
+541: 🔑 CONCEPTOS CLAVE
+542: El síndrome de Löffler incluye Ascaris, anquilostomas y esquistosomiasis.
+543: La paragonimiasis causa penetración pulmonar directa.
+544: Algunas micosis y la tuberculosis también producen eosinofilia pulmonar.
+545: ⚡ REPASO ACTIVO
+546: Síndrome de Löffler:
+547: Ascaris.
+548: Anquilostoma.
+549: Esquistosomiasis.
+550: Gran número de parásitos:
+551: Estrongiloidiasis.
+552: Penetración pulmonar directa:
+553: Paragonimiasis.
+554: Larva migratoria visceral.
+555: Respuesta inmunitaria a organismos en pulmones:
+556: Filariasis.
+557: Dirofilariosis.
+558: Enfermedad quística:
+559: Echinococcus.
+560: Cisticercosis.
+561: Otros cuadros no parasitarios:
+562: Coccidioidomicosis.
+563: Basidiobolomicosis.
+564: Paracoccidioidomicosis.
+565: Tuberculosis.
+566: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 288, cuadro 288-4.
+567: Tema: Exposiciones laborales y neumopatías
+568: Subtema: Exposición a asbesto
+569: Respecto a la exposición laboral al asbesto, señale la afirmación INCORRECTA:
+570: a) Puede asociarse con fibrosis, enfermedad pleural y mesotelioma.
+571: b) La minería y la construcción son actividades de riesgo ocupacional.
+572: c) La reparación de buques constituye una exposición reconocida.
+573: d) Se relaciona principalmente con silicosis y tuberculosis pulmonar.
+574: e) El riesgo persiste en países donde continúa el uso del asbesto.
+575: ✅ Respuesta correcta: d) Se relaciona principalmente con silicosis y tuberculosis pulmonar.
+576: 🧠 ANÁLISIS DE LA PREGUNTA
+577: La silicosis y la tuberculosis corresponden a la exposición al sílice, no al asbesto. La exposición al asbesto se asocia con asbestosis, enfermedad pleural, cáncer de pulmón y mesotelioma.
+578: 🔑 CONCEPTOS CLAVE
+579: El asbesto produce asbestosis.
+580: Se asocia con enfermedad pleural y mesotelioma.
+581: La exposición ocurre en minería, construcción y reparación de buques.
+582: ⚡ REPASO ACTIVO
+583: Asbesto:
+584: Minería.
+585: Procesamiento.
+586: Construcción.
+587: Reparación de buques.
+588: Asbestosis.
+589: Enfermedad pleural.
+590: Cáncer.
+591: Mesotelioma.
+592: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 289, cuadro 289-1.
+593: Tema: Exposiciones laborales y neumopatías
+594: Subtema: Exposición al sílice
+595: Todos los siguientes se asocian con exposición ocupacional al sílice, EXCEPTO:
+596: a) Silicosis y fibrosis masiva progresiva.
+597: b) Cáncer y enfermedad pulmonar obstructiva crónica.
+598: c) Tuberculosis y trabajos con piedra artificial.
+599: d) Mesotelioma y enfermedad pleural difusa.
+600: e) Minería y limpieza con chorro de arena.
+601: ✅ Respuesta correcta: d) Mesotelioma y enfermedad pleural difusa.
+602: 🧠 ANÁLISIS DE LA PREGUNTA
+603: El mesotelioma y la enfermedad pleural son complicaciones clásicas de la exposición al asbesto. El sílice se relaciona con silicosis, fibrosis masiva progresiva, tuberculosis, cáncer y EPOC.
+604: 🔑 CONCEPTOS CLAVE
+605: El sílice produce silicosis.
+606: Se asocia con tuberculosis y EPOC.
+607: La piedra artificial representa una exposición de riesgo.
+608: ⚡ REPASO ACTIVO
+609: Sílice:
+610: Minería.
+611: Corte de piedras.
+612: Chorro de arena.
+613: Excavación.
+614: Fabricación de piedra artificial.
+615: Instalación de piedra artificial.
+616: Silicosis.
+617: Fibrosis masiva progresiva.
+618: Cáncer.
+619: Tuberculosis.
+620: EPOC.
+621: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 289, cuadro 289-1.
+622: Tema: Exposiciones laborales y neumopatías
+623: Subtema: Polvo de carbón
+624: Respecto a la exposición ocupacional al polvo de carbón, señale la afirmación INCORRECTA:
+625: a) La minería constituye la principal actividad de riesgo.
+626: b) Puede producir neumoconiosis de los carboneros.
+627: c) Puede asociarse con fibrosis masiva progresiva y EPOC.
+628: d) Se relaciona principalmente con mesotelioma y cáncer pleural.
+629: e) El riesgo persiste en regiones donde continúan nuevas explotaciones mineras.
+630: ✅ Respuesta correcta: d) Se relaciona principalmente con mesotelioma y cáncer pleural.
+631: 🧠 ANÁLISIS DE LA PREGUNTA
+632: El mesotelioma es una enfermedad relacionada con el asbesto. La exposición al polvo de carbón produce neumoconiosis de los carboneros y puede asociarse con fibrosis masiva progresiva y EPOC.
+633: 🔑 CONCEPTOS CLAVE
+634: El polvo de carbón produce neumoconiosis.
+635: Puede evolucionar a fibrosis masiva progresiva.
+636: La minería es la principal fuente de exposición.
+637: ⚡ REPASO ACTIVO
+638: Polvo de carbón:
+639: Exposición en minería.
+640: Neumoconiosis de los carboneros.
+641: Fibrosis masiva progresiva.
+642: EPOC.
+643: El riesgo persiste donde continúan actividades mineras.
+644: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 289, cuadro 289-1.
+645: Tema: Enfermedades por asbesto
+646: Subtema: Asbestosis y neoplasias asociadas
+647: Respecto a las enfermedades relacionadas con la exposición al asbesto, señale la afirmación INCORRECTA:
+648: a) La asbestosis produce fibrosis intersticial difusa con predominio basal.
+649: b) Las placas pleurales indican exposición, pero no afectación pulmonar.
+650: c) El mesotelioma se relaciona estrechamente con el consumo de tabaco.
+651: d) El cáncer pulmonar presenta interacción aditiva con el tabaquismo.
+652: e) La función pulmonar suele mostrar un patrón restrictivo.
+653: ✅ Respuesta correcta: c) El mesotelioma se relaciona estrechamente con el consumo de tabaco.
+654: 🧠 ANÁLISIS DE LA PREGUNTA
+655: El mesotelioma pleural o peritoneal se relaciona con la exposición al asbesto, pero no muestra una asociación clara con el tabaquismo. En cambio, el tabaco y el asbesto aumentan conjuntamente el riesgo de cáncer pulmonar.
+656: 🔑 CONCEPTOS CLAVE
+657: La asbestosis es una fibrosis intersticial difusa.
+658: Las placas pleurales son un marcador de exposición.
+659: El tabaquismo potencia el riesgo de cáncer pulmonar, no de mesotelioma.
+660: ⚡ REPASO ACTIVO
+661: Manifestaciones pulmonares:
+662: Fibrosis intersticial difusa.
+663: Opacidades lineales o irregulares basales.
+664: Reticulación subpleural.
+665: Patrón funcional restrictivo.
+666: Disminución de la capacidad de difusión.
+667: Obstrucción leve ocasional.
+668: Manifestaciones pleurales:
+669: Placas pleurales.
+670: Engrosamiento o calcificación pleural.
+671: Predominio en bases, diafragma y borde cardíaco.
+672: Derrames pleurales benignos.
+673: Indican exposición, pero no fibrosis pulmonar.
+674: Neoplasias asociadas:
+675: Cáncer pulmonar.
+676: Mesotelioma pleural.
+677: Mesotelioma peritoneal.
+678: El tabaco incrementa el riesgo de cáncer pulmonar.
+679: El tabaco no se relaciona claramente con mesotelioma.
+680: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 289, figura 289-1.
+681: Tema: Silicosis
+682: Subtema: Silicosis aguda
+683: ¿Cuál de los siguientes hallazgos tomográficos es característico de la silicosis aguda?
+684: a) Patrón de “pavimento loco” con opacidades difusas.
+685: b) Placas pleurales calcificadas con predominio diafragmático.
+686: c) Cavidades apicales múltiples con paredes muy gruesas.
+687: d) Adenopatías mediastínicas aisladas sin infiltrados pulmonares.
+688: e) Derrame pleural bilateral con engrosamiento pleural difuso.
+689: ✅ Respuesta correcta: a) Patrón de “pavimento loco” con opacidades difusas.
+690: 🧠 ANÁLISIS DE LA PREGUNTA
+691: La silicosis aguda puede aparecer tras exposiciones intensas y breves. En la tomografía de alta resolución se observan opacidades en vidrio esmerilado con engrosamiento de los tabiques, patrón denominado “pavimento loco”.
+692: 🔑 CONCEPTOS CLAVE
+693: Puede desarrollarse en menos de diez meses.
+694: Se relaciona con exposiciones intensas al sílice.
+695: El patrón característico es el “pavimento loco”.
+696: ⚡ REPASO ACTIVO
+697: Silicosis aguda:
+698: Exposición intensa durante menos de diez meses.
+699: Chorros de arena en espacios confinados.
+700: Construcción de túneles en roca rica en cuarzo.
+701: Fabricación de pastas abrasivas.
+702: Infiltración miliar profusa o consolidación.
+703: Patrón tomográfico de “pavimento loco”.
+704: Enfermedad grave y progresiva.
+705: Lavado pulmonar completo con alivio sintomático.
+706: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 289, figura 289-2.
+707: Tema: Silicosis
+708: Subtema: Silicosis crónica
+709: Respecto a la silicosis crónica, señale la afirmación INCORRECTA:
+710: a) Puede manifestarse después de quince a veinte años.
+711: b) Presenta nódulos predominantes en los lóbulos superiores.
+712: c) Puede evolucionar hacia fibrosis masiva progresiva.
+713: d) Produce inicialmente opacidades basales de predominio subpleural.
+714: e) Puede mostrar calcificación ganglionar en forma de cascarón.
+715: ✅ Respuesta correcta: d) Produce inicialmente opacidades basales de predominio subpleural.
+716: 🧠 ANÁLISIS DE LA PREGUNTA
+717: La silicosis crónica se caracteriza por pequeñas opacidades redondeadas con predominio en los lóbulos superiores, no en las bases pulmonares. También puede presentar calcificación ganglionar en “cascarón” y progresar a fibrosis masiva progresiva.
+718: 🔑 CONCEPTOS CLAVE
+719: Aparece tras exposiciones prolongadas y menos intensas.
+720: Los nódulos predominan en los lóbulos superiores.
+721: Puede evolucionar a fibrosis masiva progresiva.
+722: ⚡ REPASO ACTIVO
+723: Silicosis crónica:
+724: Exposición menos intensa y prolongada.
+725: Aparición después de quince a veinte años.
+726: Pequeñas opacidades redondeadas.
+727: Predominio en lóbulos superiores.
+728: Nódulos silicóticos visibles en tomografía.
+729: Calcificación ganglionar en “cascarón”.
+730: Coalescencia de nódulos.
+731: Conglomerados mayores de 1 cm.
+732: Fibrosis masiva progresiva.
+733: Alteración restrictiva y obstructiva en enfermedad avanzada.
+734: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 289, figura 289-3.
+735: Tema: Bronquiectasias
+736: Subtema: Estudios etiológicos según el patrón de compromiso
+737: Respecto al estudio etiológico de las bronquiectasias, señale la afirmación INCORRECTA:
+738: a) La bronquiectasia focal por obstrucción se estudia con imágenes torácicas y broncoscopia.
+739: b) En bronquiectasia difusa por infección se recomienda tinción y cultivo de esputo.
+740: c) La fibrosis quística puede investigarse mediante medición de cloro en sudor.
+741: d) La aspiración recurrente se evalúa principalmente con determinación de inmunoglobulinas séricas.
+742: e) La bronquiectasia asociada a artritis reumatoide requiere pruebas serológicas.
+743: ✅ Respuesta correcta: d) La aspiración recurrente se evalúa principalmente con determinación de inmunoglobulinas séricas.
+744: 🧠 ANÁLISIS DE LA PREGUNTA
+745: La aspiración recurrente debe investigarse con pruebas de función deglutoria y evaluación de la fuerza neuromuscular. La cuantificación de inmunoglobulinas forma parte del estudio de inmunodeficiencias, no de aspiración.
+746: 🔑 CONCEPTOS CLAVE
+747: El estudio depende de la etiología sospechada.
+748: La broncoscopia es útil en bronquiectasias focales.
+749: La aspiración recurrente requiere evaluación de la deglución.
+750: ⚡ REPASO ACTIVO
+751: Bronquiectasia focal:
+752: Obstrucción (cuerpo extraño, tumor).
+753: Estudios: radiografía/TC y broncoscopia.
+754: Bronquiectasia difusa:
+755: Infecciones → Gram, cultivos y BAAR.
+756: Inmunodeficiencias → biometría hemática, inmunoglobulinas, VIH.
+757: Causas genéticas → cloro en sudor, α1-antitripsina, estudios ciliares y pruebas genéticas.
+758: Enfermedades autoinmunitarias → exploración articular y serologías.
+759: Aspiración recurrente → evaluación de la deglución y fuerza neuromuscular.
+760: Idiopática → estudio guiado por la clínica.
+761: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 290, cuadro 290-1.
+762: Tema: Bronquiectasias
+763: Subtema: Causas genéticas
+764: Todos los siguientes corresponden a causas genéticas de bronquiectasias difusas, EXCEPTO:
+765: a) Fibrosis quística.
+766: b) Síndrome de Kartagener.
+767: c) Deficiencia de antitripsina α1.
+768: d) Artritis reumatoide.
+769: e) Síndrome de cilios discinéticos.
+770: ✅ Respuesta correcta: d) Artritis reumatoide.
+771: 🧠 ANÁLISIS DE LA PREGUNTA
+772: La artritis reumatoide pertenece al grupo de enfermedades autoinmunitarias asociadas a bronquiectasias. En cambio, fibrosis quística, síndrome de Kartagener, síndrome de cilios discinéticos y deficiencia de α1-antitripsina forman parte de las causas genéticas.
+773: 🔑 CONCEPTOS CLAVE
+774: Las causas genéticas incluyen fibrosis quística.
+775: El síndrome de Kartagener es una causa clásica.
+776: La artritis reumatoide es una causa autoinmunitaria.
+777: ⚡ REPASO ACTIVO
+778: Causas genéticas:
+779: Fibrosis quística.
+780: Síndrome de Kartagener.
+781: Deficiencia de α1-antitripsina.
+782: Síndrome de cilios discinéticos.
+783: Estudios recomendados:
+784: Cloro en sudor.
+785: Concentración de α1-antitripsina.
+786: Cepillado o biopsia nasal.
+787: Pruebas genéticas.
+788: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 290, cuadro 290-1.
+789: Tema: Bronquiectasias
+790: Subtema: Inmunodeficiencias
+791: Respecto a las bronquiectasias secundarias a inmunodeficiencias, señale la afirmación INCORRECTA:
+792: a) La hipogammaglobulinemia es una causa reconocida.
+793: b) La infección por VIH puede asociarse a bronquiectasias.
+794: c) Debe solicitarse cuantificación de inmunoglobulinas.
+795: d) El estudio inicial consiste en la medición del cloro en sudor.
+796: e) La biometría hemática forma parte de la evaluación inicial.
+797: ✅ Respuesta correcta: d) El estudio inicial consiste en la medición del cloro en sudor.
+798: 🧠 ANÁLISIS DE LA PREGUNTA
+799: La medición del cloro en sudor está indicada cuando se sospecha fibrosis quística. En pacientes con sospecha de inmunodeficiencia, el cuadro recomienda biometría hemática, cuantificación de inmunoglobulinas y prueba para VIH.
+800: 🔑 CONCEPTOS CLAVE
+801: La hipogammaglobulinemia causa bronquiectasias.
+802: El VIH forma parte del diagnóstico diferencial.
+803: La cuantificación de inmunoglobulinas es un estudio inicial.
+804: ⚡ REPASO ACTIVO
+805: Inmunodeficiencias asociadas:
+806: Hipogammaglobulinemia.
+807: Infección por VIH.
+808: Bronquiolitis obliterante tras trasplante.
+809: Estudios recomendados:
+810: Biometría hemática.
+811: Recuento diferencial.
+812: Cuantificación de inmunoglobulinas.
+813: Prueba para VIH.
+814: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 290, cuadro 290-1.
+815: Tema: Bronquiectasias
+816: Subtema: Manifestaciones clínicas
+817: ¿Cuál es la manifestación clínica más frecuente de las bronquiectasias?
+818: a) Tos productiva persistente con esputo espeso y adherente.
+819: b) Tos seca intermitente con dolor torácico y síncope.
+820: c) Disnea progresiva aislada con ausencia completa de secreciones.
+821: d) Hemoptisis recurrente con fiebre alta y derrame pleural.
+822: e) Estridor inspiratorio persistente con pérdida marcada de la voz.
+823: ✅ Respuesta correcta: a) Tos productiva persistente con esputo espeso y adherente.
+824: 🧠 ANÁLISIS DE LA PREGUNTA
+825: La manifestación más frecuente es la tos productiva persistente, acompañada de producción constante de esputo espeso y adherente.
+826: 🔑 CONCEPTOS CLAVE
+827: Predomina la tos productiva persistente.
+828: El esputo suele ser espeso y adherente.
+829: Puede haber estertores, sibilancias y dedos hipocráticos.
+830: ⚡ REPASO ACTIVO
+831: Tos productiva persistente.
+832: Producción constante de esputo espeso.
+833: Estertores en la auscultación.
+834: Sibilancias pulmonares.
+835: Dedos hipocráticos en algunos pacientes.
+836: Obstrucción leve o moderada al flujo aéreo.
+837: Exacerbaciones con mayor volumen y purulencia del esputo.
+838: Fiebre e infiltrados nuevos pueden estar ausentes.
+839: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 290.
+840: Tema: Bronquiectasias
+841: Subtema: Diagnóstico por tomografía
+842: ¿Cuál de los siguientes hallazgos tomográficos apoya el diagnóstico de bronquiectasias?
+843: a) Bronquio con diámetro menor que el vaso adyacente.
+844: b) Bronquio con diámetro mayor que el vaso adyacente.
+845: c) Bronquio con estrechamiento progresivo hacia la periferia.
+846: d) Bronquio con colapso completo durante la inspiración profunda.
+847: e) Bronquio sin engrosamiento ni secreciones en su interior.
+848: ✅ Respuesta correcta: b) Bronquio con diámetro mayor que el vaso adyacente.
+849: 🧠 ANÁLISIS DE LA PREGUNTA
+850: La dilatación bronquial se reconoce cuando el diámetro de la vía respiratoria es al menos 1,5 veces mayor que el del vaso acompañante, hallazgo denominado signo del anillo de sello.
+851: 🔑 CONCEPTOS CLAVE
+852: La tomografía es el estudio de elección.
+853: El signo del anillo de sello indica dilatación bronquial.
+854: También puede observarse ausencia de estrechamiento bronquial.
+855: ⚡ REPASO ACTIVO
+856: Dilatación de las vías respiratorias.
+857: Signo del anillo de sello.
+858: Bronquio al menos 1,5 veces mayor que el vaso adyacente.
+859: Falta de estrechamiento gradual de los bronquios.
+860: Estructuras tubulares a menos de 1 cm de la pleura.
+861: Engrosamiento de la pared bronquial.
+862: Secreciones espesas.
+863: Patrón de árbol en capullo.
+864: Quistes originados en la pared bronquial.
+865: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 290, figura 290-1.
+866: Tema: Bronquiectasias
+867: Subtema: Valoración etiológica
+868: Respecto a la valoración inicial de las bronquiectasias, señale la afirmación INCORRECTA:
+869: a) La historia clínica orienta hacia la causa subyacente.
+870: b) Las imágenes torácicas forman parte de la evaluación inicial.
+871: c) La broncoscopia es innecesaria en toda bronquiectasia focal.
+872: d) Las bronquiectasias difusas requieren análisis etiológico dirigido.
+873: e) Las pruebas funcionales valoran el compromiso respiratorio global.
+874: ✅ Respuesta correcta: c) La broncoscopia es innecesaria en toda bronquiectasia focal.
+875: 🧠 ANÁLISIS DE LA PREGUNTA
+876: En las bronquiectasias focales, la broncoscopia suele ser indispensable para descartar obstrucción por una tumoración o un cuerpo extraño.
+877: 🔑 CONCEPTOS CLAVE
+878: La evaluación incluye historia clínica e imágenes.
+879: La broncoscopia es importante en enfermedad focal.
+880: Las pruebas funcionales permiten valorar el deterioro respiratorio.
+881: ⚡ REPASO ACTIVO
+882: Historia clínica completa.
+883: Imágenes torácicas.
+884: Estudios dirigidos a la causa subyacente.
+885: Broncoscopia en bronquiectasias focales.
+886: Exclusión de tumoración obstructiva.
+887: Exclusión de cuerpo extraño.
+888: Análisis etiológico en bronquiectasias difusas.
+889: Descartar inicialmente fibrosis quística.
+890: Pruebas de función pulmonar.
+891: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 290.
+892: Tema: Enfermedad pulmonar obstructiva crónica
+893: Subtema: Patogenia y progresión
+894: Respecto a la patogenia de la EPOC, señale la afirmación INCORRECTA:
+895: a) El humo del cigarrillo puede alterar la eliminación de células apoptóticas.
+896: b) La pérdida de cilios favorece infección bacteriana e inflamación neutrofílica.
+897: c) La inflamación puede persistir incluso después de abandonar el tabaquismo.
+898: d) La reparación alveolar del pulmón adulto suele ser completa y eficiente.
+899: e) La destrucción de la matriz extracelular contribuye al desarrollo de enfisema.
+900: ✅ Respuesta correcta: d) La reparación alveolar del pulmón adulto suele ser completa y eficiente.
+901: 🧠 ANÁLISIS DE LA PREGUNTA
+902: La capacidad del pulmón adulto para reparar alvéolos dañados y reemplazar pequeñas vías respiratorias perdidas es limitada. Además, el humo del cigarrillo altera la fagocitosis de células apoptóticas, favoreciendo reparación ineficaz y progresión de la enfermedad.
+903: 🔑 CONCEPTOS CLAVE
+904: La inflamación puede continuar tras suspender el tabaquismo.
+905: El humo del cigarrillo altera cilios, macrófagos y reparación pulmonar.
+906: El enfisema se relaciona con destrucción de matriz y muerte celular.
+907: ⚡ REPASO ACTIVO
+908: Obstrucción por enfermedad de vías respiratorias pequeñas o enfisema.
+909: Estrechamiento por hiperplasia celular, moco y fibrosis.
+910: Destrucción de vías respiratorias en EPOC avanzada.
+911: Desequilibrio proteasa-antiproteasa.
+912: Desequilibrio oxidante-antioxidante.
+913: Apoptosis y muerte celular.
+914: Inflamación crónica.
+915: Reparación pulmonar ineficaz.
+916: Pérdida de cilios.
+917: Fagocitosis alterada de macrófagos.
+918: Persistencia inflamatoria tras dejar de fumar.
+919: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+920: Tema: Enfermedad pulmonar obstructiva crónica
+921: Subtema: Tipos anatomopatológicos de enfisema
+922: Respecto a los tipos anatomopatológicos del enfisema, señale la afirmación INCORRECTA:
+923: a) El enfisema centrolobular se asocia con mayor frecuencia al tabaquismo.
+924: b) El enfisema panlobular predomina en pacientes con deficiencia de α1-antitripsina.
+925: c) El enfisema paraseptal suele localizarse a lo largo de los márgenes pleurales.
+926: d) El enfisema centrolobular afecta de forma uniforme toda la unidad acinar.
+927: e) El enfisema panlobular muestra agrandamiento uniforme de los espacios aéreos.
+928: ✅ Respuesta correcta: d) El enfisema centrolobular afecta de forma uniforme toda la unidad acinar.
+929: 🧠 ANÁLISIS DE LA PREGUNTA
+930: El compromiso uniforme de toda la unidad acinar corresponde al enfisema panlobular. El enfisema centrolobular se relaciona con el tabaquismo y compromete principalmente la porción central del acino.
+931: 🔑 CONCEPTOS CLAVE
+932: El enfisema centrolobular se asocia al tabaquismo.
+933: El panlobular se relaciona con deficiencia de α1-antitripsina.
+934: El paraseptal predomina en la periferia pulmonar.
+935: ⚡ REPASO ACTIVO
+936: Enfisema centrolobular:
+937: Asociado al tabaquismo.
+938: Predomina en lóbulos superiores.
+939: Suele ser focal.
+940: Enfisema panlobular:
+941: Agrandamiento uniforme del acino.
+942: Asociado a deficiencia de α1-antitripsina.
+943: Predominio en lóbulos inferiores.
+944: Enfisema paraseptal:
+945: Representa 10-15% de los casos.
+946: Se distribuye a lo largo de los márgenes pleurales.
+947: Se asocia con inflamación de vías respiratorias y enfisema centrolobular.
+948: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+949: Tema: Enfermedad pulmonar obstructiva crónica
+950: Subtema: Distribución anatómica del enfisema
+951: Respecto a la distribución de los distintos tipos de enfisema, señale la afirmación INCORRECTA:
+952: a) El enfisema centrolobular suele predominar en los lóbulos superiores.
+953: b) El enfisema panlobular suele predominar en los lóbulos superiores.
+954: c) El enfisema paraseptal se distribuye junto a los márgenes pleurales.
+955: d) El enfisema centrolobular puede afectar segmentos superiores de lóbulos inferiores.
+956: e) El enfisema paraseptal conserva relativamente las regiones pulmonares centrales.
+957: ✅ Respuesta correcta: b) El enfisema panlobular suele predominar en los lóbulos superiores.
+958: 🧠 ANÁLISIS DE LA PREGUNTA
+959: La afirmación es incorrecta porque el enfisema panlobular presenta predilección por los lóbulos inferiores. El centrolobular predomina en regiones superiores, mientras que el paraseptal se localiza cerca de los márgenes pleurales.
+960: 🔑 CONCEPTOS CLAVE
+961: Centrolobular: predominio en lóbulos superiores.
+962: Panlobular: predominio en lóbulos inferiores.
+963: Paraseptal: distribución periférica y pleural.
+964: ⚡ REPASO ACTIVO
+965: Enfisema centrolobular:
+966: Asociado con tabaquismo.
+967: Compromete inicialmente bronquiolos respiratorios.
+968: Predomina en lóbulos superiores.
+969: Puede afectar segmentos superiores de lóbulos inferiores.
+970: Suele presentar distribución focal.
+971: Enfisema panlobular:
+972: Dilatación uniforme de las unidades acinares.
+973: Asociado con deficiencia de α1-antitripsina.
+974: Predomina en lóbulos inferiores.
+975: Enfisema paraseptal:
+976: Representa entre 10% y 15% de los casos.
+977: Se distribuye a lo largo de los márgenes pleurales.
+978: Conserva relativamente las regiones centrales.
+979: Puede coexistir con enfisema centrolobular.
+980: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+981: Tema: Enfermedad pulmonar obstructiva crónica
+982: Subtema: Intercambio gaseoso
+983: Respecto al intercambio de gases en la EPOC, señale la afirmación INCORRECTA:
+984: a) La PaO₂ puede mantenerse cercana a lo normal hasta que el FEV₁ disminuye alrededor del 50% de lo predicho.
+985: b) La hipercapnia suele aparecer antes que la hipoxemia durante la progresión funcional de la enfermedad.
+986: c) La desigualdad entre ventilación y perfusión explica gran parte de la reducción de la PaO₂.
+987: d) El cor pulmonale suele asociarse con hipoxemia crónica y reducción intensa del FEV₁.
+988: e) La hipoxemia por EPOC suele corregirse con cantidades moderadas de oxígeno suplementario.
+989: ✅ Respuesta correcta: b) La hipercapnia suele aparecer antes que la hipoxemia durante la progresión funcional de la enfermedad.
+990: 🧠 ANÁLISIS DE LA PREGUNTA
+991: La afirmación es incorrecta porque el aumento de la PaCO₂ suele aparecer en etapas más avanzadas, habitualmente cuando el FEV₁ es menor del 25% de lo predicho. La hipoxemia se explica principalmente por la desigualdad entre ventilación y perfusión.
+992: 🔑 CONCEPTOS CLAVE
+993: La PaO₂ puede conservarse hasta una reducción importante del FEV₁.
+994: La hipercapnia suele ser un hallazgo tardío.
+995: La alteración ventilación/perfusión es central en la hipoxemia.
+996: ⚡ REPASO ACTIVO
+997: PaO₂ cercana a lo normal hasta FEV₁ de aproximadamente 50% de lo predicho.
+998: PaCO₂ elevada, por lo general, con FEV₁ menor de 25% de lo predicho.
+999: Cor pulmonale asociado con hipoxemia crónica y obstrucción intensa.
+1000: Ventilación no uniforme y desigualdad ventilación/perfusión.
+1001: La desigualdad ventilación/perfusión reduce la PaO₂.
+1002: La hipoxemia suele corregirse con cantidades moderadas de oxígeno.
+1003: La hipoxemia difícil de corregir obliga a considerar causas adicionales.
+1004: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1005: Tema: Enfermedad pulmonar obstructiva crónica
+1006: Subtema: Deficiencia de α1-antitripsina
+1007: Respecto a la deficiencia de α1-antitripsina, señale la afirmación INCORRECTA:
+1008: a) El alelo M se asocia con concentraciones séricas normales de α1-antitripsina.
+1009: b) El alelo Z se relaciona con una reducción marcada de α1-antitripsina.
+1010: c) El tabaquismo incrementa el riesgo de EPOC temprana en sujetos PiZZ.
+1011: d) Los sujetos PiMZ no fumadores requieren terapia de aumento de rutina.
+1012: e) La concentración sérica inmunitaria es la prueba inicial más utilizada.
+1013: ✅ Respuesta correcta: d) Los sujetos PiMZ no fumadores requieren terapia de aumento de rutina.
+1014: 🧠 ANÁLISIS DE LA PREGUNTA
+1015: La terapia de aumento de α1-antitripsina no se recomienda en sujetos heterocigotos PiMZ. Este tratamiento está disponible para pacientes con deficiencia grave, mientras que el tabaquismo aumenta especialmente el riesgo de EPOC temprana en individuos PiZZ.
+1016: 🔑 CONCEPTOS CLAVE
+1017: El alelo M se asocia con valores normales de α1-antitripsina.
+1018: El genotipo PiZZ constituye la forma grave más frecuente.
+1019: El tabaquismo acelera la aparición de EPOC en pacientes con deficiencia grave.
+1020: ⚡ REPASO ACTIVO
+1021: Variantes alélicas:
+1022: Alelo M: concentración normal.
+1023: Alelo S: reducción leve.
+1024: Alelo Z: reducción marcada.
+1025: Alelo nulo: ausencia de producción.
+1026: Deficiencia grave:
+1027: Genotipo PiZZ.
+1028: Combinación de alelo Z y alelo nulo.
+1029: Puede causar EPOC de inicio temprano.
+1030: Factores relacionados con EPOC:
+1031: Tabaquismo.
+1032: Sexo masculino.
+1033: Otros factores genéticos o ambientales.
+1034: Diagnóstico y tratamiento:
+1035: Medición sérica inmunitaria de α1-antitripsina.
+1036: Terapia de aumento intravenosa semanal en deficiencia grave.
+1037: No se recomienda terapia de aumento en sujetos PiMZ.
+1038: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1039: Tema: Enfermedad pulmonar obstructiva crónica
+1040: Subtema: Datos de laboratorio
+1041: ¿Cuál de los siguientes estudios constituye la prueba definitiva para confirmar el diagnóstico de deficiencia de α1-antitripsina en pacientes con concentraciones séricas bajas?
+1042: a) Medición seriada de la capacidad de difusión pulmonar.
+1043: b) Tomografía computarizada de alta resolución de tórax.
+1044: c) Determinación del tipo PI mediante enfoque isoeléctrico.
+1045: d) Gasometría arterial con medición de PaO₂ y PaCO₂.
+1046: e) Radiografía de tórax con evaluación de hiperinsuflación.
+1047: ✅ Respuesta correcta: c) Determinación del tipo PI mediante enfoque isoeléctrico.
+1048: 🧠 ANÁLISIS DE LA PREGUNTA
+1049: La medición sérica de α1-antitripsina es una prueba inicial razonable. Sin embargo, cuando las concentraciones son bajas, el diagnóstico definitivo requiere la determinación del tipo PI mediante enfoque isoeléctrico, pudiendo complementarse con genotipificación molecular.
+1050: 🔑 CONCEPTOS CLAVE
+1051: La medición sérica de α1-antitripsina es el estudio inicial.
+1052: El diagnóstico definitivo requiere determinar el tipo PI.
+1053: La genotipificación molecular puede complementar el estudio.
+1054: ⚡ REPASO ACTIVO
+1055: Espirometría:
+1056: Disminución del FEV₁.
+1057: Disminución de la relación FEV₁/FVC.
+1058: Gasometría arterial:
+1059: Evalúa hipoxemia.
+1060: Evalúa hipercapnia.
+1061: Permite clasificar la insuficiencia ventilatoria.
+1062: Tomografía computarizada:
+1063: Identifica enfisema.
+1064: Evalúa patrón de enfisema.
+1065: Detecta bronquiectasias y enfermedad intersticial.
+1066: Deficiencia de α1-antitripsina:
+1067: Medición sérica como prueba inicial.
+1068: Determinación del tipo PI como prueba definitiva.
+1069: Genotipificación molecular como estudio complementario.
+1070: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1071: ema: Enfermedad pulmonar obstructiva crónica
+1072: Subtema: Objetivos del tratamiento
+1073: ¿Cuál es uno de los dos objetivos principales del tratamiento de la EPOC estable?
+1074: a) Aliviar síntomas y mejorar la tolerancia al ejercicio.
+1075: b) Normalizar por completo la función pulmonar perdida.
+1076: c) Eliminar definitivamente toda inflamación bronquial existente.
+1077: d) Revertir anatómicamente el enfisema pulmonar establecido.
+1078: e) Suspender toda medicación después de la mejoría inicial.
+1079: ✅ Respuesta correcta: a) Aliviar síntomas y mejorar la tolerancia al ejercicio.
+1080: 🧠 ANÁLISIS DE LA PREGUNTA
+1081: El tratamiento busca aliviar los síntomas y mejorar el estado de salud, además de reducir la progresión, las exacerbaciones y la mortalidad. No se plantea la restitución completa del daño pulmonar.
+1082: 🔑 CONCEPTOS CLAVE
+1083: Reducir síntomas respiratorios.
+1084: Mejorar tolerancia al ejercicio.
+1085: Disminuir exacerbaciones y mortalidad.
+1086: ⚡ REPASO ACTIVO
+1087: Alivio de síntomas.
+1088: Mejoría del estado de salud.
+1089: Mayor tolerancia al ejercicio.
+1090: Prevención y tratamiento de exacerbaciones.
+1091: Disminución de la progresión y mortalidad.
+1092: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1093: Tema: Enfermedad pulmonar obstructiva crónica
+1094: Subtema: Cese del tabaquismo
+1095: Respecto al cese del tabaquismo en pacientes con EPOC, señale la afirmación INCORRECTA:
+1096: a) Reduce la velocidad de deterioro de la función pulmonar.
+1097: b) Debe recomendarse aunque la obstrucción ya esté establecida.
+1098: c) Solo ofrece beneficios cuando se logra sin farmacoterapia.
+1099: d) Puede apoyarse con reemplazo de nicotina y vareniclina.
+1100: e) Debe acompañarse de asesoramiento sobre abandono del tabaco.
+1101: ✅ Respuesta correcta: c) Solo ofrece beneficios cuando se logra sin farmacoterapia.
+1102: 🧠 ANÁLISIS DE LA PREGUNTA
+1103: El abandono del tabaco puede apoyarse con tratamiento farmacológico y métodos conductuales. La combinación de ambos aumenta la probabilidad de éxito.
+1104: 🔑 CONCEPTOS CLAVE
+1105: Es una intervención fundamental.
+1106: Puede mejorar el deterioro funcional.
+1107: Se recomienda combinar apoyo conductual y farmacológico.
+1108: ⚡ REPASO ACTIVO
+1109: Terapia de reemplazo de nicotina.
+1110: Bupropión.
+1111: Vareniclina.
+1112: Agonistas parciales nicotínicos.
+1113: Asesoramiento para dejar de fumar.
+1114: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1115: Tema: Enfermedad pulmonar obstructiva crónica
+1116: Subtema: Broncodilatadores
+1117: ¿Cuál es el tratamiento farmacológico primario para el beneficio sintomático de la mayoría de los pacientes con EPOC?
+1118: a) Glucocorticoides orales administrados de forma crónica.
+1119: b) Broncodilatadores administrados preferentemente por vía inhalada.
+1120: c) Antibióticos diarios utilizados durante toda la evolución.
+1121: d) Teofilina intravenosa empleada como primera elección.
+1122: e) Corticosteroides inhalados usados siempre como monoterapia.
+1123: ✅ Respuesta correcta: b) Broncodilatadores administrados preferentemente por vía inhalada.
+1124: 🧠 ANÁLISIS DE LA PREGUNTA
+1125: Los broncodilatadores son el tratamiento primario para disminuir síntomas y exacerbaciones. Se prefiere la vía inhalada porque produce menos efectos sistémicos.
+1126: 🔑 CONCEPTOS CLAVE
+1127: Constituyen el tratamiento sintomático principal.
+1128: Se prefiere la vía inhalada.
+1129: Pueden utilizarse fármacos de acción corta o prolongada.
+1130: ⚡ REPASO ACTIVO
+1131: Antagonistas muscarínicos.
+1132: Agonistas β.
+1133: Fármacos de acción corta según necesidad.
+1134: Fármacos de acción prolongada en pacientes sintomáticos.
+1135: Combinación β-agonista más antagonista muscarínico.
+1136: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1137: Tema: Enfermedad pulmonar obstructiva crónica
+1138: Subtema: Corticosteroides inhalados
+1139: Todos los siguientes datos favorecen el beneficio de corticosteroides inhalados en la EPOC, EXCEPTO:
+1140: a) Exacerbaciones frecuentes durante la evolución clínica.
+1141: b) Recuento de eosinófilos superior a 100 células/μL.
+1142: c) Uso aislado para aliviar de inmediato la disnea.
+1143: d) Asociación con un LABA o con LABA/LAMA.
+1144: e) Consideración de suspensión ante neumonía repetida.
+1145: ✅ Respuesta correcta: c) Uso aislado para aliviar de inmediato la disnea.
+1146: 🧠 ANÁLISIS DE LA PREGUNTA
+1147: Los corticosteroides inhalados se emplean principalmente para reducir exacerbaciones y no como tratamiento sintomático aislado de la disnea. Sus beneficios aumentan con eosinófilos elevados.
+1148: 🔑 CONCEPTOS CLAVE
+1149: Reducen principalmente las exacerbaciones.
+1150: No se recomiendan como monoterapia sintomática.
+1151: Pueden aumentar el riesgo de neumonía.
+1152: ⚡ REPASO ACTIVO
+1153: Mayor beneficio con eosinófilos elevados.
+1154: Menor beneficio con eosinófilos bajos.
+1155: Uso combinado con LABA o LABA/LAMA.
+1156: Riesgo de candidiasis orofaríngea.
+1157: Riesgo de neumonía y pérdida de densidad ósea.
+1158: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1159: Tema: Enfermedad pulmonar obstructiva crónica
+1160: Subtema: Oxigenoterapia
+1161: Un paciente con EPOC estable presenta saturación de oxígeno en reposo de 87%. ¿Cuál es la conducta terapéutica señalada en el fragmento?
+1162: a) Indicar oxígeno suplementario continuo durante el día.
+1163: b) Administrar oxígeno únicamente durante las exacerbaciones.
+1164: c) Iniciar teofilina para corregir directamente la hipoxemia.
+1165: d) Utilizar antibióticos profilácticos de manera permanente.
+1166: e) Indicar corticosteroides orales como tratamiento continuo.
+1167: ✅ Respuesta correcta: a) Indicar oxígeno suplementario continuo durante el día.
+1168: 🧠 ANÁLISIS DE LA PREGUNTA
+1169: La oxigenoterapia reduce la mortalidad en pacientes con hipoxemia crónica. Está indicada cuando la saturación en reposo es menor de 88%, o menor de 89% con complicaciones específicas.
+1170: 🔑 CONCEPTOS CLAVE
+1171: Es la única terapia farmacológica con reducción inequívoca de mortalidad.
+1172: El beneficio depende de las horas diarias de uso.
+1173: Se indica en hipoxemia crónica significativa.
+1174: ⚡ REPASO ACTIVO
+1175: Saturación en reposo menor de 88%.
+1176: Saturación menor de 89% con hipertensión pulmonar.
+1177: Saturación menor de 89% con insuficiencia derecha.
+1178: Saturación menor de 89% con eritrocitosis.
+1179: Uso continuo para obtener mayor beneficio.
+1180: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1181: Tema: Enfermedad pulmonar obstructiva crónica
+1182: Subtema: Tratamiento de aumento de α1-antitripsina
+1183: ¿Cuál de los siguientes pacientes es candidato potencial a terapia intravenosa de aumento de α1-antitripsina?
+1184: a) Sujeto PiMZ con función pulmonar normal y sin enfisema.
+1185: b) Paciente con deficiencia grave y concentración sérica menor de 11 μM.
+1186: c) Paciente con EPOC sin evidencia de deficiencia de α1-antitripsina.
+1187: d) Sujeto PiMM fumador con concentración sérica completamente normal.
+1188: e) Paciente con enfisema aislado y niveles séricos normales de α1-antitripsina.
+1189: ✅ Respuesta correcta: b) Paciente con deficiencia grave y concentración sérica menor de 11 μM.
+1190: 🧠 ANÁLISIS DE LA PREGUNTA
+1191: La terapia de aumento se reserva para deficiencia grave. La elegibilidad requiere una concentración sérica inferior a 11 μM y un fenotipo compatible.
+1192: 🔑 CONCEPTOS CLAVE
+1193: Se administra por vía intravenosa.
+1194: Está dirigida a la deficiencia grave.
+1195: No se recomienda en sujetos PiMZ.
+1196: ⚡ REPASO ACTIVO
+1197: Concentración sérica menor de 11 μM.
+1198: Fenotipo PiZZ como grupo típico.
+1199: Posibles genotipos raros o nulos.
+1200: Administración intravenosa.
+1201: No indicada con función pulmonar e imagen normales.
+1202: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1203: Tema: Enfermedad pulmonar obstructiva crónica
+1204: Subtema: Exacerbaciones
+1205: ¿Cuál de los siguientes cambios es característico de una exacerbación aguda de EPOC?
+1206: a) Mejoría progresiva de la disnea sin cambios del esputo.
+1207: b) Reducción persistente de la tos y de las sibilancias.
+1208: c) Aumento de disnea, tos, sibilancias o purulencia del esputo.
+1209: d) Normalización inmediata de la obstrucción del flujo aéreo.
+1210: e) Desaparición completa del esputo durante varios días.
+1211: ✅ Respuesta correcta: c) Aumento de disnea, tos, sibilancias o purulencia del esputo.
+1212: 🧠 ANÁLISIS DE LA PREGUNTA
+1213: Las exacerbaciones son empeoramientos agudos y episódicos de los síntomas respiratorios. Pueden incluir aumento de disnea, tos, sibilancias y cambios en cantidad o características del esputo.
+1214: 🔑 CONCEPTOS CLAVE
+1215: Son episodios de empeoramiento agudo.
+1216: El antecedente de exacerbación es el mejor predictor.
+1217: Pueden estar asociadas con infección.
+1218: ⚡ REPASO ACTIVO
+1219: Aumento de disnea.
+1220: Aumento de tos.
+1221: Incremento de sibilancias.
+1222: Mayor volumen de esputo.
+1223: Mayor purulencia del esputo.
+1224: Posibles fiebre, mialgias y dolor de garganta.
+1225: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1226: Tema: Enfermedad pulmonar obstructiva crónica
+1227: Subtema: Corticosteroides inhalados
+1228: Todos los siguientes datos favorecen el uso de corticosteroides inhalados en la EPOC, EXCEPTO:
+1229: a) Exacerbaciones frecuentes durante el seguimiento clínico.
+1230: b) Recuento sanguíneo de eosinófilos superior a 100 células/μL.
+1231: c) Necesidad de alivio inmediato de una disnea aislada.
+1232: d) Asociación terapéutica con un LABA o con LABA/LAMA.
+1233: e) Antecedente de exacerbaciones repetidas durante el año.
+1234: ✅ Respuesta correcta: c) Necesidad de alivio inmediato de una disnea aislada.
+1235: 🧠 ANÁLISIS DE LA PREGUNTA
+1236: Los corticosteroides inhalados se emplean principalmente para disminuir exacerbaciones, sobre todo cuando existe eosinofilia. No son broncodilatadores de rescate para aliviar inmediatamente la disnea.
+1237: 🔑 CONCEPTOS CLAVE
+1238: Su función principal es reducir exacerbaciones.
+1239: El beneficio aumenta con eosinófilos elevados.
+1240: Se utilizan combinados con broncodilatadores prolongados.
+1241: ⚡ REPASO ACTIVO
+1242: Mayor beneficio:
+1243: Eosinófilos >100 células/μL.
+1244: Exacerbaciones frecuentes.
+1245: Menor beneficio:
+1246: Eosinófilos <100 células/μL.
+1247: Riesgos:
+1248: Candidiasis orofaríngea.
+1249: Neumonía.
+1250: Pérdida de densidad ósea.
+1251: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1252: Tema: Enfermedad pulmonar obstructiva crónica
+1253: Subtema: Glucocorticoides orales
+1254: Respecto al uso crónico de glucocorticoides orales en la EPOC estable, señale la afirmación INCORRECTA:
+1255: a) Presentan una relación desfavorable entre beneficios y riesgos.
+1256: b) Pueden producir osteoporosis, cataratas e intolerancia a la glucosa.
+1257: c) Se recomiendan rutinariamente para prevenir todas las exacerbaciones.
+1258: d) Pueden ocasionar aumento de peso e infecciones.
+1259: e) No evitan la pérdida progresiva de la función pulmonar.
+1260: ✅ Respuesta correcta: c) Se recomiendan rutinariamente para prevenir todas las exacerbaciones.
+1261: 🧠 ANÁLISIS DE LA PREGUNTA
+1262: El tratamiento crónico con glucocorticoides orales no se recomienda en la EPOC estable debido a sus numerosos efectos adversos y a la ausencia de beneficios suficientes sobre exacerbaciones o función pulmonar.
+1263: 🔑 CONCEPTOS CLAVE
+1264: No se recomiendan para uso crónico.
+1265: Tienen múltiples efectos adversos sistémicos.
+1266: No detienen el deterioro pulmonar progresivo.
+1267: ⚡ REPASO ACTIVO
+1268: Efectos adversos:
+1269: Osteoporosis.
+1270: Aumento de peso.
+1271: Cataratas.
+1272: Intolerancia a la glucosa.
+1273: Mayor riesgo de infección.
+1274: Uso crónico:
+1275: Relación riesgo-beneficio desfavorable.
+1276: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1277: Tema: Enfermedad pulmonar obstructiva crónica
+1278: Subtema: Teofilina
+1279: ¿Cuál es la razón principal por la que la teofilina no constituye un tratamiento de primera línea en la EPOC?
+1280: a) Presenta efectos adversos e interacciones farmacológicas importantes.
+1281: b) Carece por completo de efectos sobre el flujo respiratorio.
+1282: c) Produce neumonía bacteriana en la mayoría de los pacientes.
+1283: d) Solo puede administrarse mediante infusión intravenosa continua.
+1284: e) Causa pérdida irreversible de la capacidad vital pulmonar.
+1285: ✅ Respuesta correcta: a) Presenta efectos adversos e interacciones farmacológicas importantes.
+1286: 🧠 ANÁLISIS DE LA PREGUNTA
+1287: La teofilina puede mejorar moderadamente el flujo aéreo y la capacidad vital, pero no se considera de primera línea debido a sus interacciones, efectos adversos y necesidad de vigilar sus concentraciones sanguíneas.
+1288: 🔑 CONCEPTOS CLAVE
+1289: Produce una mejoría funcional moderada.
+1290: Requiere vigilancia de concentraciones sanguíneas.
+1291: Puede causar náuseas, taquicardia y temblor.
+1292: ⚡ REPASO ACTIVO
+1293: Beneficios:
+1294: Mejoría moderada del flujo aéreo.
+1295: Mejoría moderada de la capacidad vital.
+1296: Efectos adversos:
+1297: Náuseas.
+1298: Taquicardia.
+1299: Temblor.
+1300: Control:
+1301: Concentración sanguínea para evitar toxicidad.
+1302: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1303: Tema: Enfermedad pulmonar obstructiva crónica
+1304: Subtema: Roflumilast y azitromicina
+1305: ¿Qué fármaco reduce las exacerbaciones en pacientes con EPOC grave, bronquitis crónica y antecedente de exacerbaciones?
+1306: a) Roflumilast, inhibidor selectivo de la fosfodiesterasa 4.
+1307: b) Prednisona, glucocorticoide oral administrado de forma permanente.
+1308: c) Teofilina, broncodilatador utilizado siempre como primera elección.
+1309: d) Ipratropio, antibiótico macrólido de administración inhalatoria.
+1310: e) Vareniclina, corticosteroide empleado para prevenir infecciones.
+1311: ✅ Respuesta correcta: a) Roflumilast, inhibidor selectivo de la fosfodiesterasa 4.
+1312: 🧠 ANÁLISIS DE LA PREGUNTA
+1313: El roflumilast disminuye las exacerbaciones en pacientes con EPOC grave, bronquitis crónica y antecedentes de exacerbaciones. Sus efectos sobre la obstrucción y los síntomas son modestos.
+1314: 🔑 CONCEPTOS CLAVE
+1315: Roflumilast inhibe selectivamente la PDE4.
+1316: Está dirigido a pacientes con exacerbaciones recurrentes.
+1317: Puede causar náuseas, diarrea y adelgazamiento.
+1318: ⚡ REPASO ACTIVO
+1319: Roflumilast:
+1320: EPOC grave.
+1321: Bronquitis crónica.
+1322: Antecedente de exacerbaciones.
+1323: Náuseas, diarrea y adelgazamiento.
+1324: Azitromicina:
+1325: Administración diaria en pacientes seleccionados.
+1326: Reduce exacerbaciones.
+1327: Mayor beneficio en exfumadores y adultos mayores.
+1328: Poco beneficio en fumadores actuales.
+1329: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1330: Tema: Enfermedad pulmonar obstructiva crónica
+1331: Subtema: Tratamiento de las exacerbaciones agudas
+1332: Respecto al tratamiento broncodilatador de una exacerbación aguda de EPOC, señale la afirmación INCORRECTA:
+1333: a) Pueden combinarse agonistas β y antagonistas muscarínicos inhalados.
+1334: b) La frecuencia de administración depende de la gravedad clínica.
+1335: c) La teofilina debe añadirse rutinariamente por eficacia comprobada.
+1336: d) La terapia nebulizada puede emplearse al inicio del tratamiento.
+1337: e) Los inhaladores dosificados son eficaces con capacitación adecuada.
+1338: ✅ Respuesta correcta: c) La teofilina debe añadirse rutinariamente por eficacia comprobada.
+1339: 🧠 ANÁLISIS DE LA PREGUNTA
+1340: La teofilina no debe añadirse de forma rutinaria, porque no existen pruebas convincentes de su eficacia en las exacerbaciones. Si se utiliza, debe vigilarse su concentración sérica para reducir la toxicidad.
+1341: 🔑 CONCEPTOS CLAVE
+1342: Se emplean agonistas β y antagonistas muscarínicos inhalados.
+1343: La vía nebulizada suele utilizarse al inicio.
+1344: La teofilina no tiene eficacia convincente en este contexto.
+1345: ⚡ REPASO ACTIVO
+1346: Agonistas β inhalados.
+1347: Antagonistas muscarínicos inhalados.
+1348: Uso separado o combinado.
+1349: Frecuencia según gravedad.
+1350: Nebulización inicial frecuente.
+1351: Inhalador dosificado eficaz con educación adecuada.
+1352: Teofilina sin beneficio convincente.
+1353: Control sérico si se administra teofilina.
+1354: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1355: Tema: Enfermedad pulmonar obstructiva crónica
+1356: Subtema: Antibióticos y glucocorticoides
+1357: ¿Cuál de las siguientes afirmaciones sobre el tratamiento farmacológico de las exacerbaciones de EPOC es correcta?
+1358: a) Los antibióticos suelen indicarse en exacerbaciones moderadas o graves.
+1359: b) Los glucocorticoides deben mantenerse durante ocho semanas completas.
+1360: c) La prednisona oral se recomienda habitualmente por treinta días.
+1361: d) Los antibióticos se indican solo con aislamiento bacteriano confirmado.
+1362: e) Los glucocorticoides carecen de efecto sobre la recuperación clínica.
+1363: ✅ Respuesta correcta: a) Los antibióticos suelen indicarse en exacerbaciones moderadas o graves.
+1364: 🧠 ANÁLISIS DE LA PREGUNTA
+1365: Las exacerbaciones moderadas o graves suelen tratarse con antibióticos, incluso sin identificar un patógeno específico. Los glucocorticoides sistémicos acortan la estancia y aceleran la recuperación; se sugieren 30 a 40 mg de prednisona durante cerca de 5 a 10 días.
+1366: 🔑 CONCEPTOS CLAVE
+1367: Los antibióticos se usan en exacerbaciones moderadas o graves.
+1368: La elección depende de la sensibilidad local y del estado clínico.
+1369: Los glucocorticoides sistémicos favorecen una recuperación más rápida.
+1370: ⚡ REPASO ACTIVO
+1371: Bacterias relacionadas:
+1372: Streptococcus pneumoniae.
+1373: Haemophilus influenzae.
+1374: Moraxella catarrhalis.
+1375: Bacterias menos frecuentes:
+1376: Mycoplasma pneumoniae.
+1377: Chlamydia pneumoniae.
+1378: Glucocorticoides:
+1379: Reducen la duración de la estancia.
+1380: Aceleran la recuperación.
+1381: Disminuyen recaídas posteriores.
+1382: Prednisona de 30 a 40 mg por vía oral.
+1383: Duración aproximada de 5 a 10 días.
+1384: Hiperglucemia como complicación frecuente.
+1385: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.
+1386: Tema: Enfermedad pulmonar intersticial
+1387: Subtema: Fibrosis pulmonar idiopática
+1388: ¿Cuál de las siguientes características corresponde a la fibrosis pulmonar idiopática?
+1389: a) Inicio gradual con disnea y tos seca.
+1390: b) Inicio brusco con fiebre y hemoptisis.
+1391: c) Tos productiva con secreción abundante.
+1392: d) Disnea aislada únicamente en reposo.
+1393: e) Sibilancias como hallazgo predominante.
+1394: ✅ Respuesta correcta: a) Inicio gradual con disnea y tos seca.
+1395: 🧠 ANÁLISIS DE LA PREGUNTA
+1396: La fibrosis pulmonar idiopática suele comenzar de manera gradual con disnea progresiva y tos seca. Es poco frecuente en adultos jóvenes.
+1397: 🔑 CONCEPTOS CLAVE
+1398: Inicio gradual.
+1399: Disnea progresiva.
+1400: Tos seca.
+1401: ⚡ REPASO ACTIVO
+1402: FPI: inicio gradual, disnea y tos seca.
+1403: NII: inicio subagudo de disnea y tos seca.
+1404: EPI asociada a bronquiolitis respiratoria: puede ser asintomática o causar disnea y tos.
+1405: EPI asociada a esclerosis sistémica: disnea, tos seca y manifestaciones sistémicas.
+1406: Sarcoidosis: puede ser asintomática o causar disnea y tos.
+1407: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1408: Tema: Enfermedad pulmonar intersticial
+1409: Subtema: Exposiciones asociadas
+1410: ¿Cuál de las siguientes enfermedades presenta una asociación fuerte con el tabaquismo?
+1411: a) Fibrosis pulmonar idiopática.
+1412: b) Neumonía intersticial inespecífica.
+1413: c) EPI asociada a bronquiolitis respiratoria.
+1414: d) EPI asociada a esclerosis sistémica.
+1415: e) Sarcoidosis.
+1416: ✅ Respuesta correcta: c) EPI asociada a bronquiolitis respiratoria.
+1417: 🧠 ANÁLISIS DE LA PREGUNTA
+1418: La EPI asociada a bronquiolitis respiratoria presenta una relación estrecha con el consumo de tabaco.
+1419: 🔑 CONCEPTOS CLAVE
+1420: Asociación fuerte con tabaquismo.
+1421: Puede cursar con disnea y tos.
+1422: Los dedos en palillo de tambor son raros.
+1423: ⚡ REPASO ACTIVO
+1424: FPI: idiopática; algunos pacientes tienen exposición al humo.
+1425: NII: puede ser idiopática o asociarse a otras enfermedades.
+1426: EPI asociada a bronquiolitis respiratoria: fuerte asociación con tabaquismo.
+1427: EPI asociada a esclerosis sistémica: posible relación con solventes y silicatos.
+1428: Sarcoidosis: causa generalmente desconocida.
+1429: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1430: Tema: Enfermedad pulmonar intersticial
+1431: Subtema: Hallazgos en tomografía computarizada de alta resolución
+1432: ¿Cuál de los siguientes hallazgos en la TCAR apoya el diagnóstico de fibrosis pulmonar idiopática?
+1433: a) Adenopatías hiliares con nódulos peribroncovasculares.
+1434: b) Panal de abejas con patrón clásico de NIU.
+1435: c) Nódulos centrolobulillares en placas difusas.
+1436: d) Vidrio esmerilado sin reticulación pulmonar.
+1437: e) Consolidaciones migratorias de predominio periférico.
+1438: ✅ Respuesta correcta: b) Panal de abejas con patrón clásico de NIU.
+1439: 🧠 ANÁLISIS DE LA PREGUNTA
+1440: En la FPI, el patrón clásico de neumonía intersticial usual con panal de abejas en la TCAR puede considerarse diagnóstico.
+1441: 🔑 CONCEPTOS CLAVE
+1442: Patrón de NIU.
+1443: Panal de abejas.
+1444: Predominio basal y subpleural.
+1445: ⚡ REPASO ACTIVO
+1446: FPI: reticulación subpleural bilateral, predominio basal, bronquiectasias por tracción y panal de abejas.
+1447: NII: vidrio esmerilado y reticulación subpleural periférica.
+1448: EPI asociada a bronquiolitis respiratoria: nódulos centrolobulillares en vidrio esmerilado.
+1449: EPI asociada a esclerosis sistémica: patrón de NIU o NII.
+1450: Sarcoidosis: adenopatías hiliares y nódulos peribroncovasculares.
+1451: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1452: Tema: Enfermedad pulmonar intersticial
+1453: Subtema: Histopatología
+1454: ¿Cuál de las siguientes enfermedades se caracteriza por granulomas no caseificantes?
+1455: a) Fibrosis pulmonar idiopática.
+1456: b) Neumonía intersticial inespecífica.
+1457: c) EPI asociada a bronquiolitis respiratoria.
+1458: d) EPI asociada a esclerosis sistémica.
+1459: e) Sarcoidosis.
+1460: ✅ Respuesta correcta: e) Sarcoidosis.
+1461: 🧠 ANÁLISIS DE LA PREGUNTA
+1462: La sarcoidosis se caracteriza histológicamente por la presencia de granulomas no caseificantes.
+1463: 🔑 CONCEPTOS CLAVE
+1464: Granulomas no caseificantes.
+1465: Compromiso pulmonar frecuente.
+1466: Puede presentar adenopatías hiliares.
+1467: ⚡ REPASO ACTIVO
+1468: FPI: patrón de NIU con heterogeneidad temporal y espacial.
+1469: NII: patrón celular o fibrótico.
+1470: EPI asociada a bronquiolitis respiratoria: macrófagos cargados de pigmento.
+1471: EPI asociada a esclerosis sistémica: patrón de NIU o NII.
+1472: Sarcoidosis: granulomas no caseificantes.
+1473: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1474: Tema: Enfermedad pulmonar intersticial
+1475: Subtema: Exploración física
+1476: ¿Cuál de las siguientes enfermedades puede acompañarse de engrosamiento cutáneo, telangiectasias e hinchazón articular?
+1477: a) Fibrosis pulmonar idiopática.
+1478: b) Neumonía intersticial inespecífica.
+1479: c) EPI asociada a bronquiolitis respiratoria.
+1480: d) EPI asociada a esclerosis sistémica.
+1481: e) Sarcoidosis.
+1482: ✅ Respuesta correcta: d) EPI asociada a esclerosis sistémica.
+1483: 🧠 ANÁLISIS DE LA PREGUNTA
+1484: El engrosamiento cutáneo, las telangiectasias y la hinchazón articular orientan hacia esclerosis sistémica asociada a enfermedad pulmonar intersticial.
+1485: 🔑 CONCEPTOS CLAVE
+1486: Engrosamiento de la piel.
+1487: Telangiectasias.
+1488: Hinchazón articular.
+1489: ⚡ REPASO ACTIVO
+1490: FPI: estertores basales y dedos en palillo de tambor.
+1491: NII: estertores frecuentes; palillo de tambor menos común.
+1492: EPI asociada a bronquiolitis respiratoria: estertores comunes; palillo de tambor raro.
+1493: EPI asociada a esclerosis sistémica: cambios cutáneos y articulares.
+1494: Sarcoidosis: exploración normal o datos cutáneos, articulares y ganglionares.
+1495: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1496: Tema: Enfermedad pulmonar intersticial
+1497: Subtema: Evolución clínica
+1498: ¿Cuál de las siguientes enfermedades presenta una mortalidad aproximada del 50% a los tres a cinco años?
+1499: a) Fibrosis pulmonar idiopática.
+1500: b) Neumonía intersticial inespecífica.
+1501: c) EPI asociada a bronquiolitis respiratoria.
+1502: d) EPI asociada a esclerosis sistémica.
+1503: e) Sarcoidosis.
+1504: ✅ Respuesta correcta: a) Fibrosis pulmonar idiopática.
+1505: 🧠 ANÁLISIS DE LA PREGUNTA
+1506: La FPI presenta el peor pronóstico del grupo comparado, con una mortalidad cercana al 50% a los tres a cinco años.
+1507: 🔑 CONCEPTOS CLAVE
+1508: FPI con elevada mortalidad.
+1509: NII con mejor pronóstico.
+1510: Sarcoidosis con mortalidad generalmente baja.
+1511: ⚡ REPASO ACTIVO
+1512: FPI: mortalidad de 50% a tres-cinco años.
+1513: NII: mortalidad de 18% a cinco años.
+1514: EPI asociada a bronquiolitis respiratoria: mortalidad de 25% a siete años.
+1515: EPI asociada a esclerosis sistémica: mortalidad de 20-30% a diez años.
+1516: Sarcoidosis: mortalidad generalmente baja.
+1517: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1518: Tema: Enfermedad pulmonar intersticial
+1519: Subtema: Neumonía intersticial inespecífica
+1520: ¿Cuál de las siguientes características corresponde a la neumonía intersticial inespecífica?
+1521: a) Inicio subagudo con disnea y tos seca.
+1522: b) Asociación obligatoria con tabaquismo intenso.
+1523: c) Granulomas no caseificantes en la biopsia.
+1524: d) Panal de abejas clásico como hallazgo constante.
+1525: e) Adenopatías hiliares como dato predominante.
+1526: ✅ Respuesta correcta: a) Inicio subagudo con disnea y tos seca.
+1527: 🧠 ANÁLISIS DE LA PREGUNTA
+1528: La NII suele presentarse de forma subaguda con disnea y tos seca. Puede ser idiopática o asociarse con otras enfermedades.
+1529: 🔑 CONCEPTOS CLAVE
+1530: Inicio subagudo.
+1531: Disnea y tos seca.
+1532: Puede asociarse a otras enfermedades.
+1533: ⚡ REPASO ACTIVO
+1534: Inicio subagudo.
+1535: Disnea.
+1536: Tos seca.
+1537: Estertores frecuentes.
+1538: Vidrio esmerilado.
+1539: Reticulación subpleural.
+1540: Patrón histológico celular o fibrótico.
+1541: Mortalidad aproximada de 18% a cinco años.
+1542: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293, cuadro 293-1.
+1543: Tema: Enfermedad pulmonar intersticial
+1544: Subtema: Pruebas de función pulmonar
+1545: Respecto a las pruebas de función pulmonar en la enfermedad pulmonar intersticial, señale la afirmación INCORRECTA:
+1546: a) Es frecuente encontrar un defecto ventilatorio restrictivo.
+1547: b) La disminución aislada del FEV₁/FVC es diagnóstica de EPI.
+1548: c) La capacidad pulmonar total suele encontrarse reducida.
+1549: d) La capacidad de difusión de monóxido de carbono puede disminuir.
+1550: e) La progresión funcional puede relacionarse con mayor mortalidad.
+1551: ✅ Respuesta correcta: b) La disminución aislada del FEV₁/FVC es diagnóstica de EPI.
+1552: 🧠 ANÁLISIS DE LA PREGUNTA
+1553: La relación FEV₁/FVC disminuida indica obstrucción de las vías respiratorias y no es diagnóstica de EPI. En la mayoría de estas enfermedades predominan la restricción y la reducción de la capacidad de difusión.
+1554: 🔑 CONCEPTOS CLAVE
+1555: Predomina un patrón restrictivo.
+1556: La capacidad pulmonar total suele disminuir.
+1557: La capacidad de difusión puede reducirse precozmente.
+1558: ⚡ REPASO ACTIVO
+1559: Déficit restrictivo en la mayoría de las EPI.
+1560: Disminución de la capacidad pulmonar total.
+1561: Reducción simétrica del FEV₁ y la FVC.
+1562: Disminución frecuente de la capacidad de difusión.
+1563: La reducción de la difusión puede preceder a la caída de volúmenes.
+1564: La obstrucción puede aparecer en sarcoidosis, neumonitis por hipersensibilidad y linfangioleiomiomatosis.
+1565: La declinación funcional repetida se asocia con mortalidad elevada.
+1566: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1567: Tema: Enfermedad pulmonar intersticial
+1568: Subtema: Fibrosis pulmonar idiopática
+1569: Respecto a la fibrosis pulmonar idiopática, ¿cuál de las siguientes afirmaciones es CORRECTA?
+1570: a) Es la enfermedad pulmonar intersticial idiopática más frecuente.
+1571: b) Predomina en adultos menores de 30 años.
+1572: c) Se presenta con mayor frecuencia en mujeres jóvenes.
+1573: d) Habitualmente tiene un curso autolimitado.
+1574: e) Su supervivencia suele superar los 20 años.
+1575: ✅ Respuesta correcta: a) Es la enfermedad pulmonar intersticial idiopática más frecuente.
+1576: 🧠 ANÁLISIS DE LA PREGUNTA
+1577: La fibrosis pulmonar idiopática (FPI) es la enfermedad pulmonar intersticial idiopática más frecuente. Se diagnostica habitualmente en la quinta o sexta década, predomina en varones y tiene un pronóstico desfavorable.
+1578: 🔑 CONCEPTOS CLAVE
+1579: Es la EPI idiopática más frecuente.
+1580: Predomina en la quinta-sexta década.
+1581: Tiene mal pronóstico.
+1582: ⚡ REPASO ACTIVO
+1583: Causa desconocida.
+1584: Mayor frecuencia con la edad.
+1585: Predominio en varones.
+1586: Asociación frecuente con tabaquismo.
+1587: Supervivencia aproximada del 50% a cinco años.
+1588: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1589: Tema: Enfermedad pulmonar intersticial
+1590: Subtema: Fibrosis pulmonar idiopática
+1591: Respecto a los hallazgos en la tomografía computarizada de alta resolución (TCAR) de la fibrosis pulmonar idiopática, señale la afirmación INCORRECTA:
+1592: a) La reticulación subpleural con predominio basal posterior es un hallazgo típico.
+1593: b) Las bronquiectasias por tracción forman parte del patrón característico.
+1594: c) El panal de abejas corresponde a un hallazgo de fibrosis avanzada.
+1595: d) El vidrio esmerilado extenso favorece el diagnóstico clásico de fibrosis pulmonar idiopática.
+1596: e) El patrón típico corresponde a neumonía intersticial usual (NIU).
+1597: ✅ Respuesta correcta: d) El vidrio esmerilado extenso favorece el diagnóstico clásico de fibrosis pulmonar idiopática.
+1598: 🧠 ANÁLISIS DE LA PREGUNTA
+1599: El fragmento señala que la presencia de vidrio esmerilado extenso, cambios broncovasculares marcados, micronódulos, atenuación en mosaico o predominio en la parte superior del pulmón debe hacer sospechar un diagnóstico alternativo y no la FPI clásica.
+1600: 🔑 CONCEPTOS CLAVE
+1601: Patrón típico: NIU.
+1602: Predominio basal y subpleural.
+1603: El vidrio esmerilado extenso orienta hacia otro diagnóstico.
+1604: ⚡ REPASO ACTIVO
+1605: Reticulación subpleural.
+1606: Predominio basal posterior.
+1607: Bronquiectasias por tracción.
+1608: Panal de abejas.
+1609: Patrón de NIU.
+1610: Vidrio esmerilado extenso → considerar diagnóstico alternativo.
+1611: Micronódulos → considerar diagnóstico alternativo.
+1612: Atenuación en mosaico → considerar diagnóstico alternativo.
+1613: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1614: Tema: Neumonías intersticiales idiopáticas
+1615: Subtema: Neumonía intersticial aguda
+1616: Respecto a la neumonía intersticial aguda, señale la afirmación INCORRECTA:
+1617: a) Se presenta con insuficiencia respiratoria e hipoxemia de inicio agudo.
+1618: b) Puede confundirse inicialmente con una infección respiratoria superior aguda.
+1619: c) Se caracteriza por una mortalidad baja y recurrencias excepcionales.
+1620: d) Puede requerir ventilación mecánica como parte del tratamiento de sostén.
+1621: e) Es difícil distinguirla del síndrome de dificultad respiratoria aguda.
+1622: ✅ Respuesta correcta: c) Se caracteriza por una mortalidad baja y recurrencias excepcionales.
+1623: 🧠 ANÁLISIS DE LA PREGUNTA
+1624: La neumonía intersticial aguda es una enfermedad poco frecuente, grave y potencialmente mortal. La mortalidad al mes puede superar el 50% y las recurrencias son comunes.
+1625: 🔑 CONCEPTOS CLAVE
+1626: Inicio agudo con hipoxemia.
+1627: Mortalidad elevada.
+1628: Tratamiento principalmente de sostén.
+1629: ⚡ REPASO ACTIVO
+1630: Inicio agudo de insuficiencia respiratoria.
+1631: Hipoxemia.
+1632: Pródromo similar a infección respiratoria superior.
+1633: Mortalidad al mes superior al 50%.
+1634: Recurrencias frecuentes.
+1635: Ventilación mecánica como tratamiento de sostén.
+1636: Glucocorticoides sin eficacia claramente demostrada.
+1637: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1638: Tema: Neumonías intersticiales idiopáticas
+1639: Subtema: Hallazgos diagnósticos de neumonía intersticial aguda
+1640: ¿Cuál es la combinación característica de hallazgos radiológicos e histopatológicos en la neumonía intersticial aguda?
+1641: a) Vidrio esmerilado bilateral y daño alveolar difuso.
+1642: b) Panal de abejas basal y granulomas no caseificantes.
+1643: c) Nódulos centrolobulillares y neumonía organizada aislada.
+1644: d) Adenopatías hiliares y fibrosis intersticial usual.
+1645: e) Consolidación lobar y necrosis caseosa extensa.
+1646: ✅ Respuesta correcta: a) Vidrio esmerilado bilateral y daño alveolar difuso.
+1647: 🧠 ANÁLISIS DE LA PREGUNTA
+1648: La tomografía muestra habitualmente opacidades bilaterales en vidrio esmerilado y áreas de consolidación. Histológicamente, el hallazgo característico es el daño alveolar difuso.
+1649: 🔑 CONCEPTOS CLAVE
+1650: Vidrio esmerilado bilateral.
+1651: Consolidaciones del espacio aéreo.
+1652: Daño alveolar difuso.
+1653: ⚡ REPASO ACTIVO
+1654: TCAR:
+1655: Opacidades bilaterales en vidrio esmerilado.
+1656: Regiones de consolidación del espacio aéreo.
+1657: Histopatología:
+1658: Daño alveolar difuso.
+1659: Confirmación mediante biopsia pulmonar quirúrgica.
+1660: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1661: Tema: Neumonías intersticiales idiopáticas
+1662: Subtema: Exacerbación aguda de enfermedad pulmonar intersticial
+1663: ¿Cuál de las siguientes características corresponde a una exacerbación aguda de fibrosis pulmonar idiopática?
+1664: a) Empeoramiento respiratorio progresivo durante más de un año.
+1665: b) Insuficiencia respiratoria aguda en menos de treinta días.
+1666: c) Mejoría espontánea con mortalidad inferior al cinco por ciento.
+1667: d) Consolidación unilateral sin opacidades en vidrio esmerilado.
+1668: e) Respuesta comprobada a inmunosupresores y citotóxicos.
+1669: ✅ Respuesta correcta: b) Insuficiencia respiratoria aguda en menos de treinta días.
+1670: 🧠 ANÁLISIS DE LA PREGUNTA
+1671: La exacerbación aguda se caracteriza por insuficiencia respiratoria e hipoxemia de inicio menor de 30 días en un paciente con fibrosis pulmonar subyacente, sin una causa alternativa identificada.
+1672: 🔑 CONCEPTOS CLAVE
+1673: Inicio menor de 30 días.
+1674: Hipoxemia sobre fibrosis pulmonar previa.
+1675: Mortalidad muy elevada.
+1676: ⚡ REPASO ACTIVO
+1677: Insuficiencia respiratoria de inicio agudo.
+1678: Duración menor de 30 días.
+1679: Fibrosis pulmonar subyacente.
+1680: Ausencia de neumonía o insuficiencia cardiaca como explicación.
+1681: Vidrio esmerilado bilateral y consolidaciones.
+1682: Daño alveolar difuso en histología.
+1683: Mortalidad entre 50% y 85%.
+1684: Beneficio no probado de inmunosupresores o citotóxicos.
+1685: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1686: Tema: Enfermedad pulmonar intersticial asociada a enfermedades del tejido conjuntivo
+1687: Subtema: Esclerosis sistémica
+1688: Respecto a la EPI asociada a esclerosis sistémica, señale la afirmación INCORRECTA:
+1689: a) La EPI es la manifestación pulmonar más común de la enfermedad.
+1690: b) La hipertensión pulmonar aparece únicamente junto con la EPI.
+1691: c) La enfermedad difusa presenta EPI con mayor frecuencia que la limitada.
+1692: d) La TCAR puede mostrar patrones de NII o de NIU.
+1693: e) La dilatación esofágica puede observarse en los estudios de imagen.
+1694: ✅ Respuesta correcta: b) La hipertensión pulmonar aparece únicamente junto con la EPI.
+1695: 🧠 ANÁLISIS DE LA PREGUNTA
+1696: La hipertensión pulmonar puede presentarse de forma aislada o asociada con EPI. Se observa con mayor frecuencia en pacientes con esclerosis sistémica limitada.
+1697: 🔑 CONCEPTOS CLAVE
+1698: La EPI es la manifestación pulmonar más frecuente.
+1699: La hipertensión pulmonar puede aparecer sin EPI.
+1700: La TCAR puede mostrar patrones de NII o NIU.
+1701: ⚡ REPASO ACTIVO
+1702: EPI en enfermedad difusa: aproximadamente 50%.
+1703: EPI en enfermedad limitada: aproximadamente 30%.
+1704: Hipertensión pulmonar aislada o asociada a EPI.
+1705: Patrones radiológicos de NII o NIU.
+1706: Posible neumonía organizada o daño alveolar difuso.
+1707: Dilatación esofágica y aumento de la arteria pulmonar.
+1708: Ciclofosfamida con beneficio moderado y toxicidad importante.
+1709: Micofenolato con eficacia similar y mejor tolerabilidad.
+1710: Nintedanib puede beneficiar la fibrosis progresiva.
+1711: Puede considerarse trasplante pulmonar en casos seleccionados.
+1712: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1713: Tema: Enfermedad pulmonar intersticial asociada a enfermedades del tejido conjuntivo
+1714: Subtema: Artritis reumatoide
+1715: Respecto a la EPI asociada a artritis reumatoide, señale la afirmación INCORRECTA:
+1716: a) Es más frecuente en varones con antecedente de tabaquismo.
+1717: b) El patrón de NIU es el hallazgo radiológico más frecuente.
+1718: c) La EPI suele aparecer solo después de una artritis muy sintomática.
+1719: d) Las alteraciones tomográficas pueden superar a los casos clínicamente evidentes.
+1720: e) El patrón de NIU se relaciona con una supervivencia más reducida.
+1721: ✅ Respuesta correcta: c) La EPI suele aparecer solo después de una artritis muy sintomática.
+1722: 🧠 ANÁLISIS DE LA PREGUNTA
+1723: La EPI puede ser la primera manifestación de la artritis reumatoide. Además, muchos pacientes tienen alteraciones en la TCAR sin síntomas respiratorios evidentes.
+1724: 🔑 CONCEPTOS CLAVE
+1725: Puede preceder a las manifestaciones articulares.
+1726: La NIU es el patrón más frecuente.
+1727: La NIU se asocia con peor pronóstico.
+1728: ⚡ REPASO ACTIVO
+1729: Complicación extraarticular frecuente.
+1730: Más común en varones fumadores.
+1731: Puede ser la primera manifestación de artritis reumatoide.
+1732: EPI clínicamente evidente en cerca del 10%.
+1733: Alteraciones tomográficas en aproximadamente 40-50%.
+1734: Patrón de NIU más frecuente.
+1735: Patrón de NII también posible.
+1736: NIU y daño alveolar difuso asociados con menor supervivencia.
+1737: Tratamiento con inmunodepresores o citotóxicos de eficacia variable.
+1738: Trasplante pulmonar posible en enfermedad progresiva refractaria.
+1739: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 293.
+1740: Tema: Trastornos de la pleura
+1741: Subtema: Clasificación de los derrames pleurales
+1742: Un paciente con insuficiencia cardiaca presenta un derrame pleural que, según los criterios de Light, cumple un criterio de exudado. Sin embargo, el cuadro clínico continúa siendo altamente sugestivo de un trasudado. ¿Qué estudio adicional ayuda a reclasificar correctamente este derrame?
+1743: a) Gradiente de albúmina sérica-líquido pleural mayor de 3,1 g/dL
+1744: b) Determinación de glucosa en líquido pleural
+1745: c) Recuento diferencial de neutrófilos
+1746: d) Determinación de triglicéridos pleurales
+1747: e) Medición del pH pleural
+1748: ✅ Respuesta correcta: a) Gradiente de albúmina sérica-líquido pleural mayor de 3,1 g/dL
+1749: 🧠 ANÁLISIS
+1750: Los diuréticos pueden convertir falsamente un trasudado en exudado según los criterios de Light. En estos casos, un gradiente de albúmina >3,1 g/dL favorece un trasudado.
+1751: 🔑 CONCEPTOS CLAVE
+1752: Los criterios de Light pueden sobreclasificar algunos trasudados.
+1753: El gradiente de albúmina corrige esta limitación.
+1754: La insuficiencia cardiaca es la causa más frecuente de trasudado.
+1755: ⚡ REPASO ACTIVO
+1756: Light: proteínas >0,5; LDH >0,6; LDH pleural >2/3 del límite superior sérico.
+1757: Gradiente albúmina >3,1 g/dL → favorece trasudado.
+1758: 📖 Referencia: Harrison. Principios de Medicina Interna, 21.ª edición. Capítulo 294.
+1759: Tema: Trastornos de la pleura
+1760: Subtema: Derrame paraneumónico
+1761: Respecto al derrame pleural paraneumónico complicado, ¿cuál de los siguientes hallazgos constituye la indicación más fuerte para drenaje pleural?
+1762: a) Presencia de pus en la cavidad pleural
+1763: b) Glucosa pleural ligeramente disminuida
+1764: c) Derrame unilateral pequeño
+1765: d) Proteínas elevadas en líquido pleural
+1766: e) Predominio de neutrófilos
+1767: ✅ Respuesta correcta: a) Presencia de pus en la cavidad pleural
+1768: 🧠 ANÁLISIS
+1769: El empiema (pus macroscópico) representa la forma más grave del derrame paraneumónico y requiere drenaje inmediato.
+1770: 🔑 CONCEPTOS CLAVE
+1771: pH <7,20 aumenta gravedad.
+1772: Glucosa <60 mg/dL apoya complicación.
+1773: El empiema siempre requiere drenaje.
+1774: ⚡ REPASO ACTIVO
+1775: Criterios de complicación:
+1776: Loculaciones.
+1777: pH <7,20.
+1778: Glucosa <60 mg/dL.
+1779: Gram/cultivo positivo.
+1780: Pus.
+1781: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1782: Tema: Trastornos de la pleura
+1783: Subtema: Derrame maligno
+1784: Un paciente con sospecha de derrame pleural maligno presenta citología negativa en la primera toracocentesis. ¿Cuál es el siguiente procedimiento con mayor rendimiento diagnóstico?
+1785: a) Toracoscopia
+1786: b) Broncoscopia
+1787: c) PET corporal
+1788: d) Resonancia magnética
+1789: e) Espirometría
+1790: ✅ Respuesta correcta: a) Toracoscopia
+1791: 🧠 ANÁLISIS
+1792: La toracoscopia permite biopsia dirigida y confirma la mayoría de los derrames malignos cuando la citología inicial es negativa.
+1793: 🔑 CONCEPTOS CLAVE
+1794: La citología es el primer estudio.
+1795: La toracoscopia tiene mayor sensibilidad.
+1796: Puede realizar pleurodesis en el mismo procedimiento.
+1797: ⚡ REPASO ACTIVO
+1798: Diagnóstico:
+1799: Citología.
+1800: Toracoscopia.
+1801: Biopsia pleural.
+1802: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1803: Tema: Trastornos de la pleura
+1804: Subtema: Hidrotórax hepático
+1805: Respecto al hidrotórax hepático, señale la afirmación INCORRECTA.
+1806: a) Se presenta principalmente en el hemitórax derecho.
+1807: b) Se produce por paso de líquido ascítico a través del diafragma.
+1808: c) Puede ocasionar disnea intensa.
+1809: d) Habitualmente aparece en ausencia de ascitis.
+1810: e) Es una complicación de la cirrosis.
+1811: ✅ Respuesta correcta: d) Habitualmente aparece en ausencia de ascitis.
+1812: 🧠 ANÁLISIS
+1813: El hidrotórax hepático suele aparecer en pacientes con ascitis secundaria a cirrosis.
+1814: 🔑 CONCEPTOS CLAVE
+1815: Predominio derecho.
+1816: Comunicación peritoneo-pleural.
+1817: Asociado a cirrosis.
+1818: ⚡ REPASO ACTIVO
+1819: Cirrosis.
+1820: Ascitis.
+1821: Paso por defectos diafragmáticos.
+1822: Derrame derecho.
+1823: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1824: Tema: Trastornos de la pleura
+1825: Subtema: Quilotórax
+1826: ¿Cuál hallazgo confirma el diagnóstico de quilotórax?
+1827: a) Triglicéridos pleurales superiores a 110 mg/dL
+1828: b) Hematocrito pleural mayor al 50%
+1829: c) ADA mayor de 40 UI/L
+1830: d) NT-proBNP elevado
+1831: e) pH menor de 7,20
+1832: ✅ Respuesta correcta: a) Triglicéridos pleurales superiores a 110 mg/dL
+1833: 🧠 ANÁLISIS
+1834: El quilotórax corresponde a acumulación de quilo y se caracteriza por triglicéridos elevados.
+1835: 🔑 CONCEPTOS CLAVE
+1836: Líquido lechoso.
+1837: Lesión del conducto torácico.
+1838: Triglicéridos >110 mg/dL.
+1839: ⚡ REPASO ACTIVO
+1840: Aspecto lechoso.
+1841: Triglicéridos elevados.
+1842: Trauma y cirugía como causas frecuentes.
+1843: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1844: Tema: Trastornos de la pleura
+1845: Subtema: Hemotórax
+1846: Respecto al hemotórax, ¿qué criterio establece el diagnóstico?
+1847: a) Hematocrito del líquido pleural mayor del 50% del hematocrito periférico
+1848: b) Proteínas pleurales mayores de 3 g/dL
+1849: c) LDH pleural elevada
+1850: d) ADA elevada
+1851: e) Glucosa menor de 60 mg/dL
+1852: ✅ Respuesta correcta: a) Hematocrito del líquido pleural mayor del 50% del hematocrito periférico
+1853: 🧠 ANÁLISIS
+1854: El diagnóstico depende de comparar el hematocrito pleural con el periférico.
+1855: 🔑 CONCEPTOS CLAVE
+1856: Principal causa: trauma.
+1857: Requiere drenaje.
+1858: Vigilar cuantía del sangrado.
+1859: ⚡ REPASO ACTIVO
+1860: Trauma.
+1861: Hematocrito >50%.
+1862: Toracostomía.
+1863: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1864: Tema: Trastornos de la pleura
+1865: Subtema: Pleuritis tuberculosa
+1866: Todos los siguientes apoyan el diagnóstico de pleuritis tuberculosa, EXCEPTO:
+1867: a) Predominio persistente de neutrófilos durante toda la evolución
+1868: b) Exudado con predominio linfocitario
+1869: c) ADA elevada
+1870: d) Interferón gamma elevado
+1871: e) Biopsia pleural compatible
+1872: ✅ Respuesta correcta: a) Predominio persistente de neutrófilos durante toda la evolución
+1873: 🧠 ANÁLISIS
+1874: La pleuritis tuberculosa típicamente presenta predominio linfocitario.
+1875: 🔑 CONCEPTOS CLAVE
+1876: ADA >40 UI/L.
+1877: Exudado linfocitario.
+1878: Biopsia útil.
+1879: ⚡ REPASO ACTIVO
+1880: Linfocitos.
+1881: ADA.
+1882: Interferón gamma.
+1883: Cultivo.
+1884: Biopsia.
+1885: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1886: Tema: Trastornos de la pleura
+1887: Subtema: Neumotórax espontáneo primario
+1888: ¿Cuál es el tratamiento inicial recomendado para el primer episodio de neumotórax espontáneo primario?
+1889: a) Aspiración simple
+1890: b) Toracotomía
+1891: c) Pleurodesis inmediata
+1892: d) Lobectomía
+1893: e) Observación hospitalaria prolongada
+1894: ✅ Respuesta correcta: a) Aspiración simple
+1895: 🧠 ANÁLISIS
+1896: La aspiración simple constituye el manejo inicial recomendado en la mayoría de los pacientes.
+1897: 🔑 CONCEPTOS CLAVE
+1898: Primer episodio.
+1899: Aspiración.
+1900: Cirugía si recurre.
+1901: ⚡ REPASO ACTIVO
+1902: Aspiración.
+1903: Toracoscopia.
+1904: Abrasión pleural.
+1905: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1906: Tema: Trastornos de la pleura
+1907: Subtema: Neumotórax a tensión
+1908: ¿Cuál es la principal alteración fisiopatológica del neumotórax a tensión?
+1909: a) Disminución del retorno venoso y del gasto cardiaco
+1910: b) Incremento del retorno venoso
+1911: c) Aumento del gasto cardiaco
+1912: d) Hipervolemia aguda
+1913: e) Vasodilatación sistémica marcada
+1914: ✅ Respuesta correcta: a) Disminución del retorno venoso y del gasto cardiaco
+1915: 🧠 ANÁLISIS
+1916: La presión intrapleural positiva desplaza el mediastino y reduce el retorno venoso.
+1917: 🔑 CONCEPTOS CLAVE
+1918: Emergencia vital.
+1919: Compresión mediastínica.
+1920: Choque obstructivo.
+1921: ⚡ REPASO ACTIVO
+1922: Presión positiva.
+1923: Menor retorno venoso.
+1924: Menor gasto cardiaco.
+1925: 📖 Referencia: Harrison, 21.ª edición. Capítulo 294.
+1926: Tema: Trastornos de la pleura
+1927: Subtema: Mesotelioma pleural
+1928: ¿Cuál de las siguientes características es típica del mesotelioma pleural maligno?
+1929: a) Antecedente de exposición al asbesto
+1930: b) Asociación con tabaquismo intenso como principal factor causal
+1931: c) Derrame pleural siempre bilateral
+1932: d) Resolución espontánea del derrame
+1933: e) Citología positiva en todos los casos
+1934: ✅ Respuesta correcta: a) Antecedente de exposición al asbesto
+1935: 🧠 ANÁLISIS
+1936: La mayoría de los mesoteliomas se relaciona con exposición ocupacional al asbesto y suele requerir biopsia para el diagnóstico.
+1937: 🔑 CONCEPTOS CLAVE
+1938: Neoplasia primaria de la pleura.
+1939: Asociación con asbesto.
+1940: Diagnóstico mediante biopsia o toracoscopia.
+1941: ⚡ REPASO ACTIVO
+1942: Exposición a asbesto.
+1943: Dolor torácico y disnea.
+1944: Derrame pleural.
+1945: Engrosamiento pleural difuso.
+1946: Confirmación histológica.
+1947: 📖 Referencia: Harrison. Principios de Medicina Interna, 21.ª edición. Capítulo 294.
+1948: Tema: Trastornos de la pleura
+1949: Subtema: Causa más frecuente de derrame pleural
+1950: ¿Cuál es la causa más frecuente de derrame pleural?
+1951: a) Insuficiencia ventricular izquierda.
+1952: b) Neumonía bacteriana adquirida.
+1953: c) Neoplasia pleural metastásica.
+1954: d) Embolia pulmonar aguda.
+1955: e) Cirrosis hepática avanzada.
+1956: ✅ Respuesta correcta: a) Insuficiencia ventricular izquierda.
+1957: 🧠 ANÁLISIS DE LA PREGUNTA
+1958: La insuficiencia ventricular izquierda es la causa más común de derrame pleural. El aumento del líquido intersticial pulmonar supera la capacidad de drenaje de los linfáticos pleurales.
+1959: 🔑 CONCEPTOS CLAVE
+1960: Es la causa más frecuente de derrame pleural.
+1961: Habitualmente produce un trasudado.
+1962: Los derrames suelen ser bilaterales y comparables.
+1963: ⚡ REPASO ACTIVO
+1964: Causa más frecuente de derrame pleural: insuficiencia ventricular izquierda.
+1965: Principales causas de trasudado: insuficiencia ventricular izquierda y cirrosis.
+1966: Principales causas de exudado: neumonía bacteriana, neoplasia, infección viral y embolia pulmonar.
+1967: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+1968: Tema: Trastornos de la pleura
+1969: Subtema: Causas principales de trasudado
+1970: ¿Cuáles son las principales causas de derrame pleural trasudativo?
+1971: a) Neumonía bacteriana y embolia pulmonar.
+1972: b) Insuficiencia ventricular izquierda y cirrosis.
+1973: c) Neoplasia maligna e infección viral.
+1974: d) Tuberculosis pleural y mesotelioma.
+1975: e) Quilotórax traumático y hemotórax.
+1976: ✅ Respuesta correcta: b) Insuficiencia ventricular izquierda y cirrosis.
+1977: 🧠 ANÁLISIS DE LA PREGUNTA
+1978: Los trasudados se producen por alteraciones generales de la formación o absorción del líquido pleural. Sus principales causas son la insuficiencia ventricular izquierda y la cirrosis.
+1979: 🔑 CONCEPTOS CLAVE
+1980: Los trasudados reflejan alteraciones sistémicas.
+1981: La insuficiencia cardiaca es la causa principal.
+1982: La cirrosis puede originar hidrotórax hepático.
+1983: ⚡ REPASO ACTIVO
+1984: Trasudados principales:
+1985: Insuficiencia ventricular izquierda.
+1986: Cirrosis.
+1987: Exudados principales:
+1988: Neumonía bacteriana.
+1989: Neoplasia maligna.
+1990: Infección viral.
+1991: Embolia pulmonar.
+1992: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+1993: Tema: Trastornos de la pleura
+1994: Subtema: Causas principales de exudado
+1995: Todas las siguientes son causas principales de derrame pleural exudativo, EXCEPTO:
+1996: a) Cirrosis hepática con ascitis.
+1997: b) Neumonía bacteriana pulmonar.
+1998: c) Neoplasia maligna metastásica.
+1999: d) Infección viral respiratoria.
+2000: e) Embolia pulmonar aguda.
+2001: ✅ Respuesta correcta: a) Cirrosis hepática con ascitis.
+2002: 🧠 ANÁLISIS DE LA PREGUNTA
+2003: La cirrosis produce principalmente un derrame trasudativo. La neumonía bacteriana, la neoplasia, la infección viral y la embolia pulmonar son causas principales de exudado.
+2004: 🔑 CONCEPTOS CLAVE
+2005: La cirrosis produce trasudado.
+2006: Los exudados reflejan alteraciones pleurales locales.
+2007: La neumonía y la neoplasia son causas frecuentes.
+2008: ⚡ REPASO ACTIVO
+2009: Trasudado:
+2010: Insuficiencia ventricular izquierda.
+2011: Cirrosis.
+2012: Exudado:
+2013: Neumonía bacteriana.
+2014: Neoplasia maligna.
+2015: Infección viral.
+2016: Embolia pulmonar.
+2017: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2018: Tema: Trastornos de la pleura
+2019: Subtema: Derrame pleural exudativo más frecuente
+2020: ¿Cuál es probablemente el derrame pleural exudativo más frecuente?
+2021: a) Derrame pleural tuberculoso.
+2022: b) Derrame pleural neoplásico.
+2023: c) Derrame pleural paraneumónico.
+2024: d) Derrame pleural pancreático.
+2025: e) Derrame pleural quiloso.
+2026: ✅ Respuesta correcta: c) Derrame pleural paraneumónico.
+2027: 🧠 ANÁLISIS DE LA PREGUNTA
+2028: El derrame paraneumónico, asociado con neumonía bacteriana, absceso pulmonar o bronquiectasias, probablemente constituye el exudado pleural más frecuente.
+2029: 🔑 CONCEPTOS CLAVE
+2030: Se relaciona con infecciones bacterianas pulmonares.
+2031: Puede evolucionar a empiema.
+2032: Debe buscarse en todo paciente con neumonía.
+2033: ⚡ REPASO ACTIVO
+2034: Derrame paraneumónico:
+2035: Neumonía bacteriana.
+2036: Absceso pulmonar.
+2037: Bronquiectasias.
+2038: Empiema:
+2039: Presencia macroscópica de pus.
+2040: Derrame neoplásico:
+2041: Segundo exudado más frecuente.
+2042: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2043: Tema: Trastornos de la pleura
+2044: Subtema: Segundo exudado más frecuente
+2045: ¿Cuál es el segundo tipo más frecuente de derrame pleural exudativo?
+2046: a) Derrame pleural tuberculoso.
+2047: b) Derrame pleural maligno metastásico.
+2048: c) Derrame pleural por pancreatitis.
+2049: d) Derrame pleural por fármacos.
+2050: e) Derrame pleural por traumatismo.
+2051: ✅ Respuesta correcta: b) Derrame pleural maligno metastásico.
+2052: 🧠 ANÁLISIS DE LA PREGUNTA
+2053: Los derrames malignos secundarios a enfermedad metastásica constituyen el segundo tipo más frecuente de derrame pleural exudativo.
+2054: 🔑 CONCEPTOS CLAVE
+2055: El derrame maligno suele indicar enfermedad diseminada.
+2056: La disnea puede ser desproporcionada al volumen.
+2057: El diagnóstico inicial suele realizarse por citología.
+2058: ⚡ REPASO ACTIVO
+2059: Exudado probablemente más frecuente:
+2060: Derrame paraneumónico.
+2061: Segundo exudado más frecuente:
+2062: Derrame maligno metastásico.
+2063: Principales tumores:
+2064: Pulmón.
+2065: Mama.
+2066: Linfoma.
+2067: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2068: Tema: Trastornos de la pleura
+2069: Subtema: Neoplasias causantes de derrame pleural
+2070: ¿Cuál es el grupo de tumores que causa aproximadamente 75% de los derrames pleurales neoplásicos?
+2071: a) Pulmón, mama y linfoma.
+2072: b) Colon, próstata y riñón.
+2073: c) Páncreas, hígado y ovario.
+2074: d) Tiroides, vejiga y estómago.
+2075: e) Melanoma, sarcoma y glioma.
+2076: ✅ Respuesta correcta: a) Pulmón, mama y linfoma.
+2077: 🧠 ANÁLISIS DE LA PREGUNTA
+2078: El carcinoma pulmonar, el carcinoma mamario y el linfoma representan en conjunto alrededor de tres cuartas partes de los derrames pleurales malignos.
+2079: 🔑 CONCEPTOS CLAVE
+2080: El carcinoma pulmonar es una causa principal.
+2081: El carcinoma mamario también es frecuente.
+2082: El linfoma completa el grupo predominante.
+2083: ⚡ REPASO ACTIVO
+2084: Tumores responsables de aproximadamente 75%:
+2085: Carcinoma pulmonar.
+2086: Carcinoma de mama.
+2087: Linfoma.
+2088: Derrame asociado:
+2089: Exudativo.
+2090: Frecuentemente acompañado de disnea.
+2091: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2092: Tema: Trastornos de la pleura
+2093: Subtema: Diagnóstico diferencial del derrame no explicado
+2094: ¿Cuál es el trastorno que se omite con mayor frecuencia al evaluar un derrame pleural sin diagnóstico?
+2095: a) Hidrotórax hepático.
+2096: b) Embolia pulmonar.
+2097: c) Mesotelioma pleural.
+2098: d) Quilotórax traumático.
+2099: e) Pleuritis tuberculosa.
+2100: ✅ Respuesta correcta: b) Embolia pulmonar.
+2101: 🧠 ANÁLISIS DE LA PREGUNTA
+2102: La embolia pulmonar es el diagnóstico que pasa inadvertido con mayor frecuencia en pacientes con derrame pleural de causa no definida.
+2103: 🔑 CONCEPTOS CLAVE
+2104: La disnea es el síntoma más común.
+2105: El líquido casi siempre es exudativo.
+2106: Debe considerarse ante un derrame sin explicación.
+2107: ⚡ REPASO ACTIVO
+2108: Embolia pulmonar:
+2109: Diagnóstico omitido con mayor frecuencia.
+2110: Disnea como síntoma predominante.
+2111: Derrame casi siempre exudativo.
+2112: Confirmación:
+2113: Tomografía helicoidal.
+2114: Arteriografía pulmonar.
+2115: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2116: Tema: Trastornos de la pleura
+2117: Subtema: Causa más frecuente de quilotórax
+2118: ¿Cuál es la causa más frecuente de quilotórax?
+2119: a) Lesión traumática del conducto torácico.
+2120: b) Infección bacteriana del espacio pleural.
+2121: c) Insuficiencia ventricular izquierda.
+2122: d) Cirrosis hepática con ascitis.
+2123: e) Embolia pulmonar recurrente.
+2124: ✅ Respuesta correcta: a) Lesión traumática del conducto torácico.
+2125: 🧠 ANÁLISIS DE LA PREGUNTA
+2126: La causa más frecuente de quilotórax es la lesión traumática del conducto torácico, generalmente producida durante una intervención quirúrgica.
+2127: 🔑 CONCEPTOS CLAVE
+2128: El quilotórax resulta de la rotura del conducto torácico.
+2129: La causa predominante es traumática.
+2130: Los tumores mediastínicos también pueden producirlo.
+2131: ⚡ REPASO ACTIVO
+2132: Causa más frecuente:
+2133: Traumatismo, generalmente quirúrgico.
+2134: Otra causa importante:
+2135: Tumores mediastínicos.
+2136: Hallazgos:
+2137: Líquido lechoso.
+2138: Triglicéridos >110 mg/dL.
+2139: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2140: Tema: Trastornos de la pleura
+2141: Subtema: Causa más frecuente de hemotórax
+2142: ¿Cuál es la causa más frecuente de hemotórax?
+2143: a) Neoplasia pleural metastásica.
+2144: b) Rotura espontánea de un vaso.
+2145: c) Traumatismo torácico.
+2146: d) Tuberculosis pleural.
+2147: e) Insuficiencia cardiaca.
+2148: ✅ Respuesta correcta: c) Traumatismo torácico.
+2149: 🧠 ANÁLISIS DE LA PREGUNTA
+2150: La mayoría de los hemotórax se produce por traumatismos. Otras causas descritas son la rotura de un vaso sanguíneo y las neoplasias.
+2151: 🔑 CONCEPTOS CLAVE
+2152: El traumatismo es la causa principal.
+2153: El líquido pleural es sanguinolento.
+2154: El diagnóstico depende del hematócrito pleural.
+2155: ⚡ REPASO ACTIVO
+2156: Causas de hemotórax:
+2157: Traumatismo.
+2158: Rotura de un vaso sanguíneo.
+2159: Neoplasia.
+2160: Criterio diagnóstico:
+2161: Hematócrito pleural >50% del periférico.
+2162: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294.
+2163: Tema: Trastornos de la pleura
+2164: Subtema: Causa más frecuente de neumotórax secundario
+2165: Respecto al neumotórax espontáneo secundario, señale la afirmación CORRECTA:
+2166: a) Su causa más frecuente es la enfermedad pulmonar obstructiva crónica.
+2167: b) Su causa más frecuente es la insuficiencia ventricular izquierda.
+2168: c) Su causa más frecuente es la cirrosis hepática con ascitis.
+2169: d) Su causa más frecuente es la neumonía viral no complicada.
+2170: e) Su causa más frecuente es el derrame pleural neoplásico.
+2171: ✅ Respuesta correcta: a) Su causa más frecuente es la enfermedad pulmonar obstructiva crónica.
+2172: 🧠 ANÁLISIS DE LA PREGUNTA
+2173: La mayoría de los neumotórax espontáneos secundarios se relaciona con enfermedad pulmonar obstructiva crónica, aunque puede ocurrir en prácticamente cualquier neumopatía.
+2174: 🔑 CONCEPTOS CLAVE
+2175: Aparece sobre una enfermedad pulmonar previa.
+2176: La causa principal es la enfermedad pulmonar obstructiva crónica.
+2177: Tiene mayor gravedad por la reserva pulmonar disminuida.
+2178: ⚡ REPASO ACTIVO
+2179: Neumotórax primario:
+2180: Sin neumopatía conocida.
+2181: Rotura de ampollas apicales.
+2182: Asociación con tabaquismo.
+2183: Neumotórax secundario:
+2184: Con neumopatía subyacente.
+2185: Causa más frecuente: enfermedad pulmonar obstructiva crónica.
+2186: Mayor riesgo vital.
+2187: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 294
+2188: Tema: Apnea del sueño
+2189: Subtema: Factores de riesgo del síndrome de apnea/hipopnea obstructiva del sueño
+2190: ¿Cuáles son los tres factores de riesgo principales para desarrollar síndrome de apnea/hipopnea obstructiva del sueño?
+2191: a) Obesidad, sexo masculino y edad avanzada.
+2192: b) Tabaquismo, sexo femenino y edad juvenil.
+2193: c) Hipertensión, delgadez y edad preescolar.
+2194: d) Asma, embarazo y actividad física intensa.
+2195: e) Diabetes, anemia y consumo elevado de agua.
+2196: ✅ Respuesta correcta: a) Obesidad, sexo masculino y edad avanzada.
+2197: 🧠 ANÁLISIS DE LA PREGUNTA
+2198: El fragmento identifica a la obesidad, el sexo masculino y la edad avanzada como los principales factores de riesgo del SAHOS. Otros factores anatómicos, genéticos y endocrinos también pueden favorecerlo.
+2199: 🔑 CONCEPTOS CLAVE
+2200: La obesidad constituye un factor de riesgo fundamental.
+2201: La prevalencia es mayor en varones.
+2202: El riesgo aumenta con la edad.
+2203: ⚡ REPASO ACTIVO
+2204: Factores principales:
+2205: Obesidad.
+2206: Sexo masculino.
+2207: Edad avanzada.
+2208: Otros factores:
+2209: Retrognatia.
+2210: Micrognatia.
+2211: Antecedentes familiares.
+2212: Síndrome de Down.
+2213: Síndrome de Treacher-Collins.
+2214: Hipertrofia adenoamigdalina.
+2215: Menopausia.
+2216: Acromegalia.
+2217: Hipotiroidismo.
+2218: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297.
+2219: Tema: Apnea del sueño
+2220: Subtema: Obesidad como factor de riesgo
+2221: Respecto a la relación entre obesidad y síndrome de apnea/hipopnea obstructiva del sueño, señale la afirmación INCORRECTA:
+2222: a) El peso excesivo explica entre 40% y 60% de los casos.
+2223: b) La ausencia de obesidad excluye completamente el diagnóstico.
+2224: c) La obesidad disminuye los volúmenes pulmonares en decúbito.
+2225: d) La grasa faríngea produce estrechamiento de la vía respiratoria.
+2226: e) Los obesos tienen mayor riesgo que las personas normopeso.
+2227: ✅ Respuesta correcta: b) La ausencia de obesidad excluye completamente el diagnóstico.
+2228: 🧠 ANÁLISIS DE LA PREGUNTA
+2229: Aunque la obesidad es un factor de riesgo importante, su ausencia no excluye el SAHOS. También pueden intervenir alteraciones craneofaciales, hipertrofia adenoamigdalina, antecedentes familiares y enfermedades endocrinas.
+2230: 🔑 CONCEPTOS CLAVE
+2231: Entre 40% y 60% de los casos se atribuyen al exceso de peso.
+2232: Los individuos obesos tienen un riesgo aproximadamente cuatro veces mayor.
+2233: Un aumento de 10% del peso incrementa más de 30% el IAH.
+2234: ⚡ REPASO ACTIVO
+2235: Depósito de grasa alrededor de la vía respiratoria.
+2236: Reducción de la elasticidad de la pared torácica.
+2237: Disminución de los volúmenes pulmonares.
+2238: Menor tracción caudal sobre la faringe.
+2239: Mayor tendencia al colapso durante el sueño.
+2240: La ausencia de obesidad no descarta SAHOS.
+2241: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297.
+2242: Tema: Apnea del sueño
+2243: Subtema: Causas de apnea central del sueño
+2244: Todas las siguientes pueden causar apnea central del sueño, EXCEPTO:
+2245: a) Exposición a gran altitud.
+2246: b) Insuficiencia cardiaca.
+2247: c) Hipertrofia adenoamigdalina.
+2248: d) Consumo de opioides.
+2249: e) Trastorno central primario.
+2250: ✅ Respuesta correcta: c) Hipertrofia adenoamigdalina.
+2251: 🧠 ANÁLISIS DE LA PREGUNTA
+2252: La hipertrofia adenoamigdalina favorece obstrucción anatómica de la vía respiratoria y se relaciona con SAHOS, especialmente en niños. La apnea central puede ser primaria, aparecer en gran altitud o ser secundaria a insuficiencia cardiaca u opioides.
+2253: 🔑 CONCEPTOS CLAVE
+2254: La apnea central es menos frecuente que la obstructiva.
+2255: Puede coexistir con apnea obstructiva.
+2256: Se caracteriza por ausencia de esfuerzo inspiratorio.
+2257: ⚡ REPASO ACTIVO
+2258: Causas de apnea central:
+2259: Trastorno primario.
+2260: Gran altitud.
+2261: Insuficiencia cardiaca.
+2262: Uso de opioides.
+2263: Factor obstructivo:
+2264: Hipertrofia adenoamigdalina.
+2265: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297.
+2266: Tema: Apnea del sueño
+2267: Subtema: Clasificación de gravedad
+2268: Un paciente presenta un índice de apnea/hipopnea de 22 episodios por hora de sueño. ¿Cómo debe clasificarse la gravedad del SAHOS?
+2269: a) SAHOS leve.
+2270: b) SAHOS moderado.
+2271: c) SAHOS grave.
+2272: d) Respiración normal.
+2273: e) Estudio no concluyente.
+2274: ✅ Respuesta correcta: b) SAHOS moderado.
+2275: 🧠 ANÁLISIS DE LA PREGUNTA
+2276: Un IAH entre 15 y 29 episodios por hora corresponde a SAHOS moderado. La clasificación también puede valorarse según la somnolencia y la hipoxemia asociadas.
+2277: 🔑 CONCEPTOS CLAVE
+2278: Leve: 5 a 14 episodios por hora.
+2279: Moderado: 15 a 29 episodios por hora.
+2280: Grave: 30 o más episodios por hora.
+2281: ⚡ REPASO ACTIVO
+2282: IAH:
+2283: Número de apneas e hipopneas por hora de sueño.
+2284: Clasificación:
+2285: SAHOS leve: 5-14 por hora.
+2286: SAHOS moderado: 15-29 por hora.
+2287: SAHOS grave: ≥30 por hora.
+2288: La gravedad también considera:
+2289: Hipoxemia.
+2290: Somnolencia.
+2291: Fragmentación del sueño.
+2292: Alteración funcional.
+2293: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297, cuadro 297-2.
+2294: Tema: Apnea del sueño
+2295: Subtema: Clasificación de gravedad
+2296: Respecto a la clasificación del síndrome de apnea/hipopnea obstructiva del sueño, señale la afirmación INCORRECTA:
+2297: a) Un IAH de 10 episodios por hora corresponde a enfermedad leve.
+2298: b) Un IAH de 20 episodios por hora corresponde a enfermedad grave.
+2299: c) Un IAH de 30 episodios por hora corresponde a enfermedad grave.
+2300: d) La hipoxemia asociada puede modificar la valoración de gravedad.
+2301: e) La somnolencia diurna también ayuda a valorar la gravedad.
+2302: ✅ Respuesta correcta: b) Un IAH de 20 episodios por hora corresponde a enfermedad grave.
+2303: 🧠 ANÁLISIS DE LA PREGUNTA
+2304: Un IAH de 20 episodios por hora corresponde a SAHOS moderado. La forma grave comienza con 30 o más episodios por hora.
+2305: 🔑 CONCEPTOS CLAVE
+2306: El IAH es la base de la clasificación.
+2307: La hipoxemia y la somnolencia complementan la valoración.
+2308: La cifra de 30 episodios por hora marca la enfermedad grave.
+2309: ⚡ REPASO ACTIVO
+2310: Leve:
+2311: IAH de 5-14.
+2312: Moderado:
+2313: IAH de 15-29.
+2314: Grave:
+2315: IAH ≥30.
+2316: Variables complementarias:
+2317: Magnitud de desaturación.
+2318: Duración de los episodios.
+2319: Fragmentación del sueño.
+2320: Somnolencia y alteración funcional.
+2321: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297, cuadro 297-2.
+2322: Tema: Apnea del sueño
+2323: Subtema: Tratamiento de elección
+2324: ¿Cuál es el tratamiento médico tradicional con mayor evidencia de eficacia para el SAHOS?
+2325: a) Presión positiva continua de la vía respiratoria.
+2326: b) Dispositivo oral de avance mandibular.
+2327: c) Uvulopalatofaringoplastia como primera medida.
+2328: d) Oxígeno nocturno utilizado como monoterapia.
+2329: e) Hipnóticos sedantes administrados antes de dormir.
+2330: ✅ Respuesta correcta: a) Presión positiva continua de la vía respiratoria.
+2331: 🧠 ANÁLISIS DE LA PREGUNTA
+2332: La presión positiva continua de la vía respiratoria constituye el tratamiento médico con mayor evidencia. Actúa como una férula neumática que mantiene abierta la vía respiratoria durante el sueño.
+2333: 🔑 CONCEPTOS CLAVE
+2334: Mantiene permeable la vía respiratoria.
+2335: Reduce apneas, hipopneas y despertares.
+2336: Mejora el intercambio gaseoso y la somnolencia.
+2337: ⚡ REPASO ACTIVO
+2338: Tratamiento principal:
+2339: Presión positiva continua.
+2340: Forma de administración:
+2341: Mascarilla nasal.
+2342: Mascarilla nasobucal.
+2343: Beneficios:
+2344: Menos apneas e hipopneas.
+2345: Menos despertares.
+2346: Mejor intercambio gaseoso.
+2347: Mayor alerta.
+2348: Mejor ánimo y calidad de vida.
+2349: Reducción moderada de la presión arterial.
+2350: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297.
+2351: Tema: Apnea del sueño
+2352: Subtema: Dispositivos orales
+2353: ¿En cuál de los siguientes pacientes resulta especialmente útil un dispositivo oral de avance mandibular?
+2354: a) Paciente con SAHOS leve que no tolera la presión positiva continua.
+2355: b) Paciente con apnea central secundaria a insuficiencia cardiaca.
+2356: c) Paciente sin estructuras dentales o periodontales adecuadas.
+2357: d) Paciente con SAHOS grave y obesidad marcada como primera elección.
+2358: e) Paciente con hipoventilación diurna e hipercapnia persistente.
+2359: ✅ Respuesta correcta: a) Paciente con SAHOS leve que no tolera la presión positiva continua.
+2360: 🧠 ANÁLISIS DE LA PREGUNTA
+2361: Los dispositivos orales son más útiles en SAHOS leve o cuando el paciente no tolera la presión positiva continua. Funcionan adelantando la mandíbula y la lengua.
+2362: 🔑 CONCEPTOS CLAVE
+2363: Avanzan la mandíbula.
+2364: Amplían la vía respiratoria.
+2365: Requieren dentición y periodonto adecuados.
+2366: ⚡ REPASO ACTIVO
+2367: Indicaciones principales:
+2368: SAHOS leve.
+2369: Intolerancia a presión positiva continua.
+2370: Mecanismo:
+2371: Avance mandibular.
+2372: Avance de la lengua.
+2373: Apertura de la vía respiratoria.
+2374: Efectos adversos:
+2375: Dolor temporomandibular.
+2376: Desplazamiento dental.
+2377: Requieren:
+2378: Estructuras dentales adecuadas.
+2379: Seguimiento del resultado.
+2380: 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 297.
