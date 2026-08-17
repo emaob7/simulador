@@ -138,6 +138,22 @@ function cleanGroupName(grupo: string, semana?: number, normalizado?: string): s
     }
     return "Neumología";
   }
+
+  if (s === 16) {
+    if (norm.includes("Poliquístico") || norm.includes("SOP") || grupo.includes("Poliquísticos") || norm.includes("Hormonas") || norm.includes("Rotterdam") || norm.includes("Metformina") || norm.includes("Hirsutismo")) {
+      return "Síndrome de Ovarios Poliquísticos (SOP)";
+    }
+    if (norm.includes("Sangrado") || norm.includes("SUA") || grupo.includes("Sangrado") || norm.includes("FIGO") || norm.includes("Etario") || norm.includes("Pólipo") || norm.includes("Polipo") || norm.includes("Menstruales")) {
+      return "Sangrado Uterino Anormal (SUA)";
+    }
+    if (norm.includes("Leiomioma") || norm.includes("Adenomiosis") || norm.includes("Benigna") || norm.includes("Hematometra") || grupo.includes("Benigna")) {
+      return "Patología Uterina Benigna";
+    }
+    if (norm.includes("Endometriosis") || grupo.includes("Endometriosis")) {
+      return "Endometriosis";
+    }
+    return grupo;
+  }
   
   return grupo.replace(/^(Módulo|Modulo)\s+[IVXLC\d]+:\s*/i, "").trim();
 }
@@ -994,6 +1010,14 @@ function normalizeS15(rawSubtema: string, questionText: string, questionId?: str
   const normalizado = toTitleCase(rawSubtema);
 
   if (
+    sub.includes('mama') || sub.includes('mastectomía') || sub.includes('mastectomia') || 
+    sub.includes('carcinoma') || sub.includes('andi') || sub.includes('fibroadenoma') || 
+    sub.includes('filoides') || sub.includes('mondor') || sub.includes('ginecomastia') || 
+    sub.includes('telorrea') || sub.includes('paget') || sub.includes('brca') || sub.includes('tamoxifeno')
+  ) {
+    return { grupo: "Mamas (Patología Benigna, Maligna y Cirugía)", normalizado };
+  }
+  if (
     sub.includes('pared') || sub.includes('costal') || sub.includes('estern') || 
     sub.includes('desmoide') || sub.includes('condro') || sub.includes('osteosarcoma')
   ) {
@@ -1013,6 +1037,25 @@ function normalizeS15(rawSubtema: string, questionText: string, questionId?: str
     return { grupo: "Módulo IV: Pleura y Derrame Pleural", normalizado };
   }
   return { grupo: "Módulo II: Neoplasias Pulmonares y Resección Torácica", normalizado };
+}
+
+function normalizeS16(rawSubtema: string, questionText: string, questionId?: string): { grupo: string, normalizado: string } {
+  const sub = rawSubtema.toLowerCase().trim();
+  const normalizado = toTitleCase(rawSubtema);
+
+  if (sub.includes('poliqu') || sub.includes('sop') || sub.includes('hormonas') || sub.includes('rotterdam') || sub.includes('hirsutismo') || sub.includes('metformina') || sub.includes('hairan') || sub.includes('hipertecosis')) {
+    return { grupo: "Síndrome de Ovarios Poliquísticos (SOP)", normalizado };
+  }
+  if (sub.includes('sangrado') || sub.includes('sua') || sub.includes('figo') || sub.includes('menstrual') || sub.includes('etario') || sub.includes('pólipo') || sub.includes('polipo') || sub.includes('coagulopat') || sub.includes('ablación') || sub.includes('ablacion')) {
+    return { grupo: "Sangrado Uterino Anormal (SUA)", normalizado };
+  }
+  if (sub.includes('leiomioma') || sub.includes('adenomiosis') || sub.includes('hematometra') || sub.includes('benigna')) {
+    return { grupo: "Patología Uterina Benigna", normalizado };
+  }
+  if (sub.includes('endometriosis')) {
+    return { grupo: "Endometriosis", normalizado };
+  }
+  return { grupo: "Ginecología", normalizado };
 }
 
 function analyzeSubtemaRaw(
@@ -1087,6 +1130,7 @@ function analyzeSubtemaRaw(
     else if (lower.includes("pediatr") || lower.includes("tep") || lower.includes("bls") || lower.includes("pals") || lower.includes("ahogamiento") || lower.includes("politraumatizado")) activeSemana = 13;
     else if (lower.includes("neumo") || lower.includes("asma") || lower.includes("epoc") || lower.includes("reuma") || lower.includes("artritis") || lower.includes("lupus")) activeSemana = 14;
     else if (lower.includes("torácica") || lower.includes("toracica") || lower.includes("mediastino") || lower.includes("pleura") || lower.includes("quilotórax") || lower.includes("timoma")) activeSemana = 15;
+    else if (lower.includes("poliqu") || lower.includes("sop") || lower.includes("sangrado") || lower.includes("sua") || lower.includes("leiomioma") || lower.includes("adenomiosis")) activeSemana = 16;
   }
 
   let mod: { grupo: string, normalizado: string } | null = null;
@@ -1105,6 +1149,7 @@ function analyzeSubtemaRaw(
   else if (activeSemana === 13) mod = normalizeS13(rawSubtema, questionText || "", questionId);
   else if (activeSemana === 14) mod = normalizeS14(rawSubtema, questionText || "", questionId);
   else if (activeSemana === 15) mod = normalizeS15(rawSubtema, questionText || "", questionId);
+  else if (activeSemana === 16) mod = normalizeS16(rawSubtema, questionText || "", questionId);
 
   if (mod) {
     return { normalizado: mod.normalizado, grupo: mod.grupo };

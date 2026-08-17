@@ -14,6 +14,7 @@ import { questionsSemana12 } from './data/semana12/questions';
 import { questionsSemana13 } from './data/semana13/questions';
 import { questionsSemana14 } from './data/semana14/questions';
 import { questionsSemana15 } from './data/semana15/questions';
+import { questionsSemana16 } from './data/semana16/questions';
 import { Question, AnswerRecord } from './types';
 import { QuizView } from './modules/simulator/QuizView';
 import { ResultsView } from './modules/results/ResultsView';
@@ -51,6 +52,7 @@ const allQuestions: Question[] = [
   ...questionsSemana13,
   ...questionsSemana14,
   ...questionsSemana15,
+  ...questionsSemana16,
 ];
 
 export const getWeekThemeTitle = (materia: string, semana: number): string => {
@@ -69,7 +71,8 @@ export const getWeekThemeTitle = (materia: string, semana: number): string => {
   if (s === 12) return "Amenorreas, Anticonceptivos y Menopausia";
   if (s === 13) return "Urgencias y Emergencias Pediátricas";
   if (s === 14) return "Neumología y Reumatología";
-  if (s === 15) return "Cirugía Torácica (Pared torácica, pulmón, mediastino y pleura)";
+  if (s === 15) return "Cirugía Torácica y Mamas (Pared torácica, pulmón, mediastino, pleura y mamas)";
+  if (s === 16) return "Síndrome de Ovarios Poliquísticos, Sangrado Uterino Anormal, Patología Uterina Benigna y Endometriosis";
   return "";
 };
 
