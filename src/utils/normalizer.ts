@@ -3,6 +3,15 @@ export interface SubtemaInfo {
   grupo: string;
 }
 
+export function normalizeMateriaName(materia?: string): 'Pediatría' | 'Medicina Interna' | 'Cirugía' | 'Ginecología y Obstetricia' {
+  if (!materia) return 'Medicina Interna';
+  const m = materia.toLowerCase().trim();
+  if (m.includes('pedia')) return 'Pediatría';
+  if (m.includes('ciru') || m.includes('quir')) return 'Cirugía';
+  if (m.includes('gine') || m.includes('obste') || m.includes('gyo')) return 'Ginecología y Obstetricia';
+  return 'Medicina Interna';
+}
+
 export function toTitleCase(str: string): string {
   if (!str) return str;
   const lowerWords = ["de", "del", "la", "y", "en", "el", "los", "las", "a", "con", "para", "por", "un", "una", "o", "u", "vs", "vs."];
