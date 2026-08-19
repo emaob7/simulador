@@ -334,39 +334,53 @@ export function QuizView({
                       const isSelected = selectedOption === index;
                       const isCorrect = index === q.correctOptionIndex;
                       
-                      let optionStyle = "bg-[#1E1E1E]/30 border-white/5 text-[#D5D5D5] hover:border-white/10 hover:bg-white/5";
+                      let optionStyle = "bg-[#2E2E2E] border-[#424242] text-[#FAF9F6] hover:border-[#C6A84A]/50 hover:bg-[#2E2E2E]/80";
                       let icon = null;
 
                       if (showFeedback) {
                         if (isCorrect) {
-                          optionStyle = "bg-emerald-950/20 border-emerald-800 text-emerald-300 shadow-md ring-1 ring-emerald-500/30";
-                          icon = <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0" />;
+                          optionStyle = "bg-emerald-950/40 border-emerald-500 text-emerald-300 shadow-md ring-1 ring-emerald-500/40";
+                          icon = <CheckCircle2 className="w-6 h-6 text-emerald-400 flex-shrink-0" />;
                         } else if (isSelected) {
-                          optionStyle = "bg-red-950/20 border-red-800 text-red-300 shadow-md ring-1 ring-red-500/30";
-                          icon = <XCircle className="w-5 h-5 text-red-600 flex-shrink-0" />;
+                          optionStyle = "bg-rose-950/40 border-rose-500 text-rose-300 shadow-md ring-1 ring-rose-500/40";
+                          icon = <XCircle className="w-5 h-5 text-rose-400 flex-shrink-0" />;
                         } else {
-                          optionStyle = "bg-[#1E1E1E]/20 border-white/5 text-[#A0A0A0] opacity-40 shadow-xs";
+                          optionStyle = "bg-[#2E2E2E]/30 border-[#424242]/30 text-[#A6A6A6] opacity-40";
                         }
                       } else if (isSelected) {
-                        optionStyle = "bg-primary/10 border-primary text-primary shadow-lg shadow-primary/5 ring-1 ring-primary";
+                        optionStyle = "bg-[#2E2E2E] border-[#C6A84A] text-[#E0AF26] shadow-[0_0_20px_rgba(198,168,74,0.2)] ring-1 ring-[#C6A84A]";
                       }
 
-                      const OptionComponent = showFeedback ? 'div' : 'button';
-
                       return (
-                        <OptionComponent
+                        <button
                           key={index}
-                          {...(!isSubmitted ? { onClick: () => handleOptionSelect(q.id, index) } : {})}
-                          className={`w-full text-left p-4 md:p-5 rounded-xl border transition-all duration-300 flex items-center justify-between gap-4 ${optionStyle} ${!isSubmitted ? 'cursor-pointer hover:bg-white/5 active:scale-[0.99]' : 'cursor-default'}`}
+                          type="button"
+                          disabled={showFeedback}
+                          onClick={() => handleOptionSelect(q.id, index)}
+                          className={`w-full text-left p-4 md:p-5 rounded-2xl border transition-all duration-200 flex items-center justify-between gap-4 ${optionStyle} ${!showFeedback ? 'cursor-pointer active:scale-[0.99]' : 'cursor-default'}`}
                         >
                           <div className="flex items-center gap-4">
-                            <span translate="no" className={`notranslate flex items-center justify-center w-8 h-8 rounded-lg text-sm font-black transition-all duration-300 ${isSubmitted && isCorrect ? 'bg-emerald-500 text-white' : isSubmitted && isSelected ? 'bg-red-500 text-white' : isSelected ? 'bg-primary text-[#0A0A0A]' : 'bg-white/5 text-[#A0A0A0] border border-white/5'}`}>
+                            <span translate="no" className={`notranslate flex items-center justify-center w-8 h-8 rounded-xl text-sm font-black transition-all duration-200 shrink-0 ${
+                              showFeedback && isCorrect 
+                                ? 'bg-emerald-500 text-[#121212]' 
+                                : (showFeedback && isSelected 
+                                    ? 'bg-rose-500 text-white' 
+                                    : (isSelected 
+                                        ? 'bg-[#E0AF26] text-[#121212]' 
+                                        : 'bg-[#1C1C1C] text-[#A6A6A6] border border-[#424242]'))
+                            }`}>
                               {String.fromCharCode(65 + index)}
                             </span>
-                            <span className={`text-sm md:text-base transition-colors duration-300 ${isSubmitted && isCorrect ? 'font-semibold text-emerald-300' : isSelected ? 'text-white font-semibold' : 'text-[#D5D5D5]'}`}>{option}</span>
+                            <span className={`text-sm md:text-base leading-relaxed ${
+                              showFeedback && isCorrect 
+                                ? 'font-bold text-emerald-300' 
+                                : (isSelected ? 'text-[#FFFFFF] font-bold' : 'text-[#FAF9F6]')
+                            }`}>
+                              {option}
+                            </span>
                           </div>
                           {icon}
-                        </OptionComponent>
+                        </button>
                       );
                     })}
                   </div>

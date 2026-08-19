@@ -295,25 +295,6 @@ export default function App() {
     })).sort((a, b) => a.group.localeCompare(b.group));
   }, [availableSubtemasForConfig, selectedMateria, selectedSemana, view]);
 
-  const filteredAvailableQuestions = useMemo(() => {
-    if (!selectedMateria || selectedSemana === null) return [];
-    let filtered = allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
-    
-    const isCombinedTema = !selectedTema || selectedTema.includes(' • ') || selectedTema === 'Todos los Temas';
-    if (!isCombinedTema) {
-      filtered = filtered.filter(q => getEffectiveTema(q) === selectedTema);
-    }
-
-    if (selectedSubtemas.length > 0) {
-      filtered = filtered.filter(q => {
-        if (!q.subtema) return false;
-        const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-        return selectedSubtemas.includes(normalizado);
-      });
-    }
-    return filtered;
-  }, [selectedMateria, selectedSemana, selectedTema, selectedSubtemas]);
-
   const baseQuestionsForWeek = useMemo(() => {
     if (!selectedMateria || selectedSemana === null) return [];
     let filtered = allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
@@ -325,19 +306,12 @@ export default function App() {
     return filtered;
   }, [selectedMateria, selectedSemana, selectedTema]);
 
-  // Keep selectedQuestionIds strictly synchronized with current week questions
-  useEffect(() => {
-    if (view === 'quiz-config' && baseQuestionsForWeek.length > 0) {
-      const validSet = new Set(baseQuestionsForWeek.map(q => q.id));
-      setSelectedQuestionIds(prev => {
-        const validPrev = prev.filter(id => validSet.has(id));
-        return validPrev.length > 0 ? validPrev : baseQuestionsForWeek.map(q => q.id);
-      });
-    }
-  }, [baseQuestionsForWeek, view]);
+  const filteredAvailableQuestions = useMemo(() => {
+    return baseQuestionsForWeek;
+  }, [baseQuestionsForWeek]);
 
   const handleSliderChange = (count: number) => {
-    const ids = filteredAvailableQuestions.slice(0, count).map(q => q.id);
+    const ids = baseQuestionsForWeek.slice(0, count).map(q => q.id);
     setSelectedQuestionIds(ids);
     setQuizConfig(prev => ({ ...prev, count }));
   };
@@ -364,7 +338,7 @@ export default function App() {
       if (anySelected) {
         next = prev.filter(id => !subthemeQIds.includes(id));
       } else {
-        next = [...prev, ...subthemeQIds.filter(id => !prev.includes(id))];
+        next = Array.from(new Set([...prev, ...subthemeQIds]));
       }
       setQuizConfig(config => ({ ...config, count: next.length }));
       return next;
