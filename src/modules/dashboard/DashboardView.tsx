@@ -1,102 +1,70 @@
-import React, { useMemo, useState, useEffect } from 'react';
-import { DataService } from '../../services/DataService';
-import { Materia, Session, UserProgress, Question } from '../../types';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
-  Baby, 
-  Activity, 
-  Scissors, 
-  Heart, 
-  RotateCcw, 
-  AlertCircle, 
-  Bookmark, 
+  BarChart3, 
   Target, 
-  ArrowRight, 
+  Sparkles, 
+  Flame, 
+  ChevronRight, 
   ChevronDown, 
-  BarChart3,
+  RotateCcw,
+  BookOpen,
+  ArrowRight,
+  AlertCircle,
+  Bookmark,
   Calendar,
-  Sparkles,
-  Flame
+  Layers
 } from 'lucide-react';
-import { analyzeSubtema, normalizeMateriaName } from '../../utils/normalizer';
+import { Question } from '../../types';
+import { analyzeSubtema } from '../../utils/normalizer';
 
-const MATERIAS: Materia[] = ['Pediatría', 'Medicina Interna', 'Cirugía', 'Ginecología y Obstetricia'];
+const MATERIAS = ['Pediatría', 'Medicina Interna', 'Cirugía', 'Ginecología y Obstetricia'] as const;
+type Materia = typeof MATERIAS[number];
 
 const MATERIA_ICONS: Record<Materia, React.ReactNode> = {
-  'Pediatría': <Baby className="w-5 h-5" />,
-  'Medicina Interna': <Activity className="w-5 h-5" />,
-  'Cirugía': <Scissors className="w-5 h-5" />,
-  'Ginecología y Obstetricia': <Heart className="w-5 h-5" />
+  'Pediatría': <Layers className="w-5 h-5" />,
+  'Medicina Interna': <Flame className="w-5 h-5" />,
+  'Cirugía': <Target className="w-5 h-5" />,
+  'Ginecología y Obstetricia': <Sparkles className="w-5 h-5" />
 };
 
-export function DashboardView({ 
-  userId, 
-  onReforzar, 
-  allQuestions = [], 
+interface DashboardViewProps {
+  userId?: string;
+  onReforzar?: (materia: string, subtema: string) => void;
+  allQuestions: Question[];
+  onQuestionSelect?: (id: string) => void;
+  savedQuestionIds?: string[];
+  onStartBookmarksQuiz?: () => void;
+  sessions?: any[];
+  progress?: any[];
+  onReloadData?: () => void;
+}
+
+export function DashboardView({
+  userId,
+  onReforzar,
+  allQuestions,
   onQuestionSelect,
   savedQuestionIds = [],
   onStartBookmarksQuiz,
-  sessions: passedSessions,
-  progress: passedProgress,
+  sessions = [],
+  progress = [],
   onReloadData
-}: { 
-  userId: string, 
-  onReforzar?: (materia: string, subtema: string) => void, 
-  allQuestions?: Question[], 
-  onQuestionSelect?: (questionId: string) => void,
-  savedQuestionIds?: string[],
-  onStartBookmarksQuiz?: () => void,
-  sessions?: Session[],
-  progress?: UserProgress[],
-  onReloadData?: () => void
-}) {
-  const [sessionsState, setSessionsState] = useState<Session[]>([]);
-  const [progressState, setProgressState] = useState<UserProgress[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [selectedSemanaSubtemas, setSelectedSemanaSubtemas] = useState<number | 'all'>('all');
-  const [expandedWeeks, setExpandedWeeks] = useState<Record<number, boolean>>({});
+}: DashboardViewProps) {
 
-  const sessions = passedSessions !== undefined ? passedSessions : sessionsState;
-  const progress = passedProgress !== undefined ? passedProgress : progressState;
-
-  const toggleWeek = (semana: number) => {
-    setExpandedWeeks(prev => ({ ...prev, [semana]: !prev[semana] }));
+  // Normalize names
+  const normalizeMateriaName = (m: string): Materia => {
+    const lower = (m || '').toLowerCase();
+    if (lower.includes('pediatr')) return 'Pediatría';
+    if (lower.includes('interna') || lower.includes('medicina')) return 'Medicina Interna';
+    if (lower.includes('cirug')) return 'Cirugía';
+    if (lower.includes('ginec') || lower.includes('obste')) return 'Ginecología y Obstetricia';
+    return 'Pediatría';
   };
 
-  useEffect(() => {
-    const loadData = async () => {
-      if (passedSessions !== undefined && passedProgress !== undefined) {
-        setIsLoading(false);
-        return;
-      }
-      setIsLoading(true);
-      const loadedSessions = await DataService.getSessions(userId);
-      const loadedProgress = await DataService.getProgress(userId);
-      setSessionsState(loadedSessions);
-      setProgressState(loadedProgress);
-      setIsLoading(false);
-    };
-    loadData();
-  }, [userId, passedSessions, passedProgress]);
-
-  const handleGenerateMock = async () => {
-    setIsLoading(true);
-    const { MockDataService } = await import('../../services/MockDataService');
-    await MockDataService.generateDataForUser(userId, 'Dr. Invitado');
-    if (onReloadData) {
-      await onReloadData();
-    } else {
-      const loadedSessions = await DataService.getSessions(userId);
-      const loadedProgress = await DataService.getProgress(userId);
-      setSessionsState(loadedSessions);
-      setProgressState(loadedProgress);
-    }
-    setIsLoading(false);
-  };
-
-  // Global totals
+  // 1. Overall stats
   const totalQuestionsAnswered = useMemo(() => {
-    const seenUnique = new Set(progress.map(p => p.question_id));
-    return seenUnique.size;
+    const seen = new Set(progress.map(p => p.question_id));
+    return seen.size;
   }, [progress]);
 
   const globalAccuracy = useMemo(() => {
@@ -158,152 +126,137 @@ export function DashboardView({
   }, [allQuestions, selectedMateria]);
 
   useEffect(() => {
-    if (availableSemanas.length > 0 && !availableSemanas.includes(selectedSemanaSubtemas as number) && selectedSemanaSubtemas !== 'all') {
+    if (availableSemanas.length > 0) {
       setSelectedSemanaSubtemas('all');
     }
-  }, [availableSemanas, selectedSemanaSubtemas]);
+  }, [selectedMateria, availableSemanas]);
 
-  const questionInfoMap = useMemo(() => {
-    const map = new Map<string, { semana: number, subtema: string, materia: string }>();
-    allQuestions.forEach(q => {
-      const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-      map.set(q.id, { semana: q.semana, subtema: normalizado, materia: normalizeMateriaName(q.materia) });
-    });
-    return map;
-  }, [allQuestions]);
+  const [selectedSemanaSubtemas, setSelectedSemanaSubtemas] = useState<number | 'all'>('all');
+  const [expandedWeeks, setExpandedWeeks] = useState<Record<number, boolean>>({});
 
-  const subtemasDataFull = useMemo(() => {
-    const groups: Record<string, { correct: number, total: number, semana: number }> = {};
-    
+  const toggleWeek = (semana: number) => {
+    setExpandedWeeks(prev => ({ ...prev, [semana]: !prev[semana] }));
+  };
+
+  // Subtopic performance calculations
+  const subtopicMap = useMemo(() => {
+    const map: Record<string, {
+      name: string;
+      semana: number;
+      total: number;
+      correct: number;
+      fails: number;
+      score: number;
+    }> = {};
+
     progress.forEach(p => {
-      const qInfo = questionInfoMap.get(p.question_id);
-      const targetMateria = qInfo ? qInfo.materia : normalizeMateriaName(p.materia);
+      const q = allQuestions.find(x => x.id === p.question_id);
+      if (!q || normalizeMateriaName(q.materia) !== selectedMateria) return;
       
-      if (targetMateria === selectedMateria) {
-        const qSemana = qInfo ? qInfo.semana : p.semana;
-        if (selectedSemanaSubtemas !== 'all' && qSemana !== selectedSemanaSubtemas) {
-          return;
-        }
+      const subInfo = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
+      const subName = subInfo.normalizado || q.subtema || 'General';
 
-        const subtema = qInfo ? qInfo.subtema : (p.subtema || 'General');
-        if (!groups[subtema]) groups[subtema] = { correct: 0, total: 0, semana: qSemana };
-        groups[subtema].total++;
-        if (p.is_correct) groups[subtema].correct++;
+      if (!map[subName]) {
+        map[subName] = {
+          name: subName,
+          semana: q.semana,
+          total: 0,
+          correct: 0,
+          fails: 0,
+          score: 0
+        };
+      }
+
+      map[subName].total += 1;
+      if (p.is_correct) {
+        map[subName].correct += 1;
+      } else {
+        map[subName].fails += 1;
       }
     });
 
-    return Object.entries(groups).map(([name, data]) => {
-      const score = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
-      const fails = data.total - data.correct;
-      const weakness = fails * 3 + (100 - score) * 0.7;
-      return {
-        name,
-        score,
-        correct: data.correct,
-        total: data.total,
-        fails,
-        weakness,
-        semana: data.semana
-      };
-    }).filter(t => t.total > 0).sort((a, b) => a.score - b.score);
-  }, [progress, selectedMateria, selectedSemanaSubtemas, questionInfoMap]);
+    Object.values(map).forEach(s => {
+      s.score = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+    });
 
+    return map;
+  }, [progress, allQuestions, selectedMateria]);
+
+  // Critical subtopics (Lowest accuracy with at least 1 fail)
   const worstSubtopics = useMemo(() => {
-    return [...subtemasDataFull]
-      .filter(s => s.score < 75 || s.fails >= 1)
-      .sort((a, b) => b.weakness - a.weakness)
+    return Object.values(subtopicMap)
+      .filter(s => s.fails > 0)
+      .sort((a, b) => a.score - b.score || b.fails - a.fails)
       .slice(0, 4);
-  }, [subtemasDataFull]);
+  }, [subtopicMap]);
 
-  const topPrioritySubtopic = worstSubtopics.length > 0 ? worstSubtopics[0] : null;
+  // Priority #1 subtopic
+  const topPrioritySubtopic = worstSubtopics[0] || null;
 
+  // Filtered subtopics list
+  const subtemasDataFull = useMemo(() => {
+    let list = Object.values(subtopicMap);
+    if (selectedSemanaSubtemas !== 'all') {
+      list = list.filter(s => s.semana === selectedSemanaSubtemas);
+    }
+    return list.sort((a, b) => a.score - b.score);
+  }, [subtopicMap, selectedSemanaSubtemas]);
+
+  // Weekly question map
   const weeklyProgressData = useMemo(() => {
-    const weeks = [...new Set(allQuestions.filter(q => normalizeMateriaName(q.materia) === selectedMateria).map(q => q.semana))].sort((a,b) => a - b);
-    return weeks.map(week => {
-      const qOfWeek = allQuestions.filter(q => normalizeMateriaName(q.materia) === selectedMateria && q.semana === week);
-      const total = qOfWeek.length;
+    return availableSemanas.map(semana => {
+      const questionsOfSemana = allQuestions.filter(
+        q => normalizeMateriaName(q.materia) === selectedMateria && q.semana === semana
+      );
+      const total = questionsOfSemana.length;
       
-      const qIds = new Set(qOfWeek.map(q => q.id));
-      const seen = progress.filter(p => qIds.has(p.question_id));
-      const seenUniqueIds = new Set(seen.map(p => p.question_id));
-      const seenUnique = seenUniqueIds.size;
-      const unseen = total - seenUnique;
+      const qIds = new Set(questionsOfSemana.map(q => q.id));
+      const seenRecords = progress.filter(p => qIds.has(p.question_id));
       
-      const temas = [...new Set(qOfWeek.map(q => q.tema))];
-
-      const questionsData = qOfWeek.map(q => {
-        const pHistory = seen.filter(p => p.question_id === q.id);
-        const resolved = pHistory.length > 0;
-        const isCorrect = pHistory.some(p => p.is_correct);
-        return {
-          id: q.id,
-          resolved,
-          isCorrect
+      const statusMap: Record<string, { resolved: boolean; isCorrect: boolean }> = {};
+      seenRecords.forEach(p => {
+        statusMap[p.question_id] = {
+          resolved: true,
+          isCorrect: p.is_correct
         };
       });
-      
+
+      const vistas = Object.keys(statusMap).length;
+      const porcentaje = total > 0 ? Math.round((vistas / total) * 100) : 0;
+
+      const temas = Array.from(new Set(questionsOfSemana.map(q => q.tema).filter(Boolean)));
+
+      const questionsData = questionsOfSemana.map(q => ({
+        id: q.id,
+        text: q.text,
+        resolved: !!statusMap[q.id]?.resolved,
+        isCorrect: !!statusMap[q.id]?.isCorrect
+      }));
+
       return {
-        semana: week,
+        semana,
         total,
-        vistas: seenUnique,
-        inéditas: unseen,
-        porcentaje: total > 0 ? Math.round((seenUnique / total) * 100) : 0,
+        vistas,
+        porcentaje,
         temas,
         questionsData
       };
     });
-  }, [allQuestions, progress, selectedMateria]);
-
-  if (isLoading) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[450px] gap-4">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
-        <p className="text-sm font-bold text-[#A0A0A0] uppercase tracking-widest">Cargando tus estadísticas de estudio...</p>
-      </div>
-    );
-  }
-
-  if (sessions.length === 0 && progress.length === 0) {
-    return (
-      <div className="flex flex-col items-center justify-center py-20 text-center space-y-6 max-w-lg mx-auto">
-        <div className="w-20 h-20 bg-[#141824] backdrop-blur-md rounded-3xl border border-primary/20 flex items-center justify-center shadow-2xl mb-2 text-primary">
-          <Activity className="w-10 h-10" />
-        </div>
-        <h2 className="text-3xl font-black font-manrope uppercase tracking-tight text-white">Sin datos de rendimiento</h2>
-        <p className="text-[#A0A0A0] font-medium leading-relaxed text-sm">
-          Aún no has completado simulacros con este usuario. Puedes empezar tu primer test ahora o generar datos de demostración para explorar las métricas.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 w-full pt-4">
-          <button 
-            onClick={() => window.dispatchEvent(new CustomEvent('change-view', { detail: 'simulator' }))}
-            className="flex-1 px-8 py-4 bg-primary text-[#0A0A0A] font-black rounded-2xl uppercase tracking-widest text-xs shadow-lg hover:bg-primary/90 transition-all cursor-pointer"
-          >
-            Ir al Simulador
-          </button>
-          <button 
-            onClick={handleGenerateMock}
-            className="flex-1 px-8 py-4 bg-[#1E1E1E] text-white font-black rounded-2xl border border-white/10 uppercase tracking-widest text-xs hover:bg-white/5 shadow-sm transition-all cursor-pointer"
-          >
-            Generar Demo Data
-          </button>
-        </div>
-      </div>
-    );
-  }
+  }, [allQuestions, progress, selectedMateria, availableSemanas]);
 
   return (
-    <div className="flex flex-col gap-8 p-4 md:p-8 max-w-7xl mx-auto text-white">
+    <div className="space-y-8 animate-in fade-in duration-300">
       
-      {/* 1. ENCABEZADO Y RESUMEN RÁPIDO */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-white/10">
+      {/* 1. HEADER */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
-            <h1 className="text-2xl md:text-3xl font-black uppercase tracking-tight font-manrope">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#C6A84A]"></span>
+            <h1 className="text-xl md:text-2xl font-black uppercase tracking-tight text-[#FFFFFF] font-manrope">
               Tu Panel de Rendimiento
             </h1>
           </div>
-          <p className="text-sm text-[#A0A0A0] font-medium mt-1">
+          <p className="text-xs text-[#A6A6A6] mt-1 font-medium">
             Analiza tus aciertos por especialidad, identifica tus puntos débiles y refuerza antes del examen.
           </p>
         </div>
@@ -311,10 +264,10 @@ export function DashboardView({
         {onReloadData && (
           <button
             onClick={onReloadData}
-            className="self-start md:self-auto flex items-center gap-2 px-4 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-sm"
+            className="self-start sm:self-auto px-4 py-2 bg-[#2E2E2E] hover:bg-[#2E2E2E]/80 border border-[#424242] hover:border-[#C6A84A]/40 text-xs font-bold text-[#A6A6A6] hover:text-[#E0AF26] rounded-xl flex items-center gap-2 transition-all cursor-pointer shadow-sm"
           >
-            <RotateCcw className="w-4 h-4 text-primary" />
-            Actualizar Datos
+            <RotateCcw className="w-3.5 h-3.5 text-[#E0AF26]" />
+            Actualizar datos
           </button>
         )}
       </div>
@@ -322,54 +275,54 @@ export function DashboardView({
       {/* 2. TARJETAS DE RESUMEN GLOBAL */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {/* Total Respondidas */}
-        <div className="bg-[#141824]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-5 shadow-lg flex items-center justify-between">
+        <div className="bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between">
           <div>
-            <p className="text-[11px] font-bold text-[#A0A0A0] uppercase tracking-wider mb-1">Preguntas Respondidas</p>
-            <p className="text-3xl font-black font-manrope text-white">
-              {totalQuestionsAnswered} <span className="text-sm font-semibold text-[#A0A0A0]">/ {allQuestions.length}</span>
+            <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Preguntas Respondidas</p>
+            <p className="text-3xl font-black font-manrope text-[#FFFFFF]">
+              {totalQuestionsAnswered} <span className="text-sm font-semibold text-[#A6A6A6]">/ {allQuestions.length}</span>
             </p>
-            <p className="text-[11px] text-[#A0A0A0] mt-1">
-              {allQuestions.length > 0 ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100) : 0}% del banco total visto
+            <p className="text-[11px] text-[#A6A6A6] mt-1 font-medium">
+              {allQuestions.length > 0 ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100) : 0}% del banco resuelto
             </p>
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26]">
             <Target className="w-6 h-6" />
           </div>
         </div>
 
         {/* Precisión Global */}
-        <div className="bg-[#141824]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-5 shadow-lg flex items-center justify-between">
+        <div className="bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between">
           <div>
-            <p className="text-[11px] font-bold text-[#A0A0A0] uppercase tracking-wider mb-1">Precisión Global</p>
-            <p className="text-3xl font-black font-manrope text-primary">
+            <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Precisión Global</p>
+            <p className="text-3xl font-black font-manrope text-[#E0AF26]">
               {globalAccuracy}%
             </p>
-            <p className="text-[11px] text-[#A0A0A0] mt-1">
+            <p className="text-[11px] text-[#A6A6A6] mt-1 font-medium">
               En {sessions.length} simulacros completados
             </p>
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26]">
             <Sparkles className="w-6 h-6" />
           </div>
         </div>
 
         {/* Preguntas Guardadas */}
-        <div className="bg-[#141824]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-5 shadow-lg flex items-center justify-between">
+        <div className="bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between">
           <div>
-            <p className="text-[11px] font-bold text-[#A0A0A0] uppercase tracking-wider mb-1">Preguntas Guardadas</p>
-            <p className="text-3xl font-black font-manrope text-amber-400">
-              {savedQuestionIds.length} <span className="text-sm font-semibold text-[#A0A0A0]">favoritas</span>
+            <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Preguntas Guardadas</p>
+            <p className="text-3xl font-black font-manrope text-[#E0AF26]">
+              {savedQuestionIds.length} <span className="text-sm font-semibold text-[#A6A6A6]">favoritas</span>
             </p>
             {savedQuestionIds.length > 0 && (
               <button
                 onClick={onStartBookmarksQuiz}
-                className="mt-2 text-[11px] font-bold text-amber-400 hover:text-amber-300 underline flex items-center gap-1 cursor-pointer"
+                className="mt-2 text-[11px] font-bold text-[#E0AF26] hover:underline flex items-center gap-1 cursor-pointer"
               >
                 Repasar guardadas <ArrowRight className="w-3 h-3" />
               </button>
             )}
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26]">
             <Bookmark className="w-6 h-6" />
           </div>
         </div>
@@ -378,11 +331,11 @@ export function DashboardView({
       {/* 3. SELECTOR PRINCIPAL DE ESPECIALIDAD */}
       <div className="flex flex-col gap-3">
         <div className="flex items-center justify-between">
-          <h2 className="text-xs font-black uppercase tracking-[0.2em] text-[#A0A0A0]">
+          <h2 className="text-xs font-black uppercase tracking-[0.2em] text-[#A6A6A6]">
             Elige una Especialidad para Explorar
           </h2>
-          <span className="text-xs font-medium text-[#A0A0A0]">
-            Viendo: <strong className="text-white">{selectedMateria}</strong>
+          <span className="text-xs font-medium text-[#A6A6A6]">
+            Viendo: <strong className="text-[#E0AF26]">{selectedMateria}</strong>
           </span>
         </div>
 
@@ -394,40 +347,40 @@ export function DashboardView({
               <button
                 key={m}
                 onClick={() => setSelectedMateria(m)}
-                className={`p-5 rounded-2xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between gap-4 ${
+                className={`p-5 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between gap-4 ${
                   isSelected
-                    ? 'bg-gradient-to-br from-[#272111] to-[#141824] border-primary shadow-[0_0_25px_rgba(198,168,74,0.2)] ring-1 ring-primary'
-                    : 'bg-[#141824]/50 border-white/10 hover:border-white/20 hover:bg-[#141824]/80'
+                    ? 'bg-[#2E2E2E] border-[#C6A84A] shadow-[0_0_25px_rgba(198,168,74,0.2)] ring-1 ring-[#C6A84A]'
+                    : 'bg-[#2E2E2E] border-[#424242] hover:border-[#C6A84A]/40'
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <div className={`p-2.5 rounded-xl ${isSelected ? 'bg-primary text-[#0A0A0A]' : 'bg-white/5 text-[#A0A0A0]'}`}>
+                  <div className={`p-2.5 rounded-xl ${isSelected ? 'bg-[#C6A84A] text-[#121212]' : 'bg-[#1C1C1C] text-[#A6A6A6] border border-[#424242]'}`}>
                     {MATERIA_ICONS[m]}
                   </div>
                   <div className="text-right">
-                    <span className={`text-sm font-black px-2.5 py-1 rounded-lg border ${
+                    <span className={`text-xs font-black px-2.5 py-1 rounded-lg border ${
                       stat.precision >= 75 
                         ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' 
                         : (stat.precision >= 60 ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' : 'bg-rose-500/10 border-rose-500/30 text-rose-400')
                     }`}>
-                      {stat.precision}% Precisión
+                      {stat.precision}% de precisión
                     </span>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className={`font-manrope font-black text-base ${isSelected ? 'text-white' : 'text-[#E0E0E0]'}`}>
+                  <h3 className={`font-manrope font-black text-base ${isSelected ? 'text-[#E0AF26]' : 'text-[#FFFFFF]'}`}>
                     {m}
                   </h3>
-                  <p className="text-xs text-[#A0A0A0] mt-0.5">
+                  <p className="text-xs text-[#A6A6A6] mt-0.5 font-medium">
                     {stat.vistas} de {stat.total} preguntas resueltas
                   </p>
                 </div>
 
                 {/* Progress Bar */}
-                <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="w-full bg-[#1C1C1C] rounded-full h-1.5 overflow-hidden border border-[#424242]/40">
                   <div 
-                    className={`h-1.5 rounded-full transition-all duration-700 ${isSelected ? 'bg-primary' : 'bg-white/30'}`}
+                    className={`h-1.5 rounded-full transition-all duration-500 ${isSelected ? 'bg-[#E0AF26]' : 'bg-[#A6A6A6]/40'}`}
                     style={{ width: `${stat.porcentaje}%` }}
                   ></div>
                 </div>
@@ -439,30 +392,30 @@ export function DashboardView({
 
       {/* 4. RECOMENDACIÓN INTELIGENTE DE REFUERZO */}
       {topPrioritySubtopic ? (
-        <div className="bg-gradient-to-r from-[#2A2010] via-[#1E1B18] to-[#141824] border border-primary/40 rounded-3xl p-6 md:p-7 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="bg-[#2E2E2E] border border-[#C6A84A] rounded-3xl p-6 md:p-7 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-primary/20 border border-primary/30 rounded-2xl text-primary shrink-0 mt-1">
-              <Flame className="w-7 h-7" />
+            <div className="p-3 bg-[#1C1C1C] border border-[#C6A84A]/40 rounded-2xl text-[#E0AF26] shrink-0 mt-1">
+              <Flame className="w-6 h-6" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded bg-primary/20 text-primary border border-primary/30">
+                <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded bg-[#C6A84A]/20 text-[#E0AF26] border border-[#C6A84A]/30">
                   Prioridad #1 de Refuerzo
                 </span>
-                <span className="text-xs text-[#A0A0A0]">en {selectedMateria}</span>
+                <span className="text-xs text-[#A6A6A6]">en {selectedMateria}</span>
               </div>
-              <h2 className="text-xl md:text-2xl font-black text-white mt-1">
+              <h2 className="text-xl md:text-2xl font-black text-[#FFFFFF] mt-1">
                 {topPrioritySubtopic.name}
               </h2>
-              <p className="text-sm text-[#C0C0C0] mt-1">
-                Has acertado solo <strong className="text-white">{topPrioritySubtopic.correct} de {topPrioritySubtopic.total}</strong> preguntas ({topPrioritySubtopic.fails} fallos detectados).
+              <p className="text-sm text-[#A6A6A6] mt-1">
+                Has acertado solo <strong className="text-[#FFFFFF]">{topPrioritySubtopic.correct} de {topPrioritySubtopic.total}</strong> preguntas ({topPrioritySubtopic.fails} fallos detectados).
               </p>
             </div>
           </div>
 
           <button
             onClick={() => onReforzar && onReforzar(selectedMateria, topPrioritySubtopic.name)}
-            className="w-full md:w-auto px-7 py-3.5 bg-primary text-[#0A0A0A] font-black rounded-xl text-xs uppercase tracking-wider hover:bg-primary/90 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer shrink-0"
+            className="w-full md:w-auto px-7 py-3.5 bg-[#E0AF26] hover:bg-[#C6A84A] text-[#121212] font-black rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer shrink-0"
           >
             Reforzar este subtema ahora
             <ArrowRight className="w-4 h-4" />
@@ -473,7 +426,7 @@ export function DashboardView({
       {/* 5. ZONAS CRÍTICAS / SUBTEMAS A MEJORAR */}
       {worstSubtopics.length > 0 && (
         <div className="flex flex-col gap-3">
-          <h2 className="text-xs font-black uppercase tracking-[0.2em] text-[#A0A0A0] flex items-center gap-2">
+          <h2 className="text-xs font-black uppercase tracking-[0.2em] text-[#A6A6A6] flex items-center gap-2">
             <AlertCircle className="w-4 h-4 text-rose-400" />
             Subtemas con Mayor Índice de Fallos en {selectedMateria}
           </h2>
@@ -482,7 +435,7 @@ export function DashboardView({
             {worstSubtopics.map((sub, idx) => (
               <div
                 key={sub.name}
-                className="bg-[#181216] border border-rose-500/30 rounded-2xl p-5 flex flex-col justify-between gap-4 hover:border-rose-500/60 transition-all shadow-md"
+                className="bg-[#2E2E2E] border border-rose-500/30 rounded-2xl p-5 flex flex-col justify-between gap-4 hover:border-rose-500/60 transition-all shadow-md"
               >
                 <div>
                   <div className="flex items-center justify-between mb-2">
@@ -493,10 +446,10 @@ export function DashboardView({
                       {sub.score}%
                     </span>
                   </div>
-                  <h3 className="font-bold text-sm text-white line-clamp-2" title={sub.name}>
+                  <h3 className="font-bold text-sm text-[#FFFFFF] line-clamp-2" title={sub.name}>
                     {sub.name}
                   </h3>
-                  <p className="text-xs text-[#A0A0A0] mt-1">
+                  <p className="text-xs text-[#A6A6A6] mt-1">
                     {sub.correct} aciertos / {sub.fails} fallos ({sub.total} preguntas resueltas)
                   </p>
                 </div>
@@ -514,14 +467,14 @@ export function DashboardView({
       )}
 
       {/* 6. LISTA CLARA DE RENDIMIENTO POR TODOS LOS SUBTEMAS */}
-      <div className="bg-[#141824]/60 border border-white/10 rounded-3xl p-6 md:p-8 shadow-xl flex flex-col gap-6">
+      <div className="bg-[#2E2E2E] border border-[#424242] rounded-3xl p-6 md:p-8 shadow-xl flex flex-col gap-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <h2 className="text-lg md:text-xl font-black uppercase tracking-tight flex items-center gap-2.5">
-              <BarChart3 className="w-5 h-5 text-primary" />
+            <h2 className="text-lg md:text-xl font-black uppercase tracking-tight flex items-center gap-2.5 text-[#FFFFFF]">
+              <BarChart3 className="w-5 h-5 text-[#E0AF26]" />
               Detalle de Rendimiento por Subtema en {selectedMateria}
             </h2>
-            <p className="text-xs text-[#A0A0A0] mt-0.5">
+            <p className="text-xs text-[#A6A6A6] mt-0.5">
               Haz clic en cualquier subtema para hacer un simulacro enfocado.
             </p>
           </div>
@@ -532,8 +485,8 @@ export function DashboardView({
               onClick={() => setSelectedSemanaSubtemas('all')}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shrink-0 ${
                 selectedSemanaSubtemas === 'all'
-                  ? 'bg-primary text-[#0A0A0A]'
-                  : 'bg-white/5 text-[#A0A0A0] hover:bg-white/10 hover:text-white border border-white/5'
+                  ? 'bg-[#E0AF26] text-[#121212]'
+                  : 'bg-[#1C1C1C] text-[#A6A6A6] hover:bg-[#424242] hover:text-white border border-[#424242]'
               }`}
             >
               Todas
@@ -544,8 +497,8 @@ export function DashboardView({
                 onClick={() => setSelectedSemanaSubtemas(semana)}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shrink-0 ${
                   selectedSemanaSubtemas === semana
-                    ? 'bg-primary text-[#0A0A0A]'
-                    : 'bg-white/5 text-[#A0A0A0] hover:bg-white/10 hover:text-white border border-white/5'
+                    ? 'bg-[#E0AF26] text-[#121212]'
+                    : 'bg-[#1C1C1C] text-[#A6A6A6] hover:bg-[#424242] hover:text-white border border-[#424242]'
                 }`}
               >
                 Semana {semana}
@@ -565,24 +518,24 @@ export function DashboardView({
               return (
                 <div
                   key={sub.name}
-                  className="bg-[#1A1F30]/70 hover:bg-[#1A1F30] border border-white/5 hover:border-white/20 p-4 rounded-2xl transition-all flex flex-col md:flex-row md:items-center justify-between gap-4"
+                  className="bg-[#1C1C1C] hover:bg-[#1C1C1C]/80 border border-[#424242] hover:border-[#C6A84A]/40 p-4 rounded-2xl transition-all flex flex-col md:flex-row md:items-center justify-between gap-4"
                 >
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className={`w-2 h-2 rounded-full ${isDominado ? 'bg-emerald-400' : (isRegular ? 'bg-amber-400' : 'bg-rose-400')}`}></span>
-                      <h3 className="font-bold text-sm text-white truncate" title={sub.name}>
+                      <h3 className="font-bold text-sm text-[#FFFFFF] truncate" title={sub.name}>
                         {sub.name}
                       </h3>
                     </div>
                     
-                    <div className="flex items-center gap-4 text-xs text-[#A0A0A0]">
+                    <div className="flex items-center gap-4 text-xs text-[#A6A6A6]">
                       <span>{sub.correct} correctas de {sub.total} preguntas</span>
                       <span>•</span>
                       <span>Semana {sub.semana}</span>
                     </div>
 
                     {/* Mini Progress Bar */}
-                    <div className="w-full bg-white/10 rounded-full h-1.5 mt-2 overflow-hidden max-w-md">
+                    <div className="w-full bg-[#2E2E2E] rounded-full h-1.5 mt-2 overflow-hidden max-w-md border border-[#424242]/30">
                       <div
                         className={`h-1.5 rounded-full ${isDominado ? 'bg-emerald-500' : (isRegular ? 'bg-amber-500' : 'bg-rose-500')}`}
                         style={{ width: `${sub.score}%` }}
@@ -595,14 +548,14 @@ export function DashboardView({
                       <span className={`text-lg font-black ${isDominado ? 'text-emerald-400' : (isRegular ? 'text-amber-400' : 'text-rose-400')}`}>
                         {sub.score}%
                       </span>
-                      <p className="text-[10px] text-[#A0A0A0] uppercase font-bold">
+                      <p className="text-[10px] text-[#A6A6A6] uppercase font-bold">
                         {isDominado ? 'Dominado' : (isRegular ? 'En proceso' : 'Reforzar')}
                       </p>
                     </div>
 
                     <button
                       onClick={() => onReforzar && onReforzar(selectedMateria, sub.name)}
-                      className="px-4 py-2 bg-white/5 hover:bg-primary hover:text-[#0A0A0A] border border-white/10 rounded-xl text-xs font-bold transition-all cursor-pointer"
+                      className="px-4 py-2 bg-[#2E2E2E] hover:bg-[#E0AF26] text-[#FFFFFF] hover:text-[#121212] border border-[#424242] rounded-xl text-xs font-bold transition-all cursor-pointer"
                     >
                       Practicar
                     </button>
@@ -612,20 +565,20 @@ export function DashboardView({
             })}
           </div>
         ) : (
-          <div className="py-12 text-center text-[#A0A0A0] text-sm border-2 border-dashed border-white/5 rounded-2xl">
+          <div className="py-12 text-center text-[#A6A6A6] text-sm border-2 border-dashed border-[#424242] rounded-2xl">
             No hay respuestas registradas para este filtro en {selectedMateria}. Resuelve preguntas en el simulador para ver el diagnóstico aquí.
           </div>
         )}
       </div>
 
       {/* 7. AVANCE POR SEMANAS DE LA ESPECIALIDAD */}
-      <div className="bg-[#141824]/60 border border-white/10 rounded-3xl p-6 md:p-8 shadow-xl flex flex-col gap-6">
+      <div className="bg-[#2E2E2E] border border-[#424242] rounded-3xl p-6 md:p-8 shadow-xl flex flex-col gap-6">
         <div>
-          <h2 className="text-lg md:text-xl font-black uppercase tracking-tight flex items-center gap-2.5">
-            <Calendar className="w-5 h-5 text-blue-400" />
+          <h2 className="text-lg md:text-xl font-black uppercase tracking-tight flex items-center gap-2.5 text-[#FFFFFF]">
+            <Calendar className="w-5 h-5 text-[#E0AF26]" />
             Progreso Semana a Semana en {selectedMateria}
           </h2>
-          <p className="text-xs text-[#A0A0A0] mt-0.5">
+          <p className="text-xs text-[#A6A6A6] mt-0.5">
             Despliega cada semana para ver exactamente qué preguntas ya respondiste y cuáles te faltan.
           </p>
         </div>
@@ -636,35 +589,35 @@ export function DashboardView({
             return (
               <div 
                 key={weekData.semana} 
-                className="bg-[#1A1F30]/70 p-5 rounded-2xl border border-white/10 hover:border-white/20 transition-all flex flex-col gap-3"
+                className="bg-[#1C1C1C] p-5 rounded-2xl border border-[#424242] hover:border-[#C6A84A]/30 transition-all flex flex-col gap-3"
               >
                 <div 
                   className="flex justify-between items-center cursor-pointer"
                   onClick={() => toggleWeek(weekData.semana)}
                 >
                   <div className="flex items-center gap-3">
-                    <div className={`p-2 rounded-lg bg-white/5 transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
-                      <ChevronDown className="w-4 h-4 text-[#A0A0A0]" />
+                    <div className={`p-2 rounded-lg bg-[#2E2E2E] border border-[#424242] transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
+                      <ChevronDown className="w-4 h-4 text-[#A6A6A6]" />
                     </div>
                     <div>
-                      <h3 className="text-white font-black text-base">
+                      <h3 className="text-[#FFFFFF] font-black text-base">
                         Semana {weekData.semana}
                       </h3>
-                      <p className="text-xs text-[#A0A0A0]">
+                      <p className="text-xs text-[#A6A6A6]">
                         {weekData.vistas} de {weekData.total} preguntas resueltas
                       </p>
                     </div>
                   </div>
 
-                  <span className="text-xl font-black font-manrope text-primary">
+                  <span className="text-xl font-black font-manrope text-[#E0AF26]">
                     {weekData.porcentaje}%
                   </span>
                 </div>
 
                 {/* Progress bar */}
-                <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
+                <div className="w-full bg-[#2E2E2E] rounded-full h-2 overflow-hidden border border-[#424242]/30">
                   <div 
-                    className="bg-primary h-2 rounded-full transition-all duration-700"
+                    className="bg-[#E0AF26] h-2 rounded-full transition-all duration-700"
                     style={{ width: `${weekData.porcentaje}%` }}
                   ></div>
                 </div>
@@ -672,7 +625,7 @@ export function DashboardView({
                 {/* Temas tags */}
                 <div className="flex flex-wrap gap-1.5 mt-1">
                   {weekData.temas.map(tema => (
-                    <span key={tema} className="px-2.5 py-0.5 bg-white/5 border border-white/5 rounded-md text-[#C0C0C0] text-[10px]">
+                    <span key={tema} className="px-2.5 py-0.5 bg-[#2E2E2E] border border-[#424242] rounded-md text-[#FAF9F6] text-[10px]">
                       {tema}
                     </span>
                   ))}
@@ -680,8 +633,8 @@ export function DashboardView({
 
                 {/* Cuadrícula desplegable de preguntas */}
                 {isExpanded && (
-                  <div className="mt-4 pt-4 border-t border-white/10 animate-in fade-in slide-in-from-top-2">
-                    <p className="text-xs font-bold text-[#A0A0A0] mb-3">
+                  <div className="mt-4 pt-4 border-t border-[#424242] animate-in fade-in slide-in-from-top-2">
+                    <p className="text-xs font-bold text-[#A6A6A6] mb-3">
                       Mapa de preguntas (clic para abrir/resolver):
                     </p>
                     <div className="grid grid-cols-8 sm:grid-cols-10 gap-1.5">
@@ -699,7 +652,7 @@ export function DashboardView({
                               ? (q.isCorrect 
                                   ? 'bg-emerald-500 text-black border-emerald-400 shadow-sm font-black' 
                                   : 'bg-rose-500/30 text-rose-300 border-rose-500/50')
-                              : 'bg-white/5 text-white/40 border-white/10 hover:border-white/30'
+                              : 'bg-[#2E2E2E] text-[#A6A6A6] border-[#424242] hover:border-[#C6A84A]'
                           }`}
                         >
                           {idx + 1}
@@ -707,7 +660,7 @@ export function DashboardView({
                       ))}
                     </div>
 
-                    <div className="flex items-center gap-4 mt-4 text-[10px] font-bold text-[#A0A0A0] flex-wrap">
+                    <div className="flex items-center gap-4 mt-4 text-[10px] font-bold text-[#A6A6A6] flex-wrap">
                       <div className="flex items-center gap-1.5">
                         <span className="w-3 h-3 rounded bg-emerald-500"></span> Correctas
                       </div>
@@ -715,7 +668,7 @@ export function DashboardView({
                         <span className="w-3 h-3 rounded bg-rose-500/40 border border-rose-500/60"></span> Falladas
                       </div>
                       <div className="flex items-center gap-1.5">
-                        <span className="w-3 h-3 rounded bg-white/10"></span> Sin responder
+                        <span className="w-3 h-3 rounded bg-[#2E2E2E] border border-[#424242]"></span> Sin responder
                       </div>
                     </div>
                   </div>

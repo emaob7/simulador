@@ -10,9 +10,7 @@ import {
   BarChart3,
   BookOpenCheck,
   ShieldAlert,
-  Sparkles,
   Bookmark,
-  Award,
   Stethoscope
 } from 'lucide-react';
 
@@ -51,28 +49,28 @@ export function Sidebar({
   const menuContent = (mobileView: boolean = false) => {
     const collapsed = !mobileView && isCollapsed;
     return (
-      <aside className={`h-full flex flex-col bg-gradient-to-b from-[#11141E] via-[#0E1017] to-[#0A0A0A] py-6 border-r border-white/10 shadow-2xl transition-all duration-300 ${collapsed ? 'w-20' : 'w-72'}`}>
+      <aside className={`h-full flex flex-col bg-[#121212] py-6 border-r border-[#424242] shadow-2xl transition-all duration-300 ${collapsed ? 'w-20' : 'w-72'}`}>
         
         {/* BRAND HEADER */}
         <div className={`px-5 mb-6 flex items-center ${collapsed ? 'justify-center' : 'justify-between'}`}>
           {!collapsed ? (
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary via-[#D4AF37] to-[#8C6D1F] p-0.5 shadow-[0_0_20px_rgba(198,168,74,0.35)] flex items-center justify-center shrink-0">
-                <div className="w-full h-full bg-[#0A0A0A] rounded-[14px] flex items-center justify-center text-primary">
+              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#E0AF26] via-[#C6A84A] to-[#8C6D1F] p-0.5 shadow-[0_0_20px_rgba(198,168,74,0.35)] flex items-center justify-center shrink-0">
+                <div className="w-full h-full bg-[#121212] rounded-[14px] flex items-center justify-center text-[#E0AF26]">
                   <Stethoscope className="w-5 h-5" />
                 </div>
               </div>
               <div>
-                <h1 className="text-lg font-black text-white tracking-tight font-manrope flex items-center gap-1.5">
+                <h1 className="text-lg font-black text-[#FFFFFF] tracking-tight font-manrope flex items-center gap-1.5">
                   DR. RODNEY
-                  <span className="text-[9px] px-1.5 py-0.2 bg-primary/20 text-primary border border-primary/30 rounded font-bold">2026</span>
+                  <span className="text-[9px] px-1.5 py-0.2 bg-[#C6A84A]/20 text-[#E0AF26] border border-[#C6A84A]/30 rounded font-bold">2026</span>
                 </h1>
-                <p className="font-manrope uppercase tracking-widest font-bold text-[9px] text-primary">Simulador CONAREM</p>
+                <p className="font-manrope uppercase tracking-widest font-bold text-[9px] text-[#C6A84A]">Simulador CONAREM</p>
               </div>
             </div>
           ) : (
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-[#8C6D1F] p-0.5 flex items-center justify-center shadow-[0_0_15px_rgba(198,168,74,0.3)]">
-              <div className="w-full h-full bg-[#0A0A0A] rounded-[14px] flex items-center justify-center text-primary font-black font-manrope text-xs">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#E0AF26] to-[#8C6D1F] p-0.5 flex items-center justify-center shadow-[0_0_15px_rgba(198,168,74,0.3)]">
+              <div className="w-full h-full bg-[#121212] rounded-[14px] flex items-center justify-center text-[#E0AF26] font-black font-manrope text-xs">
                 RD
               </div>
             </div>
@@ -83,7 +81,7 @@ export function Sidebar({
             <button 
               onClick={onToggleCollapse} 
               title={collapsed ? "Expandir menú lateral" : "Colapsar menú lateral"}
-              className="text-[#A0A0A0] hover:text-primary p-2 rounded-xl bg-white/5 hover:bg-primary/10 border border-white/5 hover:border-primary/30 transition-all cursor-pointer shadow-sm"
+              className="text-[#A6A6A6] hover:text-[#E0AF26] p-2 rounded-xl bg-[#2E2E2E] hover:bg-[#2E2E2E]/80 border border-[#424242] hover:border-[#C6A84A]/40 transition-all cursor-pointer shadow-sm"
             >
               {collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
             </button>
@@ -91,7 +89,7 @@ export function Sidebar({
 
           {/* Mobile Close Button */}
           {mobileView && (
-            <button onClick={onClose} className="xl:hidden text-[#A0A0A0] hover:text-white p-2 rounded-xl bg-white/5 transition-colors duration-300">
+            <button onClick={onClose} className="xl:hidden text-[#A6A6A6] hover:text-white p-2 rounded-xl bg-[#2E2E2E] transition-colors duration-300">
               <X size={18} />
             </button>
           )}
@@ -104,17 +102,17 @@ export function Sidebar({
           <button
             onClick={() => { setCurrentView('dashboard'); onClose(); }}
             title={collapsed ? "Analíticas y Rendimiento" : undefined}
-            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-200 cursor-pointer border ${
               isSelected('dashboard')
-                ? 'bg-gradient-to-r from-primary/25 to-primary/5 text-primary border-primary/40 shadow-[0_0_20px_rgba(198,168,74,0.2)]'
-                : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
+                ? 'bg-[#2E2E2E] text-[#E0AF26] border-[#C6A84A] shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                : 'text-[#A6A6A6] border-transparent hover:text-[#FFFFFF] hover:bg-[#2E2E2E]/50'
             }`}
           >
-            <BarChart3 className={`w-5 h-5 shrink-0 ${isSelected('dashboard') ? 'text-primary' : 'text-[#A0A0A0]'}`} />
+            <BarChart3 className={`w-5 h-5 shrink-0 ${isSelected('dashboard') ? 'text-[#E0AF26]' : 'text-[#A6A6A6]'}`} />
             {!collapsed && (
               <div className="text-left">
                 <span className="block text-xs font-black uppercase tracking-wider">Analíticas</span>
-                <span className="block text-[10px] text-[#A0A0A0] font-normal">Diagnóstico y Puntos Débiles</span>
+                <span className="block text-[10px] text-[#A6A6A6] font-normal">Diagnóstico y Puntos Débiles</span>
               </div>
             )}
           </button>
@@ -123,17 +121,17 @@ export function Sidebar({
           <button
             onClick={() => { setCurrentView('simulator'); onClose(); }}
             title={collapsed ? "Simulador de Examen" : undefined}
-            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-200 cursor-pointer border ${
               isSelected('simulator')
-                ? 'bg-gradient-to-r from-primary/25 to-primary/5 text-primary border-primary/40 shadow-[0_0_20px_rgba(198,168,74,0.2)]'
-                : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
+                ? 'bg-[#2E2E2E] text-[#E0AF26] border-[#C6A84A] shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                : 'text-[#A6A6A6] border-transparent hover:text-[#FFFFFF] hover:bg-[#2E2E2E]/50'
             }`}
           >
-            <BookOpenCheck className={`w-5 h-5 shrink-0 ${isSelected('simulator') ? 'text-primary' : 'text-[#A0A0A0]'}`} />
+            <BookOpenCheck className={`w-5 h-5 shrink-0 ${isSelected('simulator') ? 'text-[#E0AF26]' : 'text-[#A6A6A6]'}`} />
             {!collapsed && (
               <div className="text-left">
                 <span className="block text-xs font-black uppercase tracking-wider">Simulador</span>
-                <span className="block text-[10px] text-[#A0A0A0] font-normal">16 Semanas • 1.507 Preguntas</span>
+                <span className="block text-[10px] text-[#A6A6A6] font-normal">16 Semanas • 1.507 Preguntas</span>
               </div>
             )}
           </button>
@@ -144,10 +142,10 @@ export function Sidebar({
               onClick={() => { onStartBookmarksQuiz(); onClose(); }}
               disabled={savedCount === 0}
               title={collapsed ? `Guardadas (${savedCount})` : undefined}
-              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-200 cursor-pointer border ${
                 savedCount > 0
-                  ? 'text-amber-400 border-amber-500/20 bg-amber-500/5 hover:bg-amber-500/15'
-                  : 'text-[#A0A0A0] border-transparent opacity-50 pointer-events-none'
+                  ? 'text-[#E0AF26] border-[#C6A84A]/30 bg-[#2E2E2E] hover:bg-[#2E2E2E]/90'
+                  : 'text-[#A6A6A6] border-transparent opacity-50 pointer-events-none'
               }`}
             >
               <Bookmark className="w-5 h-5 shrink-0" />
@@ -155,9 +153,9 @@ export function Sidebar({
                 <div className="text-left flex-1 flex items-center justify-between">
                   <div>
                     <span className="block text-xs font-black uppercase tracking-wider">Guardadas</span>
-                    <span className="block text-[10px] text-[#A0A0A0] font-normal">Repaso de Favoritas</span>
+                    <span className="block text-[10px] text-[#A6A6A6] font-normal">Repaso de Favoritas</span>
                   </div>
-                  <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 text-[10px] font-black rounded-lg">
+                  <span className="px-2 py-0.5 bg-[#C6A84A]/20 text-[#E0AF26] text-[10px] font-black rounded-lg border border-[#C6A84A]/30">
                     {savedCount}
                   </span>
                 </div>
@@ -170,17 +168,17 @@ export function Sidebar({
             <button
               onClick={() => { setCurrentView('admin'); onClose(); }}
               title={collapsed ? "Administración" : undefined}
-              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-200 cursor-pointer border ${
                 isSelected('admin')
-                  ? 'bg-gradient-to-r from-primary/25 to-primary/5 text-primary border-primary/40 shadow-[0_0_20px_rgba(198,168,74,0.2)]'
-                  : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
+                  ? 'bg-[#2E2E2E] text-[#E0AF26] border-[#C6A84A] shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                  : 'text-[#A6A6A6] border-transparent hover:text-[#FFFFFF] hover:bg-[#2E2E2E]/50'
               }`}
             >
-              <ShieldAlert className={`w-5 h-5 shrink-0 ${isSelected('admin') ? 'text-primary' : 'text-[#A0A0A0]'}`} />
+              <ShieldAlert className={`w-5 h-5 shrink-0 ${isSelected('admin') ? 'text-[#E0AF26]' : 'text-[#A6A6A6]'}`} />
               {!collapsed && (
                 <div className="text-left">
                   <span className="block text-xs font-black uppercase tracking-wider">Administración</span>
-                  <span className="block text-[10px] text-[#A0A0A0] font-normal">Gestión de Usuarios</span>
+                  <span className="block text-[10px] text-[#A6A6A6] font-normal">Gestión de Usuarios</span>
                 </div>
               )}
             </button>
@@ -189,13 +187,13 @@ export function Sidebar({
 
         {/* BANK STATS SUMMARY PILL */}
         {!collapsed && (
-          <div className="mx-4 my-2 p-3.5 rounded-2xl bg-white/[0.02] border border-white/5 text-left">
-            <div className="flex items-center justify-between text-[10px] text-[#A0A0A0] font-bold uppercase tracking-wider mb-1">
+          <div className="mx-4 my-2 p-3.5 rounded-2xl bg-[#1C1C1C] border border-[#424242] text-left">
+            <div className="flex items-center justify-between text-[10px] text-[#A6A6A6] font-bold uppercase tracking-wider mb-1">
               <span>Banco CONAREM</span>
-              <span className="text-primary font-black">1.507 Qs</span>
+              <span className="text-[#E0AF26] font-black">1.507 Qs</span>
             </div>
-            <p className="text-[11px] text-[#C0C0C0] font-medium leading-relaxed">
-              4 Especialidades oficiales: Pediatría, Medicina Interna, Cirugía y Gineco.
+            <p className="text-[11px] text-[#FAF9F6] font-medium leading-relaxed">
+              4 Especialidades: Pediatría, Medicina Interna, Cirugía y Gineco.
             </p>
           </div>
         )}
@@ -203,8 +201,8 @@ export function Sidebar({
         {/* USER PROFILE & FOOTER ACTIONS */}
         <div className={`mt-auto space-y-3 ${collapsed ? 'px-2' : 'px-4'}`}>
           
-          <div className={`p-3 bg-white/5 rounded-2xl flex items-center ${collapsed ? 'justify-center' : 'gap-3'} border border-white/10 backdrop-blur-md`}>
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/30 to-[#141824] border border-primary/30 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-primary font-black text-xs font-manrope">
+          <div className={`p-3 bg-[#2E2E2E] rounded-2xl flex items-center ${collapsed ? 'justify-center' : 'gap-3'} border border-[#424242]`}>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#C6A84A]/40 to-[#1C1C1C] border border-[#C6A84A]/40 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-[#E0AF26] font-black text-xs font-manrope">
               {userData?.photoURL ? (
                 <img 
                   src={userData.photoURL} 
@@ -218,8 +216,8 @@ export function Sidebar({
             </div>
             {!collapsed && (
               <div className="text-left overflow-hidden">
-                <p className="text-xs font-bold text-white truncate">{userData?.displayName || 'Dr. Rodney Duarte'}</p>
-                <p className="text-[10px] font-bold text-primary tracking-wider uppercase truncate">
+                <p className="text-xs font-bold text-[#FFFFFF] truncate">{userData?.displayName || 'Dr. Rodney Duarte'}</p>
+                <p className="text-[10px] font-bold text-[#C6A84A] tracking-wider uppercase truncate">
                   {userData?.role === 'admin' ? 'Administrador' : 'Aspirante CONAREM'}
                 </p>
               </div>
@@ -229,7 +227,7 @@ export function Sidebar({
           <button 
             onClick={() => { onResetData(); onClose(); }}
             title={collapsed ? "Restaurar Datos" : undefined}
-            className={`w-full py-2.5 text-[11px] font-bold text-rose-400 hover:text-white bg-rose-950/20 hover:bg-rose-600 border border-rose-500/20 hover:border-rose-500 rounded-xl uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer ${collapsed ? 'px-0' : ''}`}
+            className={`w-full py-2.5 text-[11px] font-bold text-rose-400 hover:text-white bg-rose-950/20 hover:bg-rose-600 border border-rose-500/30 rounded-xl uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer ${collapsed ? 'px-0' : ''}`}
           >
             <RotateCcw size={15} />
             {!collapsed && <span>Restaurar Datos</span>}
@@ -238,7 +236,7 @@ export function Sidebar({
           <button 
             onClick={() => { AuthService.logout(); onClose(); }}
             title={collapsed ? "Cerrar Sesión" : undefined}
-            className={`w-full py-2.5 text-[11px] font-bold text-[#A0A0A0] hover:text-white hover:bg-white/10 rounded-xl uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 border border-white/5 cursor-pointer ${collapsed ? 'px-0' : ''}`}
+            className={`w-full py-2.5 text-[11px] font-bold text-[#A6A6A6] hover:text-[#FFFFFF] hover:bg-[#2E2E2E] rounded-xl uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 border border-transparent hover:border-[#424242] cursor-pointer ${collapsed ? 'px-0' : ''}`}
           >
             <LogOut size={15} />
             {!collapsed && <span>Cerrar Sesión</span>}
