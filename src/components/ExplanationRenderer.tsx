@@ -18,7 +18,7 @@ interface ExplanationRendererProps {
 export function highlightClinicalText(text: string): React.ReactNode {
   if (!text) return '';
   
-  const regex = /(\(INCORRECTA\)|\(CORRECTA\)|[↑↓→←↔]|[<>=\u2265\u2264]+\s*\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL))?|\b\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL))\b)/gi;
+  const regex = /(\b(?:INCORRECTA|CORRECTA|FALSA|VERDADERA)\b|\(INCORRECTA\)|\(CORRECTA\)|[↑↓→←↔]|[<>=\u2265\u2264]+\s*\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL|mmHg|mL(?:\/kg(?:\/(?:h|min))?)?|cm|mm|lpm|°C|mUI\/mL|UI\/mL|pg\/mL|ng\/dL|μg\/dL))?|\b\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL|mmHg|mL(?:\/kg(?:\/(?:h|min))?)?|cm|mm|lpm|°C|mUI\/mL|UI\/mL|pg\/mL|ng\/dL|μg\/dL))\b)/gi;
   
   const parts = text.split(regex);
   return (
@@ -27,10 +27,11 @@ export function highlightClinicalText(text: string): React.ReactNode {
         const isMatch = regex.test(part);
         if (isMatch) {
           let colorClass = "text-[#E0AF26] font-bold";
-          if (part.toUpperCase().includes("INCORRECTA")) {
-            colorClass = "text-rose-400 font-extrabold bg-rose-950/40 px-1.5 py-0.5 rounded border border-rose-500/30 text-xs";
-          } else if (part.toUpperCase().includes("CORRECTA")) {
-            colorClass = "text-emerald-400 font-extrabold bg-emerald-950/40 px-1.5 py-0.5 rounded border border-emerald-500/30 text-xs";
+          const upper = part.toUpperCase();
+          if (upper.includes("INCORRECTA") || upper.includes("FALSA")) {
+            colorClass = "text-rose-400 font-extrabold bg-rose-950/40 px-1.5 py-0.5 rounded border border-rose-500/30 text-xs inline-block";
+          } else if (upper.includes("CORRECTA") || upper.includes("VERDADERA")) {
+            colorClass = "text-emerald-400 font-extrabold bg-emerald-950/40 px-1.5 py-0.5 rounded border border-emerald-500/30 text-xs inline-block";
           } else if (part === "↑" || part === "↓" || part === "→" || part === "←" || part === "↔") {
             colorClass = "text-[#E0AF26] font-extrabold mx-1 text-sm inline-block";
           }
@@ -121,6 +122,12 @@ const MarkdownComponents = {
       </p>
     );
   },
+  h4: ({ children, ...props }: any) => (
+    <div className="mt-4 mb-2 pt-2 border-t border-white/5 font-black text-xs uppercase tracking-wider text-[#E0AF26] flex items-center gap-1.5" {...props}>
+      <span className="w-1.5 h-1.5 rounded-full bg-[#E0AF26] shadow-[0_0_6px_#E0AF26]" />
+      <span>{formatMarkdownChildren(children)}</span>
+    </div>
+  ),
   ul: ({ children, ...props }: any) => (
     <ul className="space-y-2.5 my-2.5 pl-0 list-none" {...props}>
       {children}
@@ -143,7 +150,7 @@ export function ExplanationRenderer({ explanation = '' }: ExplanationRendererPro
 
   const getSectionHeader = (title: string = '') => {
     const t = (title || '').toLowerCase();
-    if (t.includes('análisis') || t.includes('analisis')) {
+    if (t.includes('análisis') || t.includes('analisis') || t.includes('por qué') || t.includes('porque') || t.includes('correcta')) {
       return {
         title: 'ANÁLISIS DE LA PREGUNTA',
         icon: <Brain className="w-4 h-4 text-sky-400" />,
@@ -157,7 +164,7 @@ export function ExplanationRenderer({ explanation = '' }: ExplanationRendererPro
         color: 'text-emerald-400 border-emerald-500/30'
       };
     }
-    if (t.includes('repaso') || t.includes('punto')) {
+    if (t.includes('repaso') || t.includes('punto') || t.includes('clave conarem') || t.includes('clave')) {
       return {
         title: 'REPASO ACTIVO',
         icon: <Zap className="w-4 h-4 text-[#E0AF26]" />,

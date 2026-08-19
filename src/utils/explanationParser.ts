@@ -16,46 +16,86 @@ export interface ParsedSection {
 export function normalizeExplanationMarkdown(text: string): string {
   if (!text) return '';
 
-  const rawLines = text.split('\n');
+  // Limpiar artefactos y normalizar saltos de línea CRLF
+  const cleanText = text
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .replace(/Principio del formulario/gi, '')
+    .replace(/Final del formulario/gi, '');
+
+  const rawLines = cleanText.split('\n');
   const processed: string[] = [];
 
-  for (let line of rawLines) {
+  for (let i = 0; i < rawLines.length; i++) {
+    const line = rawLines[i];
     const trimmed = line.trim();
     if (!trimmed) {
       processed.push('');
       continue;
     }
 
-    // 1. If line contains multiple inline bullets: "• A: ... • B: ... • C: ..." or "• Item 1 • Item 2"
+    // Helper para desinfectar títulos de subtítulo
+    const cleanHeaderTitle = (str: string): string => {
+      return str
+        .replace(/^[•●○■◆▪▫\-\+\*#\s]+/, '')
+        .replace(/^<u>|<\/u>$/gi, '')
+        .replace(/^\*{1,3}|\*{1,3}$/g, '')
+        .replace(/^<u>|<\/u>$/gi, '')
+        .replace(/^\*{1,3}|\*{1,3}$/g, '')
+        .replace(/:$/, '')
+        .trim();
+    };
+
+    // 1. Detección exhaustiva de encabezados de categoría (Unicode aware para español)
+    const isUnderlineHeader = /^[-•*]?\s*(\*{1,3})?<u>.*<\/u>(\*{1,3})?:?$/.test(trimmed);
+    const isColonBoldHeader = /^[-•*]?\s*\*\*[A-ZÁÉÍÓÚ0-9¿][\w\s\(\)\/,\.\u00C0-\u017F\+\-–—¿\?:;]{2,80}\*\*[:\s]*$/.test(trimmed);
+    const isMarkdownHeader = /^#{3,6}\s+/.test(trimmed);
+    const isSpecialSubheader = /^(?:Regla de examen|Criterios diagnósticos|Clasificación|Diferencias clínicas|Fuentes dietéticas de grasa|Clasificación endoscópica|Triángulo de Evaluación Pediátrica(?:\s*\(TEP\))?|Manifestaciones Clínicas|Patrones pupilares en el coma|Prevención(?:\s*\(Tabla[^)]*\))?):?$/i.test(trimmed);
+
+    if (isUnderlineHeader || isColonBoldHeader || isMarkdownHeader || isSpecialSubheader) {
+      const cleanTitle = cleanHeaderTitle(trimmed);
+      processed.push('');
+      processed.push(`#### ${cleanTitle}`);
+      processed.push('');
+      continue;
+    }
+
+    // 2. Clasificaciones clínicas (Tipo 0:, Nivel I:, Estadio II:, Grado 1:)
+    if (/^(?:Tipo|Etapa|Estadio|Nivel|Grado)\s+[IVXLC\d]+:?\s+/i.test(trimmed) && !trimmed.startsWith('-')) {
+      const formatted = trimmed.replace(/^((?:Tipo|Etapa|Estadio|Nivel|Grado)\s+[IVXLC\d]+:?)\s+/i, '- **$1** ');
+      processed.push(formatted);
+      continue;
+    }
+
+    // 3. Detección de viñetas en línea múltiples ("• A: ... • B: ...")
     if (trimmed.includes(' • ') || trimmed.includes(' •') || /^[•●○■◆▪▫]\s*.*\s+[•●○■◆▪▫]/.test(trimmed)) {
       const parts = trimmed.split(/\s+[•●○■◆▪▫]\s+/);
       for (const part of parts) {
-        let p = part.trim().replace(/^[•●○■◆▪▫\-\*\+]\s*/, '');
+        let p = part.trim().replace(/^[•●○■◆▪▫\-\+\*]\s*/, '');
         if (p) {
-          // Normalize option letter e.g., 'A: ...' or 'A) ...' -> '**A:** ...'
-          p = p.replace(/^([A-Ea-e])\s*[:\.\)]\s*/, '**$1:** ');
+          p = p.replace(/^([A-ZÁÉÍÓÚa-záéíóú])\s*[:\.\)]\s*/, '**$1:** ');
           processed.push(`- ${p}`);
         }
       }
       continue;
     }
 
-    // 2. If line starts with a bullet marker: '• ...', '● ...', '- ...', '* ...'
-    if (/^[•●○■◆▪▫\-\*\+]\s*/.test(trimmed)) {
-      let content = trimmed.replace(/^[•●○■◆▪▫\-\*\+]\s*/, '').trim();
-      content = content.replace(/^([A-Ea-e])\s*[:\.\)]\s*/, '**$1:** ');
+    // 4. Viñetas estándar (PROTEGIENDO cursivas como *Perla CONAREM*:)
+    if (/^(?:[•●○■◆▪▫\-\+]|\*(?=\s))\s*/.test(trimmed)) {
+      let content = trimmed.replace(/^(?:[•●○■◆▪▫\-\+]|\*(?=\s))\s*/, '').trim();
+      content = content.replace(/^([A-ZÁÉÍÓÚa-záéíóú])\s*[:\.\)]\s*/, '**$1:** ');
       processed.push(`- ${content}`);
       continue;
     }
 
-    // 3. If line starts directly with option notation: 'A: ...', 'A) ...', 'A. ...'
-    if (/^[A-Ea-e]\s*[:\.\)]\s+/.test(trimmed)) {
-      let content = trimmed.replace(/^([A-Ea-e])\s*[:\.\)]\s+/, '**$1:** ');
+    // 5. Notación de opción directa o acrónimo (A:, B:, S:, M:, etc.)
+    if (/^[A-Za-z]\s*[:\.\)]\s+/.test(trimmed)) {
+      let content = trimmed.replace(/^([A-Za-z])\s*[:\.\)]\s+/, '**$1:** ');
       processed.push(`- ${content}`);
       continue;
     }
 
-    // 4. Tabular / multi-space key-value format (e.g., "Pliegue genital   Ovario")
+    // 6. Formato tabular / clave-valor multiespacio
     if (/^([^\s].{2,40}?)\s{2,}([^\s].+)$/.test(trimmed) && !trimmed.startsWith('#') && !trimmed.startsWith('http')) {
       const match = trimmed.match(/^([^\s].{2,40}?)\s{2,}([^\s].+)$/);
       if (match) {
@@ -64,8 +104,15 @@ export function normalizeExplanationMarkdown(text: string): string {
       }
     }
 
-    // 5. If line contains arrows (→, ←, ↔) representing clinical associations
-    if ((trimmed.includes('→') || trimmed.includes('←') || trimmed.includes('↔')) && !trimmed.startsWith('- ') && !trimmed.startsWith('* ') && !trimmed.startsWith('#')) {
+    // 7. Flechas clínicas cortas (SOLO si no es un párrafo largo o nota mnemotécnica)
+    if (
+      (trimmed.includes('→') || trimmed.includes('←') || trimmed.includes('↔')) &&
+      !trimmed.startsWith('- ') &&
+      !trimmed.startsWith('* ') &&
+      !trimmed.startsWith('#') &&
+      trimmed.length < 120 &&
+      !/^(?:Mnemotecnia|Nota|Secuencia|Algoritmo|Idea de examen):/i.test(trimmed)
+    ) {
       processed.push(`- ${trimmed}`);
       continue;
     }
@@ -88,7 +135,9 @@ export function parseExplanation(text: string): ParsedSection[] {
     if (currentSection) {
       const combined = currentRawLines.join('\n').trim();
       currentSection.rawText = normalizeExplanationMarkdown(combined);
-      sections.push(currentSection);
+      if (currentSection.rawText.length > 0 || currentSection.title.toLowerCase().startsWith('referencia')) {
+        sections.push(currentSection);
+      }
     }
     currentSection = null;
     currentRawLines = [];
@@ -104,16 +153,21 @@ export function parseExplanation(text: string): ParsedSection[] {
       continue;
     }
 
+    // Filtrar línea inicial aislada de 'Respuesta correcta:' para evitar contenedores vacíos
+    if (/^[✅\s]*[Rr]espuesta\s+correcta\s*:/i.test(trimmed)) {
+      continue;
+    }
+
     // Check header matching
     const isMdHeader = trimmed.startsWith('#');
-    const isEmojiHeader = /^[ \t]*[-•*]?\s*[✅💡🟩❓🔍⚠️📚✨🎨🧠🧪🏥🧬🩺📋📖]/u.test(trimmed) && trimmed.length < 75;
+    const isEmojiHeader = /^[ \t]*[-•*]?\s*[💡🟩❓🔍⚠️📚✨🎨🧠🧪🏥🧬🩺📋📖⚡🔑📌🎯⭐]/u.test(trimmed) && trimmed.length < 75;
 
     const cleanLineForCheck = trimmed
-      .replace(/^[^\w\s]+/u, '')
+      .replace(/^[^\w\s¿?]+/u, '')
       .replace(/^\*+\s*|\s*\*+$/g, '')
       .trim();
 
-    const headerKeywords = /^(?:AN[ÁA]LISIS DE PREGUNTA|AN[ÁA]LISIS|CONCEPTOS? CLAVE|PUNTOS? CLAVE(?:\s*\(REPASO ACTIVO\))?|REPASO ACTIVO|EXPLICACI[ÓO]N|REFERENCIAS?|REFERENCIA)\b/i;
+    const headerKeywords = /^(?:AN[ÁA]LISIS DE PREGUNTA|AN[ÁA]LISIS DE LA PREGUNTA|AN[ÁA]LISIS|POR QU[ÉE] ES LA CORRECTA|CONCEPTOS? CLAVE|CLAVE CONAREM|PUNTOS? CLAVE(?:\s*\(REPASO ACTIVO\))?|REPASO ACTIVO|EXPLICACI[ÓO]N|REFERENCIAS?|REFERENCIA)\b/i;
     const isKeywordHeader = headerKeywords.test(cleanLineForCheck) && cleanLineForCheck.length < 75;
 
     if (isMdHeader || isEmojiHeader || isKeywordHeader) {

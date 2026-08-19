@@ -2511,7 +2511,7 @@ export const questionsSemana9: Question[] = [
   },
   {
     id: "semana9_vac_q40",
-    text: "Un adolescente inicia la vacunación contra el VPH a los 13 años. ¿Cuál es el esquema recomendado? (Nelson Textbook of Pediatrics, 22.ª ed., pág. 1594)",
+    text: "Un adolescente inicia la vacunación contra el VPH a los 16 años. ¿Cuál es el esquema recomendado? (Nelson Textbook of Pediatrics, 22.ª ed., pág. 1594)",
     options: [
         "Una sola dosis.",
         "Dos dosis separadas por 6 meses.",
@@ -2520,8 +2520,8 @@ export const questionsSemana9: Question[] = [
         "Tres dosis: 0, 6 y 12 meses."
     ],
     correctOptionIndex: 3,
-    explanation: "🧠 **ANÁLISIS DE PREGUNTA**\nCuando la vacunación se inicia a los 15 años o después, se requieren tres dosis con esquema 0, 1-2 y 6 meses. (En esta pregunta el inicio es a los 13 años, por lo que esta opción sería incorrecta según el texto. Si el examen pregunta por ≥15 años, este es el esquema correcto.)\n\n🟩 **CONCEPTO CLAVE**\n•\t<15 años → generalmente 2 dosis. •\t≥15 años → 3 dosis. •\tIntervalos mínimos deben respetarse.\n\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\n• Antes de los 15 años = 2 dosis. Desde los 15 años = 3 dosis.",
-    pagina: "Nelson Textbook of Pediatrics, 22.ª edición, pág. 1594. Nota: En el fragmento del Nelson, las 3 dosis corresponden a quienes inician la vacunación a los 15 años o más. Para un inicio a los 13 años, el esquema correcto es de 2 dosis. ________________________________________",
+    explanation: "🧠 **ANÁLISIS DE PREGUNTA**\nCuando la vacunación se inicia a los 15 años o después (como a los 16 años), se requieren tres dosis con esquema 0, 1-2 y 6 meses.\n\n🟩 **CONCEPTO CLAVE**\n• <15 años → generalmente 2 dosis.\n• ≥15 años → 3 dosis (0, 1-2 y 6 meses).\n• Intervalos mínimos deben respetarse.\n\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\n• Antes de los 15 años = 2 dosis.\n• Desde los 15 años = 3 dosis.",
+    pagina: "Nelson Textbook of Pediatrics, 22.ª edición, pág. 1594.",
     materia: "Pediatría",
     semana: 9,
     tema: "Vacunas",

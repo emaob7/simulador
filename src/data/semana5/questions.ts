@@ -710,7 +710,7 @@ export const questionsSemana5: Question[] = [
       'Desnutrición aguda grave',
       'Eutrofia'
     ],
-    correctOptionIndex: 3,
+    correctOptionIndex: 2,
     explanation: '🧠 **ANÁLISIS DE PREGUNTA**\nEl indicador que define la desnutrición aguda es el Peso/Talla (P/T).\n\n🟩 **CONCEPTO CLAVE**\nEl Peso/Talla (P/T) es el indicador principal para evaluar desnutrición aguda (emaciación). Un P/T entre -2 y -3 DE indica desnutrición aguda moderada, mientras que < -3 DE se considera grave. Sin embargo, siga las pautas del hospital y del manual nacional para la derivación oportuna y diagnóstico conforme a los consensos locales.\n\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\n• P/T entre -2 y -3 DE = Desnutrición aguda moderada.\n• P/T < -3 DE = Desnutrición aguda grave.\n• P/T evalúa el estado nutricional actual.\n• Es el indicador más sensible para emaciación.',
     pagina: 'Manual Básico de Evaluación Nutricional Antropométrica, 6.ª versión, Cap. 4, pág. 29.',
     materia: 'Pediatría',

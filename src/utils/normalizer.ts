@@ -80,10 +80,10 @@ function cleanGroupName(grupo: string, semana?: number, normalizado?: string): s
   
   if (s === 5) {
     if (norm === "Evaluación Antropométrica") return "Crecimiento y Desarrollo";
-    if (["Alimentación Complementaria", "Guías Alimentarias del Paraguay", "Ictericia por Lactancia y Leche Materna", "Lactancia Materna", "Requerimientos y Alimentación Complementaria", "Síndrome de Realimentación"].includes(norm)) {
+    if (["Alimentación Complementaria", "Guías Alimentarias del Paraguay", "Ictericia por Lactancia y Leche Materna", "Lactancia Materna", "Requerimientos y Alimentación Complementaria"].includes(norm)) {
       return "Lactancia y Nutrición Infantil";
     }
-    if (["Desnutrición Aguda", "Desnutrición Crónica", "Desnutrición Grave", "Desnutrición Infantil", "Manejo de la Desnutrición"].includes(norm)) {
+    if (["Desnutrición Aguda", "Desnutrición Crónica", "Desnutrición Grave", "Desnutrición Infantil", "Manejo de la Desnutrición", "Síndrome de Realimentación"].includes(norm)) {
       return "Desnutrición y Realimentación";
     }
     if (norm === "Obesidad Infantil") return "Trastornos por Exceso (Obesidad)";
