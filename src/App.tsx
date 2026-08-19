@@ -1391,6 +1391,7 @@ export default function App() {
               savedQuestionIds={savedQuestionIds}
               onToggleBookmark={handleToggleBookmark}
               onAnswerImmediate={handleAnswerImmediate}
+              progress={userProgress}
             />
           )}
 

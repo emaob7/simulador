@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Markdown from 'react-markdown';
 import { Question, AnswerRecord } from '../../types';
 import { Button } from '../../components/ui/Button';
@@ -14,7 +14,8 @@ import {
   Save,
   LogOut,
   Check,
-  BookmarkCheck
+  BookmarkCheck,
+  Activity
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { analyzeSubtema } from '../../utils/normalizer';
@@ -33,6 +34,7 @@ interface QuizViewProps {
   initialAnswers?: Record<string, number>;
   initialTimeElapsed?: number;
   draftKey?: string;
+  progress?: any[];
 }
 
 export function QuizView({ 
@@ -75,6 +77,20 @@ export function QuizView({
   
   const [timeElapsed, setTimeElapsed] = useState<number>(initialTimeElapsed);
   const [sessionStartTime] = useState<number>(Date.now() - (initialTimeElapsed * 1000));
+
+  const questionStats = useMemo(() => {
+    const stats: Record<string, { total: number; correct: number }> = {};
+    if (!progress || progress.length === 0) return stats;
+    progress.forEach(p => {
+      if (!p.question_id) return;
+      if (!stats[p.question_id]) {
+        stats[p.question_id] = { total: 0, correct: 0 };
+      }
+      stats[p.question_id].total++;
+      if (p.is_correct) stats[p.question_id].correct++;
+    });
+    return stats;
+  }, [progress]);
 
   // Time limit for the quiz: 1 minute per question
   const timeLimit = questions.length * 60;
@@ -624,10 +640,23 @@ export function QuizView({
                   <div className="space-y-6">
                     {renderExplanation(q.explanation)}
 
-                    {q.pagina && (
-                      <div className="mt-6 pt-4 border-t border-white/[0.04] flex items-center gap-2 text-xs text-[#A0A0A0]">
-                        <BookOpen className="w-3.5 h-3.5 text-primary" />
-                        <span className="font-bold text-white">Referencia:</span> {q.pagina.replace(/^(?:📖\s*)?(?:[Rr]eferencia:\s*)*/, '')}
+                    {(q.pagina || questionStats[q.id]) && (
+                      <div className="mt-6 pt-4 border-t border-white/[0.04] space-y-2 text-xs text-[#A0A0A0]">
+                        {q.pagina && (
+                          <div className="flex items-center gap-2">
+                            <BookOpen className="w-3.5 h-3.5 text-primary" />
+                            <span className="font-bold text-white">Referencia:</span> {q.pagina.replace(/^(?:📖\s*)?(?:[Rr]eferencia:\s*)*/, '')}
+                          </div>
+                        )}
+                        {questionStats[q.id] && (
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <Activity className="w-3.5 h-3.5 text-primary" />
+                            <span className="font-bold text-white">Tu historial:</span> has respondido esta pregunta {questionStats[q.id].total} {questionStats[q.id].total === 1 ? 'vez' : 'veces'} ({questionStats[q.id].correct} aciertos).
+                            <span className="px-2 py-0.5 bg-primary/10 text-primary font-bold rounded text-[10px]">
+                              {Math.round((questionStats[q.id].correct / questionStats[q.id].total) * 100)}% precisión
+                            </span>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
