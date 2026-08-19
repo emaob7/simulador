@@ -2,7 +2,20 @@ import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
 import { Question, AnswerRecord } from '../../types';
 import { Button } from '../../components/ui/Button';
-import { Clock, CheckCircle2, XCircle, AlertCircle, ChevronRight, BookOpen, Lightbulb, Bookmark } from 'lucide-react';
+import { 
+  Clock, 
+  CheckCircle2, 
+  XCircle, 
+  AlertCircle, 
+  ChevronRight, 
+  BookOpen, 
+  Lightbulb, 
+  Bookmark,
+  Save,
+  LogOut,
+  Check,
+  BookmarkCheck
+} from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { analyzeSubtema } from '../../utils/normalizer';
 import { ExplanationRenderer } from '../../components/ExplanationRenderer';
@@ -10,31 +23,111 @@ import { ExplanationRenderer } from '../../components/ExplanationRenderer';
 interface QuizViewProps {
   questions: Question[];
   onComplete: (answers: AnswerRecord[]) => void;
+  onSaveAndExit?: (answersMap: Record<string, number>, timeElapsed: number) => void;
+  onQuickSave?: (answersMap: Record<string, number>, timeElapsed: number) => Promise<boolean> | void;
+  onCancel?: () => void;
   mode?: 'practice' | 'exam';
   savedQuestionIds?: string[];
   onToggleBookmark?: (questionId: string) => void;
   onAnswerImmediate?: (questionId: string, isCorrect: boolean, timeSpent: number) => void;
+  initialAnswers?: Record<string, number>;
+  initialTimeElapsed?: number;
+  draftKey?: string;
 }
 
 export function QuizView({ 
   questions, 
   onComplete, 
+  onSaveAndExit,
+  onQuickSave,
+  onCancel,
   mode = 'exam',
   savedQuestionIds = [],
   onToggleBookmark,
-  onAnswerImmediate
+  onAnswerImmediate,
+  initialAnswers = {},
+  initialTimeElapsed = 0,
+  draftKey = 'dr_active_quiz_draft'
 }: QuizViewProps) {
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, number>>(() => {
+    if (Object.keys(initialAnswers).length > 0) return initialAnswers;
+    try {
+      const savedDraft = localStorage.getItem(draftKey);
+      if (savedDraft) {
+        const parsed = JSON.parse(savedDraft);
+        if (parsed.answers && Object.keys(parsed.answers).length > 0) {
+          return parsed.answers;
+        }
+      }
+    } catch (e) {
+      console.error("Error cargando draft inicial:", e);
+    }
+    return {};
+  });
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [collapsedQuestions, setCollapsedQuestions] = useState<Record<string, boolean>>({});
   const [activeQuestionIdx, setActiveQuestionIdx] = useState(0);
   const [showDrawer, setShowDrawer] = useState(false);
+  const [showExitModal, setShowExitModal] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveToast, setSaveToast] = useState<{ show: boolean; message: string }>({ show: false, message: '' });
   
-  const [sessionStartTime] = useState<number>(Date.now());
-  const [timeElapsed, setTimeElapsed] = useState(0);
+  const [timeElapsed, setTimeElapsed] = useState<number>(initialTimeElapsed);
+  const [sessionStartTime] = useState<number>(Date.now() - (initialTimeElapsed * 1000));
 
-  // Active question index state is updated via manual navigation click or option selections
+  // Time limit for the quiz: 1 minute per question
+  const timeLimit = questions.length * 60;
 
+  // Auto-guardado en localStorage cada vez que cambian las respuestas o el tiempo
+  useEffect(() => {
+    if (isSubmitted) return;
+    try {
+      const draftData = {
+        answers,
+        timeElapsed,
+        questionIds: questions.map(q => q.id),
+        materia: questions[0]?.materia || '',
+        semana: questions[0]?.semana || 0,
+        tema: questions[0]?.tema || '',
+        mode,
+        updatedAt: Date.now()
+      };
+      localStorage.setItem(draftKey, JSON.stringify(draftData));
+    } catch (e) {
+      console.error("Error guardando draft:", e);
+    }
+  }, [answers, timeElapsed, isSubmitted, questions, mode, draftKey]);
+
+  useEffect(() => {
+    if (isSubmitted) return;
+    const timer = setInterval(() => {
+      const currentElapsed = Math.floor((Date.now() - sessionStartTime) / 1000);
+      setTimeElapsed(currentElapsed);
+      
+      // Auto-submit if time runs out in exam mode
+      if (mode === 'exam' && currentElapsed >= timeLimit) {
+        clearInterval(timer);
+        setIsSubmitted(true);
+        window.scrollTo(0, 0);
+      }
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [sessionStartTime, isSubmitted, mode, timeLimit]);
+
+  // Advertencia al recargar
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (!isSubmitted && Object.keys(answers).length > 0) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [answers, isSubmitted]);
+
+  if (!questions || questions.length === 0) return <div className="text-white text-center py-12">No hay preguntas disponibles.</div>;
 
   const scrollToQuestion = (idx: number) => {
     const el = document.getElementById(`question-card-${idx}`);
@@ -54,27 +147,6 @@ export function QuizView({
     }
   };
 
-  // Time limit for the quiz: 1 minute per question
-  const timeLimit = questions.length * 60;
-
-  useEffect(() => {
-    if (isSubmitted) return;
-    const timer = setInterval(() => {
-      const currentElapsed = Math.floor((Date.now() - sessionStartTime) / 1000);
-      setTimeElapsed(currentElapsed);
-      
-      // Auto-submit if time runs out in exam mode
-      if (mode === 'exam' && currentElapsed >= timeLimit) {
-        clearInterval(timer);
-        setIsSubmitted(true);
-        window.scrollTo(0, 0);
-      }
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [sessionStartTime, isSubmitted, mode, timeLimit]);
-
-  if (!questions || questions.length === 0) return <div className="text-white text-center py-12">No hay preguntas disponibles.</div>;
-
   const handleOptionSelect = (questionId: string, optionIndex: number) => {
     if (isSubmitted) return;
     if (mode === 'practice' && answers[questionId] !== undefined) return;
@@ -86,7 +158,7 @@ export function QuizView({
       setActiveQuestionIdx(qIndex);
     }
 
-    if (mode === 'practice' && onAnswerImmediate) {
+    if (onAnswerImmediate) {
       const q = questions.find(x => x.id === questionId);
       if (q) {
         const isCorrect = optionIndex === q.correctOptionIndex;
@@ -97,6 +169,53 @@ export function QuizView({
     }
   };
 
+  const answeredCount = Object.keys(answers).length;
+
+  const showFeedbackToast = (msg: string) => {
+    setSaveToast({ show: true, message: msg });
+    setTimeout(() => {
+      setSaveToast({ show: false, message: '' });
+    }, 3500);
+  };
+
+  const handleQuickSave = async () => {
+    if (answeredCount === 0) {
+      showFeedbackToast("Aún no has respondido ninguna pregunta.");
+      return;
+    }
+    setIsSaving(true);
+    if (onQuickSave) {
+      await onQuickSave(answers, timeElapsed);
+    }
+    setIsSaving(false);
+    showFeedbackToast(`¡Progreso guardado! (${answeredCount} de ${questions.length} preguntas)`);
+  };
+
+  const handleConfirmSaveAndExit = async () => {
+    setIsSaving(true);
+    if (onSaveAndExit) {
+      await onSaveAndExit(answers, timeElapsed);
+    } else if (onCancel) {
+      onCancel();
+    }
+    setIsSaving(false);
+    setShowExitModal(false);
+  };
+
+  const handleExitWithoutSaving = () => {
+    try {
+      localStorage.removeItem(draftKey);
+    } catch (e) {
+      console.error(e);
+    }
+    setShowExitModal(false);
+    if (onCancel) {
+      onCancel();
+    } else if (onSaveAndExit) {
+      onSaveAndExit({}, 0);
+    }
+  };
+
   const allQuestionsAnswered = questions.every(q => answers[q.id] !== undefined);
 
   const handleSubmit = () => {
@@ -104,13 +223,18 @@ export function QuizView({
   };
 
   const handleFinish = () => {
-    const avgTime = Math.floor(timeElapsed / questions.length);
+    const avgTime = Math.floor(timeElapsed / Math.max(1, questions.length));
     const finalRecords: AnswerRecord[] = questions.map(q => ({
       questionId: q.id,
       selectedOptionIndex: answers[q.id] ?? -1,
       isCorrect: answers[q.id] === q.correctOptionIndex,
       timeTakenSeconds: avgTime,
     }));
+    try {
+      localStorage.removeItem(draftKey);
+    } catch (e) {
+      console.error(e);
+    }
     onComplete(finalRecords);
   };
 
@@ -130,7 +254,83 @@ export function QuizView({
   const semana = questions[0]?.semana || '';
 
   return (
-    <div className="max-w-4xl mx-auto pb-20">
+    <div className="max-w-4xl mx-auto pb-20 relative">
+      {/* Toast Feedback */}
+      <AnimatePresence>
+        {saveToast.show && (
+          <motion.div
+            initial={{ opacity: 0, y: -20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -20, scale: 0.95 }}
+            className="fixed top-20 right-6 z-50 bg-[#1E1E1E] text-white px-5 py-3 rounded-2xl shadow-2xl border border-primary/40 flex items-center gap-3"
+          >
+            <div className="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+              <Check className="w-4 h-4" />
+            </div>
+            <span className="text-sm font-semibold tracking-wide">{saveToast.message}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Modal Confirmación Guardar y Salir */}
+      <AnimatePresence>
+        {showExitModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              className="bg-[#141414] border border-white/10 rounded-3xl p-6 md:p-8 max-w-lg w-full shadow-2xl relative overflow-hidden"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-primary/10 rounded-2xl text-primary">
+                  <Save className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                    ¿Guardar progreso y salir?
+                  </h3>
+                  <p className="text-xs text-gray-400 font-medium">
+                    {materia} • Semana {semana}
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-sm text-gray-300 mb-6 leading-relaxed">
+                Has respondido <strong className="text-primary font-bold">{answeredCount} de {questions.length}</strong> preguntas. 
+                Si guardas tu progreso ahora, tus respuestas se registrarán en tus analíticas y podrás continuar el resto más tarde.
+              </p>
+
+              <div className="space-y-3">
+                <Button
+                  onClick={handleConfirmSaveAndExit}
+                  disabled={isSaving}
+                  className="w-full py-4 bg-primary text-black font-extrabold uppercase tracking-wider text-xs shadow-lg hover:bg-primary/90 flex items-center justify-center gap-2"
+                >
+                  <BookmarkCheck className="w-4 h-4" />
+                  {isSaving ? 'Guardando progreso...' : 'Guardar respuestas y Salir'}
+                </Button>
+
+                <Button
+                  variant="outline"
+                  onClick={() => setShowExitModal(false)}
+                  className="w-full py-4 border-white/10 text-white hover:bg-white/5 font-bold uppercase tracking-wider text-xs"
+                >
+                  Continuar respondiendo
+                </Button>
+
+                <button
+                  onClick={handleExitWithoutSaving}
+                  className="w-full pt-2 text-center text-[11px] text-rose-400 hover:text-rose-300 font-semibold uppercase tracking-wider transition-colors"
+                >
+                  Salir sin guardar avance
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
       {/* Context Header (Sticky) - Super Compact */}
       <div className="sticky top-[64px] xl:top-[80px] z-40 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/5 p-2.5 md:p-3 mb-4 md:mb-6 shadow-2xl">
         <div className="flex justify-between items-center gap-3 mb-2">
@@ -140,7 +340,7 @@ export function QuizView({
               Semana {semana} / {materia}
             </span>
             <span className="text-[#A0A0A0] text-[10px]">•</span>
-            <span className="text-[10px] md:text-xs font-semibold text-white truncate max-w-[200px] sm:max-w-[400px]">
+            <span className="text-[10px] md:text-xs font-semibold text-white truncate max-w-[200px] sm:max-w-[300px]">
               {subInfo.grupo} {subInfo.normalizado && subInfo.normalizado !== subInfo.grupo ? `• ${subInfo.normalizado}` : ''}
             </span>
             {isSubmitted ? (
@@ -149,36 +349,55 @@ export function QuizView({
               </span>
             ) : (
               <span className="text-[8px] font-bold text-[#A0A0A0] uppercase tracking-wider">
-                ({Object.keys(answers).length}/{questions.length})
+                ({answeredCount}/{questions.length})
               </span>
             )}
           </div>
 
-          {/* Right: Timer */}
-          {mode === 'exam' && (
-            <div className="flex items-center gap-2 flex-shrink-0">
+          {/* Right: Actions and Timer */}
+          <div className="flex items-center gap-2 flex-shrink-0">
+            {mode === 'exam' && (
               <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border ${timeLimit - timeElapsed <= 60 ? 'border-red-500 bg-red-950/20 text-red-400' : 'border-white/5 bg-[#1E1E1E]/50 text-white'} font-mono text-xs font-bold shadow-inner`}>
                 <Clock className={`w-3.5 h-3.5 ${timeLimit - timeElapsed <= 60 ? 'text-red-400 animate-pulse' : 'text-[#A0A0A0]'}`} />
                 {formatTime(Math.max(0, timeLimit - timeElapsed))}
               </div>
-              <span className="text-[8px] text-[#A0A0A0] font-bold uppercase tracking-wider hidden sm:inline">1 min/preg</span>
-            </div>
-          )}
-          {mode === 'practice' && (
-            <div className="flex items-center flex-shrink-0">
+            )}
+            {mode === 'practice' && (
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-white/5 bg-[#1E1E1E]/50 font-mono text-xs font-bold text-white shadow-inner">
                 <Clock className="w-3.5 h-3.5 text-[#A0A0A0]" />
                 {formatTime(timeElapsed)}
               </div>
-            </div>
-          )}
+            )}
+
+            {!isSubmitted && (
+              <>
+                <button
+                  onClick={handleQuickSave}
+                  disabled={isSaving}
+                  title="Guardar progreso"
+                  className="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-bold text-white shadow-sm transition-all"
+                >
+                  <Save className="w-3.5 h-3.5 text-primary" />
+                  <span className="hidden sm:inline text-[11px]">Guardar</span>
+                </button>
+
+                <button
+                  onClick={() => setShowExitModal(true)}
+                  className="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-primary/30 bg-primary text-black font-extrabold text-[11px] uppercase tracking-wider shadow-sm hover:bg-primary/90 transition-all"
+                >
+                  <LogOut className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">Guardar y Salir</span>
+                </button>
+              </>
+            )}
+          </div>
         </div>
 
-        {/* Progress Bar (Super Thin, no text labels to save space) */}
+        {/* Progress Bar (Super Thin) */}
         <div className="w-full h-[3px] bg-white/10 rounded-full overflow-hidden mb-1">
           <div 
             className={`h-full transition-all duration-500 ease-out ${isSubmitted ? 'bg-primary shadow-[0_0_12px_#C6A84A]' : 'bg-primary'}`}
-            style={{ width: `${isSubmitted ? 100 : (Object.keys(answers).length / questions.length) * 100}%` }}
+            style={{ width: `${isSubmitted ? 100 : (answeredCount / questions.length) * 100}%` }}
           />
         </div>
       </div>
@@ -420,14 +639,25 @@ export function QuizView({
       </div>
 
       {/* Actions */}
-      <div className="px-2 md:px-6 mt-12 md:mt-16">
+      <div className="px-2 md:px-6 mt-12 md:mt-16 space-y-4">
         {!isSubmitted ? (
-          <Button 
-            onClick={handleSubmit}
-            className="w-full py-6 md:py-8 text-base md:text-lg font-black bg-primary text-[#0A0A0A] hover:bg-primary/95 shadow-[0_0_40px_rgba(198,168,74,0.2)] hover:shadow-[0_0_60px_rgba(198,168,74,0.4)] transition-all duration-300 hover:-translate-y-1 rounded-2xl"
-          >
-            FINALIZAR ({Object.keys(answers).length} / {questions.length})
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button 
+              variant="outline"
+              onClick={() => setShowExitModal(true)}
+              className="sm:flex-1 py-5 md:py-6 text-sm font-bold border-white/10 text-white hover:bg-white/5 flex items-center justify-center gap-2 rounded-2xl"
+            >
+              <Save className="w-4 h-4 text-primary" />
+              Guardar y Salir ({answeredCount}/{questions.length})
+            </Button>
+
+            <Button 
+              onClick={handleSubmit}
+              className="sm:flex-[2] py-5 md:py-6 text-base font-black bg-primary text-[#0A0A0A] hover:bg-primary/95 shadow-[0_0_40px_rgba(198,168,74,0.2)] hover:shadow-[0_0_60px_rgba(198,168,74,0.4)] transition-all duration-300 rounded-2xl"
+            >
+              FINALIZAR Y REVISAR ({answeredCount} / {questions.length})
+            </Button>
+          </div>
         ) : (
           <div className="space-y-4 md:space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <Button 

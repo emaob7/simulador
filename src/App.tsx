@@ -27,7 +27,7 @@ import { Sidebar } from './components/Sidebar';
 import { TopAppBar } from './components/TopAppBar';
 import { Button } from './components/ui/Button';
 import { DataService } from './services/DataService';
-import { ChevronRight, ChevronDown, Check } from 'lucide-react';
+import { ChevronRight, ChevronDown, Check, BookmarkCheck, Play, RotateCcw } from 'lucide-react';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
@@ -585,9 +585,127 @@ export default function App() {
   };
 
   const [questionsState, setQuestionsState] = useState<Question[]>(allQuestions);
+  const [pendingDraft, setPendingDraft] = useState<any>(null);
+
+  const checkPendingDraft = () => {
+    try {
+      const saved = localStorage.getItem('dr_active_quiz_draft');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        const ansCount = parsed.answers ? Object.keys(parsed.answers).length : 0;
+        if (ansCount > 0 && parsed.questionIds && parsed.questionIds.length > 0) {
+          setPendingDraft({ ...parsed, answeredCount: ansCount, totalCount: parsed.questionIds.length });
+          return;
+        }
+      }
+      setPendingDraft(null);
+    } catch (e) {
+      console.error("Error checking pending draft:", e);
+      setPendingDraft(null);
+    }
+  };
+
+  useEffect(() => {
+    checkPendingDraft();
+  }, [view]);
+
+  const handleResumeDraft = () => {
+    if (!pendingDraft) return;
+    const questionsForDraft = allQuestions.filter(q => pendingDraft.questionIds.includes(q.id));
+    if (questionsForDraft.length > 0) {
+      setQuestionsState(questionsForDraft);
+      setSelectedMateria(pendingDraft.materia || '');
+      setSelectedSemana(pendingDraft.semana || 0);
+      setSelectedTema(pendingDraft.tema || '');
+      setQuizConfig({ count: questionsForDraft.length, mode: pendingDraft.mode || 'exam' });
+      setView('quiz');
+    }
+  };
+
+  const handleDiscardDraft = () => {
+    try {
+      localStorage.removeItem('dr_active_quiz_draft');
+    } catch (e) {
+      console.error(e);
+    }
+    setPendingDraft(null);
+  };
+
+  const saveCurrentQuizProgress = async (answersMap: Record<string, number>, timeElapsed: number) => {
+    if (!user) return;
+    const answeredQuestionIds = Object.keys(answersMap);
+    if (answeredQuestionIds.length === 0) return;
+
+    const avgTime = Math.floor(timeElapsed / Math.max(1, answeredQuestionIds.length));
+    const progressRecords: any[] = [];
+    let correctCount = 0;
+
+    answeredQuestionIds.forEach(qId => {
+      const q = allQuestions.find(x => x.id === qId);
+      const selectedIndex = answersMap[qId];
+      const isCorrect = q ? selectedIndex === q.correctOptionIndex : false;
+      if (isCorrect) correctCount++;
+      const subInfo = analyzeSubtema(q?.subtema, q?.materia, q?.semana, q?.text, q?.id);
+
+      progressRecords.push({
+        user_id: user.uid,
+        question_id: qId,
+        is_correct: isCorrect,
+        time_spent: avgTime,
+        tema: q?.tema || 'Desconocido',
+        subtema: subInfo.normalizado,
+        subtema_grupo: subInfo.grupo,
+        materia: q?.materia || 'Pediatría',
+        date: new Date()
+      });
+    });
+
+    try {
+      if (progressRecords.length > 0) {
+        await DataService.saveProgressBatch(progressRecords);
+      }
+      
+      await DataService.saveSession({
+        user_id: user.uid,
+        score: correctCount,
+        total_questions: answeredQuestionIds.length,
+        date: new Date(),
+        semana: selectedSemana || 0,
+        materia: selectedMateria || 'Desconocida'
+      });
+
+      const [progressList, loadedSessions] = await Promise.all([
+        DataService.getProgress(user.uid),
+        DataService.getSessions(user.uid)
+      ]);
+      setUserProgress(progressList);
+      setSessions(loadedSessions);
+    } catch (e) {
+      console.error("Error guardando progreso parcial:", e);
+    }
+  };
+
+  const handleSaveAndExitQuiz = async (answersMap: Record<string, number>, timeElapsed: number) => {
+    setLoadingAction(true);
+    await saveCurrentQuizProgress(answersMap, timeElapsed);
+    setLoadingAction(false);
+    checkPendingDraft();
+    setView('simulator');
+  };
+
+  const handleQuickSaveQuiz = async (answersMap: Record<string, number>, timeElapsed: number) => {
+    await saveCurrentQuizProgress(answersMap, timeElapsed);
+  };
 
   const handleCompleteQuiz = async (results: AnswerRecord[]) => {
     setAnswers(results);
+    
+    try {
+      localStorage.removeItem('dr_active_quiz_draft');
+      setPendingDraft(null);
+    } catch (e) {
+      console.error(e);
+    }
     
     if (user) {
       setLoadingAction(true);
@@ -714,6 +832,50 @@ export default function App() {
         />
         
         <main className="p-4 md:p-8 max-w-[1600px] w-full mx-auto">
+          {/* Banner de Recuperación de Sesión Pendiente */}
+          {(view === 'dashboard' || view === 'simulator') && pendingDraft && (
+            <div className="mb-8 p-6 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent border border-primary/30 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
+              <div className="flex items-center gap-4 relative z-10">
+                <div className="p-3.5 bg-primary text-black rounded-2xl shadow-sm shrink-0">
+                  <BookmarkCheck className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-black tracking-widest text-primary uppercase bg-primary/15 px-2 py-0.5 rounded-md border border-primary/20">
+                      Sesión sin terminar
+                    </span>
+                    <span className="text-xs font-semibold text-gray-400">
+                      {pendingDraft.answeredCount} de {pendingDraft.totalCount} respondidas
+                    </span>
+                  </div>
+                  <h4 className="font-extrabold text-white text-lg mt-1 font-manrope">
+                    {pendingDraft.tema || 'Simulacro en curso'}
+                  </h4>
+                  <p className="text-xs text-gray-400 font-medium">
+                    {pendingDraft.materia} • Semana {pendingDraft.semana}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 w-full md:w-auto relative z-10 shrink-0">
+                <Button 
+                  variant="outline"
+                  onClick={handleDiscardDraft}
+                  className="flex-1 md:flex-none py-3 px-5 border-white/10 text-gray-400 hover:text-rose-400 hover:border-rose-400/30 text-xs font-bold uppercase tracking-wider bg-white/5"
+                >
+                  Descartar
+                </Button>
+                <Button 
+                  onClick={handleResumeDraft}
+                  className="flex-1 md:flex-none py-3 px-6 bg-primary text-black font-extrabold text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(198,168,74,0.2)] hover:bg-primary/90 flex items-center justify-center gap-2"
+                >
+                  <Play className="w-4 h-4 fill-current" />
+                  Reanudar Sesión
+                </Button>
+              </div>
+            </div>
+          )}
+
           {view === 'dashboard' && (
             <DashboardView 
               userId={user.uid} 
@@ -1219,6 +1381,12 @@ export default function App() {
             <QuizView 
               questions={questionsState} 
               onComplete={handleCompleteQuiz} 
+              onSaveAndExit={handleSaveAndExitQuiz}
+              onQuickSave={handleQuickSaveQuiz}
+              onCancel={() => {
+                checkPendingDraft();
+                setView('simulator');
+              }}
               mode={quizConfig.mode}
               savedQuestionIds={savedQuestionIds}
               onToggleBookmark={handleToggleBookmark}

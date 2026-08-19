@@ -88,6 +88,29 @@ export const DataService = {
       console.error("Error adding progress document: ", e);
     }
   },
+
+  saveProgressList: async (progressList: UserProgress[]) => {
+    if (!progressList || progressList.length === 0) return;
+    if (isGuest()) {
+        const progress = JSON.parse(localStorage.getItem('dr_progress') || '[]');
+        const withIds = progressList.map((p, idx) => ({ ...p, id: `p_${Date.now()}_${idx}` }));
+        progress.push(...withIds);
+        localStorage.setItem('dr_progress', JSON.stringify(progress));
+        return;
+    }
+    try {
+      const promises = progressList.map(item => 
+        addDoc(collection(db, "progress"), {
+          ...item,
+          date: item.date.toISOString()
+        }).catch(e => handleFirestoreError(e, 'create', 'progress'))
+      );
+      await Promise.all(promises);
+    } catch (e) {
+      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
+      console.error("Error batch saving progress: ", e);
+    }
+  },
   
   getProgress: async (userId: string): Promise<UserProgress[]> => {
     if (isGuest()) {
