@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { motion } from 'motion/react';
@@ -8,10 +8,10 @@ import {
   Zap, 
   BookOpen
 } from 'lucide-react';
-import { parseExplanation, ParsedSection } from '../utils/explanationParser';
+import { parseExplanation } from '../utils/explanationParser';
 
 interface ExplanationRendererProps {
-  explanation: string;
+  explanation?: string;
 }
 
 export function highlightClinicalText(text: string): React.ReactNode {
@@ -25,13 +25,13 @@ export function highlightClinicalText(text: string): React.ReactNode {
       {parts.map((part, index) => {
         const isMatch = regex.test(part);
         if (isMatch) {
-          let colorClass = "text-[#F5C042] font-bold";
+          let colorClass = "text-[#E0AF26] font-bold";
           if (part.toUpperCase().includes("INCORRECTA")) {
             colorClass = "text-rose-400 font-extrabold bg-rose-950/40 px-1.5 py-0.5 rounded border border-rose-500/30 text-xs";
           } else if (part.toUpperCase().includes("CORRECTA")) {
             colorClass = "text-emerald-400 font-extrabold bg-emerald-950/40 px-1.5 py-0.5 rounded border border-emerald-500/30 text-xs";
           } else if (part === "↑" || part === "↓" || part === "→") {
-            colorClass = "text-[#F5C042] font-extrabold mx-0.5 text-base inline-block";
+            colorClass = "text-[#E0AF26] font-extrabold mx-0.5 text-base inline-block";
           }
           return (
             <span key={index} className={colorClass}>
@@ -69,7 +69,7 @@ const MarkdownComponents = {
     );
   },
   u: ({ children, ...props }: any) => (
-    <u className="text-[#F5C042] font-bold decoration-[#F5C042]/50 underline-offset-4" {...props}>
+    <u className="text-[#E0AF26] font-bold decoration-[#E0AF26]/50 underline-offset-4" {...props}>
       {formatMarkdownChildren(children)}
     </u>
   ),
@@ -78,24 +78,23 @@ const MarkdownComponents = {
 
     if (textStr.trim().startsWith('📖') || textStr.toLowerCase().includes('referencia:')) {
       return (
-        <p className="mt-4 pt-3 border-t border-white/10 text-xs text-slate-400 font-medium flex items-center gap-2" {...props}>
+        <p className="mt-4 pt-3 border-t border-white/10 text-xs text-[#A6A6A6] font-medium flex items-center gap-2" {...props}>
           {formatMarkdownChildren(children)}
         </p>
       );
     }
 
-    // If paragraph contains a subheader like **<u>...</u>**
     const hasUnderlineSubheader = textStr.includes('<u>') || textStr.includes('**<u>');
     if (hasUnderlineSubheader) {
       return (
-        <div className="mt-4 mb-2 font-bold text-xs uppercase tracking-wider text-[#F5C042]" {...props}>
+        <div className="mt-4 mb-2 font-bold text-xs uppercase tracking-wider text-[#E0AF26]" {...props}>
           {formatMarkdownChildren(children)}
         </div>
       );
     }
 
     return (
-      <p className="text-xs md:text-sm text-slate-300 leading-relaxed mb-3" {...props}>
+      <p className="text-xs md:text-sm text-[#FAF9F6] leading-relaxed mb-3" {...props}>
         {formatMarkdownChildren(children)}
       </p>
     );
@@ -106,7 +105,7 @@ const MarkdownComponents = {
     </ul>
   ),
   li: ({ children, ...props }: any) => (
-    <li className="text-xs md:text-sm text-slate-200 leading-relaxed pl-5 relative before:content-['•'] before:absolute before:left-1 before:top-0 before:text-[#F5C042] before:font-bold" {...props}>
+    <li className="text-xs md:text-sm text-[#FAF9F6] leading-relaxed pl-5 relative before:content-['•'] before:absolute before:left-1 before:top-0 before:text-[#E0AF26] before:font-bold" {...props}>
       {formatMarkdownChildren(children)}
     </li>
   ),
@@ -117,15 +116,11 @@ const MarkdownComponents = {
   )
 };
 
-export function ExplanationRenderer({ explanation }: ExplanationRendererProps) {
-  const [sections, setSections] = useState<ParsedSection[]>([]);
+export function ExplanationRenderer({ explanation = '' }: ExplanationRendererProps) {
+  const sections = useMemo(() => parseExplanation(explanation || ''), [explanation]);
 
-  useEffect(() => {
-    setSections(parseExplanation(explanation));
-  }, [explanation]);
-
-  const getSectionHeader = (title: string) => {
-    const t = title.toLowerCase();
+  const getSectionHeader = (title: string = '') => {
+    const t = (title || '').toLowerCase();
     if (t.includes('análisis') || t.includes('analisis')) {
       return {
         title: 'ANÁLISIS DE LA PREGUNTA',
@@ -143,22 +138,30 @@ export function ExplanationRenderer({ explanation }: ExplanationRendererProps) {
     if (t.includes('repaso') || t.includes('punto')) {
       return {
         title: 'REPASO ACTIVO',
-        icon: <Zap className="w-4 h-4 text-[#F5C042]" />,
-        color: 'text-[#F5C042] border-[#F5C042]/30'
+        icon: <Zap className="w-4 h-4 text-[#E0AF26]" />,
+        color: 'text-[#E0AF26] border-[#C6A84A]/30'
       };
     }
     return {
-      title,
+      title: title || 'EXPLICACIÓN',
       icon: <BookOpen className="w-4 h-4 text-indigo-400" />,
       color: 'text-indigo-400 border-indigo-500/30'
     };
   };
 
+  if (!sections || sections.length === 0) {
+    return (
+      <div className="text-xs text-[#FAF9F6] whitespace-pre-wrap leading-relaxed">
+        {explanation}
+      </div>
+    );
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.2 }}
       className="w-full space-y-6 bg-transparent p-0"
     >
       {sections.map((section, sIdx) => {
