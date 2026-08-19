@@ -16,7 +16,7 @@ import {
 
 interface SidebarProps {
   currentView: string;
-  setCurrentView: (view: 'dashboard' | 'simulator' | 'admin' | 'results' | 'quiz' | 'quiz-config') => void;
+  setCurrentView: (view: 'dashboard' | 'simulator' | 'admin' | 'results' | 'quiz' | 'quiz-config' | 'saved') => void;
   userData: any;
   onResetData: () => void;
   isOpen: boolean;
@@ -137,31 +137,31 @@ export function Sidebar({
           </button>
 
           {/* 3. Bookmarks / Favoritas */}
-          {onStartBookmarksQuiz && (
-            <button
-              onClick={() => { onStartBookmarksQuiz(); onClose(); }}
-              disabled={savedCount === 0}
-              title={collapsed ? `Guardadas (${savedCount})` : undefined}
-              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-200 cursor-pointer border ${
-                savedCount > 0
-                  ? 'text-[#E0AF26] border-[#C6A84A]/30 bg-[#2E2E2E] hover:bg-[#2E2E2E]/90'
+          <button
+            onClick={() => { setCurrentView('saved'); onClose(); }}
+            disabled={savedCount === 0}
+            title={collapsed ? `Guardadas (${savedCount})` : undefined}
+            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-200 cursor-pointer border ${
+              isSelected('saved')
+                ? 'bg-[#2E2E2E] text-[#E0AF26] border-[#C6A84A] shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                : savedCount > 0
+                  ? 'text-[#E0AF26] border-[#C6A84A]/30 bg-[#2E2E2E]/60 hover:bg-[#2E2E2E]/90'
                   : 'text-[#A6A6A6] border-transparent opacity-50 pointer-events-none'
-              }`}
-            >
-              <Bookmark className="w-5 h-5 shrink-0" />
-              {!collapsed && (
-                <div className="text-left flex-1 flex items-center justify-between">
-                  <div>
-                    <span className="block text-xs font-black uppercase tracking-wider">Guardadas</span>
-                    <span className="block text-[10px] text-[#A6A6A6] font-normal">Repaso de Favoritas</span>
-                  </div>
-                  <span className="px-2 py-0.5 bg-[#C6A84A]/20 text-[#E0AF26] text-[10px] font-black rounded-lg border border-[#C6A84A]/30">
-                    {savedCount}
-                  </span>
+            }`}
+          >
+            <Bookmark className={`w-5 h-5 shrink-0 ${isSelected('saved') ? 'text-[#E0AF26] fill-current' : 'text-[#E0AF26]'}`} />
+            {!collapsed && (
+              <div className="text-left flex-1 flex items-center justify-between">
+                <div>
+                  <span className="block text-xs font-black uppercase tracking-wider">Guardadas</span>
+                  <span className="block text-[10px] text-[#A6A6A6] font-normal">Repaso de Favoritas</span>
                 </div>
-              )}
-            </button>
-          )}
+                <span className="px-2 py-0.5 bg-[#C6A84A]/20 text-[#E0AF26] text-[10px] font-black rounded-lg border border-[#C6A84A]/30">
+                  {savedCount}
+                </span>
+              </div>
+            )}
+          </button>
 
           {/* 4. Admin */}
           {userData?.role === 'admin' && (

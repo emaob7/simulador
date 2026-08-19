@@ -22,6 +22,7 @@ import { DashboardView } from './modules/dashboard/DashboardView';
 import { LoginView } from './modules/auth/LoginView';
 import { PendingApprovalView } from './modules/auth/PendingApprovalView';
 import { AdminView } from './modules/admin/AdminView';
+import { SavedQuestionsView } from './modules/saved/SavedQuestionsView';
 import { Sidebar } from './components/Sidebar';
 import { TopAppBar } from './components/TopAppBar';
 import { Button } from './components/ui/Button';
@@ -34,7 +35,7 @@ import { analyzeSubtema } from './utils/normalizer';
 
 // romanToInt removed
 
-type ViewState = 'dashboard' | 'simulator' | 'quiz' | 'results' | 'quiz-config' | 'admin';
+type ViewState = 'dashboard' | 'simulator' | 'quiz' | 'results' | 'quiz-config' | 'admin' | 'saved';
 
 const allQuestions: Question[] = [
   ...questionsSemana1,
@@ -375,13 +376,12 @@ export default function App() {
   };
 
   const handleStartBookmarksQuiz = () => {
-    const bookmarkedQs = allQuestions.filter(q => savedQuestionIds.includes(q.id));
-    if (bookmarkedQs.length === 0) {
-      alert("No tienes preguntas guardadas para repasar.");
-      return;
-    }
-    
-    const shuffled = [...bookmarkedQs].sort(() => 0.5 - Math.random());
+    setView('saved');
+  };
+
+  const handleStartQuizWithQuestions = (questions: Question[]) => {
+    if (!questions || questions.length === 0) return;
+    const shuffled = [...questions].sort(() => 0.5 - Math.random());
     setQuestionsState(shuffled);
     setSelectedMateria('Repaso de Guardadas');
     setSelectedSemana(0);
@@ -656,6 +656,7 @@ export default function App() {
     switch (view) {
       case 'dashboard': return 'Dr. Rodney - Analíticas de Rendimiento';
       case 'simulator': return 'Dr. Rodney - Simulador CONAREM';
+      case 'saved': return 'Dr. Rodney - Preguntas Guardadas';
       case 'quiz': return 'Dr. Rodney - Entrenamiento Activo';
       case 'results': return 'Dr. Rodney - Análisis de Resultados';
       case 'admin': return 'Dr. Rodney - Administración';
@@ -1181,20 +1182,13 @@ export default function App() {
                                     </div>
                                   </div>
                                   
-                                  <div className="flex flex-wrap gap-3">
+                                  <div>
                                     <Button 
                                       onClick={() => handleQuickStartQuiz(materia, Number(semana))}
-                                      className="bg-primary border border-transparent text-[#0A0A0A] hover:bg-primary/90 font-black px-6 py-4 rounded-xl shadow-md transition-all text-[11px] uppercase tracking-wider flex items-center justify-center gap-1.5"
+                                      className="bg-primary border border-transparent text-[#0A0A0A] hover:bg-primary/90 font-black px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(198,168,74,0.25)] hover:shadow-[0_0_35px_rgba(198,168,74,0.45)] transition-all text-xs uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
                                     >
-                                      Entrenamiento Rápido
-                                      <ChevronRight className="w-3.5 h-3.5" />
-                                    </Button>
-                                    <Button 
-                                      onClick={() => handlePrepareQuiz(materia, Number(semana), 'Todos los Temas', true)}
-                                      variant="outline"
-                                      className="border-white/10 text-[#A0A0A0] hover:text-white hover:bg-white/5 font-bold px-6 py-4 rounded-xl shadow-md transition-all text-[11px] uppercase tracking-wider flex items-center justify-center gap-1.5"
-                                    >
-                                      Personalizar
+                                      <span>Iniciar Entrenamiento</span>
+                                      <ChevronRight className="w-4 h-4" />
                                     </Button>
                                   </div>
                                 </div>
@@ -1208,6 +1202,17 @@ export default function App() {
                 ))}
               </div>
             </div>
+          )}
+
+          {view === 'saved' && (
+            <SavedQuestionsView 
+              allQuestions={allQuestions}
+              savedQuestionIds={savedQuestionIds}
+              onToggleBookmark={handleToggleBookmark}
+              onStartQuizWithQuestions={handleStartQuizWithQuestions}
+              onQuestionSelect={handleQuestionSelect}
+              onBackToSimulator={() => setView('simulator')}
+            />
           )}
 
           {view === 'quiz' && (

@@ -307,23 +307,31 @@ export function DashboardView({
         </div>
 
         {/* Preguntas Guardadas */}
-        <div className="bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between">
+        <div 
+          onClick={() => {
+            if (savedQuestionIds.length > 0 && onStartBookmarksQuiz) onStartBookmarksQuiz();
+          }}
+          className={`bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between transition-all ${
+            savedQuestionIds.length > 0 ? 'cursor-pointer hover:border-[#C6A84A]/50 hover:bg-[#2E2E2E]/90 group' : ''
+          }`}
+        >
           <div>
             <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Preguntas Guardadas</p>
             <p className="text-3xl font-black font-manrope text-[#E0AF26]">
               {savedQuestionIds.length} <span className="text-sm font-semibold text-[#A6A6A6]">favoritas</span>
             </p>
-            {savedQuestionIds.length > 0 && (
-              <button
-                onClick={onStartBookmarksQuiz}
-                className="mt-2 text-[11px] font-bold text-[#E0AF26] hover:underline flex items-center gap-1 cursor-pointer"
-              >
-                Repasar guardadas <ArrowRight className="w-3 h-3" />
-              </button>
+            {savedQuestionIds.length > 0 ? (
+              <span className="mt-2 text-[11px] font-bold text-[#E0AF26] group-hover:underline flex items-center gap-1">
+                Ver panel de guardadas <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </span>
+            ) : (
+              <span className="text-[11px] text-[#A6A6A6] mt-1 block">
+                0 marcadas como favoritas
+              </span>
             )}
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26]">
-            <Bookmark className="w-6 h-6" />
+          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26] group-hover:scale-105 transition-transform">
+            <Bookmark className="w-6 h-6 fill-current opacity-80" />
           </div>
         </div>
       </div>
