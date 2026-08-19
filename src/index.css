@@ -1,40 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #C6A84A;
-  --color-on-primary: #0A0A0A;
-  --color-primary-container: #2A2515;
-  --color-on-primary-container: #FFE59F;
+  /* Official Dr. Rodney Brand Palette */
+  --color-rd-black: #1C1C1C;
+  --color-deep-black: #121212;
+  --color-charcoal: #2E2E2E;
+  --color-graphite: #424242;
   
-  --color-surface: #0A0A0A; 
-  --color-on-surface: #F5F5F5; 
+  --color-rd-gold: #C6A84A;
+  --color-bright-gold: #E0AF26;
+  --color-soft-gold: #D8C477;
+  --color-pale-gold: #E8DCA9;
+  
+  --color-paper: #F4F1EA;
+  --color-off-white: #FAF9F6;
+  --color-pure-white: #FFFFFF;
+  --color-muted-gray: #A6A6A6;
+
+  /* Theme mappings */
+  --color-primary: #C6A84A;
+  --color-on-primary: #121212;
+  --color-primary-container: #2E2E2E;
+  --color-on-primary-container: #E8DCA9;
+  
+  --color-surface: #1C1C1C; 
+  --color-on-surface: #FFFFFF; 
   
   --color-surface-variant: #121212; 
-  --color-on-surface-variant: #A0A0A0; 
+  --color-on-surface-variant: #A6A6A6; 
   
-  --color-surface-container-lowest: #050505;
-  --color-surface-container-low: #0F0F0F;
-  --color-surface-container: #121212;
-  --color-surface-container-high: #1E1E1E;
-  --color-surface-container-highest: #2D2D2D;
+  --color-surface-container-lowest: #121212;
+  --color-surface-container-low: #181818;
+  --color-surface-container: #2E2E2E;
+  --color-surface-container-high: #383838;
+  --color-surface-container-highest: #424242;
   
   --font-manrope: "Manrope", sans-serif;
   --font-body: "Inter", sans-serif;
 }
 
 body {
-  background-color: var(--color-surface);
-  color: var(--color-on-surface);
+  background-color: var(--color-rd-black);
+  color: var(--color-pure-white);
   font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
 }
 
-/* Highly-polished styles for standard and nested markdown structures */
+/* Markdown styling with official RD palette */
 .markdown-body {
   font-family: var(--font-body);
   line-height: 1.8;
-  color: #D5D5D5;
+  color: #FAF9F6;
 }
 
 .markdown-body h3 {
@@ -61,7 +79,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background-color: var(--color-primary);
+  background-color: var(--color-rd-gold);
   box-shadow: 0 0 8px rgba(198, 168, 74, 0.6);
 }
 
@@ -69,7 +87,7 @@ body {
   margin-bottom: 0.75rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #D5D5D5;
+  color: #FAF9F6;
 }
 
 .markdown-body ul {
@@ -84,10 +102,9 @@ body {
   padding-left: 1.5rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #D5D5D5;
+  color: #FAF9F6;
 }
 
-/* Primary/Level-1 list bullets */
 .markdown-body ul > li::before {
   content: "";
   position: absolute;
@@ -96,25 +113,22 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background-color: var(--color-rd-gold);
   box-shadow: 0 0 6px rgba(198, 168, 74, 0.4);
 }
 
-/* Secondary/Level-2 nested ul tags */
 .markdown-body ul ul {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding-left: 1.75rem;
 }
 
-/* Secondary list item spacing */
 .markdown-body ul ul > li {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
-  color: #A0A0A0;
+  color: #A6A6A6;
 }
 
-/* Secondary/Level-2 nested list bullets */
 .markdown-body ul ul > li::before {
   content: "";
   position: absolute;
@@ -123,7 +137,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: #8F8F8F;
+  background-color: #424242;
   box-shadow: none;
 }
 
@@ -134,11 +148,7 @@ body {
 
 .markdown-body hr {
   border: 0;
-  border-top: 1px solid #2D2D2D;
+  border-top: 1px solid #424242;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
