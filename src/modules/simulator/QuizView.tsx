@@ -278,7 +278,7 @@ export function QuizView({
                 // Collapsed header
                 <div className="p-4 flex items-center justify-between gap-4 bg-[#1E1E1E]/10 border-b border-white/[0.03]">
                   <div className="flex items-center gap-3 overflow-hidden">
-                    <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs border border-white/5 flex-shrink-0">
+                    <span translate="no" className="notranslate flex items-center justify-center w-7 h-7 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs border border-white/5 flex-shrink-0">
                       {qIndex + 1}
                     </span>
                     <span className="text-xs text-gray-400 font-semibold truncate max-w-[200px] sm:max-w-[400px] md:max-w-[600px]">
@@ -298,7 +298,7 @@ export function QuizView({
                   <div className={`p-4 md:p-10 border-b border-white/5 ${isSubmitted ? 'bg-transparent' : 'bg-[#1E1E1E]/20'}`}>
                     <div className="flex justify-between items-center mb-4 md:mb-6">
                       <div className="flex items-center gap-3">
-                        <span className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs md:text-sm border border-white/5">
+                        <span translate="no" className="notranslate flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs md:text-sm border border-white/5">
                           {qIndex + 1}
                         </span>
                         
@@ -360,7 +360,7 @@ export function QuizView({
                           className={`w-full text-left p-4 md:p-5 rounded-xl border transition-all duration-300 flex items-center justify-between gap-4 ${optionStyle} ${!isSubmitted ? 'cursor-pointer hover:bg-white/5 active:scale-[0.99]' : 'cursor-default'}`}
                         >
                           <div className="flex items-center gap-4">
-                            <span className={`flex items-center justify-center w-8 h-8 rounded-lg text-sm font-bold transition-all duration-300 ${isSubmitted && isCorrect ? 'bg-emerald-500 text-white' : isSubmitted && isSelected ? 'bg-red-500 text-white' : isSelected ? 'bg-primary text-[#0A0A0A]' : 'bg-white/5 text-[#A0A0A0] border border-white/5'}`}>
+                            <span translate="no" className={`notranslate flex items-center justify-center w-8 h-8 rounded-lg text-sm font-black transition-all duration-300 ${isSubmitted && isCorrect ? 'bg-emerald-500 text-white' : isSubmitted && isSelected ? 'bg-red-500 text-white' : isSelected ? 'bg-primary text-[#0A0A0A]' : 'bg-white/5 text-[#A0A0A0] border border-white/5'}`}>
                               {String.fromCharCode(65 + index)}
                             </span>
                             <span className={`text-sm md:text-base transition-colors duration-300 ${isSubmitted && isCorrect ? 'font-semibold text-emerald-300' : isSelected ? 'text-white font-semibold' : 'text-[#D5D5D5]'}`}>{option}</span>

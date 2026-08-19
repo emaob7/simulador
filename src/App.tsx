@@ -24,9 +24,7 @@ import { PendingApprovalView } from './modules/auth/PendingApprovalView';
 import { AdminView } from './modules/admin/AdminView';
 import { Sidebar } from './components/Sidebar';
 import { TopAppBar } from './components/TopAppBar';
-import { Button } from './components/ui/Button';
-import { ChevronRight, ChevronDown } from 'lucide-react';
-import { DataService } from './services/DataService';
+import { ChevronRight, ChevronDown, Check } from 'lucide-react';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
@@ -849,8 +847,8 @@ export default function App() {
                           }`}
                         >
                           {quizConfig.mode === 'practice' && (
-                            <span className="absolute top-4 right-4 text-[9px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20 flex items-center gap-1">
-                              <span className="material-symbols-outlined text-[10px] font-black">check</span>
+                            <span translate="no" className="notranslate absolute top-4 right-4 text-[9px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20 flex items-center gap-1">
+                              <Check className="w-3 h-3 text-primary" />
                               Activo
                             </span>
                           )}
@@ -867,8 +865,8 @@ export default function App() {
                           }`}
                         >
                           {quizConfig.mode === 'exam' && (
-                            <span className="absolute top-4 right-4 text-[9px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20 flex items-center gap-1">
-                              <span className="material-symbols-outlined text-[10px] font-black">check</span>
+                            <span translate="no" className="notranslate absolute top-4 right-4 text-[9px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20 flex items-center gap-1">
+                              <Check className="w-3 h-3 text-primary" />
                               Activo
                             </span>
                           )}
