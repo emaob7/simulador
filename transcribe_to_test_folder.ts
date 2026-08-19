@@ -14,6 +14,8 @@ import { questionsSemana11 } from './src/data/semana11/questions';
 import { questionsSemana12 } from './src/data/semana12/questions';
 import { questionsSemana13 } from './src/data/semana13/questions';
 import { questionsSemana14 } from './src/data/semana14/questions';
+import { questionsSemana15 } from './src/data/semana15/questions';
+import { questionsSemana16 } from './src/data/semana16/questions';
 import { Question } from './src/types';
 
 const outputDir = path.join('C:', 'Users', 'Rodney Duarte', 'Documents', 'test');
@@ -37,6 +39,8 @@ const weeksData: { num: number; filePrefix: string; name: string; questions: Que
   { num: 12, filePrefix: 'semana_12_ginecologia_y_obstetricia', name: 'Ginecología y Obstetricia - Amenorrea, Anticonceptivos y Menopausia', questions: questionsSemana12 },
   { num: 13, filePrefix: 'semana_13_pediatria', name: 'Pediatría - Urgencias, Emergencias y RCP', questions: questionsSemana13 },
   { num: 14, filePrefix: 'semana_14_medicina_interna', name: 'Medicina Interna - Neumología', questions: questionsSemana14 },
+  { num: 15, filePrefix: 'semana_15_cirugia', name: 'Cirugía - Tórax, Pulmón, Mediastino y Mamas', questions: questionsSemana15 },
+  { num: 16, filePrefix: 'semana_16_ginecologia_y_obstetricia', name: 'Ginecología y Obstetricia - SOP, Hemorragia Uterina e Infertilidad', questions: questionsSemana16 },
 ];
 
 let totalGlobalQuestions = 0;
@@ -141,7 +145,7 @@ for (const w of weeksData) {
   console.log(`Guardado con Tema y Subtema por pregunta: ${filePath} (${w.questions.length} preguntas)`);
 }
 
-indexMd += `| **TOTAL** | **14 Semanas** | - | **${totalGlobalQuestions}** |\n\n`;
+indexMd += `| **TOTAL** | **16 Semanas** | - | **${totalGlobalQuestions}** |\n\n`;
 const readmePath = path.join(outputDir, 'README.md');
 fs.writeFileSync(readmePath, indexMd, 'utf-8');
 console.log(`Guardado README principal: ${readmePath}`);

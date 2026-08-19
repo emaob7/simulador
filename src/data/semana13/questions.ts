@@ -17,7 +17,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -36,7 +36,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -55,7 +55,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -74,7 +74,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -93,7 +93,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -112,7 +112,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "BLS pediátrico – Reanimador único",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -131,7 +131,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "BLS pediátrico – Ventilación de rescate",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -150,7 +150,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "BLS pediátrico – Inicio de RCP",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -169,7 +169,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -188,7 +188,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -207,7 +207,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -226,7 +226,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -245,7 +245,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -264,7 +264,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica – Soporte Vital Básico con dos reanimadores",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -283,7 +283,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -302,7 +302,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -321,7 +321,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -340,7 +340,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -359,7 +359,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -378,7 +378,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -397,7 +397,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -416,7 +416,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -435,7 +435,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -454,7 +454,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -473,7 +473,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -492,7 +492,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -511,7 +511,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -530,7 +530,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -549,7 +549,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -568,7 +568,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -587,7 +587,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -606,7 +606,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -625,7 +625,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -644,7 +644,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -663,7 +663,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Intubación endotraqueal pediátrica",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -682,7 +682,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reconocimiento y manejo del shock pediátrico",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -701,7 +701,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reconocimiento y manejo del shock pediátrico",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -720,7 +720,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reconocimiento y manejo del shock pediátrico",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -739,7 +739,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reconocimiento y manejo del shock pediátrico",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -758,7 +758,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Bradicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -777,7 +777,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Bradicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -796,7 +796,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Bradicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -815,7 +815,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Bradicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -834,7 +834,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Bradicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -853,7 +853,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Bradicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -872,7 +872,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -891,7 +891,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -910,7 +910,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -929,7 +929,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -948,7 +948,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -967,7 +967,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -986,7 +986,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Taquicardia pediátrica con pulso",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1005,7 +1005,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1024,7 +1024,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1043,7 +1043,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1062,7 +1062,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1081,7 +1081,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Reanimación cardiopulmonar (RCP) pediátrica",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1100,7 +1100,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico – Algoritmo de soporte vital avanzado",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1119,7 +1119,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico – Algoritmo de soporte vital avanzado",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1138,7 +1138,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico – Algoritmo de soporte vital avanzado",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1157,7 +1157,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico – Algoritmo de soporte vital avanzado",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1176,7 +1176,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Paro cardiorrespiratorio pediátrico – Algoritmo de soporte vital avanzado",
+    "subtema": "Arritmias y Paro Cardiorrespiratorio",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1271,7 +1271,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1290,7 +1290,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Evaluación Primaria y Soporte Vital Pediátrico",
+    "subtema": "Soporte Vital Básico, Vía Aérea y RCP Pediátrico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1309,7 +1309,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Principios de neurocuidados críticos",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1328,7 +1328,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Presión de perfusión cerebral (PPC)",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1347,7 +1347,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Presión de perfusión cerebral (PPC)",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1366,7 +1366,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1385,7 +1385,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1404,7 +1404,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1423,7 +1423,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1442,7 +1442,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Neurología y Coma Pediátrico",
+    "subtema": "Neurología de Urgencia, Coma y Neurocuidados",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1461,7 +1461,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Tipos de shock en pediatría",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1480,7 +1480,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Tipos de shock en pediatría",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1499,7 +1499,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Tipos de shock en pediatría",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1518,7 +1518,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Tipos de shock en pediatría",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1537,7 +1537,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Tipos de shock en pediatría",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1556,7 +1556,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Fisiología y manejo hemodinámico del shock",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1575,7 +1575,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Fisiología y manejo hemodinámico del shock",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1594,7 +1594,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Fisiología y manejo hemodinámico del shock",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1613,7 +1613,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Fisiología y manejo hemodinámico del shock",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1632,7 +1632,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Fisiología y manejo hemodinámico del shock",
+    "subtema": "Shock Pediátrico y Manejo Hemodinámico",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1651,7 +1651,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Ahogamiento – Epidemiología",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1670,7 +1670,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Ahogamiento – Epidemiología",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1689,7 +1689,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Ahogamiento – Factores de riesgo",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1708,7 +1708,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Ahogamiento – Epidemiología",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1727,7 +1727,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Ahogamiento – Epidemiología",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1746,7 +1746,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1765,7 +1765,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1784,7 +1784,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1803,7 +1803,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1822,7 +1822,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1841,7 +1841,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1860,7 +1860,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1879,7 +1879,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1898,7 +1898,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   },
   {
@@ -1917,7 +1917,7 @@ export const questionsSemana13: Question[] = [
     "materia": "Pediatría",
     "semana": 13,
     "tema": "Pediatría General y Emergencias",
-    "subtema": "Quemaduras Pediátricas",
+    "subtema": "Quemaduras y Ahogamiento / Inmersión",
     "module": "Semana 13 - Pediatría"
   }
 ];
