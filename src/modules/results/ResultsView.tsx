@@ -280,7 +280,7 @@ export function ResultsView({
                         {q.pagina && (
                           <div className="flex items-center gap-2">
                             <BookOpen className="w-3.5 h-3.5 text-primary" />
-                            <span className="font-bold text-white">Referencia:</span> {q.pagina}
+                            <span className="font-bold text-white">Referencia:</span> {q.pagina.replace(/^(?:📖\s*)?(?:[Rr]eferencia:\s*)*/, '')}
                           </div>
                         )}
                         {questionStats[q.id] && (

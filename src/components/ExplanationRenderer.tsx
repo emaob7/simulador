@@ -69,7 +69,7 @@ const MarkdownComponents = {
       return (
         <span
           translate="no"
-          className="notranslate inline-flex items-center justify-center min-w-[24px] h-[22px] px-1.5 mr-2 rounded-md bg-[#E0AF26]/15 border border-[#E0AF26]/40 text-[#E0AF26] font-black text-xs align-middle select-none"
+          className="notranslate inline-flex items-center justify-center min-w-[22px] h-[20px] px-1.5 mr-2 rounded bg-[#E0AF26]/15 border border-[#E0AF26]/40 text-[#E0AF26] font-black text-xs align-middle select-none"
         >
           {textStr.replace(':', '')}
         </span>
@@ -91,9 +91,17 @@ const MarkdownComponents = {
     const textStr = typeof children === 'string' ? children : Array.isArray(children) ? children.map(c => typeof c === 'string' ? c : '').join('') : '';
 
     if (textStr.trim().startsWith('📖') || textStr.toLowerCase().includes('referencia:')) {
+      const cleanRef = textStr
+        .replace(/^📖\s*/, '')
+        .replace(/^[Rr]eferencia:\s*/i, '')
+        .replace(/^📖\s*/, '')
+        .replace(/^[Rr]eferencia:\s*/i, '')
+        .trim();
+
       return (
         <p className="mt-4 pt-3 border-t border-white/10 text-xs text-[#A6A6A6] font-medium flex items-center gap-2" {...props}>
-          {formatMarkdownChildren(children)}
+          <BookOpen className="w-3.5 h-3.5 text-[#E0AF26] flex-shrink-0" />
+          <span className="font-bold text-white">Referencia:</span> {formatMarkdownChildren(cleanRef)}
         </p>
       );
     }
@@ -114,16 +122,13 @@ const MarkdownComponents = {
     );
   },
   ul: ({ children, ...props }: any) => (
-    <ul className="space-y-2.5 my-3 pl-0 list-none" {...props}>
+    <ul className="space-y-2.5 my-2.5 pl-0 list-none" {...props}>
       {children}
     </ul>
   ),
   li: ({ children, ...props }: any) => (
-    <li className="text-xs md:text-sm text-[#FAF9F6] leading-relaxed p-3 rounded-xl bg-[#1C1C1C]/80 border border-[#424242]/40 flex items-start gap-2.5 shadow-sm hover:border-[#C6A84A]/30 transition-all" {...props}>
-      <span className="w-1.5 h-1.5 rounded-full bg-[#E0AF26] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(224,175,38,0.7)]" />
-      <div className="flex-1 min-w-0 leading-relaxed">
-        {formatMarkdownChildren(children)}
-      </div>
+    <li className="text-xs md:text-sm text-[#FAF9F6] leading-relaxed pl-6 py-0.5 relative before:content-['•'] before:absolute before:left-1 before:top-0 before:text-[#E0AF26] before:font-black before:text-base" {...props}>
+      {formatMarkdownChildren(children)}
     </li>
   ),
   span: ({ children, ...props }: any) => (

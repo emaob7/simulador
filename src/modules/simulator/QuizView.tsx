@@ -408,7 +408,7 @@ export function QuizView({
                     {q.pagina && (
                       <div className="mt-6 pt-4 border-t border-white/[0.04] flex items-center gap-2 text-xs text-[#A0A0A0]">
                         <BookOpen className="w-3.5 h-3.5 text-primary" />
-                        <span className="font-bold text-white">Referencia:</span> {q.pagina}
+                        <span className="font-bold text-white">Referencia:</span> {q.pagina.replace(/^(?:📖\s*)?(?:[Rr]eferencia:\s*)*/, '')}
                       </div>
                     )}
                   </div>
