@@ -24,6 +24,8 @@ import { PendingApprovalView } from './modules/auth/PendingApprovalView';
 import { AdminView } from './modules/admin/AdminView';
 import { Sidebar } from './components/Sidebar';
 import { TopAppBar } from './components/TopAppBar';
+import { Button } from './components/ui/Button';
+import { DataService } from './services/DataService';
 import { ChevronRight, ChevronDown, Check } from 'lucide-react';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
@@ -1081,20 +1083,19 @@ export default function App() {
 
                     <div className="flex flex-col flex-grow">
                       {Object.entries(semanas).sort(([a], [b]) => Number(a) - Number(b)).map(([semana, temas]) => {
-                        const isExpanded = expandedWeeks[`${materia}-${semana}`];
-                        const displayTema = temas.length > 1 ? temas.join(' • ') : temas[0] || "Sin tema";
-                        const questionsInWeek = allQuestions.filter(q => q.materia === materia && q.semana === Number(semana));
+                        const isExpanded = !!expandedWeeks[`${materia}-${semana}`];
+                        const questionsInWeek = allQuestions.filter(q => q && q.materia === materia && q.semana === Number(semana));
                         const count = questionsInWeek.length;
                         
                         const qIds = new Set(questionsInWeek.map(q => q.id));
-                        const seenIds = new Set(userProgress.filter(p => qIds.has(p.question_id)).map(p => p.question_id));
+                        const validProgress = (userProgress || []).filter(p => p && p.question_id && qIds.has(p.question_id));
+                        const seenIds = new Set(validProgress.map(p => p.question_id));
                         const seenCount = seenIds.size;
                         const progressPercent = count > 0 ? Math.round((seenCount / count) * 100) : 0;
 
                         // Calculate accuracy for this week
-                        const weekProgress = userProgress.filter(p => qIds.has(p.question_id));
-                        const weekCorrectCount = weekProgress.filter(p => p.is_correct).length;
-                        const weekTotalCount = weekProgress.length;
+                        const weekCorrectCount = validProgress.filter(p => p.is_correct).length;
+                        const weekTotalCount = validProgress.length;
                         const weekAccuracy = weekTotalCount > 0 ? Math.round((weekCorrectCount / weekTotalCount) * 100) : 0;
                         
                         // Determine color class based on accuracy
