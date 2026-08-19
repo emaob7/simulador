@@ -1184,7 +1184,7 @@ export default function App() {
                                   
                                   <div>
                                     <Button 
-                                      onClick={() => handleQuickStartQuiz(materia, Number(semana))}
+                                      onClick={() => handlePrepareQuiz(materia, Number(semana), 'Todos los Temas', true)}
                                       className="bg-primary border border-transparent text-[#0A0A0A] hover:bg-primary/90 font-black px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(198,168,74,0.25)] hover:shadow-[0_0_35px_rgba(198,168,74,0.45)] transition-all text-xs uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
                                     >
                                       <span>Iniciar Entrenamiento</span>
