@@ -8,6 +8,7 @@ const provider = new GoogleAuthProvider();
 export const AuthService = {
   loginWithGoogle: async () => {
     try {
+      localStorage.removeItem('dr_rodney_guest_user');
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       

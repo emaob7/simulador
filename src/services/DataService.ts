@@ -1,9 +1,9 @@
 import { Session, UserProgress, QuestionBookmark } from '../types';
-import { db } from '../firebase';
+import { auth, db } from '../firebase';
 import { collection, addDoc, getDocs, query, where, deleteDoc, doc, setDoc, writeBatch } from 'firebase/firestore';
 import { handleFirestoreError } from '../lib/firebaseUtils';
 
-const isGuest = () => !!localStorage.getItem('dr_rodney_guest_user');
+const isGuest = () => !auth.currentUser && !!localStorage.getItem('dr_rodney_guest_user');
 
 export const DataService = {
   saveSession: async (session: Session) => {

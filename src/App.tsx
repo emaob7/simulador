@@ -151,13 +151,7 @@ export default function App() {
 
   useEffect(() => {
     fetchProgress();
-  }, [user]);
-
-  useEffect(() => {
-    if (view === 'simulator') {
-      fetchProgress();
-    }
-  }, [view]);
+  }, [user, view]);
 
   useEffect(() => {
     const guestUserStr = localStorage.getItem('dr_rodney_guest_user');
@@ -462,19 +456,25 @@ export default function App() {
     
     const filtered = allQuestions.filter(q => q.materia === materia && q.semana === semana);
     setQuestionsState(filtered);
-    setQuizConfig({ count: filtered.length, mode: 'practice' }); // default to practice mode for quick training
+    setAnswers([]);
+    setQuizConfig({ count: filtered.length, mode: 'practice' });
     setView('quiz');
   };
 
   const handleStartQuiz = () => {
     const ordered = allQuestions.filter(q => selectedQuestionIds.includes(q.id));
-    setQuestionsState(ordered);
+    const questionsToRun = ordered.length > 0 
+      ? ordered 
+      : allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
+    setQuestionsState(questionsToRun);
+    setAnswers([]);
     setView('quiz');
   };
 
   const handleStartRandomQuiz = () => {
     const shuffled = [...allQuestions].sort(() => 0.5 - Math.random()).slice(0, 20);
     setQuestionsState(shuffled);
+    setAnswers([]);
     setSelectedMateria('Simulacro Aleatorio');
     setSelectedSemana(0);
     setSelectedTema('Mix General');
