@@ -716,13 +716,26 @@ export default function App() {
         onClose={() => setIsSidebarOpen(false)}
         isCollapsed={isSidebarCollapsed}
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+        savedCount={savedQuestionIds.length}
+        onStartBookmarksQuiz={handleStartBookmarksQuiz}
       />
       
       <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarCollapsed ? 'xl:ml-20' : 'xl:ml-72'}`}>
         <TopAppBar 
           title={getTitle()} 
           userData={userData} 
-          onMenuClick={() => setIsSidebarOpen(true)}
+          isSidebarCollapsed={isSidebarCollapsed}
+          onToggleSidebar={() => {
+            if (window.innerWidth < 1280) {
+              setIsSidebarOpen(!isSidebarOpen);
+            } else {
+              setIsSidebarCollapsed(!isSidebarCollapsed);
+            }
+          }}
+          savedCount={savedQuestionIds.length}
+          onStartBookmarks={handleStartBookmarksQuiz}
+          allQuestions={allQuestions}
+          onQuestionSelect={handleQuestionSelect}
         />
         
         <main className="p-4 md:p-8 max-w-[1600px] w-full mx-auto">

@@ -1,7 +1,20 @@
 import React from 'react';
 import { AuthService } from '../services/AuthService';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ChevronLeft, ChevronRight, LogOut, RotateCcw } from 'lucide-react';
+import { 
+  X, 
+  ChevronLeft, 
+  ChevronRight, 
+  LogOut, 
+  RotateCcw,
+  BarChart3,
+  BookOpenCheck,
+  ShieldAlert,
+  Sparkles,
+  Bookmark,
+  Award,
+  Stethoscope
+} from 'lucide-react';
 
 interface SidebarProps {
   currentView: string;
@@ -12,6 +25,8 @@ interface SidebarProps {
   onClose: () => void;
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
+  savedCount?: number;
+  onStartBookmarksQuiz?: () => void;
 }
 
 export function Sidebar({ 
@@ -22,7 +37,9 @@ export function Sidebar({
   isOpen, 
   onClose,
   isCollapsed = false,
-  onToggleCollapse
+  onToggleCollapse,
+  savedCount = 0,
+  onStartBookmarksQuiz
 }: SidebarProps) {
   const isSelected = (view: string) => {
     if (view === 'simulator') {
@@ -31,42 +48,33 @@ export function Sidebar({
     return currentView === view;
   };
 
-  const renderNavButton = (view: 'dashboard' | 'simulator' | 'admin', icon: string, label: string) => {
-    const selected = isSelected(view);
-    return (
-      <button 
-        key={view}
-        onClick={() => { setCurrentView(view); onClose(); }}
-        title={isCollapsed ? label : undefined}
-        className={`flex items-center gap-4 ${isCollapsed ? 'px-0 justify-center h-12 w-12 mx-auto rounded-xl' : 'px-8 py-4 rounded-r-lg'} font-bold font-manrope uppercase tracking-widest text-xs transition-all duration-300 ${
-          isCollapsed ? '' : 'border-l-2'
-        } ${
-          selected 
-            ? 'text-primary bg-primary/15 border-primary shadow-[0_0_20px_rgba(198,168,74,0.15)]' 
-            : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
-        }`}
-      >
-        <span translate="no" className="material-symbols-outlined shrink-0" style={{ fontVariationSettings: selected ? "'FILL' 1" : "'FILL' 0" }}>
-          {icon}
-        </span>
-        {!isCollapsed && <span>{label}</span>}
-      </button>
-    );
-  };
-
   const menuContent = (mobileView: boolean = false) => {
     const collapsed = !mobileView && isCollapsed;
     return (
-      <aside className={`h-full flex flex-col bg-[#121212]/95 backdrop-blur-md py-6 gap-4 border-r border-white/5 shadow-2xl transition-all duration-300 ${collapsed ? 'w-20' : 'w-72'}`}>
-        <div className={`px-6 mb-6 flex items-center ${collapsed ? 'justify-center' : 'justify-between'}`}>
+      <aside className={`h-full flex flex-col bg-gradient-to-b from-[#11141E] via-[#0E1017] to-[#0A0A0A] py-6 border-r border-white/10 shadow-2xl transition-all duration-300 ${collapsed ? 'w-20' : 'w-72'}`}>
+        
+        {/* BRAND HEADER */}
+        <div className={`px-5 mb-6 flex items-center ${collapsed ? 'justify-center' : 'justify-between'}`}>
           {!collapsed ? (
-            <div>
-              <h1 className="text-xl font-black text-primary tracking-tighter font-manrope leading-none">DR. RODNEY</h1>
-              <p className="font-manrope uppercase tracking-widest font-bold text-[10px] text-primary mt-1">Preparación Estratégica</p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary via-[#D4AF37] to-[#8C6D1F] p-0.5 shadow-[0_0_20px_rgba(198,168,74,0.35)] flex items-center justify-center shrink-0">
+                <div className="w-full h-full bg-[#0A0A0A] rounded-[14px] flex items-center justify-center text-primary">
+                  <Stethoscope className="w-5 h-5" />
+                </div>
+              </div>
+              <div>
+                <h1 className="text-lg font-black text-white tracking-tight font-manrope flex items-center gap-1.5">
+                  DR. RODNEY
+                  <span className="text-[9px] px-1.5 py-0.2 bg-primary/20 text-primary border border-primary/30 rounded font-bold">2026</span>
+                </h1>
+                <p className="font-manrope uppercase tracking-widest font-bold text-[9px] text-primary">Simulador CONAREM</p>
+              </div>
             </div>
           ) : (
-            <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-black font-manrope text-sm shadow-[0_0_15px_rgba(198,168,74,0.2)]">
-              DR
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-[#8C6D1F] p-0.5 flex items-center justify-center shadow-[0_0_15px_rgba(198,168,74,0.3)]">
+              <div className="w-full h-full bg-[#0A0A0A] rounded-[14px] flex items-center justify-center text-primary font-black font-manrope text-xs">
+                RD
+              </div>
             </div>
           )}
 
@@ -74,41 +82,146 @@ export function Sidebar({
           {!mobileView && onToggleCollapse && (
             <button 
               onClick={onToggleCollapse} 
-              title={collapsed ? "Expandir menú" : "Plegar menú"}
-              className="text-[#A0A0A0] hover:text-primary p-1.5 rounded-lg hover:bg-white/5 transition-all"
+              title={collapsed ? "Expandir menú lateral" : "Colapsar menú lateral"}
+              className="text-[#A0A0A0] hover:text-primary p-2 rounded-xl bg-white/5 hover:bg-primary/10 border border-white/5 hover:border-primary/30 transition-all cursor-pointer shadow-sm"
             >
-              {collapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
+              {collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
             </button>
           )}
 
           {/* Mobile Close Button */}
           {mobileView && (
-            <button onClick={onClose} className="xl:hidden text-[#A0A0A0] hover:text-white p-1 transition-colors duration-300">
-              <X size={20} />
+            <button onClick={onClose} className="xl:hidden text-[#A0A0A0] hover:text-white p-2 rounded-xl bg-white/5 transition-colors duration-300">
+              <X size={18} />
             </button>
           )}
         </div>
 
-        <nav className={`flex flex-col gap-1.5 ${collapsed ? 'px-2' : 'pr-4'}`}>
-          {renderNavButton('dashboard', 'analytics', 'Analíticas')}
-          {renderNavButton('simulator', 'clinical_notes', 'Simulador')}
-          {userData?.role === 'admin' && renderNavButton('admin', 'admin_panel_settings', 'Admin')}
+        {/* NAVIGATION LINKS */}
+        <nav className={`flex flex-col gap-2 ${collapsed ? 'px-2' : 'px-4'}`}>
+          
+          {/* 1. Dashboard / Analytics */}
+          <button
+            onClick={() => { setCurrentView('dashboard'); onClose(); }}
+            title={collapsed ? "Analíticas y Rendimiento" : undefined}
+            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+              isSelected('dashboard')
+                ? 'bg-gradient-to-r from-primary/25 to-primary/5 text-primary border-primary/40 shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <BarChart3 className={`w-5 h-5 shrink-0 ${isSelected('dashboard') ? 'text-primary' : 'text-[#A0A0A0]'}`} />
+            {!collapsed && (
+              <div className="text-left">
+                <span className="block text-xs font-black uppercase tracking-wider">Analíticas</span>
+                <span className="block text-[10px] text-[#A0A0A0] font-normal">Diagnóstico y Puntos Débiles</span>
+              </div>
+            )}
+          </button>
+
+          {/* 2. Simulator / Questions */}
+          <button
+            onClick={() => { setCurrentView('simulator'); onClose(); }}
+            title={collapsed ? "Simulador de Examen" : undefined}
+            className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+              isSelected('simulator')
+                ? 'bg-gradient-to-r from-primary/25 to-primary/5 text-primary border-primary/40 shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <BookOpenCheck className={`w-5 h-5 shrink-0 ${isSelected('simulator') ? 'text-primary' : 'text-[#A0A0A0]'}`} />
+            {!collapsed && (
+              <div className="text-left">
+                <span className="block text-xs font-black uppercase tracking-wider">Simulador</span>
+                <span className="block text-[10px] text-[#A0A0A0] font-normal">16 Semanas • 1.507 Preguntas</span>
+              </div>
+            )}
+          </button>
+
+          {/* 3. Bookmarks / Favoritas */}
+          {onStartBookmarksQuiz && (
+            <button
+              onClick={() => { onStartBookmarksQuiz(); onClose(); }}
+              disabled={savedCount === 0}
+              title={collapsed ? `Guardadas (${savedCount})` : undefined}
+              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+                savedCount > 0
+                  ? 'text-amber-400 border-amber-500/20 bg-amber-500/5 hover:bg-amber-500/15'
+                  : 'text-[#A0A0A0] border-transparent opacity-50 pointer-events-none'
+              }`}
+            >
+              <Bookmark className="w-5 h-5 shrink-0" />
+              {!collapsed && (
+                <div className="text-left flex-1 flex items-center justify-between">
+                  <div>
+                    <span className="block text-xs font-black uppercase tracking-wider">Guardadas</span>
+                    <span className="block text-[10px] text-[#A0A0A0] font-normal">Repaso de Favoritas</span>
+                  </div>
+                  <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 text-[10px] font-black rounded-lg">
+                    {savedCount}
+                  </span>
+                </div>
+              )}
+            </button>
+          )}
+
+          {/* 4. Admin */}
+          {userData?.role === 'admin' && (
+            <button
+              onClick={() => { setCurrentView('admin'); onClose(); }}
+              title={collapsed ? "Administración" : undefined}
+              className={`flex items-center gap-3.5 ${collapsed ? 'justify-center p-3.5 rounded-2xl' : 'p-3.5 rounded-2xl'} font-bold transition-all duration-300 cursor-pointer border ${
+                isSelected('admin')
+                  ? 'bg-gradient-to-r from-primary/25 to-primary/5 text-primary border-primary/40 shadow-[0_0_20px_rgba(198,168,74,0.2)]'
+                  : 'text-[#A0A0A0] border-transparent hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <ShieldAlert className={`w-5 h-5 shrink-0 ${isSelected('admin') ? 'text-primary' : 'text-[#A0A0A0]'}`} />
+              {!collapsed && (
+                <div className="text-left">
+                  <span className="block text-xs font-black uppercase tracking-wider">Administración</span>
+                  <span className="block text-[10px] text-[#A0A0A0] font-normal">Gestión de Usuarios</span>
+                </div>
+              )}
+            </button>
+          )}
         </nav>
 
-        <div className={`mt-auto space-y-3 ${collapsed ? 'px-3' : 'px-6'}`}>
-          <div className={`p-3 bg-white/5 rounded-xl flex items-center ${collapsed ? 'justify-center' : 'gap-3'} border border-white/5 backdrop-blur-sm`}>
-            <div className="w-9 h-9 rounded-full border border-white/10 overflow-hidden shrink-0 shadow-sm">
-              <img 
-                src={userData?.photoURL || 'https://via.placeholder.com/40'} 
-                alt="avatar" 
-                className="w-full h-full object-cover" 
-                referrerPolicy="no-referrer"
-              />
+        {/* BANK STATS SUMMARY PILL */}
+        {!collapsed && (
+          <div className="mx-4 my-2 p-3.5 rounded-2xl bg-white/[0.02] border border-white/5 text-left">
+            <div className="flex items-center justify-between text-[10px] text-[#A0A0A0] font-bold uppercase tracking-wider mb-1">
+              <span>Banco CONAREM</span>
+              <span className="text-primary font-black">1.507 Qs</span>
+            </div>
+            <p className="text-[11px] text-[#C0C0C0] font-medium leading-relaxed">
+              4 Especialidades oficiales: Pediatría, Medicina Interna, Cirugía y Gineco.
+            </p>
+          </div>
+        )}
+
+        {/* USER PROFILE & FOOTER ACTIONS */}
+        <div className={`mt-auto space-y-3 ${collapsed ? 'px-2' : 'px-4'}`}>
+          
+          <div className={`p-3 bg-white/5 rounded-2xl flex items-center ${collapsed ? 'justify-center' : 'gap-3'} border border-white/10 backdrop-blur-md`}>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/30 to-[#141824] border border-primary/30 overflow-hidden shrink-0 shadow-sm flex items-center justify-center text-primary font-black text-xs font-manrope">
+              {userData?.photoURL ? (
+                <img 
+                  src={userData.photoURL} 
+                  alt="avatar" 
+                  className="w-full h-full object-cover" 
+                  referrerPolicy="no-referrer"
+                />
+              ) : (
+                (userData?.displayName || 'Dr')[0].toUpperCase()
+              )}
             </div>
             {!collapsed && (
               <div className="text-left overflow-hidden">
-                <p className="text-[10px] font-bold text-primary tracking-widest uppercase truncate">{userData?.role === 'admin' ? 'Administrador' : 'Aspirante CONAREM'}</p>
-                <p className="text-sm font-bold text-on-surface truncate">{userData?.displayName || 'Médico'}</p>
+                <p className="text-xs font-bold text-white truncate">{userData?.displayName || 'Dr. Rodney Duarte'}</p>
+                <p className="text-[10px] font-bold text-primary tracking-wider uppercase truncate">
+                  {userData?.role === 'admin' ? 'Administrador' : 'Aspirante CONAREM'}
+                </p>
               </div>
             )}
           </div>
@@ -116,18 +229,18 @@ export function Sidebar({
           <button 
             onClick={() => { onResetData(); onClose(); }}
             title={collapsed ? "Restaurar Datos" : undefined}
-            className={`w-full py-2.5 text-xs font-bold text-red-400 hover:text-white bg-red-950/20 hover:bg-red-600 border border-red-500/20 hover:border-red-500 rounded-lg uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 ${collapsed ? 'px-0' : ''}`}
+            className={`w-full py-2.5 text-[11px] font-bold text-rose-400 hover:text-white bg-rose-950/20 hover:bg-rose-600 border border-rose-500/20 hover:border-rose-500 rounded-xl uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer ${collapsed ? 'px-0' : ''}`}
           >
-            <RotateCcw size={16} />
+            <RotateCcw size={15} />
             {!collapsed && <span>Restaurar Datos</span>}
           </button>
 
           <button 
             onClick={() => { AuthService.logout(); onClose(); }}
             title={collapsed ? "Cerrar Sesión" : undefined}
-            className={`w-full py-2.5 text-xs font-bold text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-lg uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-transparent hover:border-white/5 ${collapsed ? 'px-0' : ''}`}
+            className={`w-full py-2.5 text-[11px] font-bold text-[#A0A0A0] hover:text-white hover:bg-white/10 rounded-xl uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 border border-white/5 cursor-pointer ${collapsed ? 'px-0' : ''}`}
           >
-            <LogOut size={16} />
+            <LogOut size={15} />
             {!collapsed && <span>Cerrar Sesión</span>}
           </button>
         </div>
@@ -151,7 +264,7 @@ export function Sidebar({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={onClose}
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] xl:hidden"
+              className="fixed inset-0 bg-black/70 backdrop-blur-md z-[60] xl:hidden"
             />
             <motion.div
               initial={{ x: -300 }}
@@ -168,5 +281,3 @@ export function Sidebar({
     </>
   );
 }
-
-
