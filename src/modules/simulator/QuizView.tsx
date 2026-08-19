@@ -49,7 +49,8 @@ export function QuizView({
   onAnswerImmediate,
   initialAnswers = {},
   initialTimeElapsed = 0,
-  draftKey = 'dr_active_quiz_draft'
+  draftKey = 'dr_active_quiz_draft',
+  progress = []
 }: QuizViewProps) {
   const [answers, setAnswers] = useState<Record<string, number>>(() => {
     if (Object.keys(initialAnswers).length > 0) return initialAnswers;
