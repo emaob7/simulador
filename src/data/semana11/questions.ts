@@ -553,7 +553,7 @@ export const questionsSemana11: Question[] = [
     "id": "semana11_cirugia_q29"
   },
   {
-    "text": "15. ¿Qué es correcto sobre la diarrea después de una cirugía gástrica?",
+    "text": "¿Qué es correcto sobre la diarrea después de una cirugía gástrica?",
     "options": [
       "La diarrea posvagotomía suele acompañarse de síntomas intensos de dumping.",
       "La vagotomía troncal produce diarrea significativa en muy pocos pacientes.",
@@ -572,7 +572,7 @@ export const questionsSemana11: Question[] = [
     "id": "semana11_cirugia_q30"
   },
   {
-    "text": "¿Cuál es la causa del estrechamiento esofágico localizado en el tercio medio del esófago? (Schwartz. Principios de Cirugía, 11.ª edición, pág. [X])",
+    "text": "¿Cuál es la causa del estrechamiento esofágico localizado en el tercio medio del esófago? (Schwartz. Principios de Cirugía, 11.ª edición, pág. 1021)",
     "options": [
       "Compresión por el bronquio principal izquierdo y el cayado aórtico.",
       "Contracción del músculo cricofaríngeo en la entrada esofágica.",
@@ -581,8 +581,8 @@ export const questionsSemana11: Question[] = [
       "Contracción del esfínter esofágico superior durante la deglución."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl estrechamiento medio del esófago es producido por el bronquio principal izquierdo y el cayado aórtico. Las demás opciones corresponden al estrechamiento superior, al inferior o mencionan estructuras incorrectas.\n🟩 **CONCEPTOS CLAVE**\n• Superior: músculo cricofaríngeo (1,5 cm, el más estrecho).\n• Medio: bronquio principal izquierdo y cayado aórtico (1,6 cm).\n• Inferior: hiato diafragmático y mecanismo del esfínter gastroesofágico (1,6–1,9 cm).\n• Los tres estrechamientos son sitios frecuentes de impactación de cuerpos extraños.\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\n• Mnemotecnia: Cri → Bronquio/Aorta → Hiato.\n• Pregunta frecuente: causa anatómica, orden y diámetro de los tres estrechamientos fisiológicos.\n• 📖 Referencia: Schwartz. Principios de Cirugía, 11.ª edición, pág. [X].\n• Perla CONAREM: el músculo cricofaríngeo produce el estrechamiento de menor diámetro (1,5 cm) y es el sitio de impactación más frecuente de cuerpos extraños.",
-    "pagina": "📖 Referencia: Schwartz. Principios de Cirugía, 11.ª edición,.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl estrechamiento medio del esófago es producido por el bronquio principal izquierdo y el cayado aórtico. Las demás opciones corresponden al estrechamiento superior, al inferior o mencionan estructuras incorrectas.\n🟩 **CONCEPTOS CLAVE**\n• Superior: músculo cricofaríngeo (1,5 cm, el más estrecho).\n• Medio: bronquio principal izquierdo y cayado aórtico (1,6 cm).\n• Inferior: hiato diafragmático y mecanismo del esfínter gastroesofágico (1,6–1,9 cm).\n• Los tres estrechamientos son sitios frecuentes de impactación de cuerpos extraños.\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\n• Mnemotecnia: Cri → Bronquio/Aorta → Hiato.\n• Pregunta frecuente: causa anatómica, orden y diámetro de los tres estrechamientos fisiológicos.\n• 📖 Referencia: Schwartz. Principios de Cirugía, 11.ª edición, pág. 1021.\n• Perla CONAREM: el músculo cricofaríngeo produce el estrechamiento de menor diámetro (1,5 cm) y es el sitio de impactación más frecuente de cuerpos extraños.",
+    "pagina": "📖 Referencia: Schwartz. Principios de Cirugía, 11.ª edición, Cap. 25. Esófago, pág. 1021.",
     "materia": "Cirugía",
     "semana": 11,
     "tema": "Esófago y Hernia Diafragmática",

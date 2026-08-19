@@ -266,7 +266,7 @@ export const questionsSemana1: Question[] = [
   },
   {
     id: 'neo_q15',
-    text: 'Atención inmediata del recién nacido',
+    text: 'EN RELACIÓN CON LA EVALUACIÓN CUTÁNEA EN LA ATENCIÓN INMEDIATA DEL RECIÉN NACIDO SANO, ¿CUÁL DE LOS SIGUIENTES HALLAZGOS SE CONSIDERA PATOLÓGICO Y NO UN HALLAZGO FISIOLÓGICO NORMAL?:',
     options: [
       'Vérnix caseosa',
       'Lanugo',

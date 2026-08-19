@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { motion } from 'motion/react';
 import { 
@@ -17,7 +18,7 @@ interface ExplanationRendererProps {
 export function highlightClinicalText(text: string): React.ReactNode {
   if (!text) return '';
   
-  const regex = /(\(INCORRECTA\)|\(CORRECTA\)|[↑↓→]|[<>=\u2265\u2264]+\s*\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL))?|\b\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL))\b)/gi;
+  const regex = /(\(INCORRECTA\)|\(CORRECTA\)|[↑↓→←↔]|[<>=\u2265\u2264]+\s*\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL))?|\b\d+(?:\.\d+)*(?:\s*(?:%|\/\s*μL|g\/dL|mg\/dL))\b)/gi;
   
   const parts = text.split(regex);
   return (
@@ -30,8 +31,8 @@ export function highlightClinicalText(text: string): React.ReactNode {
             colorClass = "text-rose-400 font-extrabold bg-rose-950/40 px-1.5 py-0.5 rounded border border-rose-500/30 text-xs";
           } else if (part.toUpperCase().includes("CORRECTA")) {
             colorClass = "text-emerald-400 font-extrabold bg-emerald-950/40 px-1.5 py-0.5 rounded border border-emerald-500/30 text-xs";
-          } else if (part === "↑" || part === "↓" || part === "→") {
-            colorClass = "text-[#E0AF26] font-extrabold mx-0.5 text-base inline-block";
+          } else if (part === "↑" || part === "↓" || part === "→" || part === "←" || part === "↔") {
+            colorClass = "text-[#E0AF26] font-extrabold mx-1 text-sm inline-block";
           }
           return (
             <span key={index} className={colorClass}>
@@ -62,6 +63,19 @@ function formatMarkdownChildren(children: React.ReactNode): React.ReactNode {
 
 const MarkdownComponents = {
   strong: ({ children, ...props }: any) => {
+    const textStr = typeof children === 'string' ? children.trim() : '';
+    // If it's an option letter e.g., "A:", "B:", "C:", "D:", "E:", "A", "B"
+    if (/^[A-E]:?$/i.test(textStr)) {
+      return (
+        <span
+          translate="no"
+          className="notranslate inline-flex items-center justify-center min-w-[24px] h-[22px] px-1.5 mr-2 rounded-md bg-[#E0AF26]/15 border border-[#E0AF26]/40 text-[#E0AF26] font-black text-xs align-middle select-none"
+        >
+          {textStr.replace(':', '')}
+        </span>
+      );
+    }
+
     return (
       <strong className="text-white font-extrabold" {...props}>
         {formatMarkdownChildren(children)}
@@ -100,13 +114,16 @@ const MarkdownComponents = {
     );
   },
   ul: ({ children, ...props }: any) => (
-    <ul className="space-y-1.5 my-2 pl-1 list-none" {...props}>
+    <ul className="space-y-2.5 my-3 pl-0 list-none" {...props}>
       {children}
     </ul>
   ),
   li: ({ children, ...props }: any) => (
-    <li className="text-xs md:text-sm text-[#FAF9F6] leading-relaxed pl-5 relative before:content-['•'] before:absolute before:left-1 before:top-0 before:text-[#E0AF26] before:font-bold" {...props}>
-      {formatMarkdownChildren(children)}
+    <li className="text-xs md:text-sm text-[#FAF9F6] leading-relaxed p-3 rounded-xl bg-[#1C1C1C]/80 border border-[#424242]/40 flex items-start gap-2.5 shadow-sm hover:border-[#C6A84A]/30 transition-all" {...props}>
+      <span className="w-1.5 h-1.5 rounded-full bg-[#E0AF26] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(224,175,38,0.7)]" />
+      <div className="flex-1 min-w-0 leading-relaxed">
+        {formatMarkdownChildren(children)}
+      </div>
     </li>
   ),
   span: ({ children, ...props }: any) => (
@@ -177,7 +194,7 @@ export function ExplanationRenderer({ explanation = '' }: ExplanationRendererPro
             </div>
 
             <div className="pl-1 md:pl-2">
-              <Markdown rehypePlugins={[rehypeRaw]} components={MarkdownComponents}>
+              <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={MarkdownComponents}>
                 {section.rawText}
               </Markdown>
             </div>
