@@ -142,6 +142,38 @@ const MarkdownComponents = {
     <span {...props}>
       {formatMarkdownChildren(children)}
     </span>
+  ),
+  table: ({ children, ...props }: any) => (
+    <div className="w-full overflow-x-auto my-3 rounded-xl border border-zinc-800 bg-[#161618] shadow-sm">
+      <table className="w-full text-left border-collapse text-xs" {...props}>
+        {children}
+      </table>
+    </div>
+  ),
+  thead: ({ children, ...props }: any) => (
+    <thead className="bg-[#202024] border-b border-zinc-800 text-[#E0AF26] font-bold uppercase tracking-wider text-[10px]" {...props}>
+      {children}
+    </thead>
+  ),
+  tbody: ({ children, ...props }: any) => (
+    <tbody className="divide-y divide-zinc-800/60" {...props}>
+      {children}
+    </tbody>
+  ),
+  tr: ({ children, ...props }: any) => (
+    <tr className="hover:bg-white/[0.02] transition-colors" {...props}>
+      {children}
+    </tr>
+  ),
+  th: ({ children, ...props }: any) => (
+    <th className="px-3 py-2.5 font-bold text-white text-xs" {...props}>
+      {formatMarkdownChildren(children)}
+    </th>
+  ),
+  td: ({ children, ...props }: any) => (
+    <td className="px-3 py-2 text-[#FAF9F6] text-xs leading-relaxed" {...props}>
+      {formatMarkdownChildren(children)}
+    </td>
   )
 };
 
