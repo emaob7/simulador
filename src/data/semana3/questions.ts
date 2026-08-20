@@ -810,5 +810,728 @@ export const questionsSemana3: Question[] = [
     "tema": "Cicatrización de heridas",
     "subtema": "Cicatrización de Heridas",
     "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q44",
+    "text": "¿Cuál de los siguientes corresponde a una variable general dentro de los criterios del síndrome de respuesta inflamatoria sistémica (SIRS)?",
+    "options": [
+      "Trombocitopenia",
+      "Hiperlactatemia",
+      "Leucopenia <4.000",
+      "Estado mental alterado",
+      "Aumento de la creatinina"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl estado mental alterado se incluye entre las variables generales del SIRS.\n\nLos demás pertenecen a otros grupos del cuadro: leucopenia → variable inflamatoria; trombocitopenia y aumento de creatinina → variables de disfunción orgánica; hiperlactatemia → variable de perfusión tisular.\n\n🔑 CONCEPTOS CLAVE\n\nLas variables generales mostradas en el cuadro son:\n\nFiebre: temperatura central >38,3 °C\n\nHipotermia: temperatura central <36 °C\n\nFrecuencia cardiaca >90 lpm\n\nTaquipnea\n\nEstado mental alterado\n\nEdema significativo o balance positivo de líquidos >20 mL/kg en 24 h\n\nHiperglucemia en ausencia de diabetes\n\n⚡ CLAVE CONAREM\n\nEstado mental alterado = variable general.\nNo confundir con las variables de disfunción orgánica.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas, cuadro 6-1.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Síndrome de respuesta inflamatoria sistémica (SIRS)",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q45",
+    "text": "Son variables inflamatorias consideradas dentro de los criterios del SIRS, EXCEPTO:",
+    "options": [
+      "Leucocitosis >12.000",
+      "Leucopenia <4.000",
+      "Bandemia >10% de formas de banda",
+      "Procalcitonina plasmática >2 DE por encima del valor normal",
+      "Hipotensión arterial"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa hipotensión arterial no pertenece a las variables inflamatorias; el cuadro la clasifica como una variable hemodinámica.\n\nLas otras cuatro opciones sí aparecen dentro de las variables inflamatorias.\n\n🔑 CONCEPTOS CLAVE\n\nLas variables inflamatorias del cuadro son:\n\nLeucocitosis: >12.000\n\nLeucopenia: <4.000\n\nBandemia: >10% de formas de banda\n\nProteína C reactiva plasmática: >2 DE por encima del valor normal\n\nProcalcitonina plasmática: >2 DE por encima del valor normal\n\n⚡ CLAVE CONAREM\n\nLeucocitos + bandas + PCR + procalcitonina = variables inflamatorias.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas, cuadro 6-1.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Variables inflamatorias del SIRS",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q46",
+    "text": "Un paciente con respuesta inflamatoria sistémica presenta hiperlactatemia. Según la clasificación mostrada en el cuadro 6-1, ¿a qué grupo de variables corresponde este hallazgo?",
+    "options": [
+      "Variables hemodinámicas",
+      "Variables de perfusión tisular",
+      "Variables inflamatorias",
+      "Variables generales",
+      "Variables de disfunción orgánica"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa hiperlactatemia está incluida específicamente dentro de las variables de perfusión tisular, junto con la disminución del llenado capilar.\n\n🔑 CONCEPTOS CLAVE\n\nEl cuadro organiza los criterios en cinco grandes grupos:\n\nVariables generales: fiebre >38,3 °C; hipotermia <36 °C; FC >90 lpm; taquipnea; estado mental alterado; edema significativo o balance positivo >20 mL/kg en 24 h; hiperglucemia sin diabetes.\n\nVariables inflamatorias: leucocitosis >12.000; leucopenia <4.000; bandemia >10%; PCR plasmática >2 DE sobre el valor normal; procalcitonina plasmática >2 DE sobre el valor normal.\n\nVariables hemodinámicas: hipotensión arterial: PAS <90 mmHg, PAM <70 mmHg o disminución de PAS >40 mmHg.\n\nVariables de disfunción orgánica: hipoxemia arterial, oliguria aguda, aumento de creatinina, anomalías de coagulación, íleo, trombocitopenia e hiperbilirrubinemia.\n\nVariables de perfusión tisular: hiperlactatemia y disminución del llenado capilar.\n\n⚡ REPASO ACTIVO — CUADRO 6-1 COMPLETO\n\nGENERALES → temperatura + FC + respiración + estado mental + líquidos + glucemia.\nINFLAMATORIAS → leucocitos + bandas + PCR + procalcitonina.\nHEMODINÁMICAS → hipotensión.\nDISFUNCIÓN ORGÁNICA → hipoxemia + oliguria + creatinina + coagulación + íleo + plaquetas + bilirrubina.\nPERFUSIÓN TISULAR → hiperlactatemia + disminución del llenado capilar.\n\n⚡ CLAVE CONAREM\n\nSi preguntan directamente “¿a qué variable pertenece la hiperlactatemia?” → PERFUSIÓN TISULAR.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas, cuadro 6-1.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Clasificación de las variables del SIRS",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q47",
+    "text": "Con respecto a los principios fundamentales para el manejo y prevención de las infecciones quirúrgicas, señale la afirmación INCORRECTA:",
+    "options": [
+      "En la sepsis, un enfoque organizado incluye reanimación rápida, administración de antibióticos y control del origen."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) El material infectado o necrótico debe drenarse o eliminarse como parte del control de la fuente.\n\nc) Para la profilaxis quirúrgica rutinaria, el régimen antibiótico debe prolongarse durante al menos 48 horas después de la cirugía.\n\nd) Ante una infección grave, deben obtenerse cultivos de forma temprana y utilizar sus resultados para refinar el tratamiento.\n\ne) En la infección necrosante de tejidos blandos son fundamentales el reconocimiento temprano y el desbridamiento repetido hasta que no existan más signos de infección.\n\n✅ Respuesta correcta: c) Para la profilaxis quirúrgica rutinaria, el régimen antibiótico debe prolongarse durante al menos 48 horas después de la cirugía.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción c es incorrecta. Según el fragmento, la profilaxis antibiótica rutinaria debe limitarse a no más de 24 horas después de la cirugía.\n\nLas demás afirmaciones reproducen principios del cuadro: la sepsis requiere un abordaje organizado; el control de la fuente implica drenar o eliminar material infectado/necrótico; los cultivos permiten refinar la terapia; y las infecciones necrosantes requieren reconocimiento temprano y desbridamientos repetidos.\n\n🔑 CONCEPTOS CLAVE\n\nSepsis: reanimación rápida + antibióticos + control del origen.\n\nControl de la fuente: drenar o eliminar material infectado o necrótico.\n\nProfilaxis antibiótica: seleccionar cobertura apropiada, administrar la dosis inicial dentro de los 30 minutos previos a la incisión, redosificar en operaciones prolongadas según la vida media y limitarla a ≤24 h después de la cirugía.\n\nInfección grave: identificar posibles fuentes, iniciar rápidamente cobertura amplia, obtener cultivos tempranos y refinar posteriormente la terapia.\n\nInfección necrosante: reconocimiento temprano + desbridamiento adecuado y repetido.\n\n⚡ REPASO ACTIVO\n\nPara disminuir las infecciones del sitio quirúrgico, el cuadro destaca: preparación adecuada del paciente, administración antibiótica perioperatoria oportuna, mantenimiento de normotermia y normoglucemia perioperatorias y manejo adecuado de las heridas.\n\n⚡ CLAVE CONAREM\n\nProfilaxis quirúrgica: piensa en 30 min antes de la incisión + redosificación si corresponde + máximo 24 h después.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Principios generales de prevención y tratamiento",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q48",
+    "text": "En relación con los principios del tratamiento de las infecciones quirúrgicas graves, señale la afirmación CORRECTA:",
+    "options": [
+      "El control de la fuente puede diferirse si se inicia tempranamente un antibiótico con cobertura amplia."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Si no se identifica una infección después de 24 horas, los antibióticos deben suspenderse independientemente de la evolución clínica.\n\nc) En las infecciones necrosantes de tejidos blandos, un único desbridamiento adecuado suele ser suficiente para controlar la infección.\n\nd) El tratamiento inicial debe esperar los resultados de los cultivos para seleccionar con precisión el antibiótico.\n\ne) En una infección grave deben identificarse las posibles fuentes, iniciarse rápidamente antibióticos con cobertura amplia, obtener cultivos tempranos y realizar un adecuado control de la fuente.\n\n✅ Respuesta correcta: e) En una infección grave deben identificarse las posibles fuentes, iniciarse rápidamente antibióticos con cobertura amplia, obtener cultivos tempranos y realizar un adecuado control de la fuente.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa e es correcta y combina varios de los puntos clave del fragmento. En las infecciones graves se deben buscar las posibles fuentes e iniciar rápidamente una cobertura antibiótica amplia contra los microorganismos probables. Los cultivos deben obtenerse tempranamente para posteriormente refinar el tratamiento. Además, el control de la fuente constituye un componente clave del manejo.\n\nLa a es incorrecta porque retrasar el control adecuado de la fuente se asocia con peores resultados. La b es incorrecta porque el cuadro establece considerar la suspensión si no se identifica infección después de 3 días, teniendo en cuenta el curso clínico. La c es incorrecta porque puede requerirse desbridamiento repetido. La d es incorrecta porque la terapia antibiótica adecuada debe iniciarse rápidamente.\n\n🔑 CONCEPTOS CLAVE\n\nIdentificar las posibles fuentes de infección.\n\nSeleccionar antibióticos eficaces contra los microorganismos probables.\n\nComenzar rápidamente una terapia de amplia cobertura.\n\nObtener cultivos tempranos y utilizarlos para refinar el tratamiento.\n\nSi después de 3 días no se identifica infección, considerar suspender los antibióticos según el curso clínico.\n\nDescontinuar los antibióticos después de completar un curso terapéutico adecuado.\n\nEl control oportuno de la fuente es esencial.\n\n⚡ REPASO ACTIVO\n\nInfección necrosante de tejidos blandos:\nreconocimiento temprano → desbridamiento adecuado → desbridamientos repetidos hasta que no existan más signos de infección.\n\nPrevención de infección del sitio quirúrgico:\npreparación adecuada + antibiótico perioperatorio oportuno + normotermia + normoglucemia + manejo adecuado de las heridas.\n\n⚡ CLAVE CONAREM\n\nEn una infección quirúrgica grave, antibióticos y control de la fuente son complementarios. No debe interpretarse el inicio de antibióticos como una razón para retrasar el drenaje o la eliminación del foco infectado.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Sepsis, antibioticoterapia y control de la fuente",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q49",
+    "text": "¿Cuál de las siguientes asociaciones entre procedimiento quirúrgico y profilaxis antibiótica es INCORRECTA?",
+    "options": [
+      "Procedimiento neuroquirúrgico — cefazolina",
+      "Mamas o hernia — cefazolina",
+      "Apendicectomía no complicada — cefoxitina",
+      "Cirugía cardiovascular — cefazolina o cefuroxima",
+      "Laparoscopia biliar de bajo riesgo — cefazolina"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa asociación e es incorrecta porque la laparoscopia del tracto biliar de bajo riesgo no requiere antibiótico profiláctico según el cuadro.\n\nLas demás asociaciones sí aparecen expresamente: cefazolina para neurocirugía y cirugía de mama/hernia; cefoxitina como una opción en apendicectomía no complicada; y cefazolina o cefuroxima en cirugía cardiovascular.\n\n🔑 CONCEPTOS CLAVE\n\nLa cefazolina aparece como opción profiláctica en:\n\nCirugía cardiovascular.\n\nZona gastroduodenal/intestino delgado no obstruido.\n\nTracto biliar abierto o laparoscopia de alto riesgo.\n\nApendicectomía no complicada, combinada con metronidazol como una de las opciones.\n\nCirugía colorrectal/intestino delgado obstruido, combinada con metronidazol como una de las opciones.\n\nCirugía de cabeza y cuello limpia-contaminada, combinada con metronidazol como una de las opciones.\n\nProcedimientos neuroquirúrgicos.\n\nCirugía ortopédica.\n\nCirugía de mamas y hernia.\n\n⚡ REPASO ACTIVO\n\nLa excepción de alta rentabilidad del cuadro es:\n\nTracto biliar + laparoscopia + bajo riesgo → NINGUNO.\n\n⚡ CLAVE CONAREM\n\nSi en el examen aparecen muchos procedimientos asociados a cefazolina y preguntan por la excepción, busca laparoscopia biliar de bajo riesgo.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas, cuadro 6-6.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Uso profiláctico de antibióticos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q50",
+    "text": "¿Cuál es la tasa de infección esperada para una herida limpia/contaminada (clase II) correspondiente a una colecistectomía o cirugía gastrointestinal electiva no colónica?",
+    "options": [
+      "1–2%",
+      "3,1–12,8%",
+      "2,1–9,5%",
+      "3,4–13,2%",
+      "4–14%"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa herida limpia/contaminada (clase II) incluye como ejemplos del cuadro la colecistectomía y la cirugía gastrointestinal electiva no colónica, con una tasa esperada de infección de 2,1–9,5%.\n\nEl cuadro también clasifica la cirugía colorrectal como clase II, aunque presenta una tasa de infección diferente: 4–14%.\n\n🔑 CONCEPTOS CLAVE\n\nClasificación de heridas + ejemplos + tasas de infección:\n\nLimpia (clase I): reparación de hernia, biopsia de mama → 1–2%.\n\nLimpia/contaminada (clase II): colecistectomía, cirugía GI electiva no colónica → 2,1–9,5%.\n\nLimpia/contaminada (clase II): cirugía colorrectal → 4–14%.\n\nContaminada (clase III): traumatismo con penetración abdominal, lesión grande de tejido, enterotomía durante la obstrucción intestinal → 3,4–13,2%.\n\nSucia (clase IV): diverticulitis perforada, infecciones necrotizantes de tejidos blandos → 3,1–12,8%.\n\n⚡ REPASO ACTIVO\n\nI = limpia → 1–2%\nII = limpia/contaminada → 2,1–9,5%\nII colorrectal → 4–14%\nIII = contaminada → 3,4–13,2%\nIV = sucia → 3,1–12,8%\n\n⚡ CLAVE CONAREM\n\nNo confundas las dos filas de clase II:\nColecistectomía/GI no colónica → 2,1–9,5%.\nColorrectal → 4–14%.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas, cuadro 6-8.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Clasificación de las heridas quirúrgicas",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q51",
+    "text": "Un paciente presenta un traumatismo con penetración abdominal y lesión grande de tejido. Durante otro procedimiento se realiza una enterotomía en presencia de obstrucción intestinal. Según la clasificación de heridas quirúrgicas, ¿a qué clase corresponden estos escenarios?",
+    "options": [
+      "Limpia, clase I",
+      "Limpia/contaminada, clase II",
+      "Sucia, clase IV",
+      "Contaminada, clase III",
+      "Limpia/contaminada colorrectal, clase II"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl traumatismo con penetración abdominal, la lesión grande de tejido y la enterotomía durante una obstrucción intestinal son los ejemplos que el cuadro asigna a las heridas contaminadas (clase III).\n\nSu tasa de infección esperada es de 3,4–13,2%.\n\n🔑 CONCEPTOS CLAVE\n\nClasificación completa del cuadro:\n\nLimpia (clase I): reparación de hernia, biopsia de mama → 1–2%.\n\nLimpia/contaminada (clase II): colecistectomía, cirugía GI electiva no colónica → 2,1–9,5%.\n\nLimpia/contaminada (clase II): cirugía colorrectal → 4–14%.\n\nContaminada (clase III): traumatismo con penetración abdominal, lesión grande de tejido, enterotomía durante la obstrucción intestinal → 3,4–13,2%.\n\nSucia (clase IV): diverticulitis perforada, infecciones necrotizantes de tejidos blandos → 3,1–12,8%.\n\n⚡ REPASO ACTIVO\n\nClase I: hernia / biopsia de mama → 1–2%.\nClase II: colecistectomía / GI electiva no colon → 2,1–9,5%.\nClase II colorrectal: → 4–14%.\nClase III: penetración abdominal / lesión grande / enterotomía con obstrucción → 3,4–13,2%.\nClase IV: diverticulitis perforada / infección necrotizante → 3,1–12,8%.\n\n⚡ CLAVE CONAREM\n\nPenetración abdominal + lesión grande de tejido + enterotomía durante obstrucción = CONTAMINADA, CLASE III.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas, cuadro 6-8.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones quirúrgicas",
+    "subtema": "Clasificación de las heridas quirúrgicas",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q52",
+    "text": "¿Cuál de los siguientes hallazgos en el líquido obtenido mediante paracentesis apoya el diagnóstico de peritonitis bacteriana primaria?",
+    "options": [
+      "Más de 50 neutrófilos/mL",
+      "Más de 100 neutrófilos/mL",
+      "Más de 150 neutrófilos/mL",
+      "Más de 250 neutrófilos/mL",
+      "Más de 500 neutrófilos/mL"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nSegún el fragmento, el diagnóstico de peritonitis bacteriana primaria se establece considerando los factores de riesgo, los hallazgos clínicos, la ausencia de una fuente susceptible de tratamiento quirúrgico en los estudios de imagen y la presencia de más de 250 neutrófilos/mL en el líquido obtenido por paracentesis.\n\n🔑 CONCEPTOS CLAVE\n\nPeritonitis bacteriana primaria:\n\nInvasión de la cavidad peritoneal normalmente estéril.\n\nPuede producirse por diseminación hematógena desde un foco distante o por inoculación directa.\n\nEs más común con grandes cantidades de líquido peritoneal por ascitis y en pacientes en diálisis peritoneal.\n\nGeneralmente es monobacteriana.\n\nRara vez requiere intervención quirúrgica.\n\nDiagnóstico: >250 neutrófilos/mL en líquido de paracentesis, junto con el contexto clínico descrito.\n\nEn pacientes sin los factores de riesgo mencionados, los organismos frecuentes incluyen E. coli, K. pneumoniae y S. pneumoniae.\n\n⚡ CLAVE CONAREM\n\nPrimaria → ascitis/diálisis + monobacteriana + >250 neutrófilos/mL + sin fuente quirúrgica.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones intraabdominales",
+    "subtema": "Peritonitis bacteriana primaria",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q53",
+    "text": "Según el fragmento, ¿cuál es la duración de la terapia antimicrobiana que se requiere con frecuencia en la peritonitis bacteriana primaria?",
+    "options": [
+      "3–5 días",
+      "5–7 días",
+      "7–10 días",
+      "10–14 días",
+      "14–21 días"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl fragmento señala que el tratamiento consiste en administrar un antimicrobiano al cual el microorganismo sea sensible y que a menudo se requieren 14–21 días de terapia.\n\n🔑 CONCEPTOS CLAVE\n\nPeritonitis primaria: tratamiento antimicrobiano dirigido según sensibilidad.\n\nDuración mencionada: 14–21 días.\n\nSi existen dispositivos permanentes, su eliminación puede ser necesaria para tratar eficazmente las infecciones recurrentes.\n\n⚡ CLAVE CONAREM\n\nEn este fragmento: peritonitis primaria = 14–21 días. No confundir con el curso corto de 3–5 días mencionado posteriormente para abscesos intraabdominales con buena respuesta clínica.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones intraabdominales",
+    "subtema": "Tratamiento de la peritonitis bacteriana primaria",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q54",
+    "text": "Todas las siguientes afirmaciones corresponden a la peritonitis bacteriana secundaria, EXCEPTO:",
+    "options": [
+      "Puede producirse después de la perforación de una porción del tracto gastrointestinal."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) El tratamiento efectivo requiere control del origen mediante resección o reparación del órgano enfermo y desbridamiento.\n\nc) Los antimicrobianos deben dirigirse contra microorganismos aerobios y anaerobios.\n\nd) La perforación colónica constituye la forma más mórbida debido a la gran cantidad de microorganismos presentes.\n\ne) Habitualmente es monobacteriana y rara vez requiere una intervención quirúrgica.\n\n✅ Respuesta correcta: e) Habitualmente es monobacteriana y rara vez requiere una intervención quirúrgica.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e corresponde a características descritas para la peritonitis bacteriana primaria, no para la secundaria.\n\nLa secundaria aparece después de contaminación de la cavidad peritoneal por perforación, inflamación extensa o infección de un órgano intraabdominal. El tratamiento requiere control del origen y antimicrobianos dirigidos contra aerobios y anaerobios.\n\n🔑 CONCEPTOS CLAVE\n\nPeritonitis secundaria:\n\nCausas descritas: apendicitis, perforación gastrointestinal o diverticulitis.\n\nRequiere control del origen.\n\nResección o reparación del órgano enfermo.\n\nDesbridamiento del tejido necrótico o infectado y restos.\n\nCobertura antimicrobiana contra aerobios y anaerobios.\n\nLa perforación colónica es la forma más mórbida señalada en el fragmento.\n\nCon control efectivo del origen + antibióticos: mortalidad aproximada de 5–6%.\n\nIncapacidad para controlar el origen: mortalidad >40%.\n\n⚡ CLAVE CONAREM\n\nPrimaria → generalmente monobacteriana y rara vez quirúrgica.\nSecundaria → existe un foco intraabdominal que exige control del origen.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones intraabdominales",
+    "subtema": "Peritonitis bacteriana secundaria",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q55",
+    "text": "Un paciente inmunodeprimido recibe tratamiento por una infección peritoneal secundaria. A pesar del tratamiento estándar, persiste la infección y se identifican E. faecalis/faecium, S. epidermidis, C. albicans y P. aeruginosa en combinación. ¿Cuál es el proceso descrito?",
+    "options": [
+      "Peritonitis bacteriana primaria",
+      "Peritonitis terciaria o persistente",
+      "Peritonitis secundaria controlada",
+      "Absceso intraabdominal aislado",
+      "Contaminación peritoneal transitoria"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa peritonitis terciaria (persistente) se describe cuando las defensas peritoneales del hospedador no eliminan o secuestran eficazmente la infección microbiana peritoneal secundaria inicial. El fragmento señala que es más frecuente en pacientes inmunodeprimidos.\n\nLos microorganismos mencionados aparecen frecuentemente combinados.\n\n🔑 CONCEPTOS CLAVE\n\nPeritonitis terciaria/persistente:\n\nAparece ante fracaso de la terapia estándar.\n\nEs más frecuente en inmunodeprimidos.\n\nMicroorganismos mencionados: E. faecalis/faecium, S. epidermidis, C. albicans y P. aeruginosa.\n\nSu presencia puede relacionarse con falta de sensibilidad al régimen antibiótico inicial y con disminución de las defensas del hospedador.\n\nIncluso con tratamiento antimicrobiano eficaz, se asocia con mortalidad >50%.\n\n⚡ CLAVE CONAREM\n\nSecundaria que no se controla/persiste + inmunodepresión + microorganismos como Enterococcus, S. epidermidis, Candida y Pseudomonas → TERCIARIA.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones intraabdominales",
+    "subtema": "Peritonitis terciaria",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q56",
+    "text": "¿Cuál de las siguientes asociaciones entre el tipo de peritonitis y sus características es CORRECTA?",
+    "options": [
+      "Primaria — perforación gastrointestinal, necesidad habitual de resección del órgano y cobertura contra aerobios y anaerobios."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Secundaria — infección habitualmente monobacteriana, asociada a ascitis y rara vez tributaria de intervención quirúrgica.\n\nc) Terciaria — infección persistente tras una infección peritoneal secundaria, particularmente descrita en pacientes inmunodeprimidos.\n\nd) Primaria — fracaso de la terapia estándar con aislamiento combinado de C. albicans y P. aeruginosa.\n\ne) Terciaria — contaminación por perforación gastrointestinal con mortalidad aproximada de 5–6% cuando se controla el origen.\n\n✅ Respuesta correcta: c) Terciaria — infección persistente tras una infección peritoneal secundaria, particularmente descrita en pacientes inmunodeprimidos.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción c describe correctamente la peritonitis terciaria o persistente.\n\nLa primaria se relaciona con ascitis o diálisis peritoneal, suele ser monobacteriana y rara vez requiere cirugía. La secundaria aparece por perforación, inflamación extensa o infección de un órgano intraabdominal y requiere control del origen. La terciaria representa la persistencia de la infección después de una infección secundaria inicial.\n\n🔑 CONCEPTOS CLAVE\n\nPERITONITIS PRIMARIA\n\nDiseminación hematógena o inoculación directa.\n\nAscitis y diálisis peritoneal.\n\nGeneralmente monobacteriana.\n\n>250 neutrófilos/mL.\n\nRara vez requiere cirugía.\n\nTratamiento frecuentemente 14–21 días.\n\nPERITONITIS SECUNDARIA\n\nPerforación, inflamación extensa o infección de un órgano intraabdominal.\n\nEjemplos: apendicitis, perforación gastrointestinal y diverticulitis.\n\nControl del origen + desbridamiento.\n\nAntimicrobianos contra aerobios y anaerobios.\n\nMortalidad con control efectivo: ≈5–6%.\n\nSin control del origen: mortalidad >40%.\n\nPERITONITIS TERCIARIA/PERSISTENTE\n\nPersistencia después de la infección secundaria inicial.\n\nMás frecuente en inmunodeprimidos.\n\nPueden encontrarse combinaciones de E. faecalis/faecium, S. epidermidis, C. albicans y P. aeruginosa.\n\nMortalidad descrita >50%, incluso con terapia eficaz.\n\n⚡ REPASO ACTIVO\n\nPrimaria → sin foco quirúrgico + monobacteriana + >250 neutrófilos/mL.\nSecundaria → perforación/inflamación de órgano + control del origen.\nTerciaria → persistencia de la secundaria + inmunodepresión + mortalidad >50%.\n\n⚡ CLAVE CONAREM\n\nPara diferenciarlas rápidamente:\n\nPRIMARIA = sin fuente quirúrgica.\nSECUNDARIA = hay una fuente que controlar.\nTERCIARIA = la infección secundaria persiste.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones intraabdominales",
+    "subtema": "Peritonitis primaria, secundaria y terciaria",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q57",
+    "text": "¿Cuál de las siguientes conductas es la más apropiada ante la sospecha clínica seria de una infección agresiva de tejidos blandos?",
+    "options": [
+      "Solicitar estudios radiológicos antes de decidir una intervención quirúrgica",
+      "Iniciar antimicrobianos y observar la evolución antes de realizar desbridamiento",
+      "Realizar intervención quirúrgica inmediata asociada a agentes antimicrobianos",
+      "Realizar únicamente incisión y drenaje de la zona con mayor fluctuación",
+      "Esperar la aparición de crepitación para confirmar clínicamente el diagnóstico"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLas infecciones agresivas de tejidos blandos son difíciles de diagnosticar y requieren intervención quirúrgica inmediata más administración de antimicrobianos.\n\nCuando la sospecha diagnóstica es seria, no deben realizarse estudios radiológicos, ya que pueden retrasar la intervención y proporcionar información confusa. La cirugía debe incluir incisión, visualización directa del tejido potencialmente infectado y resección radical de las áreas afectadas.\n\n🔑 CONCEPTOS CLAVE\n\nSon infecciones raras y difíciles de diagnosticar.\n\nRequieren cirugía inmediata + antimicrobianos.\n\nEl retraso en reconocimiento y tratamiento produce una mortalidad extremadamente alta, aproximadamente 80–100%.\n\nIncluso con tratamiento rápido, la mortalidad continúa siendo alta: 16–24%.\n\nLa extirpación quirúrgica con frecuencia requiere amputaciones y/o procedimientos deformantes.\n\nLos procedimientos incompletos se asocian con mayor morbilidad y mortalidad.\n\nDebe desbridarse todo el tejido no viable.\n\n⚡ CLAVE CONAREM\n\nSospecha seria de infección necrotizante/agresiva → NO retrasar por imágenes → cirugía inmediata + antimicrobianos.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones de la piel y tejidos blandos",
+    "subtema": "Infecciones agresivas de tejidos blandos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q58",
+    "text": "¿Cuál de los siguientes grupos presenta mayor riesgo de desarrollar infecciones agresivas de tejidos blandos según el fragmento?",
+    "options": [
+      "Ancianos, inmunodeprimidos, diabéticos y pacientes con enfermedad vascular periférica",
+      "Jóvenes, inmunocompetentes y pacientes sin enfermedad vascular periférica",
+      "Pacientes exclusivamente con antecedente de cirugía abdominal reciente",
+      "Pacientes con celulitis superficial sin enfermedades concomitantes",
+      "Individuos exclusivamente con infección previa por S. aureus resistente a meticilina"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl fragmento identifica específicamente como pacientes de riesgo a ancianos, inmunodeprimidos, diabéticos y/o personas con enfermedad vascular periférica.\n\nTambién señala que pueden aparecer infecciones necrotizantes extremadamente agresivas en tejidos blandos en individuos sanos.\n\n🔑 CONCEPTOS CLAVE\n\nEl elemento común propuesto entre los factores del hospedador es cierto grado de alteración de la perfusión fascial. Si se combina con la introducción de microorganismos exógenos, el resultado puede ser devastador.\n\n⚡ CLAVE CONAREM\n\nAnciano + inmunodepresión + diabetes + enfermedad vascular periférica = perfil de riesgo.\n\nPero cuidado con la trampa: el fragmento aclara que también pueden ocurrir en personas sanas.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones de la piel y tejidos blandos",
+    "subtema": "Factores de riesgo",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q59",
+    "text": "Un paciente desarrolla sepsis sin una causa evidente. En una extremidad presenta una pequeña rotura cutánea de la cual puede exprimirse material semipurulento, turbio y grisáceo, descrito como “pus de agua sucia”. Refiere además dolor intenso desproporcionado respecto de los hallazgos físicos. ¿Cuál es la conducta más apropiada?",
+    "options": [
+      "Realizar estudios radiológicos antes de cualquier intervención",
+      "Esperar la aparición de vesículas o crepitación para confirmar el diagnóstico",
+      "Administrar exclusivamente antibióticos y reevaluar posteriormente",
+      "Realizar intervención quirúrgica inmediata con visualización directa y resección del tejido afectado",
+      "Limitar el tratamiento a incisión y drenaje superficial"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl caso reúne varios hallazgos descritos en el fragmento: sepsis sin causa obvia, “pus de agua sucia” y dolor fuera de proporción con los hallazgos físicos.\n\nCualquiera de estos hallazgos implica la necesidad de una intervención quirúrgica inmediata, que puede consistir en incisión, visualización directa del tejido potencialmente infectado y resección radical de las áreas afectadas.\n\n🔑 CONCEPTOS CLAVE\n\nHallazgos clínicos descritos:\n\nSepsis o choque séptico sin causa obvia.\n\nSitios frecuentes: extremidades, perineo, tronco y dorso.\n\nPequeña rotura o seno cutáneo.\n\nMaterial semipurulento, turbio y grisáceo: “pus de agua sucia”.\n\nTono bronceado de la piel.\n\nInduración leñosa.\n\nVesículas.\n\nCrepitaciones.\n\nDolor fuera de proporción con las manifestaciones físicas.\n\n⚡ CLAVE CONAREM\n\nDolor desproporcionado + “pus de agua sucia” + sepsis inexplicada = intervención quirúrgica inmediata.\n\nNo esperes que estén presentes todos los signos clínicos.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones de la piel y tejidos blandos",
+    "subtema": "Diagnóstico de infección agresiva",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q60",
+    "text": "Respecto de las infecciones de piel y tejidos blandos, señale la afirmación INCORRECTA:",
+    "options": [
+      "La celulitis, erisipela y linfangitis suelen tratarse eficazmente con antibióticos, aunque debe buscarse un foco subyacente."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Los furúnculos o diviesos pueden drenar espontáneamente o requerir incisión quirúrgica y drenaje.\n\nc) Debe sospecharse S. aureus resistente a meticilina adquirido en la comunidad si la infección persiste tras drenaje adecuado y antibióticos de primera línea.\n\nd) Las infecciones agresivas de tejidos blandos requieren intervención quirúrgica inmediata asociada a antimicrobianos.\n\ne) Ante una sospecha seria de infección agresiva, los estudios radiológicos deben realizarse rutinariamente antes de la cirugía.\n\n✅ Respuesta correcta: e) Ante una sospecha seria de infección agresiva, los estudios radiológicos deben realizarse rutinariamente antes de la cirugía.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa afirmación e es incorrecta. El fragmento indica expresamente que no deben realizarse estudios radiológicos cuando el diagnóstico se considera seriamente, porque retrasan la intervención quirúrgica y con frecuencia aportan información confusa.\n\n🔑 CONCEPTOS CLAVE\n\nInfecciones superficiales: celulitis, erisipela y linfangitis → generalmente responden a antibióticos.\n\nFurúnculos/diviesos: pueden drenar espontáneamente o requerir incisión y drenaje.\n\nInfecciones agresivas: requieren cirugía inmediata + antimicrobianos + eliminación de todo tejido no viable.\n\n⚡ CLAVE CONAREM\n\nLa trampa es solicitar una imagen para “confirmar” una infección agresiva cuando la sospecha clínica ya es seria. Según este fragmento, la imagen no debe retrasar la cirugía.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 6: Infecciones quirúrgicas.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Infecciones de la piel y tejidos blandos",
+    "subtema": "Manejo de infecciones superficiales y agresivas",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q61",
+    "text": "Respecto a la estructura y regeneración de la piel y a los fármacos asociados con necrólisis epidérmica, señale la afirmación CORRECTA:",
+    "options": [
+      "La epidermis está constituida principalmente por melanocitos y sus células derivan predominantemente del mesodermo."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Las unidades pilosebáceas carecen de epitelio germinal, por lo que no participan en la regeneración de lesiones de espesor parcial.\n\nc) Las fibras dérmicas están constituidas predominantemente por colágeno tipos I y III en una proporción de 1:4.\n\nd) Los queratinocitos constituyen aproximadamente el 50% de las células epidérmicas y son derivados de origen endodérmico.\n\ne) La epidermis es un epitelio estratificado en regeneración continua; las unidades pilosebáceas contribuyen a la regeneración epidérmica y las fibras dérmicas contienen predominantemente colágeno tipos I y III en proporción 4:1.\n\n✅ Respuesta correcta: e) La epidermis es un epitelio estratificado en regeneración continua; las unidades pilosebáceas contribuyen a la regeneración epidérmica y las fibras dérmicas contienen predominantemente colágeno tipos I y III en proporción 4:1.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e integra correctamente los tres primeros puntos clave. La epidermis consiste en epitelio estratificado en regeneración continua, y aproximadamente 90% de sus células son queratinocitos de origen ectodérmico.\n\nLas unidades pilosebáceas están revestidas por el epitelio germinal de la epidermis, por lo que constituyen una fuente importante para la regeneración después de una lesión de espesor parcial o de un injerto de piel de espesor parcial.\n\nLas fibras dérmicas, responsables de la resistencia mecánica de la piel, están formadas predominantemente por colágeno tipos I y III en una proporción 4:1.\n\n🔑 CONCEPTOS CLAVE\n\nEpidermis: epitelio estratificado en regeneración continua.\n\n90% de las células epidérmicas: queratinocitos.\n\nOrigen de los queratinocitos: ectodérmico.\n\nUnidades pilosebáceas: revestidas por epitelio germinal epidérmico.\n\nFunción: fuente importante de regeneración tras lesión o injerto de espesor parcial.\n\nDermis: predominan fibras de colágeno tipos I y III, 4:1.\n\nEstas fibras proporcionan resistencia mecánica a la piel.\n\nLos fármacos más comúnmente asociados con necrólisis epidérmica incluyen anticonvulsivos aromáticos, sulfonamidas, alopurinol, oxicams y nevirapina.\n\n⚡ REPASO ACTIVO\n\nPunto 1: epidermis → epitelio estratificado → 90% queratinocitos → origen ectodérmico.\nPunto 2: unidad pilosebácea → epitelio germinal → regeneración epidérmica.\nPunto 3: dermis → colágeno I:III = 4:1 → resistencia mecánica.\nPunto 4: necrólisis epidérmica → anticonvulsivos aromáticos + sulfonamidas + alopurinol + oxicams + nevirapina.\n\n⚡ CLAVE CONAREM\n\n90% queratinocitos – ectodermo – colágeno I:III = 4:1.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Estructura, regeneración cutánea y necrólisis epidérmica",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q62",
+    "text": "¿Cuál es el microorganismo aislado con mayor frecuencia en el conjunto de las infecciones de la piel?",
+    "options": [
+      "Staphylococcus aureus",
+      "Streptococcus pyogenes",
+      "Pseudomonas aeruginosa",
+      "Escherichia coli",
+      "Staphylococcus epidermidis"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nSegún el punto clave del capítulo, Staphylococcus aureus es el aislado más común de todas las infecciones de la piel.\n\nEl fragmento además divide estas infecciones en no complicadas y complicadas.\n\n🔑 CONCEPTOS CLAVE\n\nInfecciones no complicadas:\n\nImpétigo.\n\nCelulitis.\n\nErisipela.\n\nFoliculitis.\n\nFurúnculos.\n\nAbscesos simples.\n\nInfecciones complicadas:\n\nInfecciones de tejidos profundos.\n\nCelulitis extensa.\n\nFascitis necrotizante.\n\nMionecrosis.\n\n⚡ REPASO ACTIVO\n\nS. aureus = aislado más común en las infecciones cutáneas.\n\nNo complicadas → impétigo, celulitis, erisipela, foliculitis, furúnculos, abscesos simples.\nComplicadas → tejidos profundos, celulitis extensa, fascitis necrotizante, mionecrosis.\n\n⚡ CLAVE CONAREM\n\nSi preguntan directamente por el aislado más común en las infecciones de piel → Staphylococcus aureus.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Infecciones de piel",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q63",
+    "text": "Respecto a los hemangiomas y tumores malignos de la piel, señale la asociación INCORRECTA:",
+    "options": [
+      "Hemangioma — proliferación benigna de células endoteliales que rodean cavidades llenas de sangre."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Carcinoma basocelular — tumor más común diagnosticado en Estados Unidos, cuya variante nodular es el subtipo más común.\n\nc) Carcinoma espinocelular — segundo cáncer de piel más común y generalmente surge de un precursor de queratosis actínica.\n\nd) Melanoma — el espesor tumoral, la ulceración y la velocidad de mitosis son los indicadores pronósticos más importantes de supervivencia.\n\ne) Carcinoma basocelular — su progresión natural se caracteriza principalmente por metástasis a distancia en lugar de invasión local.\n\n✅ Respuesta correcta: e) Carcinoma basocelular — su progresión natural se caracteriza principalmente por metástasis a distancia en lugar de invasión local.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. Según el fragmento, la progresión natural del carcinoma basocelular consiste en invasión local en lugar de metástasis a distancia.\n\nLas demás opciones reproducen los puntos clave: el hemangioma es una proliferación endotelial benigna; el carcinoma basocelular es el tumor más común diagnosticado en Estados Unidos y su variante nodular es la más común; el carcinoma espinocelular ocupa el segundo lugar entre los cánceres de piel y generalmente surge de queratosis actínica; y en el melanoma se destacan el espesor, la ulceración y la velocidad de mitosis como indicadores pronósticos.\n\n🔑 CONCEPTOS CLAVE\n\nHemangioma\n\nProliferación benigna de células endoteliales.\n\nSe presenta con mayor frecuencia después del nacimiento.\n\nCrece rápidamente durante el primer año de vida.\n\nInvoluciona progresivamente en la mayoría de los casos.\n\nCarcinoma basocelular\n\nTumor más común diagnosticado en Estados Unidos.\n\nVariante nodular: subtipo más común.\n\nEvolución natural: invasión local, en lugar de metástasis a distancia.\n\nCarcinoma espinocelular\n\nSegundo cáncer de piel más común.\n\nGeneralmente surge de un precursor de queratosis actínica.\n\nTratamiento primario: escisión quirúrgica y microcirugía de Mohs.\n\nAlternativas mencionadas: cauterio y ablación, crioterapia, farmacoterapia y radioterapia.\n\nMelanoma\n\nIndicadores pronósticos más importantes de supervivencia:\n\nEspesor tumoral.\n\nUlceración.\n\nVelocidad de mitosis.\n\nLa biopsia de un ganglio linfático centinela se utiliza a menudo para estadificar pacientes con melanoma de alto riesgo comprobado mediante biopsia y enfermedad ganglionar clínicamente negativa.\n\n⚡ REPASO ACTIVO\n\nHemangioma → benigno + endotelial + crecimiento rápido el primer año + involución.\nBasocelular → más común + nodular + invasión local.\nEspinocelular → segundo más común + queratosis actínica + escisión/Mohs.\nMelanoma → espesor + ulceración + velocidad de mitosis = pronóstico.\n\n⚡ CLAVE CONAREM\n\nBasocelular = invade localmente.\nEspinocelular = queratosis actínica.\nMelanoma = espesor + ulceración + mitosis.\nHemangioma = proliferación endotelial benigna con involución.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Tumores cutáneos y factores pronósticos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q64",
+    "text": "Respecto al estrato basal o capa germinativa de la epidermis, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Está constituido por una capa profunda y simple de células cuboideas a columnares.",
+      "Sus células se replican de forma continua y asincrónica.",
+      "Los queratinocitos se unen a la membrana basal mediante hemidesmosomas.",
+      "La actividad mitótica elevada y los grandes núcleos caracterizan esta capa.",
+      "Los queratinocitos de esta capa son células anucleadas rodeadas por una matriz rica en lípidos."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta porque esa descripción corresponde a la etapa final del ciclo de los queratinocitos en el estrato córneo.\n\nEl estrato basal constituye el comienzo del ciclo de vida de los queratinocitos. Presenta elevada actividad mitótica, y sus células se encuentran unidas a la membrana basal por hemidesmosomas y entre sí mediante desmosomas.\n\n🔑 CONCEPTOS CLAVE\n\nLos queratinocitos constituyen aproximadamente 90% de las células epidérmicas.\n\nPresentan 4–5 etapas distintas durante su ciclo vital.\n\nEstrato basal = capa germinativa.\n\nCapa profunda y simple de células cuboideas a columnares.\n\nReplicación continua y asincrónica.\n\nMembrana basal → hemidesmosomas.\n\nQueratinocito–queratinocito → desmosomas.\n\nAlta actividad mitótica y grandes núcleos.\n\nTambién recubre los apéndices epidérmicos, que pueden actuar como fuente regenerativa en heridas de espesor parcial.\n\n⚡ CLAVE CONAREM\n\nHemidesmosoma = célula a membrana basal.\nDesmosoma = queratinocito a queratinocito.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Queratinocitos — estrato basal",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q65",
+    "text": "Respecto al estrato espinoso de la epidermis, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "También se denomina capa espinosa.",
+      "Presenta un espesor aproximado de 5 a 15 células.",
+      "Su nombre deriva del aspecto espinoso de las uniones desmosomales bajo el microscopio de luz.",
+      "La producción de queratina contribuye a su apariencia eosinofílica con hematoxilina y eosina.",
+      "Está constituido por queratinocitos aplanados anucleados que forman la barrera final contra la pérdida de agua."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e corresponde al estrato córneo, no al espinoso.\n\nEl estrato espinoso presenta un grosor de 5–15 células. Su denominación proviene de la apariencia espinosa de las uniones desmosomales, y la producción de queratina genera su apariencia eosinofílica en la tinción H&E.\n\n🔑 CONCEPTOS CLAVE\n\nEstrato espinoso:\n\nGrosor: 5–15 células.\n\nApariencia espinosa por las uniones intercelulares desmosomales.\n\nProducción de queratina.\n\nApariencia eosinofílica con hematoxilina y eosina.\n\n⚡ CLAVE CONAREM\n\nEspinoso → desmosomas + 5–15 células + queratina.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Estrato espinoso",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q66",
+    "text": "Durante la migración superficial y diferenciación de los queratinocitos, ocurren todos los siguientes fenómenos, EXCEPTO:",
+    "options": [
+      "Los queratinocitos comienzan a aplanarse.",
+      "Se desarrollan gránulos de queratohialina basófila.",
+      "Los gránulos lamelares contienen lípidos y glucolípidos.",
+      "Los queratinocitos comienzan superficialmente un proceso de muerte celular programada.",
+      "Los queratinocitos aumentan progresivamente su actividad mitótica conforme se aproximan a la superficie."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa elevada actividad mitótica caracteriza al estrato basal. Durante la migración superficial, los queratinocitos se aplanan, desarrollan gránulos de queratohialina y gránulos lamelares y finalmente comienzan un proceso de muerte celular programada.\n\n🔑 CONCEPTOS CLAVE\n\nDurante la migración superficial:\n\nLos queratinocitos se aplanan.\n\nAparecen gránulos de queratohialina basófila.\n\nLos gránulos lamelares contienen lípidos y glucolípidos.\n\nSu contenido se libera mediante exocitosis para formar la capa lipídica alrededor de las células.\n\nLos queratinocitos fabrican estructuras que posteriormente protegen la piel y tejidos subyacentes de daños ambientales.\n\nSuperficialmente comienzan la muerte celular programada, perdiendo las estructuras celulares excepto los filamentos de queratina y proteínas asociadas.\n\nEn palmas y plantas existe una capa de queratinocitos translúcidos y planos denominada estrato lúcido.\n\n⚡ CLAVE CONAREM\n\nBasal = proliferación.\nMigración hacia la superficie = aplanamiento + diferenciación + muerte celular programada.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Migración y diferenciación de los queratinocitos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q67",
+    "text": "Respecto al estrato córneo, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Representa la etapa final del ciclo de vida de los queratinocitos.",
+      "Está constituido por queratinocitos aplanados ricos en proteínas.",
+      "Sus queratinocitos se encuentran anucleados.",
+      "Sus células están rodeadas por una matriz rica en lípidos.",
+      "Su principal característica es una elevada actividad mitótica con replicación continua y asincrónica."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa actividad mitótica elevada corresponde al estrato basal. El estrato córneo representa la etapa final del ciclo vital de los queratinocitos.\n\nSus células son aplanadas, ricas en proteínas y anucleadas, y están rodeadas por una matriz rica en lípidos.\n\n🔑 CONCEPTOS CLAVE\n\nEstrato córneo:\n\nEtapa final del ciclo del queratinocito.\n\nQueratinocitos aplanados.\n\nRicos en proteínas.\n\nAnucleados.\n\nMatriz circundante rica en lípidos.\n\nProtege frente a alteraciones:\n\nMecánicas.\n\nQuímicas.\n\nBacterianas.\n\nEvita pérdidas insensibles de agua a través de la piel.\n\n⚡ CLAVE CONAREM\n\nBasal = nace y prolifera.\nCórneo = anucleado, barrera y etapa final.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Estrato córneo",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q68",
+    "text": "Respecto a los melanocitos, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Se localizan dentro del estrato basal y son responsables de la producción de melanina.",
+      "Son células derivadas de la cresta neural.",
+      "Las diferencias en la pigmentación cutánea dependen principalmente del número de melanocitos presentes.",
+      "Interactúan con queratinocitos de los estratos basal y espinoso mediante prolongaciones citoplásmicas.",
+      "La tirosinasa se secreta y distribuye dentro de los melanosomas."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción c es incorrecta. Según el fragmento, las diferencias en la pigmentación de la piel se basan en la actividad de los melanocitos individuales y no en el número de melanocitos.\n\n🔑 CONCEPTOS CLAVE\n\nLocalización: estrato basal.\n\nFunción: producción del pigmento melanina.\n\nOrigen: cresta neural.\n\nDensidad: aproximadamente 1 melanocito por cada 4–10 queratinocitos.\n\nAproximadamente 500–2.000 melanocitos/mm² de tejido cutáneo.\n\nLa densidad varía según la ubicación corporal.\n\nEn piel más oscura, los melanocitos crean y almacenan melanosomas en los queratinocitos a una tasa mayor.\n\nInteractúan con queratinocitos basales y espinosos mediante extensiones citoplásmicas.\n\nLos melanosomas son transportados por los procesos dendríticos y posteriormente fagocitados por queratinocitos.\n\nSe distribuyen en orientación supranuclear, de manera similar a una sombrilla, protegiendo el material nuclear de la radiación.\n\nExpresan bcl-2, proteína S100 y vimentina.\n\n⚡ CLAVE CONAREM\n\nColor de piel ≠ número de melanocitos.\nLa diferencia descrita depende de la actividad de los melanocitos.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Melanocitos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q69",
+    "text": "Respecto a las células de Merkel, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Son mecanorreceptores de adaptación lenta esenciales para la sensación de tacto ligero.",
+      "Se encuentran típicamente entre queratinocitos basales en regiones con sensibilidad táctil ligera.",
+      "Se unen a los queratinocitos de la capa basal mediante desmosomas.",
+      "Se comunican con el sistema nervioso central mediante fibras nerviosas aferentes no mielinizadas.",
+      "Son las principales células productoras de melanina de la epidermis."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa producción de melanina corresponde a los melanocitos, no a las células de Merkel.\n\nLas células de Merkel son mecanorreceptores de adaptación lenta esenciales para el tacto ligero.\n\n🔑 CONCEPTOS CLAVE\n\nFunción: mecanorrecepción de adaptación lenta.\n\nParticipan en la sensación de tacto ligero.\n\nSe agrupan entre los queratinocitos basales en zonas como:\n\nDedos.\n\nLabios.\n\nBases de algunos folículos pilosos.\n\nSe unen a los queratinocitos basales mediante desmosomas.\n\nPoseen gránulos neurosecretores densos con péptidos.\n\nSe comunican con el sistema nervioso central mediante fibras nerviosas aferentes no mielinizadas.\n\nEstas fibras contactan la porción basolateral de la célula mediante discos terminales expandidos.\n\nSu importancia clínica se relaciona con el carcinoma de células de Merkel, una neoplasia rara pero difícil de tratar.\n\n⚡ CLAVE CONAREM\n\nMerkel = mecanorreceptor + adaptación lenta + tacto ligero.\nMelanocito = melanina.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Células de Merkel",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q70",
+    "text": "Respecto a los linfocitos presentes en la epidermis, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Constituyen menos del 1% de las células epidérmicas.",
+      "Se encuentran principalmente en la capa basal de los queratinocitos.",
+      "Típicamente expresan un fenotipo de células T de memoria efectoras.",
+      "Representan aproximadamente el 10% de todas las células de la epidermis.",
+      "Forman una población celular minoritaria dentro de la epidermis."
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nSegún el fragmento, los linfocitos representan menos del 1% de las células epidérmicas, no el 10%.\n\nSe encuentran principalmente en la capa basal y suelen presentar un fenotipo de células T de memoria efectoras.\n\n🔑 CONCEPTOS CLAVE\n\nLinfocitos epidérmicos:\n\n<1% de las células de la epidermis.\n\nPrincipalmente en la capa basal.\n\nFenotipo típico: células T de memoria efectoras.\n\n⚡ CLAVE CONAREM\n\nLinfocitos epidérmicos = <1% + capa basal + T de memoria efectoras.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Linfocitos epidérmicos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q71",
+    "text": "Respecto a las células de Toker, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Se encuentran en la epidermis del pezón.",
+      "Están presentes aproximadamente en el 10%.",
+      "Se encuentran tanto en hombres como en mujeres.",
+      "Se han implicado como posible fuente de enfermedad de Paget del pezón.",
+      "Son indistinguibles de las células de Paget."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta, porque el fragmento señala expresamente que las células de Toker son distintas de las células de Paget.\n\nA pesar de esta diferencia, los estudios inmunohistoquímicos las han implicado como una posible fuente de enfermedad de Paget del pezón.\n\n🔑 CONCEPTOS CLAVE\n\nCélulas de Toker:\n\nLocalización: epidermis del pezón.\n\nPresentes en aproximadamente 10%.\n\nAparecen tanto en hombres como en mujeres.\n\nFueron descritas por primera vez en 1970.\n\nSon distintas de las células de Paget.\n\nPosible fuente de enfermedad de Paget del pezón según estudios inmunohistoquímicos.\n\n⚡ REPASO ACTIVO\n\nMelanocito → estrato basal + cresta neural + melanina.\nMerkel → mecanorreceptor + tacto ligero.\nLinfocitos → <1% + capa basal + T de memoria efectoras.\nToker → epidermis del pezón + 10% + posible relación con Paget.\n\n⚡ CLAVE CONAREM\n\nPara diferenciarlas rápidamente:\n\nMelanocito = pigmento.\nMerkel = tacto.\nLinfocito = <1%.\nToker = pezón/Paget.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Células de Toker",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q72",
+    "text": "Respecto a las características de la radiación ultravioleta (UV) y su efecto sobre la piel, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Cerca del 95% de los rayos UV que alcanzan la superficie terrestre corresponden a rayos UVA.",
+      "Los rayos UVA penetran más profundamente en los tejidos que los rayos UVB.",
+      "Aproximadamente 70% de los rayos UVB alcanza el estrato córneo y 20% la epidermis profunda.",
+      "Los rayos UVC son filtrados por la capa de ozono.",
+      "Los rayos UVB son menos energéticos y poseen una longitud de onda mayor que los rayos UVA."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. El fragmento establece que la radiación UVA es menos energética y posee una longitud de onda más larga que la UVB.\n\nLos UVA comprenden aproximadamente el 95% de los rayos UV que llegan a la superficie terrestre y penetran más profundamente en los tejidos. Los UVC, por su parte, son filtrados por la capa de ozono.\n\n🔑 CONCEPTOS CLAVE\n\nUVA: 320–400 nm.\n\nUVB: 290–320 nm.\n\nUVC: filtrados por la capa de ozono.\n\nCerca del 95% de los rayos UV que alcanzan la superficie terrestre son UVA.\n\nUVA: menos energéticos y de mayor longitud de onda que los UVB.\n\nUVA penetran más profundamente:\n\n20–30% alcanza la dermis profunda.\n\nUVB:\n\n70% alcanza el estrato córneo.\n\n20% alcanza la epidermis profunda.\n\nSolo 10% alcanza la dermis papilar.\n\nCromóforos principales: ácidos nucleicos, aminoácidos aromáticos y melanina.\n\n⚡ CLAVE CONAREM\n\nUVA = onda más larga + menos energía + mayor profundidad.\nUVB = más superficial.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Radiación ultravioleta",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q73",
+    "text": "Respecto a los efectos de la radiación solar sobre la piel, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "El eritema alcanza su máximo aproximadamente entre 6 y 24 horas después de la exposición.",
+      "La pigmentación inducida por UVA se relaciona con la fotooxidación de la melanina.",
+      "Las ondas UVB inducen neomelanización y producen un efecto visible aproximadamente 72 horas después.",
+      "El aumento de melanina tras la exposición UVB contribuye a proteger los núcleos de los queratinocitos basales.",
+      "La exposición UV prolongada aumenta la firmeza de la piel al organizar las fibras dérmicas de colágeno y elastina."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. La exposición prolongada a radiación UV aumenta la actividad de la lisozima, altera el recambio normal de colágeno y elastina y provoca una acumulación desorganizada de elastina.\n\nEl resultado es pérdida de firmeza y resistencia, aparición de arrugas y aspecto envejecido.\n\n🔑 CONCEPTOS CLAVE\n\nEfectos a corto plazo:\n\nEritema.\n\nPigmentación.\n\nMáximo del eritema: 6–24 h.\n\nUVA → fotooxidación de melanina.\n\nUVB → neomelanización, con efecto observable aproximadamente a las 72 h.\n\nExposición prolongada:\n\nAlteración del recambio de colágeno y elastina.\n\nAcumulación desorganizada de elastina.\n\nAumento de la proporción de colágeno tipo III respecto al tipo I.\n\nPérdida de firmeza y resistencia.\n\nArrugas.\n\nApariencia envejecida.\n\nCambios crónicos descritos:\n\nPigmentación irregular.\n\nMelasma.\n\nPigmentación posinflamatoria.\n\nLentiginosis actínica.\n\n⚡ CLAVE CONAREM\n\nUV crónica → desorganización dérmica → ↓ firmeza + arrugas + envejecimiento.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Efectos cutáneos de la radiación solar",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q74",
+    "text": "Respecto a las manifestaciones y evolución de las lesiones cutáneas por radiación terapéutica, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Los cambios cutáneos agudos pueden manifestarse después de semanas como eritema, edema y alopecia.",
+      "Una lesión grave puede producir pérdida completa de la epidermis y heridas de espesor parcial.",
+      "La reepitelización suele ocurrir aproximadamente 14 días después de la lesión inicial.",
+      "Los efectos tardíos pueden incluir hipovascularidad, telangiectasia, ulceración, fibrosis y mala cicatrización.",
+      "Las lesiones graves por radiación deben manejarse exclusivamente con hidratantes y cuidado local de la herida."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. Los hidratantes y cuidados locales se mencionan para las lesiones menores.\n\nUna lesión grave por radiación puede justificar extirpación quirúrgica y reconstrucción mediante transferencia de tejido libre procedente de una región corporal no afectada por la radiación.\n\n🔑 CONCEPTOS CLAVE\n\nCambios agudos:\n\nEritema.\n\nEdema.\n\nAlopecia.\n\nLesión grave:\n\nPérdida completa de epidermis.\n\nHeridas de espesor parcial.\n\nExudado fibrinoso.\n\nReepitelización típicamente alrededor de 14 días.\n\nEfectos a largo plazo:\n\nTrombosis y necrosis capilar.\n\nHipovascularidad.\n\nTelangiectasia.\n\nUlceración.\n\nFibrosis.\n\nMala cicatrización.\n\nInfección.\n\nEstos efectos pueden aparecer semanas o años después de la exposición.\n\n⚡ CLAVE CONAREM\n\nLesión menor → hidratación + cuidado local.\nLesión grave → puede requerir extirpación + reconstrucción con tejido no irradiado.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Lesión por radiación terapéutica",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q75",
+    "text": "Respecto a las heridas por mordedura, señale la afirmación CORRECTA:",
+    "options": [
+      "La localización más frecuente de las heridas por mordedura es la cara, debido a su abundante vascularización."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Las infecciones tardías por mordedura suelen caracterizarse por cultivos polimicrobianos sin un microorganismo predominante.\n\nc) Después de una mordedura humana se recomienda profilaxis antibiótica, habitualmente con amoxicilina/clavulanato durante 3 a 7 días.\n\nd) Las heridas punzantes de la mano deben cerrarse de forma primaria para disminuir el riesgo de infección profunda.\n\ne) Las mordeduras de gato presentan una menor prevalencia de especies de Pasteurella que las mordeduras de perro.\n\n✅ Respuesta correcta: c) Después de una mordedura humana se recomienda profilaxis antibiótica, habitualmente con amoxicilina/clavulanato durante 3 a 7 días.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción c es correcta. El fragmento recomienda profilaxis antibiótica después de una mordedura humana, ya que disminuye significativamente la tasa de infección. Habitualmente se utiliza un ciclo de 3 a 7 días de amoxicilina/clavulanato.\n\nLa localización más frecuente es la mano. Las infecciones de presentación temprana suelen ser polimicrobianas, mientras que las tardías presentan típicamente un patógeno dominante. Las mordeduras de gato tienen una prevalencia ligeramente mayor de especies de Pasteurella que las de perro.\n\n🔑 CONCEPTOS CLAVE\n\nLocalización más frecuente: mano.\n\nLa anatomía de la mano facilita la rápida progresión hacia infección profunda.\n\nPresentación temprana → cultivos polimicrobianos.\n\nInfección tardía → típicamente patógeno dominante.\n\nAerobios frecuentes: Pasteurella multocida, Streptococcus, Staphylococcus, Neisseria y Corynebacterium.\n\nAnaerobios descritos: Fusobacterium, Porphyromonas, Prevotella, Propionibacterium, Bacteroides y Peptostreptococcus.\n\nMordedura de perro: Capnocytophaga canimorsus es rara; los inmunodeprimidos son más susceptibles.\n\nMordedura de gato: bacteriología similar, con prevalencia ligeramente mayor de Pasteurella.\n\nMordedura humana: carga bacteriana >10⁵.\n\nProfilaxis de mordedura humana: amoxicilina/clavulanato 3–7 días.\n\nAlternativas mencionadas: doxiciclina o clindamicina con ciprofloxacina.\n\n⚡ CLAVE CONAREM\n\nMordedura humana → profilaxis → amoxicilina/clavulanato 3–7 días.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Heridas por mordedura",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q76",
+    "text": "Respecto al manejo de las heridas por mordedura, señale la afirmación INCORRECTA:",
+    "options": [
+      "En zonas de importancia estética puede realizarse irrigación y desbridamiento completos, seguidos de cierre primario y un curso corto de antibióticos."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Las heridas muy contaminadas o infectadas pueden cerrarse de forma secundaria.\n\nc) Las heridas punzantes de las manos requieren especial atención por sus múltiples compartimentos pequeños.\n\nd) Con irrigación y limpieza adecuadas con povidona yodada y un curso corto de antibióticos, se han descrito tasas similares de infección en mordeduras de perro cerradas de forma primaria.\n\ne) Las heridas muy contaminadas o infectadas deben cerrarse primariamente de manera rutinaria para evitar la progresión de la infección.\n\n✅ Respuesta correcta: e) Las heridas muy contaminadas o infectadas deben cerrarse primariamente de manera rutinaria para evitar la progresión de la infección.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. Según el fragmento, las heridas muy contaminadas o infectadas pueden cerrarse de forma secundaria.\n\nExiste controversia sobre el cierre de las mordeduras. En regiones de importancia estética, puede realizarse irrigación y desbridamiento completos, cierre primario, un curso corto de antibióticos y seguimiento cercano.\n\n🔑 CONCEPTOS CLAVE\n\nCierre de heridas por mordedura:\n\nExiste controversia sobre el cierre.\n\nÁreas estéticamente importantes: irrigación + desbridamiento completo → puede realizarse cierre primario + antibiótico corto + seguimiento cercano.\n\nHeridas muy contaminadas o infectadas: pueden cerrarse de forma secundaria.\n\nHeridas punzantes de las manos: requieren especial atención por los múltiples compartimentos pequeños.\n\nEn mordeduras de perro, algunos grupos no encontraron diferencias en las tasas de infección con cierre primario cuando existió irrigación y limpieza adecuadas con povidona yodada y un curso corto de antibióticos.\n\nRabia según el fragmento:\n\nEn Estados Unidos, la rabia en animales domésticos es rara y la mayoría de los casos se contrae por mordeduras de murciélagos.\n\nEn países en desarrollo, las mordeduras de perros continúan siendo la fuente más común de rabia.\n\n⚡ CLAVE CONAREM\n\nMuy contaminada/infectada → cierre secundario.\nZona estética → puede considerarse cierre primario tras irrigación y desbridamiento adecuados.\nMano → atención especial por riesgo de infección profunda.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Manejo de las heridas por mordedura",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q77",
+    "text": "Respecto a las heridas por mordedura, señale la afirmación CORRECTA:",
+    "options": [
+      "La localización más frecuente de las heridas por mordedura es la cara, debido a su abundante vascularización."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Las infecciones tardías por mordedura suelen caracterizarse por cultivos polimicrobianos sin un microorganismo predominante.\n\nc) Después de una mordedura humana se recomienda profilaxis antibiótica, habitualmente con amoxicilina/clavulanato durante 3 a 7 días.\n\nd) Las heridas punzantes de la mano deben cerrarse de forma primaria para disminuir el riesgo de infección profunda.\n\ne) Las mordeduras de gato presentan una menor prevalencia de especies de Pasteurella que las mordeduras de perro.\n\n✅ Respuesta correcta: c) Después de una mordedura humana se recomienda profilaxis antibiótica, habitualmente con amoxicilina/clavulanato durante 3 a 7 días.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción c es correcta. El fragmento recomienda profilaxis antibiótica después de una mordedura humana, ya que disminuye significativamente la tasa de infección. Habitualmente se utiliza un ciclo de 3 a 7 días de amoxicilina/clavulanato.\n\nLa localización más frecuente es la mano. Las infecciones de presentación temprana suelen ser polimicrobianas, mientras que las tardías presentan típicamente un patógeno dominante. Las mordeduras de gato tienen una prevalencia ligeramente mayor de especies de Pasteurella que las de perro.\n\n🔑 CONCEPTOS CLAVE\n\nLocalización más frecuente: mano.\n\nLa anatomía de la mano facilita la rápida progresión hacia infección profunda.\n\nPresentación temprana → cultivos polimicrobianos.\n\nInfección tardía → típicamente patógeno dominante.\n\nAerobios frecuentes: Pasteurella multocida, Streptococcus, Staphylococcus, Neisseria y Corynebacterium.\n\nAnaerobios descritos: Fusobacterium, Porphyromonas, Prevotella, Propionibacterium, Bacteroides y Peptostreptococcus.\n\nMordedura de perro: Capnocytophaga canimorsus es rara; los inmunodeprimidos son más susceptibles.\n\nMordedura de gato: bacteriología similar, con prevalencia ligeramente mayor de Pasteurella.\n\nMordedura humana: carga bacteriana >10⁵.\n\nProfilaxis de mordedura humana: amoxicilina/clavulanato 3–7 días.\n\nAlternativas mencionadas: doxiciclina o clindamicina con ciprofloxacina.\n\n⚡ CLAVE CONAREM\n\nMordedura humana → profilaxis → amoxicilina/clavulanato 3–7 días.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Heridas por mordedura",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q78",
+    "text": "Respecto al manejo de las heridas por mordedura, señale la afirmación INCORRECTA:",
+    "options": [
+      "En zonas de importancia estética puede realizarse irrigación y desbridamiento completos, seguidos de cierre primario y un curso corto de antibióticos."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Las heridas muy contaminadas o infectadas pueden cerrarse de forma secundaria.\n\nc) Las heridas punzantes de las manos requieren especial atención por sus múltiples compartimentos pequeños.\n\nd) Con irrigación y limpieza adecuadas con povidona yodada y un curso corto de antibióticos, se han descrito tasas similares de infección en mordeduras de perro cerradas de forma primaria.\n\ne) Las heridas muy contaminadas o infectadas deben cerrarse primariamente de manera rutinaria para evitar la progresión de la infección.\n\n✅ Respuesta correcta: e) Las heridas muy contaminadas o infectadas deben cerrarse primariamente de manera rutinaria para evitar la progresión de la infección.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. Según el fragmento, las heridas muy contaminadas o infectadas pueden cerrarse de forma secundaria.\n\nExiste controversia sobre el cierre de las mordeduras. En regiones de importancia estética, puede realizarse irrigación y desbridamiento completos, cierre primario, un curso corto de antibióticos y seguimiento cercano.\n\n🔑 CONCEPTOS CLAVE\n\nCierre de heridas por mordedura:\n\nExiste controversia sobre el cierre.\n\nÁreas estéticamente importantes: irrigación + desbridamiento completo → puede realizarse cierre primario + antibiótico corto + seguimiento cercano.\n\nHeridas muy contaminadas o infectadas: pueden cerrarse de forma secundaria.\n\nHeridas punzantes de las manos: requieren especial atención por los múltiples compartimentos pequeños.\n\nEn mordeduras de perro, algunos grupos no encontraron diferencias en las tasas de infección con cierre primario cuando existió irrigación y limpieza adecuadas con povidona yodada y un curso corto de antibióticos.\n\nRabia según el fragmento:\n\nEn Estados Unidos, la rabia en animales domésticos es rara y la mayoría de los casos se contrae por mordeduras de murciélagos.\n\nEn países en desarrollo, las mordeduras de perros continúan siendo la fuente más común de rabia.\n\n⚡ CLAVE CONAREM\n\nMuy contaminada/infectada → cierre secundario.\nZona estética → puede considerarse cierre primario tras irrigación y desbridamiento adecuados.\nMano → atención especial por riesgo de infección profunda.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Manejo de las heridas por mordedura",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q79",
+    "text": "Respecto a las quemaduras químicas por soluciones ácidas y básicas, señale la afirmación INCORRECTA:",
+    "options": [
+      "Las lesiones ácidas suelen ser menos graves que las producidas por soluciones básicas.",
+      "Los ácidos producen necrosis coagulativa, lo que limita la penetración del agente en el tejido.",
+      "Las soluciones básicas producen necrosis por licuefacción y pueden ocasionar lesiones más profundas.",
+      "Los ácidos también pueden ocasionar daño térmico debido a reacciones exotérmicas.",
+      "Las soluciones básicas forman una escara superficial que limita eficazmente la penetración hacia tejidos profundos."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. La formación de una escara superficial corresponde a las lesiones por ácidos, debido a la necrosis coagulativa, que limita la penetración tisular.\n\nLas soluciones básicas o alcalinas producen necrosis por licuefacción, por lo que no encuentran una barrera que impida su progresión y pueden generar lesiones más profundas.\n\n🔑 CONCEPTOS CLAVE\n\nLas quemaduras químicas representan hasta 10,7% de todas las quemaduras y hasta 30% de las muertes relacionadas con quemaduras.\n\nLa extensión de la destrucción depende de:\n\nTipo de agente químico.\n\nConcentración.\n\nVolumen.\n\nTiempo de exposición.\n\nÁcidos → necrosis coagulativa → escara superficial → limita penetración.\n\nLos ácidos también pueden causar daño térmico por reacciones exotérmicas.\n\nSin tratamiento, las lesiones ácidas progresan a eritema y úlceras a través del tejido subcutáneo.\n\nBases → necrosis por licuefacción → mayor penetración y profundidad.\n\nEjemplos de álcalis: hidróxido de sodio e hidróxido de calcio.\n\n⚡ CLAVE CONAREM\n\nÁCIDO = coagula y limita.\nÁLCALI = licúa y profundiza.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Lesión cáustica por ácidos y álcalis",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q80",
+    "text": "Un paciente presenta una quemadura química por una solución alcalina. ¿Cuál de las siguientes conductas corresponde al manejo descrito en el fragmento?",
+    "options": [
+      "Neutralizar inmediatamente el álcali con una solución ácida durante 30 minutos.",
+      "Irrigar con agua destilada o solución salina durante aproximadamente 2 horas.",
+      "Administrar profilaxis antibiótica sistémica de manera rutinaria.",
+      "Evitar la irrigación para impedir que el agente químico alcance tejidos profundos.",
+      "Realizar siempre desbridamiento quirúrgico independientemente de la profundidad."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl tratamiento se basa principalmente en diluir el agente agresor. Según el fragmento, las quemaduras ácidas se irrigan durante 30 minutos, mientras que las alcalinas requieren aproximadamente 2 horas.\n\nNo se recomienda intentar neutralizar rutinariamente el agente, porque no ofrece ventajas frente a la dilución y la reacción de neutralización podría ser exotérmica, aumentando el daño tisular.\n\n🔑 CONCEPTOS CLAVE\n\nTratamiento según el fragmento:\n\nDilución con agua destilada o solución salina.\n\nÁcidos → irrigación durante 30 min.\n\nÁlcalis → irrigación durante 2 h.\n\nEvitar la neutralización rutinaria.\n\nTras eliminar el agente, manejar según la profundidad de la lesión.\n\nHeridas de espesor parcial → antimicrobianos tópicos y apósitos no adherentes.\n\nHeridas de espesor total → desbridamiento quirúrgico y reconstrucción si es necesaria.\n\nEn general, se evita la profilaxis antibiótica.\n\nÁcido fluorhídrico → gluconato de calcio.\n\nFenol → polietilenglicol.\n\n⚡ CLAVE CONAREM\n\nÁcido = 30 minutos.\nÁlcali = 2 horas.\nNo neutralizar de rutina: la reacción puede ser exotérmica.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Tratamiento de las quemaduras químicas",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q81",
+    "text": "Un paciente sometido a quimioterapia desarrolla hinchazón, dolor, eritema y ampollas alrededor del sitio de administración de un fármaco citotóxico. Respecto a esta lesión, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "options": [
+      "La demarcación definitiva del daño tisular siempre ocurre durante las primeras 24 horas.",
+      "La lesión debe tratarse rutinariamente con compresión fría o caliente.",
+      "La lesión corresponde a una forma de lesión cáustica por extravasación y debe evaluarse para descartar compromiso de tejidos profundos.",
+      "La infiltración de antídotos específicos cuenta con respaldo establecido de ensayos controlados aleatorizados.",
+      "La muerte cutánea de espesor total debe manejarse de forma conservadora sin desbridamiento."
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa extravasación, especialmente durante la administración de quimioterapia, constituye una lesión cáustica observada en el ámbito hospitalario.\n\nLa presentación inicial suele incluir hinchazón, dolor, eritema y ampollas. Debe realizarse una evaluación exhaustiva para excluir daño de tejidos más profundos.\n\n🔑 CONCEPTOS CLAVE\n\nExtravasación de fármacos citotóxicos: aproximadamente 0,1–0,7% de las administraciones.\n\nLa gravedad depende de:\n\nPropiedades del agente.\n\nTiempo de exposición.\n\nConcentración.\n\nVolumen administrado.\n\nMayor morbilidad en personas con:\n\nPiel delgada.\n\nVenas frágiles.\n\nEscasa perfusión tisular.\n\nNeonatos.\n\nEnfermos críticos.\n\nPresentación inicial:\n\nHinchazón.\n\nDolor.\n\nEritema.\n\nAmpollas.\n\nLa demarcación del daño puede tardar 6 días o más.\n\nEl manejo suele ser conservador con elevación de la extremidad.\n\nSe ha utilizado aspiración salina mediante cánula de liposucción para diluir y eliminar el agente poco después de la lesión.\n\nSe han descrito antídotos específicos, pero el fragmento señala ausencia de ensayos controlados aleatorizados que los respalden.\n\nSe recomienda evitar la compresión fría o caliente.\n\nUna vez delimitada la herida, la muerte cutánea de espesor total debe desbridarse quirúrgicamente.\n\n⚡ CLAVE CONAREM\n\nQuimioterapia + dolor + edema/eritema + ampollas en el sitio de infusión = pensar en extravasación.\n\nLa lesión puede tardar ≥6 días en delimitarse.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Lesión por extravasación",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q82",
+    "text": "Respecto a las lesiones térmicas y por congelación, señale la afirmación CORRECTA:",
+    "options": [
+      "La zona de coagulación se caracteriza por inflamación reversible y tejido probablemente viable."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) La zona de estasis se encuentra por fuera de la zona de hiperemia y presenta necrosis irreversible desde el inicio.\n\nc) En la lesión por congelación, el tratamiento estándar inicial consiste en recalentamiento rápido a una temperatura de 40 a 42 °C.\n\nd) La zona de hiperemia representa el foco central de tejido necrótico y constituye la región de menor viabilidad.\n\ne) La lesión por congelación debe tratarse inicialmente con recalentamiento lento para evitar la trombosis microvascular.\n\n✅ Respuesta correcta: c) En la lesión por congelación, el tratamiento estándar inicial consiste en recalentamiento rápido a una temperatura de 40 a 42 °C.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción c es correcta. El fragmento establece que el tratamiento estándar de la lesión por congelación comienza con recalentamiento rápido a 40–42 °C.\n\nEn las lesiones térmicas se describen tres zonas: la zona de coagulación corresponde al tejido que ya sufrió necrosis; la zona de estasis posee viabilidad cuestionable y puede salvarse con cuidados adecuados; y la zona de hiperemia presenta inflamación, pero probablemente continuará siendo viable.\n\n🔑 CONCEPTOS CLAVE\n\nTres zonas de la lesión térmica:\n\nZona de coagulación: foco de lesión térmica con necrosis establecida.\n\nZona de estasis: situada entre coagulación e hiperemia; viabilidad cuestionable, potencialmente recuperable.\n\nZona de hiperemia: signos de inflamación, pero tejido probablemente viable.\n\nLesión por congelación:\n\nCristalización de componentes intracelulares y extracelulares.\n\nDeshidratación celular.\n\nDurante el recalentamiento puede producirse daño adicional.\n\nEfectos indirectos: trombosis microvascular e isquemia tisular.\n\nEdema e inflamación posteriores al recalentamiento pueden propagar la lesión.\n\nTratamiento estándar inicial: recalentamiento rápido a 40–42 °C.\n\nTratamientos adicionales mencionados:\n\nDesbridamiento del tejido desvitalizado.\n\nHidroterapia.\n\nElevación.\n\nAntimicrobianos tópicos.\n\nAntitromboxanos tópicos: aloe vera.\n\nAntiprostaglandinas sistémicas: ácido acetilsalicílico.\n\n⚡ CLAVE CONAREM\n\nCoagulación = muerto.\nEstasis = puede salvarse.\nHiperemia = probablemente viable.\nCongelación = recalentamiento RÁPIDO a 40–42 °C.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Lesiones térmicas",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q83",
+    "text": "Respecto a las infecciones necrotizantes de tejidos blandos (INTB), todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Se asocian frecuentemente con diabetes mellitus, abuso de drogas intravenosas, obesidad, abuso de alcohol, inmunosupresión y desnutrición."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) La exploración quirúrgica y el desbridamiento deben realizarse con un umbral bajo de sospecha, especialmente en pacientes debilitados.\n\nc) La infección tipo 1 suele ser polimicrobiana e incluye cocos grampositivos, bacilos gramnegativos y bacterias anaerobias.\n\nd) La infección tipo 2 es monomicrobiana y puede deberse a estreptococos β-hemolíticos o especies de estafilococos.\n\ne) La infección tipo 3 es la forma más frecuente y corresponde a una infección polimicrobiana causada principalmente por Clostridium perfringens y C. septicum.\n\n✅ Respuesta correcta: e) La infección tipo 3 es la forma más frecuente y corresponde a una infección polimicrobiana causada principalmente por Clostridium perfringens y C. septicum.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nLa opción e es incorrecta. Según el fragmento, existen tres tipos según el agente causal:\n\nTipo 1: es el más común y corresponde a una infección polimicrobiana; incluye cocos grampositivos, bacilos gramnegativos y anaerobios, específicamente Clostridium perfringens y C. septicum.\n\nTipo 2: infección monomicrobiana por estreptococos β-hemolíticos o especies de estafilococos; el MRSA contribuye al aumento de casos adquiridos en la comunidad.\n\nTipo 3: forma rara pero fulminante causada por Vibrio vulnificus después de traumatismo cutáneo en un cuerpo expuesto a agua de mar.\n\n🔑 CONCEPTOS CLAVE\n\nInfecciones cutáneas complicadas\n\nCelulitis superficial extensa: >75 cm², o infección que se extiende por debajo de la dermis.\n\nLas infecciones necrotizantes pueden producir rápidamente gran morbilidad y mortalidad.\n\nHallazgos importantes:\n\nCrepitación → organismo formador de gas.\n\nFluctuación → absceso.\n\nPúrpura → septicemia por infecciones estreptocócicas.\n\nAmpollas → estreptococos, Vibrio vulnificus.\n\nLinfangitis.\n\nRespuesta inflamatoria sistémica.\n\nFactores asociados a INTB\n\nDiabetes mellitus.\n\nDrogas intravenosas.\n\nObesidad.\n\nAbuso de alcohol.\n\nInmunosupresión.\n\nDesnutrición.\n\nPronóstico\n\nMortalidad: 25–40%.\n\nMayor mortalidad en casos troncales y perineales.\n\nEn 20–50% de los casos se desconoce la causa exacta.\n\n⚡ REPASO ACTIVO\n\nTIPO 1 → POLI: el más común → grampositivos + gramnegativos + anaerobios, incluidos C. perfringens y C. septicum.\n\nTIPO 2 → MONO: estreptococo β-hemolítico o estafilococos → MRSA relacionado con casos comunitarios.\n\nTIPO 3 → VIBRIO: rara + fulminante → V. vulnificus → piel traumatizada + exposición a agua de mar.\n\n⚡ CLAVE CONAREM\n\n1 = POLI\n2 = MONO\n3 = MAR (Vibrio vulnificus)\n\nY ante sospecha de infección necrotizante: umbral bajo para exploración quirúrgica y desbridamiento.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Infecciones necrotizantes de tejidos blandos",
+    "module": "Semana 3 - Cirugía"
+  },
+  {
+    "id": "cx_s3_q84",
+    "text": "Respecto a la actinomicosis, señale la afirmación CORRECTA:",
+    "options": [
+      "La forma gastrointestinal constituye la presentación más común y representa aproximadamente 55% de los casos."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "b) Actinomyces corresponde a un género de bacilos gramnegativos cuya principal localización habitual es la piel.\n\nc) La especie más comúnmente aislada como causa de enfermedad humana es A. israelii, y la forma cervicofacial representa aproximadamente 55% de los casos.\n\nd) El tratamiento habitual consiste exclusivamente en resección quirúrgica debido a la escasa respuesta a la penicilina.\n\ne) La identificación histológica de microorganismos filamentosos gramnegativos sin gránulos de azufre apoya el diagnóstico.\n\n✅ Respuesta correcta: c) A. israelii, y la forma cervicofacial representa aproximadamente 55% de los casos.\n\n🧠 ANÁLISIS DE LA PREGUNTA\n\nActinomyces es un género de bacilos grampositivos que habitan la orofaringe, el tracto gastrointestinal y el tracto genital femenino. La especie más comúnmente aislada que causa enfermedad en humanos es A. israelii.\n\nLa presentación más frecuente es la cervicofacial, que representa aproximadamente 55% de los casos y suele manifestarse como una infección piógena aguda submandibular o paramandibular.\n\n🔑 CONCEPTOS CLAVE\n\nActinomyces → bacilos grampositivos.\n\nHábitat:\n\nOrofaringe.\n\nTracto gastrointestinal.\n\nTracto genital femenino.\n\nEspecie más común: A. israelii.\n\nForma más frecuente: cervicofacial (55%).\n\nLocalización típica: submandibular o paramandibular.\n\nTambién puede producir:\n\nInflamación crónica de tejidos blandos.\n\nFibrosis.\n\nSecreción sinusal de gránulos de azufre.\n\nHistología: microorganismos filamentosos grampositivos + gránulos de azufre.\n\nTratamiento: dosis altas de penicilina intravenosa, seguidas de penicilina oral.\n\nCirugía si:\n\nTejido necrótico extenso.\n\nMala respuesta a antibióticos.\n\nNecesidad de biopsia para descartar neoplasia.\n\n⚡ CLAVE CONAREM\n\nActinomicosis = A. israelii + cervicofacial (55%) + gránulos de azufre + penicilina.",
+    "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, capítulo 16: Piel y tejido subcutáneo.",
+    "materia": "Cirugía",
+    "semana": 3,
+    "tema": "Piel y tejido subcutáneo",
+    "subtema": "Actinomicosis",
+    "module": "Semana 3 - Cirugía"
   }
 ];
