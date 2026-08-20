@@ -1937,5 +1937,556 @@ export const questionsSemana10: Question[] = [
     "tema": "Cardiología",
     "subtema": "Hipertensión Arterial y Crisis Hipertensivas",
     "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q103",
+    "text": "Con respecto al manejo y las características de las arritmias ventriculares polimorfas, el síndrome de QT largo y el síndrome de Brugada, señale la afirmación INCORRECTA (EXCEPTO) :",
+    "options": [
+      "El sulfato de magnesio intravenoso ejerce un efecto terapéutico inmediato sobre la fase de repolarización.",
+      "El isoproterenol a dosis elevadas siempre reduce la actividad ectópica y previene cualquier arritmia.",
+      "La lidocaína es uno de los antiarrítmicos que presenta la capacidad de acortar el intervalo QT.",
+      "La quinidina y el isoproterenol suprimen los episodios recurrentes de taquicardias en el Brugada.",
+      "Las extrasístoles que causan fibrilación ventricular idiopática surgen del tejido fascicular."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la incorrecta porque, si bien el isoproterenol resulta útil para incrementar la frecuencia sinusal del paciente y con ello acortar el intervalo QT, su empleo en dosis elevadas conlleva el riesgo potencial de incrementar la actividad ectópica y, en consecuencia, exacerbar las arritmias ventriculares en lugar de prevenirlas con total.\n\n🔑 CONCEPTOS CLAVE\n\nEn la fibrilación ventricular idiopática por extrasístoles, la resonancia magnética suele evidenciar tejido miocárdico cicatrizado y la ablación con catéter es el tratamiento indicado ante el fracaso farmacológico.\n\nEl manejo del síndrome de QT largo y torsades de puntas exige magnesio intravenoso, corrección intensiva de electrolitos (especialmente potasio), incremento de la frecuencia mediante marcapasos o isoproterenol, y evitar fármacos que prolongan la repolarización.\n\nEl síndrome de Brugada presenta patrón de Rsr' con elevación del segmento ST en derivaciones V₁ o V₂, respondiendo a quinidina, isoproterenol, antagonistas del calcio no dihidropiridínicos o ablación epicárdica del infundíbulo derecho si es refractario.\n\n⚡ REPASO ACTIVO\n\nTV/FV polimorfas iniciadas por extrasístoles ventriculares:\n\nOrigen: Desencadenadas en tejido fascicular o músculos papilares.\n\nDiagnóstico por imagen: Tejido miocárdico cicatrizado detectado en la resonancia magnética cardíaca.\n\nTratamiento intervencionista: Ablación con catéter indicado cuando los fármacos antiarrítmicos son ineficaces.\n\nSíndrome de QT largo adquirido o congénito ( Torsades de pointes ):\n\nManejo agudo: Magnesio intravenoso por su efecto inmediato en la repolarización.\n\nMedio interno: Corrección intensiva de trastornos electrolíticos, en especial del potasio.\n\nControl de frecuencia: Apoyo con marcapasos o isoproterenol (cuidar que dosis altas no aumenten la ectopia).\n\nAntiarrítmicos: La lidocaína puede reducir el QT; evitar otros antiarrítmicos por alterar la repolarización.\n\nSíndrome de Brugada:\n\nCriterio electrocardiográfico: Patrón Rsr' con elevación del segmento ST en V₁ o V₂ sin prolongación del intervalo QT.\n\nTerapia farmacológica: Quinidina, isoproterenol (solos o combinados) y antagonistas de los conductos de calcio no dihidropiridinas.\n\nTerapia invasiva: Ablación con catéter sobre el sustrato epicárdico en el infundíbulo ventricular derecho en casos resistentes a fármacos.",
+    "pagina": "Harrison, Principios de Medicina Interna, 22.ª edición, Capítulo 256: Tormenta eléctrica y taquicardia ventricular incesante.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Arritmias",
+    "subtema": "Tormenta eléctrica y arritmias ventriculares polimorfas",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q104",
+    "text": "En relación con la etiología y los mecanismos fisiopatológicos de la insuficiencia mitral, señale la afirmación CORRECTA :",
+    "options": [
+      "El músculo papilar anterolateral se rompe más a menudo que el posteromedial tras un infarto miocárdico agudo.",
+      "La calcificación anular mitral es un cuadro que predomina en varones jóvenes con antecedentes coronarios.",
+      "La insuficiencia mitral secundaria por remodelación ventricular es más frecuente que la ligada a fibrilación auricular.",
+      "La afección valvular mitral de origen reumático preserva la movilidad habitual de las cuerdas tendinosas.",
+      "La miocardiopatía dilatada no isquémica origina reflujo valvular mitral cuando el ventrículo mide cuatro centímetros."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción c es la correcta, ya que la insuficiencia mitral secundaria a remodelación del ventrículo izquierdo es más prevalente en la comunidad que la asociada a fibrilación auricular y dilatación del anillo. La opción a es falsa porque el músculo papilar posteromedial es el más afectado debido a su irrigación dependiente de un único vaso. Las opciones son incorrectas, pues la calcificación predomina en mujeres añosas con hipertensión o diabetes, y el proceso reumático retrae y fusiona severamente las cuerdas tendinosas. La opción e es errónea debido a que el reflujo en la miocardiopatía dilatada aparece a partir de una dimensión telediastólica de 6 cm.\n\n🔑 CONCEPTOS CLAVE\n\nEl aparato mitral comprende cinco componentes: válvulas, anillo, cuerdas tendinosas, músculos papilares y miocardio subyacente.\n\nEl músculo papilar posteromedial presenta mayor vulnerabilidad a la rotura por su vascularización dependiente de una arteria única.\n\nEn la miocardiopatía hipertrófica obstructiva, el mecanismo determinante de reflujo es el movimiento anterior sistólico (MAS) de la válvula mitral.\n\n⚡ REPASO ACTIVO\n\nClasificación etiológica de la insuficiencia mitral (Cuadro 264-1):\n\nAgudas: Endocarditis infecciosa (EI), rotura del músculo papilar posinfarto, rotura de cuerdas/flacidez de válvulas (prolapso valvular mitral, EI) y traumatismos no penetrantes.\n\nCrónicas Primarias (valvas y cuerdas afectadas): Mixomatosas (prolapso, enfermedad de Barlow), fiebre reumática, EI curada, anomalías congénitas (valva hendida, canal auriculoventricular) y radiación.\n\nCrónicas Secundarias (valvas y cuerdas como \"espectadores pasivos\"): Miocardiopatía isquémica, miocardiopatía dilatada, miocardiopatía hipertrófica obstructiva (con MAS) y fibrilación auricular crónica con dilatación anular.\n\nOtras causas: Calcificación del anillo mitral.\n\nAspectos clínicos clave:\n\nLa válvula anterior hendida se relaciona con comunicación interauricular tipo ostium primum .\n\nEn la miocardiopatía dilatada no isquémica, la insuficiencia mitral se manifiesta al alcanzar los 6 cm de dimensión telediastólica.\n\nPrincipio fisiopatológico: \"La insuficiencia mitral engendra insuficiencia mitral\" por progresión de la sobrecarga y remodelado de cavidades izquierdas.",
+    "pagina": "Harrison, Principios de Medicina Interna, 22.ª edición.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Etiología de la insuficiencia mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q105",
+    "text": "Un paciente con insuficiencia mitral crónica grave acude a control cardiológico. En el ecocardiograma se constata una fracción de expulsión del ventrículo izquierdo del 55%. ¿Cómo se interpreta correctamente este hallazgo hemodinámico?",
+    "options": [
+      "Refleja una función sistólica normal preservada por la disminución de la poscarga ventricular.",
+      "Traducir una disfunción táctil miocárdica significativa del ventrículo izquierdo subyacente.",
+      "Indica un volumen de reflujo mitral insignificante sin repercusión en cavidades izquierdas.",
+      "Descarte la presencia de remodelación ventricular secundaria por sobrecarga volumétrica.",
+      "Demuestra una elevación patológica grave de la resistencia al vaciamiento ventricular izquierdo."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es correcta porque en la insuficiencia mitral grave la fracción de expulsión suele estar artificialmente elevada debido a la baja poscarga; por ello, un valor inferior al 60% ya traduce una disfunción táctil significativa del ventrículo izquierdo. Las opciones ayc son erróneas al ignorar este fenómeno fisiopatológico y subestimar el daño ventricular. La d es falsa, ya que el deterioro de la función sistólica se vincula estrechamente a la remodelación. La e es incorrecta porque la poscarga se encuentra disminuida por la descompresión sistólica hacia la aurícula izquierda.\n\n🔑 CONCEPTOS CLAVE\n\nLa resistencia al vaciamiento ventricular (poscarga) se encuentra reducida debido a la expulsión retrógrada hacia la aurícula izquierda.\n\nEl flujo transmitral rápido puede producir un tercer ruido (S3) y un soplo funcional mesodiastólico sin requerir estenosis mitral asociada.\n\nLos parámetros ecocardiográficos para insuficiencia crónica mitral grave son: volumen de reflujo ≥ 60 ml/latido, fracción de reflujo > 50% y área eficaz del orificio > 0,40 cm2.\n\n⚡ REPASO ACTIVO\n\nHemodinamia y función ventricular:\n\nPoscarga disminuida por descompresión retrógrada hacia la aurícula izquierda.\n\nLa fracción de expulsión < 60% denota caída y disfunción contractual verdadera del miocardio.\n\nEl descenso de la onda y el auricular izquierdo se producen de forma rápida durante el protodiástole.\n\nCriterios de insuficiencia mitral crónica grave:\n\nVolumen de reflujo: ≥ 60 mL/latido.\n\nFracción de reflujo (FR): > 50%.\n\nÁrea eficaz del orificio regurgitante: > 0,40 cm2.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 264: Insuficiencia mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Fisiopatología de la insuficiencia mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q106",
+    "text": "¿Cuál es una indicación ecocardiográfica de tratamiento quirúrgico en un paciente con insuficiencia mitral primaria crónica grave que se encuentra asintomático?",
+    "options": [
+      "Dimensión telesistólica del ventrículo izquierdo mayor o igual a 40 mm.",
+      "Fracción de expulsión del ventrículo izquierdo estrictamente mayor al 70%.",
+      "Dimensión telediastólica del ventrículo izquierdo menor o igual a 30 mm.",
+      "Fracción de expulsión ventricular izquierda preservada superior al 80%.",
+      "Dimensión telesistólica del ventrículo izquierdo menor o igual a 25 mm."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque el tratamiento quirúrgico en pacientes asintomáticos con insuficiencia mitral primaria crónica grave se recomienda formalmente cuando presentan disfunción del ventrículo izquierdo evidenciada por una dimensión telesistólica (ESD LV) mayor o igual a 40 mm o una fracción de expulsión menor o igual al 60%. Las opciones b, c, tinte son erróneas al plantear valores ventriculares o de fracción de expulsión que no constituyen puntos de corte para la indicación operatoria en el paciente asintomático.\n\n🔑 CONCEPTOS CLAVE\n\nLa reparación valvular mitral ofrece menores riesgos a corto y largo plazo que el reemplazo, preservando mejor la función ventricular.\n\nEn pacientes asintomáticos con insuficiencia mitral primaria grave, la cirugía está indicada con fracción de expulsión menor o igual a 60% o diámetro telesistólico ventricular mayor o igual a 40 mm.\n\nEn insuficiencia mitral aguda grave por rotura del músculo papilar, la corrección quirúrgica es urgente.\n\n⚡ REPASO ACTIVO\n\nIndicaciones quirúrgicas en insuficiencia mitral primaria crónica grave:\n\nPacientes sintomáticos (preferentemente reparación).\n\nPacientes asintomáticos con disfunción del VI: fracción de expulsión ≤ 60% o dimensión telesistólica del VI ≥ 40 mm.\n\nProgresión en controles periódicos: descenso progresivo de la fracción de expulsión o aumento de la dimensión telesistólica.\n\nAnatomía favorable con probabilidad > 95% de reparación duradera en centros especializados y bajo riesgo quirúrgico.\n\nAspectos quirúrgicos y técnicos destacados:\n\nCirugía de elección: Reparación valvular (anuloplastia, neocuerdas, ablación de válvulas) frente a sustitución protésica.\n\nSi coexiste fibrilación auricular: Realizar técnica de laberinto (izquierdo o biauricular) o aislamiento de venas pulmonares más amputación de la orejuela izquierda.\n\nEn insuficiencia mitral isquémica secundaria: La reparación tiene menor mortalidad inicial pero mayor recidiva, por lo que a menudo puede preferirse el reemplazo conservando cuerdas.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 264: Insuficiencia mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Tratamiento quirúrgico de la insuficiencia mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q107",
+    "text": "Un paciente con insuficiencia mitral secundaria por miocardiopatía isquémica presenta signos de sobrecarga hídrica. Se inicia tratamiento médico dirigido por guías. ¿Qué grupo farmacológico NO está indicado en el manejo de la insuficiencia mitral crónica grave aislada con función sistólica preservada y ausencia de hipertensión sistémica?",
+    "options": [
+      "Vasodilatadores de forma sistemática a largo plazo.",
+      "Antagonistas del receptor mineralocorticoide.",
+      "Inhibidores de la enzima convertidora de angiotensina.",
+      "Diuréticos para promover la descongestión de líquidos.",
+      "Betabloqueadores orientados a insuficiencia cardíaca."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta, ya que en la insuficiencia mitral crónica grave aislada, si la función sistólica está conservada y no hay hipertensión sistémica, no hay estudios que justifiquen el uso rutinario de vasodilatadores a largo plazo. Las opciones b, c, tinte son erróneas porque estos fármacos (diuréticos, betabloqueadores, IECA y antagonistas de mineralocorticoides) sí conforman la terapia médica dirigida por guías para reducir la gravedad del reflujo en casos de insuficiencia mitral secundaria a miocardiopatía isquémica o dilatada.\n\n🔑 CONCEPTOS CLAVE\n\nLos anticoagulantes directos están contraindicados en pacientes con estenosis mitral reumática moderada/grave o prótesis mecánicas.\n\nLa profilaxis antibiótica contra endocarditis infecciosa solo está indicada en pacientes con antecedente de endocarditis.\n\nLa insuficiencia mitral aguda grave (ej. rotura del músculo papilar) exige estabilización urgente con diuréticos, nitroprusiato sódico o soporte mecánico previo a la cirugía.\n\n⚡ REPASO ACTIVO\n\nManejo anticoagulante:\n\nIndicación: Fibrilación auricular concurrente (basado en CHA₂DS₂-VASc).\n\nOpciones: Warfarina o anticoagulantes orales directos (apixabán, rivaroxabán).\n\nContraindicaciones de directos: Estenosis mitral reumática moderada a grave y prótesis valvulares mecánicas.\n\nTerapia en insuficiencia mitral secundaria (isquémica/dilatada):\n\nDiuréticos (descongestión).\n\nBetabloqueadores, IECA/ARA-II, inhibidores de angiotensina-neprilisina (ARNI).\n\nAntagonistas mineralocorticoides, inhibidores SGLT2.\n\nTerapia de resincronización cardíaca (si hay indicación).\n\nManejo agudo severo:\n\nRequiere estabilización para cirugía inmediata.\n\nFármacos de rescate: Diuréticos intravenosos y vasodilatadores como el nitroprusiato sódico.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 264: Insuficiencia mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Tratamiento médico de la insuficiencia mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q108",
+    "text": "¿Cuál es la causa principal de estenosis mitral a nivel mundial?",
+    "options": [
+      "Calcificación degenerativa masiva del anillo mitral.",
+      "Endocarditis bacteriana con vegetaciones gigantes.",
+      "Fiebre reumática con afección valvular crónica.",
+      "Anomalía congénita de válvula mitral en paracaídas.",
+      "Depósito pericárdico por lupus eritematoso sistémico."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción c es la correcta porque la fiebre reumática constituye la causa principal de estenosis mitral, observándose afectación mitral pura o predominante en cerca del 40% de los pacientes con cardiopatía reumática. Las opciones a, b, tinte son incorrectas, ya que la calcificación anular, las vegetaciones por endocarditis, las malformaciones congénitas (como válvula en paracaídas o corazón triauricular) y las colagenopatías corresponden a causas infrecuentes de obstrucción al llenado del ventrículo izquierdo.\n\n🔑 CONCEPTOS CLAVE\n\nLa estenosis mitral pura o predominante se presenta en aproximadamente el 40% de las personas con cardiopatía reumática y antecedente de fiebre reumática.\n\nLa anatomía patológica reumática se caracteriza por engrosamiento fibroso difuso, fusión de comisuras y cuerdas tendinosas, rigidez cuspídea y deformidad en embudo o \"boca de pez\".\n\nAunque su prevalencia ha bajado en países de altos ingresos, persiste como un problema de salud relevante en África subsahariana, India, sudeste de Asia y Oceanía.\n\n⚡ REPASO ACTIVO\n\nEtiología de la estenosis mitral (Cuadro 263-1):\n\nCausa principal: Fiebre reumática.\n\nCausas congénitas: Válvula mitral en paracaídas, corazón triauricular.\n\nCausas inflamatorias/autoinmunes: Lupus eritematoso sistémico (LES), artritis reumatoide (AR).\n\nOtras causas: Calcificación intensa del anillo mitral con afectación de válvulas, mixoma de aurícula izquierda y endocarditis infecciosa (EI) con grandes vegetaciones.\n\nPatología y complicaciones tromboembólicas:\n\nFusión de comisuras y acortamiento de cuerdas generan la deformidad en \"boca de pez\".\n\nLos trombos pueden formarse sobre la válvula calcificada, pero con mayor frecuencia nacen de la aurícula izquierda dilatada (especialmente en pacientes con fibrilación auricular) produciendo émbolos arteriales sistémicos.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 263: Estenosis mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Etiología de la estenosis mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q109",
+    "text": "¿A partir de qué valor del área del orificio valvular mitral se define la presencia de una estenosis mitral grave?",
+    "options": [
+      "Menor a 1,5 cm2.",
+      "Menor a 2,5 cm2.",
+      "Menor a 3,0 cm2.",
+      "Menor a 3,5 cm2.",
+      "Menor a 4,0 cm2."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la estenosis mitral se clasifica como grave cuando el área del orificio valvular se reduce a menos de 1.5 cm2, requiriendo presionar auriculares izquierdos elevados (alrededor de 25 mm Hg) para mantener un gasto cardíaco normal. Las opciones b, c, tinte son erróneas al representar valores superiores al punto de corte establecido para estenosis grave; De hecho, el área valvular normal del adulto es de 4 a 6 cm2 y la obstrucción notable suele presentarse cuando el área disminuye a menos de 2 cm2.\n\n🔑 CONCEPTOS CLAVE\n\nEl área valvular mitral normal en adultos oscila entre 4 y 6 cm2.\n\nLa estenosis mitral es grave cuando el área es menor a 1,5 cm2 (y muy grave si es menor a 1,0 cm2 con gasto cardíaco disminuido en reposo).\n\nEl aumento de la frecuencia cardíaca acorta la diástole más que la sístole, elevando el gradiente transmitral y la presión en la aurícula izquierda.\n\n⚡ REPASO ACTIVO\n\nÁreas valvulares y comportamiento hemodinámico:\n\nÁrea normal en adultos: 4 a 6 cm2.\n\nObstrucción notable: < 2 cm2 (genera un gran gradiente auriculoventricular).\n\nEstenosis mitral grave: < 1,5 cm2 (se requiere presión en AI de ~25 mm Hg para mantener el gasto cardíaco).\n\nEstenosis mitral muy grave: < 1 cm2 (el gasto cardíaco es subnormal en reposo y puede caer con el ejercicio).\n\nMecanismos de hipertensión pulmonar y estenosis mitral:\n\nTransmisión retrógrada pasiva de la elevada presión de la aurícula izquierda.\n\nConstricción arteriolar pulmonar (\"segunda estenosis\" o hipertensión pulmonar reactiva).\n\nEdema intersticial de las paredes de los vasos pulmonares pequeños.\n\nCambios restrictivos orgánicos del lecho vascular pulmonar en fases finales.\n\nAlteraciones en el registro de presión (ritmo sinusal):\n\nOnda a prominente en las curvas de presión en cuña y aurícula izquierda.\n\nDisminución gradual de la presión posonda v con retraso del descenso y .",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 263: Estenosis mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Fisiopatología de la estenosis mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q110",
+    "text": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la estenosis mitral se clasifica como grave cuando el área del orificio valvular se reduce a menos de 1.5 cm2, requiriendo presionar auriculares izquierdos elevados (alrededor de 25 mm Hg) para mantener un gasto cardíaco normal. Las opciones b, c, tinte son erróneas al representar valores superiores al punto de corte establecido para estenosis grave; De hecho, el área valvular normal del adulto es de 4 a 6 cm2 y la obstrucción notable suele presentarse cuando el área disminuye a menos de 2 cm2. 🔑 CONCEPTOS CLAVE El área valvular mitral normal en adultos oscila entre 4 y 6 cm2. La estenosis mitral es grave cuando el área es menor a 1,5 cm2 (y muy grave si es menor a 1,0 cm2 con gasto cardíaco disminuido en reposo). El aumento de la frecuencia cardíaca acorta la diástole más que la sístole, elevando el gradiente transmitral y la presión en la aurícula izquierda. ⚡ REPASO ACTIVO Áreas valvulares y comportamiento hemodinámico: Área normal en adultos: 4 a 6 cm2. Obstrucción notable: < 2 cm2 (genera un gran gradiente auriculoventricular). Estenosis mitral grave: < 1,5 cm2 (se requiere presión en AI de ~25 mm Hg para mantener el gasto cardíaco). Estenosis mitral muy grave: < 1 cm2 (el gasto cardíaco es subnormal en reposo y puede caer con el ejercicio). Mecanismos de hipertensión pulmonar y estenosis mitral: Transmisión retrógrada pasiva de la elevada presión de la aurícula izquierda. Constricción arteriolar pulmonar (\"segunda estenosis\" o hipertensión pulmonar reactiva). Edema intersticial de las paredes de los vasos pulmonares pequeños. Cambios restrictivos orgánicos del lecho vascular pulmonar en fases finales. Alteraciones en el registro de presión (ritmo sinusal): Onda a prominente en las curvas de presión en cuña y aurícula izquierda. Disminución gradual de la presión posonda v con retraso del descenso y . 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 263: Estenosis mitral. ¿Cuál es el fármaco y el rango objetivo de índice internacional normalizado (INR) recomendado por tiempo indefinido en pacientes con estenosis mitral que presentan fibrilación auricular?",
+    "options": [
+      "Antagonistas de la vitamina K como la warfarina con un rango de INR de 2 a 3.",
+      "Antagonistas de la vitamina K como la warfarina con un rango de INR de 3 a 4.",
+      "Anticoagulantes orales de acción directa como apixabán sin monitorizar el INR.",
+      "Anticoagulantes orales de acción directa como rivaroxabán ajustando el INR.",
+      "Doble antiagregación plaquetaria con ácido acetilsalicílico manteniendo el INR."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque en pacientes con estenosis mitral asociada a fibrilación auricular, antecedente embólico o trombo auricular demostrado, se debe indicar tratamiento indefinido con antagonistas de la vitamina K (warfarina) manteniendo un INR de 2 a 3. La opción b plantea un rango supraterapéutico e incorrecto para esta condición. Las opciones cyd no están recomendadas porque los anticoagulantes directos carecen de evidencia suficiente en estenosis mitral reumática moderada a grave. La opción e es errónea ya que la antiagregación no constituye el tratamiento de elección para la prevención de tromboembolias en este contexto.\n\n🔑 CONCEPTOS CLAVE\n\nLa profilaxis secundaria de fiebre reumática con penicilina es obligatoria en personas con riesgo de estenosis mitral reumática.\n\nLos betabloqueadores, calcioantagonistas no dihidropiridínicos (verapamilo, diltiazem) y digitálicos se emplean para controlar la frecuencia ventricular en fibrilación auricular.\n\nLa cardioversión en estenosis mitral requiere un mínimo de 3 semanas previas de anticoagulación con INR terapéutico, o bien heparina intravenosa más ecocardiograma transesofágico (ETE) previo si es urgente.\n\n⚡ REPASO ACTIVO\n\nMedidas farmacológicas generales en estenosis mitral:\n\nProfilaxis: Penicilina contra estreptococos betahemolíticos del grupo A (prevención secundaria).\n\nSíntomas congestivos: Restricción de sodio en la dieta y dosis bajas de diuréticos por vía oral.\n\nControl de frecuencia en fibrilación auricular: Betabloqueadores, calcioantagonistas no dihidropiridínicos (verapamilo o diltiazem) y digitálicos.\n\nAnticoagulación oral:\n\nIndicaciones formales: Presencia de fibrilación auricular, antecedente de tromboembolia o trombo confirmado en aurícula izquierda.\n\nFármaco y meta: Antagonistas de la vitamina K (warfarina) con INR objetivo de 2 a 3 por tiempo indefinido.\n\nAnticoagulantes orales directos (apixabán, rivaroxabán): No se recomiendan en estenosis mitral reumática moderada o grave por falta de estudios concluyentes.\n\nReglas de cardioversión en fibrilación auricular:\n\nElectiva: Mínimo 3 semanas continuas de anticoagulación con INR en rango terapéutico.\n\nUrgente: Heparina intravenosa asociada a ecocardiograma transesofágico para descartar trombo en aurícula izquierda.\n\nFactores predictores de fracaso: Crecimiento auricular izquierdo notable o fibrilación auricular de más de 1 año de evolución.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 263: Estenosis mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Cardiología General",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q111",
+    "text": "¿En cuál de las siguientes situaciones está formalmente indicada la comisurotomía (valvulotomía) mitral en un paciente con estenosis mitral que se encuentra totalmente asintomático?",
+    "options": [
+      "Presión sistólica de la arteria pulmonar mayor a 50 mm Hg en reposo.",
+      "Presión sistólica de la arteria pulmonar de 35 mm Hg durante el esfuerzo.",
+      "Área del orificio valvular mitral calculada en 1,8 centímetros cuadrados.",
+      "Presencia de insuficiencia mitral leve sin repercusión hemodinámica.",
+      "Fracción de eyección del ventrículo izquierdo en el límite inferior normal."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque, en pacientes totalmente asintomáticos, la valvulotomía mitral no se recomienda de forma rutinaria salvo que presenten complicaciones específicas como embolias sistémicas recurrentes o hipertensión pulmonar grave, definida por una presión sistólica de la arteria pulmonar mayor a 50 mm Hg en reposo o mayor a 60 mm Hg durante el ejercicio. Las opciones b, c, tinte son incorrectas dado que las presiones pulmonares limítrofes, la estenosis mitral leve o moderada (área mayor a 1.5 cm2) y los cambios menores en la función sistólica no justifican la realización del procedimiento invasivo en ausencia de síntomas.\n\n🔑 CONCEPTOS CLAVE\n\nLa valvulotomía no está indicada en asintomáticos salvo embolias recurrentes o hipertensión pulmonar grave (presión sistólica pulmonar > 50 mm Hg en reposo o > 60 mm Hg en ejercicio).\n\nLa comisurotomía percutánea con balón (CMPB) es la técnica de elección en pacientes sintomáticos con estenosis mitral grave (área < 1,0 cm2/m2 o < 1,5 cm2) y anatomía favorable.\n\nEn embarazadas con congestión pulmonar refractaria al tratamiento médico, la CMPB es el procedimiento de elección y se realiza con guía ecocardiográfica transesofágica para evitar la radiación.\n\n⚡ REPASO ACTIVO\n\nIndicaciones de comisurotomía/valvulotomía mitral:\n\nPacientes sintomáticos (clase funcional NYHA II a IV) con estenosis mitral grave aislada (área < 1,5 cm2 o < 1,0 cm2/m2).\n\nPacientes asintomáticos: Exclusivamente ante embolia sistémicas de repetición o hipertensión pulmonar severa (> 50 mm Hg en reposo o > 60 mm Hg con ejercicio).\n\nEmbarazadas sintomáticas: Indicada si persiste congestión pulmonar a pesar del tratamiento médico intensivo, prefiriéndose la vía percutánea guiada por ETE.\n\nContraindicaciones relativas/Criterios no candidatos para CMPB:\n\nInsuficiencia mitral asociada de gravedad > 2+/4+.\n\nPresencia demostrada de trombos en aurícula izquierda.\n\nCalcificación comisural severa o afección cicatrizal subvalvular importante.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 263: Estenosis mitral.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Indicaciones de valvulotomía mitral",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q112",
+    "text": "¿Cuál es la lesión valvular más frecuente entre los pacientes adultos con cardiopatía valvular crónica?",
+    "options": [
+      "Estenosis mitral reumática.",
+      "Estenosis aórtica valvular.",
+      "Insuficiencia tricuspídea.",
+      "Insuficiencia pulmonar grave.",
+      "Estenosis de válvula tricúspide."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la correcta porque la estenosis aórtica constituye la lesión valvular más frecuente entre los pacientes adultos con cardiopatía valvular crónica, presentándose predominantemente en individuos de género masculino. Las opciones a, c, tinte son incorrectas ya que representan otras valvulopatías que no ocupan el primer lugar en frecuencia en esta población de pacientes adultos.\n\n🔑 CONCEPTOS CLAVE\n\nLa estenosis aórtica sintomática en adultos predomina en el género masculino y se debe principalmente a calcificación degenerativa.\n\nEl sustrato anatomopatológico puede asentar sobre una afectación congénita (válvula bicúspide o unicúspide), deterioro crónico sobre una válvula tricúspide normal o secuela por inflamación reumática previa.\n\nLa esclerosis de la válvula aórtica (engrosamiento y calcificación focal sin obstrucción hemodinámica significativa) afecta a cerca del 30% de los adultos mayores de 65 años y se asocia a mayor riesgo de muerte cardiovascular e infarto de miocardio.\n\n⚡ REPASO ACTIVO\n\nEtiología de la estenosis aórtica (Cuadro 261-1):\n\nCongénitas: Válvula aórtica bicúspide (53% en piezas patológicas de reemplazo), unicúspide (4%).\n\nCalcificada degenerativa (sobre válvula tricúspide o bicúspide).\n\nFiebre reumática.\n\nRadiación.\n\nPatogenia y factores de riesgo:\n\nProceso activo similar a la aterosclerosis: disfunción endotelial, acumulación de lípidos, inflamación y diferenciación fenotípica de miofibroblastos en osteoblastos con depósito de cristales de hidroxiapatita cálcica.\n\nFactores asociados: C-LDL, Lp(a), diabetes mellitus, tabaquismo, nefropatía crónica, síndrome metabólico e hipertensión.\n\nLa tríada de hipertensión, diabetes mellitus y dislipidemia representa casi el 33% del riesgo poblacional atribuible para estenosis aórtica grave.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 261: Valvulopatía aórtica.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Epidemiología y etiología de la estenosis aórtica",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q113",
+    "text": "En relación con las características epidemiológicas, genéticas y fisiopatológicas de la válvula aórtica bicúspide (VAB), señale la afirmación CORRECTA :",
+    "options": [
+      "Es el defecto valvular congénito más frecuente del corazón y predomina en varones.",
+      "La aortopatía asociada depende de manera estricta de la gravedad del gradiente estenótico.",
+      "La prevalencia descrita en familiares de primer grado de un caso índice no supera el 1%.",
+      "La variante anatómica más frecuente consiste en la fusión de las cúspides no coronaria y derecha.",
+      "Su presencia descarta por completa la coexistencia de anomalías complejas como el complejo de Shone."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la válvula aórtica bicúspide es el defecto cardíaco congénito valvular más frecuente (afecta del 0.5% al ​​1.4% de la población general) con un claro predominio en varones (proporción de 2-4:1). La opción b es incorrecta porque la aortopatía y la degeneración de la capa media se desarrollan independientemente de la gravedad hemodinámica de la lesión valvular. La opción c es falsa, ya que la prevalencia en familiares de primer grado es de alrededor del 10%. La opción d es errónea debido a que la variante más común es la fusión entre la cúspide derecha y la izquierda. La opción e es incorrecta puesto que la válvula bicúspide puede formar parte de cardiopatías congénitas complejas, como el complejo de Shone.\n\n🔑 CONCEPTOS CLAVE\n\nLa válvula aórtica bicúspide es la cardiopatía valvular congénita más frecuente y muestra herencia autosómica dominante con penetrancia incompleta (mutaciones en NOTCH1 , GATA5 , GATA4 ).\n\nLa degeneración de la capa media con formación de aneurisma de la aorta ascendente es una complicación frecuente que no depende de la severidad del gradiente valvular.\n\nLa variante morfológica más prevalente es la fusión entre las cúspides coronarias derecha e izquierda, asociándose a ectasia de la curvatura mayor de la aorta ascendente.\n\n⚡ REPASO ACTIVO\n\nEpidemiología y genética:\n\nPrevalencia poblacional: 0,5% a 1,4%.\n\nRelación varón:mujer: 2:1 a 4:1.\n\nPrevalencia en familiares de primer grado: Alrededor del 10%.\n\nPatrón hereditario: Autosómico dominante con penetrancia incompleta (posible ligamiento al cromosoma X sugerido por su asociación con el síndrome de Turner).\n\nGenes vinculados: NOTCH1 , GATA5 , GATA4 , NKX2.5 y anomalías en la óxido nítrico sintasa endotelial.\n\nAortopatía y complicaciones vasculares:\n\nMecanismo: Degeneración de la capa media aórtica.\n\nManifestaciones: Formación de aneurisma de la porción ascendente (frecuente), disección aórtica y coartación aórtica (menos frecuente).\n\nIndependencia hemodinámica: La aortopatía progresa de forma independiente a la gravedad estenótica/regurgitante de la válvula.\n\nVariante anatómica más común: Fusión de la cúspide derecha-izquierda (se asocia con agrandamiento aórtico a lo largo de la curvatura mayor).\n\nAsociaciones sindrómicas:\n\nSíndrome de Turner.\n\nCardiopatías obstructivas izquierdas congénitas como el complejo de Shone.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 261: Valvulopatía aórtica.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Valvulopatía aórtica bicúspide",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q114",
+    "text": "En relación con el manejo médico general y las recomendaciones clínicas en pacientes con estenosis aórtica grave, señale la afirmación CORRECTA :",
+    "options": [
+      "Las estatinas han demostrado retrasar de forma eficaz la velocidad de progresión de la calcificación.",
+      "Los pacientes asintomáticos deben evitar la actividad física agotadora y los deportes de competencia.",
+      "La nitroglicerina se encuentra estrictamente contraindicada para el control del dolor anginoso.",
+      "La profilaxis contra endocarditis infecciosa debe administrarse a la totalidad de los pacientes afectados.",
+      "Los inhibidores de la enzima convertidora de angiotensina están proscritos en cuadros asintomáticos."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la correcta debido a que en pacientes con estenosis aórtica grave (área valvular menor a 1 cm2) se debe indicar de manera estricta evitar el esfuerzo físico extenuante y los deportes competitivos, incluso si se encuentran completamente asintomáticos. La opción a es incorrecta porque ni las estatinas ni los fármacos que actúan sobre el sistema renina-angiotensina-aldosterona reducen el ritmo de progresión de la valvulopatía. La opción c es errónea ya que la nitroglicerina es útil para el alivio de la angina de pecho en personas con enfermedad arterial coronaria asociada. Las opciones tinte son falsas debido a que la profilaxis de endocarditis se restringe solo a quienes tienen antecedentes previos de endocarditis, y los IECA o betabloqueadores suelen ser inocuos en asintomáticos con función ventricular conservada.\n\n🔑 CONCEPTOS CLAVE\n\nLa estenosis aórtica grave se define hemodinámicamente por un área valvular menor a 1 cm2.\n\nSe debe prevenir rigurosamente la deshidratación y la hipovolemia para evitar caídas críticas del gasto cardíaco.\n\nNi los inhibidores de la HMG-CoA reductasa ni los bloqueadores del sistema renina-angiotensina modifican la tasa de progresión de la obstrucción valvular aórtica.\n\n⚡ REPASO ACTIVO\n\nMedidas generales y estilo de vida:\n\nRestricción de actividad física intensa y deportes de alta competencia (incluso en asintomáticos con área < 1 cm2).\n\nEvitar estados de hipovolemia o deshidratación marcada para no comprometer el gasto cardíaco.\n\nManejo farmacológico:\n\nHipertensión arterial o coronariopatía concurrente: Betabloqueadores e inhibidores de la ECA suelen ser seguros en sujetos asintomáticos con función sistólica del ventrículo izquierdo preservada.\n\nNitroglicerina: Fármaco útil para calmar la angina en coexistencia con enfermedad coronaria.\n\nEstatinas: Su uso no frena la progresión de la estenosis aórtica; su indicación se limita a la prevención primaria o secundaria de eventos cardiovasculares ateroscleróticos.\n\nProfilaxis contra endocarditis infecciosa: Indicada exclusivamente en pacientes con antecedentes de endocarditis previa.\n\nema: Valvulopatías Subtema: Indicaciones quirúrgicas en la estenosis aórtica",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 261: Valvulopatía aórtica.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Tratamiento médico de la estenosis aórtica",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q115",
+    "text": "¿En cuál de las siguientes situaciones clínicas está formalmente indicado el reemplazo valvular aórtico en un paciente con estenosis aórtica que se encuentra asintomático?",
+    "options": [
+      "Fracción de expulsión del ventrículo izquierdo menor al 50%.",
+      "Presencia de hipertensión arterial nivel bien controlada con fármacos.",
+      "Área de superficie valvular calculada en 1,4 centímetros cuadrados.",
+      "Antecedente familiar de cardiopatía isquémica en primer grado.",
+      "Velocidad de flujo aórtico transvalvular medida en 2,5 metros por segundo."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la cirugía de reemplazo valvular aórtico está indicada formalmente en pacientes asintomáticos con estenosis aórtica grave que presentan disfunción sistólica del ventrículo izquierdo, definida por una fracción de expulsión (FE) menor al 50%. Las opciones b, c, son incorrectas dado que la hipertensión controlada, un área valvular no grave (> 1 cm²), antecedentes coronarios familiares o velocidades transvalvulares normales no constituyen criterios quirúrgicos en el paciente asintomático.\n\n🔑 CONCEPTOS CLAVE\n\nLa intervención quirúrgica debe realizarse a corto plazo (1 a 3 meses) tras la aparición de síntomas.\n\nEn pacientes asintomáticos con estenosis aórtica grave (área < 1 cm² o < 0,6 cm²/m²), la indicación quirúrgica principal es la disfunción sistólica ventricular (FE < 50%).\n\nSi coexiste válvula aórtica bicúspide, la cirugía aórtica se indica con diámetro > 5.5 cm (o 4.5 a 5.0 cm si hay antecedentes familiares de catástrofe aórtica o crecimiento rápido > 0.5 cm/año).\n\n⚡ REPASO ACTIVO\n\nIndicaciones de cirugía en estenosis aórtica grave asintomática:\n\nDisfunción sistólica del ventrículo izquierdo (fracción de eyección < 50%).\n\nAneurisma de la raíz o aorta ascendente > 5.5 cm en válvula aórtica bicúspide (o 4.5-5.0 cm ante catástrofe familiar previa o progresión > 0.5 cm/año).\n\nPacientes programados para cirugía de revascularización coronaria (CABG).\n\nIndicaciones relativas / adicionales a considerar:\n\nPrueba de esfuerzo anormal en banda sin fin.\n\nEstenosis aórtica muy grave: velocidad de chorro > 5 m/so gradiente medio > 60 mm Hg (con bajo riesgo operatorio).\n\nHipertrofia excesiva del ventrículo izquierdo no atribuible a hipertensión arterial.\n\nProgresión clínica o ecocardiográfica rápida cuando el acceso urgente a la atención médica esté obstaculizando.\n\nAspectos pronósticos y de riesgo:\n\nRiesgo quirúrgico promedio en ausencia de insuficiencia cardíaca: ~2%.\n\nEn estenosis grave de bajo flujo y bajo gradiente con disfunción ventricular severa, la mortalidad perioperatoria se eleva un 15-20%.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 261: Valvulopatía aórtica.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Indicaciones quirúrgicas en la estenosis aórtica",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q116",
+    "text": "¿En cuál de los siguientes escenarios clínicos se prefiere la valvuloplastia percutánea con globo aórtico antes que la cirugía definitiva?",
+    "options": [
+      "Niños y adultos jóvenes con estenosis aórtica congénita no calcificada.",
+      "Adultos mayores de 65 años con estenosis aórtica tricúspide calcificada.",
+      "Pacientes portadores de prótesis mecánicas con disfunción por pannus.",
+      "Adultos asintomáticos con área valvular aórtica menor a 0,6 cm2 por m2.",
+      "Pacientes con insuficiencia aórtica pura grave sin gradiente estenótico."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la valvuloplastia percutánea con globo es el método de elección preferido sobre la cirugía en niños y adultos jóvenes que presentan estenosis aórtica congénita no calcificada. La opción b es incorrecta debido a que en adultos con estenosis calcificada no se usa como tratamiento definitivo por la alta tasa de reestenosis precoz (80% al año), reservándose solo como puente temporal. Las opciones c, tinte son erróneas porque no constituyen indicaciones de valvuloplastia con balón según las directrices clínicas descritas.\n\n🔑 CONCEPTOS CLAVE\n\nLa valvuloplastia percutánea con balón es el tratamiento de elección en niños y jóvenes con estenosis aórtica congénita no calcificada.\n\nEn adultos con estenosis calcificada grave no se emplea como terapia definitiva por la alta tasa de reestenosis al año (80%), pero sirve como puente en choque o disfunción ventricular severa.\n\nLa TAVI transfemoral ofrece menores tasas de muerte perioperatoria, evento cerebrovascular, sangrado mayor y fibrilación auricular comparada con la cirugía abierta, aunque presenta mayor tasa de necesidad de marcapasos permanente e insuficiencia aórtica perivalvular.\n\n⚡ REPASO ACTIVO\n\nValvuloplastia percutánea con globo aórtico:\n\nIndicación preferente: Niños y adultos jóvenes con estenosis aórtica congénita no calcificada.\n\nLimitación en adultos: Tasa de reestenosis del 80% en el transcurso de un año.\n\nUso secundario: Procedimiento \"puente\" para estabilizar pacientes en choque/disfunción grave del VI antes de cirugía o TAVI, y como fase preparatoria durante la propia TAVI.\n\nReemplazo valvular aórtico transcatéter (TAVI):\n\nPoblación diana: Pacientes sintomáticos con riesgo quirúrgico alto, intermedio, bajo o prohibitivo.\n\nVía principal: Vía transfemoral (vías alternativas: transapical, subclavia, carotídea o aórtica ascendente).\n\nEn menores de 65 años: Se recomienda SAVR (reemplazo quirúrgico convencional) debido a la escasez de datos sobre resultados a largo plazo de TAVI.\n\nTAVI frente a SAVR (Cirugía abierta):\n\nVentajas de TAVI transfemoral: Menor mortalidad perioperatoria, menor riesgo de ictus, hemorragia mayor y fibrilación auricular, menor estancia hospitalaria y recuperación más rápida.\n\nVentajas de SAVR: Menor requerimiento de marcapasos definitivo, menor incidencia de insuficiencia perivalvular y menores complicaciones vasculares.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 261: Valvulopatía aórtica.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Valvulopatías",
+    "subtema": "Tratamiento intervencionista de la estenosis aórtica",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q117",
+    "text": "¿Cuál de las siguientes asociaciones etiológicas y anatomopatológicas con respecto a los aneurismas de la aorta es CORRECTA ?",
+    "options": [
+      "La sífilis terciaria origina aneurismas que asientan predominantemente en la aorta abdominal infrarrenal.",
+      "Las vasculitis de Takayasu y de células gigantes ocasionan aneurismas del cayado y la aorta torácica descendente.",
+      "La degeneración de la túnica media compromete la aorta de respetando los senos de Valsalva.",
+      "El aneurisma micótico por siembra bacteriana sobre placas ateroscleróticas suele ser de tipo fusiforme difuso.",
+      "Los aneurismas aórticos traumáticos se ubican significativamente en la raíz aórtica por encima de las coronarias."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la correcta porque las vasculitis de grandes vasos, específicamente la arteritis de Takayasu y la arteritis de células gigantes, se manifiestan característicamente originando aneurismas a nivel del cayado aórtico y de la aorta torácica descendente. La opción a es incorrecta debido a que cerca del 90% de los aneurismas sifilíticos se localizan en la aorta ascendente o en el cayado aórtico, no a nivel infrarrenal. La opción c es errónea dado que la degeneración medial afecta sustancialmente la porción proximal de la aorta, los senos de Valsalva y la aorta ascendente, provocando dilataciones fusiformes circunferenciales. La opción d es falsa porque los aneurismas micóticos infecciosos (por Staphylococcus , Streptococcus o Salmonella ) son predominantemente de aspecto sacciforme. La opción e es incorrecta puesto que los aneurismas traumáticos asientan con mayor frecuencia en la aorta torácica descendente, justo distal a la inserción del ligamento arterioso.\n\n🔑 CONCEPTOS CLAVE\n\nUn aneurisma verdadero involucra las tres capas vasculares (íntima, media y adventicia), mientras que el pseudoaneurisma presenta disrupción de íntima y media quedando contenido solo por adventicia o hematoma perivascular.\n\nLa degeneración de la media (pérdida de colágeno y elastina sustituida por hendiduras mucoides de proteoglucanos) es el sustrato de aneurismas fusiformes proximales en trastornos como Marfan ( FBN1 ), Loeys-Dietz ( TGFBR1/2 ), Ehlers-Danlos tipo IV ( COL3A1 ) y válvula aórtica bicúspide.\n\nLas espondiloartropatías (espondilitis anquilosante, artritis reactiva, psoriásica), la policondritis recidivante, el síndrome de Behçet, el síndrome de Cogan y la enfermedad por IgG4 se asocian a dilatación de la aorta ascendente.\n\n⚡ REPASO ACTIVO\n\nDefiniciones y patrones morfológicos:\n\nAneurisma verdadero: Dilatación patológica que abarca las tres capas de la pared vascular.\n\nPseudoaneurisma: Alteración de íntima y media; cubierto únicamente por adventicia o cóágulo perivascular.\n\nAneurisma fusiforme: Abarca toda la circunferencia del segmento vascular con dilatación difusa.\n\nAneurisma sacciforme: Evaginación que compromete solo una parte de la circunferencia.\n\nEtiologías por localización anatómica:\n\nAorta proximal, senos de Valsalva y aorta ascendente: Degeneración medial (síndrome de Marfan, síndrome de Loeys-Dietz, Ehlers-Danlos IV, válvula aórtica bicúspide, síndrome de Turner); espondiloartropatías y policondritis recidivante.\n\nAorta ascendente y cayado aórtico (~90%): Aneurisma sifilítico (por periaortitis y mesoaortitis).\n\nCayado y aorta torácica descendente: Arteritis de Takayasu y arteritis de células gigantes.\n\nAorta torácica descendente (distal al ligamento arterioso): Traumatismos torácicos penetrantes o no penetrantes.\n\nAorta abdominal y torácica descendente: Procesos degenerativos mediados por aterosclerosis.\n\nCausas infecciosas:\n\nSífilis: Destrucción de fibras elásticas en aorta ascendente y cayado.\n\nTuberculosis: Por contigüidad desde ganglios hiliares o abscesos con destrucción granulomatosa de la media.\n\nAneurisma micótico: Sacciforme, sobre placas ateroscleróticas previas ( Staphylococcus , Streptococcus , Salmonella , hongos) con hemocultivos habitualmente positivos.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Etiología y clasificación de los aneurismas aórticos",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q118",
+    "text": "¿Cuál es la indicación de tratamiento quirúrgico o endovascular recomendada para un paciente con un aneurisma degenerativo de la aorta torácica descendente?",
+    "options": [
+      "Diámetro mayor a 6 cm para cirugía o mayor a 5,5 cm para reparación endovascular.",
+      "Diámetro mayor a 4 cm para cirugía o mayor a 3,5 cm para reparación endovascular.",
+      "Diámetro mayor a 5 cm para cirugía o mayor a 4,5 cm para reparación endovascular.",
+      "Diámetro mayor a 7 cm para cirugía o mayor a 6,5 ​​cm para reparación endovascular.",
+      "Diámetro mayor a 8 cm para cirugía o mayor a 7,5 cm para reparación endovascular."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta debido a que la cirugía convencional está formalmente indicada en los pacientes con aneurisma degenerativo de la aorta torácica descendente cuando el diámetro supera los 6 cm, mientras que la reparación endovascular (si es anatómicamente factible) constituye la opción recomendada a de un diámetro mayor a 5.5 cm, o bien ante una tasa de crecimiento superior a 1 cm por año. Las opciones b, c, tinte son erróneas al no corresponderse con los umbrales de corte por diámetro establecidos para la aorta torácica descendente.\n\n🔑 CONCEPTOS CLAVE\n\nEn el síndrome de Marfan, los betabloqueadores adrenérgicos y los antagonistas de los receptores de angiotensina (ARA-II) reducen la velocidad de dilatación de la raíz aórtica, mostrando una eficacia clínica similar entre atenolol y losartán.\n\nEn aneurismas asintomáticos de la raíz aórtica o aorta ascendente (incluida la válvula bicúspide), la cirugía está indicada con un diámetro mayor o igual a 5,5 cm o un crecimiento mayor a 0,5 cm por año.\n\nEn pacientes con síndrome de Marfan, la intervención quirúrgica sobre la aorta ascendente se considera más precozmente, a partir de diámetros de 4 a 5 cm.\n\n⚡ REPASO ACTIVO\n\nTratamiento farmacológico:\n\nBetabloqueadores: Reducen la velocidad de expansión de la raíz aórtica, especialmente en el síndrome de Marfan.\n\nAntagonistas del receptor de angiotensina (ARA-II): Reducen la dilatación en el síndrome de Marfan al bloquear la señalización del TGF-beta (losartán presenta eficacia comparable a atenolol).\n\nControl estricto de la hipertensión arterial con tratamiento médico complementario.\n\nIndicaciones de reparación de la aorta ascendente y raíz aórtica:\n\nPacientes sintomáticos: Cirugía indicada independientemente del tamaño.\n\nAsintomáticos (incluida válvula aórtica bicúspide): Diámetro de raíz o aorta ascendente ≥ 5,5 cm o velocidad de crecimiento > 0,5 cm por año.\n\nVálvula aórtica bicúspide programada para sustitución valvular aórtica por estenosis o insuficiencia grave: Sustitución de aorta ascendente si es > 4,5 cm.\n\nSíndrome de Marfan: Se considera cirugía con diámetros de 4 a 5 cm.\n\nIndicaciones de reparación de la aorta torácica descendente:\n\nCirugía abierta: Aneurisma degenerativo con diámetro > 6 cm.\n\nReparación endovascular: Opción terapéutica si es anatómicamente factible con diámetro > 5,5 cm.\n\nProgresión rápida: Reparación indicada si la velocidad de crecimiento es > 1 cm por año.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Tratamiento de los aneurismas de la aorta torácica",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q119",
+    "text": "En relación con la epidemiología, las manifestaciones clínicas y el diagnóstico del aneurisma de la aorta abdominal (AAA), señale la afirmación INCORRECTA (EXCEPTO) :",
+    "options": [
+      "Al menos el noventa por ciento de los aneurismas mayores a cuatro centímetros son de etiología aterosclerótica.",
+      "El cribado ecológico sistemático se recomienda de rutina en mujeres no fumadoras de sesenta y cinco a setenta y cinco años.",
+      "La mayoría de estas lesiones vasculares se localizan por debajo del nivel de origen de las arterias renales.",
+      "La aortografía con contraste puede subestimar el diámetro real del aneurisma ante la presencia de un trombo mural.",
+      "El riesgo de rotura a cinco años se incrementa significativamente cuando el diámetro supera los cinco centímetros."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la incorrecta porque el cribado sistemático con ecografía abdominal está recomendado formalmente en varones de 65 a 75 años con antecedente de tabaquismo, mientras que en mujeres de 65 a 75 años que nunca han fumado los beneficios de dicha detección no han sido confirmados. La opción a es correcta dado que al menos el 90% de los aneurismas > 4.0 cm dependen de la aterosclerosis. La opción c es verdadera ya que la gran mayoría asienta en posición infrarrenal. Las opciones son ciertas porque la luz del vaso delineada en la aortografía puede ser falsamente reducida por trombos intramurales, y el riesgo de rotura a 5 años pasa de 1-2% en lesiones < 5 cm a 20-40% en aquellas > 5 cm.\n\n🔑 CONCEPTOS CLAVE\n\nLa localización anatómica más frecuente del aneurisma de la aorta abdominal es el segmento infrarrenal.\n\nEl riesgo de rotura a 5 años se eleva comprimido del 1-2% en aneurismas < 5 cm al 20-40% en aneurismas > 5 cm de diámetro.\n\nLa detección sistemática con ecografía en varones fumadores de 65 a 75 años disminuye la mortalidad asociada al aneurisma.\n\n⚡ REPASO ACTIVO\n\nEpidemiología y factores de riesgo:\n\nPredominio en varones sobre mujeres; la incidencia aumenta con la edad.\n\nTabaquismo como principal factor de riesgo modificable.\n\nMás del 90% de los aneurismas > 4.0 cm se asocian con enfermedad aterosclerótica y se sitúan por debajo de las arterias renales.\n\nRiesgo de rotura a 5 años según el tamaño:\n\nAneurismas < 5 cm de diámetro: 1% a 2%.\n\nAneurismas > 5 cm de diámetro: 20% a 40%.\n\nManifestaciones clínicas:\n\nEn su gran mayoría son asintomáticos; se palpan estimablemente como una masa pulsátil, expansiva y no dolorosa.\n\nLa aparición de dolor abdominal, lumbar o escrotal suele ser un signo de alarma que presagia rotura inminente.\n\nLa rotura se presenta con dolor agudo e hipotensión grave, requiriendo cirugía o reparación endovascular urgente.\n\nMétodos de diagnóstico y cribado:\n\nRadiografía de abdomen: Muestra contorno calcificado en el 75% de los casos (el 25% no se calcifica).\n\nEcografía abdominal: Estudio de elección para cribado y seguimiento seriado. Recomendada en varones de 65 a 75 años con antecedente de tabaquismo (reduce la mortalidad en 35-42%), así como en hermanos o hijos de pacientes con aneurismas.\n\nTomografía computarizada con contraste y resonancia magnética: Métodos precisos para definir anatomía y planificar la intervención.\n\nAortografía con contraste: Puede subestimar el diámetro real debido a trombos murales.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Aneurismas de la aorta abdominal",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q120",
+    "text": "¿Cuál de las siguientes afirmaciones describe de manera CORRECTA la fisiopatología o la clasificación de los síndromes aórticos agudos?",
+    "options": [
+      "El desgarro íntima inicial de la disección asienta combinada en la pared lateral derecha de la aorta ascendente.",
+      "El hematoma intramural agudo se produce por la rotura directa de la lámina elástica externa hacia el pericardio.",
+      "Las úlceras ateroscleróticas penetrantes se caracterizan específicamente por una propagación distal longitudinal extensa.",
+      "La clasificación de DeBakey tipo II comprende desgarros originados en la aorta descendente con extensión abdominal.",
+      "La clasificación de Stanford tipo B incluye cualquier compromiso anatómico que involucre la raíz de la aorta."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque el desgarro de la íntima en la disección aórtica ocurre habitualmente en la pared lateral derecha de la aorta ascendente, donde las fuerzas de cizallamiento son máximas, o en la aorta descendente distal al ligamento arterioso. La opción b es incorrecta debido a que el hematoma intramural se origina por la rotura de los vasa vasorum con hemorragia dentro de la pared aórtica sin colgajo íntima. La opción c es falsa dado que las úlceras penetrantes suelen ser lesiones localizadas sin propagación longitudinal extensa. Las opciones tinte son erróneas porque DeBakey tipo II se limita a la aorta ascendente y Stanford tipo B excluye por definición el compromiso de la aorta ascendente (circunscribiéndose al cayado oa la aorta descendente).\n\n🔑 CONCEPTOS CLAVE\n\nLos cuatro síndromes aórticos agudos principales son la rotura aórtica, la disección aórtica, el hematoma intramural y la úlcera aterosclerótica penetrante.\n\nEl hematoma intramural carece de colgajo íntimo-medial y se origina por hemorragia de los vasa vasorum , localizándose principalmente en la aorta torácica descendente.\n\nLas úlceras ateroscleróticas penetrantes erosionan la lámina elástica interna hacia la capa media sobre placas ateroscleróticas avanzadas de la aorta descendente.\n\n⚡ REPASO ACTIVO\n\nComponentes de los síndromes aórticos agudos:\n\nRotura aórtica.\n\nDisección aórtica clásica (desgarro primario de la íntima y creación de luz falsa).\n\nHematoma intramural (sin colgajo de íntima, por rotura de vasa vasorum ; predomina en aorta descendente).\n\nÚlcera aterosclerótica penetrante (erosión focal de placa que sobrepasa la lámina elástica interna hacia la media).\n\nClasificación anatómica de la disección aórtica:\n\nClasificación de DeBakey:\n\nTipo I: Se origina en la aorta ascendente y se extiende distalmente al arco y aorta descendente/abdominal.\n\nTipo II: Confinada exclusivamente a la aorta ascendente.\n\nTipo III: Se origina en la aorta descendente y se propaga en sentido distal.\n\nClasificación de Stanford:\n\nTipo A (proximal): Compromete la aorta ascendente (independientemente del sitio de origen o extensión distal).\n\nTipo B (distal): Confinada al cayado aórtico oa la aorta descendente (sin afectación de la aorta ascendente).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Síndromes aórticos agudos",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q121",
+    "text": "¿Cuál es el tratamiento de elección urgente para una disección aórtica aguda de tipo A?",
+    "options": [
+      "Reparación quirúrgica urgente.",
+      "Manejo médico exclusivo con betabloqueadores.",
+      "Reparación endovascular percutánea rutinaria.",
+      "Cardioversión eléctrica sincrónica inmediata.",
+      "Vigilancia ambulatoria seriada cada seis meses."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque las disecciones agudas de la aorta ascendente y los hematomas intramurales tipo A requieren corrección quirúrgica con carácter de urgencia para evitar rotura o taponamiento cardíaco. La opción b es incorrecta porque el tratamiento médico exclusivo se reserva de entrada para la disección tipo B no complicada. La opción c no es la terapia estándar de elección en tipo A. Las opciones tinte no son conductas aplicables para el manejo inicial de este cuadro agudo.\n\n🔑 CONCEPTOS CLAVE\n\nLa disección aórtica tipo A (afectación de aorta ascendente) exige tratamiento quirúrgico urgente.\n\nLa disección tipo B no es complicada se maneja inicialmente con tratamiento médico intensivo.\n\nEn el tratamiento médico agudo, los objetivos son reducir la frecuencia cardíaca a unos 60 lpm y la presión sistólica a 120 mm Hg o menos.\n\n⚡ REPASO ACTIVO\n\nTratamiento según el tipo:\n\nTipo A: Cirugía urgente (reemplazo con injerto protésico ± reemplazo valvular).\n\nTipo B no complicado: Tratamiento médico conservador con control tensional y de contractilidad.\n\nTipo B complicada: Reparación endovascular con endoprótesis (TEVAR).\n\nFármacos en la fase aguda:\n\nBetabloqueadores intravenosos (esmolol, labetalol, metoprolol) como primera línea.\n\nNitroprusiato sódico añadido para bajar la presión arterial sistólica a ≤ 120 mm Hg (siempre tras betabloqueo).\n\nProscrito el uso de hidralazina sola (aumenta la fuerza de corte).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Tratamiento de la disección aórtica",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q122",
+    "text": "¿En qué región de la aorta tienen mayor predilección para formar los aneurismas micóticos?",
+    "options": [
+      "Aorta abdominal a nivel suprarrenal.",
+      "Aorta abdominal por debajo de las arterias renales.",
+      "Senos de Valsalva y raíz aórtica proximal.",
+      "Cayado aórtico distal al tronco braquiocefálico.",
+      "Porción media de la aorta torácica descendente."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque los aneurismas micóticos (infecciosos) se forman habitualmente como dilataciones de aspecto sacciforme que tienen predilección anatómica por la aorta abdominal a nivel suprarrenal. La opción b es incorrecta dado que el segmento infrarrenal es el asiento típico de los aneurismas degenerativos ateroscleróticos comunes, no de los micóticos. Las opciones c, tintes son erróneas porque, aunque pueden afectarse por otros procesos inflamatorios o traumáticos, no constituyen la localización preferente descrita para los aneurismas micóticos bacterianos.\n\n🔑 CONCEPTOS CLAVE\n\nLos aneurismas micóticos suelen ser sacciformes y se originan por infección bacteriana ( Staphylococcus , Streptococcus , Salmonella ) o micótica sobre placas ateroscleróticas previas.\n\nEn la aortitis sifilítica, la lesión inicial patognomónica es una endoarteritis obliterante de los vasa vasorum (especialmente en la adventicia) que produce la clásica calcificación lineal en la radiografía de la aorta ascendente.\n\nEl tratamiento del aneurisma micótico combina antibioticoterapia con resección quirúrgica del segmento infectado y reconstrucción protésica en tejido sano.\n\n⚡ REPASO ACTIVO\n\nAneurisma micótico (aortitis bacteriana/fúngica):\n\nPatógenos habituales: Staphylococcus , Streptococcus , Salmonella u hongos.\n\nMecanismo: Infección e invasión sobre placas ateroscleróticas con degradación del colágeno por proteasas bacterianas.\n\nMorfología y localización: Aneurismas predominantemente sacciformes con predilección por la aorta abdominal suprarrenal.\n\nClínica y diagnóstico: Fiebre, bacteriemia/septicemia, dolor toracoabdominal (a veces antecedente de diarrea) y hemocultivos positivos en la mayoría.\n\nAortitis sifilítica:\n\nLesión primaria: Endoarteritis obliterante de los vasa vasorum en la adventicia, que progresa destruyendo la media.\n\nLocalización principal: Porción proximal de la aorta ascendente y raíz aórtica.\n\nSigno radiológico típico: Calcificación lineal de la aorta ascendente.\n\nAparición: Diagnóstico incidental o tardío habitualmente 15 a 30 años después de la primoinfección.\n\nTratamiento: Penicilina y reparación/sustitución quirúrgica.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Aortitis infecciosa y aneurisma micótico",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q123",
+    "text": "¿Cuál de las siguientes vasculitis se conoce parcialmente como \"enfermedad sin pulso\" y afecta predominantemente la aorta ascendente y el cayado en mujeres jóvenes?",
+    "options": [
+      "Arteritis de Takayasu.",
+      "Arteritis de células gigantes.",
+      "Granulomatosis con poliangitis.",
+      "Poliangitis microscópica.",
+      "Tromboangeítis obliterante."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la arteritis de Takayasu se denomina clásicamente \"enfermedad sin pulso\" debido a la oclusión frecuente de las ramas principales del cayado aórtico, afectado con mayor frecuencia a mujeres jóvenes. Las demás opciones no corresponden a esta definición ni a este grupo etario característico.\n\n🔑 CONCEPTOS CLAVE\n\nLa arteritis de Takayasu compromete la aorta ascendente, el cayado y sus ramas principales, produciendo una panarteritis con hiperplasia de la íntima y oclusión fibrótica.\n\nLa arteritis de células gigantes afecta a ancianos (más común en mujeres), se asocia a polimialgia reumática y responde a glucocorticoides en dosis altas y tocilizumab.\n\n⚡ REPASO ACTIVO\n\nArteritis de Takayasu:\n\nPoblación: Mujeres jóvenes (mayor prevalencia con ascendencia asiática).\n\nSinonimia: Enfermedad sin pulso.\n\nHistopatología: Panarteritis con infiltrado mononuclear, células gigantes y engrosamiento adventicial y de la media.\n\nTratamiento: Glucocorticoides e inmunodepresores (metotrexato, azatioprina, leflunomida, micofenolato).\n\nArteritis de células gigantes:\n\nPoblación: Adultos mayores / ancianos (predominio en mujeres).\n\nAsociación: Polimialgia reumática.\n\nHistopatología: Lesiones granulomatosas focales transmurales.\n\nTratamiento: Glucocorticoides en dosis altas iniciales, metotrexato y tocilizumab (anti-IL-6).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares",
+    "subtema": "Vasculitis de grandes vasos (Aortitis)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q124",
+    "text": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la arteritis de Takayasu se denomina clásicamente \"enfermedad sin pulso\" debido a la oclusión frecuente de las ramas principales del cayado aórtico, afectado con mayor frecuencia a mujeres jóvenes. Las demás opciones no corresponden a esta definición ni a este grupo etario característico. 🔑 CONCEPTOS CLAVE La arteritis de Takayasu compromete la aorta ascendente, el cayado y sus ramas principales, produciendo una panarteritis con hiperplasia de la íntima y oclusión fibrótica. La arteritis de células gigantes afecta a ancianos (más común en mujeres), se asocia a polimialgia reumática y responde a glucocorticoides en dosis altas y tocilizumab. ⚡ REPASO ACTIVO Arteritis de Takayasu: Población: Mujeres jóvenes (mayor prevalencia con ascendencia asiática). Sinonimia: Enfermedad sin pulso. Histopatología: Panarteritis con infiltrado mononuclear, células gigantes y engrosamiento adventicial y de la media. Tratamiento: Glucocorticoides e inmunodepresores (metotrexato, azatioprina, leflunomida, micofenolato). Arteritis de células gigantes: Población: Adultos mayores / ancianos (predominio en mujeres). Asociación: Polimialgia reumática. Histopatología: Lesiones granulomatosas focales transmurales. Tratamiento: Glucocorticoides en dosis altas iniciales, metotrexato y tocilizumab (anti-IL-6). 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 280: Enfermedades de la aorta. ¿Cuál es el mecanismo de acción del cilostazol y de la pentoxifilina en el tratamiento sintomático de los pacientes con arteriopatía periférica (PAD)?",
+    "options": [
+      "El cilostazol es un inhibidor de la fosfodiesterasa y la pentoxifilina es un derivado sustituido de las xantinas.",
+      "El cilostazol es un antagonista del receptor de ADP y la pentoxifilina es un inhibidor directo del factor Xa.",
+      "El cilostazol es un derivado de las xantinas y la pentoxifilina es un antagonista del receptor plaquetario PAR-1.",
+      "El cilostazol es un bloqueador alfa adrenérgico y la pentoxifilina es un inhibidor de la fosfodiesterasa.",
+      "El cilostazol es un inhibidor directo de la trombina y la pentoxifilina es un bloqueador de los canales de calcio."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque el cilostazol actúa inhibiendo la fosfodiesterasa (con propiedades vasodilatadoras y antiplaquetarias que incrementan la distancia de marcha en 40% a 60%), mientras que la pentoxifilina es un derivado sustituido de las xantinas que incrementa el flujo en la microcirculación y optimiza la oxigenación tisular. Las opciones b, c, tinte son erróneas al atribuir mecanismos incorrectos o cruzados a ambos fármacos.\n\n🔑 CONCEPTOS CLAVE\n\nCilostazol: Inhibidor de la fosfodiesterasa (produce vasodilatación e inhibición de la función plaquetaria).\n\nPentoxifilina: Derivado sustituido de las xantinas que incrementa el flujo microvascular y la oxigenación celular.\n\nEl cilostazol es el fármaco de elección con mayor beneficio clínico demostrado para aumentar la distancia libre de claudicación.\n\n⚡ REPASO ACTIVO\n\nCilostazol:\n\nMecanismo: Inhibidor de la fosfodiesterasa con propiedades vasodilatadoras y antiplaquetarias.\n\nEfecto clínico: Incrementa la distancia de caminata en un 40% a 60% y mejora la calidad de vida en pacientes claudicantes.\n\nPentoxifilina:\n\nMecanismo: Derivado sustituido de las xantinas.\n\nEfecto clínico: Incrementa el flujo sanguíneo a nivel de la microcirculación y mejora la oxigenación de los tejidos (con beneficio clínico moderado o inconsistente en ensayos).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 281: Enfermedades arteriales de las extremidades.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Cardiología General",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q125",
+    "text": "Un varón de 68 años con antecedente de fibrilación auricular no anticoagulada consulta al servicio de urgencias por dolor intenso de inicio súbito en el miembro inferior derecho de 1 hora de evolución, acompañado de parestesias y sensación de frialdad. Al examen físico se constata palidez cutánea, frialdad distal marcada, ausencia de pulsos poplíteo y pedio ipsilaterales, rigidez muscular y pérdida de la sensibilidad en el pie afectado. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Isquemia aguda de la extremidad.",
+      "Trombosis venosa profunda aguda.",
+      "Claudicación intermitente crónica.",
+      "Tromboflebitis migratoria superficial.",
+      "Síndrome compartimental por ejercicio."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque el cuadro clínico caracterizado por la aparición brusca de dolor intenso, palidez, frialdad, parestesias, rigidez muscular y ausencia de pulsos periféricos en un paciente con antecedente de fibrilación auricular (fuente cardioembólica) es patognomónico de una isquemia aguda de la extremidad. Las opciones byd corresponden a patologías del sistema venoso que suelen cursar con edema, empastamiento y calor en lugar de palidez y frialdad extrema con pérdida de pulsos. La opción c describe un proceso crónico asociado a la marcha que cede con el reposo. La opción e no concuerda con la presentación embólica aguda ni con los factores de riesgo del paciente.\n\n🔑 CONCEPTOS CLAVE\n\nLa isquemia aguda de las extremidades se debe a la interrupción súbita del flujo arterial secundario a embolia, trombosis in situ , disección o traumatismo.\n\nEn las extremidades inferiores, los émbolos suelen encontrarse con mayor frecuencia en las bifurcaciones arteriales, principalmente en la arteria femoral, seguida de la ilíaca, aorta, poplítea y tibioperonea.\n\nLas fuentes cardioembólicas más frecuentes abarcan fibrilación auricular, infarto agudo de miocardio, aneurismas ventriculares, miocardiopatías y prótesis valvulares.\n\n⚡ REPASO ACTIVO\n\nEtiología de la oclusión arterial aguda:\n\nEmbolia: Fuentes principales en el corazón (FA, IAM, prótesis, mixoma) y la aorta/grandes arterias (placas ateroscleróticas, aneurismas).\n\nTrombosis in situ : Asienta combinada sobre placas ateroscleróticas previas, aneurismas o injertos arteriales de derivación.\n\nOtras causas: Traumatismos, disección íntima, punción/cateterismo vascular, síndrome del estrecho torácico superior, atrapamiento de arteria poplítea y estados de hipercoagulabilidad.\n\nSitios frecuentes de impacto embólico (bifurcaciones):\n\nArteria femoral (el más frecuente).\n\nArteria ilíaca.\n\nAorta.\n\nArterias poplítea y tibioperonea.\n\nManifestaciones clínicas cardinales (Regla clásica de las \"P\"):\n\nDolor intenso de inicio brusco.\n\nPalidez ( palidez ) o piel marmórea y cianosis.\n\nAusencia de pulsos distales a la oclusión.\n\nParestesias ( parestesias ) y adormecimiento rápido.\n\nParálisis ( parálisis ), rigidez y abolición de reflejos en fases avanzadas/graves.\n\nFrialdad ( poiquilotermia ) por descenso térmico cutáneo.\n\nDiagnóstico complementario:\n\nEvaluación con Doppler arterial periférica.\n\nAngio-TC (CTA), angio-RM (MRA) o arteriografía con catéter para confirmar y definir la localización/extensión de la oclusión.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 281: Enfermedades arteriales de las extremidades.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares periféricas",
+    "subtema": "Isquemia aguda de las extremidades",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q126",
+    "text": "¿Cuál es la forma de presentación clínica más común del aneurisma de la arteria poplítea?",
+    "options": [
+      "Isquemia de las extremidades secundarias a trombosis o embolia.",
+      "Rotura aneurismática aguda con hemorragia masiva retroperitoneal.",
+      "Claudicación intermitente venosa de rápida progresión.",
+      "Tromboflebitis séptica recidivante de la vena safena magna.",
+      "Fístula arteriovenosa poplítea traumática de alto gasto."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la forma de presentación clínica más frecuente de los aneurismas de la arteria poplítea es la isquemia de la extremidad inferior secundaria a trombosis in situ o embolización distal del trombo mural. La opción b es incorrecta debido a que la rotura es un evento infrecuente en esta localización. Las opciones c, tinte no constituyen la forma típica ni la complicación clínica primaria de esta entidad vascular.\n\n🔑 CONCEPTOS CLAVE\n\nSon los aneurismas periféricos más comunes y casi el 50% de los casos son bilaterales.\n\nCon frecuencia coexisten con aneurismas en otros territorios arteriales, en especial en la aorta abdominal.\n\nLa indicación de reparación quirúrgica se establece ante aneurismas sintomáticos o cuando el diámetro supera los 2 a 3 cm.\n\n⚡ REPASO ACTIVO\n\nEpidemiología y asociaciones:\n\nSon los aneurismas más comunes en las arterias periféricas.\n\nBilateralidad: Presente en casi el 50% de los pacientes.\n\nFuerte asociación con aneurismas en otros sitios (particularmente la aorta).\n\nManifestaciones clínicas y complicaciones:\n\nPresentación principal: Isquemia aguda o subaguda de la extremidad por trombosis o embolización.\n\nRotura: Ocurre con menor frecuencia que en los aórticos.\n\nEfecto de masa/compresión: Puede comprimir la vena poplítea (edema/trombosis venosa) o el nervio peroneo adyacente (déficit neurológico).\n\nDiagnóstico y criterios de tratamiento:\n\nDiagnóstico: Sospecha por palpación de una masa pulsátil en el hueco poplíteo y confirmación mediante ecografía dúplex.\n\nCriterios de reparación: Presencia de síntomas o diámetro > 2 a 3 cm (para prevenir trombosis, embolia o rotura).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 281: Enfermedades arteriales de las extremidades.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Enfermedades vasculares periféricas",
+    "subtema": "Aneurisma de la arteria poplítea",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q127",
+    "text": "¿Cuál es la secuencia clásica trifásica de cambios de coloración digital en el fenómeno de Raynaud y qué mecanismo explica la última fase de rubor?",
+    "options": [
+      "Cianosis -> Palidez -> Rubor por vasodilatación simpática mantenida.",
+      "Palidez -> Cianosis -> Rubor por hiperemia reactiva al recalentamiento.",
+      "Rubor -> Palidez -> Cianosis por estasis venoso progresiva.",
+      "Palidez -> Rubor -> Cianosis por trombosis microvascular transitoria.",
+      "Cianosis -> Rubor -> Palidez por vasoconstricción arteriolar refleja."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la correcta porque la respuesta clásica trifásica del fenómeno de Raynaud inicia con palidez (fase isquémica por vasoespasmo arterial), seguida de cianosis (por presencia de sangre desoxigenada en capilares dilatados) y culmina con rubor (rojo brillante debido a la hiperemia reactiva que sobreviene tras el recalentamiento al desaparecer el espasmo). Las opciones a, c, tinte presentan secuencias erróneas o mecanismos fisiopatológicos incorrectos.\n\n🔑 CONCEPTOS CLAVE\n\nLa palidez traduce el vasoespasmo arterial y la isquemia aguda del dedo.\n\nLa cianosis se produce por dilatación de vénulas y acumulación de sangre desoxigenada.\n\nEl rubor (eritema rojo brillante) ocurre durante el recalentamiento por hiperemia reactiva, acompañado a menudo de dolor punzante.\n\n⚡ REPASO ACTIVO\n\nSecuencia clínica clásica (Respuesta trifásica):\n\n1.ª Fase (Palidez): Vasoespasmo de las arterias digitales con isquemia transitoria (aspecto blanquecino delimitado).\n\n2.ª Fase (Cianosis): Dilatación de capilares y vénulas con acumulación de sangre desoxigenada (sensación de frío, parestesias y entumecimiento).\n\n3.ª Fase (Rubor): Desaparición del espasmo con recalentamiento e hiperemia reactiva (color rojo brillante y dolor punzante).\n\nDesencadenantes:\n\nExposición a bajas temperaturas o contacto con objetos fríos.\n\nTensión emocional / estrés.\n\nClasificación básica:\n\nPrimario (idiopático): Ausencia de enfermedad sistémica subyacente demostrable.\n\nSecundario: Asociado a enfermedades autoinmunes del tejido conjuntivo (como esclerosis sistémica) u otras causas orgánicas.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 281: Enfermedades arteriales de las extremidade",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Trastornos vasoespásticos",
+    "subtema": "Fenómeno de Raynaud",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q128",
+    "text": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la correcta porque la respuesta clásica trifásica del fenómeno de Raynaud inicia con palidez (fase isquémica por vasoespasmo arterial), seguida de cianosis (por presencia de sangre desoxigenada en capilares dilatados) y culmina con rubor (rojo brillante debido a la hiperemia reactiva que sobreviene tras el recalentamiento al desaparecer el espasmo). Las opciones a, c, tinte presentan secuencias erróneas o mecanismos fisiopatológicos incorrectos. 🔑 CONCEPTOS CLAVE La palidez traduce el vasoespasmo arterial y la isquemia aguda del dedo. La cianosis se produce por dilatación de vénulas y acumulación de sangre desoxigenada. El rubor (eritema rojo brillante) ocurre durante el recalentamiento por hiperemia reactiva, acompañado a menudo de dolor punzante. ⚡ REPASO ACTIVO Secuencia clínica clásica (Respuesta trifásica): 1.ª Fase (Palidez): Vasoespasmo de las arterias digitales con isquemia transitoria (aspecto blanquecino delimitado). 2.ª Fase (Cianosis): Dilatación de capilares y vénulas con acumulación de sangre desoxigenada (sensación de frío, parestesias y entumecimiento). 3.ª Fase (Rubor): Desaparición del espasmo con recalentamiento e hiperemia reactiva (color rojo brillante y dolor punzante). Desencadenantes: Exposición a bajas temperaturas o contacto con objetos fríos. Tensión emocional / estrés. Clasificación básica: Primario (idiopático): Ausencia de enfermedad sistémica subyacente demostrable. Secundario: Asociado a enfermedades autoinmunes del tejido conjuntivo (como esclerosis sistémica) u otras causas orgánicas. 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 281: Enfermedades arteriales de las extremidade ¿Cuál es la causa más común de muerte en los pacientes hipertensos?",
+    "options": [
+      "Cardiopatías.",
+      "Accidente cerebrovascular hemorrágico.",
+      "Insuficiencia renal terminal.",
+      "Disección aórtica aguda.",
+      "Encefalopatía hipertensiva."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque las cardiopatías (cardiopatía hipertensiva, enfermedad coronaria aterosclerótica, insuficiencia cardíaca congestiva) constituyen la causa más común de muerte en pacientes con hipertensión arterial. Aunque el accidente cerebrovascular (opción b), la afectación renal (opción c) y la disección aórtica (opción d) son complicaciones mayores y potencialmente letales de la hipertensión, la patología cardíaca es la principal causa de mortalidad. La opción e corresponde a una urgencia/emergencia neurológica menos frecuente como causa primaria de muerte global.\n\n🔑 CONCEPTOS CLAVE\n\nLas cardiopatías representan la principal causa de muerte en sujetos hipertensos.\n\nLa hipertrofia ventricular izquierda (HVI) aumenta de forma independiente del riesgo de cardiopatía coronaria, accidente cerebrovascular, insuficiencia cardíaca y muerte súbita.\n\nLa anomalía funcional más precoz dependiente de la hipertensión a nivel cardíaco es la disfunción diastólica (alrededor del 33% de los pacientes con insuficiencia cardíaca presentan función sistólica conservada con disfunción diastólica).\n\n⚡ REPASO ACTIVO\n\nCardiopatía hipertensiva y morbimortalidad:\n\nCausa número uno de muerte en hipertensos: Cardiopatías.\n\nCambios estructurales y funcionales: Hipertrofia del ventrículo izquierdo (HVI), dilatación auricular, aterosclerosis coronaria, enfermedad microvascular y arritmias (principalmente fibrilación auricular).\n\nRiesgo atribuible a la HVI: Factor de riesgo independiente para enfermedad coronaria, ictus, insuficiencia cardíaca y muerte súbita.\n\nReversibilidad: El control intensivo de la presión arterial logra la regresión o reversión de la HVI.\n\nInsuficiencia cardíaca congestiva (ICC):\n\nMecanismos: Disfunción sistólica, diastólica o mixta.\n\nDisfunción diastólica: Es una alteración precoz secundaria a la hipertensión, exacerbada por el HVI y la isquemia miocárdica. Aproximadamente el 33% de los pacientes con ICC tienen función sistólica normal pero función diastólica anómala.\n\nEvaluación diagnóstica: El cateterismo cardíaco ofrece la valoración más precisa; Los métodos no invasivos principales incluyen la ecocardiografía y la angiografía con radionúclidos.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 277: Hipertensión.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Cardiología General",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q129",
+    "text": "¿Qué punto de corte del índice tobillo/brazo (ITB) se considera confirmatorio para el diagnóstico de arteriopatía periférica (PAD) y se correlaciona con una estenosis mayor al 50% en al menos un vaso principal de la extremidad?",
+    "options": [
+      "Menor a 0,90.",
+      "Menor a 1,20.",
+      "Menor a 1,00.",
+      "Entre 1,00 y 1,10.",
+      "Menor a 0,60 únicamente."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque un índice tobillo/brazo (ITB) menor a 0.90 se considera confirmatorio para el diagnóstico de arteriopatía periférica y se correlaciona anatómicamente con una estenosis luminal superior al 50% en al menos una de las arterias principales del miembro inferior. Las opciones b, cyd se sitúan en rangos normales o limítrofes, mientras que la opción e representa un valor de corte para compromiso más grave, pero no define el umbral de diagnóstico estándar descrito en el texto.\n\n🔑 CONCEPTOS CLAVE\n\nEl índice tobillo/brazo es la relación entre la presión arterial sistólica del tobillo y la del brazo.\n\nUn ITB < 0,90 confirma la presencia de arteriopatía periférica y traduce estenosis > 50% en vasos principales.\n\nUn ITB < 0,80 se acompaña frecuentemente de un incremento de la presión arterial, especialmente de la presión sistólica.\n\n⚡ REPASO ACTIVO\n\nÍndice Tobillo/Brazo (ITB):\n\nDefinición: Proporción entre la presión arterial sistólica registrada en el tobillo y en el brazo.\n\nValor diagnóstico: ITB < 0.90 confirma PAD y se asocia a estenosis > 50% en al menos un vaso mayor del miembro inferior.\n\nRepercusión hemodinámica: ITB < 0,80 se asocia a aumento de la presión arterial, particularmente sistólica.\n\nRigidez arterial y consecuencias clínicas:\n\nMedición: Velocidad de la onda de pulso carótida-femoral o presión de pulso carotídeo.\n\nRelevancia: Factor predictor independiente de daño orgánico (accidente cerebrovascular, cardiopatía e insuficiencia renal).\n\nIntervenciones con impacto favorable en la distensibilidad: Ejercicio aeróbico, pérdida de peso y tratamiento farmacológico antihipertensivo.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 277: Hipertensión.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Hipertensión arterial / Enfermedades vasculares",
+    "subtema": "Afectación de arterias periféricas e índice tobillo/brazo (ITB)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q130",
+    "text": "¿Cuál es la causa más frecuente de hipertensión arterial secundaria?",
+    "options": [
+      "Nefropatías / Enfermedades del parénquima renal.",
+      "Displasia fibromuscular de la arteria renal.",
+      "Hiperaldosteronismo primario.",
+      "Feocromocitoma suprarrenal.",
+      "Coartación de la aorta torácica."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque las nefropatías (enfermedades del parénquima renal) constituyen las causas más frecuentes de hipertensión secundaria, presentándose hipertensión en más del 80% de los pacientes con insuficiencia renal crónica. Las opciones b, c, tinte son otras etiologías secundarias relevantes pero con una prevalencia menor en comparación con el compromiso parenquimatoso renal.\n\n🔑 CONCEPTOS CLAVE\n\nLas enfermedades del parénquima renal son la causa más frecuente de hipertensión secundaria.\n\nLa presencia de proteinuria mayor a 1 000 mg/día y un sedimento urinario activo indican que la nefropatía es primaria y causante de la hipertensión.\n\nLa hipertensión renovascular (estenosis de la arteria renal) es una forma potencialmente curable, causada por aterosclerosis en ancianos (ostial/proximal) o por displasia fibromuscular en mujeres jóvenes (segmentos distales y frecuentemente bilaterales).\n\n⚡ REPASO ACTIVO\n\nEnfermedades del parénquima renal (Causa secundaria más común):\n\nFrecuencia: La hipertensión se presenta en > 80% de los pacientes con insuficiencia renal crónica.\n\nGravedad: Es habitualmente más intensa en glomerulopatías que en afecciones tubulointersticiales (como la pielonefritis crónica).\n\nDistinción de nefropatía primaria vs. nefroesclerosis: Proteinuria > 1 000 mg/día y sedimento activo orientan a nefropatía primaria.\n\nHipertensión renovascular:\n\nEtiologías principales:\n\nAterosclerosis: Causa la gran mayoría de los casos; afecta a personas mayores y suele ubicarse en el origen/ostium de la arteria renal.\n\nDisplasia fibromuscular: Predilección marcada por mujeres caucásicas jóvenes; suele ser bilateral y asienta en porciones más distales de la arteria renal.\n\nSospecha clínica:\n\nHipertensión grave, resistente o de inicio reciente/acelerada.\n\nSoplo sistodiastólico continuo abdominal o en flanco (presente en ~50% de los casos).\n\nDeterioro agudo o inexplicable de la función renal tras iniciar IECA o ARA-II.\n\nEpisodios de edema pulmonar súbito no explicados por cardiopatía intrínseca.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 277: Hipertensión.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Hipertensión arterial",
+    "subtema": "Causas de hipertensión arterial secundaria",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_w_q131",
+    "text": "¿Cuál de los siguientes betabloqueadores es cardioselectivo y posee además propiedades vasodilatadoras adicionales mediadas por la intensificación de la actividad del óxido nítrico?",
+    "options": [
+      "Nebivolol.",
+      "Carvedilol.",
+      "Labetalol.",
+      "Propranolol.",
+      "Metoprolol."
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque el nebivolol es un betabloqueador cardioselectivo (beta-1) que añade una acción vasodilatadora directa al intensificar la actividad y liberación del óxido nítrico endotelial. Las opciones byc (carvedilol y labetalol) producen vasodilatación por bloqueo concomitante de los receptores alfa adrenérgicos periféricos, no por estimulación del óxido nítrico. La opción d (propranolol) es un bloqueador no selectivo tradicional sin efecto vasodilatador directo por óxido nítrico. La opción e (metoprolol) es cardioselectivo clásico sin dicha propiedad vasodilatadora dependiente de óxido nítrico descrita.\n\n🔑 CONCEPTOS CLAVE\n\nLos betabloqueadores disminuyen la presión arterial principalmente al reducir el gasto cardíaco (disminuyen la frecuencia cardíaca y la contractilidad) e inhiben la secreción de renina.\n\nCarvedilol y labetalol combinan el bloqueo beta adrenérgico con el bloqueo alfa adrenérgico periférico.\n\nNebivolol es cardioselectivo y tiene propiedades vasodilatadoras por estimulación del óxido nítrico.\n\n⚡ REPASO ACTIVO\n\nMecanismos antihipertensivos principales:\n\nReducción del gasto cardíaco por cronotropismo e inotropismo negativos.\n\nInhibición de la liberación de renina en el aparato yuxtaglomerular.\n\nEfectos a nivel del sistema nervioso central.\n\nPropiedades farmacológicas diferenciales:\n\nCardioselectivos (beta-1): En dosis bajas inhiben preferentemente los receptores beta-1 cardíacos con menor efecto beta-2 bronquial/vascular (la potencia hipotensora es similar a los no selectivos).\n\nActividad simpaticomimética intrínseca (ASI): Los fármacos sin ASI son los que demostraron reducir la muerte súbita, la mortalidad global y el infarto recurrente.\n\nBloqueo dual alfa y beta: Carvedilol y labetalol.\n\nVasodilatador por óxido nítrico: Nebivolol.\n\nIndicaciones de gran beneficio:\n\nHipertensos con taquicardia asociada (potenciados al asociarse con diuréticos).\n\nInsuficiencia cardíaca congestiva (reducción de hospitalizaciones y mortalidad).\n\nCardiopatía isquémica post-infarto.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 277: Hipertensión.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Farmacología cardiovascular / Hipertensión arterial",
+    "subtema": "Bloqueadores beta adrenérgicos",
+    "module": "Semana 10 - Medicina Interna"
   }
 ];
