@@ -349,7 +349,7 @@ export function QuizView({
       </AnimatePresence>
 
       {/* Context Header (Sticky) - Super Compact */}
-      <div className="sticky top-[64px] xl:top-[80px] z-40 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/5 p-2.5 md:p-3 mb-4 md:mb-6 shadow-2xl">
+      <div className="sticky top-0 z-40 bg-[#0A0A0A]/95 backdrop-blur-md border-b border-white/5 p-2.5 md:p-3 mb-4 md:mb-6 shadow-2xl">
         <div className="flex justify-between items-center gap-3 mb-2">
           {/* Left: Info y Progreso */}
           <div className="min-w-0 flex-grow flex items-center gap-2 md:gap-3 flex-wrap">

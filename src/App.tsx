@@ -24,7 +24,6 @@ import { PendingApprovalView } from './modules/auth/PendingApprovalView';
 import { AdminView } from './modules/admin/AdminView';
 import { SavedQuestionsView } from './modules/saved/SavedQuestionsView';
 import { Sidebar } from './components/Sidebar';
-import { TopAppBar } from './components/TopAppBar';
 import { Button } from './components/ui/Button';
 import { DataService } from './services/DataService';
 import { ChevronRight, ChevronDown, Check, BookmarkCheck, Play, RotateCcw } from 'lucide-react';
@@ -804,34 +803,31 @@ export default function App() {
         currentView={view} 
         setCurrentView={setView} 
         userData={userData} 
-        onResetData={handleResetData} 
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
         isCollapsed={isSidebarCollapsed}
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
         savedCount={savedQuestionIds.length}
         onStartBookmarksQuiz={handleStartBookmarksQuiz}
+        allQuestions={allQuestions}
+        onQuestionSelect={handleQuestionSelect}
       />
       
-      <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarCollapsed ? 'xl:ml-20' : 'xl:ml-72'}`}>
-        <TopAppBar 
-          title={getTitle()} 
-          userData={userData} 
-          isSidebarCollapsed={isSidebarCollapsed}
-          onToggleSidebar={() => {
-            if (window.innerWidth < 1280) {
-              setIsSidebarOpen(!isSidebarOpen);
-            } else {
-              setIsSidebarCollapsed(!isSidebarCollapsed);
-            }
-          }}
-          savedCount={savedQuestionIds.length}
-          onStartBookmarks={handleStartBookmarksQuiz}
-          allQuestions={allQuestions}
-          onQuestionSelect={handleQuestionSelect}
-        />
+      <div className={`flex-1 flex flex-col transition-all duration-300 min-h-screen ${isSidebarCollapsed ? 'xl:ml-20' : 'xl:ml-72'}`}>
+        {/* Mobile Header Toggle (Only on small screens) */}
+        <div className="xl:hidden flex items-center justify-between p-3.5 bg-[#121212] border-b border-[#2A2A2A] sticky top-0 z-30">
+          <button
+            onClick={() => setIsSidebarOpen(true)}
+            className="flex items-center gap-2 px-3 py-1.5 bg-[#1E1E1E] text-primary border border-primary/20 rounded-xl font-bold text-xs cursor-pointer active:scale-95"
+          >
+            <span>☰</span>
+            <span>Menú</span>
+          </button>
+          <span className="font-extrabold text-xs text-white tracking-wider font-manrope">DR. RODNEY</span>
+          <div className="w-8" />
+        </div>
         
-        <main className="p-4 md:p-8 max-w-[1600px] w-full mx-auto">
+        <main className="p-4 md:p-8 max-w-[1600px] w-full mx-auto flex-1">
           {/* Banner de Recuperación de Sesión Pendiente */}
           {(view === 'dashboard' || view === 'simulator') && pendingDraft && (
             <div className="mb-8 p-6 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent border border-primary/30 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
