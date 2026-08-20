@@ -274,19 +274,6 @@ export function Sidebar({
           )}
         </nav>
 
-        {/* BANK STATS SUMMARY PILL */}
-        {!collapsed && (
-          <div className="mx-3 my-3 p-3 rounded-2xl bg-[#161616] border border-[#2A2A2A] text-left">
-            <div className="flex items-center justify-between text-[10px] text-[#A6A6A6] font-bold uppercase tracking-wider mb-1">
-              <span>Banco CONAREM</span>
-              <span className="text-[#E0AF26] font-black">1.507 Qs</span>
-            </div>
-            <p className="text-[11px] text-[#D0D0D0] font-normal leading-relaxed">
-              Pediatría, Medicina Interna, Cirugía y Gineco-Obstetricia.
-            </p>
-          </div>
-        )}
-
         {/* USER PROFILE & FOOTER ACTIONS */}
         <div className={`mt-auto space-y-2 ${collapsed ? 'px-2' : 'px-3'}`}>
           
