@@ -2488,5 +2488,195 @@ export const questionsSemana10: Question[] = [
     "tema": "Farmacología cardiovascular / Hipertensión arterial",
     "subtema": "Bloqueadores beta adrenérgicos",
     "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q132",
+    "text": "¿Cuál de las siguientes opciones NO constituye una causa reconocida de insuficiencia cardíaca de gasto cardíaco elevado?",
+    "options": [
+      "Tirotoxicosis.",
+      "Miocardiopatía hipertrófica.",
+      "Beriberi (deficiencia de tiamina/vitamina B).",
+      "Fístula o cortocircuito arteriovenoso.",
+      "Trastornos mieloproliferativos."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la respuesta correcta (la excepción) debido a que la miocardiopatía hipertrófica es una patología miocárdica estructural que produce insuficiencia cardíaca con fracción de eyección conservada por marcada disfunción diastólica, no un cuadro de alto gasto. La tirotoxicosis (a), el beriberi (c), las fístulas arteriovenosas (d) y los estados mieloproliferativos (e) —junto con la anemia, la obesidad y la cirrosis— son causas típicas de insuficiencia cardíaca de alto gasto metabólico.\n🔑 CONCEPTOS CLAVE\n•\tHFrEF ($\\text{FE} \\le 40\\%$): Arteriopatía coronaria (infarto/isquemia), miocardiopatía no isquémica (familiar, infiltrativa, taquimiocardiopatía), tóxicos (antraciclinas, hidroxicloroquina, alcohol, cocaína), infecciones (Chagas, VIH) y valvulopatías regurgitantes.\n•\tHFpEF ($\\text{FE} \\ge 50\\%$): Hipertensión arterial, miocardiopatía hipertrófica y restrictiva (amiloidosis, sarcoidosis, hemocromatosis), pericarditis constrictiva, radioterapia, estenosis mitral/aórtica y fibroelastosis.\n•\tInsuficiencia cardiaca de alto gasto: Tirotoxicosis, fístulas arteriovenosas, beriberi (déficit de tiamina), anemia grave, cirrosis hepática, trastornos mieloproliferativos y enfermedad pulmonar crónica.\n⚡ REPASO ACTIVO\n•\tCausas de Insuficiencia Cardiaca con Fracción de Expulsión Reducida (HFrEF):\no\tCoronariopatía (65% en países desarrollados): Infarto previo, isquemia miocárdica.\no\tValvulopatías: Insuficiencia mitral, insuficiencia tricuspídea, estenosis o insuficiencia aórtica avanzada.\no\tMiocardiopatías tóxicas: Quimioterapia, inmunoterapia, hidroxicloroquina, alcohol, cocaína.\no\tInfecciosas / Autoinmunitarias: Chagas, VIH, miocarditis de células gigantes, miocarditis lúpica.\no\tOtras: Taquimiocardiopatía, cardiopatías congénitas con cortocircuito o disfunción del VD.\n•\tCausas de Insuficiencia Cardiaca con Fracción de Expulsión Conservada (HFpEF):\no\tSobrecarga de presión: Hipertensión arterial (principal contribuyente hasta en 75%), estenosis aórtica.\no\tPatología de llenado: Estenosis mitral, pericarditis constrictiva.\no\tTrastornos del miocardio: Miocardiopatía hipertrófica, edad avanzada, obesidad.\no\tMiocardiopatías restrictivas/infiltrativas: Amiloidosis, sarcoidosis, hemocromatosis, glucogenosis, fibroelastosis endomiocárdica, secuelas de radioterapia.\n•\tCausas de Insuficiencia Cardiaca de Alto Gasto:\no\tTirotoxicosis/Hipertiroidismo.\no\tCortocircuitos / fístulas arteriovenosas (p. ej., accesos para hemodiálisis).\no\tDeficiencia nutricional de vitamina B1 / Tiamina (beriberi húmedo).\no\tAnemia grave crónica y trastornos mieloproliferativos.\no\tHepatopatía crónica / Cirrosis hepática.\no\tObesidad severa y enfermedad ósea de Paget.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 257: Insuficiencia cardiaca: fisiopatología y diagnóstico.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Etiología de la insuficiencia cardíaca de alto gasto",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q133",
+    "text": "En los países desarrollados, ¿cuál es la causa subyacente responsable de casi el 65% de los casos de insuficiencia cardíaca?",
+    "options": [
+      "Arteriopatía coronaria.",
+      "Miocardiopatía dilatada idiopática.",
+      "Cardiopatía valvular reumática.",
+      "Miocarditis viral aguda.",
+      "Cardiopatías congénitas del adulto."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque en los países desarrollados la arteriopatía coronaria (cardiopatía isquémica) es la principal causa etiológica, responsable de casi el 65% de los casos de insuficiencia cardíaca, con la hipertensión arterial actuación como el principal factor contribuyente hasta en un 75% de los pacientes y la diabetes mellitus en un 10% a 40%. Las opciones b, c, tinte representan otras causas etiológicas importantes a nivel global o en poblaciones específicas, pero ninguna alcanza la prevalencia de la enfermedad arterial coronaria.\n🔑 CONCEPTOS CLAVE\n•\tLa arteriopatía coronaria causa aproximadamente el 65% de los casos de insuficiencia cardíaca en países desarrollados.\n•\tLa hipertensión arterial es el principal factor comorbido contribuyente (hasta en el 75% de los casos).\n•\tLa diabetes mellitus contribuye entre el 10% y el 40% de los cuadros de insuficiencia cardiaca.\n⚡ REPASO ACTIVO\n•\tEtiología en países desarrollados:\no\tCausa principal: Arteriopatía coronaria (~65% de los casos).\no\tPrincipal factor contribuyente: Hipertensión arterial (hasta 75%).\no\tFactor metabólico relevante: Diabetes mellitus (10% a 40%).\n•\tEtiología por grupos etarios y cardiopatías congénitas:\no\tLa mayoría de las causas subyacentes se adquieren a mediados y finales de la vida.\no\tEn niños y adultos jóvenes predominan los trastornos congénitos y hereditarios.\no\tGrupos fisiopatológicos de insuficiencia cardíaca en el adulto con cardiopatía congénita:\n1.\tDefectos no corregidos con presentación tardía (diagnóstico tardío o falta de tratamiento).\n2.\tDefectos reparados o paliados con insuficiencia valvular/ventricular residual tardía.\n3.\tFisiología de ventrículo único con insuficiencia funcional.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 257: Insuficiencia cardiaca: fisiopatología y diagnóstico.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Epidemiología y etiología en países desarrollados",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q134",
+    "text": "¿Cuál es el mecanismo fisiopatológico que explica la aparición de nicturia en pacientes con insuficiencia cardíaca?",
+    "options": [
+      "Aumento del gasto cardíaco y de la perfusión renal al adoptar la posición de decúbito.",
+      "Inhibición nocturna del péptido natriurético cerebral inducida por el sueño REM.",
+      "Disminución brusca de la resistencia vascular sistémica mediada por bradicardia.",
+      "Reducción del flujo sanguíneo renal secundario a la activación adrenérgica nocturna.",
+      "Elevación exclusiva de la presión venosa central durante la fase de bipedestación."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la nicturia en la insuficiencia cardíaca se produce debido a la mejoría del gasto cardíaco y del flujo sanguíneo renal que ocurre fisiológicamente en la posición de decúbito, al redistribuirse el volumen intravascular y disminuir la sobrecarga ortostática (sumado en ocasiones al efecto tardío de los diuréticos administrados durante el día). Las opciones b, c, presentan mecanismos fisiopatológicos incorrectos o contrarios a la respuesta renal y hemodinámica esperada en decúbito.\n🔑 CONCEPTOS CLAVE\n•\tLos síntomas de hipoperfusión tisular periférica (fatiga y debilidad de miembros inferiores) reflejan la caída del gasto cardíaco, la disfunción endotelial, el aumento de la resistencia vascular sistémica y cambios intrínsecos en el músculo estriado.\n•\tEn ancianos con insuficiencia cardíaca y patología cerebrovascular, la reducción de la perfusión cerebral puede generar confusión, lentitud mental y depresión.\n•\tLa oliguria marcada traduce una reducción grave del flujo sanguíneo renal e identifica estadios avanzados de la enfermedad.\n⚡ REPASO ACTIVO\n•\tSíntomas de hipoperfusión sistémica (Síndrome de bajo gasto):\no\tFatiga y debilidad muscular (especialmente en miembros inferiores) tanto en reposo como al esfuerzo.\no\tMecanismo: Disminución del flujo sanguíneo a músculos activos, disfunción endotelial, vasoconstricción periférica neurohormonal y alteraciones metabólicas del músculo estriado.\no\tCausas coadyuvantes de fatiga: Hipovolemia, hiponatremia, déficit de hierro y uso de betabloqueadores.\no\tManifestaciones del SNC: En ancianos, la hipoperfusión sistémica y cerebral causa letargia, depresión, lentitud mental y confusión.\n•\tOtros síntomas sistémicos y del sueño:\no\tTrastornos del sueño: Exacerbados por ortopnea, disnea paroxística nocturna y apnea del sueño (obstructiva o central).\no\tNicturia: Producida por el incremento del gasto cardíaco y la perfusión renal en decúbito, sumado al efecto de los diuréticos.\no\tOliguria: Signo de mal pronóstico que refleja hipoperfusión renal crítica en etapas avanzadas.\n•\tFactores precipitantes de descompensación:\no\tSe identifican desencadenantes específicos en el 50% al 90% de los ingresos hospitalarios (relacionados con el paciente, médico tratante o comorbilidades agudas).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 257: Insuficiencia cardiaca: fisiopatología y diagnóstico.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Manifestaciones clínicas del síndrome de bajo gasto y síntomas asociados",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q135",
+    "text": "En la evaluación diagnóstica de un paciente con sospecha de insuficiencia cardíaca, ¿cuál de los siguientes hallazgos electrocardiográficos o de imagen es CORRECTO ?",
+    "options": [
+      "La presencia de ondas Q patológicas con voltaje QRS disminuido (patrón de seudoinfarto) sugiere miocardiopatías infiltrativas o restrictivas como la amiloidosis.",
+      "El electrocardiograma presenta un patrón patognomónico y específico que permite confirmar por sí solo el diagnóstico de insuficiencia cardíaca.",
+      "La presencia de bloqueo de rama izquierda y ensanchamiento del QRS contraindica la terapia de resincronización cardíaca.",
+      "La ecocardiografía transtorácica no es capaz de estimar las presiones de las arterias pulmonares ni el gasto cardíaco.",
+      "La tomografía por emisión de positrones (PET) está contraindicada de forma absoluta para la valoración de sarcoidosis cardíaca activa."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque el hallazgo de ondas Q asociadas a un bajo voltaje del complejo QRS (patrón de seudoinfarto) es muy orientador de miocardiopatías restrictivas o de depósito/infiltrativas, como la amiloidosis cardíaca. La opción b es incorrecta porque no existe un patrón electrocardiográfico específico ni patognomónico para diagnosticar insuficiencia cardíaca. La opción c es errónea ya que el bloqueo completo de rama izquierda del haz de His y la prolongación del ancho del complejo QRS son precisamente los criterios utilizados para indicar y seleccionar a los pacientes que se beneficiarán de la terapia de resincronización cardíaca (TRC). Las opciones tinte son falsas porque el Doppler ecocardiográfico sí permite estimar presiones pulmonares y gasto cardíaco, y el PET es una herramienta muy útil para determinar la gravedad y distribución inflamatoria en la sarcoidosis.\n🔑 CONCEPTOS CLAVE\n•\tNo hay un trazado electrocardiográfico patognomónico para insuficiencia cardíaca; el ECG ayuda a inferir la causa etiológica y trastornos de conducción.\n•\tLa fibrilación auricular está presente hasta en el 40% de los pacientes con insuficiencia cardíaca crónica y constituye una indicación formal de anticoagulación.\n•\tLa ecocardiografía bidimensional y Doppler es el método inicial de elección para definir función sistólica (FEVI ≥ 50% = conservada), función diastólica, presiones pulmonares y valvulopatías.\n⚡ REPASO ACTIVO\n•\tHallazgos en el Electrocardiograma (ECG):\no\tHVI y dilatación de aurícula izquierda: Orientan a HFpEF por hipertensión, estenosis aórtica o miocardiopatía hipertrófica.\no\tOndas Q solas: Sugieren cardiopatía isquémica / infarto previo.\no\tOndas Q con bajo voltaje del QRS (seudoinfarto): Sugiere miocardiopatía infiltrativa/restrictiva (amiloidosis).\no\tTrastornos de conducción avanzada: Orientan a sarcoidosis cardiaca o miocardiopatía chagásica.\no\tFibrilación auricular (paroxística/permanente): Presente hasta en el 40%; requiere anticoagulación.\no\tQRS ancho y BRIHH: Guía la selección para terapia de resincronización cardíaca.\n•\tEstudios de imagen no invasivos:\no\tEcocardiografía 2D y Doppler: Método esencial de rutina para volumen, anatomía valvular, función sistólica (FEVI ≥ 50% normal), función diastólica, presiones pulmonares y función del VD pre/post asistencia ventricular o trasplante.\no\tEcocardiograma transesofágico (ETE): Descartar trombos en orejuela/aurícula antes de cardioversión y valorar patología valvular mitral/aórtica preintervencionismo.\no\tResonancia magnética cardíaca (CMR): Patrón de referencia cuantitativo para masas, volúmenes, remodelación ventricular y caracterización tisular (isquemia, miocarditis, amiloidosis, hemocromatosis).\no\tTomografía computarizada (CT): Descarte de enfermedad pericárdica o trombos apicales cuando la RM no es factible (p. ej., dispositivos no compatibles).\no\tPET cardíaco: Evaluación de viabilidad/isquemia y detección de inflamación activa en sarcoidosis cardíaca.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 257: Insuficiencia cardiaca: fisiopatología y diagnóstico.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Métodos diagnósticos (Electrocardiograma y estudios de imagen)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q136",
+    "text": "¿Cuál de las siguientes condiciones clínicas se asocia de forma característica con concentraciones circulantes falsamente bajas de péptidos natriuréticos (BNP / NT-proBNP)?",
+    "options": [
+      "Obesidad.",
+      "Nefropatía crónica.",
+      "Fibrilación auricular.",
+      "Sexo femenino.",
+      "Embolia pulmonar aguda."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la obesidad es una condición reconocida en la que las concentraciones de BNP y NT-proBNP pueden encontrarse falsamente disminuidas a pesar de la presencia de insuficiencia cardíaca. Por el contrario, la nefropatía crónica (b), la fibrilación auricular (c), el sexo femenino (d), la embolia pulmonar (e), la edad avanzada y la hipertensión pulmonar son factores que elevan de manera no específica las concentraciones basales de péptidos natriuréticos.\n🔑 CONCEPTOS CLAVE\n•\tEl BNP y el NT-proBNP se liberan en respuesta al aumento de la tensión parietal auricular y ventricular.\n•\tLas concentraciones son más elevadas en HFrEF que en HFpEF.\n•\tLa obesidad causa valores falsamente reducidos, mientras que la edad avanzada, el sexo femenino y la nefropatía crónica elevan sus concentraciones basales.\n⚡ REPASO ACTIVO\n•\tFisiología de los péptidos natriuréticos:\no\tEstímulo de liberación: Incremento de la tensión parietal en aurículas y ventrículos.\no\tComparación por fenotipo: Concentraciones significativamente más altas en HFrEF en comparación con HFpEF.\n•\tFactores no cardíacos y comorbilidades que modifican sus niveles:\no\tElevación causal (no cardiaca/cardiovascular): Edad avanzada, sexo femenino, nefropatía crónica, fibrilación auricular, embolia pulmonar e hipertensión arterial pulmonar.\no\tDisminución causal (falsamente bajos): Obesidad.\n•\tUtilidad clínica:\no\tDiagnóstico en disnea indiferenciada o comorbilidad pulmonar asociada.\no\tEvaluación de gravedad pronósticos y a largo plazo en insuficiencia cardíaca crónica.\no\tGuía en la titulación y optimización del tratamiento médico.\n•\tNuevos biomarcadores pronósticos: Galectina-3 y ST2 soluble (aprobados para pronósticos, de uso clínico aún limitado).",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 257: Insuficiencia cardiaca: fisiopatología y diagnóstico.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Biomarcadores en insuficiencia cardíaca (Péptidos natriuréticos)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q137",
+    "text": "En un paciente con insuficiencia cardiaca con fracción de eyección reducida (HFrEF) en tratamiento con espironolactona que desarrolla ginecomastia dolorosa y disfunción eréctil, ¿cuál es el fármaco de la misma familia recomendado como alternativa por carecer de efectos antiandrógenos?",
+    "options": [
+      "Eplerenona.",
+      "Finasterida.",
+      "Amilorida.",
+      "Triamtereno.",
+      "Furosemida."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la eplerenona es un antagonista selectivo de los receptores de mineralocorticoides que no interactúa con los receptores androgénicos ni progestágenos, por lo que carece de los efectos secundarios sexuales de la espironolactona (ginecomastia, disfunción eréctil, disminución de la libido) y constituye la alternativa directa en estos casos. Las opciones b, c, colorante pertenecen a otros grupos farmacológicos o no representan la alternativa hormonalmente selectiva dentro de los MRA.\n🔑 CONCEPTOS CLAVE\n•\tLa adición de un MRA a los IECA/ARA-II y betabloqueadores reduce significativamente la morbimortalidad en pacientes con HFrEF sintomática (NYHA II a IV).\n•\tLa aldosterona favorece la retención de sodio, el desequilibrio hidroelectrolítico, la disfunción endotelial y la fibrosis miocárdica progresiva.\n•\tLos principales riesgos del tratamiento con MRA son la hiperpotasemia y el deterioro de la función renal, por lo que requieren monitoreo analítico estrecho.\n⚡ REPASO ACTIVO\n•\tIndicación y beneficio de los MRA:\no\tIndicación: HFrEF sintomática en clases funcionales II a IV de la NYHA sumados a terapia neurohormonal base (IECA/ARA-II + betabloqueador).\no\tEnsayos clínicos de referencia:\n\tEstudio RALES: Demostró reducción de mortalidad con espironolactona en HFrEF clases III a IV de la NYHA.\n\tEplerenona: Evaluada en pacientes con síntomas leves (NYHA II) y en insuficiencia cardíaca o infarto agudo de miocardio complicado con disfunción del ventrículo izquierdo.\n•\tEspironolactona vs. Eplerenona:\no\tEspironolactona: Fármaco más utilizado de la clase; presenta efecto antagonista androgénico que puede ocasionar ginecomastia, impotencia/disfunción eréctil y pérdida de la libido.\no\tEplerenona: Antagonista selectivo; carece de efectos antiandrógenos , siendo la sustitución de elección ante efectos adversos sexuales.\n•\tEfectos adversos y controles de seguridad:\no\tRiesgo principal: Hiperpotasemia y empeoramiento de la función renal (especialmente con nefropatía crónica de base).\no\tMonitoreo obligatorio: Medición periódica de potasio sérico y creatinina/filtrado glomerular.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 258: Insuficiencia cardiaca: tratamiento.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Antagonistas de los receptores de mineralocorticoides (MRA)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q138",
+    "text": "Un paciente de 64 años con insuficiencia cardíaca con fracción de eyección reducida (HFrEF) sintomática en tratamiento con betabloqueadores no puede continuar con el esquema basado en inhibidores del RAAS (IECA/ARA-II) debido a insuficiencia renal e hiperpotasemia recurrente. ¿Qué combinación vasodilatadora es la alternativa preferida que ha demostrado mejorar la supervivencia en este contexto?",
+    "options": [
+      "Hidralazina más dinitrato de isosorbida.",
+      "Amlodipino más diltiazem.",
+      "Nitroprusiato sódico más verapamilo.",
+      "Minoxidil más mononitrato de isosorbida.",
+      "Nifedipino más digoxina."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque la combinación de hidralazina y nitratos (dinitrato de isosorbida) se prefiere como tratamiento alternativo modificador de la enfermedad para mejorar la supervivencia en pacientes con HFrEF que no toleran los inhibidores del RAAS por insuficiencia renal o hiperpotasemia. Las opciones b, c, tinte no constituyen la combinación estandarizada con evidencia de reducción de mortalidad descrita para el rescate en este escenario clínico.\n🔑 CONCEPTOS CLAVE\n•\tLa hidralazina disminuye la resistencia vascular sistémica e induce vasodilatación arterial al modificar la cinética intracelular del calcio.\n•\tLos nitratos se biotransforman en óxido nítrico en las células de músculo liso, estimulando el GMPc para inducir vasodilatación arterial y venosa.\n•\tEn el estudio A-HeFT (población afroestadounidense con HFrEF avanzada), la combinación de hidralazina con dinitrato de isosorbida añadida al tratamiento estándar demostró beneficios en supervivencia y reducción de rehospitalizaciones.\n⚡ REPASO ACTIVO\n•\tCombinación Hidralazina + Nitratos:\no\tMecanismo de hidralazina: Vasodilatación arterial directa mediada por alteraciones de la cinética del calcio intracelular.\no\tMecanismo de nitratos: Producción de óxido nítrico y aumento de GMP cíclico, generando vasodilatación venosa y arterial.\no\tIndicación principal: Pacientes con HFrEF que presentan intolerancia a fármacos del RAAS (IECA/ARA-II/ARNI) por hiperpotasemia o disfunción/insuficiencia renal severa.\no\tEnsayo clínico clave ( A-HeFT ): Beneficio demostrado en supervivencia y disminución de internaciones en pacientes afroamericanos con síntomas avanzados que ya reciben terapia estándar.\no\tDesventaja terapéutica: Esquema de dosificación frecuente (tres veces al día), lo cual suele limitar la adherencia del paciente.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 258: Insuficiencia cardiaca: tratamiento.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Vasodilatadores alternativos (Hidralazina + Nitratos)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q139",
+    "text": "En un paciente con insuficiencia cardiaca con fracción de expulsión reducida (HFrEF) que recibe tratamiento con enalaprilo y en quien se decide cambiar la pausa a sacubitrilo-valsartán (ARNI), ¿cuál es el intervalo de tiempo mínimo obligatorio de espera tras la última dosis del IECA para evitar el riesgo de angioedema grave por acumulación excesiva de bradicinina?",
+    "options": [
+      "12 horas.",
+      "36 horas.",
+      "24 horas.",
+      "48 horas.",
+      "72 horas."
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción b es la correcta porque, para limitar el riesgo de superposición y angioedema grave por bloqueo acumulativo del desdoblamiento de bradicinina, los pacientes tratados previamente con un IECA deben respetar un periodo de lavado mínimo de 36 horas antes de iniciar un ARNI (sacubitrilo-valsartán). Las opciones a, c, tinte no corresponden al intervalo reglamentario establecido en las guías y ensayos clínicos de referencia.\n🔑 CONCEPTOS CLAVE\n•\tLa combinación de un IECA con un inhibidor de neprilisina (como el omapatrilat en el estudio OVERTURE ) incrementa marcadamente el riesgo de angioedema debido al bloqueo conjunto de las vías de degradación de la bradicinina.\n•\tEl sacubitrilo-valsartán combina la inhibición de la neprilisina con un ARB (antagonista del receptor AT1), el cual deja intacta la vía de la ECA para desdoblar la bradicinina, reduciendo el riesgo de angioedema.\n•\tEn el estudio PARADIGM-HF , el sacubitrilo-valsartán demostró una reducción del 20% en la variable combinada de muerte cardiovascular u hospitalización por insuficiencia cardíaca frente al enalaprilo.\n⚡ REPASO ACTIVO\n•\tEvidencia clínica del sacubitrilo-valsartán (Estudio PARADIGM-HF):\no\tReducción del 20% en el criterio de valoración combinado de muerte cardiovascular o reingreso por insuficiencia cardíaca en comparación con enalaprilo.\no\tReducción del 16% en la mortalidad por todas las causas y mejoría en la calidad de vida.\no\tPerfil de efectos adversos: Menores tasas de hiperpotasemia y disfunción renal en comparación con enalaprilo, pero mayor frecuencia de hipotensión sintomática.\n•\tClínicas de seguridad y precauciones:\no\tPeriodo de lavado (washout): Debe dejarse un intervalo de 36 horas entre la última toma de un IECA y la primera toma del ARNI para prevenir el angioedema.\no\tContraindicación absoluta: Antecedente conocido de angioedema con cualquier fármaco previo.\n•\tFármacos contraindicados / con resultados desfavorables en HFrEF izquierda:\no\tBosentán: Antagonista de endotelina; empeora la evolución en HFrEF a pesar de su utilidad en HTP/cavidades derechas.\no\tMoxonidina: Simpatolítico de acción central; empeora los desenlaces clínicos en la insuficiencia cardiaca izquierda.\no\tOmapatrilat (IECA + inhibidor de neprilisina): No superó al enalaprilo y provocó un aumento inaceptable de casos de angioedema grave.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 258: Insuficiencia cardiaca: tratamiento.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Inhibidores de Neprilisina y Receptor de Angiotensina (ARNI)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q140",
+    "text": "¿Cuál de los siguientes enunciados es CORRECTO con respecto al uso de los inhibidores de SGLT-2 (dapagliflozina y empagliflozina) en pacientes con insuficiencia cardíaca con fracción de expulsión reducida (HFrEF)?",
+    "options": [
+      "Reducir la mortalidad cardiovascular y las hospitalizaciones por insuficiencia cardíaca de manera independiente a la presencia o ausencia de diabetes mellitus.",
+      "Su beneficio cardiovascular solo se observa si logran una reducción significativa en los niveles de hemoglobina A1c.",
+      "Su uso está restringido exclusivamente a pacientes con diabetes mellitus tipo 2 y obesidad mórbida.",
+      "La dosis terapéutica habitual en insuficiencia cardíaca es de 50 mg cada 12 horas por vía oral.",
+      "Deben suspenderse de forma obligatoria si el paciente no tolera previamente un betabloqueador."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque los inhibidores de SGLT-2 reducen los eventos clínicos mayores (muerte cardiovascular y hospitalizaciones) tanto en pacientes diabéticos como en no diabéticos con HFrEF. La opción b es incorrecta porque el efecto protector cardiovascular no depende del control glucémico ni de la magnitud de disminución de la HbA1c. Las opciones c, tinte son erróneas porque su indicación abarca la HFrEF general, la dosis estándar es de 10 mg una vez al día y forman parte de los pilares basales independientemente del uso escalonado de otros fármacos.\n🔑 CONCEPTOS CLAVE\n•\tLos inhibidores de SGLT-2 (dapagliflozina y empagliflozina a 10 mg/día) son fármacos de primera línea en HFrEF.\n•\tSu beneficio clínico reduce la mortalidad cardiovascular y hospitalizaciones por insuficiencia cardíaca.\n•\tEl beneficio es consistente en personas con o sin diabetes mellitus y no depende del descenso de la glucemia/HbA1c.\n⚡ REPASO ACTIVO\n•\tInhibidores de SGLT-2 en HFrEF:\no\tFármacos principales: Dapagliflozina (10 mg/día) y Empagliflozina (10 mg/día).\no\tImpacto clínico: Disminuyen de forma significativa la muerte cardiovascular y el deterioro/hospitalización por insuficiencia cardíaca.\no\tPoblación diana: Indicados en pacientes con HFrEF sintomática con o sin diabetes mellitus tipo 2.\no\tEfecto glucémico vs. cardiovascular: Los beneficios hemodinámicos y miocárdicos no guardan relación directa con el descenso de la hemoglobina glucosilada ($HbA_{1c}$).\no\tUbicación en el tratamiento: Integran el tratamiento inicial cuádruple junto a los ARNI (o IECA/ARA-II), betabloqueadores y antagonistas de mineralocorticoides.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 258: Insuficiencia cardiaca: tratamiento.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Inhibidores de SGLT-2 (Dapagliflozina y Empagliflozina)",
+    "module": "Semana 10 - Medicina Interna"
+  },
+  {
+    "id": "mi_cardio_ic_q141",
+    "text": "¿Cuál de los siguientes enunciados es CORRECTO respecto a los efectos clínicos y terapéuticos de la digoxina en la insuficiencia cardíaca?",
+    "options": [
+      "Reducir de manera significativa la tasa de hospitalizaciones por insuficiencia cardíaca, aunque no disminuya la mortalidad global ni mejore la calidad de vida.",
+      "Demostraremos una reducción significativa de la mortalidad por todas las causas en pacientes en ritmo sinusal.",
+      "Las concentraciones séricas elevadas son necesarias para garantizar una mayor respuesta hemodinámica y sobrevida.",
+      "Presentar un mejor perfil de seguridad y menor tasa de mortalidad en mujeres en comparación con los varones.",
+      "Constituye el tratamiento de primera línea de elección antes de iniciar el bloqueo neurohormonal."
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA La opción a es la correcta porque los glucósidos digitálicos (digoxina) reducen las hospitalizaciones por insuficiencia cardíaca, pero no producen una reducción en la mortalidad ni una mejora en la calidad de vida. La opción b es incorrecta porque la digoxina es neutra en términos de reducción de la mortalidad general. La opción c es errónea ya que las dosis bajas son suficientes para lograr el beneficio clínico, mientras que dosis y concentraciones más altas solo incrementan el riesgo de toxicidad. La opción d es falso puesto que el tratamiento con digoxina se asocia a una mayor tasa de mortalidad y hospitalizaciones en mujeres que en varones. La opción e es incorrecta porque se reserva como tratamiento de última línea para pacientes que persisten con síntomas graves a pesar de un bloqueo neurohormonal óptimo y adecuado control de volumen.\n🔑 CONCEPTOS CLAVE\n•\tLa digoxina ejerce un efecto inotrópico leve, atenúa la actividad del barorreceptor carotídeo e inhibe la actividad simpática (disminuyendo norepinefrina y renina).\n•\tDisminuye las hospitalizaciones por insuficiencia cardíaca, pero no reduce la mortalidad .\n•\tLas mujeres presentan mayor riesgo de mortalidad y hospitalización con este fármaco.\n•\tSe utilizan dosis bajas y se reserva como terapia de rescate/última línea en pacientes sintomáticos refractarios.\n⚡ REPASO ACTIVO\n•\tMecanismos fisiopatológicos y neurohormonales:\no\tEfecto inotrópico positivo leve.\no\tAtenuación de los barorreceptores del seno carotídeo e inhibición del tono simpático.\no\tDescenso de las concentraciones de norepinefrina, renina plasmática y aldosterona.\n•\tEfectos clínicos principales:\no\tReduzca la tasa de reingresos/hospitalizaciones por insuficiencia cardíaca.\no\tSin efecto en mortalidad: No reduce la mortalidad general ni mejora la calidad de vida.\no\tMayor susceptibilidad en mujeres: Mayor tasa de mortalidad y hospitalizaciones en la población femenina.\n•\tPautas de dosificación y seguridad:\no\tUso de dosis bajas para preservar el índice de seguridad terapéutica.\no\tMonitorización de niveles séricos: Se miden para evitar toxicidad y reducir la dosis si están elevadas (no se escala la dosis ante niveles bajos si hay respuesta clínica).\no\tLugar en el tratamiento: Fármaco de última línea para síntomas persistentes a pesar de tratamiento neurohormonal cuádruple óptimo.",
+    "pagina": "Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 258: Insuficiencia cardiaca: tratamiento.",
+    "materia": "Medicina Interna",
+    "semana": 10,
+    "tema": "Cardiología",
+    "subtema": "Digitálicos (Digoxina)",
+    "module": "Semana 10 - Medicina Interna"
   }
 ];
