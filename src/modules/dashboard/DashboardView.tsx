@@ -6,26 +6,21 @@ import {
   Flame, 
   ChevronRight, 
   ChevronDown, 
-  RotateCcw,
-  BookOpen,
-  ArrowRight,
-  AlertCircle,
-  Bookmark,
-  Calendar,
-  Layers
+  BookOpen, 
+  ArrowRight, 
+  Bookmark, 
+  Calendar, 
+  CheckCircle2, 
+  XCircle, 
+  HelpCircle,
+  TrendingUp,
+  Award
 } from 'lucide-react';
 import { Question } from '../../types';
 import { analyzeSubtema } from '../../utils/normalizer';
 
 const MATERIAS = ['Pediatría', 'Medicina Interna', 'Cirugía', 'Ginecología y Obstetricia'] as const;
 type Materia = typeof MATERIAS[number];
-
-const MATERIA_ICONS: Record<Materia, React.ReactNode> = {
-  'Pediatría': <Layers className="w-5 h-5" />,
-  'Medicina Interna': <Flame className="w-5 h-5" />,
-  'Cirugía': <Target className="w-5 h-5" />,
-  'Ginecología y Obstetricia': <Sparkles className="w-5 h-5" />
-};
 
 interface DashboardViewProps {
   userId?: string;
@@ -40,18 +35,16 @@ interface DashboardViewProps {
 }
 
 export function DashboardView({
-  userId,
   onReforzar,
   allQuestions,
   onQuestionSelect,
   savedQuestionIds = [],
   onStartBookmarksQuiz,
   sessions = [],
-  progress = [],
-  onReloadData
+  progress = []
 }: DashboardViewProps) {
+  const [activeTab, setActiveTab] = useState<'weeks' | 'weaknesses'>('weeks');
 
-  // Normalize names
   const normalizeMateriaName = (m: string): Materia => {
     const lower = (m || '').toLowerCase();
     if (lower.includes('pediatr')) return 'Pediatría';
@@ -73,7 +66,7 @@ export function DashboardView({
     return totalQ > 0 ? Math.round((totalC / totalQ) * 100) : 0;
   }, [sessions]);
 
-  // Materia stats
+  // 2. Stats por materia
   const materiaStats = useMemo(() => {
     return MATERIAS.map(m => {
       const qOfMateria = allQuestions.filter(q => normalizeMateriaName(q.materia) === m);
@@ -89,12 +82,20 @@ export function DashboardView({
       const totalC = sessionsOfMateria.reduce((sum, s) => sum + (s.score || 0), 0);
       const accuracy = totalQ > 0 ? Math.round((totalC / totalQ) * 100) : 0;
 
+      let status: 'safe' | 'risk' | 'critical' | 'unstarted' = 'unstarted';
+      if (seenUnique > 0) {
+        if (accuracy >= 75) status = 'safe';
+        else if (accuracy >= 60) status = 'risk';
+        else status = 'critical';
+      }
+
       return {
         materia: m as Materia,
         total,
         vistas: seenUnique,
         porcentaje: progressPercent,
         precision: accuracy,
+        status,
         totalSesiones: sessionsOfMateria.length
       };
     });
@@ -106,14 +107,6 @@ export function DashboardView({
   }, [materiaStats]);
 
   const [selectedMateria, setSelectedMateria] = useState<Materia>(defaultMateria);
-  const [hasSetDefaultMateria, setHasSetDefaultMateria] = useState(false);
-
-  useEffect(() => {
-    if (sessions.length > 0 && !hasSetDefaultMateria) {
-      setSelectedMateria(defaultMateria);
-      setHasSetDefaultMateria(true);
-    }
-  }, [sessions, defaultMateria, hasSetDefaultMateria]);
 
   const availableSemanas = useMemo(() => {
     const semanas = new Set<number>();
@@ -125,20 +118,13 @@ export function DashboardView({
     return Array.from(semanas).sort((a, b) => a - b);
   }, [allQuestions, selectedMateria]);
 
-  useEffect(() => {
-    if (availableSemanas.length > 0) {
-      setSelectedSemanaSubtemas('all');
-    }
-  }, [selectedMateria, availableSemanas]);
-
-  const [selectedSemanaSubtemas, setSelectedSemanaSubtemas] = useState<number | 'all'>('all');
   const [expandedWeeks, setExpandedWeeks] = useState<Record<number, boolean>>({});
 
   const toggleWeek = (semana: number) => {
     setExpandedWeeks(prev => ({ ...prev, [semana]: !prev[semana] }));
   };
 
-  // Subtopic performance calculations
+  // 3. Puntos débiles por subtema
   const subtopicMap = useMemo(() => {
     const map: Record<string, {
       name: string;
@@ -182,27 +168,20 @@ export function DashboardView({
     return map;
   }, [progress, allQuestions, selectedMateria]);
 
-  // Critical subtopics (Lowest accuracy with at least 1 fail)
-  const worstSubtopics = useMemo(() => {
-    return Object.values(subtopicMap)
+  // Tema prioritario a reforzar
+  const topPrioritySubtopic = useMemo(() => {
+    const failedSubtopics = Object.values(subtopicMap)
       .filter(s => s.fails > 0)
-      .sort((a, b) => a.score - b.score || b.fails - a.fails)
-      .slice(0, 4);
+      .sort((a, b) => a.score - b.score || b.fails - a.fails);
+    return failedSubtopics[0] || null;
   }, [subtopicMap]);
 
-  // Priority #1 subtopic
-  const topPrioritySubtopic = worstSubtopics[0] || null;
+  // Lista ordenada de subtemas para diagnóstico
+  const rankedSubtopics = useMemo(() => {
+    return Object.values(subtopicMap).sort((a, b) => a.score - b.score || b.fails - a.fails);
+  }, [subtopicMap]);
 
-  // Filtered subtopics list
-  const subtemasDataFull = useMemo(() => {
-    let list = Object.values(subtopicMap);
-    if (selectedSemanaSubtemas !== 'all') {
-      list = list.filter(s => s.semana === selectedSemanaSubtemas);
-    }
-    return list.sort((a, b) => a.score - b.score);
-  }, [subtopicMap, selectedSemanaSubtemas]);
-
-  // Weekly question map
+  // 4. Datos por semana y mapa de preguntas
   const weeklyProgressData = useMemo(() => {
     return availableSemanas.map(semana => {
       const questionsOfSemana = allQuestions.filter(
@@ -223,7 +202,6 @@ export function DashboardView({
 
       const vistas = Object.keys(statusMap).length;
       const porcentaje = total > 0 ? Math.round((vistas / total) * 100) : 0;
-
       const temas = Array.from(new Set(questionsOfSemana.map(q => q.tema).filter(Boolean)));
 
       const questionsData = questionsOfSemana.map(q => ({
@@ -245,152 +223,167 @@ export function DashboardView({
   }, [allQuestions, progress, selectedMateria, availableSemanas]);
 
   return (
-    <div className="space-y-8 animate-in fade-in duration-300">
+    <div className="space-y-6 md:space-y-8 animate-in fade-in duration-200">
       
-      {/* 1. HEADER */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* NIVEL 1: ENCABEZADO & 3 KPIS PRINCIPALES (MINIMALISTA MATE) */}
+      <div className="space-y-4">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#C6A84A]"></span>
-            <h1 className="text-xl md:text-2xl font-black uppercase tracking-tight text-[#FFFFFF] font-manrope">
-              Tu Panel de Rendimiento
-            </h1>
-          </div>
-          <p className="text-xs text-[#A6A6A6] mt-1 font-medium">
-            Analiza tus aciertos por especialidad, identifica tus puntos débiles y refuerza antes del examen.
+          <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white font-manrope">
+            Panel de Rendimiento
+          </h1>
+          <p className="text-xs text-zinc-400 mt-0.5">
+            Diagnóstico de aciertos, puntos débiles y cobertura de temario CONAREM.
           </p>
         </div>
 
-        {onReloadData && (
-          <button
-            onClick={onReloadData}
-            className="self-start sm:self-auto px-4 py-2 bg-[#2E2E2E] hover:bg-[#2E2E2E]/80 border border-[#424242] hover:border-[#C6A84A]/40 text-xs font-bold text-[#A6A6A6] hover:text-[#E0AF26] rounded-xl flex items-center gap-2 transition-all cursor-pointer shadow-sm"
+        {/* 3 KPIs en fila sobria */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {/* KPI 1: Banco Resuelto */}
+          <div className="bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 flex items-center justify-between shadow-sm">
+            <div>
+              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1">
+                Banco Resuelto
+              </span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-2xl font-bold text-white font-mono">{totalQuestionsAnswered}</span>
+                <span className="text-xs text-zinc-500 font-medium font-mono">/ {allQuestions.length}</span>
+              </div>
+              <p className="text-[11px] text-zinc-400 mt-1 font-medium">
+                {allQuestions.length > 0 ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100) : 0}% de cobertura oficial
+              </p>
+            </div>
+            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300">
+              <Target className="w-5 h-5" />
+            </div>
+          </div>
+
+          {/* KPI 2: Precisión Global */}
+          <div className="bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 flex items-center justify-between shadow-sm">
+            <div>
+              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1">
+                Precisión Global
+              </span>
+              <div className="flex items-baseline gap-1.5">
+                <span className={`text-2xl font-bold font-mono ${
+                  globalAccuracy >= 75 ? 'text-emerald-400' : globalAccuracy >= 60 ? 'text-amber-400' : 'text-zinc-200'
+                }`}>
+                  {globalAccuracy}%
+                </span>
+              </div>
+              <p className="text-[11px] text-zinc-400 mt-1 font-medium">
+                En {sessions.length} {sessions.length === 1 ? 'simulacro' : 'simulacros'} realizados
+              </p>
+            </div>
+            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300">
+              <TrendingUp className="w-5 h-5" />
+            </div>
+          </div>
+
+          {/* KPI 3: Preguntas Guardadas */}
+          <div 
+            onClick={() => {
+              if (savedQuestionIds.length > 0 && onStartBookmarksQuiz) onStartBookmarksQuiz();
+            }}
+            className={`bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 flex items-center justify-between shadow-sm transition-all ${
+              savedQuestionIds.length > 0 ? 'cursor-pointer hover:border-zinc-700 hover:bg-[#18181B]' : ''
+            }`}
           >
-            <RotateCcw className="w-3.5 h-3.5 text-[#E0AF26]" />
-            Actualizar datos
-          </button>
-        )}
-      </div>
-
-      {/* 2. TARJETAS DE RESUMEN GLOBAL */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {/* Total Respondidas */}
-        <div className="bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between">
-          <div>
-            <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Preguntas Respondidas</p>
-            <p className="text-3xl font-black font-manrope text-[#FFFFFF]">
-              {totalQuestionsAnswered} <span className="text-sm font-semibold text-[#A6A6A6]">/ {allQuestions.length}</span>
-            </p>
-            <p className="text-[11px] text-[#A6A6A6] mt-1 font-medium">
-              {allQuestions.length > 0 ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100) : 0}% del banco resuelto
-            </p>
-          </div>
-          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26]">
-            <Target className="w-6 h-6" />
-          </div>
-        </div>
-
-        {/* Precisión Global */}
-        <div className="bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between">
-          <div>
-            <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Precisión Global</p>
-            <p className="text-3xl font-black font-manrope text-[#E0AF26]">
-              {globalAccuracy}%
-            </p>
-            <p className="text-[11px] text-[#A6A6A6] mt-1 font-medium">
-              En {sessions.length} simulacros completados
-            </p>
-          </div>
-          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26]">
-            <Sparkles className="w-6 h-6" />
-          </div>
-        </div>
-
-        {/* Preguntas Guardadas */}
-        <div 
-          onClick={() => {
-            if (savedQuestionIds.length > 0 && onStartBookmarksQuiz) onStartBookmarksQuiz();
-          }}
-          className={`bg-[#2E2E2E] border border-[#424242] rounded-2xl p-5 shadow-lg flex items-center justify-between transition-all ${
-            savedQuestionIds.length > 0 ? 'cursor-pointer hover:border-[#C6A84A]/50 hover:bg-[#2E2E2E]/90 group' : ''
-          }`}
-        >
-          <div>
-            <p className="text-[11px] font-bold text-[#A6A6A6] uppercase tracking-wider mb-1">Preguntas Guardadas</p>
-            <p className="text-3xl font-black font-manrope text-[#E0AF26]">
-              {savedQuestionIds.length} <span className="text-sm font-semibold text-[#A6A6A6]">favoritas</span>
-            </p>
-            {savedQuestionIds.length > 0 ? (
-              <span className="mt-2 text-[11px] font-bold text-[#E0AF26] group-hover:underline flex items-center gap-1">
-                Ver panel de guardadas <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+            <div>
+              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1">
+                Preguntas Guardadas
               </span>
-            ) : (
-              <span className="text-[11px] text-[#A6A6A6] mt-1 block">
-                0 marcadas como favoritas
-              </span>
-            )}
-          </div>
-          <div className="w-12 h-12 rounded-2xl bg-[#1C1C1C] border border-[#424242] flex items-center justify-center text-[#E0AF26] group-hover:scale-105 transition-transform">
-            <Bookmark className="w-6 h-6 fill-current opacity-80" />
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-2xl font-bold text-amber-400 font-mono">{savedQuestionIds.length}</span>
+                <span className="text-xs text-zinc-500 font-medium">favoritas</span>
+              </div>
+              {savedQuestionIds.length > 0 ? (
+                <span className="text-[11px] text-amber-400/90 font-medium flex items-center gap-1 mt-1 hover:underline">
+                  Ver preguntas guardadas →
+                </span>
+              ) : (
+                <p className="text-[11px] text-zinc-500 mt-1">Sin preguntas marcadas</p>
+              )}
+            </div>
+            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-amber-400/90">
+              <Bookmark className="w-5 h-5 fill-current opacity-80" />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* 3. SELECTOR PRINCIPAL DE ESPECIALIDAD */}
-      <div className="flex flex-col gap-3">
+      {/* NIVEL 2: SELECTOR DE ESPECIALIDADES (MATTE Y SOBRIO) */}
+      <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <h2 className="text-xs font-black uppercase tracking-[0.2em] text-[#A6A6A6]">
-            Elige una Especialidad para Explorar
-          </h2>
-          <span className="text-xs font-medium text-[#A6A6A6]">
-            Viendo: <strong className="text-[#E0AF26]">{selectedMateria}</strong>
+          <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-400">
+            Especialidad en Estudio
+          </span>
+          <span className="text-xs text-zinc-400">
+            Seleccionada: <strong className="text-white font-semibold">{selectedMateria}</strong>
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {materiaStats.map(stat => {
             const m = stat.materia;
             const isSelected = selectedMateria === m;
+
+            let badge = (
+              <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-400 border border-zinc-700/50">
+                Sin iniciar
+              </span>
+            );
+
+            if (stat.status === 'safe') {
+              badge = (
+                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-emerald-950/40 text-emerald-400 border border-emerald-800/40">
+                  Dominado ({stat.precision}%)
+                </span>
+              );
+            } else if (stat.status === 'risk') {
+              badge = (
+                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-amber-950/40 text-amber-400 border border-amber-800/40">
+                  En riesgo ({stat.precision}%)
+                </span>
+              );
+            } else if (stat.status === 'critical') {
+              badge = (
+                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-rose-950/40 text-rose-400 border border-rose-800/40">
+                  Reforzar ({stat.precision}%)
+                </span>
+              );
+            }
+
             return (
               <button
                 key={m}
                 onClick={() => setSelectedMateria(m)}
-                className={`p-5 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between gap-4 ${
+                className={`p-4 rounded-2xl border text-left transition-all duration-150 cursor-pointer flex flex-col justify-between gap-3 ${
                   isSelected
-                    ? 'bg-[#2E2E2E] border-[#C6A84A] shadow-[0_0_25px_rgba(198,168,74,0.2)] ring-1 ring-[#C6A84A]'
-                    : 'bg-[#2E2E2E] border-[#424242] hover:border-[#C6A84A]/40'
+                    ? 'bg-[#18181B] border-primary/60 text-white shadow-sm'
+                    : 'bg-[#141416] border-zinc-800/80 text-zinc-300 hover:border-zinc-700 hover:bg-[#161619]'
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <div className={`p-2.5 rounded-xl ${isSelected ? 'bg-[#C6A84A] text-[#121212]' : 'bg-[#1C1C1C] text-[#A6A6A6] border border-[#424242]'}`}>
-                    {MATERIA_ICONS[m]}
-                  </div>
-                  <div className="text-right">
-                    <span className={`text-xs font-black px-2.5 py-1 rounded-lg border ${
-                      stat.precision >= 75 
-                        ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' 
-                        : (stat.precision >= 60 ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' : 'bg-rose-500/10 border-rose-500/30 text-rose-400')
-                    }`}>
-                      {stat.precision}% de precisión
-                    </span>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className={`font-manrope font-black text-base ${isSelected ? 'text-[#E0AF26]' : 'text-[#FFFFFF]'}`}>
+                  <h3 className={`font-semibold text-sm ${isSelected ? 'text-primary' : 'text-white'}`}>
                     {m}
                   </h3>
-                  <p className="text-xs text-[#A6A6A6] mt-0.5 font-medium">
-                    {stat.vistas} de {stat.total} preguntas resueltas
-                  </p>
+                  {badge}
                 </div>
 
-                {/* Progress Bar */}
-                <div className="w-full bg-[#1C1C1C] rounded-full h-1.5 overflow-hidden border border-[#424242]/40">
-                  <div 
-                    className={`h-1.5 rounded-full transition-all duration-500 ${isSelected ? 'bg-[#E0AF26]' : 'bg-[#A6A6A6]/40'}`}
-                    style={{ width: `${stat.porcentaje}%` }}
-                  ></div>
+                <div className="space-y-1.5">
+                  <div className="flex justify-between text-[11px] text-zinc-400">
+                    <span>{stat.vistas} de {stat.total} preguntas</span>
+                    <span className="font-mono">{stat.porcentaje}%</span>
+                  </div>
+                  {/* Progress bar sutil */}
+                  <div className="w-full bg-zinc-800/80 rounded-full h-1 overflow-hidden">
+                    <div 
+                      className={`h-full rounded-full transition-all duration-300 ${
+                        isSelected ? 'bg-primary' : 'bg-zinc-500'
+                      }`}
+                      style={{ width: `${stat.porcentaje}%` }}
+                    />
+                  </div>
                 </div>
               </button>
             );
@@ -398,293 +391,207 @@ export function DashboardView({
         </div>
       </div>
 
-      {/* 4. RECOMENDACIÓN INTELIGENTE DE REFUERZO */}
-      {topPrioritySubtopic ? (
-        <div className="bg-[#2E2E2E] border border-[#C6A84A] rounded-3xl p-6 md:p-7 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-[#1C1C1C] border border-[#C6A84A]/40 rounded-2xl text-[#E0AF26] shrink-0 mt-1">
-              <Flame className="w-6 h-6" />
+      {/* NIVEL 3: PLAN DE ACCIÓN FOCALIZADO (REFUERZO DE PUNTO DÉBIL) */}
+      {topPrioritySubtopic && (
+        <div className="bg-[#141416] border border-amber-500/30 rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+          <div className="flex items-start gap-3.5">
+            <div className="p-2.5 bg-amber-500/10 border border-amber-500/20 rounded-xl text-amber-400 shrink-0 mt-0.5">
+              <Flame className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded bg-[#C6A84A]/20 text-[#E0AF26] border border-[#C6A84A]/30">
-                  Prioridad #1 de Refuerzo
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                  Prioridad de Refuerzo
                 </span>
-                <span className="text-xs text-[#A6A6A6]">en {selectedMateria}</span>
+                <span className="text-xs text-zinc-400">en {selectedMateria}</span>
               </div>
-              <h2 className="text-xl md:text-2xl font-black text-[#FFFFFF] mt-1">
+              <h2 className="text-base font-bold text-white mt-1">
                 {topPrioritySubtopic.name}
               </h2>
-              <p className="text-sm text-[#A6A6A6] mt-1">
-                Has acertado solo <strong className="text-[#FFFFFF]">{topPrioritySubtopic.correct} de {topPrioritySubtopic.total}</strong> preguntas ({topPrioritySubtopic.fails} fallos detectados).
+              <p className="text-xs text-zinc-400 mt-0.5">
+                {topPrioritySubtopic.correct} aciertos de {topPrioritySubtopic.total} intentos ({topPrioritySubtopic.fails} fallos registrados).
               </p>
             </div>
           </div>
 
           <button
             onClick={() => onReforzar && onReforzar(selectedMateria, topPrioritySubtopic.name)}
-            className="w-full md:w-auto px-7 py-3.5 bg-[#E0AF26] hover:bg-[#C6A84A] text-[#121212] font-black rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer shrink-0"
+            className="w-full sm:w-auto px-5 py-2.5 bg-primary text-black font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-primary/90 transition-all cursor-pointer flex items-center justify-center gap-1.5 shrink-0 shadow-sm"
           >
-            Reforzar este subtema ahora
-            <ArrowRight className="w-4 h-4" />
+            <span>Reforzar este tema</span>
+            <ArrowRight className="w-3.5 h-3.5" />
           </button>
-        </div>
-      ) : null}
-
-      {/* 5. ZONAS CRÍTICAS / SUBTEMAS A MEJORAR */}
-      {worstSubtopics.length > 0 && (
-        <div className="flex flex-col gap-3">
-          <h2 className="text-xs font-black uppercase tracking-[0.2em] text-[#A6A6A6] flex items-center gap-2">
-            <AlertCircle className="w-4 h-4 text-rose-400" />
-            Subtemas con Mayor Índice de Fallos en {selectedMateria}
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {worstSubtopics.map((sub, idx) => (
-              <div
-                key={sub.name}
-                className="bg-[#2E2E2E] border border-rose-500/30 rounded-2xl p-5 flex flex-col justify-between gap-4 hover:border-rose-500/60 transition-all shadow-md"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 border border-rose-500/30">
-                      Prioridad {idx + 1}
-                    </span>
-                    <span className="text-lg font-black text-rose-400">
-                      {sub.score}%
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-sm text-[#FFFFFF] line-clamp-2" title={sub.name}>
-                    {sub.name}
-                  </h3>
-                  <p className="text-xs text-[#A6A6A6] mt-1">
-                    {sub.correct} aciertos / {sub.fails} fallos ({sub.total} preguntas resueltas)
-                  </p>
-                </div>
-
-                <button
-                  onClick={() => onReforzar && onReforzar(selectedMateria, sub.name)}
-                  className="w-full py-2.5 px-3 bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/30 text-rose-300 font-bold text-xs rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5"
-                >
-                  Practicar Subtema <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            ))}
-          </div>
         </div>
       )}
 
-      {/* 6. LISTA CLARA DE RENDIMIENTO POR TODOS LOS SUBTEMAS */}
-      <div className="bg-[#2E2E2E] border border-[#424242] rounded-3xl p-6 md:p-8 shadow-xl flex flex-col gap-6">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <h2 className="text-lg md:text-xl font-black uppercase tracking-tight flex items-center gap-2.5 text-[#FFFFFF]">
-              <BarChart3 className="w-5 h-5 text-[#E0AF26]" />
-              Detalle de Rendimiento por Subtema en {selectedMateria}
-            </h2>
-            <p className="text-xs text-[#A6A6A6] mt-0.5">
-              Haz clic en cualquier subtema para hacer un simulacro enfocado.
-            </p>
-          </div>
-
-          {/* Filtro por Semanas */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full">
+      {/* NIVEL 4: EXPLORACIÓN MODULAR CON PESTAÑAS (MAPA SEMANAL vs PUNTOS DÉBILES) */}
+      <div className="bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 md:p-6 space-y-5 shadow-sm">
+        
+        {/* Selector de Pestañas */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-800/80 pb-4">
+          <div className="flex items-center gap-2">
             <button
-              onClick={() => setSelectedSemanaSubtemas('all')}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shrink-0 ${
-                selectedSemanaSubtemas === 'all'
-                  ? 'bg-[#E0AF26] text-[#121212]'
-                  : 'bg-[#1C1C1C] text-[#A6A6A6] hover:bg-[#424242] hover:text-white border border-[#424242]'
+              onClick={() => setActiveTab('weeks')}
+              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
+                activeTab === 'weeks'
+                  ? 'bg-zinc-800 text-white border border-zinc-700'
+                  : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'
               }`}
             >
-              Todas
+              <Calendar className="w-4 h-4" />
+              <span>Mapa por Semanas</span>
             </button>
-            {availableSemanas.map(semana => (
-              <button
-                key={semana}
-                onClick={() => setSelectedSemanaSubtemas(semana)}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shrink-0 ${
-                  selectedSemanaSubtemas === semana
-                    ? 'bg-[#E0AF26] text-[#121212]'
-                    : 'bg-[#1C1C1C] text-[#A6A6A6] hover:bg-[#424242] hover:text-white border border-[#424242]'
-                }`}
-              >
-                Semana {semana}
-              </button>
-            ))}
+
+            <button
+              onClick={() => setActiveTab('weaknesses')}
+              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
+                activeTab === 'weaknesses'
+                  ? 'bg-zinc-800 text-white border border-zinc-700'
+                  : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'
+              }`}
+            >
+              <BarChart3 className="w-4 h-4" />
+              <span>Diagnóstico por Subtemas ({rankedSubtopics.length})</span>
+            </button>
           </div>
+
+          <span className="text-xs text-zinc-400 font-medium">
+            {selectedMateria} • {availableSemanas.length} {availableSemanas.length === 1 ? 'semana' : 'semanas'}
+          </span>
         </div>
 
-        {/* Lista visual de subtemas */}
-        {subtemasDataFull.length > 0 ? (
-          <div className="flex flex-col gap-3">
-            {subtemasDataFull.map(sub => {
-              const isDominado = sub.score >= 75;
-              const isRegular = sub.score >= 60 && sub.score < 75;
-              const isCritico = sub.score < 60;
-
+        {/* CONTENIDO PESTAÑA 1: MAPA POR SEMANAS */}
+        {activeTab === 'weeks' && (
+          <div className="space-y-3">
+            {weeklyProgressData.map(weekData => {
+              const isExpanded = expandedWeeks[weekData.semana] || false;
               return (
-                <div
-                  key={sub.name}
-                  className="bg-[#1C1C1C] hover:bg-[#1C1C1C]/80 border border-[#424242] hover:border-[#C6A84A]/40 p-4 rounded-2xl transition-all flex flex-col md:flex-row md:items-center justify-between gap-4"
+                <div 
+                  key={weekData.semana}
+                  className="bg-[#18181B]/70 border border-zinc-800/80 rounded-xl p-4 transition-colors"
                 >
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className={`w-2 h-2 rounded-full ${isDominado ? 'bg-emerald-400' : (isRegular ? 'bg-amber-400' : 'bg-rose-400')}`}></span>
-                      <h3 className="font-bold text-sm text-[#FFFFFF] truncate" title={sub.name}>
-                        {sub.name}
-                      </h3>
-                    </div>
-                    
-                    <div className="flex items-center gap-4 text-xs text-[#A6A6A6]">
-                      <span>{sub.correct} correctas de {sub.total} preguntas</span>
-                      <span>•</span>
-                      <span>Semana {sub.semana}</span>
+                  <div 
+                    onClick={() => toggleWeek(weekData.semana)}
+                    className="flex items-center justify-between cursor-pointer select-none"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className={`p-1.5 rounded-lg bg-zinc-800 text-zinc-400 transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <h4 className="font-semibold text-sm text-white">Semana {weekData.semana}</h4>
+                          <span className="text-xs text-zinc-500 font-medium">
+                            · {weekData.vistas} de {weekData.total} resueltas
+                          </span>
+                        </div>
+                        {weekData.temas.length > 0 && (
+                          <p className="text-[11px] text-zinc-400 line-clamp-1 mt-0.5">
+                            {weekData.temas.join(' • ')}
+                          </p>
+                        )}
+                      </div>
                     </div>
 
-                    {/* Mini Progress Bar */}
-                    <div className="w-full bg-[#2E2E2E] rounded-full h-1.5 mt-2 overflow-hidden max-w-md border border-[#424242]/30">
-                      <div
-                        className={`h-1.5 rounded-full ${isDominado ? 'bg-emerald-500' : (isRegular ? 'bg-amber-500' : 'bg-rose-500')}`}
-                        style={{ width: `${sub.score}%` }}
-                      ></div>
-                    </div>
+                    <span className="text-sm font-bold font-mono text-zinc-300">
+                      {weekData.porcentaje}%
+                    </span>
                   </div>
 
-                  <div className="flex items-center gap-4 shrink-0">
-                    <div className="text-right">
-                      <span className={`text-lg font-black ${isDominado ? 'text-emerald-400' : (isRegular ? 'text-amber-400' : 'text-rose-400')}`}>
-                        {sub.score}%
-                      </span>
-                      <p className="text-[10px] text-[#A6A6A6] uppercase font-bold">
-                        {isDominado ? 'Dominado' : (isRegular ? 'En proceso' : 'Reforzar')}
-                      </p>
-                    </div>
+                  {/* Cuadrícula desplegable de preguntas */}
+                  {isExpanded && (
+                    <div className="mt-3 pt-3 border-t border-zinc-800 space-y-3">
+                      <div className="flex items-center justify-between text-[11px] text-zinc-400">
+                        <span>Haz clic en un número para abrir esa pregunta directamente:</span>
+                        <div className="flex items-center gap-3 text-[10px]">
+                          <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-emerald-500"></span> Correcta</span>
+                          <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-rose-500"></span> Fallada</span>
+                          <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-zinc-700"></span> Pendiente</span>
+                        </div>
+                      </div>
 
-                    <button
-                      onClick={() => onReforzar && onReforzar(selectedMateria, sub.name)}
-                      className="px-4 py-2 bg-[#2E2E2E] hover:bg-[#E0AF26] text-[#FFFFFF] hover:text-[#121212] border border-[#424242] rounded-xl text-xs font-bold transition-all cursor-pointer"
-                    >
-                      Practicar
-                    </button>
-                  </div>
+                      <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-1.5">
+                        {weekData.questionsData?.map((q, idx) => (
+                          <button
+                            key={q.id}
+                            onClick={() => onQuestionSelect && onQuestionSelect(q.id)}
+                            title={`Pregunta ${idx + 1}: ${q.resolved ? (q.isCorrect ? 'Correcta' : 'Incorrecta') : 'Pendiente'}`}
+                            className={`h-8 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer flex items-center justify-center border ${
+                              q.resolved 
+                                ? (q.isCorrect 
+                                    ? 'bg-emerald-950/40 text-emerald-300 border-emerald-700/50 hover:bg-emerald-900/50' 
+                                    : 'bg-rose-950/40 text-rose-300 border-rose-700/50 hover:bg-rose-900/50')
+                                : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white'
+                            }`}
+                          >
+                            {idx + 1}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               );
             })}
           </div>
-        ) : (
-          <div className="py-12 text-center text-[#A6A6A6] text-sm border-2 border-dashed border-[#424242] rounded-2xl">
-            No hay respuestas registradas para este filtro en {selectedMateria}. Resuelve preguntas en el simulador para ver el diagnóstico aquí.
-          </div>
         )}
-      </div>
 
-      {/* 7. AVANCE POR SEMANAS DE LA ESPECIALIDAD */}
-      <div className="bg-[#2E2E2E] border border-[#424242] rounded-3xl p-6 md:p-8 shadow-xl flex flex-col gap-6">
-        <div>
-          <h2 className="text-lg md:text-xl font-black uppercase tracking-tight flex items-center gap-2.5 text-[#FFFFFF]">
-            <Calendar className="w-5 h-5 text-[#E0AF26]" />
-            Progreso Semana a Semana en {selectedMateria}
-          </h2>
-          <p className="text-xs text-[#A6A6A6] mt-0.5">
-            Despliega cada semana para ver exactamente qué preguntas ya respondiste y cuáles te faltan.
-          </p>
-        </div>
+        {/* CONTENIDO PESTAÑA 2: DIAGNÓSTICO POR SUBTEMAS */}
+        {activeTab === 'weaknesses' && (
+          <div className="space-y-2.5">
+            {rankedSubtopics.length > 0 ? (
+              rankedSubtopics.map(sub => {
+                const isDominado = sub.score >= 75;
+                const isRegular = sub.score >= 60 && sub.score < 75;
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {weeklyProgressData.map((weekData) => {
-            const isExpanded = expandedWeeks[weekData.semana] || false;
-            return (
-              <div 
-                key={weekData.semana} 
-                className="bg-[#1C1C1C] p-5 rounded-2xl border border-[#424242] hover:border-[#C6A84A]/30 transition-all flex flex-col gap-3"
-              >
-                <div 
-                  className="flex justify-between items-center cursor-pointer"
-                  onClick={() => toggleWeek(weekData.semana)}
-                >
-                  <div className="flex items-center gap-3">
-                    <div className={`p-2 rounded-lg bg-[#2E2E2E] border border-[#424242] transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
-                      <ChevronDown className="w-4 h-4 text-[#A6A6A6]" />
-                    </div>
-                    <div>
-                      <h3 className="text-[#FFFFFF] font-black text-base">
-                        Semana {weekData.semana}
-                      </h3>
-                      <p className="text-xs text-[#A6A6A6]">
-                        {weekData.vistas} de {weekData.total} preguntas resueltas
+                return (
+                  <div
+                    key={sub.name}
+                    className="bg-[#18181B]/70 border border-zinc-800/80 p-3.5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-zinc-700 transition-colors"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className={`w-2 h-2 rounded-full ${
+                          isDominado ? 'bg-emerald-400' : isRegular ? 'bg-amber-400' : 'bg-rose-400'
+                        }`} />
+                        <h4 className="font-medium text-xs md:text-sm text-white truncate" title={sub.name}>
+                          {sub.name}
+                        </h4>
+                      </div>
+                      <p className="text-[11px] text-zinc-400 mt-1">
+                        Semana {sub.semana} · {sub.correct} correctas / {sub.fails} fallos ({sub.total} preguntas hechas)
                       </p>
                     </div>
-                  </div>
 
-                  <span className="text-xl font-black font-manrope text-[#E0AF26]">
-                    {weekData.porcentaje}%
-                  </span>
-                </div>
+                    <div className="flex items-center justify-between sm:justify-end gap-3 shrink-0">
+                      <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded border ${
+                        isDominado 
+                          ? 'bg-emerald-950/30 text-emerald-400 border-emerald-800/40' 
+                          : isRegular 
+                            ? 'bg-amber-950/30 text-amber-400 border-amber-800/40' 
+                            : 'bg-rose-950/30 text-rose-400 border-rose-800/40'
+                      }`}>
+                        {sub.score}% acierto
+                      </span>
 
-                {/* Progress bar */}
-                <div className="w-full bg-[#2E2E2E] rounded-full h-2 overflow-hidden border border-[#424242]/30">
-                  <div 
-                    className="bg-[#E0AF26] h-2 rounded-full transition-all duration-700"
-                    style={{ width: `${weekData.porcentaje}%` }}
-                  ></div>
-                </div>
-
-                {/* Temas tags */}
-                <div className="flex flex-wrap gap-1.5 mt-1">
-                  {weekData.temas.map(tema => (
-                    <span key={tema} className="px-2.5 py-0.5 bg-[#2E2E2E] border border-[#424242] rounded-md text-[#FAF9F6] text-[10px]">
-                      {tema}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Cuadrícula desplegable de preguntas */}
-                {isExpanded && (
-                  <div className="mt-4 pt-4 border-t border-[#424242] animate-in fade-in slide-in-from-top-2">
-                    <p className="text-xs font-bold text-[#A6A6A6] mb-3">
-                      Mapa de preguntas (clic para abrir/resolver):
-                    </p>
-                    <div className="grid grid-cols-8 sm:grid-cols-10 gap-1.5">
-                      {weekData.questionsData?.map((q, idx) => (
-                        <button
-                          key={q.id}
-                          onClick={() => {
-                            if (onQuestionSelect) {
-                              onQuestionSelect(q.id);
-                            }
-                          }}
-                          title={`Pregunta ${idx + 1}: ${q.resolved ? (q.isCorrect ? '✅ Correcta' : '❌ Incorrecta') : '⚪ No resuelta'}`}
-                          className={`aspect-square rounded-lg flex items-center justify-center text-xs font-bold border transition-all cursor-pointer hover:scale-110 ${
-                            q.resolved 
-                              ? (q.isCorrect 
-                                  ? 'bg-emerald-500 text-black border-emerald-400 shadow-sm font-black' 
-                                  : 'bg-rose-500/30 text-rose-300 border-rose-500/50')
-                              : 'bg-[#2E2E2E] text-[#A6A6A6] border-[#424242] hover:border-[#C6A84A]'
-                          }`}
-                        >
-                          {idx + 1}
-                        </button>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center gap-4 mt-4 text-[10px] font-bold text-[#A6A6A6] flex-wrap">
-                      <div className="flex items-center gap-1.5">
-                        <span className="w-3 h-3 rounded bg-emerald-500"></span> Correctas
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <span className="w-3 h-3 rounded bg-rose-500/40 border border-rose-500/60"></span> Falladas
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <span className="w-3 h-3 rounded bg-[#2E2E2E] border border-[#424242]"></span> Sin responder
-                      </div>
+                      <button
+                        onClick={() => onReforzar && onReforzar(selectedMateria, sub.name)}
+                        className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-xs font-semibold text-zinc-200 hover:text-white rounded-lg border border-zinc-700/80 transition-colors cursor-pointer"
+                      >
+                        Practicar
+                      </button>
                     </div>
                   </div>
-                )}
+                );
+              })
+            ) : (
+              <div className="py-8 text-center text-zinc-500 text-xs border border-dashed border-zinc-800 rounded-xl">
+                Aún no has respondido preguntas en {selectedMateria}. Resuelve preguntas para ver el desglose por subtemas.
               </div>
-            );
-          })}
-        </div>
+            )}
+          </div>
+        )}
+
       </div>
 
     </div>
