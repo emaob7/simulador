@@ -197,11 +197,11 @@ export function SavedQuestionsView({
                   key={q.id}
                   className="bg-[#1C1C1C]/90 hover:bg-[#1E1E1E] border border-[#424242]/60 hover:border-[#C6A84A]/40 rounded-2xl p-5 md:p-6 transition-all duration-200 shadow-md flex flex-col justify-between gap-4 group"
                 >
-                  <div className="space-y-3">
+                  <div className="space-y-2">
                     {/* Metadatos superiores */}
-                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/5 pb-3">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/5 pb-2.5">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-lg text-[10px] font-black uppercase tracking-wider text-[#E0AF26]">
+                        <span className="px-2.5 py-0.5 bg-[#C6A84A]/15 border border-[#C6A84A]/30 rounded-lg text-[10px] font-black uppercase tracking-wider text-[#E0AF26]">
                           {q.materia} • Semana {q.semana}
                         </span>
                         <span className="text-[11px] text-[#A6A6A6] font-semibold">
@@ -215,42 +215,16 @@ export function SavedQuestionsView({
                     </div>
 
                     {/* Enunciado */}
-                    <p className="text-sm md:text-base font-semibold text-white leading-relaxed">
+                    <p className="text-sm md:text-base font-semibold text-white leading-relaxed py-1">
                       {q.text}
                     </p>
-
-                    {/* Vista previa de opciones */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                      {q.options.map((opt, oIdx) => {
-                        const isCorrect = oIdx === q.correctOptionIndex;
-                        return (
-                          <div 
-                            key={oIdx}
-                            className={`p-2.5 rounded-xl text-xs flex items-center gap-2.5 border ${
-                              isCorrect 
-                                ? 'bg-emerald-950/20 border-emerald-500/30 text-emerald-300 font-medium' 
-                                : 'bg-[#121212]/50 border-white/5 text-[#A6A6A6]'
-                            }`}
-                          >
-                            <span className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-black shrink-0 ${
-                              isCorrect 
-                                ? 'bg-emerald-500 text-white' 
-                                : 'bg-white/5 text-[#A6A6A6]'
-                            }`}>
-                              {String.fromCharCode(65 + oIdx)}
-                            </span>
-                            <span className="line-clamp-1">{opt}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
                   </div>
 
                   {/* Acciones de la tarjeta */}
-                  <div className="flex items-center justify-between gap-3 pt-3 border-t border-white/5">
+                  <div className="flex items-center justify-between gap-3 pt-2.5 border-t border-white/5">
                     <button
                       onClick={() => onToggleBookmark(q.id)}
-                      className="px-3.5 py-2 rounded-xl bg-rose-950/20 hover:bg-rose-950/40 border border-rose-500/30 text-rose-300 hover:text-rose-200 text-xs font-bold flex items-center gap-2 transition-all cursor-pointer"
+                      className="px-3 py-1.5 rounded-xl bg-rose-950/20 hover:bg-rose-950/40 border border-rose-500/30 text-rose-300 hover:text-rose-200 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer"
                       title="Quitar de guardadas"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
@@ -259,7 +233,7 @@ export function SavedQuestionsView({
 
                     <button
                       onClick={() => onQuestionSelect(q.id)}
-                      className="px-4 py-2 rounded-xl bg-[#2E2E2E] hover:bg-[#2E2E2E]/90 border border-[#C6A84A]/40 text-[#E0AF26] text-xs font-black uppercase tracking-wider flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-[1.02]"
+                      className="px-4 py-2 rounded-xl bg-primary text-black font-extrabold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-[1.02] active:scale-95"
                     >
                       <span>Practicar esta pregunta</span>
                       <ChevronRight className="w-3.5 h-3.5" />
