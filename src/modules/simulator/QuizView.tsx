@@ -533,11 +533,19 @@ export function QuizView({
                 <>
                   <div className={`p-4 md:p-10 border-b border-white/5 ${isSubmitted ? 'bg-transparent' : 'bg-[#1E1E1E]/20'}`}>
                     <div className="flex justify-between items-center mb-4 md:mb-6">
+                      <div>
+                        {isSubmitted && (
+                          <button 
+                            type="button"
+                            onClick={() => setCollapsedQuestions(prev => ({ ...prev, [q.id]: true }))}
+                            className="text-xs font-bold text-[#A0A0A0] hover:text-white flex items-center gap-1 cursor-pointer bg-white/5 px-2.5 py-1 rounded-lg border border-white/5"
+                          >
+                            Ocultar Pregunta
+                          </button>
+                        )}
+                      </div>
+
                       <div className="flex items-center gap-3">
-                        <span translate="no" className="notranslate flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs md:text-sm border border-white/5">
-                          {qIndex + 1}
-                        </span>
-                        
                         {onToggleBookmark && (
                           <button
                             type="button"
@@ -548,17 +556,11 @@ export function QuizView({
                             <Bookmark className={`w-4 h-4 ${savedQuestionIds.includes(q.id) ? 'fill-primary text-primary' : ''}`} />
                           </button>
                         )}
+
+                        <span translate="no" className="notranslate flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs md:text-sm border border-white/5">
+                          {qIndex + 1}
+                        </span>
                       </div>
-                      
-                      {isSubmitted && (
-                        <button 
-                          type="button"
-                          onClick={() => setCollapsedQuestions(prev => ({ ...prev, [q.id]: true }))}
-                          className="text-xs font-bold text-[#A0A0A0] hover:text-white flex items-center gap-1 cursor-pointer bg-white/5 px-2.5 py-1 rounded-lg border border-white/5"
-                        >
-                          Ocultar Pregunta
-                        </button>
-                      )}
                     </div>
                     <h2 className="font-bold leading-relaxed text-base md:text-lg text-white">
                       {q.text}
@@ -626,18 +628,6 @@ export function QuizView({
               {/* Individual Explanation (shown after submit or in practice mode when answered) */}
               {showFeedback && (
                 <div className="mx-6 md:mx-10 mb-6 md:mb-10 mt-6 space-y-6">
-                  {/* Feedback si respondió mal */}
-                  {selectedOption !== q.correctOptionIndex && (
-                    <div className="border-l-2 border-red-500 pl-4 py-1">
-                      <div className="text-red-500 font-black uppercase tracking-widest text-[11px] flex items-center gap-1.5">
-                        <span>❌</span> DIAGNÓSTICO INCORRECTO
-                      </div>
-                      <div className="text-xs text-gray-400 mt-1 font-semibold">
-                        {analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id).normalizado}
-                      </div>
-                    </div>
-                  )}
-
                   <div className="space-y-6">
                     {renderExplanation(q.explanation)}
 
