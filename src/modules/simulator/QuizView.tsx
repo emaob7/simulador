@@ -545,19 +545,35 @@ export function QuizView({
                         )}
                       </div>
 
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-2.5">
                         {onToggleBookmark && (
                           <button
                             type="button"
                             onClick={() => onToggleBookmark(q.id)}
-                            className="p-1.5 rounded-lg border border-white/5 bg-white/5 text-[#A0A0A0] hover:text-primary hover:border-primary/20 transition-all cursor-pointer flex items-center justify-center"
-                            title={savedQuestionIds.includes(q.id) ? "Quitar de repaso" : "Guardar para repaso"}
+                            className={`group flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all duration-200 cursor-pointer active:scale-95 shadow-sm border ${
+                              savedQuestionIds.includes(q.id)
+                                ? 'bg-primary/15 border-primary/40 text-primary shadow-[0_0_15px_rgba(198,168,74,0.15)] font-bold'
+                                : 'bg-white/[0.04] border-white/10 text-gray-300 hover:text-primary hover:border-primary/40 hover:bg-primary/5'
+                            }`}
+                            title={savedQuestionIds.includes(q.id) ? "Quitar de preguntas guardadas" : "Guardar esta pregunta para repaso"}
                           >
-                            <Bookmark className={`w-4 h-4 ${savedQuestionIds.includes(q.id) ? 'fill-primary text-primary' : ''}`} />
+                            {savedQuestionIds.includes(q.id) ? (
+                              <>
+                                <BookmarkCheck className="w-3.5 h-3.5 text-primary fill-primary/20 shrink-0" />
+                                <span className="hidden sm:inline">Pregunta guardada</span>
+                                <span className="sm:hidden">Guardada</span>
+                              </>
+                            ) : (
+                              <>
+                                <Bookmark className="w-3.5 h-3.5 text-gray-400 group-hover:text-primary transition-colors shrink-0" />
+                                <span className="hidden sm:inline">Guardar pregunta</span>
+                                <span className="sm:hidden">Guardar</span>
+                              </>
+                            )}
                           </button>
                         )}
 
-                        <span translate="no" className="notranslate flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-xl bg-white/5 text-[#A0A0A0] font-bold text-xs md:text-sm border border-white/5">
+                        <span translate="no" className="notranslate flex items-center justify-center min-w-[28px] h-7 md:min-w-[32px] md:h-8 px-2 rounded-xl bg-white/[0.06] text-[#FAF9F6] font-mono font-bold text-xs md:text-sm border border-white/10 shadow-inner">
                           {qIndex + 1}
                         </span>
                       </div>
