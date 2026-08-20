@@ -125,13 +125,34 @@ function cleanGroupName(grupo: string, semana?: number, normalizado?: string): s
   }
 
   if (s === 10) {
-    if (grupo.includes("Hipertensión") || norm.includes("Hipertensión") || norm.includes("Hipertension")) return "Hipertensión Arterial y Emergencias Vasculares";
-    if (grupo.includes("Evaluación y Diagnóstico")) return "Evaluación y Diagnóstico Cardiovascular";
-    if (grupo.includes("Arritmias y Conducción")) return "Arritmias y Conducción";
-    if (grupo.includes("Insuficiencia Cardíaca")) return "Insuficiencia Cardíaca y Miocardiopatías";
-    if (grupo.includes("Valvulopatías")) return "Valvulopatías y Enfermedades Pericárdicas";
-    if (grupo.includes("Síndromes Coronarios")) return "Síndromes Coronarios Agudos (SCA)";
-    return "Cardiología General";
+    if (grupo.includes("Electrocardiograma") || grupo.includes("Fisiología") || grupo.includes("Evaluación y Diagnóstico") || norm.includes("Electrocardiograma") || norm.includes("Examen Físico") || norm.includes("Eje Eléctrico") || norm.includes("Semiología")) {
+      return "Electrocardiograma y Fisiología Cardíaca";
+    }
+    if (grupo.includes("Arritmias") || grupo.includes("Conducción") || norm.includes("Arritmias") || norm.includes("Fibrilación Auricular") || norm.includes("Bloqueo") || norm.includes("Taquicardia") || norm.includes("Brugada") || norm.includes("QT")) {
+      return "Arritmias y Trastornos de Conducción";
+    }
+    if (grupo.includes("Coronarios") || grupo.includes("Isquémica") || grupo.includes("Isquemica") || norm.includes("Coronario") || norm.includes("Infarto") || norm.includes("SCACEST") || norm.includes("SCASEST") || norm.includes("Angina") || norm.includes("Wellens")) {
+      return "Cardiopatía Isquémica y Síndromes Coronarios Agudos (SCA)";
+    }
+    if (grupo === "Insuficiencia Cardíaca" || (grupo.includes("Insuficiencia") && !grupo.includes("Mitral") && !grupo.includes("Aórtica")) || norm.includes("Insuficiencia Cardíaca") || norm.includes("Insuficiencia Cardiaca")) {
+      return "Insuficiencia Cardíaca";
+    }
+    if (grupo.includes("Miocardiopatías") || grupo.includes("Miocardiopatias") || grupo.includes("Miocarditis") || norm.includes("Miocardiopatía") || norm.includes("Miocarditis")) {
+      return "Miocardiopatías y Miocarditis";
+    }
+    if (grupo.includes("Valvulopatías") || grupo.includes("Valvulopatias") || norm.includes("Valvulopatía") || norm.includes("Mitral") || norm.includes("Aórtica") || norm.includes("Aortica") || norm.includes("Tricúspide") || norm.includes("Prótesis")) {
+      return "Valvulopatías";
+    }
+    if (grupo.includes("Pericardio") || grupo.includes("Pericárdicas") || norm.includes("Pericard") || norm.includes("Taponamiento")) {
+      return "Enfermedades del Pericardio";
+    }
+    if (grupo.includes("Hipertensión") || grupo.includes("Hipertension") || norm.includes("Hipertensión") || norm.includes("Hipertension") || norm.includes("Crisis Hipertensiva")) {
+      return "Hipertensión Arterial";
+    }
+    if (grupo.includes("Arteriales") || grupo.includes("Vasculares") || grupo.includes("Aneurisma") || grupo.includes("Aorta") || norm.includes("Aneurisma") || norm.includes("Aorta") || norm.includes("Disección") || norm.includes("Isquemia Aguda") || norm.includes("Raynaud") || norm.includes("Arterias Periféricas")) {
+      return "Enfermedades Arteriales y Vasculares Periféricas";
+    }
+    return "Electrocardiograma y Fisiología Cardíaca";
   }
 
   if (s === 11) {
@@ -726,143 +747,150 @@ function normalizeS10(rawSubtema: string, questionText: string, questionId?: str
   const text = questionText.toLowerCase();
   const normalizado = toTitleCase(rawSubtema);
 
-  if (sub.includes('hipertens') || sub.includes('presión arterial') || sub.includes('presion arterial') || text.includes('hipertensión') || text.includes('hipertension') || text.includes('crisis hipertensiva')) {
-    return { grupo: "Módulo VI: Hipertensión Arterial y Emergencias Vasculares", normalizado: sub.includes('crisis') ? "Crisis Hipertensiva" : "Hipertensión Arterial" };
-  }
-
-  // Exact mappings for raw subthemes to maintain clean structure and module groupings
-  if (sub === 'examen físico cardiovascular' || sub === 'examen fisico cardiovascular') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Examen Físico Cardiovascular" };
-  }
-  if (sub === 'electrocardiografía (ecg)' || sub === 'electrocardiografia (ecg)' || sub === 'electrocardiografía' || sub === 'electrocardiografia') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Electrocardiografía (ECG)" };
-  }
-  if (sub === 'métodos de imagen cardiovascular' || sub === 'metodos de imagen cardiovascular') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Métodos de Imagen Cardiovascular" };
-  }
-  if (sub === 'epidemiología y factores de riesgo' || sub === 'epidemiologia y factores de riesgo') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Epidemiología y Factores de Riesgo" };
-  }
-  if (sub === 'eje eléctrico (ecg)' || sub === 'eje electrico (ecg)') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Eje Eléctrico (ECG)" };
-  }
-  if (sub === 'alteraciones electrolíticas (ecg)' || sub === 'alteraciones electroliticas (ecg)') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Alteraciones Electrolíticas (ECG)" };
-  }
-  if (sub === 'hipertrofia ventricular (ecg)') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Hipertrofia Ventricular (ECG)" };
-  }
-  if (sub === 'crecimiento auricular (ecg)') {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Crecimiento Auricular (ECG)" };
-  }
-
-  if (sub === 'antiarrítmicos y tratamiento' || sub === 'antiarritmicos y tratamiento') {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Antiarrítmicos y Tratamiento" };
-  }
-  if (sub === 'bloqueos de rama') {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Bloqueos de Rama" };
-  }
-  if (sub === 'bloqueos auriculoventriculares (av)' || sub === 'bloqueos auriculoventriculares') {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Bloqueos Auriculoventriculares (AV)" };
-  }
-  if (sub === 'taquicardias supraventriculares (tsv)' || sub === 'arritmias supraventriculares') {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Taquicardias Supraventriculares (TSV)" };
-  }
-  if (sub === 'fibrilación auricular (fa)' || sub === 'fibrilacion auricular (fa)' || sub === 'fibrilación auricular' || sub === 'fibrilacion auricular') {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Fibrilación Auricular (FA)" };
-  }
-  if (sub === 'arritmias ventriculares y paro' || sub === 'arritmias ventriculares and paro') {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Arritmias Ventriculares y Paro" };
-  }
-
-  if (sub === 'insuficiencia cardíaca' || sub === 'insuficiencia cardiaca') {
-    return { grupo: "Módulo III: Insuficiencia Cardíaca y Miocardiopatías", normalizado: "Insuficiencia Cardíaca" };
-  }
-  if (sub === 'miocardiopatías' || sub === 'miocardiopatias' || sub === 'miocardiopatía' || sub === 'miocardiopatia') {
-    return { grupo: "Módulo III: Insuficiencia Cardíaca y Miocardiopatías", normalizado: "Miocardiopatías" };
-  }
-
-  if (sub === 'valvulopatías' || sub === 'valvulopatias' || sub === 'valvulopatía' || sub === 'valvulopatia') {
-    return { grupo: "Módulo IV: Valvulopatías y Enfermedades Pericárdicas", normalizado: "Valvulopatías" };
-  }
-  if (sub === 'enfermedades pericárdicas' || sub === 'enfermedades pericardicas' || sub === 'enfermedad pericárdica' || sub === 'enfermedad pericardica') {
-    return { grupo: "Módulo IV: Valvulopatías y Enfermedades Pericárdicas", normalizado: "Enfermedades Pericárdicas" };
-  }
-  if (sub === 'tromboembolismo pulmonar') {
-    return { grupo: "Módulo IV: Valvulopatías y Enfermedades Pericárdicas", normalizado: "Tromboembolismo Pulmonar" };
-  }
-
-  if (sub === 'síndromes coronarios agudos (sca)' || sub === 'sindromes coronarios agudos (sca)' || sub === 'síndrome coronario agudo' || sub === 'sindrome coronario agudo' || sub === 'síndrome coronario agudo (scasest)' || sub === 'infarto agudo de miocardio (scacest)') {
-    return { grupo: "Módulo V: Síndromes Coronarios Agudos (SCA)", normalizado: "Síndromes Coronarios Agudos (SCA)" };
-  }
-  if (sub === 'síndrome de wellens' || sub === 'sindrome de wellens') {
-    return { grupo: "Módulo V: Síndromes Coronarios Agudos (SCA)", normalizado: "Síndrome de Wellens" };
-  }
-
-  // Fallback checks using substring matching on the raw subtheme if no exact match is found
-  if (sub.includes('imagen') || sub.includes('eco') || sub.includes('resonancia') || sub.includes('tomografia') || sub.includes('pet')) {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Métodos de Imagen Cardiovascular" };
-  }
-  if (sub.includes('electrolit')) {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Alteraciones Electrolíticas (ECG)" };
-  }
-  if (sub.includes('bloqueo av')) {
-    return { grupo: "Módulo II: Arritmias y Conducción", normalizado: "Bloqueos Auriculoventriculares (AV)" };
-  }
-  if (sub.includes('wellens')) {
-    return { grupo: "Módulo V: Síndromes Coronarios Agudos (SCA)", normalizado: "Síndrome de Wellens" };
-  }
-  if (sub.includes('pericard') || sub.includes('taponamiento')) {
-    return { grupo: "Módulo IV: Valvulopatías y Enfermedades Pericárdicas", normalizado: "Enfermedades Pericárdicas" };
-  }
-  if (sub.includes('coronar') || sub.includes('infarto') || sub.includes('isquem')) {
-    return { grupo: "Módulo V: Síndromes Coronarios Agudos (SCA)", normalizado: "Síndromes Coronarios Agudos (SCA)" };
-  }
-  if (sub.includes('insuficiencia card') || sub.includes('ic')) {
-    return { grupo: "Módulo III: Insuficiencia Cardíaca y Miocardiopatías", normalizado: "Insuficiencia Cardíaca" };
-  }
-  if (sub.includes('miocardio')) {
-    return { grupo: "Módulo III: Insuficiencia Cardíaca y Miocardiopatías", normalizado: "Miocardiopatías" };
-  }
-  if (sub.includes('valvulo')) {
-    return { grupo: "Módulo IV: Valvulopatías y Enfermedades Pericárdicas", normalizado: "Valvulopatías" };
-  }
-  if (sub.includes('electrocardi') || sub.includes('ecg')) {
-    return { grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular", normalizado: "Electrocardiografía (ECG)" };
-  }
-
-  // Final fallback using the original broad text checks as a last resort
+  // 1. Enfermedades Arteriales y Vasculares Periféricas
   if (
-    sub.includes('epidemiolog') || sub.includes('riesgo') || 
-    sub.includes('examen f') || sub.includes('exploraci') || sub.includes('pulso') || 
-    text.includes('onda p') || text.includes('qrs') || text.includes('onda t')
+    sub.includes('aneurisma') || sub.includes('disección') || sub.includes('diseccion') ||
+    sub.includes('aorta') || sub.includes('aórtic') || sub.includes('aortitis') ||
+    sub.includes('vasculitis') || sub.includes('isquemia aguda de las extremidades') ||
+    sub.includes('raynaud') || sub.includes('tobillo/brazo') || sub.includes('arterias periféricas') ||
+    sub.includes('enfermedades vasculares') || sub.includes('vasoespásticos') ||
+    text.includes('aneurisma') || text.includes('disección aórtica') ||
+    text.includes('índice tobillo-brazo') || text.includes('isquemia arterial aguda')
+  ) {
+    if (!sub.includes('estenosis aórtica') && !sub.includes('insuficiencia aórtica') && !sub.includes('valvulopatía aórtica')) {
+      return {
+        grupo: "Módulo IX: Enfermedades Arteriales y Vasculares Periféricas",
+        normalizado: sub.includes('aneurisma') ? "Aneurismas Aórticos y Periféricos" :
+                     sub.includes('disección') || sub.includes('síndromes aórticos') ? "Síndromes Aórticos Agudos y Disección" :
+                     sub.includes('isquemia') || sub.includes('tobillo') ? "Enfermedad Arterial Periférica e Isquemia Aguda" :
+                     sub.includes('raynaud') ? "Trastornos Vasoespásticos (Raynaud)" :
+                     sub.includes('aortitis') || sub.includes('vasculitis') ? "Aortitis y Vasculitis de Grandes Vasos" :
+                     "Patología Aórtica y Vascular"
+      };
+    }
+  }
+
+  // 2. Hipertensión Arterial
+  if (
+    sub.includes('hipertens') || sub.includes('presión arterial') || sub.includes('presion arterial') ||
+    sub.includes('bloqueadores beta') || text.includes('crisis hipertensiva') ||
+    text.includes('emergencia hipertensiva') || text.includes('hipertensión arterial') ||
+    text.includes('hipertension arterial')
   ) {
     return {
-      grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular",
-      normalizado: sub.includes('epidemiolog') ? "Epidemiología y Factores de Riesgo" : "Examen Físico Cardiovascular"
+      grupo: "Módulo VIII: Hipertensión Arterial",
+      normalizado: sub.includes('secundaria') ? "Hipertensión Arterial Secundaria" :
+                   sub.includes('crisis') || text.includes('crisis') ? "Crisis y Emergencias Hipertensivas" :
+                   sub.includes('bloqueadores') || text.includes('farmaco') ? "Farmacología Antihipertensiva" :
+                   "Hipertensión Arterial Primaria"
     };
   }
 
+  // 3. Enfermedades del Pericardio
   if (
-    sub.includes('arritmia') || sub.includes('bloqueo') || sub.includes('conducci') ||
-    sub.includes('antiarr') || sub.includes('flúter') || sub.includes('fluter') ||
-    sub.includes('fibrilaci') || sub.includes('wpw') || sub.includes('wolff') ||
-    sub.includes('reentrada') || sub.includes('tachycardi') || sub.includes('bradiar') ||
-    text.includes('antiarrítmico') || text.includes('bloqueo') || text.includes('taquicardia') ||
-    text.includes('fibrilación') || text.includes('flúter') || text.includes('flutter')
+    sub.includes('pericard') || sub.includes('taponamiento') ||
+    text.includes('pericarditis') || text.includes('derrame pericárdico') || text.includes('taponamiento cardíaco')
+  ) {
+    return {
+      grupo: "Módulo VII: Enfermedades del Pericardio",
+      normalizado: text.includes('constrictiva') ? "Pericarditis Constrictiva" :
+                   text.includes('taponamiento') ? "Taponamiento Cardíaco" :
+                   text.includes('derrame') ? "Derrame Pericárdico" :
+                   "Pericarditis Aguda"
+    };
+  }
+
+  // 4. Valvulopatías Cardíacas
+  if (
+    sub.includes('valvulo') || sub.includes('mitral') || sub.includes('aórtica') || sub.includes('aortica') || sub.includes('tricúspide') ||
+    text.includes('estenosis aórtica') || text.includes('insuficiencia mitral') || text.includes('estenosis mitral') ||
+    text.includes('insuficiencia aórtica') || text.includes('valvulopatía') || text.includes('valvulotomía')
+  ) {
+    return {
+      grupo: "Módulo VI: Valvulopatías",
+      normalizado: (sub.includes('mitral') || text.includes('mitral')) ? "Valvulopatía Mitral (Estenosis e Insuficiencia)" :
+                   (sub.includes('aórtic') || text.includes('aórtic')) ? "Valvulopatía Aórtica (Estenosis e Insuficiencia)" :
+                   "Valvulopatías y Prótesis Valvulares"
+    };
+  }
+
+  // 5. Cardiopatía Isquémica y Síndromes Coronarios Agudos (SCA)
+  if (
+    sub.includes('coronar') || sub.includes('isquém') || sub.includes('isquem') ||
+    text.includes('infarto agudo') || text.includes('angina') || text.includes('scacest') ||
+    text.includes('scasest') || text.includes('wellens') || text.includes('reperfusión') ||
+    text.includes('troponina') || text.includes('isquemia miocárdica') || text.includes('stemi') || text.includes('nstemi')
+  ) {
+    return {
+      grupo: "Módulo III: Cardiopatía Isquémica y Síndromes Coronarios Agudos (SCA)",
+      normalizado: text.includes('scacest') || text.includes('stemi') ? "Infarto Agudo con Elevación del ST (SCACEST)" :
+                   text.includes('scasest') || text.includes('nstemi') || text.includes('angina inestable') ? "SCASEST y Angina Inestable" :
+                   text.includes('angina estable') || text.includes('isquémica crónica') ? "Cardiopatía Isquémica Crónica y Angina" :
+                   "Síndromes Coronarios Agudos"
+    };
+  }
+
+  // 6. Insuficiencia Cardíaca
+  if (
+    sub.includes('insuficiencia cardíaca') || sub.includes('insuficiencia cardiaca') ||
+    text.includes('insuficiencia cardíaca') || text.includes('insuficiencia cardiaca') ||
+    text.includes('fracción de eyección') || text.includes('fevi') || text.includes('sacubitrilo') ||
+    text.includes('ieca') || text.includes('espironolactona') || text.includes('edema agudo de pulmón') ||
+    text.includes('isglt2') || text.includes('dapagliflozina') || text.includes('empagliflozina') ||
+    text.includes('clase funcional nyha') || text.includes('criterios de framingham')
+  ) {
+    return {
+      grupo: "Módulo IV: Insuficiencia Cardíaca",
+      normalizado: text.includes('aguda') || text.includes('edema agudo') || text.includes('shock') ? "Insuficiencia Cardíaca Aguda y Shock" :
+                   text.includes('fármaco') || text.includes('mortalidad') || text.includes('tratamiento') ? "Tratamiento y Fármacos de Supervivencia en IC" :
+                   "Insuficiencia Cardíaca Crónica (Diagnóstico y FEVI)"
+    };
+  }
+
+  // 7. Miocardiopatías y Miocarditis
+  if (
+    sub.includes('miocardiopat') || sub.includes('miocarditis') ||
+    text.includes('miocardiopatía') || text.includes('miocarditis') || text.includes('hocm') ||
+    text.includes('takotsubo') || text.includes('chagas') || text.includes('amiloidosis')
+  ) {
+    return {
+      grupo: "Módulo V: Miocardiopatías",
+      normalizado: text.includes('hipertrófica') || text.includes('hocm') ? "Miocardiopatía Hipertrófica (MCH)" :
+                   text.includes('dilatada') ? "Miocardiopatía Dilatada" :
+                   text.includes('restrictiva') || text.includes('amiloidosis') ? "Miocardiopatía Restrictiva e Infiltrativa" :
+                   text.includes('miocarditis') ? "Miocarditis Aguda" :
+                   "Miocardiopatías"
+    };
+  }
+
+  // 8. Arritmias y Trastornos de Conducción
+  if (
+    sub.includes('arritmi') || sub.includes('fibrilaci') || sub.includes('bloqueo') ||
+    sub.includes('taquicardi') || sub.includes('bradi') || sub.includes('conducci') ||
+    sub.includes('tormenta') || sub.includes('qt largo') || sub.includes('brugada') ||
+    text.includes('fibrilación auricular') || text.includes('flutter') || text.includes('flúter') ||
+    text.includes('bloqueo av') || text.includes('marcapasos') || text.includes('torsades') ||
+    text.includes('taquicardia ventricular') || text.includes('brugada') || text.includes('antiarrítmico') ||
+    text.includes('cha2ds2') || text.includes('anticoagulación')
   ) {
     return {
       grupo: "Módulo II: Arritmias y Conducción",
-      normalizado: (sub.includes('antiarr') || text.includes('antiarrítmico')) ? "Antiarrítmicos y Tratamiento" :
-                   (sub.includes('fibrilaci') && text.includes('ventricular')) ? "Arritmias Ventriculares y Paro" :
-                   (sub.includes('fibrilaci') && text.includes('auricular')) ? "Fibrilación Auricular (FA)" :
+      normalizado: text.includes('fibrilación auricular') || sub.includes('fa') ? "Fibrilación Auricular y Flutter (FA)" :
+                   text.includes('bloqueo av') || text.includes('mobitz') ? "Bloqueos Auriculoventriculares (AV)" :
+                   text.includes('ventricular') || text.includes('torsades') || text.includes('brugada') || sub.includes('tormenta') ? "Arritmias Ventriculares y Paro Cardíaco" :
+                   text.includes('supraventricular') || text.includes('reentrada') ? "Taquicardias Supraventriculares (TSV)" :
                    "Arritmias y Trastornos de Conducción"
     };
   }
 
+  // 9. Electrocardiograma y Fisiología Cardíaca
   return {
-    grupo: "Módulo I: Evaluación y Diagnóstico Cardiovascular",
-    normalizado
+    grupo: "Módulo I: Electrocardiograma y Fisiología Cardíaca",
+    normalizado: text.includes('soplo') || text.includes('valsalva') || text.includes('ruido') || sub.includes('semiología') ? "Semiología Cardiovascular y Soplos" :
+                 text.includes('eje') ? "Eje Eléctrico y Ondas del ECG" :
+                 text.includes('hipertrofia') || text.includes('crecimiento') ? "Hipertrofias y Crecimientos Auriculares en ECG" :
+                 text.includes('electrolit') || text.includes('potasio') || text.includes('calcio') ? "Alteraciones Electrolíticas en ECG" :
+                 "Electrocardiografía (ECG) y Fisiología"
   };
 }
 
