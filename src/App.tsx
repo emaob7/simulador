@@ -829,7 +829,7 @@ export default function App() {
         
         <main className="p-4 md:p-8 max-w-[1600px] w-full mx-auto flex-1">
           {/* Banner de Recuperación de Sesión Pendiente */}
-          {(view === 'dashboard' || view === 'simulator') && pendingDraft && (
+          {view === 'simulator' && pendingDraft && (
             <div className="mb-8 p-6 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent border border-primary/30 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
               <div className="flex items-center gap-4 relative z-10">
                 <div className="p-3.5 bg-primary text-black rounded-2xl shadow-sm shrink-0">
@@ -883,6 +883,10 @@ export default function App() {
               sessions={sessions}
               progress={userProgress}
               onReloadData={handleReloadData}
+              pendingDraft={pendingDraft}
+              onResumeDraft={handleResumeDraft}
+              onDiscardDraft={handleDiscardDraft}
+              onNewSession={() => setView('simulator')}
             />
           )}
           {view === 'admin' && userData?.role === 'admin' && <AdminView />}

@@ -1,20 +1,11 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { 
-  BarChart3, 
-  Target, 
-  Sparkles, 
-  Flame, 
-  ChevronRight, 
-  ChevronDown, 
-  BookOpen, 
-  ArrowRight, 
-  Bookmark, 
-  Calendar, 
-  CheckCircle2, 
-  XCircle, 
-  HelpCircle,
-  TrendingUp,
-  Award
+import React, { useMemo, useState } from 'react';
+import {
+  ArrowRight,
+  BarChart3,
+  Bookmark,
+  Calendar,
+  ChevronDown,
+  Flame
 } from 'lucide-react';
 import { Question } from '../../types';
 import { analyzeSubtema } from '../../utils/normalizer';
@@ -32,7 +23,20 @@ interface DashboardViewProps {
   sessions?: any[];
   progress?: any[];
   onReloadData?: () => void;
+  pendingDraft?: any;
+  onResumeDraft?: () => void;
+  onDiscardDraft?: () => void;
+  onNewSession?: () => void;
 }
+
+const normalizeMateriaName = (materia: string): Materia => {
+  const normalized = (materia || '').toLowerCase();
+  if (normalized.includes('pediatr')) return 'Pediatría';
+  if (normalized.includes('interna') || normalized.includes('medicina')) return 'Medicina Interna';
+  if (normalized.includes('cirug')) return 'Cirugía';
+  if (normalized.includes('ginec') || normalized.includes('obste')) return 'Ginecología y Obstetricia';
+  return 'Pediatría';
+};
 
 export function DashboardView({
   onReforzar,
@@ -41,90 +45,54 @@ export function DashboardView({
   savedQuestionIds = [],
   onStartBookmarksQuiz,
   sessions = [],
-  progress = []
+  progress = [],
+  pendingDraft,
+  onResumeDraft,
+  onDiscardDraft,
+  onNewSession
 }: DashboardViewProps) {
   const [activeTab, setActiveTab] = useState<'weeks' | 'weaknesses'>('weeks');
+  const [selectedMateria, setSelectedMateria] = useState<Materia>('Medicina Interna');
+  const [expandedWeeks, setExpandedWeeks] = useState<Record<number, boolean>>({});
 
-  const normalizeMateriaName = (m: string): Materia => {
-    const lower = (m || '').toLowerCase();
-    if (lower.includes('pediatr')) return 'Pediatría';
-    if (lower.includes('interna') || lower.includes('medicina')) return 'Medicina Interna';
-    if (lower.includes('cirug')) return 'Cirugía';
-    if (lower.includes('ginec') || lower.includes('obste')) return 'Ginecología y Obstetricia';
-    return 'Pediatría';
-  };
-
-  // 1. Overall stats
   const totalQuestionsAnswered = useMemo(() => {
-    const seen = new Set(progress.map(p => p.question_id));
-    return seen.size;
+    return new Set(progress.map(item => item.question_id).filter(Boolean)).size;
   }, [progress]);
 
   const globalAccuracy = useMemo(() => {
-    const totalQ = sessions.reduce((sum, s) => sum + (s.total_questions || 0), 0);
-    const totalC = sessions.reduce((sum, s) => sum + (s.score || 0), 0);
-    return totalQ > 0 ? Math.round((totalC / totalQ) * 100) : 0;
+    const total = sessions.reduce((sum, session) => sum + (session.total_questions || 0), 0);
+    const correct = sessions.reduce((sum, session) => sum + (session.score || 0), 0);
+    return total > 0 ? Math.round((correct / total) * 100) : 0;
   }, [sessions]);
 
-  // 2. Stats por materia
   const materiaStats = useMemo(() => {
-    return MATERIAS.map(m => {
-      const qOfMateria = allQuestions.filter(q => normalizeMateriaName(q.materia) === m);
-      const total = qOfMateria.length;
-      
-      const qIds = new Set(qOfMateria.map(q => q.id));
-      const seen = progress.filter(p => qIds.has(p.question_id));
-      const seenUnique = new Set(seen.map(p => p.question_id)).size;
-      const progressPercent = total > 0 ? Math.round((seenUnique / total) * 100) : 0;
+    return MATERIAS.map(materia => {
+      const questions = allQuestions.filter(question => normalizeMateriaName(question.materia) === materia);
+      const ids = new Set(questions.map(question => question.id));
+      const seen = new Set(progress.filter(item => ids.has(item.question_id)).map(item => item.question_id)).size;
 
-      const sessionsOfMateria = sessions.filter(s => normalizeMateriaName(s.materia) === m);
-      const totalQ = sessionsOfMateria.reduce((sum, s) => sum + (s.total_questions || 0), 0);
-      const totalC = sessionsOfMateria.reduce((sum, s) => sum + (s.score || 0), 0);
-      const accuracy = totalQ > 0 ? Math.round((totalC / totalQ) * 100) : 0;
-
-      let status: 'safe' | 'risk' | 'critical' | 'unstarted' = 'unstarted';
-      if (seenUnique > 0) {
-        if (accuracy >= 75) status = 'safe';
-        else if (accuracy >= 60) status = 'risk';
-        else status = 'critical';
-      }
+      const materiaSessions = sessions.filter(session => normalizeMateriaName(session.materia) === materia);
+      const attempts = materiaSessions.reduce((sum, session) => sum + (session.total_questions || 0), 0);
+      const correct = materiaSessions.reduce((sum, session) => sum + (session.score || 0), 0);
 
       return {
-        materia: m as Materia,
-        total,
-        vistas: seenUnique,
-        porcentaje: progressPercent,
-        precision: accuracy,
-        status,
-        totalSesiones: sessionsOfMateria.length
+        materia,
+        total: questions.length,
+        vistas: seen,
+        porcentaje: questions.length > 0 ? Math.round((seen / questions.length) * 100) : 0,
+        precision: attempts > 0 ? Math.round((correct / attempts) * 100) : 0
       };
     });
   }, [allQuestions, progress, sessions]);
 
-  const defaultMateria = useMemo(() => {
-    const answered = materiaStats.filter(s => s.vistas > 0).sort((a, b) => b.vistas - a.vistas);
-    return answered[0]?.materia || 'Pediatría';
-  }, [materiaStats]);
-
-  const [selectedMateria, setSelectedMateria] = useState<Materia>(defaultMateria);
-
   const availableSemanas = useMemo(() => {
-    const semanas = new Set<number>();
-    allQuestions.forEach(q => {
-      if (normalizeMateriaName(q.materia) === selectedMateria) {
-        semanas.add(q.semana);
-      }
-    });
-    return Array.from(semanas).sort((a, b) => a - b);
+    return Array.from(new Set(
+      allQuestions
+        .filter(question => normalizeMateriaName(question.materia) === selectedMateria)
+        .map(question => question.semana)
+    )).sort((a, b) => a - b);
   }, [allQuestions, selectedMateria]);
 
-  const [expandedWeeks, setExpandedWeeks] = useState<Record<number, boolean>>({});
-
-  const toggleWeek = (semana: number) => {
-    setExpandedWeeks(prev => ({ ...prev, [semana]: !prev[semana] }));
-  };
-
-  // 3. Puntos débiles por subtema
   const subtopicMap = useMemo(() => {
     const map: Record<string, {
       name: string;
@@ -135,17 +103,22 @@ export function DashboardView({
       score: number;
     }> = {};
 
-    progress.forEach(p => {
-      const q = allQuestions.find(x => x.id === p.question_id);
-      if (!q || normalizeMateriaName(q.materia) !== selectedMateria) return;
-      
-      const subInfo = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-      const subName = subInfo.normalizado || q.subtema || 'General';
+    progress.forEach(item => {
+      const question = allQuestions.find(candidate => candidate.id === item.question_id);
+      if (!question || normalizeMateriaName(question.materia) !== selectedMateria) return;
 
-      if (!map[subName]) {
-        map[subName] = {
-          name: subName,
-          semana: q.semana,
+      const normalized = analyzeSubtema(
+        question.subtema,
+        question.materia,
+        question.semana,
+        question.text,
+        question.id
+      ).normalizado || question.subtema || 'General';
+
+      if (!map[normalized]) {
+        map[normalized] = {
+          name: normalized,
+          semana: question.semana,
           total: 0,
           correct: 0,
           fails: 0,
@@ -153,447 +126,350 @@ export function DashboardView({
         };
       }
 
-      map[subName].total += 1;
-      if (p.is_correct) {
-        map[subName].correct += 1;
-      } else {
-        map[subName].fails += 1;
-      }
+      map[normalized].total += 1;
+      if (item.is_correct) map[normalized].correct += 1;
+      else map[normalized].fails += 1;
     });
 
-    Object.values(map).forEach(s => {
-      s.score = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+    Object.values(map).forEach(item => {
+      item.score = item.total > 0 ? Math.round((item.correct / item.total) * 100) : 0;
     });
 
     return map;
-  }, [progress, allQuestions, selectedMateria]);
+  }, [allQuestions, progress, selectedMateria]);
 
-  // Tema prioritario a reforzar
-  const topPrioritySubtopic = useMemo(() => {
-    const failedSubtopics = Object.values(subtopicMap)
-      .filter(s => s.fails > 0)
-      .sort((a, b) => a.score - b.score || b.fails - a.fails);
-    return failedSubtopics[0] || null;
-  }, [subtopicMap]);
-
-  // Lista ordenada de subtemas para diagnóstico
   const rankedSubtopics = useMemo(() => {
     return Object.values(subtopicMap).sort((a, b) => a.score - b.score || b.fails - a.fails);
   }, [subtopicMap]);
 
-  // 4. Datos por semana y mapa de preguntas
+  const topPrioritySubtopic = useMemo(() => {
+    return rankedSubtopics.find(item => item.fails > 0) || null;
+  }, [rankedSubtopics]);
+
   const weeklyProgressData = useMemo(() => {
     return availableSemanas.map(semana => {
-      const questionsOfSemana = allQuestions.filter(
-        q => normalizeMateriaName(q.materia) === selectedMateria && q.semana === semana
+      const questions = allQuestions.filter(question =>
+        normalizeMateriaName(question.materia) === selectedMateria && question.semana === semana
       );
-      const total = questionsOfSemana.length;
-      
-      const qIds = new Set(questionsOfSemana.map(q => q.id));
-      const seenRecords = progress.filter(p => qIds.has(p.question_id));
-      
-      const statusMap: Record<string, { resolved: boolean; isCorrect: boolean }> = {};
-      seenRecords.forEach(p => {
-        statusMap[p.question_id] = {
-          resolved: true,
-          isCorrect: p.is_correct
-        };
+      const ids = new Set(questions.map(question => question.id));
+      const records = progress.filter(item => ids.has(item.question_id));
+      const statusById: Record<string, { resolved: boolean; isCorrect: boolean }> = {};
+
+      records.forEach(item => {
+        statusById[item.question_id] = { resolved: true, isCorrect: item.is_correct };
       });
 
-      const vistas = Object.keys(statusMap).length;
-      const porcentaje = total > 0 ? Math.round((vistas / total) * 100) : 0;
-      const temas = Array.from(new Set(questionsOfSemana.map(q => q.tema).filter(Boolean)));
-
-      const questionsData = questionsOfSemana.map(q => ({
-        id: q.id,
-        text: q.text,
-        resolved: !!statusMap[q.id]?.resolved,
-        isCorrect: !!statusMap[q.id]?.isCorrect
-      }));
-
+      const seen = Object.keys(statusById).length;
       return {
         semana,
-        total,
-        vistas,
-        porcentaje,
-        temas,
-        questionsData
+        total: questions.length,
+        vistas: seen,
+        porcentaje: questions.length > 0 ? Math.round((seen / questions.length) * 100) : 0,
+        temas: Array.from(new Set(questions.map(question => question.tema).filter(Boolean))),
+        questionsData: questions.map(question => ({
+          id: question.id,
+          resolved: Boolean(statusById[question.id]?.resolved),
+          isCorrect: Boolean(statusById[question.id]?.isCorrect)
+        }))
       };
     });
-  }, [allQuestions, progress, selectedMateria, availableSemanas]);
+  }, [allQuestions, availableSemanas, progress, selectedMateria]);
+
+  const toggleWeek = (semana: number) => {
+    setExpandedWeeks(current => ({ ...current, [semana]: !current[semana] }));
+  };
+
+  const numberFormatter = useMemo(() => new Intl.NumberFormat('es-PY'), []);
+  const currentDateLabel = useMemo(() => {
+    const label = new Intl.DateTimeFormat('es-PY', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long'
+    }).format(new Date());
+    return label.charAt(0).toUpperCase() + label.slice(1);
+  }, []);
+  const coverage = allQuestions.length > 0
+    ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100)
+    : 0;
 
   return (
-    <div className="space-y-6 md:space-y-8 animate-in fade-in duration-200">
-      
-      {/* NIVEL 1: ENCABEZADO & 3 KPIS PRINCIPALES (MINIMALISTA MATE) */}
-      <div className="space-y-4">
+    <div className="w-full min-w-0 max-w-[calc(100vw-2rem)] space-y-6 overflow-hidden animate-in fade-in duration-200 md:max-w-none">
+      <section className="space-y-4">
+        <header className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <h1 className="font-manrope text-xl font-bold tracking-tight text-[#F4F2EC] md:text-2xl">
+              Panel de rendimiento
+            </h1>
+            <p className="mt-1 text-[10px] text-[#77766F]">
+              {currentDateLabel}{pendingDraft?.semana ? ` · Semana ${pendingDraft.semana} activa` : ''}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={onNewSession}
+            className="h-10 rounded-lg bg-primary px-6 text-xs font-semibold text-[#11110F] transition-colors hover:bg-[#D3B657]"
+          >
+            Nueva sesión
+          </button>
+        </header>
+
+        {pendingDraft && (
+          <div className="flex flex-col gap-4 rounded-lg border border-[#2A281F] bg-[#12120F] p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="border-l-[3px] border-primary pl-4">
+              <p className="text-[10px] font-medium text-[#8F8D84]">
+                Sesión sin terminar · {pendingDraft.answeredCount} de {pendingDraft.totalCount} respondidas
+              </p>
+              <h2 className="mt-1 text-sm font-semibold text-[#F4F2EC] md:text-base">
+                {pendingDraft.tema || 'Simulacro en curso'}
+              </h2>
+              <p className="mt-1 text-[10px] text-[#77766F]">
+                {pendingDraft.materia} · Semana {pendingDraft.semana}
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={onDiscardDraft}
+                className="h-9 rounded-lg border border-[#2A2925] px-5 text-[11px] font-semibold text-[#B0AEA5] transition-colors hover:border-[#4A4740] hover:text-white"
+              >
+                Descartar
+              </button>
+              <button
+                type="button"
+                onClick={onResumeDraft}
+                className="h-9 rounded-lg bg-primary px-5 text-[11px] font-semibold text-[#11110F] transition-colors hover:bg-[#D3B657]"
+              >
+                Reanudar sesión
+              </button>
+            </div>
+          </div>
+        )}
+
         <div>
-          <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white font-manrope">
-            Panel de Rendimiento
-          </h1>
-          <p className="text-xs text-zinc-400 mt-0.5">
-            Diagnóstico de aciertos, puntos débiles y cobertura de temario CONAREM.
+          <h2 className="font-manrope text-2xl font-semibold tracking-tight text-[#F4F2EC]">Tu avance</h2>
+          <p className="mt-1 text-xs text-[#77766F]">
+            Una lectura clara de lo que ya dominás y de lo que conviene reforzar hoy.
           </p>
         </div>
 
-        {/* 3 KPIs en fila sobria */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          {/* KPI 1: Banco Resuelto */}
-          <div className="bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 flex items-center justify-between shadow-sm">
-            <div>
-              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1">
-                Banco Resuelto
-              </span>
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-2xl font-bold text-white font-mono">{totalQuestionsAnswered}</span>
-                <span className="text-xs text-zinc-500 font-medium font-mono">/ {allQuestions.length}</span>
-              </div>
-              <p className="text-[11px] text-zinc-400 mt-1 font-medium">
-                {allQuestions.length > 0 ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100) : 0}% de cobertura oficial
-              </p>
-            </div>
-            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300">
-              <Target className="w-5 h-5" />
-            </div>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="rounded-lg bg-[#141412] p-4">
+            <p className="text-[10px] font-medium text-[#77766F]">Banco resuelto</p>
+            <p className="mt-3 font-manrope text-2xl font-semibold text-[#F4F2EC]">
+              {numberFormatter.format(totalQuestionsAnswered)}
+              <span className="ml-1.5 text-xs font-medium text-[#686760]">/ {numberFormatter.format(allQuestions.length)}</span>
+            </p>
+            <p className="mt-1 text-[10px] text-[#77766F]">{coverage}% de cobertura oficial</p>
           </div>
 
-          {/* KPI 2: Precisión Global */}
-          <div className="bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 flex items-center justify-between shadow-sm">
-            <div>
-              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1">
-                Precisión Global
-              </span>
-              <div className="flex items-baseline gap-1.5">
-                <span className={`text-2xl font-bold font-mono ${
-                  globalAccuracy >= 75 ? 'text-emerald-400' : globalAccuracy >= 60 ? 'text-amber-400' : 'text-zinc-200'
-                }`}>
-                  {globalAccuracy}%
-                </span>
-              </div>
-              <p className="text-[11px] text-zinc-400 mt-1 font-medium">
-                En {sessions.length} {sessions.length === 1 ? 'simulacro' : 'simulacros'} realizados
-              </p>
-            </div>
-            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300">
-              <TrendingUp className="w-5 h-5" />
-            </div>
+          <div className="rounded-lg bg-[#141412] p-4">
+            <p className="text-[10px] font-medium text-[#77766F]">Precisión global</p>
+            <p className="mt-3 font-manrope text-2xl font-semibold text-[#F4F2EC]">{globalAccuracy}%</p>
+            <p className="mt-1 text-[10px] text-[#77766F]">
+              En {sessions.length} {sessions.length === 1 ? 'simulacro realizado' : 'simulacros realizados'}
+            </p>
           </div>
 
-          {/* KPI 3: Preguntas Guardadas */}
-          <div 
-            onClick={() => {
-              if (savedQuestionIds.length > 0 && onStartBookmarksQuiz) onStartBookmarksQuiz();
-            }}
-            className={`bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 flex items-center justify-between shadow-sm transition-all ${
-              savedQuestionIds.length > 0 ? 'cursor-pointer hover:border-zinc-700 hover:bg-[#18181B]' : ''
-            }`}
+          <button
+            type="button"
+            onClick={() => savedQuestionIds.length > 0 && onStartBookmarksQuiz?.()}
+            className="rounded-lg bg-[#141412] p-4 text-left transition-colors hover:bg-[#181815] disabled:cursor-default"
+            disabled={savedQuestionIds.length === 0}
           >
-            <div>
-              <span className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider block mb-1">
-                Preguntas Guardadas
-              </span>
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-2xl font-bold text-amber-400 font-mono">{savedQuestionIds.length}</span>
-                <span className="text-xs text-zinc-500 font-medium">favoritas</span>
-              </div>
-              {savedQuestionIds.length > 0 ? (
-                <span className="text-[11px] text-amber-400/90 font-medium flex items-center gap-1 mt-1 hover:underline">
-                  Ver preguntas guardadas →
-                </span>
-              ) : (
-                <p className="text-[11px] text-zinc-500 mt-1">Sin preguntas marcadas</p>
-              )}
-            </div>
-            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-amber-400/90">
-              <Bookmark className="w-5 h-5 fill-current opacity-80" />
-            </div>
-          </div>
+            <p className="text-[10px] font-medium text-[#77766F]">Preguntas guardadas</p>
+            <p className="mt-3 font-manrope text-2xl font-semibold text-primary">{savedQuestionIds.length}</p>
+            <p className="mt-1 text-[10px] text-[#77766F]">
+              {savedQuestionIds.length > 0 ? 'Ver preguntas guardadas' : 'Sin preguntas marcadas'}
+            </p>
+          </button>
         </div>
-      </div>
+      </section>
 
-      {/* NIVEL 2: SELECTOR DE ESPECIALIDADES (MATTE Y SOBRIO) */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-400">
-            Especialidad en Estudio
-          </span>
-          <span className="text-xs text-zinc-400">
-            Seleccionada: <strong className="text-white font-semibold">{selectedMateria}</strong>
-          </span>
+      <section className="space-y-3">
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-[10px] font-medium text-[#77766F]">Especialidad en estudio</p>
+          <p className="text-[10px] text-[#77766F]">Seleccionada: <span className="text-[#D4D1C8]">{selectedMateria}</span></p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {materiaStats.map(stat => {
-            const m = stat.materia;
-            const isSelected = selectedMateria === m;
-
-            let badge = (
-              <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-400 border border-zinc-700/50">
-                Sin iniciar
-              </span>
-            );
-
-            if (stat.status === 'safe') {
-              badge = (
-                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-emerald-950/40 text-emerald-400 border border-emerald-800/40">
-                  Dominado ({stat.precision}%)
-                </span>
-              );
-            } else if (stat.status === 'risk') {
-              badge = (
-                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-amber-950/40 text-amber-400 border border-amber-800/40">
-                  En riesgo ({stat.precision}%)
-                </span>
-              );
-            } else if (stat.status === 'critical') {
-              badge = (
-                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-rose-950/40 text-rose-400 border border-rose-800/40">
-                  Reforzar ({stat.precision}%)
-                </span>
-              );
-            }
-
+        <div className="grid overflow-hidden rounded-lg bg-[#141412] sm:grid-cols-2 lg:grid-cols-4">
+          {materiaStats.map((stat, index) => {
+            const selected = stat.materia === selectedMateria;
             return (
               <button
-                key={m}
-                onClick={() => setSelectedMateria(m)}
-                className={`p-4 rounded-2xl border text-left transition-all duration-150 cursor-pointer flex flex-col justify-between gap-3 ${
-                  isSelected
-                    ? 'bg-[#18181B] border-primary/60 text-white shadow-sm'
-                    : 'bg-[#141416] border-zinc-800/80 text-zinc-300 hover:border-zinc-700 hover:bg-[#161619]'
-                }`}
+                type="button"
+                key={stat.materia}
+                onClick={() => setSelectedMateria(stat.materia)}
+                className={`relative min-h-[104px] p-4 text-left transition-colors hover:bg-[#181815] ${
+                  index > 0 ? 'border-t border-[#26251F] sm:border-l lg:border-t-0' : ''
+                } ${index === 2 ? 'sm:border-l-0 lg:border-l' : ''}`}
               >
-                <div className="flex items-center justify-between">
-                  <h3 className={`font-semibold text-sm ${isSelected ? 'text-primary' : 'text-white'}`}>
-                    {m}
-                  </h3>
-                  {badge}
+                <h3 className={`text-sm font-semibold ${selected ? 'text-primary' : 'text-[#F4F2EC]'}`}>
+                  {stat.materia}
+                </h3>
+                <div className="mt-4 flex items-center justify-between text-[10px] text-[#77766F]">
+                  <span>{numberFormatter.format(stat.vistas)} de {numberFormatter.format(stat.total)} preguntas</span>
+                  <span className={selected ? 'text-primary' : ''}>{stat.porcentaje}%</span>
                 </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex justify-between text-[11px] text-zinc-400">
-                    <span>{stat.vistas} de {stat.total} preguntas</span>
-                    <span className="font-mono">{stat.porcentaje}%</span>
-                  </div>
-                  {/* Progress bar sutil */}
-                  <div className="w-full bg-zinc-800/80 rounded-full h-1 overflow-hidden">
-                    <div 
-                      className={`h-full rounded-full transition-all duration-300 ${
-                        isSelected ? 'bg-primary' : 'bg-zinc-500'
-                      }`}
-                      style={{ width: `${stat.porcentaje}%` }}
-                    />
-                  </div>
+                <div className="mt-3 h-[3px] overflow-hidden rounded-full bg-[#2A2924]">
+                  <div
+                    className={`h-full rounded-full ${selected ? 'bg-primary' : 'bg-[#8A887F]'}`}
+                    style={{ width: `${Math.max(stat.porcentaje, stat.vistas > 0 ? 2 : 0)}%` }}
+                  />
                 </div>
+                {selected && <span className="absolute inset-x-4 bottom-0 h-0.5 bg-primary" />}
               </button>
             );
           })}
         </div>
-      </div>
+      </section>
 
-      {/* NIVEL 3: PLAN DE ACCIÓN FOCALIZADO (REFUERZO DE PUNTO DÉBIL) */}
       {topPrioritySubtopic && (
-        <div className="bg-[#141416] border border-amber-500/30 rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
-          <div className="flex items-start gap-3.5">
-            <div className="p-2.5 bg-amber-500/10 border border-amber-500/20 rounded-xl text-amber-400 shrink-0 mt-0.5">
-              <Flame className="w-5 h-5" />
-            </div>
+        <section className="flex flex-col gap-4 rounded-lg border border-[#343023] bg-[#12120F] p-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-start gap-3 border-l-[3px] border-primary pl-4">
+            <Flame className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
             <div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
-                  Prioridad de Refuerzo
-                </span>
-                <span className="text-xs text-zinc-400">en {selectedMateria}</span>
-              </div>
-              <h2 className="text-base font-bold text-white mt-1">
-                {topPrioritySubtopic.name}
-              </h2>
-              <p className="text-xs text-zinc-400 mt-0.5">
-                {topPrioritySubtopic.correct} aciertos de {topPrioritySubtopic.total} intentos ({topPrioritySubtopic.fails} fallos registrados).
+              <p className="text-[10px] font-medium text-primary">Prioridad de hoy · {selectedMateria}</p>
+              <h2 className="mt-2 text-sm font-semibold text-[#F4F2EC]">{topPrioritySubtopic.name}</h2>
+              <p className="mt-1 text-[10px] text-[#77766F]">
+                {topPrioritySubtopic.correct} aciertos de {topPrioritySubtopic.total} intentos · {topPrioritySubtopic.fails} fallos registrados
               </p>
             </div>
           </div>
-
           <button
-            onClick={() => onReforzar && onReforzar(selectedMateria, topPrioritySubtopic.name)}
-            className="w-full sm:w-auto px-5 py-2.5 bg-primary text-black font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-primary/90 transition-all cursor-pointer flex items-center justify-center gap-1.5 shrink-0 shadow-sm"
+            type="button"
+            onClick={() => onReforzar?.(selectedMateria, topPrioritySubtopic.name)}
+            className="flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-5 text-[11px] font-semibold text-[#11110F] transition-colors hover:bg-[#D3B657]"
           >
-            <span>Reforzar este tema</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            Reforzar este tema
+            <ArrowRight className="h-3.5 w-3.5" />
           </button>
-        </div>
+        </section>
       )}
 
-      {/* NIVEL 4: EXPLORACIÓN MODULAR CON PESTAÑAS (MAPA SEMANAL vs PUNTOS DÉBILES) */}
-      <div className="bg-[#141416] border border-zinc-800/80 rounded-2xl p-4 md:p-6 space-y-5 shadow-sm">
-        
-        {/* Selector de Pestañas */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-800/80 pb-4">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setActiveTab('weeks')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
-                activeTab === 'weeks'
-                  ? 'bg-zinc-800 text-white border border-zinc-700'
-                  : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'
-              }`}
-            >
-              <Calendar className="w-4 h-4" />
-              <span>Mapa por Semanas</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab('weaknesses')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
-                activeTab === 'weaknesses'
-                  ? 'bg-zinc-800 text-white border border-zinc-700'
-                  : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'
-              }`}
-            >
-              <BarChart3 className="w-4 h-4" />
-              <span>Diagnóstico por Subtemas ({rankedSubtopics.length})</span>
-            </button>
+      <section className="rounded-lg bg-[#141412] p-4 md:p-6">
+        <div className="flex flex-col gap-4 border-b border-[#282720] pb-4 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <h2 className="font-manrope text-lg font-semibold text-[#F4F2EC]">Mapa de estudio</h2>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setActiveTab('weeks')}
+                className={`flex h-9 items-center gap-2 rounded-lg px-3 text-[11px] font-semibold transition-colors ${
+                  activeTab === 'weeks'
+                    ? 'border border-[#34332C] bg-[#191916] text-[#F4F2EC]'
+                    : 'text-[#77766F] hover:text-[#D4D1C8]'
+                }`}
+              >
+                <Calendar className="h-3.5 w-3.5" />
+                Mapa por semanas
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveTab('weaknesses')}
+                className={`flex h-9 items-center gap-2 rounded-lg px-3 text-[11px] font-semibold transition-colors ${
+                  activeTab === 'weaknesses'
+                    ? 'border border-[#34332C] bg-[#191916] text-[#F4F2EC]'
+                    : 'text-[#77766F] hover:text-[#D4D1C8]'
+                }`}
+              >
+                <BarChart3 className="h-3.5 w-3.5" />
+                Diagnóstico por subtemas ({rankedSubtopics.length})
+              </button>
+            </div>
           </div>
-
-          <span className="text-xs text-zinc-400 font-medium">
-            {selectedMateria} • {availableSemanas.length} {availableSemanas.length === 1 ? 'semana' : 'semanas'}
-          </span>
+          <p className="text-[10px] text-[#77766F]">
+            {selectedMateria} · {availableSemanas.length} {availableSemanas.length === 1 ? 'semana' : 'semanas'}
+          </p>
         </div>
 
-        {/* CONTENIDO PESTAÑA 1: MAPA POR SEMANAS */}
         {activeTab === 'weeks' && (
-          <div className="space-y-3">
-            {weeklyProgressData.map(weekData => {
-              const isExpanded = expandedWeeks[weekData.semana] || false;
+          <div className="divide-y divide-[#282720]">
+            {weeklyProgressData.map(week => {
+              const expanded = Boolean(expandedWeeks[week.semana]);
               return (
-                <div 
-                  key={weekData.semana}
-                  className="bg-[#18181B]/70 border border-zinc-800/80 rounded-xl p-4 transition-colors"
-                >
-                  <div 
-                    onClick={() => toggleWeek(weekData.semana)}
-                    className="flex items-center justify-between cursor-pointer select-none"
+                <article key={week.semana}>
+                  <button
+                    type="button"
+                    onClick={() => toggleWeek(week.semana)}
+                    className="flex w-full items-center gap-3 py-4 text-left"
                   >
-                    <div className="flex items-center gap-3">
-                      <div className={`p-1.5 rounded-lg bg-zinc-800 text-zinc-400 transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
-                        <ChevronDown className="w-3.5 h-3.5" />
+                    <ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#77766F] transition-transform ${expanded ? 'rotate-180' : '-rotate-90'}`} />
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-baseline gap-2">
+                        <h3 className="text-xs font-semibold text-[#F4F2EC]">Semana {week.semana}</h3>
+                        <span className="text-[10px] text-[#77766F]">{week.vistas} de {week.total} resueltas</span>
                       </div>
-                      <div>
-                        <div className="flex items-center gap-2">
-                          <h4 className="font-semibold text-sm text-white">Semana {weekData.semana}</h4>
-                          <span className="text-xs text-zinc-500 font-medium">
-                            · {weekData.vistas} de {weekData.total} resueltas
-                          </span>
-                        </div>
-                        {weekData.temas.length > 0 && (
-                          <p className="text-[11px] text-zinc-400 line-clamp-1 mt-0.5">
-                            {weekData.temas.join(' • ')}
-                          </p>
-                        )}
-                      </div>
+                      {week.temas.length > 0 && (
+                        <p className="mt-1 truncate text-[9px] text-[#77766F]">{week.temas.join(' · ')}</p>
+                      )}
                     </div>
-
-                    <span className="text-sm font-bold font-mono text-zinc-300">
-                      {weekData.porcentaje}%
+                    <span className={`text-[11px] font-semibold ${week.porcentaje >= 20 ? 'text-primary' : 'text-[#D4D1C8]'}`}>
+                      {week.porcentaje}%
                     </span>
-                  </div>
+                  </button>
 
-                  {/* Cuadrícula desplegable de preguntas */}
-                  {isExpanded && (
-                    <div className="mt-3 pt-3 border-t border-zinc-800 space-y-3">
-                      <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                        <span>Haz clic en un número para abrir esa pregunta directamente:</span>
-                        <div className="flex items-center gap-3 text-[10px]">
-                          <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-emerald-500"></span> Correcta</span>
-                          <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-rose-500"></span> Fallada</span>
-                          <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-zinc-700"></span> Pendiente</span>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-1.5">
-                        {weekData.questionsData?.map((q, idx) => (
+                  {expanded && (
+                    <div className="pb-5 pl-7">
+                      <p className="mb-3 text-[10px] text-[#77766F]">Seleccioná una pregunta para abrirla directamente.</p>
+                      <div className="grid grid-cols-6 gap-1.5 sm:grid-cols-10 md:grid-cols-12 lg:grid-cols-16">
+                        {week.questionsData.map((question, index) => (
                           <button
-                            key={q.id}
-                            onClick={() => onQuestionSelect && onQuestionSelect(q.id)}
-                            title={`Pregunta ${idx + 1}: ${q.resolved ? (q.isCorrect ? 'Correcta' : 'Incorrecta') : 'Pendiente'}`}
-                            className={`h-8 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer flex items-center justify-center border ${
-                              q.resolved 
-                                ? (q.isCorrect 
-                                    ? 'bg-emerald-950/40 text-emerald-300 border-emerald-700/50 hover:bg-emerald-900/50' 
-                                    : 'bg-rose-950/40 text-rose-300 border-rose-700/50 hover:bg-rose-900/50')
-                                : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white'
+                            type="button"
+                            key={question.id}
+                            onClick={() => onQuestionSelect?.(question.id)}
+                            className={`h-8 rounded-md border text-[10px] font-semibold transition-colors ${
+                              question.resolved
+                                ? question.isCorrect
+                                  ? 'border-emerald-800/50 bg-emerald-950/30 text-emerald-300'
+                                  : 'border-rose-800/50 bg-rose-950/30 text-rose-300'
+                                : 'border-[#302F29] bg-[#10100F] text-[#8F8D84] hover:border-[#4A4840] hover:text-white'
                             }`}
                           >
-                            {idx + 1}
+                            {index + 1}
                           </button>
                         ))}
                       </div>
                     </div>
                   )}
-                </div>
+                </article>
               );
             })}
           </div>
         )}
 
-        {/* CONTENIDO PESTAÑA 2: DIAGNÓSTICO POR SUBTEMAS */}
         {activeTab === 'weaknesses' && (
-          <div className="space-y-2.5">
-            {rankedSubtopics.length > 0 ? (
-              rankedSubtopics.map(sub => {
-                const isDominado = sub.score >= 75;
-                const isRegular = sub.score >= 60 && sub.score < 75;
-
-                return (
-                  <div
-                    key={sub.name}
-                    className="bg-[#18181B]/70 border border-zinc-800/80 p-3.5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-zinc-700 transition-colors"
+          <div className="divide-y divide-[#282720]">
+            {rankedSubtopics.length > 0 ? rankedSubtopics.map(subtopic => (
+              <div key={subtopic.name} className="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="min-w-0">
+                  <h3 className="truncate text-xs font-semibold text-[#F4F2EC]">{subtopic.name}</h3>
+                  <p className="mt-1 text-[10px] text-[#77766F]">
+                    Semana {subtopic.semana} · {subtopic.correct} correctas · {subtopic.fails} fallos
+                  </p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className={`text-[11px] font-semibold ${
+                    subtopic.score >= 75 ? 'text-emerald-400' : subtopic.score >= 60 ? 'text-amber-400' : 'text-rose-400'
+                  }`}>
+                    {subtopic.score}%
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => onReforzar?.(selectedMateria, subtopic.name)}
+                    className="h-8 rounded-lg border border-[#34332C] px-3 text-[10px] font-semibold text-[#D4D1C8] transition-colors hover:border-[#4A4840] hover:text-white"
                   >
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
-                        <span className={`w-2 h-2 rounded-full ${
-                          isDominado ? 'bg-emerald-400' : isRegular ? 'bg-amber-400' : 'bg-rose-400'
-                        }`} />
-                        <h4 className="font-medium text-xs md:text-sm text-white truncate" title={sub.name}>
-                          {sub.name}
-                        </h4>
-                      </div>
-                      <p className="text-[11px] text-zinc-400 mt-1">
-                        Semana {sub.semana} · {sub.correct} correctas / {sub.fails} fallos ({sub.total} preguntas hechas)
-                      </p>
-                    </div>
-
-                    <div className="flex items-center justify-between sm:justify-end gap-3 shrink-0">
-                      <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded border ${
-                        isDominado 
-                          ? 'bg-emerald-950/30 text-emerald-400 border-emerald-800/40' 
-                          : isRegular 
-                            ? 'bg-amber-950/30 text-amber-400 border-amber-800/40' 
-                            : 'bg-rose-950/30 text-rose-400 border-rose-800/40'
-                      }`}>
-                        {sub.score}% acierto
-                      </span>
-
-                      <button
-                        onClick={() => onReforzar && onReforzar(selectedMateria, sub.name)}
-                        className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-xs font-semibold text-zinc-200 hover:text-white rounded-lg border border-zinc-700/80 transition-colors cursor-pointer"
-                      >
-                        Practicar
-                      </button>
-                    </div>
-                  </div>
-                );
-              })
-            ) : (
-              <div className="py-8 text-center text-zinc-500 text-xs border border-dashed border-zinc-800 rounded-xl">
-                Aún no has respondido preguntas en {selectedMateria}. Resuelve preguntas para ver el desglose por subtemas.
+                    Practicar
+                  </button>
+                </div>
+              </div>
+            )) : (
+              <div className="py-10 text-center text-xs text-[#77766F]">
+                Todavía no hay respuestas registradas en {selectedMateria}.
               </div>
             )}
           </div>
         )}
-
-      </div>
-
+      </section>
     </div>
   );
 }
