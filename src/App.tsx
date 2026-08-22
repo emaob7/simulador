@@ -15,8 +15,9 @@ import { questionsSemana13 } from './data/semana13/questions';
 import { questionsSemana14 } from './data/semana14/questions';
 import { questionsSemana15 } from './data/semana15/questions';
 import { questionsSemana16 } from './data/semana16/questions';
-import { Question, AnswerRecord } from './types';
+import { Question, AnswerRecord, QuizScope } from './types';
 import { QuizView } from './modules/simulator/QuizView';
+import { SubjectCatalog } from './modules/simulator/SubjectCatalog';
 import { ResultsView } from './modules/results/ResultsView';
 import { DashboardView } from './modules/dashboard/DashboardView';
 import { LoginView } from './modules/auth/LoginView';
@@ -31,6 +32,7 @@ import { auth, db } from './firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
 import { analyzeSubtema } from './utils/normalizer';
+import { classifyQuestionForStudy } from './utils/studyCatalog';
 
 // romanToInt removed
 
@@ -91,9 +93,11 @@ export default function App() {
   const [selectedMateria, setSelectedMateria] = useState<string | null>(null);
   const [selectedSemana, setSelectedSemana] = useState<number | null>(null);
   const [selectedTema, setSelectedTema] = useState<string | null>(null);
+  const [quizScope, setQuizScope] = useState<QuizScope | null>(null);
+  const [scopeQuestionIds, setScopeQuestionIds] = useState<string[]>([]);
+  const [catalogView, setCatalogView] = useState<'weeks' | 'subjects'>('weeks');
   const [expandedWeeks, setExpandedWeeks] = useState<Record<string, boolean>>({});
   const [quizConfig, setQuizConfig] = useState<{ count: number | 'all', mode: 'practice' | 'exam' }>({ count: 20, mode: 'exam' });
-  const [selectedSubtemas, setSelectedSubtemas] = useState<string[]>([]);
   const [expandedGroups, setExpandedGroups] = useState<string[]>([]);
   const [showSubthemesInConfig, setShowSubthemesInConfig] = useState(true);
   const [expandedSubthemes, setExpandedSubthemes] = useState<string[]>([]);
@@ -156,6 +160,17 @@ export default function App() {
   }, [user, view]);
 
   useEffect(() => {
+    const isLocalPreview = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+    if (isLocalPreview && !localStorage.getItem('dr_rodney_guest_user')) {
+      localStorage.setItem('dr_rodney_guest_user', JSON.stringify({
+        uid: 'guest',
+        email: 'local@drrodney.test',
+        displayName: 'Dr. Rodney',
+        photoURL: null,
+        role: 'aspirante',
+        isApproved: true,
+      }));
+    }
     const guestUserStr = localStorage.getItem('dr_rodney_guest_user');
     if (guestUserStr) {
       try {
@@ -235,79 +250,45 @@ export default function App() {
     return grouped;
   }, []);
 
-  const availableSubtemasForConfig = useMemo(() => {
-    if (view !== 'quiz-config' || !selectedMateria || selectedSemana === null) return [];
-    let filtered = allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
-    
-    const isCombinedTema = !selectedTema || selectedTema.includes(' • ') || selectedTema === 'Todos los Temas';
-    if (!isCombinedTema) {
-      filtered = filtered.filter(q => getEffectiveTema(q) === selectedTema);
+  const baseQuestionsForScope = useMemo(() => {
+    if (scopeQuestionIds.length > 0) {
+      const allowedIds = new Set(scopeQuestionIds);
+      return allQuestions.filter(question => allowedIds.has(question.id));
     }
+    if (!selectedMateria || selectedSemana === null) return [];
+    return allQuestions.filter(question => question.materia === selectedMateria && question.semana === selectedSemana);
+  }, [scopeQuestionIds, selectedMateria, selectedSemana]);
 
-    const subtemas = new Set<string>();
-    filtered.forEach(q => {
-      if (q.subtema) {
-        const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-        subtemas.add(normalizado);
-      }
-    });
-    return Array.from(subtemas).sort();
-  }, [selectedMateria, selectedSemana, selectedTema, view]);
-
-  const subthemeCounts = useMemo(() => {
-    if (view !== 'quiz-config' || !selectedMateria || selectedSemana === null) return {} as Record<string, number>;
-    let filtered = allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
-    
-    const isCombinedTema = !selectedTema || selectedTema.includes(' • ') || selectedTema === 'Todos los Temas';
-    if (!isCombinedTema) {
-      filtered = filtered.filter(q => getEffectiveTema(q) === selectedTema);
-    }
-
-    const counts: Record<string, number> = {};
-    filtered.forEach(q => {
-      if (q.subtema) {
-        const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-        counts[normalizado] = (counts[normalizado] || 0) + 1;
-      }
-    });
-    return counts;
-  }, [selectedMateria, selectedSemana, selectedTema, view]);
+  const getConfigSubtopicKey = (question: Question) => {
+    const classification = classifyQuestionForStudy(question);
+    return `${classification.topicId}::${classification.subtopicLabel}`;
+  };
 
   const groupedSubtemasForConfig = useMemo(() => {
-    if (view !== 'quiz-config' || !selectedMateria || selectedSemana === null) return [];
-    
-    const groups: Record<string, string[]> = {};
-    availableSubtemasForConfig.forEach(st => {
-      const { grupo } = analyzeSubtema(st, selectedMateria, selectedSemana);
-      if (!groups[grupo]) {
-        groups[grupo] = [];
-      }
-      groups[grupo].push(st);
+    if (view !== 'quiz-config') return [];
+    const groups = new Map<string, Map<string, string>>();
+    baseQuestionsForScope.forEach(question => {
+      const classification = classifyQuestionForStudy(question);
+      if (!groups.has(classification.topicLabel)) groups.set(classification.topicLabel, new Map());
+      groups.get(classification.topicLabel)!.set(getConfigSubtopicKey(question), classification.subtopicLabel);
     });
-    
-    return Object.entries(groups).map(([group, subtemas]) => ({
+    return Array.from(groups.entries()).map(([group, subtopics]) => ({
       group,
-      subtemas: subtemas.sort()
-    })).sort((a, b) => a.group.localeCompare(b.group));
-  }, [availableSubtemasForConfig, selectedMateria, selectedSemana, view]);
+      subtemas: Array.from(subtopics.entries())
+        .map(([key, label]) => ({ key, label }))
+        .sort((a, b) => a.label.localeCompare(b.label, 'es')),
+    }));
+  }, [baseQuestionsForScope, view]);
 
-  const baseQuestionsForWeek = useMemo(() => {
-    if (!selectedMateria || selectedSemana === null) return [];
-    let filtered = allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
-    
-    const isCombinedTema = !selectedTema || selectedTema.includes(' • ') || selectedTema === 'Todos los Temas';
-    if (!isCombinedTema) {
-      filtered = filtered.filter(q => getEffectiveTema(q) === selectedTema);
-    }
-    return filtered;
-  }, [selectedMateria, selectedSemana, selectedTema]);
+  const availableSubtemasForConfig = useMemo(
+    () => groupedSubtemasForConfig.flatMap(group => group.subtemas),
+    [groupedSubtemasForConfig]
+  );
 
-  const filteredAvailableQuestions = useMemo(() => {
-    return baseQuestionsForWeek;
-  }, [baseQuestionsForWeek]);
+  const filteredAvailableQuestions = baseQuestionsForScope;
 
   const handleSliderChange = (count: number) => {
-    const ids = baseQuestionsForWeek.slice(0, count).map(q => q.id);
+    const ids = baseQuestionsForScope.slice(0, count).map(q => q.id);
     setSelectedQuestionIds(ids);
     setQuizConfig(prev => ({ ...prev, count }));
   };
@@ -320,12 +301,8 @@ export default function App() {
     });
   };
 
-  const handleToggleSubtheme = (st: string) => {
-    const subthemeQs = baseQuestionsForWeek.filter(q => {
-      if (!q.subtema) return false;
-      const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-      return normalizado === st;
-    });
+  const handleToggleSubtheme = (subtopicKey: string) => {
+    const subthemeQs = baseQuestionsForScope.filter(question => getConfigSubtopicKey(question) === subtopicKey);
     const subthemeQIds = subthemeQs.map(q => q.id);
     const anySelected = subthemeQs.some(q => selectedQuestionIds.includes(q.id));
     
@@ -385,6 +362,13 @@ export default function App() {
     setSelectedMateria('Repaso de Guardadas');
     setSelectedSemana(0);
     setSelectedTema('Preguntas Favoritas');
+    setQuizScope({
+      type: 'saved',
+      id: 'saved-questions',
+      label: 'Preguntas guardadas',
+      materia: 'Repaso de Guardadas',
+      sourceWeeks: Array.from(new Set(questions.map(question => question.semana))).sort((a, b) => a - b),
+    });
     setQuizConfig({ count: shuffled.length, mode: 'practice' });
     setView('quiz');
   };
@@ -422,32 +406,29 @@ export default function App() {
     return questionStatusMap.get(questionId) || 'unanswered';
   };
 
-  const handlePrepareQuiz = (materia: string, semana: number, tema: string, showSubthemes: boolean = true) => {
-    setSelectedMateria(materia);
-    setSelectedSemana(semana);
-    setSelectedTema(tema);
+  const handlePrepareScope = (scope: QuizScope, questions: Question[], showSubthemes: boolean = true) => {
+    setQuizScope(scope);
+    setScopeQuestionIds(questions.map(question => question.id));
+    setSelectedMateria(scope.materia);
+    setSelectedSemana(scope.semana ?? 0);
+    setSelectedTema(scope.label);
     setExpandedGroups([]);
     setShowSubthemesInConfig(showSubthemes);
-    
-    let filtered = allQuestions.filter(q => q.materia === materia && q.semana === semana);
-    const isCombinedTema = !tema || tema.includes(' • ') || tema === 'Todos los Temas';
-    if (!isCombinedTema) {
-      filtered = filtered.filter(q => getEffectiveTema(q) === tema);
-    }
-
-    const st = new Set<string>();
-    filtered.forEach(q => {
-      if (q.subtema) {
-        const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-        st.add(normalizado);
-      }
-    });
-    setSelectedSubtemas(Array.from(st));
-    
-    // Initialize selected question IDs and count
-    setSelectedQuestionIds(filtered.map(q => q.id));
-    setQuizConfig(prev => ({ ...prev, count: filtered.length }));
+    setSelectedQuestionIds(questions.map(question => question.id));
+    setQuizConfig(prev => ({ ...prev, count: questions.length }));
     setView('quiz-config');
+  };
+
+  const handlePrepareQuiz = (materia: string, semana: number, _tema: string, showSubthemes: boolean = true) => {
+    const filtered = allQuestions.filter(question => question.materia === materia && question.semana === semana);
+    handlePrepareScope({
+      type: 'week',
+      id: `week-${semana}`,
+      label: `Semana ${semana}: ${getWeekThemeTitle(materia, semana)}`,
+      materia,
+      semana,
+      sourceWeeks: [semana],
+    }, filtered, showSubthemes);
   };
 
   const handleQuickStartQuiz = (materia: string, semana: number) => {
@@ -456,6 +437,14 @@ export default function App() {
     setSelectedTema('Todos los Temas');
     
     const filtered = allQuestions.filter(q => q.materia === materia && q.semana === semana);
+    setQuizScope({
+      type: 'week',
+      id: `week-${semana}`,
+      label: `Semana ${semana}: ${getWeekThemeTitle(materia, semana)}`,
+      materia,
+      semana,
+      sourceWeeks: [semana],
+    });
     setQuestionsState(filtered);
     setAnswers([]);
     setQuizConfig({ count: filtered.length, mode: 'practice' });
@@ -466,7 +455,7 @@ export default function App() {
     const ordered = allQuestions.filter(q => selectedQuestionIds.includes(q.id));
     const questionsToRun = ordered.length > 0 
       ? ordered 
-      : allQuestions.filter(q => q.materia === selectedMateria && q.semana === selectedSemana);
+      : baseQuestionsForScope;
     setQuestionsState(questionsToRun);
     setAnswers([]);
     setView('quiz');
@@ -479,6 +468,7 @@ export default function App() {
     setSelectedMateria('Simulacro Aleatorio');
     setSelectedSemana(0);
     setSelectedTema('Mix General');
+    setQuizScope({ type: 'random', id: 'random-20', label: 'Simulacro aleatorio', materia: 'Todas las materias', sourceWeeks: Array.from(new Set(shuffled.map(question => question.semana))).sort((a, b) => a - b) });
     setQuizConfig({ count: 20, mode: 'exam' });
     setView('quiz');
   };
@@ -523,6 +513,13 @@ export default function App() {
       setSelectedMateria(`Repaso: ${materia}`);
       setSelectedSemana(selectedQs[0]?.semana || 0);
       setSelectedTema(subtemaQuery);
+      setQuizScope({
+        type: 'subtopic',
+        id: `reinforcement:${subtemaQuery}`,
+        label: `Refuerzo: ${subtemaQuery}`,
+        materia,
+        sourceWeeks: Array.from(new Set(selectedQs.map(question => question.semana))).sort((a, b) => a - b),
+      });
       setQuizConfig({ count: selectedQs.length, mode: 'practice' });
       setView('quiz');
     } catch (e) {
@@ -592,7 +589,7 @@ export default function App() {
       if (saved) {
         const parsed = JSON.parse(saved);
         const ansCount = parsed.answers ? Object.keys(parsed.answers).length : 0;
-        if (ansCount > 0 && parsed.questionIds && parsed.questionIds.length > 0) {
+        if ((ansCount > 0 || parsed.pendingOnly === true) && parsed.questionIds && parsed.questionIds.length > 0) {
           setPendingDraft({ ...parsed, answeredCount: ansCount, totalCount: parsed.questionIds.length });
           return;
         }
@@ -616,6 +613,23 @@ export default function App() {
       setSelectedMateria(pendingDraft.materia || '');
       setSelectedSemana(pendingDraft.semana || 0);
       setSelectedTema(pendingDraft.tema || '');
+      const restoredScope: QuizScope = pendingDraft.scopeType ? {
+        type: pendingDraft.scopeType,
+        id: pendingDraft.scopeId || `legacy-${pendingDraft.semana || 0}`,
+        label: pendingDraft.scopeLabel || pendingDraft.tema || 'Sesión guardada',
+        materia: pendingDraft.materia || questionsForDraft[0]?.materia || '',
+        semana: pendingDraft.semana || undefined,
+        sourceWeeks: pendingDraft.sourceWeeks || Array.from(new Set(questionsForDraft.map(question => question.semana))).sort((a, b) => a - b),
+      } : {
+        type: 'week',
+        id: `week-${pendingDraft.semana || questionsForDraft[0]?.semana || 0}`,
+        label: pendingDraft.tema || `Semana ${pendingDraft.semana || questionsForDraft[0]?.semana || 0}`,
+        materia: pendingDraft.materia || questionsForDraft[0]?.materia || '',
+        semana: pendingDraft.semana || questionsForDraft[0]?.semana || 0,
+        sourceWeeks: [pendingDraft.semana || questionsForDraft[0]?.semana || 0],
+      };
+      setQuizScope(restoredScope);
+      setScopeQuestionIds(questionsForDraft.map(question => question.id));
       setQuizConfig({ count: questionsForDraft.length, mode: pendingDraft.mode || 'exam' });
       setView('quiz');
     }
@@ -660,7 +674,8 @@ export default function App() {
     });
 
     try {
-      if (progressRecords.length > 0) {
+      // En práctica cada respuesta se guarda al contestarla; en examen se persiste al guardar/salir.
+      if (progressRecords.length > 0 && quizConfig.mode === 'exam') {
         await DataService.saveProgressBatch(progressRecords);
       }
       
@@ -670,7 +685,11 @@ export default function App() {
         total_questions: answeredQuestionIds.length,
         date: new Date(),
         semana: selectedSemana || 0,
-        materia: selectedMateria || 'Desconocida'
+        materia: selectedMateria || 'Desconocida',
+        scopeType: quizScope?.type,
+        scopeId: quizScope?.id,
+        scopeLabel: quizScope?.label,
+        sourceWeeks: quizScope?.sourceWeeks,
       });
 
       const [progressList, loadedSessions] = await Promise.all([
@@ -687,8 +706,36 @@ export default function App() {
   const handleSaveAndExitQuiz = async (answersMap: Record<string, number>, timeElapsed: number) => {
     setLoadingAction(true);
     await saveCurrentQuizProgress(answersMap, timeElapsed);
+    const answeredIds = new Set(Object.keys(answersMap));
+    const pendingQuestions = questionsState.filter(question => !answeredIds.has(question.id));
+    try {
+      if (pendingQuestions.length === 0) {
+        localStorage.removeItem('dr_active_quiz_draft');
+        setPendingDraft(null);
+      } else {
+        const pendingDraftData = {
+          answers: {},
+          pendingOnly: true,
+          timeElapsed: 0,
+          questionIds: pendingQuestions.map(question => question.id),
+          materia: quizScope?.materia || selectedMateria || pendingQuestions[0]?.materia || '',
+          semana: quizScope?.semana || selectedSemana || pendingQuestions[0]?.semana || 0,
+          tema: quizScope?.label || selectedTema || pendingQuestions[0]?.tema || '',
+          scopeType: quizScope?.type,
+          scopeId: quizScope?.id,
+          scopeLabel: quizScope?.label,
+          sourceWeeks: quizScope?.sourceWeeks || Array.from(new Set(pendingQuestions.map(question => question.semana))).sort((a, b) => a - b),
+          mode: quizConfig.mode,
+          updatedAt: Date.now(),
+        };
+        localStorage.setItem('dr_active_quiz_draft', JSON.stringify(pendingDraftData));
+        setScopeQuestionIds(pendingDraftData.questionIds);
+        setPendingDraft({ ...pendingDraftData, answeredCount: 0, totalCount: pendingQuestions.length });
+      }
+    } catch (error) {
+      console.error('Error reconstruyendo preguntas pendientes:', error);
+    }
     setLoadingAction(false);
-    checkPendingDraft();
     setView('simulator');
   };
 
@@ -718,7 +765,11 @@ export default function App() {
             total_questions: results.length,
             date: new Date(),
             semana: selectedSemana || 0,
-            materia: selectedMateria || 'Desconocida'
+            materia: selectedMateria || 'Desconocida',
+            scopeType: quizScope?.type,
+            scopeId: quizScope?.id,
+            scopeLabel: quizScope?.label,
+            sourceWeeks: quizScope?.sourceWeeks,
         });
 
         // Save individual progress records in batch ONLY in exam mode
@@ -763,8 +814,20 @@ export default function App() {
   const handleQuestionSelect = (questionId: string) => {
     const q = allQuestions.find(x => x.id === questionId);
     if (q) {
+      const classification = classifyQuestionForStudy(q);
       setQuestionsState([q]);
       setAnswers([]);
+      setSelectedMateria(q.materia);
+      setSelectedSemana(q.semana);
+      setSelectedTema(classification.subtopicLabel);
+      setQuizScope({
+        type: 'subtopic',
+        id: `question:${q.id}`,
+        label: classification.subtopicLabel,
+        materia: q.materia,
+        semana: q.semana,
+        sourceWeeks: [q.semana],
+      });
       setView('quiz');
     }
   };
@@ -841,14 +904,15 @@ export default function App() {
                       Sesión sin terminar
                     </span>
                     <span className="text-xs font-semibold text-gray-400">
-                      {pendingDraft.answeredCount} de {pendingDraft.totalCount} respondidas
+                      {pendingDraft.pendingOnly ? `${pendingDraft.totalCount} pendientes` : `${pendingDraft.answeredCount} de ${pendingDraft.totalCount} respondidas`}
                     </span>
                   </div>
                   <h4 className="font-extrabold text-white text-lg mt-1 font-manrope">
-                    {pendingDraft.tema || 'Simulacro en curso'}
+                    {pendingDraft.scopeLabel || pendingDraft.tema || 'Simulacro en curso'}
                   </h4>
                   <p className="text-xs text-gray-400 font-medium">
-                    {pendingDraft.materia} • Semana {pendingDraft.semana}
+                    {pendingDraft.materia}
+                    {(pendingDraft.scopeType || 'week') === 'week' && pendingDraft.semana ? ` • Semana ${pendingDraft.semana}` : ' • Selección por materia'}
                   </p>
                 </div>
               </div>
@@ -898,12 +962,12 @@ export default function App() {
                 <div className="text-center space-y-2">
                   <h2 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter font-manrope">Configurar Sesión</h2>
                     <p className="text-[#A0A0A0] font-semibold text-sm tracking-wide">
-                      {selectedMateria} • Semana {selectedSemana}
+                      {quizScope?.type === 'week' ? `${selectedMateria} • Semana ${selectedSemana}` : `${selectedMateria} • Selección por materia`}
                     </p>
                     <p className="text-primary font-extrabold text-xl tracking-tight">
-                      {getWeekThemeTitle(selectedMateria || "", selectedSemana || 0) || selectedTema}
+                      {quizScope?.label || getWeekThemeTitle(selectedMateria || "", selectedSemana || 0) || selectedTema}
                     </p>
-                    {getWeekThemeTitle(selectedMateria || "", selectedSemana || 0) && selectedTema && selectedTema !== 'Todos los Temas' && (
+                    {quizScope?.type === 'week' && getWeekThemeTitle(selectedMateria || "", selectedSemana || 0) && selectedTema && selectedTema !== 'Todos los Temas' && (
                       <p className="text-xs text-[#A0A0A0] font-medium">Tema de Estudio: {selectedTema}</p>
                     )}
                   </div>
@@ -1023,7 +1087,7 @@ export default function App() {
                             <button 
                               type="button"
                               onClick={() => {
-                                const allIds = baseQuestionsForWeek.map(q => q.id);
+                                const allIds = baseQuestionsForScope.map(q => q.id);
                                 setSelectedQuestionIds(allIds);
                                 setQuizConfig(config => ({ ...config, count: allIds.length }));
                               }}
@@ -1035,7 +1099,7 @@ export default function App() {
                             <button 
                               type="button"
                               onClick={() => {
-                                const pendingIds = baseQuestionsForWeek.filter(q => getLatestStatusForQuestion(q.id) === 'unanswered').map(q => q.id);
+                                const pendingIds = baseQuestionsForScope.filter(q => getLatestStatusForQuestion(q.id) === 'unanswered').map(q => q.id);
                                 setSelectedQuestionIds(pendingIds);
                                 setQuizConfig(config => ({ ...config, count: pendingIds.length }));
                               }}
@@ -1047,7 +1111,7 @@ export default function App() {
                             <button 
                               type="button"
                               onClick={() => {
-                                const incorrectIds = baseQuestionsForWeek.filter(q => getLatestStatusForQuestion(q.id) === 'incorrect').map(q => q.id);
+                                const incorrectIds = baseQuestionsForScope.filter(q => getLatestStatusForQuestion(q.id) === 'incorrect').map(q => q.id);
                                 setSelectedQuestionIds(incorrectIds);
                                 setQuizConfig(config => ({ ...config, count: incorrectIds.length }));
                               }}
@@ -1071,11 +1135,8 @@ export default function App() {
 
                         <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-primary/25 scrollbar-track-transparent pt-2">
                           {groupedSubtemasForConfig.map(({ group, subtemas }) => {
-                            const groupQs = baseQuestionsForWeek.filter(q => {
-                              if (!q.subtema) return false;
-                              const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-                              return subtemas.includes(normalizado);
-                            });
+                            const subtopicKeys = new Set(subtemas.map(subtema => subtema.key));
+                            const groupQs = baseQuestionsForScope.filter(question => subtopicKeys.has(getConfigSubtopicKey(question)));
                             const selectedGroupCount = groupQs.filter(q => selectedQuestionIds.includes(q.id)).length;
                             const totalGroupCount = groupQs.length;
                             const isGroupAllSelected = selectedGroupCount === totalGroupCount && totalGroupCount > 0;
@@ -1140,12 +1201,8 @@ export default function App() {
                                 {/* Nivel 2: Subtemas Jerárquicos Indentados */}
                                 {isGroupExpanded && (
                                   <div className="pl-4 ml-2 border-l border-white/10 space-y-1.5 pt-1 animate-in fade-in duration-200">
-                                    {subtemas.map(st => {
-                                      const subthemeQs = baseQuestionsForWeek.filter(q => {
-                                        if (!q.subtema) return false;
-                                        const { normalizado } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-                                        return normalizado === st;
-                                      });
+                                    {subtemas.map(subtema => {
+                                      const subthemeQs = baseQuestionsForScope.filter(question => getConfigSubtopicKey(question) === subtema.key);
                                       const selectedCount = subthemeQs.filter(q => selectedQuestionIds.includes(q.id)).length;
                                       const totalCount = subthemeQs.length;
                                       const isAllSelected = selectedCount === totalCount;
@@ -1153,8 +1210,8 @@ export default function App() {
 
                                       return (
                                         <div
-                                          key={st}
-                                          onClick={() => handleToggleSubtheme(st)}
+                                          key={subtema.key}
+                                          onClick={() => handleToggleSubtheme(subtema.key)}
                                           className={`p-3 rounded-lg transition-all cursor-pointer flex items-center justify-between text-xs border ${
                                             isAnySelected
                                               ? 'bg-primary/10 border-primary/30 text-white shadow-[0_0_12px_rgba(198,168,74,0.1)]'
@@ -1172,7 +1229,7 @@ export default function App() {
                                               className="w-3.5 h-3.5 rounded border-white/10 text-primary focus:ring-primary bg-transparent cursor-pointer"
                                             />
                                             <span className={`font-semibold ${isAnySelected ? 'text-primary' : ''}`}>
-                                              {st}
+                                              {subtema.label}
                                             </span>
                                           </div>
 
@@ -1232,6 +1289,33 @@ export default function App() {
                 </button>
               </div>
 
+              <div className="mb-6 flex items-center justify-between gap-4 border-b border-white/[0.08]">
+                <div className="flex items-center gap-1" role="tablist" aria-label="Organización del banco">
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={catalogView === 'weeks'}
+                    onClick={() => setCatalogView('weeks')}
+                    className={`px-4 py-3 text-xs font-bold border-b-2 transition-colors ${catalogView === 'weeks' ? 'border-primary text-primary' : 'border-transparent text-[#858585] hover:text-white'}`}
+                  >
+                    Por semanas
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={catalogView === 'subjects'}
+                    onClick={() => setCatalogView('subjects')}
+                    className={`px-4 py-3 text-xs font-bold border-b-2 transition-colors ${catalogView === 'subjects' ? 'border-primary text-primary' : 'border-transparent text-[#858585] hover:text-white'}`}
+                  >
+                    Por materias
+                  </button>
+                </div>
+                <p className="hidden sm:block text-[10px] text-[#777]">
+                  {catalogView === 'weeks' ? '16 semanas activas' : 'Materia, tema o subtema'}
+                </p>
+              </div>
+
+              {catalogView === 'weeks' ? (
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
                 {Object.entries(subjectsByMateria).map(([materia, semanas]) => (
                   <div key={materia} className="flex flex-col bg-[#121212]/50 backdrop-blur-md rounded-2xl border border-white/5 overflow-hidden shadow-2xl relative group transition-all duration-500 hover:border-primary/30 h-full">
@@ -1363,6 +1447,9 @@ export default function App() {
                   </div>
                 ))}
               </div>
+              ) : (
+                <SubjectCatalog questions={allQuestions} progress={userProgress || []} onPrepare={handlePrepareScope} />
+              )}
             </div>
           )}
 
@@ -1392,6 +1479,7 @@ export default function App() {
               onToggleBookmark={handleToggleBookmark}
               onAnswerImmediate={handleAnswerImmediate}
               progress={userProgress}
+              sessionScope={quizScope || undefined}
             />
           )}
 
@@ -1405,6 +1493,7 @@ export default function App() {
               savedQuestionIds={savedQuestionIds}
               onToggleBookmark={handleToggleBookmark}
               progress={userProgress}
+              sessionScope={quizScope || undefined}
             />
           )}
         </main>

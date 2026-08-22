@@ -24,6 +24,17 @@ export interface AnswerRecord {
   timeTakenSeconds: number;
 }
 
+export type QuizScopeType = 'week' | 'subject' | 'topic' | 'subtopic' | 'random' | 'saved';
+
+export interface QuizScope {
+  type: QuizScopeType;
+  id: string;
+  label: string;
+  materia: string;
+  semana?: number;
+  sourceWeeks: number[];
+}
+
 // --- New Models ---
 
 export interface FirebaseUser {
@@ -67,6 +78,10 @@ export interface Session {
   date: Date;
   semana: number;
   materia: string;
+  scopeType?: QuizScopeType;
+  scopeId?: string;
+  scopeLabel?: string;
+  sourceWeeks?: number[];
 }
 
 export interface QuestionBookmark {

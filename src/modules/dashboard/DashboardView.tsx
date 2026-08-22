@@ -201,7 +201,7 @@ export function DashboardView({
               Panel de rendimiento
             </h1>
             <p className="mt-1 text-[10px] text-[#77766F]">
-              {currentDateLabel}{pendingDraft?.semana ? ` · Semana ${pendingDraft.semana} activa` : ''}
+              {currentDateLabel}{pendingDraft ? ` · ${pendingDraft.scopeType === 'week' || !pendingDraft.scopeType ? `Semana ${pendingDraft.semana} activa` : 'Sesión temática activa'}` : ''}
             </p>
           </div>
           <button
@@ -217,13 +217,13 @@ export function DashboardView({
           <div className="flex flex-col gap-4 rounded-lg border border-[#2A281F] bg-[#12120F] p-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="border-l-[3px] border-primary pl-4">
               <p className="text-[10px] font-medium text-[#8F8D84]">
-                Sesión sin terminar · {pendingDraft.answeredCount} de {pendingDraft.totalCount} respondidas
+                Sesión sin terminar · {pendingDraft.pendingOnly ? `${pendingDraft.totalCount} pendientes` : `${pendingDraft.answeredCount} de ${pendingDraft.totalCount} respondidas`}
               </p>
               <h2 className="mt-1 text-sm font-semibold text-[#F4F2EC] md:text-base">
-                {pendingDraft.tema || 'Simulacro en curso'}
+                {pendingDraft.scopeLabel || pendingDraft.tema || 'Simulacro en curso'}
               </h2>
               <p className="mt-1 text-[10px] text-[#77766F]">
-                {pendingDraft.materia} · Semana {pendingDraft.semana}
+                {pendingDraft.materia}{pendingDraft.scopeType === 'week' || !pendingDraft.scopeType ? ` · Semana ${pendingDraft.semana}` : ' · Selección por materia'}
               </p>
             </div>
             <div className="flex gap-2">

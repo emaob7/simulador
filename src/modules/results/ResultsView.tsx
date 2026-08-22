@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
-import { Question, AnswerRecord, UserProgress } from '../../types';
+import { Question, AnswerRecord, UserProgress, QuizScope } from '../../types';
 import { Button } from '../../components/ui/Button';
 import { CheckCircle2, XCircle, Lightbulb, BookOpen, Clock, Activity, Bookmark } from 'lucide-react';
 import { DataService } from '../../services/DataService';
@@ -16,6 +16,7 @@ interface ResultsViewProps {
   savedQuestionIds?: string[];
   onToggleBookmark?: (questionId: string) => void;
   progress?: UserProgress[];
+  sessionScope?: QuizScope;
 }
 
 export function ResultsView({ 
@@ -26,7 +27,8 @@ export function ResultsView({
   userId,
   savedQuestionIds = [],
   onToggleBookmark,
-  progress
+  progress,
+  sessionScope,
 }: ResultsViewProps) {
   const totalQuestions = answers.length;
   const correctAnswers = answers.filter(a => a.isCorrect).length;
@@ -111,7 +113,7 @@ export function ResultsView({
               {correctAnswers} de {totalQuestions} Correctas
             </h1>
             <p className="text-[#A0A0A0] text-xs font-semibold mt-1">
-              Simulación de examen CONAREM completada.
+              {sessionScope ? `${sessionScope.materia} · ${sessionScope.label}` : 'Simulación de examen CONAREM completada.'}
             </p>
           </div>
         </div>

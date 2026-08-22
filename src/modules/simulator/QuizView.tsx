@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Markdown from 'react-markdown';
-import { Question, AnswerRecord } from '../../types';
+import { Question, AnswerRecord, QuizScope } from '../../types';
 import { Button } from '../../components/ui/Button';
 import { 
   Clock, 
@@ -25,7 +25,7 @@ interface QuizViewProps {
   questions: Question[];
   onComplete: (answers: AnswerRecord[]) => void;
   onSaveAndExit?: (answersMap: Record<string, number>, timeElapsed: number) => void;
-  onQuickSave?: (answersMap: Record<string, number>, timeElapsed: number) => Promise<boolean> | void;
+  onQuickSave?: (answersMap: Record<string, number>, timeElapsed: number) => Promise<void> | void;
   onCancel?: () => void;
   mode?: 'practice' | 'exam';
   savedQuestionIds?: string[];
@@ -35,6 +35,7 @@ interface QuizViewProps {
   initialTimeElapsed?: number;
   draftKey?: string;
   progress?: any[];
+  sessionScope?: QuizScope;
 }
 
 export function QuizView({ 
@@ -50,7 +51,8 @@ export function QuizView({
   initialAnswers = {},
   initialTimeElapsed = 0,
   draftKey = 'dr_active_quiz_draft',
-  progress = []
+  progress = [],
+  sessionScope,
 }: QuizViewProps) {
   const [answers, setAnswers] = useState<Record<string, number>>(() => {
     if (Object.keys(initialAnswers).length > 0) return initialAnswers;
@@ -100,13 +102,25 @@ export function QuizView({
   useEffect(() => {
     if (isSubmitted) return;
     try {
+      const questionIds = questions.map(q => q.id);
+      let keepPendingOnly = false;
+      const existingDraft = localStorage.getItem(draftKey);
+      if (existingDraft && Object.keys(answers).length === 0) {
+        const parsed = JSON.parse(existingDraft);
+        keepPendingOnly = parsed.pendingOnly === true && JSON.stringify(parsed.questionIds || []) === JSON.stringify(questionIds);
+      }
       const draftData = {
         answers,
+        pendingOnly: keepPendingOnly,
         timeElapsed,
-        questionIds: questions.map(q => q.id),
-        materia: questions[0]?.materia || '',
-        semana: questions[0]?.semana || 0,
-        tema: questions[0]?.tema || '',
+        questionIds,
+        materia: sessionScope?.materia || questions[0]?.materia || '',
+        semana: sessionScope?.semana || questions[0]?.semana || 0,
+        tema: sessionScope?.label || questions[0]?.tema || '',
+        scopeType: sessionScope?.type,
+        scopeId: sessionScope?.id,
+        scopeLabel: sessionScope?.label,
+        sourceWeeks: sessionScope?.sourceWeeks,
         mode,
         updatedAt: Date.now()
       };
@@ -114,7 +128,7 @@ export function QuizView({
     } catch (e) {
       console.error("Error guardando draft:", e);
     }
-  }, [answers, timeElapsed, isSubmitted, questions, mode, draftKey]);
+  }, [answers, timeElapsed, isSubmitted, questions, mode, draftKey, sessionScope]);
 
   useEffect(() => {
     if (isSubmitted) return;
@@ -175,7 +189,7 @@ export function QuizView({
       setActiveQuestionIdx(qIndex);
     }
 
-    if (onAnswerImmediate) {
+    if (mode === 'practice' && onAnswerImmediate) {
       const q = questions.find(x => x.id === questionId);
       if (q) {
         const isCorrect = optionIndex === q.correctOptionIndex;
@@ -267,8 +281,13 @@ export function QuizView({
 
   const currentQ = questions[activeQuestionIdx] || questions[0];
   const subInfo = currentQ ? analyzeSubtema(currentQ.subtema, currentQ.materia, currentQ.semana, currentQ.text, currentQ.id) : { grupo: '', normalizado: '' };
-  const materia = questions[0]?.materia || '';
-  const semana = questions[0]?.semana || '';
+  const materia = sessionScope?.materia || questions[0]?.materia || '';
+  const semana = sessionScope?.semana || questions[0]?.semana || '';
+  const contextLabel = sessionScope?.type === 'week'
+    ? `${materia} • Semana ${semana}`
+    : sessionScope?.label
+      ? `${materia} • ${sessionScope.label}`
+      : `${materia} • Semana ${semana}`;
 
   return (
     <div className="max-w-4xl mx-auto pb-20 relative">
@@ -308,7 +327,7 @@ export function QuizView({
                     ¿Guardar progreso y salir?
                   </h3>
                   <p className="text-xs text-gray-400 font-medium">
-                    {materia} • Semana {semana}
+                    {contextLabel}
                   </p>
                 </div>
               </div>
@@ -354,7 +373,7 @@ export function QuizView({
           {/* Left: Info y Progreso */}
           <div className="min-w-0 flex-grow flex items-center gap-2 md:gap-3 flex-wrap">
             <span className="text-[10px] font-bold text-[#A0A0A0] uppercase tracking-wider whitespace-nowrap">
-              Semana {semana} / {materia}
+              {contextLabel}
             </span>
             <span className="text-[#A0A0A0] text-[10px]">•</span>
             <span className="text-[10px] md:text-xs font-semibold text-white truncate max-w-[200px] sm:max-w-[300px]">
