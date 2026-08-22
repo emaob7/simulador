@@ -8,7 +8,7 @@ import {
   Flame
 } from 'lucide-react';
 import { Question } from '../../types';
-import { analyzeSubtema } from '../../utils/normalizer';
+import { classifyQuestionForStudy } from '../../utils/studyCatalog';
 
 const MATERIAS = ['Pediatría', 'Medicina Interna', 'Cirugía', 'Ginecología y Obstetricia'] as const;
 type Materia = typeof MATERIAS[number];
@@ -107,13 +107,7 @@ export function DashboardView({
       const question = allQuestions.find(candidate => candidate.id === item.question_id);
       if (!question || normalizeMateriaName(question.materia) !== selectedMateria) return;
 
-      const normalized = analyzeSubtema(
-        question.subtema,
-        question.materia,
-        question.semana,
-        question.text,
-        question.id
-      ).normalizado || question.subtema || 'General';
+      const normalized = classifyQuestionForStudy(question).subtopicLabel;
 
       if (!map[normalized]) {
         map[normalized] = {

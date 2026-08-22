@@ -333,16 +333,16 @@ export default function App() {
   const handleAnswerImmediate = (questionId: string, isCorrect: boolean, timeSpent: number) => {
     if (!user) return;
     const question = allQuestions.find(q => q.id === questionId);
-    const subInfo = analyzeSubtema(question?.subtema, question?.materia, question?.semana, question?.text, question?.id);
+    const classification = question ? classifyQuestionForStudy(question) : null;
     
     const newRecord = {
       user_id: user.uid,
       question_id: questionId,
       is_correct: isCorrect,
       time_spent: timeSpent,
-      tema: question?.tema || 'Desconocido',
-      subtema: subInfo.normalizado,
-      subtema_grupo: subInfo.grupo,
+      tema: classification?.topicLabel || question?.tema || 'Desconocido',
+      subtema: classification?.subtopicLabel || question?.subtema || 'Desconocido',
+      subtema_grupo: classification?.topicLabel || question?.tema || 'Desconocido',
       materia: question?.materia || 'Pediatría',
       date: new Date()
     };
@@ -479,8 +479,8 @@ export default function App() {
       // 1. Find all questions matching the subtopic normalized name
       const matchingQuestions = allQuestions.filter(q => {
         if (q.materia !== materia) return false;
-        const { normalizado, grupo } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-        return normalizado === subtemaQuery || grupo === subtemaQuery || q.tema === subtemaQuery;
+        const classification = classifyQuestionForStudy(q);
+        return classification.subtopicLabel === subtemaQuery || classification.topicLabel === subtemaQuery;
       });
 
       // 2. Prioritize failed question IDs
@@ -658,16 +658,16 @@ export default function App() {
       const selectedIndex = answersMap[qId];
       const isCorrect = q ? selectedIndex === q.correctOptionIndex : false;
       if (isCorrect) correctCount++;
-      const subInfo = analyzeSubtema(q?.subtema, q?.materia, q?.semana, q?.text, q?.id);
+      const classification = q ? classifyQuestionForStudy(q) : null;
 
       progressRecords.push({
         user_id: user.uid,
         question_id: qId,
         is_correct: isCorrect,
         time_spent: avgTime,
-        tema: q?.tema || 'Desconocido',
-        subtema: subInfo.normalizado,
-        subtema_grupo: subInfo.grupo,
+        tema: classification?.topicLabel || q?.tema || 'Desconocido',
+        subtema: classification?.subtopicLabel || q?.subtema || 'Desconocido',
+        subtema_grupo: classification?.topicLabel || q?.tema || 'Desconocido',
         materia: q?.materia || 'Pediatría',
         date: new Date()
       });
@@ -776,15 +776,15 @@ export default function App() {
         if (quizConfig.mode === 'exam') {
           const progressRecords = results.map(result => {
             const question = allQuestions.find(q => q.id === result.questionId);
-            const subInfo = analyzeSubtema(question?.subtema, question?.materia, question?.semana, question?.text, question?.id);
+            const classification = question ? classifyQuestionForStudy(question) : null;
             return {
               user_id: user.uid, 
               question_id: result.questionId,
               is_correct: result.isCorrect,
               time_spent: result.timeTakenSeconds,
-              tema: question?.tema || 'Desconocido',
-              subtema: subInfo.normalizado,
-              subtema_grupo: subInfo.grupo,
+              tema: classification?.topicLabel || question?.tema || 'Desconocido',
+              subtema: classification?.subtopicLabel || question?.subtema || 'Desconocido',
+              subtema_grupo: classification?.topicLabel || question?.tema || 'Desconocido',
               materia: question?.materia || 'Pediatría',
               date: new Date()
             };
