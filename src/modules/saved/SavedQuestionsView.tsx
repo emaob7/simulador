@@ -1,29 +1,19 @@
-import React, { useState, useMemo } from 'react';
-import { 
-  Bookmark, 
-  Trash2, 
-  Play, 
-  Search, 
-  Layers, 
-  Flame, 
-  Target, 
-  Sparkles, 
-  ChevronRight, 
+import { useMemo, useState } from 'react';
+import {
   ArrowLeft,
-  BookOpen
+  Bookmark,
+  BookOpen,
+  ChevronRight,
+  Play,
+  Search,
+  Trash2,
+  X
 } from 'lucide-react';
 import { Question } from '../../types';
 import { analyzeSubtema } from '../../utils/normalizer';
 
 const MATERIAS = ['Todas', 'Pediatría', 'Medicina Interna', 'Cirugía', 'Ginecología y Obstetricia'] as const;
 type MateriaFilter = typeof MATERIAS[number];
-
-const MATERIA_ICONS: Record<string, React.ReactNode> = {
-  'Pediatría': <Layers className="w-4 h-4 text-sky-400" />,
-  'Medicina Interna': <Flame className="w-4 h-4 text-amber-400" />,
-  'Cirugía': <Target className="w-4 h-4 text-emerald-400" />,
-  'Ginecología y Obstetricia': <Sparkles className="w-4 h-4 text-pink-400" />,
-};
 
 interface SavedQuestionsViewProps {
   allQuestions: Question[];
@@ -45,233 +35,266 @@ export function SavedQuestionsView({
   const [selectedMateria, setSelectedMateria] = useState<MateriaFilter>('Todas');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // 1. Obtener todas las preguntas guardadas
   const savedQuestions = useMemo(() => {
-    return allQuestions.filter(q => savedQuestionIds.includes(q.id));
+    const savedIds = new Set(savedQuestionIds);
+    return allQuestions.filter(question => savedIds.has(question.id));
   }, [allQuestions, savedQuestionIds]);
 
-  // 2. Conteo por materias
   const materiaCounts = useMemo(() => {
-    const counts: Record<string, number> = {
-      'Todas': savedQuestions.length,
-      'Pediatría': 0,
+    const counts: Record<MateriaFilter, number> = {
+      Todas: savedQuestions.length,
+      Pediatría: 0,
       'Medicina Interna': 0,
-      'Cirugía': 0,
+      Cirugía: 0,
       'Ginecología y Obstetricia': 0
     };
 
-    savedQuestions.forEach(q => {
-      const m = q.materia;
-      if (counts[m] !== undefined) {
-        counts[m]++;
-      }
+    savedQuestions.forEach(question => {
+      counts[question.materia] += 1;
     });
 
     return counts;
   }, [savedQuestions]);
 
-  // 3. Filtrar por materia y búsqueda
   const filteredQuestions = useMemo(() => {
-    return savedQuestions.filter(q => {
-      const matchesMateria = selectedMateria === 'Todas' || q.materia === selectedMateria;
-      const matchesSearch = !searchQuery.trim() || 
-        q.text.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (q.subtema && q.subtema.toLowerCase().includes(searchQuery.toLowerCase())) ||
-        (q.tema && q.tema.toLowerCase().includes(searchQuery.toLowerCase()));
+    const query = searchQuery.trim().toLocaleLowerCase('es');
+
+    return savedQuestions.filter(question => {
+      const matchesMateria = selectedMateria === 'Todas' || question.materia === selectedMateria;
+      const matchesSearch = !query || [question.text, question.tema, question.subtema]
+        .some(value => value?.toLocaleLowerCase('es').includes(query));
 
       return matchesMateria && matchesSearch;
     });
   }, [savedQuestions, selectedMateria, searchQuery]);
 
+  const activeSubjectCount = MATERIAS
+    .slice(1)
+    .filter(materia => materiaCounts[materia] > 0)
+    .length;
+
+  const hasSearch = searchQuery.trim().length > 0;
+
   const handleStartFilteredQuiz = () => {
-    if (filteredQuestions.length === 0) return;
-    onStartQuizWithQuestions(filteredQuestions);
+    if (filteredQuestions.length > 0) onStartQuizWithQuestions(filteredQuestions);
   };
 
   return (
-    <div className="max-w-6xl mx-auto space-y-8 animate-in fade-in duration-300 pb-16">
-      
-      {/* 1. HEADER CON ACCIONES */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-[#121212]/70 backdrop-blur-md p-6 md:p-8 rounded-3xl border border-white/5 shadow-2xl relative overflow-hidden">
-        <div className="space-y-2 relative z-10">
-          <div className="flex items-center gap-3">
-            <button
-              onClick={onBackToSimulator}
-              className="p-2 rounded-xl bg-[#2E2E2E] hover:bg-[#2E2E2E]/80 border border-[#424242] text-[#A6A6A6] hover:text-white transition-all cursor-pointer shadow-sm"
-              title="Volver"
-            >
-              <ArrowLeft className="w-4 h-4" />
-            </button>
-            <div className="flex items-center gap-2">
-              <div className="p-2 rounded-xl bg-[#C6A84A]/20 border border-[#C6A84A]/30 text-[#E0AF26]">
-                <Bookmark className="w-5 h-5 fill-current" />
-              </div>
-              <h1 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white font-manrope">
-                Preguntas Guardadas
-              </h1>
-            </div>
-          </div>
-          <p className="text-xs md:text-sm text-[#A6A6A6] max-w-xl font-medium pl-11">
-            Tienes <strong className="text-[#E0AF26]">{savedQuestions.length}</strong> preguntas marcadas como favoritas para entrenamiento focalizado.
-          </p>
-        </div>
+    <div className="mx-auto max-w-6xl animate-in fade-in duration-300 pb-16">
+      <header className="mb-6 border-b border-[#282722] pb-6">
+        <button
+          type="button"
+          onClick={onBackToSimulator}
+          className="mb-5 inline-flex cursor-pointer items-center gap-2 text-xs font-semibold text-[#8D8B82] transition-colors hover:text-[#D4B342]"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Volver al simulador
+        </button>
 
-        {savedQuestions.length > 0 && (
-          <button
-            onClick={handleStartFilteredQuiz}
-            disabled={filteredQuestions.length === 0}
-            className="relative z-10 px-6 py-3.5 bg-primary text-[#0A0A0A] font-black rounded-xl uppercase tracking-wider text-xs hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_25px_rgba(198,168,74,0.3)] hover:shadow-[0_0_35px_rgba(198,168,74,0.5)] flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
-          >
-            <Play className="w-4 h-4 fill-current" />
-            <span>
-              {selectedMateria === 'Todas' 
-                ? `Repasar Todas (${filteredQuestions.length})` 
-                : `Repasar ${selectedMateria} (${filteredQuestions.length})`}
-            </span>
-          </button>
-        )}
-      </div>
-
-      {/* 2. PESTAÑAS DE MATERIAS Y BUSCADOR */}
-      <div className="space-y-4">
-        {/* Selector de Materias */}
-        <div className="flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none">
-          {MATERIAS.map(materia => {
-            const isSelected = selectedMateria === materia;
-            const count = materiaCounts[materia] || 0;
-            const icon = MATERIA_ICONS[materia];
-
-            return (
-              <button
-                key={materia}
-                onClick={() => setSelectedMateria(materia)}
-                className={`px-4 py-2.5 rounded-2xl font-bold text-xs flex items-center gap-2.5 transition-all duration-200 cursor-pointer shrink-0 border ${
-                  isSelected
-                    ? 'bg-[#2E2E2E] text-[#E0AF26] border-[#C6A84A] shadow-[0_0_20px_rgba(198,168,74,0.2)] ring-1 ring-[#C6A84A]/50'
-                    : 'bg-[#1C1C1C] text-[#A6A6A6] border-[#424242]/50 hover:border-[#C6A84A]/40 hover:text-white'
-                }`}
-              >
-                {icon}
-                <span>{materia}</span>
-                <span className={`px-2 py-0.5 rounded-lg text-[10px] font-black ${
-                  isSelected 
-                    ? 'bg-[#C6A84A]/25 text-[#E0AF26] border border-[#C6A84A]/30' 
-                    : count > 0 ? 'bg-white/10 text-white' : 'bg-white/5 text-[#A6A6A6]'
-                }`}>
-                  {count}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Buscador de preguntas guardadas */}
-        {savedQuestions.length > 0 && (
-          <div className="relative">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar por texto, subtema o diagnóstico en tus preguntas guardadas..."
-              className="w-full bg-[#1C1C1C] border border-[#424242] focus:border-[#C6A84A] focus:ring-1 focus:ring-[#C6A84A] text-xs md:text-sm py-3 pl-10 pr-4 rounded-2xl text-white placeholder:text-[#A6A6A6] transition-all outline-none"
-            />
-            <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-[#A6A6A6] pointer-events-none" />
-          </div>
-        )}
-      </div>
-
-      {/* 3. LISTADO DE PREGUNTAS GUARDADAS */}
-      {filteredQuestions.length > 0 ? (
-        <div className="space-y-4">
-          <div className="flex items-center justify-between text-xs text-[#A6A6A6] px-1 font-semibold">
-            <span>Mostrando {filteredQuestions.length} {filteredQuestions.length === 1 ? 'pregunta' : 'preguntas'}</span>
-            <span>Especialidad: <strong className="text-[#E0AF26]">{selectedMateria}</strong></span>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4">
-            {filteredQuestions.map((q) => {
-              const subInfo = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-
-              return (
-                <div
-                  key={q.id}
-                  className="bg-[#1C1C1C]/90 hover:bg-[#1E1E1E] border border-[#424242]/60 hover:border-[#C6A84A]/40 rounded-2xl p-5 md:p-6 transition-all duration-200 shadow-md flex flex-col justify-between gap-4 group"
-                >
-                  <div className="space-y-2">
-                    {/* Metadatos superiores */}
-                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/5 pb-2.5">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="px-2.5 py-0.5 bg-[#C6A84A]/15 border border-[#C6A84A]/30 rounded-lg text-[10px] font-black uppercase tracking-wider text-[#E0AF26]">
-                          {q.materia} • Semana {q.semana}
-                        </span>
-                        <span className="text-[11px] text-[#A6A6A6] font-semibold">
-                          {subInfo.normalizado || q.subtema}
-                        </span>
-                      </div>
-
-                      <span className="text-[10px] text-[#A6A6A6]/60 font-mono">
-                        ID: {q.id}
-                      </span>
-                    </div>
-
-                    {/* Enunciado */}
-                    <p className="text-sm md:text-base font-semibold text-white leading-relaxed py-1">
-                      {q.text}
-                    </p>
-                  </div>
-
-                  {/* Acciones de la tarjeta */}
-                  <div className="flex items-center justify-between gap-3 pt-2.5 border-t border-white/5">
-                    <button
-                      onClick={() => onToggleBookmark(q.id)}
-                      className="px-3 py-1.5 rounded-xl bg-rose-950/20 hover:bg-rose-950/40 border border-rose-500/30 text-rose-300 hover:text-rose-200 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer"
-                      title="Quitar de guardadas"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                      <span>Quitar</span>
-                    </button>
-
-                    <button
-                      onClick={() => onQuestionSelect(q.id)}
-                      className="px-4 py-2 rounded-xl bg-primary text-black font-extrabold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-[1.02] active:scale-95"
-                    >
-                      <span>Practicar esta pregunta</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      ) : (
-        /* Estado vacío */
-        <div className="text-center py-16 px-6 bg-[#121212]/50 rounded-3xl border border-white/5 space-y-4">
-          <div className="w-16 h-16 rounded-3xl bg-[#1C1C1C] border border-[#424242] text-[#E0AF26] flex items-center justify-center mx-auto shadow-inner">
-            <Bookmark className="w-8 h-8 opacity-40" />
-          </div>
-          <div className="space-y-1">
-            <h3 className="text-lg font-bold text-white">
-              {savedQuestions.length === 0 
-                ? 'No tienes preguntas guardadas aún' 
-                : `No hay preguntas guardadas en ${selectedMateria}`}
-            </h3>
-            <p className="text-xs text-[#A6A6A6] max-w-md mx-auto leading-relaxed">
-              {savedQuestions.length === 0 
-                ? 'Haz clic en el icono de marcador (marcapáginas) durante cualquier simulacro o revisión para guardar preguntas y repasarlas aquí.' 
-                : 'Selecciona otra materia arriba para ver tus otras preguntas guardadas.'}
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#B99A35]">
+              Biblioteca personal
+            </p>
+            <h1 className="text-2xl font-bold tracking-tight text-[#F2F0E9] sm:text-3xl">
+              Preguntas guardadas
+            </h1>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#8D8B82]">
+              Revisa las preguntas que marcaste durante tus entrenamientos y vuelve a practicarlas cuando quieras.
             </p>
           </div>
-          <button
-            onClick={onBackToSimulator}
-            className="mt-4 px-6 py-3 bg-[#2E2E2E] hover:bg-[#2E2E2E]/80 border border-[#C6A84A]/40 text-[#E0AF26] font-bold text-xs uppercase tracking-wider rounded-xl transition-all cursor-pointer inline-flex items-center gap-2 shadow-sm"
-          >
-            <BookOpen className="w-4 h-4" />
-            <span>Ir al Simulador</span>
-          </button>
-        </div>
-      )}
 
+          {savedQuestions.length > 0 && (
+            <button
+              type="button"
+              onClick={handleStartFilteredQuiz}
+              disabled={filteredQuestions.length === 0}
+              className="inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#D4B342] px-5 text-xs font-bold text-[#11110F] transition-colors hover:bg-[#E0C158] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              <Play className="h-3.5 w-3.5 fill-current" />
+              Repasar selección ({filteredQuestions.length})
+            </button>
+          )}
+        </div>
+      </header>
+
+      {savedQuestions.length > 0 ? (
+        <section className="overflow-hidden rounded-xl border border-[#282722] bg-[#121210]">
+          <div className="grid grid-cols-3 border-b border-[#282722] bg-[#151512]">
+            <div className="px-4 py-4 sm:px-6">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-[#77756D]">Guardadas</p>
+              <p className="mt-1 text-xl font-semibold text-[#F2F0E9]">{savedQuestions.length}</p>
+            </div>
+            <div className="border-x border-[#282722] px-4 py-4 sm:px-6">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-[#77756D]">En la vista</p>
+              <p className="mt-1 text-xl font-semibold text-[#F2F0E9]">{filteredQuestions.length}</p>
+            </div>
+            <div className="px-4 py-4 sm:px-6">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-[#77756D]">Materias</p>
+              <p className="mt-1 text-xl font-semibold text-[#F2F0E9]">{activeSubjectCount}</p>
+            </div>
+          </div>
+
+          <div className="border-b border-[#282722] px-4 pt-4 sm:px-6">
+            <div className="flex gap-6 overflow-x-auto scrollbar-none" role="tablist" aria-label="Filtrar por materia">
+              {MATERIAS.map(materia => {
+                const isSelected = selectedMateria === materia;
+
+                return (
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={isSelected}
+                    key={materia}
+                    onClick={() => setSelectedMateria(materia)}
+                    className={`relative flex shrink-0 cursor-pointer items-center gap-2 pb-3 text-xs font-semibold transition-colors ${
+                      isSelected ? 'text-[#E1C35A]' : 'text-[#85837B] hover:text-[#D5D2C8]'
+                    }`}
+                  >
+                    {materia}
+                    <span className={isSelected ? 'text-[#E1C35A]' : 'text-[#66645E]'}>
+                      {materiaCounts[materia]}
+                    </span>
+                    {isSelected && <span className="absolute inset-x-0 bottom-0 h-0.5 bg-[#D4B342]" />}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="border-b border-[#282722] p-4 sm:p-6">
+            <label className="relative block">
+              <span className="sr-only">Buscar entre las preguntas guardadas</span>
+              <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#77756D]" />
+              <input
+                type="search"
+                value={searchQuery}
+                onChange={event => setSearchQuery(event.target.value)}
+                placeholder="Buscar por enunciado, tema o subtema"
+                className="h-11 w-full rounded-lg border border-[#302F2A] bg-[#0E0E0C] pl-10 pr-10 text-sm text-[#EEECE5] outline-none transition-colors placeholder:text-[#67655F] focus:border-[#8F792E]"
+              />
+              {hasSearch && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer p-1 text-[#77756D] transition-colors hover:text-[#EEECE5]"
+                  title="Limpiar búsqueda"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+            </label>
+          </div>
+
+          <div className="flex items-center justify-between border-b border-[#282722] px-4 py-3 sm:px-6">
+            <h2 className="text-xs font-semibold text-[#D5D2C8]">Lista de repaso</h2>
+            <span className="text-[11px] text-[#77756D]">
+              {selectedMateria === 'Todas' ? 'Todas las materias' : selectedMateria}
+            </span>
+          </div>
+
+          {filteredQuestions.length > 0 ? (
+            <ol>
+              {filteredQuestions.map((question, index) => {
+                const subtopic = analyzeSubtema(
+                  question.subtema,
+                  question.materia,
+                  question.semana,
+                  question.text,
+                  question.id
+                ).normalizado || question.subtema;
+
+                return (
+                  <li
+                    key={question.id}
+                    className="group border-b border-[#24231F] last:border-b-0 hover:bg-[#161613]"
+                  >
+                    <div className="grid gap-4 px-4 py-5 sm:grid-cols-[32px_minmax(0,1fr)_auto] sm:px-6">
+                      <div className="hidden h-8 w-8 items-center justify-center rounded-md border border-[#343229] bg-[#191813] text-[11px] font-semibold text-[#A58C37] sm:flex">
+                        {String(index + 1).padStart(2, '0')}
+                      </div>
+
+                      <div className="min-w-0">
+                        <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-semibold uppercase tracking-wide">
+                          <span className="text-[#B99A35]">{question.materia}</span>
+                          <span className="text-[#4F4E49]">/</span>
+                          <span className="text-[#77756D]">Semana {question.semana}</span>
+                          {subtopic && (
+                            <>
+                              <span className="text-[#4F4E49]">/</span>
+                              <span className="normal-case tracking-normal text-[#85837B]">{subtopic}</span>
+                            </>
+                          )}
+                        </div>
+
+                        <p className="line-clamp-3 text-sm font-medium leading-6 text-[#E7E4DB] sm:text-[15px]">
+                          {question.text}
+                        </p>
+                      </div>
+
+                      <div className="flex items-center justify-end gap-2 sm:self-center">
+                        <button
+                          type="button"
+                          onClick={() => onToggleBookmark(question.id)}
+                          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border border-[#34312D] text-[#8D817B] transition-colors hover:border-[#70423D] hover:bg-[#251715] hover:text-[#D89086]"
+                          title="Quitar de guardadas"
+                          aria-label="Quitar de guardadas"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => onQuestionSelect(question.id)}
+                          className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-md border border-[#474334] bg-[#1C1B16] px-3 text-xs font-semibold text-[#D9C166] transition-colors hover:border-[#8F792E] hover:bg-[#211F17]"
+                        >
+                          Abrir pregunta
+                          <ChevronRight className="h-3.5 w-3.5" />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                );
+              })}
+            </ol>
+          ) : (
+            <div className="px-6 py-14 text-center">
+              <Search className="mx-auto h-6 w-6 text-[#68665F]" />
+              <h3 className="mt-4 text-sm font-semibold text-[#E7E4DB]">No encontramos coincidencias</h3>
+              <p className="mx-auto mt-2 max-w-sm text-xs leading-5 text-[#77756D]">
+                Prueba con otro término o selecciona una materia diferente.
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  setSearchQuery('');
+                  setSelectedMateria('Todas');
+                }}
+                className="mt-5 cursor-pointer text-xs font-semibold text-[#C5A640] hover:text-[#E1C35A]"
+              >
+                Limpiar filtros
+              </button>
+            </div>
+          )}
+        </section>
+      ) : (
+        <section className="rounded-xl border border-[#282722] bg-[#121210] px-6 py-16 text-center">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg border border-[#343229] bg-[#181713] text-[#AD9237]">
+            <Bookmark className="h-5 w-5" />
+          </div>
+          <h2 className="mt-5 text-base font-semibold text-[#F2F0E9]">Tu biblioteca está vacía</h2>
+          <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-[#85837B]">
+            Guarda las preguntas que quieras volver a estudiar usando el marcador durante un entrenamiento.
+          </p>
+          <button
+            type="button"
+            onClick={onBackToSimulator}
+            className="mt-6 inline-flex min-h-10 cursor-pointer items-center gap-2 rounded-lg bg-[#D4B342] px-4 text-xs font-bold text-[#11110F] hover:bg-[#E0C158]"
+          >
+            <BookOpen className="h-4 w-4" />
+            Ir al simulador
+          </button>
+        </section>
+      )}
     </div>
   );
 }
