@@ -25,10 +25,11 @@ import { LoginView } from './modules/auth/LoginView';
 import { PendingApprovalView } from './modules/auth/PendingApprovalView';
 import { AdminView } from './modules/admin/AdminView';
 import { SavedQuestionsView } from './modules/saved/SavedQuestionsView';
+import { CustomQuizModal } from './modules/simulator/CustomQuizModal';
 import { Sidebar } from './components/Sidebar';
 import { Button } from './components/ui/Button';
 import { DataService } from './services/DataService';
-import { ChevronRight, ChevronDown, Check, BookmarkCheck, Play, RotateCcw } from 'lucide-react';
+import { ChevronRight, ChevronDown, Check, BookmarkCheck, Play, RotateCcw, Sliders, Sparkles } from 'lucide-react';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
@@ -101,6 +102,7 @@ export default function App() {
   const [catalogView, setCatalogView] = useState<'weeks' | 'subjects'>('weeks');
   const [expandedWeeks, setExpandedWeeks] = useState<Record<string, boolean>>({});
   const [quizConfig, setQuizConfig] = useState<{ count: number | 'all', mode: 'practice' | 'exam' }>({ count: 20, mode: 'exam' });
+  const [isCustomQuizOpen, setIsCustomQuizOpen] = useState(false);
   const [expandedGroups, setExpandedGroups] = useState<string[]>([]);
   const [showSubthemesInConfig, setShowSubthemesInConfig] = useState(true);
   const [expandedSubthemes, setExpandedSubthemes] = useState<string[]>([]);
@@ -473,6 +475,21 @@ export default function App() {
     setSelectedTema('Mix General');
     setQuizScope({ type: 'random', id: 'random-20', label: 'Simulacro aleatorio', materia: 'Todas las materias', sourceWeeks: Array.from(new Set(shuffled.map(question => question.semana))).sort((a, b) => a - b) });
     setQuizConfig({ count: 20, mode: 'exam' });
+    setView('quiz');
+  };
+
+  const handleStartCustomQuiz = (
+    questions: Question[],
+    scope: QuizScope,
+    config: { count: number; mode: 'practice' | 'exam' }
+  ) => {
+    setQuestionsState(questions);
+    setAnswers([]);
+    setSelectedMateria(scope.materia);
+    setSelectedSemana(0);
+    setSelectedTema(scope.label);
+    setQuizScope(scope);
+    setQuizConfig({ count: config.count, mode: config.mode });
     setView('quiz');
   };
 
@@ -1282,14 +1299,24 @@ export default function App() {
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/[0.05] to-transparent pointer-events-none"></div>
                 <div className="relative z-10 mb-6 md:mb-0 text-center md:text-left">
                   <h2 className="text-3xl font-black uppercase tracking-tighter text-primary font-manrope">Simulador Estratégico</h2>
-                  <p className="text-sm text-[#A0A0A0] max-w-md">El sistema detecta tus debilidades. Inicia un simulacro para medir tu nivel actual.</p>
+                  <p className="text-sm text-[#A0A0A0] max-w-md">Preguntas de alta rentabilidad extraídas de la bibliografía oficial con análisis clínico detallado. Mide tu nivel o personaliza tu examen.</p>
                 </div>
-                <button 
-                  onClick={handleStartRandomQuiz}
-                  className="relative z-10 px-8 py-4 bg-primary text-[#0A0A0A] font-bold rounded-xl uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-[0_0_30px_rgba(198,168,74,0.3)] hover:shadow-[0_0_50px_rgba(198,168,74,0.5)]"
-                >
-                  Simulacro Aleatorio (20 q)
-                </button>
+                <div className="relative z-10 flex flex-wrap gap-3 items-center justify-center">
+                  <button 
+                    onClick={() => setIsCustomQuizOpen(true)}
+                    className="px-6 py-4 bg-[#1C1C1C] text-[#E0AF26] border border-[#C6A84A]/40 font-bold rounded-xl uppercase tracking-widest text-xs hover:scale-105 hover:bg-[#252525] transition-all shadow-[0_0_20px_rgba(198,168,74,0.15)] flex items-center gap-2 cursor-pointer"
+                  >
+                    <Sliders className="w-4 h-4" />
+                    Personalizar Simulacro
+                  </button>
+                  <button 
+                    onClick={handleStartRandomQuiz}
+                    className="px-6 py-4 bg-primary text-[#0A0A0A] font-bold rounded-xl uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-[0_0_30px_rgba(198,168,74,0.3)] hover:shadow-[0_0_50px_rgba(198,168,74,0.5)] flex items-center gap-2 cursor-pointer"
+                  >
+                    <Sparkles className="w-4 h-4" />
+                    Simulacro Aleatorio (20 Q)
+                  </button>
+                </div>
               </div>
 
               <div className="mb-6 flex items-center justify-between gap-4 border-b border-white/[0.08]">
@@ -1509,7 +1536,12 @@ export default function App() {
         </div>
       )}
 
-      {/* Study material modal removed */}
+      <CustomQuizModal
+        isOpen={isCustomQuizOpen}
+        onClose={() => setIsCustomQuizOpen(false)}
+        allQuestions={allQuestions}
+        onStartQuiz={handleStartCustomQuiz}
+      />
     </div>
   );
 }
