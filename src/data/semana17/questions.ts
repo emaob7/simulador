@@ -5337,7 +5337,7 @@ export const questionsSemana17: Question[] = [
     "semana": 17,
     "tema": "Infectología",
     "subtema": "Leishmaniasis (Visceral, Cutánea y Mucosa)",
-    "subtema_grupo": "Leishmaniasis",
+    "subtema_grupo": "Parasitosis y Helmintiasis",
     "module": "Semana 17 - Pediatría",
     "pagina": "📖 Referencia: Nelson, Tratado de Pediatría, 22.ª edición, Capítulo 331, págs. 2157-2159."
   },
@@ -5357,7 +5357,7 @@ export const questionsSemana17: Question[] = [
     "semana": 17,
     "tema": "Infectología",
     "subtema": "Leishmaniasis (Visceral, Cutánea y Mucosa)",
-    "subtema_grupo": "Leishmaniasis",
+    "subtema_grupo": "Parasitosis y Helmintiasis",
     "module": "Semana 17 - Pediatría",
     "pagina": "📖 Referencia: Nelson, Tratado de Pediatría, 22.ª edición, Capítulo 331, págs."
   },
@@ -5377,7 +5377,7 @@ export const questionsSemana17: Question[] = [
     "semana": 17,
     "tema": "Infectología",
     "subtema": "Leishmaniasis (Visceral, Cutánea y Mucosa)",
-    "subtema_grupo": "Leishmaniasis",
+    "subtema_grupo": "Parasitosis y Helmintiasis",
     "module": "Semana 17 - Pediatría",
     "pagina": "📖 Referencia: Nelson, Tratado de Pediatría, 22.ª edición, Capítulo 331, págs."
   },
@@ -5397,7 +5397,7 @@ export const questionsSemana17: Question[] = [
     "semana": 17,
     "tema": "Infectología",
     "subtema": "Leishmaniasis (Visceral, Cutánea y Mucosa)",
-    "subtema_grupo": "Leishmaniasis",
+    "subtema_grupo": "Parasitosis y Helmintiasis",
     "module": "Semana 17 - Pediatría",
     "pagina": "📖 Referencia: Nelson, Tratado de Pediatría, 22.ª edición, Capítulo 331, págs."
   },
@@ -5417,7 +5417,7 @@ export const questionsSemana17: Question[] = [
     "semana": 17,
     "tema": "Infectología",
     "subtema": "Leishmaniasis (Visceral, Cutánea y Mucosa)",
-    "subtema_grupo": "Leishmaniasis",
+    "subtema_grupo": "Parasitosis y Helmintiasis",
     "module": "Semana 17 - Pediatría",
     "pagina": "📖 Referencia: Nelson, Tratado de Pediatría, 22.ª edición, Capítulo 331, pág. 2159."
   },

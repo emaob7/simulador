@@ -1314,7 +1314,7 @@ export default function App() {
                   </button>
                 </div>
                 <p className="hidden sm:block text-[10px] text-[#777]">
-                  {catalogView === 'weeks' ? '16 semanas activas' : 'Materia, tema o subtema'}
+                  {catalogView === 'weeks' ? '17 semanas activas' : 'Materia, tema o subtema'}
                 </p>
               </div>
 

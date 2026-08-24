@@ -184,6 +184,34 @@ function cleanGroupName(grupo: string, semana?: number, normalizado?: string): s
     }
     return grupo;
   }
+
+  if (s === 17) {
+    if (["Leishmaniasis (Visceral, Cutánea y Mucosa)", "Ascariasis (Ascaris lumbricoides)", "Uncinariasis (Ancylostoma / Necator)", "Larva Migrans Cutánea", "Tricocefalosis (Trichuris trichiura)", "Enterobiasis / Oxiuriasis (Enterobius vermicularis)", "Estrongiloidiasis (Strongyloides stercoralis)", "Toxocariasis / Larva Migrans Visceral", "Cestodiasis y Neurocisticercosis", "Farmacología Antiparasitaria y Comparativa"].includes(norm) || grupo === "Parasitosis y Helmintiasis") {
+      return "Parasitosis y Helmintiasis";
+    }
+    if (["Infecciones por Estreptococo del Grupo A", "Fiebre Reumática Aguda", "Faringitis Estreptocócica", "Tétanos (Clostridium tetani)", "Tuberculosis Pediátrica (Clínica y Diagnóstico)", "Tratamiento Antituberculoso y Toxicidad"].includes(norm) || grupo === "Enfermedades Bacterianas") {
+      return "Enfermedades Bacterianas";
+    }
+    if (["Fiebre (Generalidades y Patrones)", "Fiebre sin Foco en el Neonato y Lactante Pequeño"].includes(norm) || grupo === "Fiebre y Síndrome Febril sin Foco") {
+      return "Fiebre y Síndrome Febril sin Foco";
+    }
+    if (["Sarampión", "Rubéola", "Parotiditis", "Parvovirus", "Roséola", "Exantema Súbito"].includes(norm) || grupo === "Enfermedades Exantemáticas Virales") {
+      return "Enfermedades Exantemáticas Virales";
+    }
+    if (["Virus Varicela-Zóster y Herpes Zóster", "Virus de Epstein-Barr (Mononucleosis Infecciosa)", "Citomegalovirus (CMV)"].includes(norm) || grupo === "Herpesvirus, Mononucleosis y CMV") {
+      return "Herpesvirus, Mononucleosis y CMV";
+    }
+    if (["Sinusitis", "Neumonía", "Neumonía Complicada", "Laringotraqueobronquitis (Crup)", "Epiglotitis Aguda", "Traqueítis Bacteriana", "Tos Ferina (Coqueluche)"].includes(norm) || grupo === "Infecciones Respiratorias de Vías Aéreas") {
+      return "Infecciones Respiratorias de Vías Aéreas";
+    }
+    if (["Osteomielitis", "Artritis Séptica"].includes(norm) || grupo === "Infecciones Osteoarticulares") {
+      return "Infecciones Osteoarticulares";
+    }
+    if (["Dengue", "COVID", "Chikungunya"].includes(norm) || grupo === "Guías Nacionales") {
+      return "Guías Nacionales";
+    }
+    return grupo;
+  }
   
   return grupo.replace(/^(Módulo|Modulo)\s+[IVXLC\d]+:\s*/i, "").trim();
 }
@@ -1095,6 +1123,152 @@ function normalizeS16(rawSubtema: string, questionText: string, questionId?: str
   return { grupo: "Ginecología", normalizado };
 }
 
+function normalizeS17(rawSubtema: string, questionText: string, questionId?: string): { grupo: string, normalizado: string } {
+  const sub = rawSubtema.toLowerCase().trim();
+  const text = questionText.toLowerCase();
+
+  // Parasitosis y Helmintiasis
+  if (sub.includes('ascaris') || sub.includes('ascariasis') || text.includes('ascaris') || text.includes('ascariasis') || text.includes('loeffler') || text.includes('löffler')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Ascariasis (Ascaris lumbricoides)" };
+  }
+  if (sub.includes('uncinariasis') || sub.includes('ancylostoma') || sub.includes('necator') || text.includes('uncinaria') || text.includes('necator') || text.includes('ancylostoma duodenale')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Uncinariasis (Ancylostoma / Necator)" };
+  }
+  if (sub.includes('larva migrans cutánea') || sub.includes('larva migrans cutanea') || sub.includes('erupción rastrera') || sub.includes('erupcion rastrera') || text.includes('larva migrans cutánea') || text.includes('erupción rastrera') || text.includes('erupcion rastrera') || text.includes('ancylostoma braziliense')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Larva Migrans Cutánea" };
+  }
+  if (sub.includes('trichuris') || sub.includes('tricocefalosis') || text.includes('trichuris') || text.includes('tricocefalosis') || text.includes('prolapso rectal')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Tricocefalosis (Trichuris trichiura)" };
+  }
+  if (sub.includes('enterobius') || sub.includes('enterobiasis') || sub.includes('oxiuriasis') || text.includes('enterobius') || text.includes('oxiuriasis') || text.includes('prurito anal') || text.includes('graham')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Enterobiasis / Oxiuriasis (Enterobius vermicularis)" };
+  }
+  if (sub.includes('strongyloides') || sub.includes('estrongiloidiasis') || text.includes('strongyloides') || text.includes('estrongiloidiasis') || text.includes('larva rabditiforme')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Estrongiloidiasis (Strongyloides stercoralis)" };
+  }
+  if (sub.includes('toxocara') || sub.includes('toxocariasis') || sub.includes('larva migrans visceral') || text.includes('toxocara') || text.includes('larva migrans visceral') || text.includes('geofagia')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Toxocariasis / Larva Migrans Visceral" };
+  }
+  if (sub.includes('cisticercosis') || sub.includes('neurocisticercosis') || sub.includes('echinococcus') || sub.includes('equinococosis') || sub.includes('hidatidosis') || text.includes('cisticercosis') || text.includes('neurocisticercosis') || text.includes('taenia solium') || text.includes('echinococcus')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Cestodiasis y Neurocisticercosis" };
+  }
+  if (sub.includes('helminto') || sub.includes('helmintiasis') || sub.includes('parasit') || text.includes('albendazol') || text.includes('mebendazol') || text.includes('praziquantel') || text.includes('ivermectina')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Farmacología Antiparasitaria y Comparativa" };
+  }
+
+  // Tétanos
+  if (sub.includes('tétanos') || sub.includes('tetanos') || text.includes('tétanos') || text.includes('tetanospasmina') || text.includes('clostridium tetani')) {
+    return { grupo: "Enfermedades Bacterianas", normalizado: "Tétanos (Clostridium tetani)" };
+  }
+
+  // Tuberculosis Infantil
+  if (sub.includes('tuberculosis') || sub.includes('antituberculoso') || text.includes('tuberculosis') || text.includes('mycobacterium') || text.includes('ghon') || text.includes('ppd')) {
+    if (sub.includes('fármaco') || sub.includes('farmaco') || sub.includes('tratamiento') || sub.includes('toxicidad') || text.includes('efecto adverso') || text.includes('isoniazida') || text.includes('rifampicina') || text.includes('pirazinamida') || text.includes('etambutol')) {
+      return { grupo: "Enfermedades Bacterianas", normalizado: "Tratamiento Antituberculoso y Toxicidad" };
+    }
+    return { grupo: "Enfermedades Bacterianas", normalizado: "Tuberculosis Pediátrica (Clínica y Diagnóstico)" };
+  }
+
+  // Leishmaniasis
+  if (sub.includes('leishmaniasis') || text.includes('leishmaniasis') || text.includes('kala-azar') || text.includes('espundia') || text.includes('chiclero') || text.includes('leishmania')) {
+    return { grupo: "Parasitosis y Helmintiasis", normalizado: "Leishmaniasis (Visceral, Cutánea y Mucosa)" };
+  }
+
+  // Guías Nacionales
+  if (sub.includes('dengue') || text.includes('dengue') || text.includes('denco') || text.includes('ns1')) {
+    return { grupo: "Guías Nacionales", normalizado: "Dengue" };
+  }
+  if (sub.includes('chikungunya') || text.includes('chikungunya') || text.includes('chikv')) {
+    return { grupo: "Guías Nacionales", normalizado: "Chikungunya" };
+  }
+  if (sub.includes('covid') || text.includes('covid') || text.includes('sars-cov-2')) {
+    return { grupo: "Guías Nacionales", normalizado: "COVID" };
+  }
+
+  // Infecciones Osteoarticulares
+  if (sub.includes('artritis séptica') || sub.includes('artritis septica') || text.includes('artritis séptica') || text.includes('líquido sinovial')) {
+    return { grupo: "Infecciones Osteoarticulares", normalizado: "Artritis Séptica" };
+  }
+  if (sub.includes('osteomielitis') || text.includes('osteomielitis')) {
+    return { grupo: "Infecciones Osteoarticulares", normalizado: "Osteomielitis" };
+  }
+
+  // Infecciones Respiratorias
+  if (sub.includes('crup') || sub.includes('laringotraqueo') || text.includes('crup') || text.includes('laringotraqueobronquitis') || text.includes('signo de la torre')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Laringotraqueobronquitis (Crup)" };
+  }
+  if (sub.includes('epiglotitis') || text.includes('epiglotitis') || text.includes('supraglotitis') || text.includes('signo del pulgar')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Epiglotitis Aguda" };
+  }
+  if (sub.includes('traqueítis') || sub.includes('traqueitis') || text.includes('traqueítis bacteriana') || text.includes('traqueitis bacteriana')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Traqueítis Bacteriana" };
+  }
+  if (sub.includes('tos ferina') || sub.includes('coqueluche') || sub.includes('pertussis') || text.includes('tos ferina') || text.includes('bordetella')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Tos Ferina (Coqueluche)" };
+  }
+  if (sub.includes('sinusitis') || text.includes('sinusitis')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Sinusitis" };
+  }
+  if (sub.includes('neumonía complicada') || sub.includes('neumonia complicada') || text.includes('derrame pleural') || text.includes('empiema')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Neumonía Complicada" };
+  }
+  if (sub.includes('neumonía') || sub.includes('neumonia') || text.includes('neumonía') || text.includes('neumonia')) {
+    return { grupo: "Infecciones Respiratorias de Vías Aéreas", normalizado: "Neumonía" };
+  }
+
+  // Enfermedades Exantemáticas Virales
+  if (sub.includes('sarampión') || sub.includes('sarampion') || text.includes('sarampión') || text.includes('koplik')) {
+    return { grupo: "Enfermedades Exantemáticas Virales", normalizado: "Sarampión" };
+  }
+  if (sub.includes('rubéola') || sub.includes('rubeola') || text.includes('rubéola') || text.includes('rubeola')) {
+    return { grupo: "Enfermedades Exantemáticas Virales", normalizado: "Rubéola" };
+  }
+  if (sub.includes('parotiditis') || text.includes('parotiditis') || text.includes('paperas')) {
+    return { grupo: "Enfermedades Exantemáticas Virales", normalizado: "Parotiditis" };
+  }
+  if (sub.includes('parvovirus') || text.includes('parvovirus') || text.includes('eritema infeccioso') || text.includes('b19')) {
+    return { grupo: "Enfermedades Exantemáticas Virales", normalizado: "Parvovirus" };
+  }
+  if (sub.includes('exantema súbito') || sub.includes('exantema subito')) {
+    return { grupo: "Enfermedades Exantemáticas Virales", normalizado: "Exantema Súbito" };
+  }
+  if (sub.includes('roséola') || sub.includes('roseola') || text.includes('roséola') || text.includes('roseola') || text.includes('hhv-6')) {
+    return { grupo: "Enfermedades Exantemáticas Virales", normalizado: "Roséola" };
+  }
+
+  // Herpesvirus, Mononucleosis y CMV
+  if (sub.includes('varicela') || sub.includes('zóster') || sub.includes('zoster') || text.includes('varicela') || text.includes('vvz')) {
+    return { grupo: "Herpesvirus, Mononucleosis y CMV", normalizado: "Virus Varicela-Zóster y Herpes Zóster" };
+  }
+  if (sub.includes('epstein') || sub.includes('mononucleosis') || text.includes('epstein-barr') || text.includes('veb') || text.includes('mononucleosis')) {
+    return { grupo: "Herpesvirus, Mononucleosis y CMV", normalizado: "Virus de Epstein-Barr (Mononucleosis Infecciosa)" };
+  }
+  if (sub.includes('citomegalovirus') || sub.includes('cmv') || text.includes('citomegalovirus') || text.includes('cmv')) {
+    return { grupo: "Herpesvirus, Mononucleosis y CMV", normalizado: "Citomegalovirus (CMV)" };
+  }
+
+  // Enfermedades Bacterianas (Estreptococo y Fiebre Reumática)
+  if (sub.includes('faringitis') && (sub.includes('estreptocócica') || sub.includes('estreptococica') || text.includes('faringitis'))) {
+    return { grupo: "Enfermedades Bacterianas", normalizado: "Faringitis Estreptocócica" };
+  }
+  if (sub.includes('reumática') || sub.includes('reumatica') || text.includes('fiebre reumática') || text.includes('criterios de jones')) {
+    return { grupo: "Enfermedades Bacterianas", normalizado: "Fiebre Reumática Aguda" };
+  }
+  if (sub.includes('estreptococo') || text.includes('estreptococo') || text.includes('pyogenes') || text.includes('escarlatina')) {
+    return { grupo: "Enfermedades Bacterianas", normalizado: "Infecciones por Estreptococo del Grupo A" };
+  }
+
+  // Fiebre y Síndrome Febril
+  if (sub.includes('sin foco') || text.includes('sin foco') || text.includes('lactante pequeño')) {
+    return { grupo: "Fiebre y Síndrome Febril sin Foco", normalizado: "Fiebre sin Foco en el Neonato y Lactante Pequeño" };
+  }
+  if (sub.includes('fiebre') || text.includes('temperatura rectal') || text.includes('patrón febril') || text.includes('hiperpirexia')) {
+    return { grupo: "Fiebre y Síndrome Febril sin Foco", normalizado: "Fiebre (Generalidades y Patrones)" };
+  }
+
+  return { grupo: "Enfermedades Infecciosas", normalizado: toTitleCase(rawSubtema) };
+}
+
 function analyzeSubtemaRaw(
   rawSubtema: string | undefined,
   materia?: string,
@@ -1168,6 +1342,7 @@ function analyzeSubtemaRaw(
     else if (lower.includes("neumo") || lower.includes("asma") || lower.includes("epoc") || lower.includes("reuma") || lower.includes("artritis") || lower.includes("lupus")) activeSemana = 14;
     else if (lower.includes("torácica") || lower.includes("toracica") || lower.includes("mediastino") || lower.includes("pleura") || lower.includes("quilotórax") || lower.includes("timoma")) activeSemana = 15;
     else if (lower.includes("poliqu") || lower.includes("sop") || lower.includes("sangrado") || lower.includes("sua") || lower.includes("leiomioma") || lower.includes("adenomiosis")) activeSemana = 16;
+    else if (lower.includes("infectologia") || lower.includes("dengue") || lower.includes("chikungunya") || lower.includes("tétanos") || lower.includes("tuberculosis") || lower.includes("leishmania") || lower.includes("ascaris")) activeSemana = 17;
   }
 
   let mod: { grupo: string, normalizado: string } | null = null;
@@ -1187,6 +1362,7 @@ function analyzeSubtemaRaw(
   else if (activeSemana === 14) mod = normalizeS14(rawSubtema, questionText || "", questionId);
   else if (activeSemana === 15) mod = normalizeS15(rawSubtema, questionText || "", questionId);
   else if (activeSemana === 16) mod = normalizeS16(rawSubtema, questionText || "", questionId);
+  else if (activeSemana === 17) mod = normalizeS17(rawSubtema, questionText || "", questionId);
 
   if (mod) {
     return { normalizado: mod.normalizado, grupo: mod.grupo };

@@ -220,7 +220,7 @@ export function Sidebar({
             {!collapsed && (
               <div className="text-left">
                 <span className="block text-xs font-black uppercase tracking-wider">Simulador</span>
-                <span className="block text-[10px] text-[#A6A6A6] font-normal">16 Semanas • 1.507 Preguntas</span>
+                <span className="block text-[10px] text-[#A6A6A6] font-normal">17 Semanas • 2.135 Preguntas</span>
               </div>
             )}
           </button>
