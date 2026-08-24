@@ -911,46 +911,42 @@ export default function App() {
         </div>
         
         <main className="p-4 md:p-8 max-w-[1600px] w-full mx-auto flex-1">
-          {/* Banner de Recuperación de Sesión Pendiente */}
+          {/* Banner Sutil de Sesión en Pausa */}
           {view === 'simulator' && pendingDraft && (
-            <div className="mb-8 p-6 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent border border-primary/30 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
-              <div className="flex items-center gap-4 relative z-10">
-                <div className="p-3.5 bg-primary text-black rounded-2xl shadow-sm shrink-0">
-                  <BookmarkCheck className="w-6 h-6" />
+            <div className="mb-6 px-4 py-3 bg-[#161616]/95 border border-[#C6A84A]/30 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 shadow-lg relative overflow-hidden animate-in fade-in duration-200">
+              <div className="flex items-center gap-3 w-full sm:w-auto">
+                <div className="p-2 bg-primary/10 text-primary border border-primary/20 rounded-lg shrink-0">
+                  <BookmarkCheck className="w-4 h-4" />
                 </div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-black tracking-widest text-primary uppercase bg-primary/15 px-2 py-0.5 rounded-md border border-primary/20">
-                      Sesión sin terminar
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-[9px] font-bold tracking-wider text-primary uppercase bg-primary/10 px-1.5 py-0.5 rounded border border-primary/20">
+                      En pausa
                     </span>
-                    <span className="text-xs font-semibold text-gray-400">
-                      {pendingDraft.pendingOnly ? `${pendingDraft.totalCount} pendientes` : `${pendingDraft.answeredCount} de ${pendingDraft.totalCount} respondidas`}
+                    <span className="text-xs font-bold text-white truncate">
+                      {pendingDraft.scopeLabel || pendingDraft.tema || 'Simulacro en curso'}
+                    </span>
+                    <span className="text-[11px] text-[#888]">
+                      ({pendingDraft.pendingOnly ? `${pendingDraft.totalCount} pendientes` : `${pendingDraft.answeredCount} de ${pendingDraft.totalCount} respondidas`})
                     </span>
                   </div>
-                  <h4 className="font-extrabold text-white text-lg mt-1 font-manrope">
-                    {pendingDraft.scopeLabel || pendingDraft.tema || 'Simulacro en curso'}
-                  </h4>
-                  <p className="text-xs text-gray-400 font-medium">
-                    {pendingDraft.materia}
-                    {(pendingDraft.scopeType || 'week') === 'week' && pendingDraft.semana ? ` • Semana ${pendingDraft.semana}` : ' • Selección por materia'}
-                  </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 w-full md:w-auto relative z-10 shrink-0">
+              <div className="flex items-center gap-2 w-full sm:w-auto shrink-0 justify-end">
                 <Button 
                   variant="outline"
                   onClick={handleDiscardDraft}
-                  className="flex-1 md:flex-none py-3 px-5 border-white/10 text-gray-400 hover:text-rose-400 hover:border-rose-400/30 text-xs font-bold uppercase tracking-wider bg-white/5"
+                  className="py-1.5 px-3 border-white/10 text-[#888] hover:text-rose-400 hover:border-rose-400/30 text-[11px] font-bold uppercase tracking-wider bg-transparent rounded-lg h-auto cursor-pointer"
                 >
                   Descartar
                 </Button>
                 <Button 
                   onClick={handleResumeDraft}
-                  className="flex-1 md:flex-none py-3 px-6 bg-primary text-black font-extrabold text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(198,168,74,0.2)] hover:bg-primary/90 flex items-center justify-center gap-2"
+                  className="py-1.5 px-4 bg-primary text-black font-extrabold text-[11px] uppercase tracking-wider hover:bg-primary/90 rounded-lg h-auto flex items-center gap-1.5 cursor-pointer shadow-[0_0_15px_rgba(198,168,74,0.2)]"
                 >
-                  <Play className="w-4 h-4 fill-current" />
-                  Reanudar Sesión
+                  <Play className="w-3.5 h-3.5 fill-current" />
+                  Continuar
                 </Button>
               </div>
             </div>
@@ -1299,22 +1295,15 @@ export default function App() {
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/[0.05] to-transparent pointer-events-none"></div>
                 <div className="relative z-10 mb-6 md:mb-0 text-center md:text-left">
                   <h2 className="text-3xl font-black uppercase tracking-tighter text-primary font-manrope">Simulador Estratégico</h2>
-                  <p className="text-sm text-[#A0A0A0] max-w-md">Preguntas de alta rentabilidad extraídas de la bibliografía oficial con análisis clínico detallado. Mide tu nivel o personaliza tu examen.</p>
+                  <p className="text-sm text-[#A0A0A0] max-w-md">Preguntas de alta rentabilidad extraídas de la bibliografía oficial con análisis clínico detallado. Configura tu evaluación por materias y temas.</p>
                 </div>
-                <div className="relative z-10 flex flex-wrap gap-3 items-center justify-center">
+                <div className="relative z-10 flex items-center justify-center">
                   <button 
                     onClick={() => setIsCustomQuizOpen(true)}
-                    className="px-6 py-4 bg-[#1C1C1C] text-[#E0AF26] border border-[#C6A84A]/40 font-bold rounded-xl uppercase tracking-widest text-xs hover:scale-105 hover:bg-[#252525] transition-all shadow-[0_0_20px_rgba(198,168,74,0.15)] flex items-center gap-2 cursor-pointer"
+                    className="px-8 py-4 bg-primary text-[#0A0A0A] font-black rounded-xl uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-[0_0_30px_rgba(198,168,74,0.3)] hover:shadow-[0_0_50px_rgba(198,168,74,0.5)] flex items-center gap-2.5 cursor-pointer"
                   >
                     <Sliders className="w-4 h-4" />
                     Personalizar Simulacro
-                  </button>
-                  <button 
-                    onClick={handleStartRandomQuiz}
-                    className="px-6 py-4 bg-primary text-[#0A0A0A] font-bold rounded-xl uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-[0_0_30px_rgba(198,168,74,0.3)] hover:shadow-[0_0_50px_rgba(198,168,74,0.5)] flex items-center gap-2 cursor-pointer"
-                  >
-                    <Sparkles className="w-4 h-4" />
-                    Simulacro Aleatorio (20 Q)
                   </button>
                 </div>
               </div>
