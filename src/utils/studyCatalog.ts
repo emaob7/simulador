@@ -28,6 +28,7 @@ const topics: StudyTopicDefinition[] = [
   { id: 'ped-vacunas', materia: 'Pediatría', label: 'Vacunas' },
   { id: 'ped-crecimiento-desarrollo', materia: 'Pediatría', label: 'Crecimiento y Desarrollo' },
   { id: 'ped-urgencias', materia: 'Pediatría', label: 'Urgencias Pediátricas' },
+  { id: 'ped-infectologia', materia: 'Pediatría', label: 'Infectología' },
 
   { id: 'mi-endocrinologia', materia: 'Medicina Interna', label: 'Endocrinología' },
   { id: 'mi-oncohematologia', materia: 'Medicina Interna', label: 'Oncohematología' },
@@ -135,6 +136,7 @@ function resolveTopicId(question: Question): string {
       if (tema.includes('poliqu')) return 'gyo-sop';
       if (tema.includes('sangrado')) return 'gyo-sua';
       return 'gyo-patologia-uterina';
+    case 17: return 'ped-infectologia';
     default:
       throw new Error(`Semana sin taxonomía: ${question.semana} (${question.id})`);
   }
@@ -332,6 +334,7 @@ function resolveSubtopic(question: Question, topicId: string): string {
   if (topicId === 'ped-nutricion' || topicId === 'ped-desnutricion-antropometria') return resolvePediatricNutritionSubtopic(question, topicId);
   if (topicId === 'ped-vacunas' || topicId === 'ped-crecimiento-desarrollo') return resolveWeek9Subtopic(question, topicId);
   if (topicId === 'ped-urgencias') return question.subtema.trim();
+  if (topicId === 'ped-infectologia') return info.grupo || question.subtema.trim();
   if (topicId === 'mi-endocrinologia' && question.id === 'q45') return 'Hipotálamo e Hipófisis';
   if (topicId === 'mi-oncohematologia') {
     if (question.id === 'semana6_med_q58') return 'Anemias Hemolíticas y HPN';

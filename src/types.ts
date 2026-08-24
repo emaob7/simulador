@@ -15,6 +15,7 @@ export interface Question {
   module: string;
   pagina?: string;
   docx_tema?: string;
+  subtema_grupo?: string;
 }
 
 export interface AnswerRecord {
