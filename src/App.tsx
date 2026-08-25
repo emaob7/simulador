@@ -35,6 +35,7 @@ import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
 import { analyzeSubtema } from './utils/normalizer';
 import { classifyQuestionForStudy } from './utils/studyCatalog';
+import { shuffleQuizQuestions, shuffleQuestionOptions } from './utils/quizShuffler';
 
 // romanToInt removed
 
@@ -362,7 +363,7 @@ export default function App() {
 
   const handleStartQuizWithQuestions = (questions: Question[]) => {
     if (!questions || questions.length === 0) return;
-    const shuffled = [...questions].sort(() => 0.5 - Math.random());
+    const shuffled = shuffleQuizQuestions(questions, { shuffleQuestions: true, shuffleOptions: true });
     setQuestionsState(shuffled);
     setSelectedMateria('Repaso de Guardadas');
     setSelectedSemana(0);
@@ -442,6 +443,7 @@ export default function App() {
     setSelectedTema('Todos los Temas');
     
     const filtered = allQuestions.filter(q => q.materia === materia && q.semana === semana);
+    const preparedQuestions = shuffleQuizQuestions(filtered, { shuffleQuestions: false, shuffleOptions: true });
     setQuizScope({
       type: 'week',
       id: `week-${semana}`,
@@ -450,9 +452,9 @@ export default function App() {
       semana,
       sourceWeeks: [semana],
     });
-    setQuestionsState(filtered);
+    setQuestionsState(preparedQuestions);
     setAnswers([]);
-    setQuizConfig({ count: filtered.length, mode: 'practice' });
+    setQuizConfig({ count: preparedQuestions.length, mode: 'practice' });
     setView('quiz');
   };
 
@@ -461,20 +463,9 @@ export default function App() {
     const questionsToRun = ordered.length > 0 
       ? ordered 
       : baseQuestionsForScope;
-    setQuestionsState(questionsToRun);
+    const preparedQuestions = shuffleQuizQuestions(questionsToRun, { shuffleQuestions: true, shuffleOptions: true });
+    setQuestionsState(preparedQuestions);
     setAnswers([]);
-    setView('quiz');
-  };
-
-  const handleStartRandomQuiz = () => {
-    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random()).slice(0, 20);
-    setQuestionsState(shuffled);
-    setAnswers([]);
-    setSelectedMateria('Simulacro Aleatorio');
-    setSelectedSemana(0);
-    setSelectedTema('Mix General');
-    setQuizScope({ type: 'random', id: 'random-20', label: 'Simulacro aleatorio', materia: 'Todas las materias', sourceWeeks: Array.from(new Set(shuffled.map(question => question.semana))).sort((a, b) => a - b) });
-    setQuizConfig({ count: 20, mode: 'exam' });
     setView('quiz');
   };
 
@@ -483,7 +474,8 @@ export default function App() {
     scope: QuizScope,
     config: { count: number; mode: 'practice' | 'exam' }
   ) => {
-    setQuestionsState(questions);
+    const preparedQuestions = shuffleQuizQuestions(questions, { shuffleQuestions: false, shuffleOptions: true });
+    setQuestionsState(preparedQuestions);
     setAnswers([]);
     setSelectedMateria(scope.materia);
     setSelectedSemana(0);
@@ -527,8 +519,9 @@ export default function App() {
       // Shuffle and limit to 10 for focused practice
       selectedQs.sort(() => 0.5 - Math.random());
       selectedQs = selectedQs.slice(0, 10);
+      const preparedQuestions = shuffleQuizQuestions(selectedQs, { shuffleQuestions: false, shuffleOptions: true });
 
-      setQuestionsState(selectedQs);
+      setQuestionsState(preparedQuestions);
       setAnswers([]);
       setSelectedMateria(`Repaso: ${materia}`);
       setSelectedSemana(selectedQs[0]?.semana || 0);
@@ -553,7 +546,8 @@ export default function App() {
   const handleRetryFailed = () => {
     const failedIds = answers.filter(a => !a.isCorrect).map(a => a.questionId);
     const failedQuestions = allQuestions.filter(q => failedIds.includes(q.id));
-    setQuestionsState(failedQuestions);
+    const preparedQuestions = shuffleQuizQuestions(failedQuestions, { shuffleQuestions: true, shuffleOptions: true });
+    setQuestionsState(preparedQuestions);
     setView('quiz');
   };
 
@@ -627,7 +621,9 @@ export default function App() {
 
   const handleResumeDraft = () => {
     if (!pendingDraft) return;
-    const questionsForDraft = allQuestions.filter(q => pendingDraft.questionIds.includes(q.id));
+    const questionsForDraft = pendingDraft.questionsSnapshot && pendingDraft.questionsSnapshot.length > 0
+      ? pendingDraft.questionsSnapshot
+      : allQuestions.filter(q => pendingDraft.questionIds.includes(q.id));
     if (questionsForDraft.length > 0) {
       setQuestionsState(questionsForDraft);
       setSelectedMateria(pendingDraft.materia || '');
@@ -835,7 +831,7 @@ export default function App() {
     const q = allQuestions.find(x => x.id === questionId);
     if (q) {
       const classification = classifyQuestionForStudy(q);
-      setQuestionsState([q]);
+      setQuestionsState([shuffleQuestionOptions(q)]);
       setAnswers([]);
       setSelectedMateria(q.materia);
       setSelectedSemana(q.semana);

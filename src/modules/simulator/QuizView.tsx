@@ -114,6 +114,7 @@ export function QuizView({
         pendingOnly: keepPendingOnly,
         timeElapsed,
         questionIds,
+        questionsSnapshot: questions,
         materia: sessionScope?.materia || questions[0]?.materia || '',
         semana: sessionScope?.semana || questions[0]?.semana || 0,
         tema: sessionScope?.label || questions[0]?.tema || '',
