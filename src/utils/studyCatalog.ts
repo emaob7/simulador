@@ -36,6 +36,8 @@ const topics: StudyTopicDefinition[] = [
   { id: 'mi-cardiologia', materia: 'Medicina Interna', label: 'Cardiología' },
   { id: 'mi-neumologia', materia: 'Medicina Interna', label: 'Neumología' },
   { id: 'mi-reumatologia', materia: 'Medicina Interna', label: 'Reumatología' },
+  { id: 'mi-nefrologia', materia: 'Medicina Interna', label: 'Nefrología' },
+  { id: 'mi-neurologia', materia: 'Medicina Interna', label: 'Neurología' },
 
   { id: 'cir-infecciones', materia: 'Cirugía', label: 'Infecciones' },
   { id: 'cir-cicatrizacion', materia: 'Cirugía', label: 'Cicatrización' },
@@ -137,6 +139,8 @@ function resolveTopicId(question: Question): string {
       if (tema.includes('sangrado')) return 'gyo-sua';
       return 'gyo-patologia-uterina';
     case 17: return 'ped-infectologia';
+    case 18:
+      return question.tema.toLowerCase().includes('nefro') ? 'mi-nefrologia' : 'mi-neurologia';
     default:
       throw new Error(`Semana sin taxonomía: ${question.semana} (${question.id})`);
   }
@@ -335,6 +339,7 @@ function resolveSubtopic(question: Question, topicId: string): string {
   if (topicId === 'ped-vacunas' || topicId === 'ped-crecimiento-desarrollo') return resolveWeek9Subtopic(question, topicId);
   if (topicId === 'ped-urgencias') return question.subtema.trim();
   if (topicId === 'ped-infectologia') return info.grupo || question.subtema.trim();
+  if (topicId === 'mi-nefrologia' || topicId === 'mi-neurologia') return info.grupo || question.subtema.trim();
   if (topicId === 'mi-endocrinologia' && question.id === 'q45') return 'Hipotálamo e Hipófisis';
   if (topicId === 'mi-oncohematologia') {
     if (question.id === 'semana6_med_q58') return 'Anemias Hemolíticas y HPN';

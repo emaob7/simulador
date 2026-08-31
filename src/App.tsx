@@ -16,6 +16,7 @@ import { questionsSemana14 } from './data/semana14/questions';
 import { questionsSemana15 } from './data/semana15/questions';
 import { questionsSemana16 } from './data/semana16/questions';
 import { questionsSemana17 } from './data/semana17/questions';
+import { questionsSemana18 } from './data/semana18/questions';
 import { Question, AnswerRecord, QuizScope } from './types';
 import { QuizView } from './modules/simulator/QuizView';
 import { SubjectCatalog } from './modules/simulator/SubjectCatalog';
@@ -59,6 +60,7 @@ const allQuestions: Question[] = [
   ...questionsSemana15,
   ...questionsSemana16,
   ...questionsSemana17,
+  ...questionsSemana18,
 ];
 
 export const getWeekThemeTitle = (materia: string, semana: number): string => {
@@ -80,6 +82,7 @@ export const getWeekThemeTitle = (materia: string, semana: number): string => {
   if (s === 15) return "Cirugía Torácica y Mamas (Pared torácica, pulmón, mediastino, pleura y mamas)";
   if (s === 16) return "Síndrome de Ovarios Poliquísticos, Sangrado Uterino Anormal, Patología Uterina Benigna y Endometriosis";
   if (s === 17) return "Infectología";
+  if (s === 18) return "Nefrología y Neurología";
   return "";
 };
 
@@ -1326,7 +1329,7 @@ export default function App() {
                   </button>
                 </div>
                 <p className="hidden sm:block text-[10px] text-[#777]">
-                  {catalogView === 'weeks' ? '17 semanas activas' : 'Materia, tema o subtema'}
+                  {catalogView === 'weeks' ? '18 semanas activas' : 'Materia, tema o subtema'}
                 </p>
               </div>
 

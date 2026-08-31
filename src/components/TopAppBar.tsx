@@ -83,7 +83,7 @@ export function TopAppBar({
               }}
               onFocus={() => setIsSearchOpen(true)}
               className="bg-[#1C1C1C] border border-[#424242] focus:border-[#C6A84A] focus:ring-1 focus:ring-[#C6A84A] text-xs py-2 pl-9 pr-8 w-36 sm:w-56 md:w-72 rounded-xl text-[#FFFFFF] placeholder:text-[#A6A6A6] transition-all outline-none shadow-inner" 
-              placeholder="Buscar en 2.135 preguntas..." 
+              placeholder="Buscar en 2.298 preguntas..." 
               type="text" 
             />
             <Search className="w-4 h-4 absolute left-3 text-[#A6A6A6] pointer-events-none" />
