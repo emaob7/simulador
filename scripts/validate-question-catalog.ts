@@ -2,7 +2,7 @@ import { classifyQuestionForStudy, STUDY_TOPICS } from '../src/utils/studyCatalo
 import type { Question } from '../src/types';
 import { auditQuestionCatalog, formatAuditReport, getBlockingIssues } from './audit-errors-catalog';
 
-const expectedWeekCounts = [121, 109, 84, 74, 95, 94, 82, 104, 139, 141, 106, 80, 101, 294, 109, 99, 303, 163];
+const expectedWeekCounts = [121, 109, 84, 74, 95, 94, 82, 104, 139, 141, 106, 80, 101, 294, 109, 99, 303, 207];
 const questions: Question[] = [];
 const catalog: Array<{ week: number; question: Question }> = [];
 
@@ -38,7 +38,7 @@ for (const question of questions) {
   subtopicsByTopic.get(classification.topicId)!.add(classification.subtopicLabel);
 }
 
-if (questions.length !== 2298) throw new Error(`Total ${questions.length}; esperado 2298`);
+if (questions.length !== 2342) throw new Error(`Total ${questions.length}; esperado 2342`);
 
 const emptyTopics = STUDY_TOPICS.filter(topic => !topicCounts.get(topic.id));
 if (emptyTopics.length) throw new Error(`Temas sin preguntas: ${emptyTopics.map(topic => topic.label).join(', ')}`);

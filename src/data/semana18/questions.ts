@@ -3260,5 +3260,841 @@ export const questionsSemana18: Question[] = [
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
+  },
+  {
+    "id": "semana18_med_q164",
+    "text": "¿Cuál es la causa más frecuente de demencia?",
+    "options": [
+      "Demencia con cuerpos de Lewy",
+      "Enfermedad de Alzheimer",
+      "Demencia frontotemporal",
+      "Demencia de origen vascular",
+      "Síndrome corticobasal"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa enfermedad de Alzheimer es la causa más frecuente de demencia y contribuye aproximadamente al 60-70% de los casos.\n\n\n🔑 CONCEPTOS CLAVE\n- Es la causa más frecuente de demencia.\n- Representa aproximadamente 60-70% de los casos.\n- Es la causa más frecuente de demencia en adultos mayores.\n\n\n⚡ REPASO ACTIVO\n- Causa más frecuente de demencia: enfermedad de Alzheimer.\n- Proporción de casos de demencia: aproximadamente 60-70%.\n- Principal factor de riesgo genético: alelo ε4 de la apolipoproteína E (ApoE).\n- Un alelo ε4: riesgo 2-3 veces mayor en mujeres y aumento leve en varones.\n- Dos alelos ε4: riesgo 10-15 veces mayor en ambos sexos.\n- Clínica típica inicial: pérdida gradual de la memoria episódica.\n- Progresión cognitiva: memoria → lenguaje y función visuoespacial → función ejecutiva.\n- Cerca del 20% puede presentar síntomas iniciales no relacionados con la memoria, como dificultad para encontrar palabras, organización u orientación.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q165",
+    "text": "¿Cuál de los siguientes fármacos fue aprobado por la FDA como tratamiento dirigido contra el β-amiloide en la enfermedad de Alzheimer?",
+    "options": [
+      "Memantina",
+      "Donepezilo",
+      "Aducanumab",
+      "Rivastigmina",
+      "Galantamina"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl aducanumab es un anticuerpo monoclonal dirigido contra el extremo N-terminal del péptido β-amiloide. En junio de 2021 fue aprobado de forma acelerada por la FDA debido a su capacidad para reducir las placas de β-amiloide, medidas mediante PET.\n\nLas demás opciones corresponden a tratamientos basados en neurotransmisores descritos en el fragmento y no a un tratamiento dirigido contra el β-amiloide.\n\n\n🔑 CONCEPTOS CLAVE\n- Aducanumab: anticuerpo monoclonal dirigido contra β-amiloide.\n- Su aprobación acelerada por la FDA ocurrió en junio de 2021.\n- La aprobación se fundamentó en la reducción de las placas de β-amiloide.\n- Debe considerarse en pacientes con deterioro cognitivo leve o demencia precoz por enfermedad de Alzheimer, según lo descrito en el fragmento.\n\n\n⚡ REPASO ACTIVO\n\n\n**Tratamientos basados en neurotransmisores:**\n- Donepezilo → inhibidor de la colinesterasa.\n- Rivastigmina → inhibidor de la colinesterasa.\n- Galantamina → inhibidor de la colinesterasa.\n- Memantina → bloqueo de receptores NMDA.\n- Tacrina → no se utiliza debido a hepatotoxicidad.\n\n\n**Tratamiento dirigido a β-amiloide:**\n- Aducanumab → anticuerpo monoclonal contra el extremo N-terminal del péptido β-amiloide.\n- Reduce las placas de β-amiloide.\n- Aprobación acelerada por la FDA en junio de 2021.\n- Se considera en deterioro cognitivo leve o demencia precoz por enfermedad de Alzheimer.\n- Antes del tratamiento se recomienda confirmar biomarcadores de β-amiloide mediante LCR o PET.\n- Se administra por vía IV cada cuatro semanas.\n- El efecto secundario más frecuente descrito es la presencia de anomalías imagenológicas relacionadas con amiloide (ARIA).\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q166",
+    "text": "Un paciente presenta deterioro cognitivo de evolución rápidamente progresiva, acompañado de signos corticales focales, rigidez y mioclonías. Durante el estudio se detectan complejos periódicos anormales en el EEG y la RM con difusión muestra listones corticales e hiperintensidades en los ganglios basales. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Demencia con cuerpos de Lewy",
+      "Enfermedad de Alzheimer",
+      "Degeneración corticobasal",
+      "Enfermedad de Creutzfeldt-Jakob",
+      "Encefalopatía de Hashimoto"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa enfermedad de Creutzfeldt-Jakob se caracteriza por una demencia rápidamente progresiva, que puede acompañarse de signos corticales focales, rigidez y mioclonías. La asociación con complejos periódicos anormales en el EEG y los hallazgos descritos en la RM con difusión apoya fuertemente este diagnóstico.\n\nLa enfermedad de Alzheimer es menos probable porque casi nunca progresa con la rapidez de la enfermedad de Creutzfeldt-Jakob. La degeneración corticobasal y la demencia con cuerpos de Lewy pueden evolucionar más rápidamente cuando predominan los trastornos del movimiento, pero pueden confundirse con CJD.\n\n\n🔑 CONCEPTOS CLAVE\n- La enfermedad de Creutzfeldt-Jakob es un trastorno neurodegenerativo raro.\n- Produce demencia de progresión rápida.\n- Puede asociarse con signos corticales focales, rigidez y mioclonías.\n- Puede causar la muerte aproximadamente un año después de los primeros síntomas.\n- La enfermedad de Alzheimer casi nunca presenta una progresión tan rápida.\n\n\n⚡ REPASO ACTIVO\n\n\n**Enfermedad de Creutzfeldt-Jakob:**\n- Enfermedad priónica neurodegenerativa rara.\n- Prevalencia aproximada: 1 por millón.\n- Manifestaciones: demencia rápidamente progresiva, signos corticales focales, rigidez y mioclonías.\n- Evolución: puede causar la muerte aproximadamente un año después de los primeros síntomas.\n- EEG: complejos periódicos anormales.\n- RM con difusión: listones corticales e hiperintensidades en los ganglios basales.\n- Diagnóstico diferencial de demencia rápidamente progresiva: encefalitis virales o bacterianas, encefalopatía de Hashimoto, vasculitis del SNC, linfoma y síndromes paraneoplásicos o autoinmunes.\n- La degeneración corticobasal y la demencia con cuerpos de Lewy pueden confundirse con CJD cuando predominan los trastornos del movimiento.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q167",
+    "text": "¿Cuál es la tríada clínica característica de la hidrocefalia de presión normal?",
+    "options": [
+      "Demencia, rigidez e incontinencia urinaria",
+      "Ataxia, afasia y retención urinaria",
+      "Marcha anormal, demencia e incontinencia urinaria",
+      "Mioclonías, demencia y urgencia urinaria",
+      "Marcha anormal, afasia e incontinencia fecal"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa tríada característica de la hidrocefalia de presión normal está constituida por marcha anormal (atáxica o apráxica), demencia y urgencia o incontinencia urinaria.\n\n\n🔑 CONCEPTOS CLAVE\n- Alteración de la marcha: atáxica o apráxica.\n- Demencia generalmente leve a moderada, con énfasis en funciones ejecutivas.\n- Urgencia o incontinencia urinaria completa la tríada.\n\n\n⚡ REPASO ACTIVO\n- La hidrocefalia de presión normal es un síndrome relativamente raro pero tratable. Su tríada clínica incluye marcha anormal, demencia y urgencia/incontinencia urinaria. En las imágenes se observa crecimiento de los ventrículos laterales con poca o ninguna atrofia cortical. El trastorno de la marcha suele ser temprano y prominente.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q168",
+    "text": "¿Cuál es el principal factor de riesgo genético descrito para la enfermedad de Alzheimer?",
+    "options": [
+      "Alelo ε2 de la apolipoproteína E",
+      "Alelo ε3 de la apolipoproteína E",
+      "Mutación del gen de tau",
+      "Alelo ε4 de la apolipoproteína E",
+      "Mutación del gen de α-sinucleína"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl fragmento señala específicamente que el principal factor de riesgo genético para la enfermedad de Alzheimer es el alelo ε4 del gen de la apolipoproteína E (ApoE).\n\n\n🔑 CONCEPTOS CLAVE\n- El alelo ε4 de ApoE es el principal factor de riesgo genético descrito.\n- Una copia del alelo ε4 aumenta el riesgo entre 2 y 3 veces en mujeres.\n- En varones, una copia produce solo un incremento leve del riesgo.\n- Dos alelos ε4 incrementan el riesgo entre 10 y 15 veces en ambos sexos.\n\n\n⚡ REPASO ACTIVO\n- Causa más frecuente de demencia: enfermedad de Alzheimer.\n- Proporción de casos de demencia: aproximadamente 60-70%.\n- Principal factor de riesgo genético: alelo ε4 de la apolipoproteína E (ApoE).\n- Un alelo ε4: riesgo 2-3 veces mayor en mujeres y aumento leve en varones.\n- Dos alelos ε4: riesgo 10-15 veces mayor en ambos sexos.\n- Clínica típica inicial: pérdida gradual de la memoria episódica.\n- Progresión cognitiva: memoria → lenguaje y función visuoespacial → función ejecutiva.\n- Cerca del 20% puede presentar síntomas iniciales no relacionados con la memoria, como dificultad para encontrar palabras, organización u orientación.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q169",
+    "text": "¿Cuál es el patrón clínico característico de progresión de los cambios cognitivos en la enfermedad de Alzheimer?",
+    "options": [
+      "Alteración visuoespacial seguida de pérdida aislada del lenguaje",
+      "Alteración conductual seguida de recuperación de la memoria",
+      "Pérdida de memoria seguida de alteraciones motoras exclusivamente",
+      "Afasia inicial seguida de alteración aislada de la orientación",
+      "Alteración de memoria seguida de déficits del lenguaje y visuoespaciales"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLos cambios cognitivos suelen seguir un patrón característico: comienzan con alteración de la memoria, progresan hacia deficiencias del lenguaje y funciones visuoespaciales y posteriormente aparece disfunción ejecutiva.\n\n\n🔑 CONCEPTOS CLAVE\n- La alteración inicial característica es la pérdida de memoria.\n- Posteriormente se afectan lenguaje y capacidades visuoespaciales.\n- La disfunción ejecutiva aparece después en la evolución.\n\n\n⚡ REPASO ACTIVO\n- Causa más frecuente de demencia: enfermedad de Alzheimer.\n- Proporción de casos de demencia: aproximadamente 60-70%.\n- Principal factor de riesgo genético: alelo ε4 de la apolipoproteína E (ApoE).\n- Un alelo ε4: riesgo 2-3 veces mayor en mujeres y aumento leve en varones.\n- Dos alelos ε4: riesgo 10-15 veces mayor en ambos sexos.\n- Clínica típica inicial: pérdida gradual de la memoria episódica.\n- Progresión cognitiva: memoria → lenguaje y función visuoespacial → función ejecutiva.\n- Cerca del 20% puede presentar síntomas iniciales no relacionados con la memoria, como dificultad para encontrar palabras, organización u orientación.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q170",
+    "text": "Con respecto a la encefalopatía de Wernicke, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "Es causada por deficiencia de tiamina",
+      "Puede presentarse en pacientes desnutridos",
+      "Puede manifestarse con confusión y ataxia",
+      "Puede acompañarse de diplopía",
+      "Se debe principalmente a deficiencia de cobalamina"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa encefalopatía de Wernicke es causada por deficiencia de tiamina (vitamina B1). El cuadro puede presentarse en un paciente desnutrido, con frecuencia alcohólico, y manifestarse con confusión, ataxia y diplopía.\n\n\n🔑 CONCEPTOS CLAVE\n- Causa: deficiencia de tiamina (vitamina B1).\n- Es frecuente en el contexto de desnutrición.\n- Puede asociarse con alcoholismo.\n- Manifestaciones señaladas: confusión, ataxia y diplopía.\n\n\n⚡ REPASO ACTIVO\n- La deficiencia de tiamina (vitamina B1) causa encefalopatía de Wernicke. El paciente suele estar desnutrido y con frecuencia es alcohólico. Puede presentar confusión, ataxia y diplopía debido a inflamación y necrosis de estructuras periventriculares de la línea media. El daño del tálamo dorsomedial se relaciona principalmente con la pérdida de memoria. La deficiencia prolongada sin tratamiento puede ocasionar un síndrome amnésico irreversible y profundo (síndrome de Korsakoff) e incluso la muerte.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q171",
+    "text": "¿Cuál es la alteración característica de la memoria en el síndrome de Korsakoff?",
+    "options": [
+      "Pérdida completa de la memoria inmediata",
+      "Pérdida predominante del conocimiento previo",
+      "Incapacidad para almacenar información nueva",
+      "Alteración exclusiva de la memoria remota",
+      "Pérdida de memoria asociada a menor conciencia"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEn el síndrome de Korsakoff existe una afectación grave de la memoria para eventos nuevos. El paciente es incapaz de recordar nueva información y puede almacenarla solo durante unos pocos minutos. En contraste, la memoria inmediata, la atención y el nivel de conciencia pueden permanecer normales, y el conocimiento adquirido antes de la enfermedad se conserva casi intacto.\n\n\n🔑 CONCEPTOS CLAVE\n- Alteración principal: incapacidad para recordar información nueva.\n- El conocimiento adquirido previamente permanece casi intacto.\n- Puede existir confabulación.\n- El daño producido por la deficiencia previa de tiamina es irreversible.\n\n\n⚡ REPASO ACTIVO\n- En el síndrome de Korsakoff existe afectación grave de la memoria para eventos nuevos, pese a conservarse la memoria inmediata, la atención y el nivel de conciencia. Los pacientes pueden estar desorientados, confundirse fácilmente y almacenar información solo durante unos minutos. La confabulación es frecuente, pero no siempre está presente. No existe tratamiento específico una vez establecido el daño irreversible de los núcleos talámicos mediales y cuerpos mamilares. En la fase crónica, la RM puede mostrar atrofia de los cuerpos mamilares.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.\n\nUn paciente desnutrido, con consumo frecuente de alcohol, consulta por aparición de confusión, ataxia y diplopía. De acuerdo con el cuadro clínico, ¿la deficiencia de cuál de las siguientes vitaminas explica mejor esta presentación?\n\na) Vitamina B6\n\nb) Vitamina B12\n\nc) Vitamina B2\n\nd) Vitamina B1\n\ne) Vitamina B3",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q172",
+    "text": "Un paciente desnutrido, con consumo frecuente de alcohol, consulta por aparición de confusión, ataxia y diplopía. De acuerdo con el cuadro clínico, ¿la deficiencia de cuál de las siguientes vitaminas explica mejor esta presentación?",
+    "options": [
+      "Vitamina B6",
+      "Vitamina B12",
+      "Vitamina B2",
+      "Vitamina B1",
+      "Vitamina B3"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro corresponde a encefalopatía de Wernicke, causada por deficiencia de tiamina (vitamina B1). El fragmento destaca su presentación en pacientes desnutridos, con frecuencia alcohólicos, asociada a confusión, ataxia y diplopía.\n\n\n🔑 CONCEPTOS CLAVE\n- Encefalopatía de Wernicke → déficit de tiamina (vitamina B1).\n- Clínica destacada: confusión, ataxia y diplopía.\n- La deficiencia prolongada sin tratamiento puede evolucionar a síndrome de Korsakoff.\n\n\n⚡ REPASO ACTIVO\n- La deficiencia de tiamina (vitamina B1) causa encefalopatía de Wernicke. El cuadro típico descrito corresponde a un paciente desnutrido, con frecuencia alcohólico, que presenta confusión, ataxia y diplopía. La administración temprana de tiamina parenteral puede revertir la enfermedad. Una deficiencia prolongada y no tratada puede ocasionar un síndrome amnésico irreversible y profundo, denominado síndrome de Korsakoff, e incluso la muerte.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 431.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q173",
+    "text": "¿Cuál es el síndrome clínico más frecuente dentro del espectro de la demencia frontotemporal?",
+    "options": [
+      "Variante semántica",
+      "Síndrome corticobasal",
+      "Variante conductual",
+      "Afasia no fluida/agramática",
+      "Síndrome de Richardson"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa variante conductual de la demencia frontotemporal es el síndrome más frecuente. Se caracteriza principalmente por disfunción social y emocional, que puede manifestarse como apatía, desinhibición, compulsividad, pérdida de empatía e ingestión excesiva de alimento, muchas veces acompañada de deficiencias del control ejecutivo.\n\n\n🔑 CONCEPTOS CLAVE\n- La variante conductual es la forma más frecuente.\n- Predominan las alteraciones sociales, emocionales y conductuales.\n- Puede existir deterioro del control ejecutivo.\n\n\n⚡ REPASO ACTIVO\n- Dentro del espectro clínico se describen tres síndromes centrales: variante conductual, variante semántica de la afasia progresiva primaria y variante no fluida/agramática de la afasia progresiva primaria. La variante conductual es la más frecuente.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 432.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q174",
+    "text": "¿Cuál de las siguientes manifestaciones es característica de la variante conductual de la demencia frontotemporal?",
+    "options": [
+      "Pérdida progresiva del significado de las palabras",
+      "Alteración predominante de los cálculos aritméticos",
+      "Incapacidad marcada para generar palabras",
+      "Apatía, desinhibición y pérdida de empatía",
+      "Déficit visuoespacial como manifestación inicial"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa variante conductual produce una marcada disfunción social y emocional. El fragmento destaca apatía, desinhibición, compulsividad, pérdida de empatía e ingestión excesiva de alimento.\n\n\n🔑 CONCEPTOS CLAVE\n- Apatía y desinhibición son manifestaciones importantes.\n- Puede existir compulsividad y pérdida de empatía.\n- Las deficiencias ejecutivas son frecuentes.\n\n\n⚡ REPASO ACTIVO\n- La variante conductual se relaciona anatómicamente con degeneración y atrofia de la ínsula medial y las regiones frontal orbital y anterior. Las funciones parietales, como el procesamiento visuoespacial y los cálculos aritméticos, pueden permanecer normales en etapas avanzadas.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 432.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q175",
+    "text": "Un paciente presenta deterioro progresivo del lenguaje caracterizado principalmente por pérdida gradual de la capacidad para comprender el significado de palabras, objetos, personas específicas y emociones. ¿Qué variante clínica presenta?",
+    "options": [
+      "Variante no fluida/agramática",
+      "Variante semántica",
+      "Variante conductual",
+      "Síndrome corticobasal",
+      "Síndrome de Richardson"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa variante semántica de la afasia progresiva primaria produce pérdida progresiva de la capacidad para decodificar el significado de palabras, objetos, personas específicas y emociones.\n\n\n🔑 CONCEPTOS CLAVE\n- Predomina la pérdida del significado.\n- Puede afectar palabras, objetos, personas y emociones.\n- La degeneración se localiza principalmente en la región temporal anterior.\n\n\n⚡ REPASO ACTIVO\n- La demencia frontotemporal puede producir dos formas de afasia progresiva primaria: variante semántica y variante no fluida/agramática. La primera compromete progresivamente el significado; la segunda se caracteriza por una marcada incapacidad para generar palabras y puede acompañarse de daño motor prominente del habla.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 432.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q176",
+    "text": "¿Cuál es la característica principal de la variante no fluida/agramática de la afasia progresiva primaria?",
+    "options": [
+      "Pérdida progresiva del significado de objetos",
+      "Ingestión excesiva asociada a compulsividad",
+      "Incapacidad marcada para generar palabras",
+      "Pérdida predominante del procesamiento visuoespacial",
+      "Incapacidad aislada para realizar cálculos"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa variante no fluida/agramática se caracteriza por una marcada incapacidad para generar palabras, a menudo acompañada de daño motor prominente del habla.\n\n\n🔑 CONCEPTOS CLAVE\n- Existe dificultad marcada para generar palabras.\n- Puede coexistir daño motor prominente del habla.\n- La atrofia predomina en la circunvolución frontal lateral y precentral del hemisferio dominante.\n\n\n⚡ REPASO ACTIVO\n\n\n**Correlación clínico-anatómica del fragmento:**\n- Variante conductual: ínsula medial y regiones frontal orbital y anterior.\n- Variante semántica: región temporal anterior.\n- Variante no fluida/agramática: circunvolución frontal lateral y precentral del hemisferio dominante.\n- Las funciones parietales, incluido el procesamiento visuoespacial y los cálculos aritméticos, pueden conservarse incluso en etapas avanzadas.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 432.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q177",
+    "text": "Un paciente presenta caídas frecuentes e inexplicables, asociadas a rigidez axial, marcha lenta e inestable y cambios de personalidad con apatía. Posteriormente desarrolla movimientos sacádicos lentos, con mayor compromiso vertical que horizontal, hasta presentar oftalmoparesia supranuclear progresiva. A pesar de la limitación de los movimientos oculares voluntarios, conserva los reflejos oculocefálicos. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Enfermedad de Parkinson",
+      "Degeneración corticobasal",
+      "Demencia con cuerpos de Lewy",
+      "Parálisis supranuclear progresiva",
+      "Demencia frontotemporal conductual"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro es característico del síndrome de parálisis supranuclear progresiva. Son particularmente orientadores las caídas inexplicables y precoces, la rigidez axial, la marcha inestable y el desarrollo progresivo de alteraciones de los movimientos oculares, especialmente en el plano vertical.\n\nLa conservación de los reflejos oculocefálicos pese a la limitación de los movimientos oculares voluntarios demuestra el carácter supranuclear del trastorno.\n\n\n🔑 CONCEPTOS CLAVE\n- Caídas frecuentes y precoces.\n- Rigidez predominantemente axial.\n- Marcha lenta e inestable.\n- Alteración oculomotora vertical > horizontal.\n- Reflejos oculocefálicos conservados.\n- Puede asociarse a apatía, impulsividad y otros cambios de personalidad.\n\n\n⚡ REPASO ACTIVO\n- La parálisis supranuclear progresiva es un trastorno degenerativo que afecta el tronco encefálico, ganglios basales, diencéfalo y áreas específicas de la corteza. Suele comenzar con caídas y cambios sutiles de la ejecución o personalidad. Posteriormente aparece un síndrome oculomotor progresivo con sacudidas de onda cuadrada y movimientos sacádicos lentos, peores en sentido vertical que horizontal, hasta llegar a la oftalmoparesia supranuclear. Son características la postura rígida e inestable con hiperextensión del cuello, la marcha lenta con sacudidas y tambaleos, la disartria, la disfagia y la rigidez axial. Los reflejos oculocefálicos permanecen conservados. La respuesta a L-dopa es limitada o nula.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 432.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q178",
+    "text": "Un paciente presenta un cuadro de progresión lenta que comenzó con rigidez asimétrica de un miembro, seguida de distonía, mioclonías y apraxia. Con la evolución, el miembro afectado realiza movimientos no intencionales, como sujetar o tocar objetos sin que el paciente lo desee. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Parálisis supranuclear progresiva",
+      "Enfermedad de Alzheimer",
+      "Síndrome corticobasal",
+      "Demencia frontotemporal conductual",
+      "Enfermedad de Parkinson"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro es característico del síndrome corticobasal (CBS). Un dato de gran importancia es el inicio asimétrico con rigidez, distonía, mioclonías y apraxia, que produce incapacidad progresiva del miembro afectado.\n\nAdemás, puede aparecer el fenómeno de extremidad ajena, en el cual la extremidad presenta actividad motora no intencional, como sujetar, tocar o moverse sin rumbo o deshacer acciones.\n\n\n🔑 CONCEPTOS CLAVE\n- Inicio habitualmente asimétrico.\n- Puede presentar rigidez, distonía, mioclonías y apraxia.\n- Es característica la posibilidad de fenómeno de extremidad ajena.\n- Con la evolución puede hacerse bilateral.\n- Se acompaña de demencia de progresión lenta.\n\n\n⚡ REPASO ACTIVO\n- El síndrome corticobasal es un trastorno del movimiento acompañado de demencia de progresión lenta y relacionado con atrofia grave de la corteza perirolándica y los ganglios basales. Habitualmente comienza de manera asimétrica con rigidez, distonía, mioclonías y apraxia. Puede asociarse al fenómeno de extremidad ajena. Finalmente puede hacerse bilateral y producir disartria, marcha lenta, temblor de acción y demencia de predominio frontal. El CBS corresponde al síndrome clínico, mientras que la degeneración corticobasal (CBD) corresponde a una entidad con características histopatológicas específicas. El tratamiento del CBS es sintomático y no existen tratamientos modificadores de la enfermedad.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 432.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q179",
+    "text": "¿Cuál es la segunda causa más frecuente de demencia?",
+    "options": [
+      "Demencia con cuerpos de Lewy",
+      "Demencia frontotemporal",
+      "Demencia vascular",
+      "Enfermedad de Parkinson",
+      "Enfermedad de Creutzfeldt-Jakob"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa demencia vascular suele ser la segunda causa más frecuente de demencia, superada únicamente por la enfermedad de Alzheimer.\n\n\n🔑 CONCEPTOS CLAVE\n- Segunda causa más frecuente de demencia: demencia vascular.\n- Es superada por la enfermedad de Alzheimer.\n- Puede relacionarse con una o más apoplejías sintomáticas.\n\n\n⚡ REPASO ACTIVO\n- La demencia vascular describe un subgrupo de casos de demencia secundarios, en particular, a una o más apoplejías sintomáticas. Es la segunda causa más frecuente de demencia, después de la enfermedad de Alzheimer. El concepto de contribuciones vasculares al deterioro cognitivo y demencia reconoce que los cambios patológicos de la vasculatura cerebral son frecuentes y contribuyen al deterioro cognitivo.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 433.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q180",
+    "text": "Un paciente presenta deterioro cognitivo con fluctuaciones marcadas de la atención y el estado de alerta. Sus familiares refieren alucinaciones visuales bien estructuradas y episodios en los que actúa violentamente durante sus sueños. Posteriormente desarrolla parkinsonismo. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Enfermedad de Alzheimer",
+      "Demencia con cuerpos de Lewy",
+      "Enfermedad de Parkinson con demencia",
+      "Demencia frontotemporal",
+      "Atrofia de múltiples sistemas"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa asociación de alucinaciones visuales bien estructuradas, fluctuaciones cognitivas, trastorno de conducta durante el sueño REM y parkinsonismo constituye un perfil clínico característico de la demencia con cuerpos de Lewy. En este caso, la demencia y los síntomas neuropsiquiátricos preceden al parkinsonismo, lo que favorece este diagnóstico.\n\n\n🔑 CONCEPTOS CLAVE\n- Alucinaciones visuales bien estructuradas.\n- Fluctuaciones de atención y concentración.\n- Trastorno de conducta durante el sueño REM.\n- Parkinsonismo.\n- Puede existir relativa preservación de la memoria episódica.\n\n\n⚡ REPASO ACTIVO\n- La demencia con cuerpos de Lewy produce deficiencias importantes de las capacidades de ejecución, atención y funciones visuoespaciales, mientras que la memoria episódica puede permanecer relativamente preservada. Sus principales características diagnósticas son psicosis temprana con alucinaciones visuales bien construidas, cognición fluctuante, trastorno de conducta durante el sueño REM y parkinsonismo.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 434.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q181",
+    "text": "¿Cuál de las siguientes funciones cognitivas puede permanecer relativamente preservada en la demencia con cuerpos de Lewy?",
+    "options": [
+      "Atención sostenida",
+      "Función ejecutiva",
+      "Capacidad visuoespacial",
+      "Estado de alerta",
+      "Memoria episódica"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEn la demencia con cuerpos de Lewy pueden existir deficiencias graves en funciones ejecutivas, atención y capacidades visuoespaciales; sin embargo, el fragmento señala que la memoria episódica puede permanecer relativamente preservada.\n\n\n🔑 CONCEPTOS CLAVE\n- Función ejecutiva → afectada.\n- Atención → afectada y fluctuante.\n- Función visuoespacial → afectada.\n- Memoria episódica → relativamente preservada.\n\n\n⚡ REPASO ACTIVO\n- En la fase prodrómica pueden aparecer deterioro cognitivo leve, deficiencias de ejecución y atención y trastornos visuoespaciales. También pueden presentarse alucinaciones no relacionadas con fármacos, trastorno de conducta durante el sueño REM, fluctuaciones de la atención o parkinsonismo. El trastorno de conducta durante el sueño REM puede preceder muchos años al desarrollo del síndrome relacionado con cuerpos de Lewy.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 434.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Demencias",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q182",
+    "text": "Un paciente presenta desde hace varios años temblor bilateral y simétrico de las manos, que aparece al mantener una postura y al realizar actividades como comer o beber. Refiere que el temblor empeora con el estrés y mejora después del consumo de bebidas alcohólicas. Los síntomas han progresado y actualmente interfieren con sus actividades de la vida diaria. ¿Cuál es el tratamiento farmacológico de primera línea?",
+    "options": [
+      "Gabapentina",
+      "Primidona",
+      "Toxina botulínica",
+      "Propranolol",
+      "Levodopa"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro clínico es compatible con temblor esencial: temblor de acción, habitualmente bilateral y simétrico, predominante en las extremidades superiores, que empeora con el estrés y mejora con el consumo de alcohol.\n\nFármacos de primera línea a los β-bloqueadores o la primidona. Entre los β-bloqueadores, el propranolol es útil en aproximadamente la mitad de los casos. Por ello, entre las opciones presentadas, constituye una elección de primera línea.\n\n\n🔑 CONCEPTOS CLAVE\n- Primera línea: β-bloqueadores o primidona.\n- β-bloqueador señalado: propranolol.\n- El propranolol es útil aproximadamente en la mitad de los casos.\n- La primidona puede utilizarse si el propranolol es ineficaz o está contraindicado.\n- Los casos leves sin afectación funcional pueden no necesitar tratamiento.\n\n\n⚡ REPASO ACTIVO\n- El temblor esencial es principalmente un temblor de acción de 6-10 Hz, predominante en extremidades superiores y habitualmente bilateral y simétrico. Suele mejorar con alcohol y empeorar con estrés. Si es leve y no causa afectación funcional, puede bastar con tranquilización verbal. Cuando requiere tratamiento, los β-bloqueadores y la primidona son los fármacos de primera línea. El propranolol es útil aproximadamente en la mitad de los casos, pero está contraindicado en individuos con bradicardia o asma. La primidona debe iniciarse con dosis pequeñas y aumentarse gradualmente para evitar sedación, náusea y mareo. También se mencionan gabapentina y topiramato; la toxina botulínica puede ser útil para el temblor de extremidades o de la voz. En pacientes graves que no responden a farmacoterapia pueden utilizarse intervenciones dirigidas al núcleo ventro-intermedio del tálamo.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 436.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Trastornos del movimiento",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q183",
+    "text": "¿Cuál es el gen afectado en la enfermedad de Huntington?",
+    "options": [
+      "Gen de la apolipoproteína E",
+      "Gen de la huntingtina",
+      "Gen de la proteína tau",
+      "Gen de la α-sinucleína",
+      "Gen de la proteína priónica"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa enfermedad de Huntington se origina por un incremento de las repeticiones CAG (>40) en la secuencia codificadora del gen de la huntingtina, localizado en el brazo corto del cromosoma 4.\n\nEl gen codifica la huntingtina (HTT), una proteína citoplásmica ampliamente distribuida en las neuronas del sistema nervioso central. El fragmento señala que los fragmentos de la huntingtina mutante pueden ser tóxicos.\n\n\n🔑 CONCEPTOS CLAVE\n- Gen afectado: huntingtina.\n- Localización: brazo corto del cromosoma 4.\n- Mutación: aumento de las repeticiones CAG.\n- Más de 40 repeticiones se asocian con la enfermedad.\n- A mayor número de repeticiones, aparición más precoz.\n\n\n⚡ REPASO ACTIVO\n- La enfermedad de Huntington es un trastorno autosómico dominante, muy penetrante, progresivo y mortal. Se debe a un incremento de las repeticiones CAG (>40) en el gen de la huntingtina, localizado en el brazo corto del cromosoma 4. Entre 36 y 39 repeticiones puede observarse una forma intermedia, generalmente menos grave. Un mayor número de repeticiones se relaciona con una aparición más precoz, fenómeno que contribuye a la anticipación.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 436.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Trastornos del movimiento",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q184",
+    "text": "¿Cuál es la manifestación motora característica de la enfermedad de Huntington?",
+    "options": [
+      "Temblor de reposo",
+      "Rigidez axial",
+      "Corea",
+      "Mioclonía generalizada",
+      "Temblor de intención"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa manifestación motora característica de la enfermedad de Huntington es la corea, constituida por movimientos involuntarios, semivoluntarios, rápidos y sin un perfil preciso, razón por la cual antiguamente se denominaba corea de Huntington.\n\nEn las etapas iniciales, la corea tiende a ser focal o segmentaria. Conforme avanza la enfermedad, puede afectar múltiples regiones corporales. En fases posteriores puede disminuir la corea y aparecer distonía, rigidez, bradicinesia y mioclonía.\n\n\n🔑 CONCEPTOS CLAVE\n- Manifestación característica: corea.\n- Inicialmente puede ser focal o segmentaria.\n- Progresa hasta comprometer múltiples regiones corporales.\n- En fases avanzadas pueden aparecer distonía, rigidez, bradicinesia y mioclonía.\n\n\n⚡ REPASO ACTIVO\n- La enfermedad de Huntington es un trastorno autosómico dominante, muy penetrante, progresivo y mortal. Se caracteriza por alteraciones motoras, conductuales, oculomotoras y cognitivas. Su manifestación motora característica es la corea. El inicio típico ocurre entre los 25 y 45 años. A medida que progresa pueden aparecer trastornos de la marcha, distonía, rigidez, bradicinesia y mioclonía, además de deterioro conductual y cognitivo.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 436.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Trastornos del movimiento",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q185",
+    "text": "Un paciente de 64 años presenta lentitud progresiva para realizar sus actividades habituales. En la exploración se observa temblor en reposo, rigidez, bradicinesia y alteración de la marcha con inestabilidad postural. Además, sus familiares refieren disminución de la expresión facial y voz de menor intensidad. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Temblor esencial",
+      "Enfermedad de Huntington",
+      "Síndrome corticobasal",
+      "Enfermedad de Parkinson",
+      "Parálisis supranuclear progresiva"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro es característico de la enfermedad de Parkinson. Sus manifestaciones cardinales son bradicinesia, temblor en reposo, rigidez e inestabilidad postural.\n\nAdemás, el paciente presenta otras manifestaciones motoras descritas en el fragmento, como facies de máscara (hipomimia) y voz apagada (hipofonía). También pueden aparecer micrografía, disminución del parpadeo, babeo, disfagia, bloqueo motor y caídas.\n\n\n🔑 CONCEPTOS CLAVE\n- Bradicinesia.\n- Temblor en reposo.\n- Rigidez.\n- Inestabilidad postural.\n- Hipomimia e hipofonía son manifestaciones motoras adicionales.\n\n\n⚡ REPASO ACTIVO\n- La enfermedad de Parkinson es la segunda enfermedad neurodegenerativa relacionada con la edad, después de la enfermedad de Alzheimer. La edad media de inicio es cercana a los 60 años.\n- Sus cuatro manifestaciones cardinales son bradicinesia, temblor en reposo, rigidez e inestabilidad postural. Otras manifestaciones motoras incluyen micrografía, hipomimia, disminución del parpadeo, babeo, hipofonía, disfagia, bloqueo motor y caídas. Entre las manifestaciones no motoras se encuentran anosmia, alteraciones sensitivas, trastornos del ánimo, alteraciones del sueño, disfunción autonómica, hipotensión ortostática, trastornos digestivos y genitourinarios, disfunción sexual y deterioro cognitivo/demencia.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 435.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Trastornos del movimiento",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q186",
+    "text": "¿Cuál de las siguientes exposiciones se ha relacionado epidemiológicamente con un mayor riesgo de desarrollar enfermedad de Parkinson?",
+    "options": [
+      "Consumo habitual de cafeína",
+      "Exposición a pesticidas",
+      "Uso de antiinflamatorios",
+      "Consumo de tabaco",
+      "Antagonistas del calcio"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl fragmento menciona un mayor riesgo de enfermedad de Parkinson después de la exposición a pesticidas, así como en personas que viven en zonas rurales, trabajan como agricultores o beben agua de pozos.\n\nPor el contrario, se han descrito como posibles factores protectores la cafeína, el tabaquismo, los antiinflamatorios no esteroideos y los antagonistas de los canales del calcio, aunque el propio texto advierte que estos hallazgos no han sido confirmados.\n\n\n🔑 CONCEPTOS CLAVE\n- Mayor riesgo: pesticidas.\n- También se mencionan: vida rural, agricultura y agua de pozos.\n- Las asociaciones ambientales descritas no establecen una causa definitiva.\n\n\n⚡ REPASO ACTIVO\n- La hipótesis ambiental recibió apoyo a partir de la observación de que la MPTP puede producir un síndrome similar al Parkinson. La MPTP llega al SNC y se convierte en MPP+, una toxina mitocondrial captada selectivamente por las neuronas dopaminérgicas. Epidemiológicamente se han relacionado con mayor riesgo los pesticidas, residencia rural, agricultura y consumo de agua de pozos.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 435.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Trastornos del movimiento",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q187",
+    "text": "¿Cuál es el principal neurotransmisor implicado en la enfermedad de Parkinson?",
+    "options": [
+      "Serotonina",
+      "Acetilcolina",
+      "Noradrenalina",
+      "Dopamina",
+      "Glutamato"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa dopamina es el principal neurotransmisor implicado en la enfermedad de Parkinson. Existe degeneración de las neuronas dopaminérgicas de la parte compacta de la sustancia negra, lo que ocasiona una disminución de la dopamina en el estriado.\n\nEste déficit dopaminérgico constituye la base para el uso de levodopa, un precursor de la dopamina. La dopamina como tal no atraviesa la barrera hematoencefálica, mientras que la levodopa sí permite aumentar la disponibilidad de dopamina en el sistema nervioso central.\n\n\n🔑 CONCEPTOS CLAVE\n- Neurotransmisor principal: dopamina.\n- Estructura afectada: parte compacta de la sustancia negra.\n- Consecuencia: disminución de dopamina en el estriado.\n- La levodopa es un precursor de la dopamina.\n\n\n⚡ REPASO ACTIVO\n- En la enfermedad de Parkinson existe degeneración de las neuronas dopaminérgicas de la parte compacta de la sustancia negra y disminución de la dopamina en el estriado. La levodopa constituye la base del tratamiento y es el tratamiento sintomático más eficaz. Se administra junto con un inhibidor periférico de la descarboxilasa, como carbidopa o benserazida, para evitar su conversión periférica a dopamina y disminuir efectos como náuseas, vómitos e hipotensión ortostática.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 435.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Trastornos del movimiento",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q188",
+    "text": "Un paciente adulto presenta episodios paroxísticos de dolor facial muy intenso, de pocos segundos de duración, localizados en la región de los labios y carrillos. Los ataques aparecen al lavarse la cara, cepillarse los dientes o exponerse a una corriente de aire. En la exploración no se identifican signos objetivos de pérdida sensitiva. ¿Cuál de los siguientes tratamientos resulta eficaz en aproximadamente el 50-75% de los pacientes con este trastorno?",
+    "options": [
+      "Gabapentina",
+      "Lamotrigina",
+      "Oxcarbazepina",
+      "Carbamazepina",
+      "Baclofeno"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro clínico corresponde a neuralgia del trigémino, caracterizada por paroxismos de dolor facial muy intenso y de corta duración. Un dato característico es la existencia de zonas desencadenantes, donde estímulos táctiles cotidianos como lavarse la cara, cepillarse los dientes o exponerse a una corriente de aire pueden provocar el dolor.\n\nLa carbamazepina resulta eficaz en aproximadamente 50-75% de los pacientes. Se inicia con 100 mg con la comida y se aumenta progresivamente 100 mg/día hasta conseguir un alivio notable (>50%) del dolor. La mayoría requiere una dosis de mantenimiento de 200 mg cada 6 horas.\n\n\n🔑 CONCEPTOS CLAVE\n- Tratamiento destacado: carbamazepina.\n- Eficacia aproximada: 50-75%.\n- Oxcarbazepina: alternativa con probable eficacia similar.\n- Si el tratamiento farmacológico falla, puede ofrecerse tratamiento quirúrgico.\n\n\n⚡ REPASO ACTIVO\n- La neuralgia del trigémino produce paroxismos de dolor facial muy intenso, generalmente de segundos hasta 1-2 minutos de duración. Puede afectar labios, encías, carrillos y mentón, y raramente la división oftálmica del V par. Los ataques pueden desencadenarse al hablar, masticar, sonreír, lavarse la cara, cepillarse los dientes o exponerse a corrientes de aire. Un hallazgo importante es la presencia de zonas desencadenantes, y en la exploración no suelen identificarse signos objetivos de pérdida sensitiva. La carbamazepina es eficaz en aproximadamente 50-75% de los pacientes.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 441.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Pares craneales",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q189",
+    "text": "¿Cuál es la causa más común de parálisis facial?",
+    "options": [
+      "Neuralgia del trigémino",
+      "Parálisis de Bell",
+      "Enfermedad de Parkinson",
+      "Síndrome corticobasal",
+      "Parálisis supranuclear progresiva"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa parálisis de Bell es la forma más común de parálisis facial. Se trata de un trastorno idiopático, cuyo comienzo suele ser bastante brusco y alcanza, por lo general, el nivel máximo de debilidad después de 48 horas.\n\nEl fragmento señala además como factores de riesgo el embarazo y la diabetes mellitus.\n\n\n🔑 CONCEPTOS CLAVE\n- Forma más común de parálisis facial: parálisis de Bell.\n- Es un trastorno idiopático.\n- Inicio habitualmente brusco.\n- Máxima debilidad aproximadamente a las 48 horas.\n- Factores de riesgo: embarazo y diabetes mellitus.\n\n\n⚡ REPASO ACTIVO\n- La parálisis de Bell constituye la forma más común de parálisis facial. Su incidencia anual es cercana a 25 casos por 100 000 personas. Uno o dos días antes de la parálisis puede aparecer dolor detrás del oído. Suele existir pérdida unilateral de la sensibilidad gustativa e hiperacusia. Alrededor del 80% de los pacientes se recupera después de unas semanas o meses. La presencia de una parálisis incompleta durante la primera semana constituye el signo pronóstico más favorable.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 441.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Pares craneales",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q190",
+    "text": "¿Cuál es el tratamiento farmacológico indicado en la parálisis de Bell?",
+    "options": [
+      "Aciclovir como monoterapia durante 10 días",
+      "Valaciclovir como monoterapia durante cinco días",
+      "Prednisona durante cinco días con descenso posterior",
+      "Carbamazepina durante cinco a siete días",
+      "Gabapentina asociada a tratamiento antiviral"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl tratamiento farmacológico descrito para la parálisis de Bell consiste en un ciclo de glucocorticoides, como prednisona, en dosis de 60-80 mg/día durante los primeros cinco días, seguido de una disminución de la dosis durante los cinco días siguientes.\n\nEste tratamiento acorta el período de recuperación y mejora de manera moderada el pronóstico funcional.\n\nEl fragmento señala que estudios clínicos grandes no demostraron un beneficio adicional al agregar valaciclovir o aciclovir a los glucocorticoides solos, aunque pueden utilizarse cuando existen lesiones vesiculares en el paladar o en el conducto auditivo externo.\n\n\n🔑 CONCEPTOS CLAVE\n- Tratamiento farmacológico: prednisona.\n- Dosis: 60-80 mg/día inicialmente.\n- Primeros 5 días a dosis completa.\n- Luego disminución de dosis durante 5 días.\n- Los antivirales no demostraron beneficio adicional de forma rutinaria.\n\n\n⚡ REPASO ACTIVO\n- El manejo incluye medidas sintomáticas para proteger el ojo: cinta de papel para deprimir el párpado superior durante el sueño, lágrimas artificiales y masaje de los músculos debilitados. El tratamiento farmacológico se realiza con prednisona 60-80 mg/día durante cinco días y reducción progresiva durante los cinco días siguientes. Los antivirales como valaciclovir o aciclovir no mostraron beneficio adicional sobre los glucocorticoides solos, pero pueden utilizarse cuando existen lesiones vesiculares en el paladar o conducto auditivo externo.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 441.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Pares craneales",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q191",
+    "text": "¿Cuál es la tríada característica de la esclerosis múltiple?",
+    "options": [
+      "Inflamación, desmielinización y gliosis",
+      "Desmielinización, necrosis y hemorragia",
+      "Inflamación, degeneración axonal y vasculitis",
+      "Gliosis, depósito amiloide y desmielinización",
+      "Inflamación, microhemorragias y fibrosis"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa esclerosis múltiple es una enfermedad autoinmunitaria del sistema nervioso central caracterizada por la tríada de inflamación, desmielinización y gliosis, esta última responsable de la formación de placas o cicatrices. También puede existir pérdida neuronal.\n\nUn concepto fundamental es que las lesiones aparecen en diferentes momentos y distintas localizaciones del SNC, es decir, se encuentran diseminadas en tiempo y espacio.\n\n\n🔑 CONCEPTOS CLAVE\n- Inflamación.\n- Desmielinización.\n- Gliosis (placas o cicatrices).\n- Enfermedad autoinmunitaria del SNC.\n- Lesiones diseminadas en tiempo y espacio.\n\n\n⚡ REPASO ACTIVO\n- La esclerosis múltiple es una enfermedad autoinmunitaria del SNC caracterizada por inflamación, desmielinización y gliosis, además de posible pérdida neuronal. Su evolución puede consistir en recaídas-remisiones o ser progresiva. Las lesiones aparecen en distintos momentos y localizaciones del SNC, estableciendo el concepto de diseminación en tiempo y espacio. Las manifestaciones clínicas son muy variadas y dependen del sitio del SNC donde se localicen las lesiones.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q192",
+    "text": "Con respecto a las formas de evolución clínica de la esclerosis múltiple, todas las siguientes afirmaciones son correctas, EXCEPTO:",
+    "options": [
+      "La forma recidivante/remitente representa cerca del 90% de los casos al inicio",
+      "La forma progresiva secundaria siempre comienza como recidivante/remitente",
+      "La forma progresiva primaria representa alrededor del 10% de los casos",
+      "La forma progresiva primaria presenta ataques agudos con recuperación completa",
+      "La forma progresiva secundaria produce deterioro continuo sin relación con ataques agudos"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa esclerosis múltiple progresiva primaria se caracteriza por un deterioro funcional constante desde el inicio de la enfermedad, sin ataques.\n\nEn contraste, la forma recidivante/remitente se caracteriza por ataques discretos de días o semanas, seguidos inicialmente por una recuperación sustancial o completa. La forma progresiva secundaria siempre comienza como recidivante/remitente, pero posteriormente cambia su evolución y aparece un deterioro continuo de las funciones, independientemente de los ataques agudos.\n\n\n🔑 CONCEPTOS CLAVE\n- Recidivante/remitente: aproximadamente 90% al inicio.\n- Progresiva secundaria: comienza siempre como recidivante/remitente.\n- Progresiva primaria: aproximadamente 10%.\n- Progresiva primaria → deterioro constante sin ataques.\n- Progresiva secundaria → mayor discapacidad neurológica fija.\n\n\n⚡ REPASO ACTIVO\n\n\n**Se describen tres tipos de esclerosis múltiple:**\n- Recidivante/remitente: 90% de los casos al inicio. Presenta ataques discretos de días o semanas, rara vez horas, con recuperación inicialmente sustancial o completa. Con el tiempo, la recuperación puede ser menos evidente.\n- Progresiva secundaria: siempre comienza como una forma recidivante/remitente. Posteriormente aparece deterioro continuo de las funciones, sin relación con ataques agudos, y produce mayor discapacidad neurológica fija.\n- Progresiva primaria: alrededor del 10% de los casos. No presenta ataques; existe deterioro funcional constante desde el comienzo. Suele iniciarse en etapas más avanzadas de la vida, con una mediana cercana a los 40 años.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q193",
+    "text": "¿Cuáles son factores de riesgo bien establecidos para el desarrollo de esclerosis múltiple?",
+    "options": [
+      "Déficit de vitamina D, exposición al virus de Epstein-Barr y tabaquismo",
+      "Exceso de vitamina D, tabaquismo e infección por influenza",
+      "Exposición solar intensa, virus de Epstein-Barr y tabaquismo",
+      "Déficit de vitamina D, infección bacteriana y exposición solar",
+      "Tabaquismo, exposición ultravioleta y déficit de vitamina B12"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl fragmento establece tres factores de riesgo principales para esclerosis múltiple: deficiencia de vitamina D, exposición al virus de Epstein-Barr y tabaquismo.\n\nLa deficiencia de vitamina D se relaciona con un incremento del riesgo y su persistencia podría aumentar la actividad de la enfermedad una vez iniciada. Asimismo, se ha observado una asociación repetida entre la exposición al virus de Epstein-Barr y el riesgo de esclerosis múltiple. El antecedente de tabaquismo también se vincula con mayor riesgo.\n\n\n🔑 CONCEPTOS CLAVE\n- Deficiencia de vitamina D.\n- Exposición al virus de Epstein-Barr.\n- Tabaquismo.\n\n\n⚡ REPASO ACTIVO\n- Los factores de riesgo bien establecidos para esclerosis múltiple incluyen deficiencia de vitamina D, exposición al virus de Epstein-Barr y tabaquismo. La radiación ultravioleta B participa en la biosíntesis de vitamina D, por lo que en zonas templadas pueden encontrarse concentraciones séricas bajas, especialmente durante el invierno. La infección distante por virus de Epstein-Barr se ha relacionado epidemiológicamente con esclerosis múltiple, aunque el fragmento señala que no se ha establecido una participación causal.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q194",
+    "text": "Respecto a la epidemiología de la esclerosis múltiple, ¿cuál de las siguientes afirmaciones es correcta?",
+    "options": [
+      "Es más frecuente en varones que en mujeres",
+      "Su inicio habitual ocurre después de los 60 años",
+      "Tiene una frecuencia similar en ambos sexos",
+      "Es tres veces más frecuente en mujeres que en varones",
+      "La mayoría de los casos comienza antes de los 18 años"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa esclerosis múltiple es aproximadamente tres veces más frecuente en mujeres que en varones. La edad habitual de inicio se encuentra entre los 20 y 40 años, siendo un poco más tardía en los varones.\n\nAlrededor del 10% de los casos comienza antes de los 18 años y un porcentaje aún menor antes de los 10 años.\n\n\n🔑 CONCEPTOS CLAVE\n- Mujeres : varones → 3:1.\n- Edad habitual de inicio → 20-40 años.\n- Aproximadamente 10% inicia antes de los 18 años.\n\n\n⚡ REPASO ACTIVO\n- La esclerosis múltiple puede presentarse en cualquier momento de la vida, pero habitualmente comienza entre los 20 y 40 años. Es tres veces más frecuente en mujeres. Presenta importantes gradientes geográficos: la prevalencia es mayor en determinadas zonas templadas y considerablemente menor en los trópicos. Parte de esta variación geográfica parece estar relacionada con la exposición a la luz ultravioleta.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q195",
+    "text": "¿Cuál es la manifestación característica en el líquido cefalorraquídeo (LCR) de los pacientes con esclerosis múltiple?",
+    "options": [
+      "Disminución marcada de la concentración de IgG",
+      "Bandas oligoclonales de IgG",
+      "Pleocitosis mayor de 75 células/μL",
+      "Concentración proteínica mayor de 1 g/L",
+      "Ausencia de síntesis intratecal de IgG"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nUna manifestación característica del LCR en la esclerosis múltiple es la presencia de bandas oligoclonales de IgG, que reflejan producción intratecal de inmunoglobulinas.\n\nSegún el fragmento, estas bandas se detectan en más del 90% de los pacientes con esclerosis múltiple. Pueden no estar presentes al inicio de la enfermedad y, en algunos pacientes, su número aumenta con el tiempo.\n\nAdemás, puede encontrarse pleocitosis leve, especialmente en pacientes jóvenes con la forma recidivante/remitente. Una pleocitosis >75 células/μL o una concentración de proteínas >1 g/L debe hacer considerar que el paciente quizá no tenga esclerosis múltiple.\n\n\n🔑 CONCEPTOS CLAVE\n- Hallazgo característico: bandas oligoclonales de IgG.\n- Presentes en >90% de los pacientes.\n- Existe síntesis intratecal de IgG.\n- Puede existir pleocitosis leve.\n- Pleocitosis >75 células/μL → hace dudar del diagnóstico.\n\n\n⚡ REPASO ACTIVO\n- Las alteraciones del LCR en la esclerosis múltiple incluyen pleocitosis de mononucleares y aumento de la concentración de IgG sintetizada intratecalmente. Las bandas oligoclonales de IgG se detectan en más del 90% de los pacientes. La pleocitosis leve aparece en alrededor del 25% de los enfermos. Una pleocitosis superior a 75 células/μL o proteínas superiores a 1 g/L debe hacer considerar otro diagnóstico.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q196",
+    "text": "Una mujer con diagnóstico de esclerosis múltiple presenta un deterioro neurológico agudo de intensidad importante. No tiene fiebre, infección ni antecedente de exposición a temperaturas elevadas. Se considera que el cuadro corresponde a un nuevo episodio desmielinizante y se decide iniciar tratamiento para disminuir la intensidad y acortar la duración del ataque. ¿Cuál es el fármaco de elección?",
+    "options": [
+      "Prednisona",
+      "Dexametasona",
+      "Metilprednisolona",
+      "Pantoprazol",
+      "Cimetidina"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl cuadro corresponde a una crisis aguda o episodio desmielinizante de esclerosis múltiple. Al no existir fiebre, infección ni incremento de la temperatura ambiental, el fragmento orienta a una verdadera exacerbación y no a una pseudoexacerbación.\n\nEl fármaco utilizado es la metilprednisolona por vía intravenosa, administrada a dosis de 500 a 1 000 mg/día durante 3 a 5 días. Los glucocorticoides producen beneficio clínico a corto plazo al reducir la intensidad y acortar la duración de los episodios.\n\n\n🔑 CONCEPTOS CLAVE\n- Fármaco: metilprednisolona.\n- Vía habitual: intravenosa.\n- Dosis: 500-1 000 mg/día.\n- Duración: 3-5 días.\n- Ataques leves: con frecuencia no requieren tratamiento.\n\n\n⚡ REPASO ACTIVO\n- Ante un deterioro agudo debe diferenciarse una nueva actividad de la enfermedad de una pseudoexacerbación causada por aumento de temperatura ambiental, fiebre o infección. Las pseudoexacerbaciones no deben tratarse con glucocorticoides. Para los ataques o exacerbaciones agudas se utiliza metilprednisolona IV 500-1 000 mg/día durante 3-5 días. Puede sustituirse el componente intravenoso por metilprednisolona o dexametasona VO en dosis equivalentes. La plasmaféresis puede beneficiar a pacientes con ataques fulminantes que no mejoran con glucocorticoides.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q197",
+    "text": "¿Cuál de los siguientes anticuerpos monoclonales anti-CD20 utilizados en la esclerosis múltiple actúa agotando selectivamente los linfocitos B maduros?",
+    "options": [
+      "Natalizumab",
+      "Ocrelizumab",
+      "Interferón β-1a",
+      "Teriflunomida",
+      "Metilprednisolona"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl ocrelizumab es un anticuerpo monoclonal humanizado dirigido contra la molécula CD20, presente en la superficie de los linfocitos B maduros. Su acción produce un agotamiento rápido de los linfocitos B circulantes.\n\nEl fragmento destaca su elevada eficacia: en estudios clínicos redujo las tasas de recaída anuales en 47% y disminuyó en 95% las lesiones nuevas.\n\n\n🔑 CONCEPTOS CLAVE\n- Ocrelizumab → anticuerpo monoclonal anti-CD20.\n- Actúa sobre linfocitos B maduros.\n- Produce agotamiento rápido de linfocitos B circulantes.\n- Se considera un tratamiento muy eficaz.\n\n\n⚡ REPASO ACTIVO\n- El ocrelizumab es un anticuerpo monoclonal humanizado dirigido contra CD20. Agota rápidamente los linfocitos B circulantes mediante toxicidad celular dependiente de anticuerpos y citotoxicidad dependiente del complemento. Se administra por infusión intravenosa cada 24 semanas.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q198",
+    "text": "El rituximab es un anticuerpo monoclonal anti-CD20 utilizado en algunos contextos para la esclerosis múltiple. Su administración se ha relacionado con un riesgo muy reducido de leucoencefalopatía multifocal progresiva, asociada a infección por:",
+    "options": [
+      "Virus de Epstein-Barr",
+      "Virus del herpes simple",
+      "Virus de John Cunningham",
+      "Virus varicela-zóster",
+      "Citomegalovirus"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl rituximab es otro anticuerpo monoclonal anti-CD20 que, según el fragmento, parece ser muy eficaz en esclerosis múltiple.\n\nSe ha relacionado con un riesgo muy reducido de leucoencefalopatía multifocal progresiva (LMP), una enfermedad potencialmente mortal secundaria a infección por el virus de John Cunningham (JC).\n\nEl texto señala que este riesgo es muy bajo, calculado en menos de 1:25 000 por año.\n\n\n🔑 CONCEPTOS CLAVE\n- Rituximab → anti-CD20.\n- Complicación: LMP.\n- Virus relacionado: virus JC.\n- Riesgo descrito: <1:25 000/año.\n\n\n⚡ REPASO ACTIVO\n- El rituximab es un anticuerpo monoclonal anti-CD20 que se ha utilizado en algunos contextos para la esclerosis múltiple. Se acompaña de un riesgo muy reducido de leucoencefalopatía multifocal progresiva, secundaria a infección por virus JC. El fragmento señala que posiblemente ocrelizumab y ofatumumab compartan también este riesgo.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q199",
+    "text": "¿Cuál es la principal preocupación asociada al tratamiento prolongado con natalizumab en pacientes con esclerosis múltiple?",
+    "options": [
+      "Neuritis óptica recurrente",
+      "Leucoencefalopatía multifocal progresiva",
+      "Síndrome parkinsoniano secundario",
+      "Neuropatía periférica desmielinizante",
+      "Encefalopatía hipertensiva reversible"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nLa principal preocupación con el tratamiento a largo plazo con natalizumab es el desarrollo de leucoencefalopatía multifocal progresiva (LMP).\n\nSegún el fragmento, esta complicación se ha presentado en aproximadamente 0,4% de los pacientes tratados. El riesgo es muy bajo durante el primer año, pero aumenta hacia el segundo año.\n\nLa determinación de anticuerpos contra el virus JC permite estratificar el riesgo. En pacientes sin estos anticuerpos, el riesgo es mínimo; por el contrario, aumenta cuando están presentes, especialmente en concentraciones elevadas.\n\n\n🔑 CONCEPTOS CLAVE\n- Natalizumab → tratamiento muy eficaz.\n- Principal preocupación → LMP.\n- Relacionada con → virus JC.\n- Los anticuerpos contra JC permiten estratificar el riesgo.\n- El riesgo aumenta con la duración del tratamiento.\n\n\n⚡ REPASO ACTIVO\n- El natalizumab es un anticuerpo monoclonal humanizado dirigido contra la subunidad α4 de la integrina α4β1. Impide que los linfocitos se unan a las células endoteliales y atraviesen la barrera hematoencefálica hacia el SNC. Se administra por vía intravenosa en dosis de 300 mg una vez al mes. La principal preocupación a largo plazo es la LMP asociada al virus JC. Por ello, se recomienda valorar periódicamente los anticuerpos contra este virus en los pacientes tratados.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q200",
+    "text": "¿Cuál es la lesión característica observada en la resonancia magnética de pacientes con esclerosis múltiple?",
+    "options": [
+      "Lesiones periventriculares en dedos de Dawson",
+      "Lesiones temporales con distribución simétrica",
+      "Lesiones corticales de predominio occipital",
+      "Lesiones talámicas bilaterales y simétricas",
+      "Lesiones cerebelosas  infratentoriales (signo del martillo)"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nUn hallazgo característico de la esclerosis múltiple en la resonancia magnética son las lesiones de desmielinización perivenosa conocidas como “dedos de Dawson”.\n\nEstas lesiones suelen estar orientadas en sentido perpendicular a la superficie ventricular, reflejando su distribución perivenosa. El fragmento también señala que pueden encontrarse lesiones multifocales en el encéfalo, tronco encefálico y médula espinal.\n\n\n🔑 CONCEPTOS CLAVE\n- Lesión característica: dedos de Dawson.\n- Localización típica: sustancia blanca periventricular.\n- Orientación: perpendicular a la superficie ventricular.\n- Corresponden a desmielinización perivenosa.\n\n\n⚡ REPASO ACTIVO\n- En la esclerosis múltiple, la RM detecta anomalías características en más del 95% de los pacientes. Las lesiones suelen orientarse perpendicularmente a la superficie ventricular y corresponden a un patrón de desmielinización perivenosa denominado dedos de Dawson. Las lesiones pueden ser multifocales y localizarse en encéfalo, tronco encefálico y médula espinal. El realce con gadolinio aparece tempranamente en la evolución de una lesión y constituye un marcador útil de inflamación.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 444.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Esclerosis múltiple",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q201",
+    "text": "El síndrome de Guillain-Barré corresponde a una polirradiculoneuropatía aguda de origen:",
+    "options": [
+      "Degenerativo",
+      "Vascular",
+      "Autoinmunitario",
+      "Metabólico",
+      "Neoplásico"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl síndrome de Guillain-Barré (SGB) es una polirradiculoneuropatía aguda de origen autoinmunitario, que puede presentar una evolución grave y fulminante. Con frecuencia aparece después de un proceso infeccioso, pero esto no significa que la neuropatía sea producida directamente por la infección.\n\n\n🔑 CONCEPTOS CLAVE\n- Polirradiculoneuropatía aguda.\n- Origen autoinmunitario.\n- Puede presentar evolución grave y fulminante.\n- Frecuentemente existe un antecedente infeccioso.\n\n\n⚡ REPASO ACTIVO\n- El SGB es una polirradiculoneuropatía aguda autoinmunitaria. Se presenta durante todo el año y el riesgo es ligeramente mayor en varones. En los países occidentales afecta con mayor frecuencia a adultos que a niños.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q202",
+    "text": "Un paciente consulta por debilidad rápidamente progresiva que comenzó en ambas piernas y durante los días siguientes ascendió hacia los miembros superiores. Refiere hormigueo en las extremidades. En la exploración presenta parálisis motora simétrica y ausencia de reflejos tendinosos profundos. ¿Cuál es el diagnóstico más probable?",
+    "options": [
+      "Síndrome de Guillain-Barré",
+      "Esclerosis múltiple",
+      "Enfermedad de Parkinson",
+      "Neuralgia del trigémino",
+      "Enfermedad de Huntington"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl patrón característico del SGB es una parálisis ascendente con arreflexia de evolución rápida. Habitualmente comienza con sensación de acorchamiento en las piernas, seguida de debilidad que progresa en un período de horas a pocos días.\n\nLas piernas suelen afectarse con mayor intensidad que los brazos. Puede acompañarse de disestesias u hormigueo y aproximadamente el 50% de los pacientes presenta paresia facial.\n\n\n🔑 CONCEPTOS CLAVE\n- Debilidad ascendente.\n- Evolución rápida.\n- Arreflexia.\n- Piernas más afectadas que brazos.\n- Puede existir paresia facial.\n\n\n⚡ REPASO ACTIVO\n- El SGB se manifiesta como una parálisis motora arrefléxica de evolución rápida, con o sin alteraciones sensitivas. La debilidad suele comenzar en las piernas y ascender. Puede producir paresia facial, debilidad bulbar y compromiso respiratorio. Hasta 30% de los pacientes puede necesitar asistencia ventilatoria. La disfunción autonómica puede producir fluctuaciones de la presión arterial, hipotensión postural y arritmias.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q203",
+    "text": "¿Cuál es la tríada característica de la variante de Miller Fisher del síndrome de Guillain-Barré?",
+    "options": [
+      "Corea, rigidez y bradicinesia",
+      "Oftalmoplejía, ataxia y arreflexia",
+      "Ataxia, espasticidad y temblor",
+      "Diplopía, hiperreflexia y debilidad",
+      "Arreflexia, disartria y hemiparesia"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl síndrome de Miller Fisher es una variante regional del síndrome de Guillain-Barré caracterizada por oftalmoplejía, ataxia y arreflexia, generalmente sin debilidad.\n\nEl fragmento señala además una relación importante con los anticuerpos anti-GQ1b, presentes aproximadamente en el 90% de los casos.\n\n\n🔑 CONCEPTOS CLAVE\n- Oftalmoplejía.\n- Ataxia.\n- Arreflexia.\n- Anticuerpos anti-GQ1b.\n- Representa cerca del 5% de los casos de SGB.\n\n\n⚡ REPASO ACTIVO\n- El síndrome de Miller Fisher se presenta en adultos y niños con oftalmoplejía, ataxia y arreflexia de evolución rápida en las extremidades, sin debilidad, y muchas veces con parálisis pupilar. Presenta una importante asociación con anticuerpos anti-GQ1b.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q204",
+    "text": "¿Cuál es el antecedente infeccioso bacteriano más frecuentemente relacionado con el síndrome de Guillain-Barré?",
+    "options": [
+      "Mycoplasma pneumoniae",
+      "Campylobacter jejuni",
+      "Virus de Epstein-Barr",
+      "Citomegalovirus",
+      "Virus del Zika"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nAlrededor del 70% de los casos de SGB están precedidos entre una y tres semanas por un proceso infeccioso agudo, generalmente respiratorio o gastrointestinal.\n\nSegún el fragmento, entre 20 y 30% de los casos de Estados Unidos, Europa y Australia están precedidos por infección o reinfección por Campylobacter jejuni.\n\n\n🔑 CONCEPTOS CLAVE\n- Aproximadamente 70% presenta infección previa.\n- Intervalo habitual: 1-3 semanas.\n- Infección previa: respiratoria o gastrointestinal.\n- Bacteria destacada: Campylobacter jejuni.\n\n\n⚡ REPASO ACTIVO\n- El SGB puede estar precedido por Campylobacter jejuni, virus del herpes —con frecuencia citomegalovirus o virus de Epstein-Barr—, VIH, hepatitis E, virus del Zika y Mycoplasma pneumoniae. C. jejuni se ha relacionado además con brotes estivales de la variante neuropatía axónica motora aguda.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q205",
+    "text": "Todos los siguientes agentes infecciosos se mencionan como antecedentes asociados al síndrome de Guillain-Barré, EXCEPTO:",
+    "options": [
+      "Campylobacter jejuni",
+      "Citomegalovirus",
+      "Virus de Epstein-Barr",
+      "Mycoplasma pneumoniae",
+      "Helicobacter pylori"
+    ],
+    "correctOptionIndex": 4,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl fragmento menciona como antecedentes infecciosos asociados al SGB a Campylobacter jejuni, Mycoplasma pneumoniae, citomegalovirus, virus de Epstein-Barr, VIH, hepatitis E y virus del Zika, entre otros virus.\n\nHelicobacter pylori no aparece entre los agentes relacionados en el material proporcionado.\n\n\n🔑 CONCEPTOS CLAVE\n- Campylobacter jejuni.\n- Citomegalovirus.\n- Virus de Epstein-Barr.\n- Mycoplasma pneumoniae.\n- Virus del Zika.\n\n\n⚡ REPASO ACTIVO\n- Alrededor del 70% de los casos de SGB son precedidos por una infección. Entre los agentes mencionados se encuentran C. jejuni, citomegalovirus, virus de Epstein-Barr, VIH, hepatitis E, virus del Zika y Mycoplasma pneumoniae.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q206",
+    "text": "¿Cuál de los siguientes constituye un tratamiento específico eficaz para el síndrome de Guillain-Barré?",
+    "options": [
+      "Glucocorticoides intravenosos",
+      "Levodopa oral",
+      "Inmunoglobulina intravenosa",
+      "Carbamazepina oral",
+      "Interferón beta"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl tratamiento debe iniciarse lo antes posible después del diagnóstico. La inmunoglobulina intravenosa (IgIV) y la plasmaféresis presentan la misma eficacia para el SGB típico.\n\nCon frecuencia se elige la IgIV como tratamiento inicial debido a su facilidad de administración y seguridad confirmada. El fragmento indica una dosis total de 2 g/kg de peso corporal.\n\nUn punto de alto rendimiento es que combinar IgIV y plasmaféresis no ofrece mejores resultados que utilizar cualquiera de ellas por separado. Además, los glucocorticoides no han demostrado ser eficaces en el SGB.\n\n\n🔑 CONCEPTOS CLAVE\n- IgIV y plasmaféresis → eficacia similar.\n- IgIV suele elegirse inicialmente.\n- Dosis total de IgIV → 2 g/kg.\n- La combinación de ambos tratamientos no es superior.\n- Glucocorticoides → no son eficaces.\n\n\n⚡ REPASO ACTIVO\n- El tratamiento del SGB debe iniciarse lo antes posible. Puede utilizarse inmunoglobulina intravenosa o plasmaféresis, con eficacia similar. La IgIV se utiliza frecuentemente como tratamiento inicial por su facilidad de administración y seguridad. La combinación de ambas terapias no mejora los resultados. Los glucocorticoides no son eficaces. Durante la fase de agravamiento es fundamental vigilar la función respiratoria, el ritmo cardíaco y la presión arterial, ya que algunos pacientes requieren asistencia ventilatoria.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
+  },
+  {
+    "id": "semana18_med_q207",
+    "text": "¿Cuál es el hallazgo característico en el líquido cefalorraquídeo (LCR) de un paciente con síndrome de Guillain-Barré?",
+    "options": [
+      "Pleocitosis marcada con proteínas normales",
+      "Hipoglucorraquia con pleocitosis linfocitaria",
+      "Aumento de proteínas sin pleocitosis",
+      "Disminución de proteínas sin alteración celular",
+      "Aumento de proteínas con pleocitosis neutrofílica"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\n\nEl hallazgo clásico del LCR en el síndrome de Guillain-Barré es el aumento de la concentración de proteínas sin pleocitosis acompañante, conocido como disociación albuminocitológica.\n\nEs importante recordar que el LCR puede ser normal durante las primeras 48 horas. Habitualmente, las proteínas comienzan a elevarse hacia el final de la primera semana.\n\nUna pleocitosis persistente debe hacer considerar otro diagnóstico o una enfermedad concomitante.\n\n\n🔑 CONCEPTOS CLAVE\n- ↑ Proteínas en LCR.\n- Sin pleocitosis.\n- Hallazgo denominado disociación albuminocitológica.\n- El LCR puede ser normal inicialmente.\n- Pleocitosis persistente → considerar otro diagnóstico.\n\n\n⚡ REPASO ACTIVO\n- En Guillain-Barré, el LCR típicamente presenta proteínas elevadas con ausencia de pleocitosis. Este hallazgo puede no estar presente durante las primeras 48 horas y hacerse evidente al finalizar la primera semana.\n\n\n📖 Referencia:\n\nMedicina Interna, 21.ª edición, capítulo 447.\n\nPrincipio del formulario\n\nFinal del formulario",
+    "materia": "Medicina Interna",
+    "semana": 18,
+    "tema": "Neurología",
+    "subtema": "Síndrome de Guillain-Barré y Miller Fisher",
+    "module": "Neurología",
+    "pagina": "Harrison 21.ª ed., cap. 431-440"
   }
 ];

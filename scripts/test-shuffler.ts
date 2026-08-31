@@ -7,8 +7,8 @@ for (let week = 1; week <= 18; week += 1) {
   catalog.push(...module[`questionsSemana${week}`] as Question[]);
 }
 
-if (catalog.length !== 2298) {
-  throw new Error(`FAIL: El catálogo tiene ${catalog.length} preguntas; se esperaban 2298.`);
+if (catalog.length !== 2342) {
+  throw new Error(`FAIL: El catálogo tiene ${catalog.length} preguntas; se esperaban 2342.`);
 }
 
 // Sample mock question
@@ -94,7 +94,7 @@ if (unchanged.options[2] !== 'A y B son correctas') {
 }
 console.log('✅ TEST 4 PASADO: Opciones dependientes conservan su orden original.');
 
-console.log('--- TEST 5: Integridad de las 2.298 preguntas reales ---');
+console.log('--- TEST 5: Integridad de las 2.342 preguntas reales ---');
 for (const question of catalog) {
   const originalOptions = [...question.options];
   const originalCorrectText = question.options[question.correctOptionIndex];
@@ -122,7 +122,7 @@ for (const question of catalog) {
     throw new Error(`FAIL [${question.id}]: las opciones de origen fueron mutadas.`);
   }
 }
-console.log('✅ TEST 5 PASADO: respuesta, explicación y objeto fuente íntegros en 22.980 shuffles.');
+console.log('✅ TEST 5 PASADO: respuesta, explicación y objeto fuente íntegros en 23.420 shuffles.');
 
 console.log('--- TEST 6: Integridad del quiz completo ---');
 const originalById = new Map(catalog.map(question => [question.id, question]));
