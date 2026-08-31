@@ -16,6 +16,8 @@ import { questionsSemana13 } from '../src/data/semana13/questions';
 import { questionsSemana14 } from '../src/data/semana14/questions';
 import { questionsSemana15 } from '../src/data/semana15/questions';
 import { questionsSemana16 } from '../src/data/semana16/questions';
+import { questionsSemana17 } from '../src/data/semana17/questions';
+import { questionsSemana18 } from '../src/data/semana18/questions';
 import type { Question } from '../src/types';
 import { classifyQuestionForStudy } from '../src/utils/studyCatalog';
 
@@ -30,8 +32,7 @@ interface WeekDefinition {
 const vault = process.env.OBSIDIAN_VAULT || path.join(process.env.USERPROFILE || '', 'Documents', 'Banco_Preguntas_CONAREM');
 const backupRoot = path.join(path.dirname(vault), 'Banco_Preguntas_CONAREM_Backups');
 const apply = process.argv.includes('--apply');
-const weeksArg = process.argv.find(arg => arg.startsWith('--weeks='))?.split('=')[1] || '1,3,4,10,11';
-const selectedWeeks = new Set(weeksArg.split(',').map(Number));
+const weeksArg = process.argv.find(arg => arg.startsWith('--weeks='))?.split('=')[1] || 'all';
 const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const optionLetters = ['A', 'B', 'C', 'D', 'E'];
 
@@ -52,7 +53,13 @@ const weeks: WeekDefinition[] = [
   { num: 14, folderName: 'Semana 14 - Neumología y Reumatología (Medicina Interna)', title: 'Neumología y Reumatología', materia: 'Medicina Interna', questions: questionsSemana14 },
   { num: 15, folderName: 'Semana 15 - Tórax, Pulmón, Mediastino y Mamas (Cirugía)', title: 'Tórax, Pulmón, Mediastino y Mamas', materia: 'Cirugía General', questions: questionsSemana15 },
   { num: 16, folderName: 'Semana 16 - SOP, Hemorragia Uterina e Infertilidad (Ginecología)', title: 'SOP, Sangrado Uterino, Patología Uterina y Endometriosis', materia: 'Ginecología y Obstetricia', questions: questionsSemana16 },
+  { num: 17, folderName: 'Semana 17 - Infectología (Pediatría)', title: 'Infectología', materia: 'Pediatría', questions: questionsSemana17 },
+  { num: 18, folderName: 'Semana 18 - Nefrología y Neurología (Medicina Interna)', title: 'Nefrología y Neurología', materia: 'Medicina Interna', questions: questionsSemana18 },
 ];
+
+const selectedWeeks = weeksArg === 'all'
+  ? new Set(weeks.map(w => w.num))
+  : new Set(weeksArg.split(',').map(Number));
 
 function assertChild(parent: string, child: string): void {
   const parentPath = path.resolve(parent);
@@ -183,6 +190,9 @@ for (const week of targets) {
   assertChild(vault, targetFolder);
   const backupFolder = path.join(backup, week.folderName);
   fs.mkdirSync(backupFolder, { recursive: true });
+  if (!fs.existsSync(targetFolder)) {
+    fs.mkdirSync(targetFolder, { recursive: true });
+  }
   const generatedFiles = fs.readdirSync(targetFolder).filter(name => name.endsWith('.md') && (name.includes('Índice - Semana') || /^\d{2} - /.test(name)));
   generatedFiles.forEach(name => fs.copyFileSync(path.join(targetFolder, name), path.join(backupFolder, name)));
   generatedFiles.forEach(name => fs.rmSync(path.join(targetFolder, name)));

@@ -1,8 +1,10 @@
 import { classifyQuestionForStudy, STUDY_TOPICS } from '../src/utils/studyCatalog';
 import type { Question } from '../src/types';
+import { auditQuestionCatalog, formatAuditReport, getBlockingIssues } from './audit-errors-catalog';
 
 const expectedWeekCounts = [121, 109, 84, 74, 95, 94, 82, 104, 139, 141, 106, 80, 101, 294, 109, 99, 303, 163];
 const questions: Question[] = [];
+const catalog: Array<{ week: number; question: Question }> = [];
 
 for (let week = 1; week <= 18; week += 1) {
   const module = await import(`../src/data/semana${week}/questions.ts`);
@@ -11,6 +13,7 @@ for (let week = 1; week <= 18; week += 1) {
     throw new Error(`Semana ${week}: ${weekQuestions.length}; esperado ${expectedWeekCounts[week - 1]}`);
   }
   questions.push(...weekQuestions);
+  catalog.push(...weekQuestions.map(question => ({ week, question })));
 }
 
 const ids = new Set<string>();
@@ -44,6 +47,13 @@ const collapsedTopics = STUDY_TOPICS.filter(topic =>
   (topicCounts.get(topic.id) || 0) >= 10 && (subtopicsByTopic.get(topic.id)?.size || 0) < 2
 );
 if (collapsedTopics.length) throw new Error(`Temas sin desglose estadístico: ${collapsedTopics.map(topic => topic.label).join(', ')}`);
+
+const auditReport = auditQuestionCatalog(catalog);
+const blockingIssues = getBlockingIssues(auditReport);
+if (blockingIssues.length > 0) {
+  console.error(formatAuditReport(auditReport));
+  throw new Error(`Auditoría bloqueante: ${blockingIssues.length} incidencias en ${auditReport.affectedQuestions} preguntas.`);
+}
 
 console.log(`Catálogo válido: ${questions.length} preguntas, ${ids.size} IDs únicos, ${topicCounts.size} temas activos.`);
 for (const topic of STUDY_TOPICS) {

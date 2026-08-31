@@ -638,7 +638,9 @@ export default function App() {
         label: pendingDraft.scopeLabel || pendingDraft.tema || 'Sesión guardada',
         materia: pendingDraft.materia || questionsForDraft[0]?.materia || '',
         semana: pendingDraft.semana || undefined,
-        sourceWeeks: pendingDraft.sourceWeeks || Array.from(new Set(questionsForDraft.map(question => question.semana))).sort((a, b) => a - b),
+        sourceWeeks: pendingDraft.sourceWeeks || Array.from(
+          new Set<number>(questionsForDraft.map((question: Question) => Number(question.semana)))
+        ).sort((a: number, b: number) => a - b),
       } : {
         type: 'week',
         id: `week-${pendingDraft.semana || questionsForDraft[0]?.semana || 0}`,

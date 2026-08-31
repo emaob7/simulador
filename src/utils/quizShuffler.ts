@@ -17,7 +17,8 @@ function isCatchAllOption(opt: string): boolean {
 }
 
 /**
- * Shuffles the options of a single question and updates correctOptionIndex and explanation.
+ * Returns a shuffled copy and moves correctOptionIndex with its option.
+ * Explanations are immutable content: this function never interprets or rewrites them.
  */
 export function shuffleQuestionOptions(question: Question): Question {
   if (!question.options || question.options.length <= 1) {
@@ -51,28 +52,11 @@ export function shuffleQuestionOptions(question: Question): Question {
   const newOptions = shuffledItems.map(item => item.text);
   const newCorrectOptionIndex = shuffledItems.findIndex(item => item.isCorrect);
 
-  // Update explanation if it starts with a hardcoded letter
-  let newExplanation = question.explanation;
-  if (newCorrectOptionIndex >= 0 && newExplanation) {
-    const newLetterLower = String.fromCharCode(97 + newCorrectOptionIndex); // 'a', 'b', 'c', ...
-    const newLetterUpper = String.fromCharCode(65 + newCorrectOptionIndex); // 'A', 'B', 'C', ...
-
-    // Replace ✅ Respuesta correcta: d) ... or Respuesta correcta: D) ...
-    newExplanation = newExplanation.replace(
-      /^(✅\s*Respuesta correcta:\s*)(?:[a-eA-E])(\s*[\)\.\:])/i,
-      `$1${newLetterLower}$2`
-    );
-    newExplanation = newExplanation.replace(
-      /^(\*\*Respuesta correcta:\*\*\s*)(?:[a-eA-E])(\s*[\)\.\:])/i,
-      `$1${newLetterUpper}$2`
-    );
-  }
-
   return {
     ...question,
     options: newOptions,
     correctOptionIndex: newCorrectOptionIndex >= 0 ? newCorrectOptionIndex : question.correctOptionIndex,
-    explanation: newExplanation
+    explanation: question.explanation
   };
 }
 

@@ -391,7 +391,7 @@ export const questionsSemana2: Question[] = [
       'El dominio de los "dedos de zinc" es la estructura del receptor nuclear que determina la especificidad de unión por el ligando hormonal.'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nLos receptores nucleares se dividen según su unión al DNA y dimerización. Los de tipo I (esteroides) forman homodímeros y reconocen palíndromos, mientras que los de tipo II (tiroideos, vit D) suelen formar heterodímeros con RXR. En ausencia de hormona, los de tipo II están unidos a corepresores, y es la unión del ligando la que provoca su disociación para reclutar coactivadores.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Dimerización: Tipo I = Homodímeros; Tipo II = Heterodímeros (generalmente con RXR).\n- Estado de reposo: Los receptores tipo II (como el TR) suprimen activamente la transcripción mediante corepresores cuando no hay hormona.\n- Especificidad: El dominio de unión a la hormona es variable; el dominio de dedos de zinc es altamente conservado y se une al DNA.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLos receptores nucleares se dividen según su unión al DNA y dimerización. Los de tipo I (esteroides) forman homodímeros y reconocen palíndromos, mientras que los de tipo II (tiroideos, vit D) suelen formar heterodímeros con RXR. En ausencia de hormona, los de tipo II están unidos a corepresores, y es la unión del ligando la que provoca su disociación para reclutar coactivadores.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Dimerización: Tipo I = Homodímeros; Tipo II = Heterodímeros (generalmente con RXR).\n- Estado de reposo: Los receptores tipo II (como el TR) suprimen activamente la transcripción mediante corepresores cuando no hay hormona.\n- Especificidad: El dominio de unión a la hormona es variable; el dominio de dedos de zinc es altamente conservado y se une al DNA.",
     pagina: 'Harrison. Cap. 370. Mecanismos de acción hormonal. Pág: 2657.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -409,7 +409,7 @@ export const questionsSemana2: Question[] = [
       'Los glucocorticoides intensifican la expresión del gen de la POMC en la hipófisis para aumentar la producción de ACTH ante el estrés.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLa fisiología del eje reproductivo depende críticamente del patrón de liberación de GnRH. Los pulsos intermitentes mantienen la sensibilidad hipofisaria, mientras que la exposición continua desensibiliza a los gonadotropos. La somatostatina es inhibidora de GH y TSH. El IGF-I ejerce retroalimentación negativa. Los glucocorticoides tienen un efecto supresor potente sobre el gen POMC.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Pulsatilidad: Esencial para GnRH; su pérdida anula la función de las células gonadotropas.\n- Inhibidores hipotalámicos: La dopamina inhibe prolactina; la somatostatina inhibe GH y TSH.\n- POMC: Es el precursor de ACTH; su transcripción es frenada por el cortisol.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa fisiología del eje reproductivo depende críticamente del patrón de liberación de GnRH. Los pulsos intermitentes mantienen la sensibilidad hipofisaria, mientras que la exposición continua desensibiliza a los gonadotropos. La somatostatina es inhibidora de GH y TSH. El IGF-I ejerce retroalimentación negativa. Los glucocorticoides tienen un efecto supresor potente sobre el gen POMC.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Pulsatilidad: Esencial para GnRH; su pérdida anula la función de las células gonadotropas.\n- Inhibidores hipotalámicos: La dopamina inhibe prolactina; la somatostatina inhibe GH y TSH.\n- POMC: Es el precursor de ACTH; su transcripción es frenada por el cortisol.",
     pagina: 'Harrison. Cap. 370. Mecanismos de acción hormonal. Pág: 2659.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -427,7 +427,7 @@ export const questionsSemana2: Question[] = [
       'La globulina transportadora de hormonas sexuales (SHBG) aumenta significativamente ante estados de resistencia a la insulina.'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nLas proteínas transportadoras determinan el reservorio hormonal, pero solo la hormona libre es activa. Fármacos como el salsalato pueden desplazar a la T4 de la TBG. En el síndrome del eutiroideo enfermo, la rT3 sube por una depuración disminuida. La inactivación de T4 y T3 es mediada por la desyodinasa tipo III. La SHBG disminuye con la resistencia a la insulina.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Hormona Libre: Es la única fracción disponible para interactuar con receptores y ejercer efectos biológicos.\n- Efecto estrogénico: Los estrógenos aumentan la TBG, elevando la T4 total pero manteniendo la libre normal.\n- Potencia: La T3 tiene una afinidad de 10 a 15 veces mayor por el receptor que la T4.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLas proteínas transportadoras determinan el reservorio hormonal, pero solo la hormona libre es activa. Fármacos como el salsalato pueden desplazar a la T4 de la TBG. En el síndrome del eutiroideo enfermo, la rT3 sube por una depuración disminuida. La inactivación de T4 y T3 es mediada por la desyodinasa tipo III. La SHBG disminuye con la resistencia a la insulina.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Hormona Libre: Es la única fracción disponible para interactuar con receptores y ejercer efectos biológicos.\n- Efecto estrogénico: Los estrógenos aumentan la TBG, elevando la T4 total pero manteniendo la libre normal.\n- Potencia: La T3 tiene una afinidad de 10 a 15 veces mayor por el receptor que la T4.",
     pagina: 'Harrison. Cap. 370. Mecanismos de acción hormonal. Pág: 2659.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -445,7 +445,7 @@ export const questionsSemana2: Question[] = [
       'Una glucemia al azar mayor a 200 mg/dL permite el diagnóstico de diabetes incluso en ausencia de síntomas clásicos.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nEl diagnóstico requiere confirmación si no hay crisis de hiperglucemia. El ayuno debe ser de al menos 8 horas, no 4 horas (distractor A). La HbA1c de "punto de atención" no debe usarse para diagnóstico según los estándares actuales (distractor B). La glucemia al azar >200 mg/dL solo es diagnóstica en presencia de síntomas clásicos de hiperglucemia (distractor D).',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl diagnóstico requiere confirmación si no hay crisis de hiperglucemia. El ayuno debe ser de al menos 8 horas, no 4 horas (distractor A). La HbA1c de \"punto de atención\" no debe usarse para diagnóstico según los estándares actuales (distractor B). La glucemia al azar >200 mg/dL solo es diagnóstica en presencia de síntomas clásicos de hiperglucemia (distractor D).",
     pagina: 'Harrison. Cap. 396. Diabetes mellitus: diagnóstico, clasificación y fisiopatología. Pág: 2852.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -463,7 +463,7 @@ export const questionsSemana2: Question[] = [
       'La resistencia hepática a la insulina se manifiesta por la incapacidad de suprimir la gluconeogénesis.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLa producción hepática de glucosa aumenta de forma temprana, aunque suele ser posterior a la resistencia en el músculo. No requiere la falla total de la célula beta para manifestarse.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Músculo: Principal sitio de resistencia periférica.\n- Hígado: Responsable de la hiperglucemia en ayuno por exceso de producción.\n- Obesidad: Presente en >80% de los pacientes con DM2.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa producción hepática de glucosa aumenta de forma temprana, aunque suele ser posterior a la resistencia en el músculo. No requiere la falla total de la célula beta para manifestarse.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Músculo: Principal sitio de resistencia periférica.\n- Hígado: Responsable de la hiperglucemia en ayuno por exceso de producción.\n- Obesidad: Presente en >80% de los pacientes con DM2.",
     pagina: 'Harrison. Cap. 396. Diabetes mellitus: diagnóstico, clasificación y fisiopatología. Pág: 2856-7.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -481,7 +481,7 @@ export const questionsSemana2: Question[] = [
       'Los autoanticuerpos contra antígenos de las células beta aparecen únicamente después de que se manifiesta la hiperglucemia clínica.'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nExiste un deterioro progresivo previo a la diabetes clínica, no es súbito (distractor A). Puede desarrollarse a cualquier edad (distractor C). Los autoanticuerpos suelen aparecer mucho antes de la hiperglucemia franca (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Umbral: Se requiere perder el 70-80% de las células beta para la clínica.\n- Péptido C: Refleja la producción de insulina endógena.\n- Etapa 1: Presencia de dos o más autoanticuerpos con normoglucemia.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nExiste un deterioro progresivo previo a la diabetes clínica, no es súbito (distractor A). Puede desarrollarse a cualquier edad (distractor C). Los autoanticuerpos suelen aparecer mucho antes de la hiperglucemia franca (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Umbral: Se requiere perder el 70-80% de las células beta para la clínica.\n- Péptido C: Refleja la producción de insulina endógena.\n- Etapa 1: Presencia de dos o más autoanticuerpos con normoglucemia.",
     pagina: 'Harrison. Cap. 396. Diabetes mellitus: diagnóstico, clasificación y fisiopatología. Pág: 2854-5.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -499,7 +499,7 @@ export const questionsSemana2: Question[] = [
       'La presencia de hiperamilasemia en la cetoacidosis diabética es un marcador de pancreatitis aguda concurrente.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nEn la cetoacidosis diabética hay déficit de potasio total, pero la acidosis desplaza el potasio al exterior celular elevándolo falsamente en suero inicialmente. La hiponatremia suele ser facticia por el efecto osmótico de la glucosa. La amilasa elevada suele ser salival (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Potasio: Debe reponerse cuando los niveles séricos sean normales o bajos una vez iniciada la insulina.\n- Sodio corregido: Se añade 1.6 mEq por cada 100 mg/dL de glucosa extra.\n- Anion Gap: Elevado por cetoácidos.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEn la cetoacidosis diabética hay déficit de potasio total, pero la acidosis desplaza el potasio al exterior celular elevándolo falsamente en suero inicialmente. La hiponatremia suele ser facticia por el efecto osmótico de la glucosa. La amilasa elevada suele ser salival (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Potasio: Debe reponerse cuando los niveles séricos sean normales o bajos una vez iniciada la insulina.\n- Sodio corregido: Se añade 1.6 mEq por cada 100 mg/dL de glucosa extra.\n- Anion Gap: Elevado por cetoácidos.",
     pagina: 'Harrison. Cap. 397. Diabetes mellitus: control y tratamiento. Pág: 2871.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -517,7 +517,7 @@ export const questionsSemana2: Question[] = [
       'La pérdida de la sensibilidad protectora en los pies suele ser el último signo en aparecer en la evolución de la neuropatía distal.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nEl daño microvascular se correlaciona estrictamente con la duración de la hiperglucemia (distractor A). Microaneurismas y exudados son típicos de la retinopatía NO proliferativa (distractor B). La albuminuria es un marcador clave de riesgo (progresión renal y cardiovascular).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Retinopatía: Principal causa de ceguera en edad laboral.\n- Nefropatía: Se inicia con hiperfiltración glomerular.\n- Neuropatía: La pérdida de sensibilidad es un signo temprano crítico para prevenir úlceras.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl daño microvascular se correlaciona estrictamente con la duración de la hiperglucemia (distractor A). Microaneurismas y exudados son típicos de la retinopatía NO proliferativa (distractor B). La albuminuria es un marcador clave de riesgo (progresión renal y cardiovascular).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Retinopatía: Principal causa de ceguera en edad laboral.\n- Nefropatía: Se inicia con hiperfiltración glomerular.\n- Neuropatía: La pérdida de sensibilidad es un signo temprano crítico para prevenir úlceras.",
     pagina: 'Harrison. Cap. 398. Diabetes mellitus: complicaciones. Pág: 2878-9.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -553,7 +553,7 @@ export const questionsSemana2: Question[] = [
       'La arginina-vasopresina (AVP) actúa como un inhibidor potente de la liberación de ACTH mediada por CRH.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLa amplitud de los pulsos de ACTH determina el ritmo circadiano. El pico es a las 08:30 (acrofase) y el nadir a medianoche (distractor A). El feedback es negativo y suprime la POMC (distractor B). La AVP estimula la liberación de ACTH (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- POMC: Precursor de ACTH, MSH y endorfinas.\n- Estrés: La inflamación activa el eje mediante citocinas (IL-6).\n- Ritmo: Alterado en el Síndrome de Cushing (pérdida del nadir nocturno).',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa amplitud de los pulsos de ACTH determina el ritmo circadiano. El pico es a las 08:30 (acrofase) y el nadir a medianoche (distractor A). El feedback es negativo y suprime la POMC (distractor B). La AVP estimula la liberación de ACTH (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- POMC: Precursor de ACTH, MSH y endorfinas.\n- Estrés: La inflamación activa el eje mediante citocinas (IL-6).\n- Ritmo: Alterado en el Síndrome de Cushing (pérdida del nadir nocturno).",
     pagina: 'Harrison. Cap. 379. Trastornos de la corteza suprarrenal. Pág: 2720.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -571,7 +571,7 @@ export const questionsSemana2: Question[] = [
       'A diferencia de la forma secundaria, en la primaria no existe alteración en la secreción de andrógenos suprarrenales.'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nLa deficiencia de aldosterona causa pérdida de sodio y retención de potasio. La pigmentación es por exceso de ACTH/POMC (no deficiencia). En la insuficiencia primaria hay destrucción de la glándula (no permanece intacta). Los andrógenos se pierden tanto en la forma primaria como en la secundaria.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Etiología: La suprarrenalitis autoinmunitaria es la causa más común en países desarrollados.\n- Hipotensión: Ortostática que progresa a shock en crisis aguda.\n- Diagnóstico: Cortisol bajo con ACTH elevada.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa deficiencia de aldosterona causa pérdida de sodio y retención de potasio. La pigmentación es por exceso de ACTH/POMC (no deficiencia). En la insuficiencia primaria hay destrucción de la glándula (no permanece intacta). Los andrógenos se pierden tanto en la forma primaria como en la secundaria.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Etiología: La suprarrenalitis autoinmunitaria es la causa más común en países desarrollados.\n- Hipotensión: Ortostática que progresa a shock en crisis aguda.\n- Diagnóstico: Cortisol bajo con ACTH elevada.",
     pagina: 'Harrison. Cap. 379. Trastornos de la corteza suprarrenal. Pág: 2733',
     materia: 'Medicina Interna',
     semana: 2,
@@ -589,7 +589,7 @@ export const questionsSemana2: Question[] = [
       'La medición de cortisol a medianoche es una prueba poco sensible debido a que los sujetos sanos también presentan niveles altos a esa hora.'
     ],
     correctOptionIndex: 0,
-    explanation: '✅ Respuesta correcta: A\n\n📖 ANÁLISIS DE PREGUNTA\nLa ACTH suprimida indica causa suprarrenal, no hipofisaria (distractor B). El diagnóstico de Cushing debe ser bioquímico antes de pedir imágenes; el seno petroso no es el primer estudio. El cortisol a medianoche es muy sensible porque en sanos debe estar en su punto más bajo (nadir).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Causa más frecuente: Adenoma hipofisario (Enfermedad de Cushing).\n- Clínica: Obesidad central, estrías violáceas (>1 cm), debilidad proximal.\n- Cushing ectópico: Sugerido por hipopotasemia grave e hiperpigmentación de inicio rápido.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa ACTH suprimida indica causa suprarrenal, no hipofisaria (distractor B). El diagnóstico de Cushing debe ser bioquímico antes de pedir imágenes; el seno petroso no es el primer estudio. El cortisol a medianoche es muy sensible porque en sanos debe estar en su punto más bajo (nadir).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Causa más frecuente: Adenoma hipofisario (Enfermedad de Cushing).\n- Clínica: Obesidad central, estrías violáceas (>1 cm), debilidad proximal.\n- Cushing ectópico: Sugerido por hipopotasemia grave e hiperpigmentación de inicio rápido.",
     pagina: 'Harrison. Cap. 379. Trastornos de la corteza suprarrenal. Pág: 2720.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -625,7 +625,7 @@ export const questionsSemana2: Question[] = [
       'La deficiencia de mineralocorticoides solo ocurre en la forma "virilizante simple" de la enfermedad.'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nLa deficiencia de 21-hidroxilasa desvía la síntesis hacia andrógenos, causando virilización. La supresión total de 17-OHP indicaría sobretratamiento (distractor A). En estrés la dosis debe aumentarse (no suspenderse). La pérdida de sal ocurre en la forma "clásica perdedora de sal" (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Marcador: 17-hidroxiprogesterona (17-OHP).\n- Genética: Autosómica recesiva (gen CYP21A2).\n- Forma no clásica: Puede simular síndrome de ovarios poliquísticos en mujeres jóvenes.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa deficiencia de 21-hidroxilasa desvía la síntesis hacia andrógenos, causando virilización. La supresión total de 17-OHP indicaría sobretratamiento (distractor A). En estrés la dosis debe aumentarse (no suspenderse). La pérdida de sal ocurre en la forma \"clásica perdedora de sal\" (distractor D).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Marcador: 17-hidroxiprogesterona (17-OHP).\n- Genética: Autosómica recesiva (gen CYP21A2).\n- Forma no clásica: Puede simular síndrome de ovarios poliquísticos en mujeres jóvenes.",
     pagina: 'Harrison. Cap. 379. Trastornos de la corteza suprarrenal. Pág: 2738.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -643,7 +643,7 @@ export const questionsSemana2: Question[] = [
       'El muestreo de venas suprarrenales debe realizarse de forma sistemática en todos los pacientes con una masa >1 cm.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLas masas ricas en lípidos (típicas de adenomas benignos) tienen baja densidad en TC (<10 HU). El tamaño es sensible pero poco específico (distractor A). La mayoría son inactivos (distractor B). El muestreo venoso solo se indica en casos específicos de aldosteronismo confirmado.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Evaluación: Siempre excluir feocromocitoma y Cushing subclínico.\n- Densidad >20 HU: Aumenta la sospecha de malignidad o feocromocitoma.\n- Umbral quirúrgico: Masa >4 cm suele sugerir necesidad de resección.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLas masas ricas en lípidos (típicas de adenomas benignos) tienen baja densidad en TC (<10 HU). El tamaño es sensible pero poco específico (distractor A). La mayoría son inactivos (distractor B). El muestreo venoso solo se indica en casos específicos de aldosteronismo confirmado.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Evaluación: Siempre excluir feocromocitoma y Cushing subclínico.\n- Densidad >20 HU: Aumenta la sospecha de malignidad o feocromocitoma.\n- Umbral quirúrgico: Masa >4 cm suele sugerir necesidad de resección.",
     pagina: 'Harrison. Cap. 379. Trastornos de la corteza suprarrenal. Pág: 2731.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -661,7 +661,7 @@ export const questionsSemana2: Question[] = [
       'La TRH es el único regulador capaz de inhibir de forma directa la expresión del gen de la subunidad B de la TSH.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nEl punto de ajuste lo establece la TSH en respuesta a T4/T3. Dopamina y glucocorticoides suprimen la TSH solo en dosis farmacológicas. Las hormonas tiroideas son las que inhiben directamente la subunidad B de la TSH.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- TSH: Hormona glucoproteínica con subunidad alfa común (LH, FSH, hCG).\n- T3: Principal mediador de la retroalimentación negativa sobre TRH y TSH.\n- Semivida: T4 (7 días), T3 (1 día), TSH (prolongada en comparación con otras peptídicas).',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl punto de ajuste lo establece la TSH en respuesta a T4/T3. Dopamina y glucocorticoides suprimen la TSH solo en dosis farmacológicas. Las hormonas tiroideas son las que inhiben directamente la subunidad B de la TSH.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- TSH: Hormona glucoproteínica con subunidad alfa común (LH, FSH, hCG).\n- T3: Principal mediador de la retroalimentación negativa sobre TRH y TSH.\n- Semivida: T4 (7 días), T3 (1 día), TSH (prolongada en comparación con otras peptídicas).",
     pagina: 'Harrison. Cap. 375. Trastornos de la glándula tiroides. Pág: 2692.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -679,7 +679,7 @@ export const questionsSemana2: Question[] = [
       'El desarrollo de estas alteraciones es dos veces más frecuente en mujeres que en varones.'
     ],
     correctOptionIndex: 3,
-    explanation: '✅ Respuesta correcta: D\n\n📖 ANÁLISIS DE PREGUNTA\nLa disgenesia causa el 80-85% de los casos. El paso placentario ocurre y da apoyo parcial al feto. El síndrome de Pendred es por mutación en el gen PENDRINA (transporte apical), no NIS (basolateral).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Causa más común mundial: Sigue siendo la deficiencia de yodo.\n- Tamizaje: Esencial para prevenir retraso intelectual permanente.\n- Evolución: La mayoría son permanentes, pero los mediados por anticuerpos maternos son transitorios.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa disgenesia causa el 80-85% de los casos. El paso placentario ocurre y da apoyo parcial al feto. El síndrome de Pendred es por mutación en el gen PENDRINA (transporte apical), no NIS (basolateral).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Causa más común mundial: Sigue siendo la deficiencia de yodo.\n- Tamizaje: Esencial para prevenir retraso intelectual permanente.\n- Evolución: La mayoría son permanentes, pero los mediados por anticuerpos maternos son transitorios.",
     pagina: 'Harrison. Cap. 376. Hipotiroidismo. Pág: 2698-9.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -715,7 +715,7 @@ export const questionsSemana2: Question[] = [
       'Los antitiroideos son el tratamiento de elección para controlar los síntomas de la fase de tirotoxicosis.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLa fase inicial es tirotóxica por liberación de hormona preformada. La captación es baja (<5%) porque el tejido está dañado y la TSH suprimida. El tratamiento son AINES o glucocorticoides; los antitiroideos no son útiles ya que no hay exceso de síntesis.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Histología: Células gigantes multinucleadas y granulomas.\n- Evolución: Tres fases (Tirotóxica -> Hipotiroidea -> Recuperación).\n- Hipotiroidismo permanente: Ocurre solo en el 15% de los casos.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa fase inicial es tirotóxica por liberación de hormona preformada. La captación es baja (<5%) porque el tejido está dañado y la TSH suprimida. El tratamiento son AINES o glucocorticoides; los antitiroideos no son útiles ya que no hay exceso de síntesis.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Histología: Células gigantes multinucleadas y granulomas.\n- Evolución: Tres fases (Tirotóxica -> Hipotiroidea -> Recuperación).\n- Hipotiroidismo permanente: Ocurre solo en el 15% de los casos.",
     pagina: 'Harrison. Cap. 377. Hipertiroidismo. Pág: 2708.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -733,7 +733,7 @@ export const questionsSemana2: Question[] = [
       'La dosis de sustitución debe ser lo suficientemente alta como para suprimir la TSH por debajo de los límites normales en todos los pacientes.'
     ],
     correctOptionIndex: 0,
-    explanation: '✅ Respuesta correcta: A\n\n📖 ANÁLISIS DE PREGUNTA\nHierro y calcio bloquean la absorción gástrica. Los estrógenos aumentan la TBG, lo que suele requerir un aumento de la dosis de T4. El objetivo es normalizar la TSH, no suprimirla (excepto en cáncer de tiroides).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Semivida: T4 dura 7 días; se requiere 1 mes para alcanzar el estado estable.\n- Toma: Ayuno, al menos 30-60 min antes del desayuno.\n- Interacciones: Rifampicina y fenitoína aumentan el metabolismo de T4.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nHierro y calcio bloquean la absorción gástrica. Los estrógenos aumentan la TBG, lo que suele requerir un aumento de la dosis de T4. El objetivo es normalizar la TSH, no suprimirla (excepto en cáncer de tiroides).\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- Semivida: T4 dura 7 días; se requiere 1 mes para alcanzar el estado estable.\n- Toma: Ayuno, al menos 30-60 min antes del desayuno.\n- Interacciones: Rifampicina y fenitoína aumentan el metabolismo de T4.",
     pagina: 'Harrison. Cap. 376. Hipotiroidismo. Pág: 2702-3.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -751,7 +751,7 @@ export const questionsSemana2: Question[] = [
       'Las concentraciones de TSH son un marcador confiable para descartar enfermedad tiroidea en pacientes críticos tratados con dopamina.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nEl patrón más frecuente es reducción de T3 total y libre con TSH normal o baja. El rT3 sube por depuración disminuida. La dopamina suprime la TSH e induce a error en pacientes críticos.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- T3: La magnitud del descenso se correlaciona con la gravedad de la enfermedad.\n- Pronóstico: T4 baja en pacientes críticos es un marcador de mal pronóstico.\n- Recuperación: La TSH puede subir transitoriamente durante la mejoría clínica.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl patrón más frecuente es reducción de T3 total y libre con TSH normal o baja. El rT3 sube por depuración disminuida. La dopamina suprime la TSH e induce a error en pacientes críticos.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- T3: La magnitud del descenso se correlaciona con la gravedad de la enfermedad.\n- Pronóstico: T4 baja en pacientes críticos es un marcador de mal pronóstico.\n- Recuperación: La TSH puede subir transitoriamente durante la mejoría clínica.",
     pagina: 'Harrison. Cap. 377. Hipertiroidismo. Pág: 2708.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -769,7 +769,7 @@ export const questionsSemana2: Question[] = [
       'El receptor de la ACTH es un receptor nuclear de tipo II que requiere dimerización con RXR para su función.'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nEl receptor de la TSH activa la subunidad Gsa, aumentando el AMPc. McCune-Albright se debe a mutaciones activadoras que INCREMENTAN el AMPc (distractor A). La inactivación de Gsa causa resistencia a hormonas como la PTH (pseudohipoparatiroidismo), no simula sus acciones (distractor C). El receptor de ACTH es un GPCR, no un receptor nuclear (distractor D).',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl receptor de la TSH activa la subunidad Gsa, aumentando el AMPc. McCune-Albright se debe a mutaciones activadoras que INCREMENTAN el AMPc (distractor A). La inactivación de Gsa causa resistencia a hormonas como la PTH (pseudohipoparatiroidismo), no simula sus acciones (distractor C). El receptor de ACTH es un GPCR, no un receptor nuclear (distractor D).",
     pagina: 'Harrison. Cap. 370. Mecanismos de acción hormonal. Pág: 2655-7.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -805,7 +805,7 @@ export const questionsSemana2: Question[] = [
       'La administración de somatostatina estimula de forma selectiva la liberación de GHRH en el hipotálamo.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nEl receptor de GH puede desprender su dominio extracelular para formar la GHBP. El IGF-I ejerce retroalimentación negativa, no positiva. La GH es lipolítica (reduce grasa), no lipogénica. La somatostatina es el principal inhibidor de la liberación de GH.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl receptor de GH puede desprender su dominio extracelular para formar la GHBP. El IGF-I ejerce retroalimentación negativa, no positiva. La GH es lipolítica (reduce grasa), no lipogénica. La somatostatina es el principal inhibidor de la liberación de GH.",
     pagina: 'Harrison. Cap. 371. Hipófisis anterior: fisiología de las hormonas hipofisarias. Pág: 2662.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -823,7 +823,7 @@ export const questionsSemana2: Question[] = [
       'La prueba de privación de agua permite diferenciar con 100% de precisión entre la forma parcial y polidipsia primaria.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLa neurohipófisis normal brilla en T1 debido a fosfolípidos relacionados con el almacenamiento de AVP; su ausencia es típica de la diabetes insípida central. En la forma nefrógena, la AVP está elevada debido a la resistencia periférica. La polidipsia primaria cursa con osmolalidad urinaria diluida (baja).',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa neurohipófisis normal brilla en T1 debido a fosfolípidos relacionados con el almacenamiento de AVP; su ausencia es típica de la diabetes insípida central. En la forma nefrógena, la AVP está elevada debido a la resistencia periférica. La polidipsia primaria cursa con osmolalidad urinaria diluida (baja).",
     pagina: 'Harrison. Cap. 374. Trastornos de la neurohipófisis. Pág: 2685.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -859,7 +859,7 @@ export const questionsSemana2: Question[] = [
       'La mayoría de las hormonas esteroideas se almacenan en grandes gránulos secretorios para su liberación inmediata.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLos mecanismos de retroalimentación ajustan la secreción para mantener estable la fracción libre a pesar de cambios en los transportadores. La SHBG disminuye en obesidad y resistencia a la insulina. Las hormonas esteroideas no se almacenan, se secretan inmediatamente tras su síntesis.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLos mecanismos de retroalimentación ajustan la secreción para mantener estable la fracción libre a pesar de cambios en los transportadores. La SHBG disminuye en obesidad y resistencia a la insulina. Las hormonas esteroideas no se almacenan, se secretan inmediatamente tras su síntesis.",
     pagina: 'Harrison. Cap. 370. Mecanismos de acción hormonal. Pág: 2654 y Cap. 375. Trastornos de la glándula tiroides. Pág: 2695.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -877,7 +877,7 @@ export const questionsSemana2: Question[] = [
       'Mantienen una unión fuerte con proteínas correpresoras en ausencia de la hormona.'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLos receptores de tipo I (como el de glucocorticoides o estrógenos) forman homodímeros y reconocen secuencias palindrómicas. Los que forman heterodímeros con RXR son los de tipo II. Los receptores tipo I se encuentran en el citoplasma o núcleo, a menudo unidos a proteínas de choque térmico.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLos receptores de tipo I (como el de glucocorticoides o estrógenos) forman homodímeros y reconocen secuencias palindrómicas. Los que forman heterodímeros con RXR son los de tipo II. Los receptores tipo I se encuentran en el citoplasma o núcleo, a menudo unidos a proteínas de choque térmico.",
     pagina: 'Harrison. Cap. 370. Mecanismos de acción hormonal. Pág: 2657.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -895,7 +895,7 @@ export const questionsSemana2: Question[] = [
       'Búsqueda de tumor ectópico productor de ACTH con PET-CT'
     ],
     correctOptionIndex: 2,
-    explanation: '✅ Respuesta correcta: C\n\n📖 ANÁLISIS DE PREGUNTA\nLa paciente tiene un Cushing ACTH-dependiente. La prueba de supresión con dosis alta sugiere origen hipofisario, pero un microadenoma de 5 mm puede ser un incidentaloma (presente en 10% de población sana). Para confirmar que el ACTH proviene de la hipófisis antes de operar, el cateterismo de senos petrosos es el estándar de oro.',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nLa paciente tiene un Cushing ACTH-dependiente. La prueba de supresión con dosis alta sugiere origen hipofisario, pero un microadenoma de 5 mm puede ser un incidentaloma (presente en 10% de población sana). Para confirmar que el ACTH proviene de la hipófisis antes de operar, el cateterismo de senos petrosos es el estándar de oro.",
     pagina: 'Harrison. Cap. 379. Trastornos de la corteza suprarrenal. Pág: 2726.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -913,7 +913,7 @@ export const questionsSemana2: Question[] = [
       'Suspender líquidos y priorizar reposición de potasio'
     ],
     correctOptionIndex: 1,
-    explanation: '✅ Respuesta correcta: B\n\n📖 ANÁLISIS DE PREGUNTA\nEl paciente cursa una Cetoacidosis diabética con mejoría parcial de la glucemia, pero la acidosis metabólica persiste. En esta fase, cuando la glucemia desciende a ~250–300 mg/dL, no debe suspenderse la insulina, ya que su objetivo principal es corregir la cetosis. Para poder continuar la insulina, se debe agregar dextrosa a los líquidos. No hay indicación de bicarbonato (reservado para pH <6.9). El potasio aún es >4.5 mEq/L.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- La insulina se mantiene hasta corregir la cetosis, no hasta normalizar la glucemia.\n- Cuando la glucemia baja a ~250 mg/dL, se agrega dextrosa para poder continuar la insulina.\n- El bicarbonato solo se indica en acidosis extrema (pH <6.9).',
+    explanation: "Respuesta correcta: 📖 ANÁLISIS DE PREGUNTA\nEl paciente cursa una Cetoacidosis diabética con mejoría parcial de la glucemia, pero la acidosis metabólica persiste. En esta fase, cuando la glucemia desciende a ~250–300 mg/dL, no debe suspenderse la insulina, ya que su objetivo principal es corregir la cetosis. Para poder continuar la insulina, se debe agregar dextrosa a los líquidos. No hay indicación de bicarbonato (reservado para pH <6.9). El potasio aún es >4.5 mEq/L.\n\n💡 PUNTOS CLAVE (REPASO ACTIVO):\n- La insulina se mantiene hasta corregir la cetosis, no hasta normalizar la glucemia.\n- Cuando la glucemia baja a ~250 mg/dL, se agrega dextrosa para poder continuar la insulina.\n- El bicarbonato solo se indica en acidosis extrema (pH <6.9).",
     pagina: 'Harrison. Cap. 397. Diabetes mellitus: control y tratamiento. Pág: 2871.',
     materia: 'Medicina Interna',
     semana: 2,
@@ -970,7 +970,7 @@ export const questionsSemana2: Question[] = [
       'La cabergolina produce menor reducción tumoral que la bromocriptina en macroprolactinomas'
     ],
     correctOptionIndex: 4,
-    explanation: 'La afirmación incorrecta es la opción e. La cabergolina no solo posee mayor afinidad por los receptores D2, sino que además logra mejor normalización de prolactina y mayor reducción del tamaño tumoral comparada con la bromocriptina. También presenta menos efectos adversos gastrointestinales y neurológicos. Sin embargo, debido a la amplia experiencia acumulada, la bromocriptina suele preferirse cuando se requiere tratamiento durante el embarazo.\n\n🔑 Puntos clave:\n • La cabergolina tiene mayor afinidad por receptores D2.\n • La cabergolina es más eficaz y mejor tolerada que la bromocriptina.\n • Bromocriptina causa más náuseas, vómitos e hipotensión ortostática.\n • La bromocriptina posee mayor experiencia de seguridad en embarazo.\n • Ambos agonistas dopaminérgicos disminuyen PRL y reducen el volumen tumoral.',
+    explanation: "La afirmación incorrecta es «La cabergolina produce menor reducción tumoral que la bromocriptina en macroprolactinomas». La cabergolina no solo posee mayor afinidad por los receptores D2, sino que además logra mejor normalización de prolactina y mayor reducción del tamaño tumoral comparada con la bromocriptina. También presenta menos efectos adversos gastrointestinales y neurológicos. Sin embargo, debido a la amplia experiencia acumulada, la bromocriptina suele preferirse cuando se requiere tratamiento durante el embarazo.\n\n🔑 Puntos clave:\n • La cabergolina tiene mayor afinidad por receptores D2.\n • La cabergolina es más eficaz y mejor tolerada que la bromocriptina.\n • Bromocriptina causa más náuseas, vómitos e hipotensión ortostática.\n • La bromocriptina posee mayor experiencia de seguridad en embarazo.\n • Ambos agonistas dopaminérgicos disminuyen PRL y reducen el volumen tumoral.",
     pagina: 'Harrison, Medicina Interna, 20.ª ed., págs. 2676-2677',
     materia: 'Medicina Interna',
     semana: 2,

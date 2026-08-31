@@ -1228,7 +1228,7 @@ export const questionsSemana11: Question[] = [
       "La H⁺/K⁺-ATPasa constituye la vía final común para la secreción de ácido gástrico por la célula parietal."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\n\nEs el EXCEPTO porque la afirmación es exactamente opuesta a lo descrito en el fragmento.\n\nLa somatostatina INHIBE la secreción de ácido gástrico mediante tres acciones señaladas en el texto:\n\nSe une a receptores SSTR2 de las células parietales → inhibe directamente la liberación de ácido.\n\nActúa sobre las células ECL → disminuye la liberación de histamina.\n\nActúa sobre las células G antrales → inhibe la liberación de gastrina.\n\nLas opciones b, c, d y e son correctas según el fragmento.\n\n📚 CONCEPTOS CLAVE\n\nLa célula parietal tiene tres estímulos fundamentales para secretar HCl:\n\n1. Histamina\n\nCélula de origen → ECL.\n\nReceptor en célula parietal → H₂.\n\nActiva → adenilato ciclasa.\n\n↑ AMPc → activa proteínas cinasas → activa H⁺/K⁺-ATPasa.\n\n2. Acetilcolina\n\nProcede de neuronas intrínsecas.\n\nReceptor → muscarínico M₃.\n\nActiva → fosfolipasa C.\n\n↑ trifosfato de inositol → liberación de Ca²⁺ intracelular → activación de H⁺/K⁺-ATPasa.\n\n3. Gastrina\n\nSe une a receptores CCK2 de las células ECL.\n\nEstimula la liberación de histamina.\n\nLa histamina actúa posteriormente sobre el receptor H₂ de la célula parietal.\n\nLa gastrina también puede actuar sobre receptores CCK2 de la propia célula parietal, aunque el texto señala que esta acción es menos importante.\n\nInhibidor → somatostatina\n\nCélulas de origen → células D.\n\n↓ ácido directamente.\n\n↓ histamina.\n\n↓ gastrina.\n\nFinalmente, todos los estímulos convergen en la H⁺/K⁺-ATPasa, la bomba de protones de la célula parietal.\n\n⚡ CLAVE CONAREM\n\nMemorizá:\n\n“A-G-H estimulan; S inhibe”\n\nAcetilcolina → M₃\nGastrina → CCK2\nHistamina → H₂\nSomatostatina → inhibe\n\nY la vía final común es:\n\nH⁺/K⁺-ATPasa = bomba de protones.\n\nTrampa frecuente: la gastrina estimula gran parte de la secreción ácida indirectamente, mediante la célula ECL → histamina → H₂ → célula parietal.\n\nTema: Estómago\n\nSubtema: Fisiología – fases de la secreción ácida\n\nCon respecto a las fases fisiológicas de la secreción de ácido gástrico inducida por los alimentos, ¿cuál de las siguientes afirmaciones es CORRECTA?\n\na) La fase cefálica representa aproximadamente 60% de la secreción ácida total y comienza cuando los alimentos llegan al estómago.\n\nb) La fase intestinal representa aproximadamente 30% de la secreción ácida y depende principalmente de la distensión gástrica proximal.\n\nc) La fase gástrica representa aproximadamente 60% de la secreción total de ácido en respuesta a una comida.\n\nd) La fase cefálica comienza con el vaciamiento gástrico y continúa mientras existan nutrientes en el intestino delgado proximal.\n\ne) La fase intestinal constituye la principal fuente de secreción ácida después de una comida.",
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\n\nEs el EXCEPTO porque la afirmación es exactamente opuesta a lo descrito en el fragmento.\n\nLa somatostatina INHIBE la secreción de ácido gástrico mediante tres acciones señaladas en el texto:\n\nSe une a receptores SSTR2 de las células parietales → inhibe directamente la liberación de ácido.\n\nActúa sobre las células ECL → disminuye la liberación de histamina.\n\nActúa sobre las células G antrales → inhibe la liberación de gastrina.\n\nLas demás alternativas son correctas según el fragmento.\n\n📚 CONCEPTOS CLAVE\n\nLa célula parietal tiene tres estímulos fundamentales para secretar HCl:\n\n1. Histamina\n\nCélula de origen → ECL.\n\nReceptor en célula parietal → H₂.\n\nActiva → adenilato ciclasa.\n\n↑ AMPc → activa proteínas cinasas → activa H⁺/K⁺-ATPasa.\n\n2. Acetilcolina\n\nProcede de neuronas intrínsecas.\n\nReceptor → muscarínico M₃.\n\nActiva → fosfolipasa C.\n\n↑ trifosfato de inositol → liberación de Ca²⁺ intracelular → activación de H⁺/K⁺-ATPasa.\n\n3. Gastrina\n\nSe une a receptores CCK2 de las células ECL.\n\nEstimula la liberación de histamina.\n\nLa histamina actúa posteriormente sobre el receptor H₂ de la célula parietal.\n\nLa gastrina también puede actuar sobre receptores CCK2 de la propia célula parietal, aunque el texto señala que esta acción es menos importante.\n\nInhibidor → somatostatina\n\nCélulas de origen → células D.\n\n↓ ácido directamente.\n\n↓ histamina.\n\n↓ gastrina.\n\nFinalmente, todos los estímulos convergen en la H⁺/K⁺-ATPasa, la bomba de protones de la célula parietal.\n\n⚡ CLAVE CONAREM\n\nMemorizá:\n\n“A-G-H estimulan; S inhibe”\n\nAcetilcolina → M₃\nGastrina → CCK2\nHistamina → H₂\nSomatostatina → inhibe\n\nY la vía final común es:\n\nH⁺/K⁺-ATPasa = bomba de protones.\n\nTrampa frecuente: la gastrina estimula gran parte de la secreción ácida indirectamente, mediante la célula ECL → histamina → H₂ → célula parietal.\n\nTema: Estómago\n\nSubtema: Fisiología – fases de la secreción ácida\n\nCon respecto a las fases fisiológicas de la secreción de ácido gástrico inducida por los alimentos, ¿cuál de las siguientes afirmaciones es CORRECTA?\n\na) La fase cefálica representa aproximadamente 60% de la secreción ácida total y comienza cuando los alimentos llegan al estómago.\n\nb) La fase intestinal representa aproximadamente 30% de la secreción ácida y depende principalmente de la distensión gástrica proximal.\n\nc) La fase gástrica representa aproximadamente 60% de la secreción total de ácido en respuesta a una comida.\n\nd) La fase cefálica comienza con el vaciamiento gástrico y continúa mientras existan nutrientes en el intestino delgado proximal.\n\ne) La fase intestinal constituye la principal fuente de secreción ácida después de una comida.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1466,7 +1466,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q78",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? La úlcera gástrica tipo I es la más frecuente. Se encuentra casi siempre cerca de la incisura angular, en la curvatura menor, próxima a la frontera entre la mucosa antral y la del cuerpo. Estos pacientes suelen presentar una secreción ácida normal o reducida. 📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA Tipo I: cerca de la incisura angular en la curvatura menor → más frecuente → ácido normal o reducido. Tipo II: asociada con enfermedad ulcerosa duodenal activa o inactiva → secreción ácida normal o elevada. Tipo III: úlcera prepilórica → secreción ácida normal o elevada. Tipo IV: cerca de la unión gastroesofágica → secreción ácida normal o disminuida. Tipo V: inducida por fármacos → puede aparecer en cualquier parte del estómago. ⚡ CLAVE CONAREM Tipo I = la más frecuente + incisura angular + curvatura menor. Pregunta 2 ¿Qué tipo de úlcera gástrica se asocia con una úlcera duodenal activa o inactiva?",
+    "text": "¿Qué tipo de úlcera gástrica se asocia con una úlcera duodenal activa o inactiva?",
     "options": [
       "Tipo II",
       "Tipo IV",
@@ -1485,7 +1485,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q79",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? La úlcera gástrica tipo II se relaciona con la presencia de enfermedad ulcerosa duodenal activa o inactiva. Se asocia con una secreción de ácido gástrico normal o elevada. 📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA Tipo I: incisura angular/curvatura menor → más frecuente → ácido normal o ↓. Tipo II: asociada a úlcera duodenal → ácido normal o ↑. Tipo III: prepilórica → ácido normal o ↑. Tipo IV: próxima a la unión gastroesofágica → ácido normal o ↓. Tipo V: inducida por fármacos → cualquier localización gástrica. ⚡ CLAVE CONAREM Tipo II = gástrica + duodenal. Pregunta 3 ¿Qué tipo de úlcera gástrica corresponde a la enfermedad ulcerosa prepilórica?",
+    "text": "¿Qué tipo de úlcera gástrica corresponde a la enfermedad ulcerosa prepilórica?",
     "options": [
       "Tipo V",
       "Tipo I",
@@ -1504,7 +1504,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q80",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? La úlcera gástrica tipo III corresponde a la úlcera prepilórica. Al igual que la tipo II, se relaciona con una secreción de ácido normal o elevada. 📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA Tipo I: incisura angular/curvatura menor → más frecuente → ácido normal o ↓. Tipo II: asociada a úlcera duodenal → ácido normal o ↑. Tipo III: prepilórica → ácido normal o ↑. Tipo IV: unión gastroesofágica → ácido normal o ↓. Tipo V: inducida por fármacos → cualquier parte del estómago. ⚡ CLAVE CONAREM Tipo III = prepilórica. Pregunta 4 ¿Qué tipo de úlcera gástrica se localiza cerca de la unión gastroesofágica?",
+    "text": "¿Qué tipo de úlcera gástrica se localiza cerca de la unión gastroesofágica?",
     "options": [
       "Tipo II",
       "Tipo IV",
@@ -1523,7 +1523,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q81",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? Las úlceras gástricas tipo IV aparecen cerca de la unión gastroesofágica. Según el fragmento, presentan una secreción ácida normal o por debajo de lo normal. 📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA Tipo I: incisura angular/curvatura menor → más frecuente → ácido normal o ↓. Tipo II: úlcera gástrica asociada a úlcera duodenal → ácido normal o ↑. Tipo III: prepilórica → ácido normal o ↑. Tipo IV: unión gastroesofágica → ácido normal o ↓. Tipo V: inducida por fármacos → cualquier localización. ⚡ CLAVE CONAREM Tipo IV = alta, cerca de la unión gastroesofágica. Pregunta 5 ¿Qué tipo de úlcera gástrica es inducida por fármacos y puede aparecer en cualquier parte del estómago?",
+    "text": "¿Qué tipo de úlcera gástrica es inducida por fármacos y puede aparecer en cualquier parte del estómago?",
     "options": [
       "Tipo III",
       "Tipo IV",
@@ -1561,7 +1561,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q83",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? El patrón descrito es característico de úlcera duodenal: dolor epigástrico que aparece 2 a 3 horas después de una comida y que puede presentarse durante la noche. El fragmento señala que aproximadamente dos tercios de los pacientes con úlcera duodenal presentan dolor que los despierta. 📚 CONCEPTOS CLAVE Más del 90% de los pacientes con enfermedad ulcerosa péptica presentan dolor abdominal. Características habituales → urente, no irradiado y epigástrico. Úlcera duodenal: dolor 2-3 horas después de comer y frecuentemente nocturno. Úlcera gástrica: dolor relacionado más frecuentemente con la alimentación. Otros hallazgos posibles → náuseas, distensión abdominal, pérdida de peso, sangre oculta positiva y anemia. La úlcera duodenal es casi dos veces más frecuente en hombres que en mujeres. ⚡ CLAVE CONAREM Dolor 2-3 h después de comer + despierta de noche → ÚLCERA DUODENAL. Caso clínico 2 Una mujer consulta por dolor urente y no irradiado localizado en epigastrio. Refiere que el dolor aparece principalmente en relación con la ingesta de alimentos. ¿Cuál es el diagnóstico más probable?",
+    "text": "Una mujer consulta por dolor urente y no irradiado localizado en epigastrio. Refiere que el dolor aparece principalmente en relación con la ingesta de alimentos. ¿Cuál es el diagnóstico más probable?",
     "options": [
       "Úlcera duodenal",
       "Gastrinoma",
@@ -1789,7 +1789,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q95",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? Una dieta con alto consumo de frutas y verduras frescas disminuye el riesgo de cáncer gástrico, por lo que constituye la excepción. En cambio, H. pylori, los antecedentes familiares, el tabaco y una dieta rica en nitratos se relacionan con mayor riesgo. 📚 CONCEPTOS CLAVE Según el cuadro, aumentan el riesgo: Antecedente familiar. Dieta alta en nitratos, sal y grasa. Poliposis familiar. Adenomas gástricos. Cáncer colorrectal hereditario no polipósico. Infección por H. pylori. Gastritis atrófica, metaplasia intestinal y displasia. Gastrectomía o gastroyeyunostomía previa de más de 10 años. Consumo de tabaco. Enfermedad de Ménétrier. Disminuyen el riesgo: Ácido acetilsalicílico. Dieta rica en frutas y verduras frescas. Vitamina C. ⚡ CLAVE CONAREM Nitratos + sal + tabaco + H. pylori → ↑ riesgo.\nFrutas/verduras + vitamina C → ↓ riesgo. Pregunta 2 ¿Qué vitamina se relaciona con una disminución del riesgo de cáncer gástrico?",
+    "text": "¿Qué vitamina se relaciona con una disminución del riesgo de cáncer gástrico?",
     "options": [
       "Vitamina A",
       "Vitamina B12",
@@ -1808,7 +1808,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q96",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? El fragmento señala específicamente que una dieta rica en vitamina C disminuye el riesgo de cáncer gástrico. También menciona que una dieta rica en frutas y verduras frescas ejerce un efecto protector. 📚 CONCEPTOS CLAVE En la dieta: Aumentan el riesgo → nitratos, sal y grasa.\nDisminuyen el riesgo → frutas, verduras frescas y vitamina C. El texto señala que las bacterias gástricas pueden convertir el nitrato en nitrito, un carcinógeno conocido. ⚡ CLAVE CONAREM Vitamina C = factor protector frente al cáncer gástrico. Pregunta 3 Alrededor del 10% de los adenocarcinomas gástricos son portadores de cuál de los siguientes virus?",
+    "text": "Alrededor del 10% de los adenocarcinomas gástricos son portadores de cuál de los siguientes virus?",
     "options": [
       "Virus de Epstein-Barr",
       "Citomegalovirus",
@@ -1979,7 +1979,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q105",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? El cuadro es característico del síndrome de evacuación gástrica temprana. Según el fragmento, aparece generalmente 15-30 minutos después de una comida y se manifiesta con diaforesis, debilidad, aturdimiento y taquicardia. Se relaciona con el suministro abrupto de una carga hiperosmolar al intestino delgado, favorecido por la ablación del píloro o la disminución del cumplimiento gástrico. 📚 CONCEPTOS CLAVE Puede aparecer después de piloroplastia, piloromiotomía o gastrectomía. Frecuencia clínicamente significativa: 5-10%. Temprana → 15-30 min después de comer. Síntomas → diaforesis, debilidad, aturdimiento y taquicardia. Puede acompañarse de dolor abdominal tipo cólico y diarrea. Los síntomas pueden mejorar con posición reclinada o infusión de solución salina. ⚡ CLAVE CONAREM Posgastrectomía + síntomas vasomotores a los 15-30 min = evacuación temprana. Caso clínico 2 — Mecanismo Un paciente con antecedente de cirugía gástrica presenta síntomas posprandiales 3 horas después de comer, que mejoran al consumir azúcar. ¿Qué alteración se relaciona principalmente con este cuadro?",
+    "text": "Un paciente con antecedente de cirugía gástrica presenta síntomas posprandiales 3 horas después de comer, que mejoran al consumir azúcar. ¿Qué alteración se relaciona principalmente con este cuadro?",
     "options": [
       "Hipergastrinemia",
       "Hipoclorhidria",
@@ -1998,7 +1998,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q106",
-    "text": "🧠 ¿POR QUÉ ES LA CORRECTA? Se trata de evacuación gástrica tardía, también denominada hipoglucemia posprandial reactiva. A diferencia de la forma temprana, ocurre aproximadamente 2-3 horas después de una comida y se relaciona con hipoglucemia e hiperinsulinemia. Un dato orientador es que los síntomas mejoran con el consumo de azúcar. 📚 CONCEPTOS CLAVE La distinción fundamental es: Evacuación temprana: 15-30 minutos → carga hiperosmolar intestinal. Evacuación tardía: 2-3 horas → hipoglucemia + hiperinsulinemia. Para la forma tardía, el fragmento señala que la acarbosa puede ser particularmente útil. ⚡ CLAVE CONAREM 15-30 min = temprana.\n2-3 h + mejora con azúcar = tardía. Caso clínico 3 — Tratamiento Un paciente presenta síndrome de evacuación gástrica persistente después de una gastrectomía. Continúa sintomático a pesar de modificaciones dietéticas adecuadas. Según el fragmento, ¿qué tratamiento farmacológico debe considerarse a continuación?",
+    "text": "Un paciente presenta síndrome de evacuación gástrica persistente después de una gastrectomía. Continúa sintomático a pesar de modificaciones dietéticas adecuadas. Según el fragmento, ¿qué tratamiento farmacológico debe considerarse a continuación?",
     "options": [
       "Acarbosa",
       "Octreótido",

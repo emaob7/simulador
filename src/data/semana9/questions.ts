@@ -404,7 +404,7 @@ export const questionsSemana9: Question[] = [
     id: "semana9_crec_q22",
     text: "¿A qué edad media comienza el juego egocentrico, como fingir que bebe de un vaso? (Nelson. Tratado de Pediatría. 21.ª edición. Pág. 132).",
     options: [
-        "18 meses",
+        "24 meses",
         "15 meses",
         "13 meses",
         "18 meses",

@@ -1,6 +1,16 @@
 import { shuffleQuestionOptions, shuffleQuizQuestions } from '../src/utils/quizShuffler';
 import type { Question } from '../src/types';
 
+const catalog: Question[] = [];
+for (let week = 1; week <= 18; week += 1) {
+  const module = await import(`../src/data/semana${week}/questions.ts`);
+  catalog.push(...module[`questionsSemana${week}`] as Question[]);
+}
+
+if (catalog.length !== 2298) {
+  throw new Error(`FAIL: El catálogo tiene ${catalog.length} preguntas; se esperaban 2298.`);
+}
+
 // Sample mock question
 const mockQ1: Question = {
   id: 'test_1',
@@ -48,6 +58,9 @@ for (let i = 0; i < 1000; i++) {
   if (correctText !== 'Penicilina G Benzatínica') {
     throw new Error(`FAIL: Expected 'Penicilina G Benzatínica' but got '${correctText}' at index ${shuffled.correctOptionIndex}`);
   }
+  if (shuffled.explanation !== mockQ1.explanation) {
+    throw new Error('FAIL: El shuffler modificó la explicación.');
+  }
 }
 console.log('✅ TEST 1 PASADO: 1.000 shuffles con 100% de coincidencia semántica en la respuesta correcta.');
 
@@ -80,5 +93,51 @@ if (unchanged.options[2] !== 'A y B son correctas') {
   throw new Error('FAIL: Cross-referencing options should not be shuffled.');
 }
 console.log('✅ TEST 4 PASADO: Opciones dependientes conservan su orden original.');
+
+console.log('--- TEST 5: Integridad de las 2.298 preguntas reales ---');
+for (const question of catalog) {
+  const originalOptions = [...question.options];
+  const originalCorrectText = question.options[question.correctOptionIndex];
+  const originalExplanation = question.explanation;
+  const originalIndex = question.correctOptionIndex;
+
+  if (originalCorrectText === undefined) {
+    throw new Error(`FAIL [${question.id}]: correctOptionIndex fuera de rango.`);
+  }
+
+  for (let iteration = 0; iteration < 10; iteration += 1) {
+    const shuffled = shuffleQuestionOptions(question);
+    if (shuffled.options[shuffled.correctOptionIndex] !== originalCorrectText) {
+      throw new Error(`FAIL [${question.id}]: la respuesta correcta cambió tras el shuffle ${iteration + 1}.`);
+    }
+    if (shuffled.explanation !== originalExplanation) {
+      throw new Error(`FAIL [${question.id}]: la explicación fue reescrita tras el shuffle ${iteration + 1}.`);
+    }
+  }
+
+  if (question.correctOptionIndex !== originalIndex || question.explanation !== originalExplanation) {
+    throw new Error(`FAIL [${question.id}]: el objeto de origen fue mutado.`);
+  }
+  if (question.options.some((option, index) => option !== originalOptions[index])) {
+    throw new Error(`FAIL [${question.id}]: las opciones de origen fueron mutadas.`);
+  }
+}
+console.log('✅ TEST 5 PASADO: respuesta, explicación y objeto fuente íntegros en 22.980 shuffles.');
+
+console.log('--- TEST 6: Integridad del quiz completo ---');
+const originalById = new Map(catalog.map(question => [question.id, question]));
+const shuffledQuiz = shuffleQuizQuestions(catalog);
+if (shuffledQuiz.length !== catalog.length) throw new Error('FAIL: El shuffle alteró el total del catálogo.');
+for (const shuffled of shuffledQuiz) {
+  const original = originalById.get(shuffled.id);
+  if (!original) throw new Error(`FAIL: El shuffle introdujo el ID desconocido ${shuffled.id}.`);
+  if (shuffled.options[shuffled.correctOptionIndex] !== original.options[original.correctOptionIndex]) {
+    throw new Error(`FAIL [${shuffled.id}]: respuesta incorrecta en shuffleQuizQuestions.`);
+  }
+  if (shuffled.explanation !== original.explanation) {
+    throw new Error(`FAIL [${shuffled.id}]: explicación modificada en shuffleQuizQuestions.`);
+  }
+}
+console.log('✅ TEST 6 PASADO: el quiz completo conserva IDs, respuestas y explicaciones.');
 
 console.log('\n🎉 TODOS LOS TESTS DE SHUFFLER PASARON CON ÉXITO.');

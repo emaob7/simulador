@@ -88,6 +88,12 @@ export function normalizeExplanationMarkdown(text: string): string {
       continue;
     }
 
+    // 4.1 Conceptos de opciones entre comillas «...»
+    if (/^\s*\*{0,2}«/.test(trimmed) && !trimmed.startsWith('-')) {
+      processed.push(`- ${trimmed}`);
+      continue;
+    }
+
     // 5. Notación de opción directa o acrónimo (A:, B:, S:, M:, etc.)
     if (/^[A-Za-z]\s*[:\.\)]\s+/.test(trimmed)) {
       let content = trimmed.replace(/^([A-Za-z])\s*[:\.\)]\s+/, '**$1:** ');
@@ -126,7 +132,11 @@ export function normalizeExplanationMarkdown(text: string): string {
 export function parseExplanation(text: string): ParsedSection[] {
   if (!text) return [];
 
-  const lines = text.split('\n');
+  const normalized = text
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n');
+
+  const lines = normalized.split('\n');
   const sections: ParsedSection[] = [];
   let currentSection: ParsedSection | null = null;
   let currentRawLines: string[] = [];
