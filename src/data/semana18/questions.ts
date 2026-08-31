@@ -16,7 +16,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "insuficiencia renal",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308, cuadro 308-1."
@@ -36,7 +36,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Insuficiencia renal aguda",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308, cuadro 308-1."
@@ -56,7 +56,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Insuficiencia renal aguda",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308, cuadro 308-1."
@@ -76,7 +76,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Insuficiencia renal aguda",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308, cuadro 308-1."
@@ -96,7 +96,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Insuficiencia renal aguda",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308, cuadro 308-1."
@@ -116,7 +116,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308."
@@ -136,7 +136,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Insuficiencia renal",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308."
@@ -156,7 +156,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308."
@@ -176,7 +176,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Estados posrenales",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 308."
@@ -716,7 +716,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Hemodiálisis y Terapia de Reemplazo Renal",
+    "subtema": "Diálisis",
     "subtema_grupo": "Diálisis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "Harrison 21.ª Ed. - Nefrología Q#36"
@@ -776,7 +776,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Alteraciones metabólicas y electrolíticas",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -796,7 +796,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Trastornos del calcio y fosfato",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -816,7 +816,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Hiperparatiroidismo secundario",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -836,7 +836,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Calcio, fósforo y aparato cardiovascular",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -856,7 +856,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Calcifilaxia",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -876,7 +876,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Complicaciones cardiovasculares",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -896,7 +896,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Anemia",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -916,7 +916,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Anomalías neuromusculares",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -936,7 +936,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Enfermedad renal crónica - Estudios de imagen",
+    "subtema": "Enfermedad renal crónica",
     "subtema_grupo": "Enfermedad renal crónica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -956,7 +956,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Hemodiálisis y Terapia de Reemplazo Renal",
+    "subtema": "Diálisis",
     "subtema_grupo": "Diálisis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 311."
@@ -976,7 +976,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis posestreptocócica",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314."
@@ -996,7 +996,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1016,7 +1016,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis asociada a endocarditis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo correspondiente."
@@ -1036,7 +1036,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Manifestaciones clínicas y actividad renal",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1056,7 +1056,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Clasificación histológica",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1076,7 +1076,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefritis lúpica clase IV",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1096,7 +1096,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Presentación clínica",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1116,7 +1116,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Diagnóstico histológico",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1136,7 +1136,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Pronóstico",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1156,7 +1156,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Tratamiento",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1176,7 +1176,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Síndrome de Goodpasture",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1196,7 +1196,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Presentación clínica",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1216,7 +1216,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Evolución y pronóstico",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1236,7 +1236,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Tratamiento",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1256,7 +1256,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Presentación clínica",
+    "subtema": "Lesión renal aguda",
     "subtema_grupo": "Lesión renal aguda",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1276,7 +1276,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1296,7 +1296,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1316,7 +1316,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1336,7 +1336,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1356,7 +1356,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1376,7 +1376,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1396,7 +1396,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1416,7 +1416,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1436,7 +1436,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1456,7 +1456,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1476,7 +1476,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1496,7 +1496,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1516,7 +1516,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1536,7 +1536,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Glomerulonefritis",
+    "subtema": "Glomerulopatías",
     "subtema_grupo": "Glomerulopatías",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 314: Enfermedades glomerulares."
@@ -1616,7 +1616,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefrolitiasis - Clínica",
+    "subtema": "Nefrolitiasis",
     "subtema_grupo": "Nefrolitiasis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 318: Nefrolitiasis."
@@ -1636,7 +1636,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefrolitiasis - Diagnóstico",
+    "subtema": "Nefrolitiasis",
     "subtema_grupo": "Nefrolitiasis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 318: Nefrolitiasis."
@@ -1656,7 +1656,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefrolitiasis - Oxalato de calcio",
+    "subtema": "Nefrolitiasis",
     "subtema_grupo": "Nefrolitiasis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 318: Nefrolitiasis."
@@ -1676,7 +1676,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefrolitiasis - Fosfato de calcio",
+    "subtema": "Nefrolitiasis",
     "subtema_grupo": "Nefrolitiasis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 318: Nefrolitiasis."
@@ -1696,7 +1696,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefrolitiasis - Cistina",
+    "subtema": "Nefrolitiasis",
     "subtema_grupo": "Nefrolitiasis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 318: Nefrolitiasis"
@@ -1716,7 +1716,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Nefrología",
-    "subtema": "Nefrolitiasis - Estruvita",
+    "subtema": "Nefrolitiasis",
     "subtema_grupo": "Nefrolitiasis",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 318: Nefrolitiasis."
@@ -1736,7 +1736,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Localización de lesiones neurológicas",
+    "subtema": "Semiología y localización neurológica",
     "subtema_grupo": "Semiología y localización neurológica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principles of Internal Medicine, International Edition, cap. 422, cuadro 422-2."
@@ -1756,7 +1756,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diferenciación entre unión neuromuscular y músculo",
+    "subtema": "Semiología y localización neurológica",
     "subtema_grupo": "Semiología y localización neurológica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principles of Internal Medicine, International Edition, cap. 422, cuadro 422-2."
@@ -1776,7 +1776,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones focales motoras",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principles of Internal Medicine, International Edition, cap. 425, Convulsiones focales."
@@ -1796,7 +1796,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones focales con alteración de la conciencia",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principles of Internal Medicine, International Edition, cap. 425, Convulsiones focales."
@@ -1816,7 +1816,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones de ausencia típicas",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1836,7 +1836,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "EEG en convulsiones de ausencia típicas",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1856,7 +1856,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones de ausencia atípicas",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1876,7 +1876,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "EEG en convulsiones de ausencia atípicas",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1896,7 +1896,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Síndrome de Lennox-Gastaut",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1916,7 +1916,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Etiología y pronóstico del síndrome de Lennox-Gastaut",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1936,7 +1936,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epilepsia mioclónica juvenil",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1956,7 +1956,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epilepsia mioclónica juvenil",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -1976,7 +1976,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Síndrome de epilepsia del lóbulo temporal mesial",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-3."
@@ -1996,7 +1996,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epilepsia del lóbulo temporal mesial",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-3."
@@ -2016,7 +2016,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epilepsia del lóbulo temporal mesial",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-3."
@@ -2036,7 +2036,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones según la edad",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-4."
@@ -2056,7 +2056,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epilepsia en adultos mayores",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-4."
@@ -2076,7 +2076,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones neonatales",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-4."
@@ -2096,7 +2096,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Mecanismos de acción de los fármacos antiepilépticos",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2116,7 +2116,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Electroencefalograma en epilepsia",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2136,7 +2136,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsión tónico-clónica generalizada vs. síncope",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-7."
@@ -2156,7 +2156,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diferenciación entre síncope y convulsión",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-7."
@@ -2176,7 +2176,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsión tónico-clónica generalizada vs. síncope",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-7."
@@ -2196,7 +2196,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Convulsiones psicógenas",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2216,7 +2216,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diagnóstico diferencial de convulsiones psicógenas",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2236,7 +2236,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epilepsia por deficiencia de GLUT-1",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2256,7 +2256,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Efectos adversos de antiepilépticos",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2276,7 +2276,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Efectos adversos de antiepilépticos",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2296,7 +2296,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Topiramato",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-8."
@@ -2316,7 +2316,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Ácido valproico",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-8."
@@ -2336,7 +2336,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Efectos adversos de antiepilépticos",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-8."
@@ -2356,7 +2356,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Interacciones de antiepilépticos",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425, cuadro 425-8."
@@ -2376,7 +2376,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Estado epiléptico",
+    "subtema": "Convulsiones y epilepsia",
     "subtema_grupo": "Convulsiones y epilepsia",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, cap. 425."
@@ -2396,7 +2396,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Enfermedades cerebrovasculares — diagnóstico diferencial de la apoplejía",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 426: Introducción a las enfermedades cerebrovasculares."
@@ -2416,7 +2416,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Síndromes cerebrovasculares — arteria cerebral media",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 426: Introducción a las enfermedades cerebrovasculares."
@@ -2436,7 +2436,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Arteria cerebral media — oclusión completa",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 426: Introducción a las enfermedades cerebrovasculares."
@@ -2456,7 +2456,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Enfermedad cerebrovascular — estudios de imagen",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 426: Introducción a las enfermedades cerebrovasculares."
@@ -2476,7 +2476,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Enfermedad cerebrovascular — resonancia magnética",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 426: Introducción a las enfermedades cerebrovasculares."
@@ -2496,7 +2496,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Fisiopatología de la apoplejía isquémica",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 427: Apoplejía isquémica."
@@ -2516,7 +2516,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Apoplejía isquémica aguda — manejo de la presión arterial",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "Harrison 21.ª Ed. - Neurología Q#40"
@@ -2536,7 +2536,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Apoplejía isquémica aguda — control de glucemia",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "Harrison 21.ª Ed. - Neurología Q#41"
@@ -2556,7 +2556,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Apoplejía isquémica aguda — trombólisis intravenosa",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "Harrison 21.ª Ed. - Neurología Q#42"
@@ -2576,7 +2576,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Apoplejía isquémica aguda — revascularización endovascular",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 427: Apoplejía isquémica."
@@ -2596,7 +2596,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Apoplejía isquémica aguda — contraindicaciones para rtPA",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 427: Apoplejía isquémica, cuadro 427-1."
@@ -2616,7 +2616,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Apoplejía cardioembólica",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 427: Apoplejía isquémica."
@@ -2636,7 +2636,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Isquemia cerebral transitoria (TIA)",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 427: Apoplejía isquémica."
@@ -2656,7 +2656,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Manifestaciones y diagnóstico diferencial",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 428: Hemorragia intracraneal."
@@ -2676,7 +2676,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Causas y localización",
+    "subtema": "Semiología y localización neurológica",
     "subtema_grupo": "Semiología y localización neurológica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "Harrison 21.ª Ed. - Neurología Q#48"
@@ -2696,7 +2696,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Causas y localización",
+    "subtema": "Semiología y localización neurológica",
     "subtema_grupo": "Semiología y localización neurológica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 428: Hemorragia intracraneal."
@@ -2716,7 +2716,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Manifestaciones clínicas según localización",
+    "subtema": "Semiología y localización neurológica",
     "subtema_grupo": "Semiología y localización neurológica",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 428: Hemorragia intracraneal."
@@ -2736,7 +2736,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Hemorragia intraparenquimatosa hipertensiva",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 428: Hemorragia intracraneal."
@@ -2756,7 +2756,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Angiopatía amiloide cerebral",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 428: Hemorragia intracraneal."
@@ -2776,7 +2776,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Aneurismas saculares",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2796,7 +2796,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Aneurisma intracraneal no roto",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2816,7 +2816,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Manifestaciones clínicas",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2836,7 +2836,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Escala de Hunt-Hess",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2856,7 +2856,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Hidrocefalia",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2876,7 +2876,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Isquemia cerebral tardía",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2896,7 +2896,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Hiponatremia",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2916,7 +2916,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diagnóstico",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2936,7 +2936,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diagnóstico",
+    "subtema": "Enfermedad cerebrovascular",
     "subtema_grupo": "Enfermedad cerebrovascular",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 429: Hemorragia subaracnoidea."
@@ -2956,7 +2956,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diagnóstico clínico",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -2976,7 +2976,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Epidemiología",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -2996,7 +2996,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Criterios diagnósticos",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3016,7 +3016,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Tratamiento agudo y preventivo",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3036,7 +3036,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Cefalea tensional",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3056,7 +3056,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Tratamiento",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3076,7 +3076,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Diagnóstico clínico",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3096,7 +3096,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Cefalea en racimos",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3116,7 +3116,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Hemicránea paroxística",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3136,7 +3136,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "SUNCT/SUNA",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3156,7 +3156,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Hemicránea paroxística",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3176,7 +3176,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "SUNCT/SUNA",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3196,7 +3196,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Tratamiento de la hemicránea paroxística",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3216,7 +3216,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Tratamiento de la hemicránea paroxística",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3236,7 +3236,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Cefalea primaria con tos",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
@@ -3256,7 +3256,7 @@ export const questionsSemana18: Question[] = [
     "materia": "Medicina Interna",
     "semana": 18,
     "tema": "Neurología",
-    "subtema": "Cefalea primaria con tos",
+    "subtema": "Cefaleas",
     "subtema_grupo": "Cefaleas",
     "module": "Semana 18 - Medicina Interna",
     "pagina": "📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 430: Migraña y otras cefaleas primarias."
