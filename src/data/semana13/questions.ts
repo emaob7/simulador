@@ -12,7 +12,7 @@ export const questionsSemana13: Question[] = [
       "Determinar exclusivamente el estado neurológico del paciente"
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa evaluación primaria busca detectar con rapidez anomalías que amenazan la vida para iniciar intervenciones de reanimación dirigidas. La evaluación diagnóstica más detallada se posterga hasta que se hayan aplicado las medidas correctivas necesarias.\n🟩 **CONCEPTOS CLAVE**\nLa evaluación primaria sigue un enfoque sistemático.\nLas amenazas vitales deben tratarse en cuanto se identifican.\nLa estabilización precede a la evaluación diagnóstica completa.\n💡 **REPASO ACTIVO**\nEn emergencias pediátricas: identificar, intervenir y reevaluar.\nNo debe retrasarse una intervención vital por completar la historia clínica o solicitar estudios.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa evaluación primaria busca detectar con rapidez anomalías que amenazan la vida para iniciar intervenciones de reanimación dirigidas. La evaluación diagnóstica más detallada se posterga hasta que se hayan aplicado las medidas correctivas necesarias.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La evaluación primaria sigue un enfoque sistemático.\r\n- Las amenazas vitales deben tratarse en cuanto se identifican.\r\n- La estabilización precede a la evaluación diagnóstica completa.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- En emergencias pediátricas: identificar, intervenir y reevaluar.\r\n- No debe retrasarse una intervención vital por completar la historia clínica o solicitar estudios.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 552.",
     "materia": "Pediatría",
     "semana": 13,
@@ -31,7 +31,7 @@ export const questionsSemana13: Question[] = [
       "Antecedentes, examen físico y estudios complementarios"
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa evaluación general debe realizarse en pocos segundos e incluye la apariencia del niño, el trabajo respiratorio y la circulación. Estos elementos permiten reconocer rápidamente si existe una enfermedad o lesión grave.\n🟩 **CONCEPTOS CLAVE**\nLa apariencia refleja el estado neurológico y la perfusión cerebral.\nEl trabajo respiratorio orienta sobre la gravedad de la dificultad ventilatoria.\nLa circulación puede valorarse mediante coloración cutánea y perfusión.\n💡 **REPASO ACTIVO**\nRecordatorio de alto rendimiento: Apariencia–Respiración–Circulación.\nEs una valoración visual y auditiva rápida, antes de una exploración detallada.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa evaluación general debe realizarse en pocos segundos e incluye la apariencia del niño, el trabajo respiratorio y la circulación. Estos elementos permiten reconocer rápidamente si existe una enfermedad o lesión grave.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La apariencia refleja el estado neurológico y la perfusión cerebral.\r\n- El trabajo respiratorio orienta sobre la gravedad de la dificultad ventilatoria.\r\n- La circulación puede valorarse mediante coloración cutánea y perfusión.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Recordatorio de alto rendimiento: Apariencia–Respiración–Circulación.\r\n- Es una valoración visual y auditiva rápida, antes de una exploración detallada.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 552.",
     "materia": "Pediatría",
     "semana": 13,
@@ -50,7 +50,7 @@ export const questionsSemana13: Question[] = [
       "Saturación periférica de oxígeno"
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa apariencia general se valora mediante el tono, la interacción, la consolabilidad, la mirada y el habla o llanto. Estos elementos ayudan a estimar rápidamente el estado neurológico y la gravedad clínica.\n🟩 **CONCEPTOS CLAVE**\nEl tono anormal puede indicar compromiso neurológico o sistémico.\nLa falta de interacción es un signo de alarma.\nUn niño inconsolable o poco reactivo requiere evaluación inmediata.\n💡 **REPASO ACTIVO**\nElementos de la apariencia: tono, interacción, consolabilidad, mirada y habla/llanto.\nUna apariencia anormal puede preceder al deterioro de los signos vitales.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa apariencia general se valora mediante el tono, la interacción, la consolabilidad, la mirada y el habla o llanto. Estos elementos ayudan a estimar rápidamente el estado neurológico y la gravedad clínica.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- El tono anormal puede indicar compromiso neurológico o sistémico.\r\n- La falta de interacción es un signo de alarma.\r\n- Un niño inconsolable o poco reactivo requiere evaluación inmediata.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Elementos de la apariencia: tono, interacción, consolabilidad, mirada y habla/llanto.\r\n- Una apariencia anormal puede preceder al deterioro de los signos vitales.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 552.",
     "materia": "Pediatría",
     "semana": 13,
@@ -69,7 +69,7 @@ export const questionsSemana13: Question[] = [
       "Administrar líquidos por vía oral"
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nAnte la ausencia de respuesta, el profesional debe abrir la vía aérea y evaluar la respiración. Si el niño no respira eficazmente, debe iniciarse ventilación de rescate; si presenta respiraciones agónicas o ausencia de respiración, se procede con reanimación cardiopulmonar según los algoritmos pediátricos.\n🟩 **CONCEPTOS CLAVE**\nLa falta de respuesta obliga a valorar inmediatamente vía aérea y respiración.\nLas respiraciones agónicas no se consideran respiración normal.\nLa ventilación de rescate está indicada cuando la respiración es ineficaz.\n💡 **REPASO ACTIVO**\nSecuencia práctica: respuesta → vía aérea → respiración → circulación.\nNo debe retrasarse la intervención para completar otras mediciones.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nAnte la ausencia de respuesta, el profesional debe abrir la vía aérea y evaluar la respiración. Si el niño no respira eficazmente, debe iniciarse ventilación de rescate; si presenta respiraciones agónicas o ausencia de respiración, se procede con reanimación cardiopulmonar según los algoritmos pediátricos.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La falta de respuesta obliga a valorar inmediatamente vía aérea y respiración.\r\n- Las respiraciones agónicas no se consideran respiración normal.\r\n- La ventilación de rescate está indicada cuando la respiración es ineficaz.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Secuencia práctica: respuesta → vía aérea → respiración → circulación.\r\n- No debe retrasarse la intervención para completar otras mediciones.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 552.",
     "materia": "Pediatría",
     "semana": 13,
@@ -88,7 +88,7 @@ export const questionsSemana13: Question[] = [
       "Sangrado."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa circulación en el Triángulo de Evaluación Pediátrica se evalúa mediante la inspección del color de la piel, identificando palidez, cianosis, moteado y sangrado. La apariencia del niño corresponde a otro componente del TEP y valora el estado neurológico mediante el tono, la interacción, la consolabilidad, la mirada y el habla o llanto.\n🟩 **CONCEPTOS CLAVE**\nLa circulación se evalúa por el color de la piel y la presencia de sangrado.\nLa apariencia es un componente independiente del TEP.\nEl TEP incluye apariencia, trabajo respiratorio y circulación.\nTriángulo de Evaluación Pediátrica (TEP):\nApariencia: tono, interacción, consolabilidad, mirada y habla/llanto (TICLS).\nTrabajo respiratorio: ruidos respiratorios, posición anormal, retracciones y aleteo nasal.\nCirculación: palidez, cianosis, moteado y sangrado.\nMnemotecnia: TEP = Apariencia + Respiración + Circulación (ARC) → Permite determinar rápidamente qué tan grave está el niño, antes de iniciar la evaluación ABCDE.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa circulación en el Triángulo de Evaluación Pediátrica se evalúa mediante la inspección del color de la piel, identificando palidez, cianosis, moteado y sangrado. La apariencia del niño corresponde a otro componente del TEP y valora el estado neurológico mediante el tono, la interacción, la consolabilidad, la mirada y el habla o llanto.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La circulación se evalúa por el color de la piel y la presencia de sangrado.\r\n- La apariencia es un componente independiente del TEP.\r\n- El TEP incluye apariencia, trabajo respiratorio y circulación.\r\n\r\n**Triángulo de Evaluación Pediátrica (TEP):**\r\n- Apariencia: tono, interacción, consolabilidad, mirada y habla/llanto (TICLS).\r\n- Trabajo respiratorio: ruidos respiratorios, posición anormal, retracciones y aleteo nasal.\r\n- Circulación: palidez, cianosis, moteado y sangrado.\r\n- Mnemotecnia: TEP = Apariencia + Respiración + Circulación (ARC) → Permite determinar rápidamente qué tan grave está el niño, antes de iniciar la evaluación ABCDE.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 552.",
     "materia": "Pediatría",
     "semana": 13,
@@ -107,7 +107,7 @@ export const questionsSemana13: Question[] = [
       "Buscar ausencia de respiración o respiración agónica y valorar simultáneamente el pulso."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nTras verificar la seguridad de la escena, el reanimador debe comprobar la respuesta del niño, pedir ayuda, activar el sistema de emergencias (cuando corresponda) y valorar respiración y pulso simultáneamente durante un máximo de 10 segundos. La desfibrilación solo se realiza cuando existe un DEA disponible y está indicada según el ritmo.\n🟩 **CONCEPTOS CLAVE**\nSeguridad de la escena es el primer paso.\nValorar respiración y pulso simultáneamente ≤10 segundos.\nEl DEA se utiliza cuando está disponible y el algoritmo lo indica.\n💡 **REPASO ACTIVO**\nSecuencia inicial del BLS pediátrico:\nSeguridad de la escena.\nRespuesta del paciente.\nPedir ayuda.\nActivar el sistema de emergencias (si corresponde).\nValorar respiración y pulso (≤10 s).\nPosteriormente:\nPulso presente + respiración normal → Vigilancia.\nPulso presente + respiración ausente → Ventilación de rescate.\nSin pulso → RCP.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nTras verificar la seguridad de la escena, el reanimador debe comprobar la respuesta del niño, pedir ayuda, activar el sistema de emergencias (cuando corresponda) y valorar respiración y pulso simultáneamente durante un máximo de 10 segundos. La desfibrilación solo se realiza cuando existe un DEA disponible y está indicada según el ritmo.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Seguridad de la escena es el primer paso.\r\n- Valorar respiración y pulso simultáneamente ≤10 segundos.\r\n- El DEA se utiliza cuando está disponible y el algoritmo lo indica.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Secuencia inicial del BLS pediátrico:**\r\n- Seguridad de la escena.\r\n- Respuesta del paciente.\r\n- Pedir ayuda.\r\n- Activar el sistema de emergencias (si corresponde).\r\n- Valorar respiración y pulso (≤10 s).\r\n\r\n**Posteriormente:**\r\n- Pulso presente + respiración normal → Vigilancia.\r\n- Pulso presente + respiración ausente → Ventilación de rescate.\r\n- Sin pulso → RCP.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 553.",
     "materia": "Pediatría",
     "semana": 13,
@@ -126,7 +126,7 @@ export const questionsSemana13: Question[] = [
       "Debe administrarse una ventilación cada segundo."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl algoritmo recomienda administrar 1 ventilación cada 2–3 segundos (20–30/min) cuando el paciente tiene pulso pero no respira normalmente. El pulso debe reevaluarse cada 2 minutos y, si desaparece, se inicia RCP.\n🟩 **CONCEPTOS CLAVE**\nPulso presente + apnea = ventilación de rescate.\nFrecuencia: 20–30 ventilaciones/min.\nReevaluar pulso cada 2 minutos.\n💡 **REPASO ACTIVO**\nSi hay pulso:\nRespira → Observación.\nNo respira → Ventilación de rescate.\nFC <60/min con mala perfusión → RCP.\nSin pulso → RCP inmediata.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl algoritmo recomienda administrar 1 ventilación cada 2–3 segundos (20–30/min) cuando el paciente tiene pulso pero no respira normalmente. El pulso debe reevaluarse cada 2 minutos y, si desaparece, se inicia RCP.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Pulso presente + apnea = ventilación de rescate.\r\n- Frecuencia: 20–30 ventilaciones/min.\r\n- Reevaluar pulso cada 2 minutos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Si hay pulso:**\r\n- Respira → Observación.\r\n- No respira → Ventilación de rescate.\r\n- FC <60/min con mala perfusión → RCP.\r\n- Sin pulso → RCP inmediata.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 553.",
     "materia": "Pediatría",
     "semana": 13,
@@ -145,7 +145,7 @@ export const questionsSemana13: Question[] = [
       "Colapso súbito con ausencia de pulso."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nCuando existe pulso presente, el tratamiento inicial es la ventilación de rescate, no la RCP. La RCP está indicada cuando no hay pulso o cuando la frecuencia cardíaca es <60/min acompañada de signos de mala perfusión, a pesar de una adecuada oxigenación y ventilación.\n🟩 **CONCEPTOS CLAVE**\nSin pulso = RCP.\nFC <60/min + mala perfusión = RCP.\nPulso presente + apnea = ventilación de rescate.\n💡 **REPASO ACTIVO**\n¿Cuándo iniciar RCP?\n❌ Sin pulso.\n❌ FC <60/min + mala perfusión.\n❌ Respiración agónica sin pulso.\n¿Cuándo NO iniciar RCP?\n✅ Pulso presente + apnea → Ventilación de rescate.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nCuando existe pulso presente, el tratamiento inicial es la ventilación de rescate, no la RCP. La RCP está indicada cuando no hay pulso o cuando la frecuencia cardíaca es <60/min acompañada de signos de mala perfusión, a pesar de una adecuada oxigenación y ventilación.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Sin pulso = RCP.\r\n- FC <60/min + mala perfusión = RCP.\r\n- Pulso presente + apnea = ventilación de rescate.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- ¿Cuándo iniciar RCP?\r\n- ❌ Sin pulso.\r\n- ❌ FC <60/min + mala perfusión.\r\n- ❌ Respiración agónica sin pulso.\r\n- ¿Cuándo NO iniciar RCP?\r\n- ✅ Pulso presente + apnea → Ventilación de rescate.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 553.",
     "materia": "Pediatría",
     "semana": 13,
@@ -164,7 +164,7 @@ export const questionsSemana13: Question[] = [
       "Participar en la relación de 15 compresiones por 2 ventilaciones."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el algoritmo de dos reanimadores, el primer reanimador permanece junto al niño para iniciar la evaluación y la reanimación. El segundo reanimador activa el sistema de respuesta a emergencias, obtiene el DEA y el equipo de emergencia, y posteriormente se incorpora a la RCP.\n🟩 **CONCEPTOS CLAVE**\nEl primer reanimador permanece con el paciente.\nEl segundo reanimador activa el sistema de emergencias y trae el DEA.\nUna vez reunidos ambos reanimadores, la relación cambia a 15 compresiones por 2 ventilaciones.\n💡 **REPASO ACTIVO**\nSoporte Vital Básico pediátrico con dos reanimadores\nVerificar la seguridad de la escena.\nComprobar la respuesta del niño.\nEl primer reanimador permanece con el paciente.\nEl segundo activa el sistema de emergencias y trae el DEA.\nEvaluar respiración y pulso simultáneamente (≤10 segundos).\nPulso presente + apnea → Ventilación de rescate.\nFrecuencia cardíaca <60/min con signos de mala perfusión → Iniciar RCP.\nAusencia de pulso → Iniciar RCP.\nAl incorporarse el segundo reanimador → 15 compresiones : 2 ventilaciones.\nUtilizar el DEA tan pronto esté disponible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el algoritmo de dos reanimadores, el primer reanimador permanece junto al niño para iniciar la evaluación y la reanimación. El segundo reanimador activa el sistema de respuesta a emergencias, obtiene el DEA y el equipo de emergencia, y posteriormente se incorpora a la RCP.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- El primer reanimador permanece con el paciente.\r\n- El segundo reanimador activa el sistema de emergencias y trae el DEA.\r\n- Una vez reunidos ambos reanimadores, la relación cambia a 15 compresiones por 2 ventilaciones.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Soporte Vital Básico pediátrico con dos reanimadores\r\n- Verificar la seguridad de la escena.\r\n- Comprobar la respuesta del niño.\r\n- El primer reanimador permanece con el paciente.\r\n- El segundo activa el sistema de emergencias y trae el DEA.\r\n- Evaluar respiración y pulso simultáneamente (≤10 segundos).\r\n- Pulso presente + apnea → Ventilación de rescate.\r\n- Frecuencia cardíaca <60/min con signos de mala perfusión → Iniciar RCP.\r\n- Ausencia de pulso → Iniciar RCP.\r\n- Al incorporarse el segundo reanimador → 15 compresiones : 2 ventilaciones.\r\n- Utilizar el DEA tan pronto esté disponible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 554.",
     "materia": "Pediatría",
     "semana": 13,
@@ -183,7 +183,7 @@ export const questionsSemana13: Question[] = [
       "Deben minimizarse las interrupciones de las compresiones torácicas."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nCuando solo existe un reanimador, la relación es 30:2. Una vez que llega el segundo reanimador, la relación cambia a 15:2. Este cambio busca optimizar la ventilación en el paciente pediátrico sin comprometer la calidad de las compresiones.\n🟩 **CONCEPTOS CLAVE**\nUn reanimador: 30:2.\nDos reanimadores: 15:2.\nEl DEA debe emplearse tan pronto como esté disponible.\n💡 **REPASO ACTIVO**\nRelación compresiones : ventilaciones\n1 reanimador → 30:2\n2 reanimadores → 15:2\nMinimizar interrupciones de las compresiones.\nUtilizar el DEA en cuanto esté disponible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nCuando solo existe un reanimador, la relación es 30:2. Una vez que llega el segundo reanimador, la relación cambia a 15:2. Este cambio busca optimizar la ventilación en el paciente pediátrico sin comprometer la calidad de las compresiones.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Un reanimador: 30:2.\r\n- Dos reanimadores: 15:2.\r\n- El DEA debe emplearse tan pronto como esté disponible.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Relación compresiones : ventilaciones\r\n- 1 reanimador → 30:2\r\n- 2 reanimadores → 15:2\r\n- Minimizar interrupciones de las compresiones.\r\n- Utilizar el DEA en cuanto esté disponible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 554.",
     "materia": "Pediatría",
     "semana": 13,
@@ -202,7 +202,7 @@ export const questionsSemana13: Question[] = [
       "Si el ritmo no es desfibrilable, debe reanudarse inmediatamente la RCP."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nTras una descarga con el DEA, las compresiones torácicas deben reanudarse de inmediato durante aproximadamente 2 minutos. No se debe esperar para verificar el ritmo o el pulso, ya que las interrupciones disminuyen la eficacia de la reanimación.\n🟩 **CONCEPTOS CLAVE**\nDescarga → reiniciar RCP inmediatamente.\nRitmo no desfibrilable → reiniciar RCP inmediatamente.\nEl DEA analiza nuevamente el ritmo después de cada ciclo de RCP.\n💡 **REPASO ACTIVO**\nUso del DEA durante la RCP pediátrica\nRitmo desfibrilable → Descarga → RCP inmediata durante 2 minutos.\nRitmo no desfibrilable → RCP inmediata durante 2 minutos.\nRepetir el análisis del ritmo cuando lo indique el DEA.\nContinuar hasta la llegada del equipo de soporte vital avanzado o la recuperación del paciente.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nTras una descarga con el DEA, las compresiones torácicas deben reanudarse de inmediato durante aproximadamente 2 minutos. No se debe esperar para verificar el ritmo o el pulso, ya que las interrupciones disminuyen la eficacia de la reanimación.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Descarga → reiniciar RCP inmediatamente.\r\n- Ritmo no desfibrilable → reiniciar RCP inmediatamente.\r\n- El DEA analiza nuevamente el ritmo después de cada ciclo de RCP.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Uso del DEA durante la RCP pediátrica**\r\n- Ritmo desfibrilable → Descarga → RCP inmediata durante 2 minutos.\r\n- Ritmo no desfibrilable → RCP inmediata durante 2 minutos.\r\n- Repetir el análisis del ritmo cuando lo indique el DEA.\r\n- Continuar hasta la llegada del equipo de soporte vital avanzado o la recuperación del paciente.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 554.",
     "materia": "Pediatría",
     "semana": 13,
@@ -221,7 +221,7 @@ export const questionsSemana13: Question[] = [
       "Niño con respiración agónica, pulso palpable y frecuencia cardíaca de 110 latidos por minuto."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn pediatría, la RCP no solo está indicada cuando no existe pulso, sino también cuando la frecuencia cardíaca es menor de 60 latidos por minuto acompañada de signos de mala perfusión, a pesar de una adecuada oxigenación y ventilación. Los pacientes con pulso presente y frecuencia cardíaca ≥60 latidos por minuto requieren ventilación de rescate, no compresiones torácicas.\n🟩 **CONCEPTOS CLAVE**\nAusencia de pulso → Iniciar RCP.\nFrecuencia cardíaca <60 latidos/min + signos de mala perfusión → Iniciar RCP.\nPulso presente y frecuencia cardíaca ≥60 latidos/min → Ventilación de rescate.\n💡 **REPASO ACTIVO**\nAlgoritmo del Soporte Vital Básico pediátrico\nRespira normalmente + pulso → Vigilancia.\nNo respira + pulso ≥60 latidos/min → Ventilación de rescate (1 ventilación cada 2–3 segundos).\nFrecuencia cardíaca <60 latidos/min con mala perfusión → Iniciar RCP.\nSin pulso → Iniciar RCP.\nDos reanimadores → 15 compresiones : 2 ventilaciones.\nDesfibrilador externo automático (DEA) → Utilizarlo tan pronto esté disponible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn pediatría, la RCP no solo está indicada cuando no existe pulso, sino también cuando la frecuencia cardíaca es menor de 60 latidos por minuto acompañada de signos de mala perfusión, a pesar de una adecuada oxigenación y ventilación. Los pacientes con pulso presente y frecuencia cardíaca ≥60 latidos por minuto requieren ventilación de rescate, no compresiones torácicas.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Ausencia de pulso → Iniciar RCP.\r\n- Frecuencia cardíaca <60 latidos/min + signos de mala perfusión → Iniciar RCP.\r\n- Pulso presente y frecuencia cardíaca ≥60 latidos/min → Ventilación de rescate.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Algoritmo del Soporte Vital Básico pediátrico**\r\n- Respira normalmente + pulso → Vigilancia.\r\n- No respira + pulso ≥60 latidos/min → Ventilación de rescate (1 ventilación cada 2–3 segundos).\r\n- Frecuencia cardíaca <60 latidos/min con mala perfusión → Iniciar RCP.\r\n- Sin pulso → Iniciar RCP.\r\n- Dos reanimadores → 15 compresiones : 2 ventilaciones.\r\n- Desfibrilador externo automático (DEA) → Utilizarlo tan pronto esté disponible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 554.",
     "materia": "Pediatría",
     "semana": 13,
@@ -240,7 +240,7 @@ export const questionsSemana13: Question[] = [
       "Frecuencia cardíaca de 100 latidos por minuto con ventilación ineficaz."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn pediatría, la presencia de pulso no excluye el inicio de la RCP. Si la frecuencia cardíaca es menor de 60 latidos por minuto y existen signos de mala perfusión, debe iniciarse RCP. En los demás escenarios, el paciente conserva una frecuencia cardíaca ≥60 latidos por minuto, por lo que la conducta inicial es proporcionar ventilación de rescate y reevaluar.\n🟩 **CONCEPTOS CLAVE**\nAusencia de pulso → Iniciar RCP.\nFrecuencia cardíaca <60 latidos/min con mala perfusión → Iniciar RCP.\nFrecuencia cardíaca ≥60 latidos/min → Ventilación de rescate.\n💡 **REPASO ACTIVO**\nSoporte Vital Básico pediátrico con dos reanimadores\nVerificar la seguridad de la escena.\nComprobar la respuesta del niño.\nEl primer reanimador permanece con el paciente.\nEl segundo activa el sistema de emergencias y trae el desfibrilador externo automático (DEA).\nEvaluar respiración y pulso simultáneamente (≤10 segundos).\nRespira y tiene pulso → Vigilancia.\nNo respira, pero tiene pulso ≥60 latidos/min → Ventilación de rescate (1 ventilación cada 2–3 segundos).\nFrecuencia cardíaca <60 latidos/min con mala perfusión → Iniciar RCP.\nSin pulso → Iniciar RCP.\nDos reanimadores → 15 compresiones : 2 ventilaciones.\nUtilizar el DEA tan pronto esté disponible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn pediatría, la presencia de pulso no excluye el inicio de la RCP. Si la frecuencia cardíaca es menor de 60 latidos por minuto y existen signos de mala perfusión, debe iniciarse RCP. En los demás escenarios, el paciente conserva una frecuencia cardíaca ≥60 latidos por minuto, por lo que la conducta inicial es proporcionar ventilación de rescate y reevaluar.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Ausencia de pulso → Iniciar RCP.\r\n- Frecuencia cardíaca <60 latidos/min con mala perfusión → Iniciar RCP.\r\n- Frecuencia cardíaca ≥60 latidos/min → Ventilación de rescate.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Soporte Vital Básico pediátrico con dos reanimadores\r\n- Verificar la seguridad de la escena.\r\n- Comprobar la respuesta del niño.\r\n- El primer reanimador permanece con el paciente.\r\n- El segundo activa el sistema de emergencias y trae el desfibrilador externo automático (DEA).\r\n- Evaluar respiración y pulso simultáneamente (≤10 segundos).\r\n- Respira y tiene pulso → Vigilancia.\r\n- No respira, pero tiene pulso ≥60 latidos/min → Ventilación de rescate (1 ventilación cada 2–3 segundos).\r\n- Frecuencia cardíaca <60 latidos/min con mala perfusión → Iniciar RCP.\r\n- Sin pulso → Iniciar RCP.\r\n- Dos reanimadores → 15 compresiones : 2 ventilaciones.\r\n- Utilizar el DEA tan pronto esté disponible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 554.",
     "materia": "Pediatría",
     "semana": 13,
@@ -259,7 +259,7 @@ export const questionsSemana13: Question[] = [
       "Al recuperar el pulso."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa relación 30:2 se utiliza cuando solo hay un reanimador. Al incorporarse un segundo reanimador, la relación cambia a 15:2, con el objetivo de mejorar la ventilación en el paciente pediátrico.\n🟩 **CONCEPTOS CLAVE**\nUn reanimador: 30:2.\nDos reanimadores: 15:2.\nMinimizar las interrupciones de las compresiones.\n💡 **REPASO ACTIVO**\nRespira y tiene pulso → Vigilancia.\nNo respira, pero tiene pulso ≥60 latidos/min → Ventilación de rescate.\nFrecuencia cardíaca <60 latidos/min con mala perfusión → RCP.\nSin pulso → RCP.\n1 reanimador: 30:2.\n2 reanimadores: 15:2.\nUtilizar el desfibrilador externo automático (DEA) tan pronto esté disponible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa relación 30:2 se utiliza cuando solo hay un reanimador. Al incorporarse un segundo reanimador, la relación cambia a 15:2, con el objetivo de mejorar la ventilación en el paciente pediátrico.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Un reanimador: 30:2.\r\n- Dos reanimadores: 15:2.\r\n- Minimizar las interrupciones de las compresiones.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Respira y tiene pulso → Vigilancia.\r\n- No respira, pero tiene pulso ≥60 latidos/min → Ventilación de rescate.\r\n- Frecuencia cardíaca <60 latidos/min con mala perfusión → RCP.\r\n- Sin pulso → RCP.\r\n- 1 reanimador: 30:2.\r\n- 2 reanimadores: 15:2.\r\n- Utilizar el desfibrilador externo automático (DEA) tan pronto esté disponible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, página 554.",
     "materia": "Pediatría",
     "semana": 13,
@@ -278,7 +278,7 @@ export const questionsSemana13: Question[] = [
       "30–53 respiraciones/min"
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa frecuencia respiratoria disminuye progresivamente con la edad. En el adolescente, el rango normal es de 12 a 20 respiraciones por minuto.\n🟩 **CONCEPTOS CLAVE**\nLa frecuencia respiratoria varía según la edad.\nLa taquipnea suele ser un signo precoz de compromiso respiratorio.\nSiempre interpretar los signos vitales según el grupo etario.\n💡 **REPASO ACTIVO**\nSignos vitales normales (FC/FR)\nPrematuro: 120–205 lpm | 40–70 rpm.\nRecién nacido: 100–205 lpm | 35–55 rpm.\nLactante: 100–180 lpm | 30–53 rpm.\nNiño pequeño: 98–140 lpm | 22–37 rpm.\nPreescolar: 80–120 lpm | 20–29 rpm.\nEscolar: 75–118 lpm | 18–25 rpm.\nAdolescente: 60–100 lpm | 12–20 rpm.\nABCDE\nA: Vía aérea.\nB: Respiración.\nC: Circulación.\nD: Discapacidad.\nE: Exposición.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa frecuencia respiratoria disminuye progresivamente con la edad. En el adolescente, el rango normal es de 12 a 20 respiraciones por minuto.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La frecuencia respiratoria varía según la edad.\r\n- La taquipnea suele ser un signo precoz de compromiso respiratorio.\r\n- Siempre interpretar los signos vitales según el grupo etario.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Signos vitales normales (FC/FR)**\r\n- Prematuro: 120–205 lpm | 40–70 rpm.\r\n- Recién nacido: 100–205 lpm | 35–55 rpm.\r\n- Lactante: 100–180 lpm | 30–53 rpm.\r\n- Niño pequeño: 98–140 lpm | 22–37 rpm.\r\n- Preescolar: 80–120 lpm | 20–29 rpm.\r\n- Escolar: 75–118 lpm | 18–25 rpm.\r\n- Adolescente: 60–100 lpm | 12–20 rpm.\r\n\r\n**ABCDE**\r\n- A: Vía aérea.\r\n- B: Respiración.\r\n- C: Circulación.\r\n- D: Discapacidad.\r\n- E: Exposición.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -297,7 +297,7 @@ export const questionsSemana13: Question[] = [
       "Adolescente."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl prematuro presenta la frecuencia cardíaca fisiológica más elevada (120–205 latidos/min), la cual disminuye progresivamente con el crecimiento.\n🟩 **CONCEPTOS CLAVE**\nLa frecuencia cardíaca disminuye con la edad.\nNo utilizar valores del adulto en pediatría.\nLa edad determina la normalidad de los signos vitales.\n💡 **REPASO ACTIVO**\nSignos vitales normales (FC/FR)\nPrematuro: 120–205 | 40–70.\nRecién nacido: 100–205 | 35–55.\nLactante: 100–180 | 30–53.\nNiño pequeño: 98–140 | 22–37.\nPreescolar: 80–120 | 20–29.\nEscolar: 75–118 | 18–25.\nAdolescente: 60–100 | 12–20.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl prematuro presenta la frecuencia cardíaca fisiológica más elevada (120–205 latidos/min), la cual disminuye progresivamente con el crecimiento.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La frecuencia cardíaca disminuye con la edad.\r\n- No utilizar valores del adulto en pediatría.\r\n- La edad determina la normalidad de los signos vitales.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Signos vitales normales (FC/FR)**\r\n- Prematuro: 120–205 | 40–70.\r\n- Recién nacido: 100–205 | 35–55.\r\n- Lactante: 100–180 | 30–53.\r\n- Niño pequeño: 98–140 | 22–37.\r\n- Preescolar: 80–120 | 20–29.\r\n- Escolar: 75–118 | 18–25.\r\n- Adolescente: 60–100 | 12–20.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -316,7 +316,7 @@ export const questionsSemana13: Question[] = [
       "Obedece órdenes complejas."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa letra V (Voice) indica que el niño responde cuando se le habla o se le llama por su nombre.\n🟩 **CONCEPTOS CLAVE**\nAVPU es una evaluación neurológica rápida.\nForma parte de la D del ABCDE.\nPermite valorar el nivel de conciencia.\n💡 **REPASO ACTIVO**\nAVPU\nA: Alerta.\nV: Responde a la voz.\nP: Responde al dolor.\nA: No responde.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa letra V (Voice) indica que el niño responde cuando se le habla o se le llama por su nombre.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- AVPU es una evaluación neurológica rápida.\r\n- Forma parte de la D del ABCDE.\r\n- Permite valorar el nivel de conciencia.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**AVPU**\r\n- A: Alerta.\r\n- V: Responde a la voz.\r\n- P: Responde al dolor.\r\n- A: No responde.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -335,7 +335,7 @@ export const questionsSemana13: Question[] = [
       "No responde."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa escala AVDA solo clasifica el nivel de respuesta en cuatro categorías: Alerta, Voz, Dolor y No responde. \"Obedece órdenes\" corresponde a la evaluación motora de la Escala de Glasgow, no al AVDA.\n🟩 **CONCEPTOS CLAVE**\nAVDA tiene únicamente cuatro categorías.\nEs una evaluación rápida del estado neurológico.\nGlasgow ofrece una valoración neurológica más detallada.\n💡 **REPASO ACTIVO**\nAVPU\nA: Alerta.\nV: Responde a la voz.\nD: Responde al dolor.\nA: No responde.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa escala AVDA solo clasifica el nivel de respuesta en cuatro categorías: Alerta, Voz, Dolor y No responde. \"Obedece órdenes\" corresponde a la evaluación motora de la Escala de Glasgow, no al AVDA.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- AVDA tiene únicamente cuatro categorías.\r\n- Es una evaluación rápida del estado neurológico.\r\n- Glasgow ofrece una valoración neurológica más detallada.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**AVPU**\r\n- A: Alerta.\r\n- V: Responde a la voz.\r\n- D: Responde al dolor.\r\n- A: No responde.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -354,7 +354,7 @@ export const questionsSemana13: Question[] = [
       "Orientado y conversa con palabras o frases apropiadas para su edad."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa respuesta verbal con mayor puntuación (5 puntos) corresponde al niño orientado que utiliza palabras o frases apropiadas para su edad cronológica.\n🟩 **CONCEPTOS CLAVE**\nGlasgow evalúa apertura ocular, respuesta verbal y respuesta motora.\nEl puntaje máximo en cada componente refleja función neurológica normal.\nLa respuesta verbal cambia según la edad del paciente.\n💡 **REPASO ACTIVO**\nEscala de Glasgow pediátrica\nApertura ocular: espontánea (4), a la voz (3), al dolor (2), ninguna (1).\nRespuesta verbal: orientado (≥2 años) o balbuceo/palabras apropiadas (<2 años) = 5 puntos.\nRespuesta motora: obedece órdenes o movimientos espontáneos = 6 puntos.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa respuesta verbal con mayor puntuación (5 puntos) corresponde al niño orientado que utiliza palabras o frases apropiadas para su edad cronológica.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Glasgow evalúa apertura ocular, respuesta verbal y respuesta motora.\r\n- El puntaje máximo en cada componente refleja función neurológica normal.\r\n- La respuesta verbal cambia según la edad del paciente.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Escala de Glasgow pediátrica**\r\n- Apertura ocular: espontánea (4), a la voz (3), al dolor (2), ninguna (1).\r\n- Respuesta verbal: orientado (≥2 años) o balbuceo/palabras apropiadas (<2 años) = 5 puntos.\r\n- Respuesta motora: obedece órdenes o movimientos espontáneos = 6 puntos.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -373,7 +373,7 @@ export const questionsSemana13: Question[] = [
       "Extremidades frías."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa taquicardia es el signo más precoz y frecuente de choque en pediatría. La hipotensión es un hallazgo tardío y suele indicar descompensación.\n🟩 **CONCEPTOS CLAVE**\nLa taquicardia es un mecanismo compensatorio.\nLa hipotensión es un signo tardío.\nLa valoración debe ser integral.\n💡 **REPASO ACTIVO**\nEvaluación de la circulación\nColor de la piel.\nTemperatura.\nFrecuencia cardíaca.\nRitmo cardíaco.\nPresencia y calidad de los pulsos.\nLlenado capilar.\nPresión arterial.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa taquicardia es el signo más precoz y frecuente de choque en pediatría. La hipotensión es un hallazgo tardío y suele indicar descompensación.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La taquicardia es un mecanismo compensatorio.\r\n- La hipotensión es un signo tardío.\r\n- La valoración debe ser integral.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Evaluación de la circulación**\r\n- Color de la piel.\r\n- Temperatura.\r\n- Frecuencia cardíaca.\r\n- Ritmo cardíaco.\r\n- Presencia y calidad de los pulsos.\r\n- Llenado capilar.\r\n- Presión arterial.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -392,7 +392,7 @@ export const questionsSemana13: Question[] = [
       "Hipertensión arterial."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa disminución de la perfusión puede manifestarse por palidez, moteado, llenado capilar prolongado, extremidades frías y pulsos débiles. La hipertensión no forma parte de estos hallazgos.\n🟩 **CONCEPTOS CLAVE**\nLa perfusión se valora con múltiples parámetros.\nNo debe interpretarse un solo signo de forma aislada.\nLa presión arterial puede permanecer normal en fases iniciales.\n💡 **REPASO ACTIVO**\nSignos de hipoperfusión\nPalidez.\nMoteado.\nLlenado capilar prolongado.\nPulsos débiles.\nExtremidades frías.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa disminución de la perfusión puede manifestarse por palidez, moteado, llenado capilar prolongado, extremidades frías y pulsos débiles. La hipertensión no forma parte de estos hallazgos.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La perfusión se valora con múltiples parámetros.\r\n- No debe interpretarse un solo signo de forma aislada.\r\n- La presión arterial puede permanecer normal en fases iniciales.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Signos de hipoperfusión**\r\n- Palidez.\r\n- Moteado.\r\n- Llenado capilar prolongado.\r\n- Pulsos débiles.\r\n- Extremidades frías.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 555.",
     "materia": "Pediatría",
     "semana": 13,
@@ -411,7 +411,7 @@ export const questionsSemana13: Question[] = [
       "Organofosforados."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLos agentes anticolinérgicos producen midriasis bilateral. En cambio, los opiáceos y los organofosforados se asocian con miosis.\n🟩 **CONCEPTOS CLAVE**\nMidriasis bilateral: anticolinérgicos, simpaticomiméticos, botulismo, síndrome serotoninérgico.\nMiosis bilateral: opiáceos, organofosforados, barbitúricos.\n💡 **REPASO ACTIVO**\nMidriasis bilateral\nAnticolinérgicos.\nSimpaticomiméticos.\nSíndrome serotoninérgico.\nBotulismo.\nMuerte cerebral.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLos agentes anticolinérgicos producen midriasis bilateral. En cambio, los opiáceos y los organofosforados se asocian con miosis.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Midriasis bilateral: anticolinérgicos, simpaticomiméticos, botulismo, síndrome serotoninérgico.\r\n- Miosis bilateral: opiáceos, organofosforados, barbitúricos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Midriasis bilateral**\r\n- Anticolinérgicos.\r\n- Simpaticomiméticos.\r\n- Síndrome serotoninérgico.\r\n- Botulismo.\r\n- Muerte cerebral.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -430,7 +430,7 @@ export const questionsSemana13: Question[] = [
       "Botulismo."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl botulismo produce midriasis, mientras que los opiáceos, organofosforados, barbitúricos y las lesiones pontinas producen miosis.\n🟩 **CONCEPTOS CLAVE**\nMiosis: opiáceos, organofosforados, barbitúricos.\nMidriasis: botulismo y anticolinérgicos.\n💡 **REPASO ACTIVO**\nMiosis bilateral\nOpiáceos.\nOrganofosforados.\nBarbitúricos.\nLesión pontina.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl botulismo produce midriasis, mientras que los opiáceos, organofosforados, barbitúricos y las lesiones pontinas producen miosis.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Miosis: opiáceos, organofosforados, barbitúricos.\r\n- Midriasis: botulismo y anticolinérgicos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Miosis bilateral**\r\n- Opiáceos.\r\n- Organofosforados.\r\n- Barbitúricos.\r\n- Lesión pontina.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -449,7 +449,7 @@ export const questionsSemana13: Question[] = [
       "Miosis unilateral."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa herniación uncal comprime el III par craneal, produciendo una pupila ipsilateral dilatada y no reactiva, acompañada de ptosis.\n🟩 **CONCEPTOS CLAVE**\nHerniación uncal → III par craneal.\nPupila ipsilateral dilatada.\nPtosis asociada.\n💡 **REPASO ACTIVO**\nAlteraciones unilaterales\nMidriasis → Herniación uncal.\nMiosis → Síndrome de Horner.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa herniación uncal comprime el III par craneal, produciendo una pupila ipsilateral dilatada y no reactiva, acompañada de ptosis.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Herniación uncal → III par craneal.\r\n- Pupila ipsilateral dilatada.\r\n- Ptosis asociada.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Alteraciones unilaterales**\r\n- Midriasis → Herniación uncal.\r\n- Miosis → Síndrome de Horner.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -468,7 +468,7 @@ export const questionsSemana13: Question[] = [
       "Pupilas normales."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el coma de origen metabólico, las pupilas suelen permanecer normales, a diferencia de los comas por lesiones estructurales del sistema nervioso central.\n🟩 **CONCEPTOS CLAVE**\nComa metabólico → Pupilas normales.\nLesiones estructurales → Alteraciones pupilares.\n💡 **REPASO ACTIVO**\nPatrones pupilares en el coma\nMetabólico → Pupilas normales.\nHipotálamo bilateral → Pupilas pequeñas reactivas.\nHerniación uncal → Midriasis unilateral.\nMesencéfalo → Midriasis fija.\nProtuberancia → Pupilas puntiformes reactivas.\nMuerte cerebral → Pupilas fijas.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el coma de origen metabólico, las pupilas suelen permanecer normales, a diferencia de los comas por lesiones estructurales del sistema nervioso central.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Coma metabólico → Pupilas normales.\r\n- Lesiones estructurales → Alteraciones pupilares.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Patrones pupilares en el coma**\r\n- Metabólico → Pupilas normales.\r\n- Hipotálamo bilateral → Pupilas pequeñas reactivas.\r\n- Herniación uncal → Midriasis unilateral.\r\n- Mesencéfalo → Midriasis fija.\r\n- Protuberancia → Pupilas puntiformes reactivas.\r\n- Muerte cerebral → Pupilas fijas.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -487,7 +487,7 @@ export const questionsSemana13: Question[] = [
       "Muerte cerebral."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas lesiones de la protuberancia (puente) producen pupilas puntiformes, pero reactivas. Este hallazgo ayuda a localizar anatómicamente la lesión.\n🟩 **CONCEPTOS CLAVE**\nProtuberancia → Pupilas puntiformes reactivas.\nMesencéfalo → Midriasis fija.\nMuerte cerebral → Pupilas fijas de tamaño medio a grande.\n💡 **REPASO ACTIVO**\nPatrones pupilares en el coma\nMetabólico → Pupilas normales.\nHipotálamo bilateral → Pequeñas reactivas.\nHerniación uncal → Midriasis unilateral.\nMesencéfalo → Midriasis fija.\nProtuberancia → Puntiformes reactivas.\nMuerte cerebral → Fijas.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas lesiones de la protuberancia (puente) producen pupilas puntiformes, pero reactivas. Este hallazgo ayuda a localizar anatómicamente la lesión.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Protuberancia → Pupilas puntiformes reactivas.\r\n- Mesencéfalo → Midriasis fija.\r\n- Muerte cerebral → Pupilas fijas de tamaño medio a grande.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Patrones pupilares en el coma**\r\n- Metabólico → Pupilas normales.\r\n- Hipotálamo bilateral → Pequeñas reactivas.\r\n- Herniación uncal → Midriasis unilateral.\r\n- Mesencéfalo → Midriasis fija.\r\n- Protuberancia → Puntiformes reactivas.\r\n- Muerte cerebral → Fijas.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -506,7 +506,7 @@ export const questionsSemana13: Question[] = [
       "Eventos relacionados con la enfermedad actual."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa Escala de Glasgow forma parte de la evaluación neurológica primaria. En la evaluación secundaria, la historia clínica se obtiene mediante el acrónimo SAMPLE.\n🟩 **CONCEPTOS CLAVE**\nSAMPLE organiza la historia clínica dirigida.\nSe realiza durante la evaluación secundaria.\nPermite identificar la causa del compromiso del paciente.\n💡 **REPASO ACTIVO**\nSAMPLE\nS: Signos y síntomas.\nA: Alergias.\nM: Medicamentos.\nP: Antecedentes patológicos.\nL: Última ingesta.\nE: Eventos relacionados con la enfermedad o lesión actual.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa Escala de Glasgow forma parte de la evaluación neurológica primaria. En la evaluación secundaria, la historia clínica se obtiene mediante el acrónimo SAMPLE.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- SAMPLE organiza la historia clínica dirigida.\r\n- Se realiza durante la evaluación secundaria.\r\n- Permite identificar la causa del compromiso del paciente.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**SAMPLE**\r\n- S: Signos y síntomas.\r\n- A: Alergias.\r\n- M: Medicamentos.\r\n- P: Antecedentes patológicos.\r\n- L: Última ingesta.\r\n- E: Eventos relacionados con la enfermedad o lesión actual.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -525,7 +525,7 @@ export const questionsSemana13: Question[] = [
       "Laboratorios previos."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa L de SAMPLE corresponde a la última ingesta, información importante antes de procedimientos o anestesia y para orientar el diagnóstico.\n🟩 **CONCEPTOS CLAVE**\nLa última ingesta forma parte de la historia clínica dirigida.\nEs especialmente útil antes de procedimientos invasivos.\nNo debe confundirse con antecedentes patológicos.\n💡 **REPASO ACTIVO**\nSAMPLE\nS: Signos y síntomas.\nA: Alergias.\nM: Medicamentos.\nP: Antecedentes patológicos.\nL: Última ingesta.\nE: Eventos relacionados con la enfermedad o lesión.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa L de SAMPLE corresponde a la última ingesta, información importante antes de procedimientos o anestesia y para orientar el diagnóstico.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La última ingesta forma parte de la historia clínica dirigida.\r\n- Es especialmente útil antes de procedimientos invasivos.\r\n- No debe confundirse con antecedentes patológicos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**SAMPLE**\r\n- S: Signos y síntomas.\r\n- A: Alergias.\r\n- M: Medicamentos.\r\n- P: Antecedentes patológicos.\r\n- L: Última ingesta.\r\n- E: Eventos relacionados con la enfermedad o lesión.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -544,7 +544,7 @@ export const questionsSemana13: Question[] = [
       "Solo se realiza en pacientes hospitalizados."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa evaluación secundaria comprende una historia clínica dirigida (SAMPLE) y un examen físico dirigido, con el objetivo de identificar la causa del compromiso cardiorrespiratorio o neurológico.\n🟩 **CONCEPTOS CLAVE**\nSe realiza después de estabilizar al paciente.\nIncluye historia clínica y examen físico dirigidos.\nLa historia clínica sigue el acrónimo SAMPLE.\n💡 **REPASO ACTIVO**\nEvaluación secundaria\nHistoria clínica dirigida (SAMPLE).\nExamen físico dirigido.\nOrientada a identificar la causa del problema.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa evaluación secundaria comprende una historia clínica dirigida (SAMPLE) y un examen físico dirigido, con el objetivo de identificar la causa del compromiso cardiorrespiratorio o neurológico.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Se realiza después de estabilizar al paciente.\r\n- Incluye historia clínica y examen físico dirigidos.\r\n- La historia clínica sigue el acrónimo SAMPLE.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Evaluación secundaria**\r\n- Historia clínica dirigida (SAMPLE).\r\n- Examen físico dirigido.\r\n- Orientada a identificar la causa del problema.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 556.",
     "materia": "Pediatría",
     "semana": 13,
@@ -563,7 +563,7 @@ export const questionsSemana13: Question[] = [
       "Ventilación con bolsa-válvula-mascarilla."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el lactante consciente con obstrucción grave se inicia con cinco golpes en la espalda, seguidos de cinco compresiones torácicas, alternando ambas maniobras hasta resolver la obstrucción o perder la conciencia.\n🟩 **CONCEPTOS CLAVE**\nLactante (<1 año): 5 golpes interescapulares + 5 compresiones torácicas.\nNo utilizar compresiones abdominales.\nAlternar las maniobras hasta expulsar el cuerpo extraño o pérdida de conciencia.\n💡 **REPASO ACTIVO**\nLactante consciente (<1 año)\n5 golpes interescapulares.\n5 compresiones torácicas.\nNo realizar barrido digital a ciegas.\nExtraer el cuerpo extraño solo si es visible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el lactante consciente con obstrucción grave se inicia con cinco golpes en la espalda, seguidos de cinco compresiones torácicas, alternando ambas maniobras hasta resolver la obstrucción o perder la conciencia.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Lactante (<1 año): 5 golpes interescapulares + 5 compresiones torácicas.\r\n- No utilizar compresiones abdominales.\r\n- Alternar las maniobras hasta expulsar el cuerpo extraño o pérdida de conciencia.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Lactante consciente (<1 año)\r\n- 5 golpes interescapulares.\r\n- 5 compresiones torácicas.\r\n- No realizar barrido digital a ciegas.\r\n- Extraer el cuerpo extraño solo si es visible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 557.",
     "materia": "Pediatría",
     "semana": 13,
@@ -582,7 +582,7 @@ export const questionsSemana13: Question[] = [
       "Barrido digital a ciegas."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn niños mayores de un año, la maniobra recomendada son las compresiones abdominales (maniobra de Heimlich).\n🟩 **CONCEPTOS CLAVE**\n1 año: compresiones abdominales.\n<1 año: golpes interescapulares y compresiones torácicas.\nNo realizar barrido digital a ciegas.\n💡 **REPASO ACTIVO**\nSegún la edad\n<1 año: 5 golpes interescapulares + 5 compresiones torácicas.\n>1 año: Compresiones abdominales.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn niños mayores de un año, la maniobra recomendada son las compresiones abdominales (maniobra de Heimlich).\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- 1 año: compresiones abdominales.\r\n- <1 año: golpes interescapulares y compresiones torácicas.\r\n- No realizar barrido digital a ciegas.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Según la edad**\r\n- <1 año: 5 golpes interescapulares + 5 compresiones torácicas.\r\n- >1 año: Compresiones abdominales.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 557.",
     "materia": "Pediatría",
     "semana": 13,
@@ -601,7 +601,7 @@ export const questionsSemana13: Question[] = [
       "Buscar el cuerpo extraño antes de iniciar ventilaciones si el paciente pierde la conciencia."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl barrido digital a ciegas está contraindicado, ya que puede empujar el cuerpo extraño más profundamente y empeorar la obstrucción.\n🟩 **CONCEPTOS CLAVE**\nBarrido digital solo si el objeto es visible.\nNunca realizar barrido digital a ciegas.\nLa tos efectiva no debe interrumpirse.\n💡 **REPASO ACTIVO**\nNo hacer\nBarrido digital a ciegas.\nManiobras innecesarias si la tos es efectiva.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl barrido digital a ciegas está contraindicado, ya que puede empujar el cuerpo extraño más profundamente y empeorar la obstrucción.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Barrido digital solo si el objeto es visible.\r\n- Nunca realizar barrido digital a ciegas.\r\n- La tos efectiva no debe interrumpirse.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**No hacer**\r\n- Barrido digital a ciegas.\r\n- Maniobras innecesarias si la tos es efectiva.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 557.",
     "materia": "Pediatría",
     "semana": 13,
@@ -620,7 +620,7 @@ export const questionsSemana13: Question[] = [
       "Esperar la llegada del servicio de emergencias."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nSi el paciente pierde la conciencia, debe iniciarse la reanimación cardiopulmonar (RCP). Antes de cada ventilación se inspecciona la boca y se retira el cuerpo extraño únicamente si es visible.\n🟩 **CONCEPTOS CLAVE**\nPaciente inconsciente → iniciar RCP.\nRevisar la boca antes de ventilar.\nExtraer solo cuerpos extraños visibles.\n💡 **REPASO ACTIVO**\nPaciente inconsciente\nIniciar RCP.\nRevisar la boca antes de cada ventilación.\nNo realizar barrido digital a ciegas.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nSi el paciente pierde la conciencia, debe iniciarse la reanimación cardiopulmonar (RCP). Antes de cada ventilación se inspecciona la boca y se retira el cuerpo extraño únicamente si es visible.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Paciente inconsciente → iniciar RCP.\r\n- Revisar la boca antes de ventilar.\r\n- Extraer solo cuerpos extraños visibles.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Paciente inconsciente**\r\n- Iniciar RCP.\r\n- Revisar la boca antes de cada ventilación.\r\n- No realizar barrido digital a ciegas.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 557.",
     "materia": "Pediatría",
     "semana": 13,
@@ -639,7 +639,7 @@ export const questionsSemana13: Question[] = [
       "Dolor torácico posterior a ejercicio."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nUn inicio brusco de tos, estridor o sibilancias en un niño previamente sano debe hacer sospechar aspiración de un cuerpo extraño hasta demostrar lo contrario.\n🟩 **CONCEPTOS CLAVE**\nInicio súbito de síntomas respiratorios.\nTos, estridor o sibilancias.\nConsiderar aspiración de cuerpo extraño hasta descartarla.\n💡 **REPASO ACTIVO**\nSospechar cuerpo extraño cuando existe:\nTos de inicio súbito.\nEstridor.\nSibilancias.\nNiño previamente sano.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nUn inicio brusco de tos, estridor o sibilancias en un niño previamente sano debe hacer sospechar aspiración de un cuerpo extraño hasta demostrar lo contrario.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Inicio súbito de síntomas respiratorios.\r\n- Tos, estridor o sibilancias.\r\n- Considerar aspiración de cuerpo extraño hasta descartarla.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Sospechar cuerpo extraño cuando existe:**\r\n- Tos de inicio súbito.\r\n- Estridor.\r\n- Sibilancias.\r\n- Niño previamente sano.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 557.",
     "materia": "Pediatría",
     "semana": 13,
@@ -658,7 +658,7 @@ export const questionsSemana13: Question[] = [
       "Edad (años)."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl diámetro interno del tubo endotraqueal sin balón se estima mediante la fórmula (edad/4) + 4, por lo que la edad es la variable utilizada para el cálculo.\n🟩 **CONCEPTOS CLAVE**\nAplicable en niños mayores de 2 años.\nUtiliza la edad como referencia.\nPermite seleccionar el tamaño inicial del tubo endotraqueal.\n💡 **REPASO ACTIVO**\nSelección del tubo endotraqueal\nNiños >2 años.\nTubo sin balón: (edad/4) + 4.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl diámetro interno del tubo endotraqueal sin balón se estima mediante la fórmula (edad/4) + 4, por lo que la edad es la variable utilizada para el cálculo.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Aplicable en niños mayores de 2 años.\r\n- Utiliza la edad como referencia.\r\n- Permite seleccionar el tamaño inicial del tubo endotraqueal.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Selección del tubo endotraqueal**\r\n- Niños >2 años.\r\n- Tubo sin balón: (edad/4) + 4.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 559.",
     "materia": "Pediatría",
     "semana": 13,
@@ -677,7 +677,7 @@ export const questionsSemana13: Question[] = [
       "Shock neurogénico."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl shock hipovolémico es el tipo más frecuente en niños y suele deberse a pérdidas de líquidos por diarrea grave. También puede ser consecuencia de hemorragia.\n🟩 **CONCEPTOS CLAVE**\nEs el tipo de shock más frecuente.\nLa diarrea grave es la causa más común.\nTambién puede deberse a hemorragia.\n💡 **REPASO ACTIVO**\nTipos de shock\nHipovolémico.\nDistributivo.\nCardiogénico.\nObstructivo.\nDisociativo.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl shock hipovolémico es el tipo más frecuente en niños y suele deberse a pérdidas de líquidos por diarrea grave. También puede ser consecuencia de hemorragia.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Es el tipo de shock más frecuente.\r\n- La diarrea grave es la causa más común.\r\n- También puede deberse a hemorragia.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tipos de shock**\r\n- Hipovolémico.\r\n- Distributivo.\r\n- Cardiogénico.\r\n- Obstructivo.\r\n- Disociativo.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 560.",
     "materia": "Pediatría",
     "semana": 13,
@@ -696,7 +696,7 @@ export const questionsSemana13: Question[] = [
       "Es sinónimo de shock descompensado."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLos niños pueden mantener una presión arterial normal durante el shock compensado debido a mecanismos fisiológicos como la taquicardia y el aumento de la resistencia vascular sistémica.\n🟩 **CONCEPTOS CLAVE**\nLa presión arterial puede ser normal.\nLa taquicardia es un mecanismo compensador.\nLa hipotensión es un signo tardío.\n💡 **REPASO ACTIVO**\nShock compensado\nPresión arterial normal.\nTaquicardia.\nAumento de la resistencia vascular sistémica.\nMayor extracción de oxígeno.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLos niños pueden mantener una presión arterial normal durante el shock compensado debido a mecanismos fisiológicos como la taquicardia y el aumento de la resistencia vascular sistémica.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La presión arterial puede ser normal.\r\n- La taquicardia es un mecanismo compensador.\r\n- La hipotensión es un signo tardío.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Shock compensado**\r\n- Presión arterial normal.\r\n- Taquicardia.\r\n- Aumento de la resistencia vascular sistémica.\r\n- Mayor extracción de oxígeno.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 560.",
     "materia": "Pediatría",
     "semana": 13,
@@ -715,7 +715,7 @@ export const questionsSemana13: Question[] = [
       "Aumento de la extracción de oxígeno."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl shock descompensado se caracteriza por la aparición de hipotensión asociada a disfunción orgánica, lo que indica el fracaso de los mecanismos compensadores.\n🟩 **CONCEPTOS CLAVE**\nHipotensión = signo tardío.\nIndica progresión del shock.\nRequiere tratamiento inmediato.\n💡 **REPASO ACTIVO**\nEvolución del shock\nCompensado → presión arterial normal.\nDescompensado → hipotensión + disfunción orgánica.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl shock descompensado se caracteriza por la aparición de hipotensión asociada a disfunción orgánica, lo que indica el fracaso de los mecanismos compensadores.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Hipotensión = signo tardío.\r\n- Indica progresión del shock.\r\n- Requiere tratamiento inmediato.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Evolución del shock**\r\n- Compensado → presión arterial normal.\r\n- Descompensado → hipotensión + disfunción orgánica.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 560.",
     "materia": "Pediatría",
     "semana": 13,
@@ -734,7 +734,7 @@ export const questionsSemana13: Question[] = [
       "Taponamiento cardíaco."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa diarrea grave es la causa más frecuente de shock hipovolémico en la población pediátrica mundial por las importantes pérdidas de agua y electrolitos.\n🟩 **CONCEPTOS CLAVE**\nPrincipal causa: diarrea grave.\nSegunda causa importante: hemorragia.\nProduce disminución del volumen intravascular.\n💡 **REPASO ACTIVO**\nShock hipovolémico\nDiarrea grave.\nHemorragia.\nDisminución del volumen intravascular.\nDisminución de la perfusión tisular.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa diarrea grave es la causa más frecuente de shock hipovolémico en la población pediátrica mundial por las importantes pérdidas de agua y electrolitos.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Principal causa: diarrea grave.\r\n- Segunda causa importante: hemorragia.\r\n- Produce disminución del volumen intravascular.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Shock hipovolémico**\r\n- Diarrea grave.\r\n- Hemorragia.\r\n- Disminución del volumen intravascular.\r\n- Disminución de la perfusión tisular.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 560.",
     "materia": "Pediatría",
     "semana": 13,
@@ -753,7 +753,7 @@ export const questionsSemana13: Question[] = [
       "Frecuencia cardíaca <50 latidos/min únicamente durante el sueño."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el algoritmo de soporte vital avanzado pediátrico, la RCP se inicia cuando la frecuencia cardíaca permanece <60 latidos/min a pesar de una adecuada oxigenación y ventilación.\n🟩 **CONCEPTOS CLAVE**\nCorregir primero la hipoxemia y la ventilación.\nSi la FC continúa <60 lpm, iniciar RCP.\nBuscar y tratar la causa subyacente.\n💡 **REPASO ACTIVO**\nBradicardia con pulso\nOxigenar y ventilar.\nFC <60 lpm persistente → RCP.\nMonitorizar ECG, presión arterial y saturación.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el algoritmo de soporte vital avanzado pediátrico, la RCP se inicia cuando la frecuencia cardíaca permanece <60 latidos/min a pesar de una adecuada oxigenación y ventilación.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Corregir primero la hipoxemia y la ventilación.\r\n- Si la FC continúa <60 lpm, iniciar RCP.\r\n- Buscar y tratar la causa subyacente.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Bradicardia con pulso**\r\n- Oxigenar y ventilar.\r\n- FC <60 lpm persistente → RCP.\r\n- Monitorizar ECG, presión arterial y saturación.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 561.",
     "materia": "Pediatría",
     "semana": 13,
@@ -772,7 +772,7 @@ export const questionsSemana13: Question[] = [
       "Lidocaína."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nSi la bradicardia persiste con mala perfusión, el algoritmo recomienda administrar epinefrina. La atropina se reserva principalmente para aumento del tono vagal o bloqueo auriculoventricular primario.\n🟩 **CONCEPTOS CLAVE**\nEpinefrina: primera elección.\nAtropina: hipertonía vagal o bloqueo AV primario.\nConsiderar marcapasos transcutáneo si no hay respuesta.\n💡 **REPASO ACTIVO**\nTratamiento de la bradicardia\nOxigenación y ventilación.\nRCP si FC <60 lpm.\nEpinefrina.\nAtropina (casos seleccionados).\nMarcapasos transcutáneo si persiste.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nSi la bradicardia persiste con mala perfusión, el algoritmo recomienda administrar epinefrina. La atropina se reserva principalmente para aumento del tono vagal o bloqueo auriculoventricular primario.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Epinefrina: primera elección.\r\n- Atropina: hipertonía vagal o bloqueo AV primario.\r\n- Considerar marcapasos transcutáneo si no hay respuesta.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tratamiento de la bradicardia**\r\n- Oxigenación y ventilación.\r\n- RCP si FC <60 lpm.\r\n- Epinefrina.\r\n- Atropina (casos seleccionados).\r\n- Marcapasos transcutáneo si persiste.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 561.",
     "materia": "Pediatría",
     "semana": 13,
@@ -791,7 +791,7 @@ export const questionsSemana13: Question[] = [
       "Acidosis."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl algoritmo menciona como causas reversibles hipotermia, hipoxemia, acidosis y medicamentos. La hipertensión arterial no figura entre las causas de bradicardia.\n🟩 **CONCEPTOS CLAVE**\nIdentificar siempre la causa reversible.\nCorregir primero hipoxemia y acidosis.\nRevisar medicamentos.\n💡 **REPASO ACTIVO**\nCausas reversibles\nHipotermia.\nHipoxemia.\nAcidosis.\nMedicamentos.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl algoritmo menciona como causas reversibles hipotermia, hipoxemia, acidosis y medicamentos. La hipertensión arterial no figura entre las causas de bradicardia.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Identificar siempre la causa reversible.\r\n- Corregir primero hipoxemia y acidosis.\r\n- Revisar medicamentos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Causas reversibles**\r\n- Hipotermia.\r\n- Hipoxemia.\r\n- Acidosis.\r\n- Medicamentos.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 561.",
     "materia": "Pediatría",
     "semana": 13,
@@ -810,7 +810,7 @@ export const questionsSemana13: Question[] = [
       "Bradicardia secundaria a hipotermia."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa atropina está indicada cuando la bradicardia es consecuencia de hipertonía vagal o de un bloqueo auriculoventricular primario.\n🟩 **CONCEPTOS CLAVE**\nAtropina: indicación específica.\nNo sustituye la corrección de la hipoxemia.\nLa epinefrina sigue siendo el fármaco inicial en la mayoría de los casos.\n💡 **REPASO ACTIVO**\nAtropina\nHipertonía vagal.\nBloqueo AV primario.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa atropina está indicada cuando la bradicardia es consecuencia de hipertonía vagal o de un bloqueo auriculoventricular primario.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Atropina: indicación específica.\r\n- No sustituye la corrección de la hipoxemia.\r\n- La epinefrina sigue siendo el fármaco inicial en la mayoría de los casos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Atropina**\r\n- Hipertonía vagal.\r\n- Bloqueo AV primario.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 561.",
     "materia": "Pediatría",
     "semana": 13,
@@ -829,7 +829,7 @@ export const questionsSemana13: Question[] = [
       "Ritmo sinusal con pulsos normales."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl algoritmo considera compromiso cardiorrespiratorio la presencia de alteración aguda del estado mental, signos de choque o hipotensión en un paciente con bradicardia.\n🟩 **CONCEPTOS CLAVE**\nHipotensión = compromiso cardiorrespiratorio.\nBuscar signos de choque.\nLa bradicardia fisiológica puede observarse durante el sueño o en atletas.\n💡 **REPASO ACTIVO**\nSignos de compromiso cardiorrespiratorio\nAlteración aguda del estado mental.\nSignos de choque.\nHipotensión.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl algoritmo considera compromiso cardiorrespiratorio la presencia de alteración aguda del estado mental, signos de choque o hipotensión en un paciente con bradicardia.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Hipotensión = compromiso cardiorrespiratorio.\r\n- Buscar signos de choque.\r\n- La bradicardia fisiológica puede observarse durante el sueño o en atletas.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Signos de compromiso cardiorrespiratorio**\r\n- Alteración aguda del estado mental.\r\n- Signos de choque.\r\n- Hipotensión.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 561.",
     "materia": "Pediatría",
     "semana": 13,
@@ -848,7 +848,7 @@ export const questionsSemana13: Question[] = [
       "Frecuencia >220 latidos/min en lactantes."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa taquicardia sinusal conserva ondas P normales, presenta intervalos RR variables y generalmente la frecuencia es <220 latidos/min en lactantes y <180 latidos/min en niños.\n🟩 **CONCEPTOS CLAVE**\nOndas P normales.\nRR variable.\nBuscar y tratar la causa desencadenante.\n💡 **REPASO ACTIVO**\nTaquicardia sinusal\nOndas P normales.\nRR variable.\nLactantes: <220 latidos/min.\nNiños: <180 latidos/min.\nTratamiento: corregir la causa.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa taquicardia sinusal conserva ondas P normales, presenta intervalos RR variables y generalmente la frecuencia es <220 latidos/min en lactantes y <180 latidos/min en niños.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Ondas P normales.\r\n- RR variable.\r\n- Buscar y tratar la causa desencadenante.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Taquicardia sinusal**\r\n- Ondas P normales.\r\n- RR variable.\r\n- Lactantes: <220 latidos/min.\r\n- Niños: <180 latidos/min.\r\n- Tratamiento: corregir la causa.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 562.",
     "materia": "Pediatría",
     "semana": 13,
@@ -867,7 +867,7 @@ export const questionsSemana13: Question[] = [
       "Marcapasos transcutáneo."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn un paciente estable, con QRS estrecho y sospecha de taquicardia supraventricular, el primer tratamiento son las maniobras vagales. Si no son efectivas y se dispone de acceso intravenoso, se administra adenosina.\n🟩 **CONCEPTOS CLAVE**\nPaciente estable.\nQRS estrecho.\nIniciar con maniobras vagales.\n💡 **REPASO ACTIVO**\nTaquicardia supraventricular estable\nManiobras vagales.\nSi no responde → adenosina IV.\nSi persiste o se inestabiliza → cardioversión sincronizada.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn un paciente estable, con QRS estrecho y sospecha de taquicardia supraventricular, el primer tratamiento son las maniobras vagales. Si no son efectivas y se dispone de acceso intravenoso, se administra adenosina.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Paciente estable.\r\n- QRS estrecho.\r\n- Iniciar con maniobras vagales.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Taquicardia supraventricular estable**\r\n- Maniobras vagales.\r\n- Si no responde → adenosina IV.\r\n- Si persiste o se inestabiliza → cardioversión sincronizada.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 562.",
     "materia": "Pediatría",
     "semana": 13,
@@ -886,7 +886,7 @@ export const questionsSemana13: Question[] = [
       "Frecuencia ≥220 latidos/min en lactantes."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa taquicardia supraventricular suele presentar intervalos RR fijos, mientras que el RR variable es característico de la taquicardia sinusal.\n🟩 **CONCEPTOS CLAVE**\nRR fijo.\nOndas P ausentes o anormales.\nInicio y terminación bruscos.\n💡 **REPASO ACTIVO**\nTaquicardia supraventricular\nRR fijo.\nOndas P ausentes o anormales.\nLactantes: ≥220 latidos/min.\nNiños: ≥180 latidos/min.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa taquicardia supraventricular suele presentar intervalos RR fijos, mientras que el RR variable es característico de la taquicardia sinusal.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- RR fijo.\r\n- Ondas P ausentes o anormales.\r\n- Inicio y terminación bruscos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Taquicardia supraventricular**\r\n- RR fijo.\r\n- Ondas P ausentes o anormales.\r\n- Lactantes: ≥220 latidos/min.\r\n- Niños: ≥180 latidos/min.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 562.",
     "materia": "Pediatría",
     "semana": 13,
@@ -905,7 +905,7 @@ export const questionsSemana13: Question[] = [
       "Marcapasos transcutáneo."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nSi la taquicardia se acompaña de hipotensión, signos de choque o alteración del estado mental, debe realizarse cardioversión sincronizada sin retrasar el tratamiento.\n🟩 **CONCEPTOS CLAVE**\nInestabilidad hemodinámica = cardioversión sincronizada.\nNo retrasar el tratamiento.\nValorar sedación si el tiempo lo permite.\n💡 **REPASO ACTIVO**\nCompromiso cardiorrespiratorio\nAlteración del estado mental.\nSignos de choque.\nHipotensión.\nTratamiento: cardioversión sincronizada.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nSi la taquicardia se acompaña de hipotensión, signos de choque o alteración del estado mental, debe realizarse cardioversión sincronizada sin retrasar el tratamiento.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Inestabilidad hemodinámica = cardioversión sincronizada.\r\n- No retrasar el tratamiento.\r\n- Valorar sedación si el tiempo lo permite.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Compromiso cardiorrespiratorio**\r\n- Alteración del estado mental.\r\n- Signos de choque.\r\n- Hipotensión.\r\n- Tratamiento: cardioversión sincronizada.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 562.",
     "materia": "Pediatría",
     "semana": 13,
@@ -924,7 +924,7 @@ export const questionsSemana13: Question[] = [
       "Lidocaína."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa adenosina es el fármaco de elección para la taquicardia supraventricular estable cuando las maniobras vagales no son eficaces y existe acceso intravenoso.\n🟩 **CONCEPTOS CLAVE**\nPrimer fármaco: adenosina.\nPreviamente realizar maniobras vagales.\nSi fracasa y el paciente se inestabiliza → cardioversión sincronizada.\n💡 **REPASO ACTIVO**\nTratamiento de la taquicardia supraventricular estable\nManiobras vagales.\nAdenosina IV.\nCardioversión sincronizada si no responde o hay inestabilidad.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa adenosina es el fármaco de elección para la taquicardia supraventricular estable cuando las maniobras vagales no son eficaces y existe acceso intravenoso.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Primer fármaco: adenosina.\r\n- Previamente realizar maniobras vagales.\r\n- Si fracasa y el paciente se inestabiliza → cardioversión sincronizada.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Tratamiento de la taquicardia supraventricular estable\r\n- Maniobras vagales.\r\n- Adenosina IV.\r\n- Cardioversión sincronizada si no responde o hay inestabilidad.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 562.",
     "materia": "Pediatría",
     "semana": 13,
@@ -943,7 +943,7 @@ export const questionsSemana13: Question[] = [
       "20 J/kg."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa cardioversión sincronizada debe iniciarse con 0,5–1 J/kg. Si no es efectiva, la energía puede incrementarse a 2 J/kg.\n🟩 **CONCEPTOS CLAVE**\nPrimera descarga: 0,5–1 J/kg.\nSegunda descarga: 2 J/kg.\nNo retrasar la cardioversión en pacientes inestables.\n💡 **REPASO ACTIVO**\nCardioversión sincronizada\nPrimera descarga: 0,5–1 J/kg.\nSi falla: 2 J/kg.\nConsiderar sedación si el estado clínico lo permite.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa cardioversión sincronizada debe iniciarse con 0,5–1 J/kg. Si no es efectiva, la energía puede incrementarse a 2 J/kg.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Primera descarga: 0,5–1 J/kg.\r\n- Segunda descarga: 2 J/kg.\r\n- No retrasar la cardioversión en pacientes inestables.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Cardioversión sincronizada**\r\n- Primera descarga: 0,5–1 J/kg.\r\n- Si falla: 2 J/kg.\r\n- Considerar sedación si el estado clínico lo permite.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 563.",
     "materia": "Pediatría",
     "semana": 13,
@@ -962,7 +962,7 @@ export const questionsSemana13: Question[] = [
       "Es útil en la taquicardia supraventricular estable."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa adenosina tiene una vida media muy corta, por lo que debe administrarse en bolo intravenoso rápido, seguido de un lavado con solución salina.\n🟩 **CONCEPTOS CLAVE**\nAdministrar en bolo rápido.\nSeguir con lavado de solución salina.\nPreferir una vena proximal (miembro superior).\n💡 **REPASO ACTIVO**\nAdministración de adenosina\nBolo IV rápido.\nLavado inmediato con solución salina.\nVía venosa cercana al corazón cuando sea posible.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa adenosina tiene una vida media muy corta, por lo que debe administrarse en bolo intravenoso rápido, seguido de un lavado con solución salina.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Administrar en bolo rápido.\r\n- Seguir con lavado de solución salina.\r\n- Preferir una vena proximal (miembro superior).\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Administración de adenosina**\r\n- Bolo IV rápido.\r\n- Lavado inmediato con solución salina.\r\n- Vía venosa cercana al corazón cuando sea posible.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 563.",
     "materia": "Pediatría",
     "semana": 13,
@@ -981,7 +981,7 @@ export const questionsSemana13: Question[] = [
       "Taquicardia con signos de choque."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas maniobras vagales son el tratamiento inicial de la taquicardia supraventricular estable. Si existe compromiso cardiorrespiratorio, la cardioversión sincronizada no debe retrasarse.\n🟩 **CONCEPTOS CLAVE**\nSolo en pacientes estables.\nNo retrasar la cardioversión en pacientes inestables.\nReevaluar continuamente el estado hemodinámico.\n💡 **REPASO ACTIVO**\nTaquicardia supraventricular estable\nManiobras vagales.\nAdenosina si no responde.\nCardioversión sincronizada si aparece inestabilidad.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas maniobras vagales son el tratamiento inicial de la taquicardia supraventricular estable. Si existe compromiso cardiorrespiratorio, la cardioversión sincronizada no debe retrasarse.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Solo en pacientes estables.\r\n- No retrasar la cardioversión en pacientes inestables.\r\n- Reevaluar continuamente el estado hemodinámico.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Taquicardia supraventricular estable**\r\n- Maniobras vagales.\r\n- Adenosina si no responde.\r\n- Cardioversión sincronizada si aparece inestabilidad.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 563.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1000,7 +1000,7 @@ export const questionsSemana13: Question[] = [
       "Disección aórtica."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn pediatría, la mayoría de los paros cardiorrespiratorios son consecuencia de una insuficiencia respiratoria progresiva o un estado de choque, a diferencia del adulto, donde predominan las causas cardíacas.\n🟩 **CONCEPTOS CLAVE**\nEl paro pediátrico suele ser secundario a hipoxemia o choque.\nEl reconocimiento temprano puede prevenir el paro.\nLa mayoría no es de origen cardíaco primario.\n💡 **REPASO ACTIVO**\nCausas frecuentes de paro pediátrico\nInsuficiencia respiratoria.\nChoque.\nAhogamiento.\nAspiración de cuerpo extraño.\nTraumatismo.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn pediatría, la mayoría de los paros cardiorrespiratorios son consecuencia de una insuficiencia respiratoria progresiva o un estado de choque, a diferencia del adulto, donde predominan las causas cardíacas.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- El paro pediátrico suele ser secundario a hipoxemia o choque.\r\n- El reconocimiento temprano puede prevenir el paro.\r\n- La mayoría no es de origen cardíaco primario.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Causas frecuentes de paro pediátrico**\r\n- Insuficiencia respiratoria.\r\n- Choque.\r\n- Ahogamiento.\r\n- Aspiración de cuerpo extraño.\r\n- Traumatismo.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 564.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1019,7 +1019,7 @@ export const questionsSemana13: Question[] = [
       "Torsades de pointes."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nA diferencia del adulto, la mayoría de los niños presentan asistolia o actividad eléctrica sin pulso como ritmo inicial, mientras que los ritmos desfibrilables son menos frecuentes.\n🟩 **CONCEPTOS CLAVE**\nPredominan los ritmos no desfibrilables.\nLa fibrilación ventricular es poco frecuente.\nEl tratamiento depende del ritmo identificado.\n💡 **REPASO ACTIVO**\nRitmos iniciales\nMás frecuentes: asistolia y actividad eléctrica sin pulso.\nMenos frecuentes: fibrilación ventricular y taquicardia ventricular sin pulso.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nA diferencia del adulto, la mayoría de los niños presentan asistolia o actividad eléctrica sin pulso como ritmo inicial, mientras que los ritmos desfibrilables son menos frecuentes.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Predominan los ritmos no desfibrilables.\r\n- La fibrilación ventricular es poco frecuente.\r\n- El tratamiento depende del ritmo identificado.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Ritmos iniciales**\r\n- Más frecuentes: asistolia y actividad eléctrica sin pulso.\r\n- Menos frecuentes: fibrilación ventricular y taquicardia ventricular sin pulso.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 564.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1038,7 +1038,7 @@ export const questionsSemana13: Question[] = [
       "Técnica de los dos dedos."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nCuando la RCP es realizada por un solo reanimador, las compresiones en el lactante se efectúan con la técnica de los dos dedos. La técnica de los dos pulgares rodeando el tórax se recomienda cuando hay dos reanimadores.\n🟩 **CONCEPTOS CLAVE**\nUn reanimador: dos dedos.\nDos reanimadores: dos pulgares rodeando el tórax.\nMantener compresiones de alta calidad.\n💡 **REPASO ACTIVO**\nCompresiones en el lactante\n1 reanimador: técnica de los dos dedos.\n2 reanimadores: técnica de los dos pulgares rodeando el tórax.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nCuando la RCP es realizada por un solo reanimador, las compresiones en el lactante se efectúan con la técnica de los dos dedos. La técnica de los dos pulgares rodeando el tórax se recomienda cuando hay dos reanimadores.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Un reanimador: dos dedos.\r\n- Dos reanimadores: dos pulgares rodeando el tórax.\r\n- Mantener compresiones de alta calidad.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Compresiones en el lactante**\r\n- 1 reanimador: técnica de los dos dedos.\r\n- 2 reanimadores: técnica de los dos pulgares rodeando el tórax.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 564.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1057,7 +1057,7 @@ export const questionsSemana13: Question[] = [
       "Técnica de tres dedos."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa técnica de los dos pulgares rodeando el tórax genera mejores compresiones y mayor presión de perfusión coronaria, por lo que es la recomendada cuando participan dos reanimadores.\n🟩 **CONCEPTOS CLAVE**\nTécnica preferida con dos reanimadores.\nProduce compresiones más eficaces.\nMejora la calidad de la RCP.\n💡 **REPASO ACTIVO**\nCompresiones en el lactante\nUn reanimador → dos dedos.\nDos reanimadores → dos pulgares rodeando el tórax.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa técnica de los dos pulgares rodeando el tórax genera mejores compresiones y mayor presión de perfusión coronaria, por lo que es la recomendada cuando participan dos reanimadores.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Técnica preferida con dos reanimadores.\r\n- Produce compresiones más eficaces.\r\n- Mejora la calidad de la RCP.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Compresiones en el lactante**\r\n- Un reanimador → dos dedos.\r\n- Dos reanimadores → dos pulgares rodeando el tórax.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 564.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1076,7 +1076,7 @@ export const questionsSemana13: Question[] = [
       "Verificación frecuente del pulso durante las compresiones."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa RCP de alta calidad requiere compresiones con frecuencia y profundidad adecuadas, permitir el retroceso completo del tórax y minimizar las interrupciones.\n🟩 **CONCEPTOS CLAVE**\nCompresiones eficaces.\nRetroceso completo del tórax.\nInterrupciones mínimas.\nVentilación adecuada.\n💡 **REPASO ACTIVO**\nRCP de alta calidad\nFrecuencia adecuada.\nProfundidad adecuada.\nRetroceso completo del tórax.\nInterrupciones mínimas.\nVentilación apropiada.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa RCP de alta calidad requiere compresiones con frecuencia y profundidad adecuadas, permitir el retroceso completo del tórax y minimizar las interrupciones.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Compresiones eficaces.\r\n- Retroceso completo del tórax.\r\n- Interrupciones mínimas.\r\n- Ventilación adecuada.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**RCP de alta calidad**\r\n- Frecuencia adecuada.\r\n- Profundidad adecuada.\r\n- Retroceso completo del tórax.\r\n- Interrupciones mínimas.\r\n- Ventilación apropiada.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 564.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1095,7 +1095,7 @@ export const questionsSemana13: Question[] = [
       "Disociación electromecánica."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa fibrilación ventricular (FV) y la taquicardia ventricular sin pulso (TVSP) son los únicos ritmos desfibrilables del algoritmo pediátrico.\n🟩 **CONCEPTOS CLAVE**\nRitmos desfibrilables: FV y TVSP.\nRitmos no desfibrilables: asistolia y actividad eléctrica sin pulso.\n💡 **REPASO ACTIVO**\nRitmos del paro\nDesfibrilables: fibrilación ventricular, taquicardia ventricular sin pulso.\nNo desfibrilables: asistolia, actividad eléctrica sin pulso.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa fibrilación ventricular (FV) y la taquicardia ventricular sin pulso (TVSP) son los únicos ritmos desfibrilables del algoritmo pediátrico.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Ritmos desfibrilables: FV y TVSP.\r\n- Ritmos no desfibrilables: asistolia y actividad eléctrica sin pulso.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Ritmos del paro**\r\n- Desfibrilables: fibrilación ventricular, taquicardia ventricular sin pulso.\r\n- No desfibrilables: asistolia, actividad eléctrica sin pulso.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 566.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1114,7 +1114,7 @@ export const questionsSemana13: Question[] = [
       "10 J/kg."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa primera descarga debe administrarse con 2 J/kg. Las descargas posteriores son de 4 J/kg y pueden aumentarse hasta un máximo de 10 J/kg o la dosis del adulto.\n🟩 **CONCEPTOS CLAVE**\nPrimera descarga: 2 J/kg.\nSegunda descarga: 4 J/kg.\nMáximo: 10 J/kg.\n💡 **REPASO ACTIVO**\nDesfibrilación\nPrimera descarga: 2 J/kg.\nSegunda descarga: 4 J/kg.\nPosteriores: ≥4 J/kg (máximo 10 J/kg).",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa primera descarga debe administrarse con 2 J/kg. Las descargas posteriores son de 4 J/kg y pueden aumentarse hasta un máximo de 10 J/kg o la dosis del adulto.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Primera descarga: 2 J/kg.\r\n- Segunda descarga: 4 J/kg.\r\n- Máximo: 10 J/kg.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Desfibrilación**\r\n- Primera descarga: 2 J/kg.\r\n- Segunda descarga: 4 J/kg.\r\n- Posteriores: ≥4 J/kg (máximo 10 J/kg).",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 566.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1133,7 +1133,7 @@ export const questionsSemana13: Question[] = [
       "Cada 8–10 minutos."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl algoritmo recomienda administrar epinefrina cada 3 a 5 minutos durante la reanimación cardiopulmonar.\n🟩 **CONCEPTOS CLAVE**\nAdministrar lo antes posible en ritmos no desfibrilables.\nRepetir cada 3–5 minutos.\n💡 **REPASO ACTIVO**\nEpinefrina\nDosis IV/IO: 0,01 mg/kg.\nRepetir cada 3–5 minutos.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl algoritmo recomienda administrar epinefrina cada 3 a 5 minutos durante la reanimación cardiopulmonar.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Administrar lo antes posible en ritmos no desfibrilables.\r\n- Repetir cada 3–5 minutos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Epinefrina**\r\n- Dosis IV/IO: 0,01 mg/kg.\r\n- Repetir cada 3–5 minutos.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 566.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1152,7 +1152,7 @@ export const questionsSemana13: Question[] = [
       "Bicarbonato."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn la fibrilación ventricular o taquicardia ventricular sin pulso que persisten tras desfibrilación y RCP, el algoritmo recomienda amiodarona o lidocaína.\n🟩 **CONCEPTOS CLAVE**\nAmiodarona o lidocaína en ritmos desfibrilables refractarios.\nContinuar RCP y desfibrilación según el algoritmo.\n💡 **REPASO ACTIVO**\nRitmos desfibrilables\nDesfibrilar.\nRCP 2 minutos.\nEpinefrina.\nAmiodarona o lidocaína.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn la fibrilación ventricular o taquicardia ventricular sin pulso que persisten tras desfibrilación y RCP, el algoritmo recomienda amiodarona o lidocaína.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Amiodarona o lidocaína en ritmos desfibrilables refractarios.\r\n- Continuar RCP y desfibrilación según el algoritmo.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Ritmos desfibrilables**\r\n- Desfibrilar.\r\n- RCP 2 minutos.\r\n- Epinefrina.\r\n- Amiodarona o lidocaína.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 566.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1171,7 +1171,7 @@ export const questionsSemana13: Question[] = [
       "Insuficiencia mitral."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa hipovolemia forma parte de las causas reversibles (H y T) que deben buscarse y corregirse durante la reanimación.\n🟩 **CONCEPTOS CLAVE**\nIdentificar y tratar las causas reversibles.\nCorregirlas aumenta la probabilidad de retorno de la circulación espontánea.\n💡 **REPASO ACTIVO**\nCausas reversibles (H y T)\nHipovolemia.\nHipoxia.\nHidrogeniones (acidosis).\nHipo/hiperpotasemia.\nHipotermia.\nNeumotórax a tensión.\nTaponamiento cardíaco.\nTóxicos.\nTrombosis pulmonar.\nTrombosis coronaria.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa hipovolemia forma parte de las causas reversibles (H y T) que deben buscarse y corregirse durante la reanimación.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Identificar y tratar las causas reversibles.\r\n- Corregirlas aumenta la probabilidad de retorno de la circulación espontánea.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Causas reversibles (H y T)**\r\n- Hipovolemia.\r\n- Hipoxia.\r\n- Hidrogeniones (acidosis).\r\n- Hipo/hiperpotasemia.\r\n- Hipotermia.\r\n- Neumotórax a tensión.\r\n- Taponamiento cardíaco.\r\n- Tóxicos.\r\n- Trombosis pulmonar.\r\n- Trombosis coronaria.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 566.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1190,7 +1190,7 @@ export const questionsSemana13: Question[] = [
       "Exposición del paciente."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl primer paso del ABCDE consiste en asegurar una vía aérea permeable mientras se mantiene la inmovilización de la columna cervical.\n🟩 **CONCEPTOS CLAVE**\nLa protección cervical acompaña siempre el manejo inicial de la vía aérea.\nLa hipoxia debe corregirse de forma inmediata.\nEl ABCDE sigue un orden estricto.\n💡 **REPASO ACTIVO**\nA (Vía aérea)\nProteger la columna cervical.\nPermeabilizar la vía aérea.\nCorregir la obstrucción.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl primer paso del ABCDE consiste en asegurar una vía aérea permeable mientras se mantiene la inmovilización de la columna cervical.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La protección cervical acompaña siempre el manejo inicial de la vía aérea.\r\n- La hipoxia debe corregirse de forma inmediata.\r\n- El ABCDE sigue un orden estricto.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**A (Vía aérea)**\r\n- Proteger la columna cervical.\r\n- Permeabilizar la vía aérea.\r\n- Corregir la obstrucción.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 571.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1209,7 +1209,7 @@ export const questionsSemana13: Question[] = [
       "Edema de la vía aérea."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl Nelson menciona como causas de obstrucción la sangre, el vómito, los cuerpos extraños, el edema y las fracturas faciales. La fractura de clavícula no produce obstrucción de la vía aérea.\n🟩 **CONCEPTOS CLAVE**\nBuscar siempre causas reversibles de obstrucción.\nAspirar secreciones cuando sea necesario.\nMantener inmovilización cervical.\n💡 **REPASO ACTIVO**\nObstrucción de la vía aérea\nSangre.\nVómito.\nCuerpos extraños.\nEdema.\nFracturas faciales.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl Nelson menciona como causas de obstrucción la sangre, el vómito, los cuerpos extraños, el edema y las fracturas faciales. La fractura de clavícula no produce obstrucción de la vía aérea.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Buscar siempre causas reversibles de obstrucción.\r\n- Aspirar secreciones cuando sea necesario.\r\n- Mantener inmovilización cervical.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Obstrucción de la vía aérea**\r\n- Sangre.\r\n- Vómito.\r\n- Cuerpos extraños.\r\n- Edema.\r\n- Fracturas faciales.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 571.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1228,7 +1228,7 @@ export const questionsSemana13: Question[] = [
       "Tracción mandibular."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nAnte la sospecha de lesión cervical, la apertura de la vía aérea debe realizarse mediante tracción mandibular, evitando la movilización del cuello.\n🟩 **CONCEPTOS CLAVE**\nEvitar la hiperextensión cervical.\nMantener alineación de la columna.\nLa tracción mandibular es la maniobra de elección.\n💡 **REPASO ACTIVO**\nManiobras de apertura de la vía aérea\nSin sospecha de lesión cervical → Frente-mentón.\nCon sospecha de lesión cervical → Tracción mandibular.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nAnte la sospecha de lesión cervical, la apertura de la vía aérea debe realizarse mediante tracción mandibular, evitando la movilización del cuello.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Evitar la hiperextensión cervical.\r\n- Mantener alineación de la columna.\r\n- La tracción mandibular es la maniobra de elección.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Maniobras de apertura de la vía aérea**\r\n- Sin sospecha de lesión cervical → Frente-mentón.\r\n- Con sospecha de lesión cervical → Tracción mandibular.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 571.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1247,7 +1247,7 @@ export const questionsSemana13: Question[] = [
       "Contusión de pared torácica."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl neumotórax a tensión compromete rápidamente la ventilación y el retorno venoso, por lo que debe identificarse y tratarse durante la evaluación primaria.\n🟩 **CONCEPTOS CLAVE**\nEs una lesión con riesgo inmediato de muerte.\nRequiere tratamiento urgente.\nForma parte de la evaluación de la respiración (B).\n💡 **REPASO ACTIVO**\nLesiones torácicas que amenazan la vida\nNeumotórax a tensión.\nNeumotórax abierto.\nHemotórax masivo.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl neumotórax a tensión compromete rápidamente la ventilación y el retorno venoso, por lo que debe identificarse y tratarse durante la evaluación primaria.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Es una lesión con riesgo inmediato de muerte.\r\n- Requiere tratamiento urgente.\r\n- Forma parte de la evaluación de la respiración (B).\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Lesiones torácicas que amenazan la vida**\r\n- Neumotórax a tensión.\r\n- Neumotórax abierto.\r\n- Hemotórax masivo.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 571.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1266,7 +1266,7 @@ export const questionsSemana13: Question[] = [
       "Hipertensión con pulsos saltones."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl shock hemorrágico se manifiesta típicamente por taquicardia, pulsos débiles y llenado capilar prolongado, reflejando disminución de la perfusión tisular.\n🟩 **CONCEPTOS CLAVE**\nLa taquicardia es un signo precoz.\nEl llenado capilar prolongado indica hipoperfusión.\nLa hipotensión es tardía.\n💡 **REPASO ACTIVO**\nEvaluación de la circulación\nFrecuencia cardíaca.\nCalidad de los pulsos.\nLlenado capilar.\nColor y temperatura de la piel.\nPresión arterial.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl shock hemorrágico se manifiesta típicamente por taquicardia, pulsos débiles y llenado capilar prolongado, reflejando disminución de la perfusión tisular.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La taquicardia es un signo precoz.\r\n- El llenado capilar prolongado indica hipoperfusión.\r\n- La hipotensión es tardía.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Evaluación de la circulación**\r\n- Frecuencia cardíaca.\r\n- Calidad de los pulsos.\r\n- Llenado capilar.\r\n- Color y temperatura de la piel.\r\n- Presión arterial.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 571.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1285,7 +1285,7 @@ export const questionsSemana13: Question[] = [
       "Taquicardia, hipertensión, piel caliente, poliuria y estado de alerta."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa pérdida moderada de sangre (30–45%) se caracteriza por taquicardia, disminución de los pulsos periféricos, estrechamiento de la presión de pulso, letargo, cianosis, llenado capilar marcadamente prolongado y diuresis mínima.\n🟩 **CONCEPTOS CLAVE**\nLeve (<30%): ansiedad, irritabilidad, pulsos normales, piel fría, diuresis baja a muy baja.\nModerada (30–45%): letargo, cianosis, pulsos periféricos disminuidos, diuresis mínima.\nGrave (>45%): coma, hipotensión, bradicardia terminal, piel pálida y fría, anuria.\n💡 **REPASO ACTIVO**\nPérdida leve (<30%)\nTaquicardia.\nPulsos periféricos normales.\nPresión arterial normal.\nAnsiedad, irritabilidad, confusión.\nPiel fría con llenado capilar prolongado.\nDiuresis baja a muy baja.\nPérdida moderada (30–45%)\nTaquicardia.\nPulsos periféricos disminuidos.\nPresión de pulso estrecha.\nLetargo con respuesta disminuida al dolor.\nCianosis y llenado capilar muy prolongado.\nDiuresis mínima.\nPérdida grave (>45%)\nTaquicardia seguida de bradicardia.\nPulsos periféricos débiles o ausentes.\nHipotensión.\nComa.\nPiel pálida y fría.\nAnuria.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa pérdida moderada de sangre (30–45%) se caracteriza por taquicardia, disminución de los pulsos periféricos, estrechamiento de la presión de pulso, letargo, cianosis, llenado capilar marcadamente prolongado y diuresis mínima.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Leve (<30%): ansiedad, irritabilidad, pulsos normales, piel fría, diuresis baja a muy baja.\r\n- Moderada (30–45%): letargo, cianosis, pulsos periféricos disminuidos, diuresis mínima.\r\n- Grave (>45%): coma, hipotensión, bradicardia terminal, piel pálida y fría, anuria.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n- Pérdida leve (<30%)\r\n- Taquicardia.\r\n- Pulsos periféricos normales.\r\n- Presión arterial normal.\r\n- Ansiedad, irritabilidad, confusión.\r\n- Piel fría con llenado capilar prolongado.\r\n- Diuresis baja a muy baja.\r\n- Pérdida moderada (30–45%)\r\n- Taquicardia.\r\n- Pulsos periféricos disminuidos.\r\n- Presión de pulso estrecha.\r\n- Letargo con respuesta disminuida al dolor.\r\n- Cianosis y llenado capilar muy prolongado.\r\n- Diuresis mínima.\r\n- Pérdida grave (>45%)\r\n- Taquicardia seguida de bradicardia.\r\n- Pulsos periféricos débiles o ausentes.\r\n- Hipotensión.\r\n- Coma.\r\n- Piel pálida y fría.\r\n- Anuria.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 575.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1304,7 +1304,7 @@ export const questionsSemana13: Question[] = [
       "Es equivalente a la presión venosa central."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa presión de perfusión cerebral (PPC) representa la presión que impulsa el flujo sanguíneo cerebral y se calcula mediante la fórmula PPC = Presión arterial media (PAM) − Presión intracraneal (PIC). Cuando la PIC aumenta o la PAM disminuye, la PPC se reduce, comprometiendo la perfusión cerebral.\n🟩 **CONCEPTOS CLAVE**\nPPC = PAM − PIC.\nLa disminución de la PPC reduce el flujo sanguíneo cerebral.\nEl aumento de la PIC puede producir isquemia cerebral.\n💡 **REPASO ACTIVO**\nDinámica intracraneal\nPIC: presión dentro del cráneo.\nPPC = PAM − PIC.\nEl contenido intracraneal está formado por:\nParénquima cerebral.\nSangre.\nLíquido cefalorraquídeo.\nCuando aumentan estos componentes, la PIC se eleva.\nSi fallan los mecanismos compensadores, aparece hipertensión intracraneal e isquemia cerebral.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa presión de perfusión cerebral (PPC) representa la presión que impulsa el flujo sanguíneo cerebral y se calcula mediante la fórmula PPC = Presión arterial media (PAM) − Presión intracraneal (PIC). Cuando la PIC aumenta o la PAM disminuye, la PPC se reduce, comprometiendo la perfusión cerebral.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- PPC = PAM − PIC.\r\n- La disminución de la PPC reduce el flujo sanguíneo cerebral.\r\n- El aumento de la PIC puede producir isquemia cerebral.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Dinámica intracraneal**\r\n- PIC: presión dentro del cráneo.\r\n- PPC = PAM − PIC.\r\n\r\n**El contenido intracraneal está formado por:**\r\n- Parénquima cerebral.\r\n- Sangre.\r\n- Líquido cefalorraquídeo.\r\n- Cuando aumentan estos componentes, la PIC se eleva.\r\n- Si fallan los mecanismos compensadores, aparece hipertensión intracraneal e isquemia cerebral.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, págs. 581–582.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1323,7 +1323,7 @@ export const questionsSemana13: Question[] = [
       ">35 mmHg."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn niños, la PIC normal es de 5 a 15 mmHg. Valores superiores indican hipertensión intracraneal.\n🟩 **CONCEPTOS CLAVE**\nPIC normal: 5–15 mmHg.\nEl aumento de la PIC reduce la PPC.\nLa hipertensión intracraneal favorece la isquemia cerebral.\n💡 **REPASO ACTIVO**\nValores normales\nPIC: 5–15 mmHg.\nPPC = PAM − PIC.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn niños, la PIC normal es de 5 a 15 mmHg. Valores superiores indican hipertensión intracraneal.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- PIC normal: 5–15 mmHg.\r\n- El aumento de la PIC reduce la PPC.\r\n- La hipertensión intracraneal favorece la isquemia cerebral.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Valores normales**\r\n- PIC: 5–15 mmHg.\r\n- PPC = PAM − PIC.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, págs. 581–582.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1342,7 +1342,7 @@ export const questionsSemana13: Question[] = [
       "200 mmHg."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa autorregulación mantiene relativamente constante el flujo sanguíneo cerebral. En niños, el límite superior es aproximadamente 160 mmHg de presión arterial media.\n🟩 **CONCEPTOS CLAVE**\nLímite inferior: ≈40 mmHg.\nLímite superior: ≈160 mmHg.\nFuera de estos límites, el flujo cerebral depende de la presión arterial.\n💡 **REPASO ACTIVO**\nAutorregulación cerebral\nLímite inferior: 40 mmHg.\nLímite superior: 160 mmHg.\nMantiene constante el flujo sanguíneo cerebral.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa autorregulación mantiene relativamente constante el flujo sanguíneo cerebral. En niños, el límite superior es aproximadamente 160 mmHg de presión arterial media.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Límite inferior: ≈40 mmHg.\r\n- Límite superior: ≈160 mmHg.\r\n- Fuera de estos límites, el flujo cerebral depende de la presión arterial.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Autorregulación cerebral**\r\n- Límite inferior: 40 mmHg.\r\n- Límite superior: 160 mmHg.\r\n- Mantiene constante el flujo sanguíneo cerebral.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 582.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1361,7 +1361,7 @@ export const questionsSemana13: Question[] = [
       "Corteza cerebral, sangre y meninges."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa doctrina de Monro-Kellie establece que el volumen intracraneal está formado por parénquima cerebral, sangre y líquido cefalorraquídeo (LCR). Un aumento de cualquiera de ellos incrementa la PIC si fallan los mecanismos compensadores.\n🟩 **CONCEPTOS CLAVE**\nParénquima: ≈85% del volumen intracraneal.\nSangre: ≈10%.\nLCR: ≈5%.\n💡 **REPASO ACTIVO**\nContenido intracraneal\nParénquima cerebral: 85%.\nSangre: 10%.\nLCR: 5%.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa doctrina de Monro-Kellie establece que el volumen intracraneal está formado por parénquima cerebral, sangre y líquido cefalorraquídeo (LCR). Un aumento de cualquiera de ellos incrementa la PIC si fallan los mecanismos compensadores.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Parénquima: ≈85% del volumen intracraneal.\r\n- Sangre: ≈10%.\r\n- LCR: ≈5%.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Contenido intracraneal**\r\n- Parénquima cerebral: 85%.\r\n- Sangre: 10%.\r\n- LCR: 5%.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 581.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1380,7 +1380,7 @@ export const questionsSemana13: Question[] = [
       "7 días."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl Nelson menciona que el riesgo de desarrollar hipertensión intracraneal puede persistir hasta 72 horas después de un traumatismo craneoencefálico grave.\n🟩 **CONCEPTOS CLAVE**\nRiesgo elevado durante las primeras 72 horas.\nRequiere vigilancia neurológica estrecha.\nPuede necesitar monitorización de la PIC.\n💡 **REPASO ACTIVO**\nHipertensión intracraneal\nPuede aparecer de forma tardía.\nRiesgo hasta 72 horas.\nMonitorizar Glasgow y examen pupilar.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl Nelson menciona que el riesgo de desarrollar hipertensión intracraneal puede persistir hasta 72 horas después de un traumatismo craneoencefálico grave.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Riesgo elevado durante las primeras 72 horas.\r\n- Requiere vigilancia neurológica estrecha.\r\n- Puede necesitar monitorización de la PIC.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Hipertensión intracraneal**\r\n- Puede aparecer de forma tardía.\r\n- Riesgo hasta 72 horas.\r\n- Monitorizar Glasgow y examen pupilar.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 583.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1399,7 +1399,7 @@ export const questionsSemana13: Question[] = [
       "6–12 puntos."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl TCE grave se define por una Escala de Glasgow de 3 a 8 puntos. Estos pacientes tienen mayor riesgo de hipertensión intracraneal, herniación cerebral y requieren monitorización estrecha, además de tratamiento intensivo.\n🟩 **CONCEPTOS CLAVE**\nGlasgow 3–8: TCE grave.\nGlasgow 9–12: TCE moderado.\nGlasgow 13–15: TCE leve.\n💡 **REPASO ACTIVO**\nClasificación del TCE según Glasgow\nLeve: 13–15 puntos.\nModerado: 9–12 puntos.\nGrave: 3–8 puntos.\nEn el TCE grave vigilar:\nDisminución del nivel de conciencia.\nCambios pupilares.\nSignos de hipertensión intracraneal.\nSignos de herniación cerebral.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl TCE grave se define por una Escala de Glasgow de 3 a 8 puntos. Estos pacientes tienen mayor riesgo de hipertensión intracraneal, herniación cerebral y requieren monitorización estrecha, además de tratamiento intensivo.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Glasgow 3–8: TCE grave.\r\n- Glasgow 9–12: TCE moderado.\r\n- Glasgow 13–15: TCE leve.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Clasificación del TCE según Glasgow**\r\n- Leve: 13–15 puntos.\r\n- Moderado: 9–12 puntos.\r\n- Grave: 3–8 puntos.\r\n\r\n**En el TCE grave vigilar:**\r\n- Disminución del nivel de conciencia.\r\n- Cambios pupilares.\r\n- Signos de hipertensión intracraneal.\r\n- Signos de herniación cerebral.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 583.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1418,7 +1418,7 @@ export const questionsSemana13: Question[] = [
       "<30 mmHg."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl Nelson recomienda mantener la PIC <22 mmHg en niños de 6 a 17 años. En los niños de 2 a 5 años, el objetivo es <20 mmHg.\n🟩 **CONCEPTOS CLAVE**\nLa meta de PIC depende de la edad.\nMantener una PIC elevada aumenta el riesgo de lesión cerebral secundaria.\nEl tratamiento busca preservar la perfusión cerebral.\n💡 **REPASO ACTIVO**\nMetas de presión intracraneal\n2–5 años: PIC <20 mmHg.\n6–17 años: PIC <22 mmHg.\nMedidas iniciales\nCabeza elevada.\nCabeza en posición media.\nVentilación adecuada.\nSedación cuando esté indicada.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl Nelson recomienda mantener la PIC <22 mmHg en niños de 6 a 17 años. En los niños de 2 a 5 años, el objetivo es <20 mmHg.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La meta de PIC depende de la edad.\r\n- Mantener una PIC elevada aumenta el riesgo de lesión cerebral secundaria.\r\n- El tratamiento busca preservar la perfusión cerebral.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Metas de presión intracraneal**\r\n- 2–5 años: PIC <20 mmHg.\r\n- 6–17 años: PIC <22 mmHg.\r\n\r\n**Medidas iniciales**\r\n- Cabeza elevada.\r\n- Cabeza en posición media.\r\n- Ventilación adecuada.\r\n- Sedación cuando esté indicada.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 585.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1437,7 +1437,7 @@ export const questionsSemana13: Question[] = [
       "2–5 años: PIC <22 mmHg; 6–17 años: PIC <25 mmHg."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl Nelson recomienda mantener la PIC por debajo de 20 mmHg en niños de 2 a 5 años y por debajo de 22 mmHg en pacientes de 6 a 17 años. Estas metas buscan disminuir la lesión cerebral secundaria y preservar la perfusión cerebral.\n🟩 **CONCEPTOS CLAVE**\nLa meta de PIC cambia según la edad.\nMantener una PIC elevada aumenta el riesgo de isquemia cerebral.\nLa monitorización de la PIC forma parte del manejo del TCE grave.\n💡 **REPASO ACTIVO**\nObjetivos de PIC según la edad\n2–5 años: <20 mmHg.\n6–17 años: <22 mmHg.\nMedidas para controlar la PIC\nElevar la cabecera.\nMantener la cabeza en posición neutra.\nAnalgesia y sedación.\nSolución salina hipertónica al 3% o manitol cuando estén indicados.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl Nelson recomienda mantener la PIC por debajo de 20 mmHg en niños de 2 a 5 años y por debajo de 22 mmHg en pacientes de 6 a 17 años. Estas metas buscan disminuir la lesión cerebral secundaria y preservar la perfusión cerebral.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La meta de PIC cambia según la edad.\r\n- Mantener una PIC elevada aumenta el riesgo de isquemia cerebral.\r\n- La monitorización de la PIC forma parte del manejo del TCE grave.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Objetivos de PIC según la edad**\r\n- 2–5 años: <20 mmHg.\r\n- 6–17 años: <22 mmHg.\r\n\r\n**Medidas para controlar la PIC**\r\n- Elevar la cabecera.\r\n- Mantener la cabeza en posición neutra.\r\n- Analgesia y sedación.\r\n- Solución salina hipertónica al 3% o manitol cuando estén indicados.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 585.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1456,7 +1456,7 @@ export const questionsSemana13: Question[] = [
       "Shock disociativo."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl shock cardiogénico se produce por una alteración de la función miocárdica que disminuye el gasto cardíaco. Entre sus causas se incluyen cardiopatías, miocarditis e infarto.\n🟩 **CONCEPTOS CLAVE**\nDisminución del gasto cardíaco.\nHipoperfusión sistémica.\nRequiere soporte inotrópico.\n💡 **REPASO ACTIVO**\nTipos de shock\nHipovolémico: disminución del volumen circulante.\nCardiogénico: falla de la bomba cardíaca.\nDistributivo: vasodilatación y disminución de la resistencia vascular.\nObstructivo: impedimento mecánico al flujo sanguíneo.\nDisociativo: incapacidad para liberar o transportar oxígeno.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl shock cardiogénico se produce por una alteración de la función miocárdica que disminuye el gasto cardíaco. Entre sus causas se incluyen cardiopatías, miocarditis e infarto.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Disminución del gasto cardíaco.\r\n- Hipoperfusión sistémica.\r\n- Requiere soporte inotrópico.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tipos de shock**\r\n- Hipovolémico: disminución del volumen circulante.\r\n- Cardiogénico: falla de la bomba cardíaca.\r\n- Distributivo: vasodilatación y disminución de la resistencia vascular.\r\n- Obstructivo: impedimento mecánico al flujo sanguíneo.\r\n- Disociativo: incapacidad para liberar o transportar oxígeno.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 601.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1475,7 +1475,7 @@ export const questionsSemana13: Question[] = [
       "Metahemoglobinemia."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl shock obstructivo se debe a un obstáculo mecánico que impide el llenado o la eyección del corazón. El taponamiento cardíaco, el neumotórax a tensión y el tromboembolismo pulmonar son causas clásicas.\n🟩 **CONCEPTOS CLAVE**\nObstrucción al flujo sanguíneo.\nDisminución del gasto cardíaco.\nRequiere corregir la causa mecánica.\n💡 **REPASO ACTIVO**\nEjemplos según el tipo de shock\nHipovolémico: vómitos, diarrea, hemorragia.\nCardiogénico: miocarditis, cardiopatías.\nDistributivo: sepsis, anafilaxia, lesión medular.\nObstructivo: neumotórax a tensión, tromboembolismo pulmonar, taponamiento cardíaco.\nDisociativo: anemia, metahemoglobinemia, intoxicación por monóxido de carbono o cianuro.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl shock obstructivo se debe a un obstáculo mecánico que impide el llenado o la eyección del corazón. El taponamiento cardíaco, el neumotórax a tensión y el tromboembolismo pulmonar son causas clásicas.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Obstrucción al flujo sanguíneo.\r\n- Disminución del gasto cardíaco.\r\n- Requiere corregir la causa mecánica.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Ejemplos según el tipo de shock**\r\n- Hipovolémico: vómitos, diarrea, hemorragia.\r\n- Cardiogénico: miocarditis, cardiopatías.\r\n- Distributivo: sepsis, anafilaxia, lesión medular.\r\n- Obstructivo: neumotórax a tensión, tromboembolismo pulmonar, taponamiento cardíaco.\r\n- Disociativo: anemia, metahemoglobinemia, intoxicación por monóxido de carbono o cianuro.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 601.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1494,7 +1494,7 @@ export const questionsSemana13: Question[] = [
       "Bradicardia con hipotensión."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el shock distributivo predominan la vasodilatación, las extremidades calientes, los pulsos amplios y el llenado capilar rápido, especialmente en la fase inicial del shock séptico.\n🟩 **CONCEPTOS CLAVE**\nVasodilatación sistémica.\nDisminución de la resistencia vascular.\nSepsis y anafilaxia son causas frecuentes.\n💡 **REPASO ACTIVO**\nCaracterísticas clínicas\nHipovolémico: piel fría, pulsos débiles.\nCardiogénico: piel fría, hepatomegalia, ingurgitación yugular.\nDistributivo: piel caliente, pulsos amplios.\nObstructivo: ingurgitación yugular, ruidos respiratorios asimétricos.\nDisociativo: taquicardia y palidez.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el shock distributivo predominan la vasodilatación, las extremidades calientes, los pulsos amplios y el llenado capilar rápido, especialmente en la fase inicial del shock séptico.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Vasodilatación sistémica.\r\n- Disminución de la resistencia vascular.\r\n- Sepsis y anafilaxia son causas frecuentes.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Características clínicas**\r\n- Hipovolémico: piel fría, pulsos débiles.\r\n- Cardiogénico: piel fría, hepatomegalia, ingurgitación yugular.\r\n- Distributivo: piel caliente, pulsos amplios.\r\n- Obstructivo: ingurgitación yugular, ruidos respiratorios asimétricos.\r\n- Disociativo: taquicardia y palidez.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 601.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1513,7 +1513,7 @@ export const questionsSemana13: Question[] = [
       "Líquidos intravenosos y reposición de sangre cuando esté indicada."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl tratamiento del shock hipovolémico consiste en restaurar el volumen intravascular mediante líquidos intravenosos y hemoderivados cuando existe hemorragia significativa.\n🟩 **CONCEPTOS CLAVE**\nReposición rápida del volumen.\nCorregir la causa de la pérdida.\nVigilar la respuesta hemodinámica.\n💡 **REPASO ACTIVO**\nTratamiento según el tipo de shock\nHipovolémico: líquidos IV, vasopresores si es necesario, reposición sanguínea.\nCardiogénico: líquidos con cautela, inotrópicos y tratamiento de la causa.\nDistributivo: líquidos, vasopresores y tratamiento etiológico.\nObstructivo: corregir la obstrucción.\nDisociativo: corregir el trastorno del transporte de oxígeno.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl tratamiento del shock hipovolémico consiste en restaurar el volumen intravascular mediante líquidos intravenosos y hemoderivados cuando existe hemorragia significativa.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Reposición rápida del volumen.\r\n- Corregir la causa de la pérdida.\r\n- Vigilar la respuesta hemodinámica.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tratamiento según el tipo de shock**\r\n- Hipovolémico: líquidos IV, vasopresores si es necesario, reposición sanguínea.\r\n- Cardiogénico: líquidos con cautela, inotrópicos y tratamiento de la causa.\r\n- Distributivo: líquidos, vasopresores y tratamiento etiológico.\r\n- Obstructivo: corregir la obstrucción.\r\n- Disociativo: corregir el trastorno del transporte de oxígeno.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 601.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1532,7 +1532,7 @@ export const questionsSemana13: Question[] = [
       "Hemorragia masiva."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl shock disociativo se caracteriza por una alteración del transporte o de la liberación de oxígeno. La metahemoglobinemia, la anemia grave, la intoxicación por monóxido de carbono y el cianuro son ejemplos clásicos.\n🟩 **CONCEPTOS CLAVE**\nAlteración del transporte o utilización de oxígeno.\nNo se debe a disminución del volumen ni del gasto cardíaco.\nEl tratamiento depende de la causa específica.\n💡 **REPASO ACTIVO**\nEjemplos de shock disociativo\nAnemia.\nMonóxido de carbono.\nMetahemoglobinemia.\nCianuro.\nTratamiento\nReposición sanguínea si hay anemia.\nOxígeno hiperbárico para monóxido de carbono.\nAzul de metileno para metahemoglobinemia.\nAntídotos específicos para intoxicación por cianuro.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl shock disociativo se caracteriza por una alteración del transporte o de la liberación de oxígeno. La metahemoglobinemia, la anemia grave, la intoxicación por monóxido de carbono y el cianuro son ejemplos clásicos.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Alteración del transporte o utilización de oxígeno.\r\n- No se debe a disminución del volumen ni del gasto cardíaco.\r\n- El tratamiento depende de la causa específica.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Ejemplos de shock disociativo**\r\n- Anemia.\r\n- Monóxido de carbono.\r\n- Metahemoglobinemia.\r\n- Cianuro.\r\n\r\n**Tratamiento**\r\n- Reposición sanguínea si hay anemia.\r\n- Oxígeno hiperbárico para monóxido de carbono.\r\n- Azul de metileno para metahemoglobinemia.\r\n- Antídotos específicos para intoxicación por cianuro.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 601.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1551,7 +1551,7 @@ export const questionsSemana13: Question[] = [
       "Shock disociativo."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el shock hipovolémico, la disminución de la precarga desencadena una respuesta simpática compensadora con aumento de la contractilidad y del tono vascular periférico.\n🟩 **CONCEPTOS CLAVE**\nHipovolémico: ↓ precarga, ↑ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\n💡 **REPASO ACTIVO**\nCambios hemodinámicos\nHipovolémico: ↓ precarga, ↑ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\nCardiogénico: ↑ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\nObstructivo: ↓ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\nDistributivo: ↓ precarga, ↑ contractilidad, ↑ gasto cardíaco, ↓ poscarga.\nDisociativo: ↑/↓ precarga, ↑ contractilidad, ↑ gasto cardíaco, ↑/↓ poscarga.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el shock hipovolémico, la disminución de la precarga desencadena una respuesta simpática compensadora con aumento de la contractilidad y del tono vascular periférico.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Hipovolémico: ↓ precarga, ↑ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Cambios hemodinámicos**\r\n- Hipovolémico: ↓ precarga, ↑ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n- Cardiogénico: ↑ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n- Obstructivo: ↓ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n- Distributivo: ↓ precarga, ↑ contractilidad, ↑ gasto cardíaco, ↓ poscarga.\r\n- Disociativo: ↑/↓ precarga, ↑ contractilidad, ↑ gasto cardíaco, ↑/↓ poscarga.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 602.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1570,7 +1570,7 @@ export const questionsSemana13: Question[] = [
       "Shock disociativo."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl tratamiento fundamental del shock obstructivo consiste en eliminar la causa mecánica que impide el llenado o la eyección cardíaca, como un neumotórax a tensión o un taponamiento cardíaco.\n🟩 **CONCEPTOS CLAVE**\nCorregir primero la obstrucción.\nLos líquidos son solo una medida de apoyo.\nTratar la causa mejora el gasto cardíaco.\n💡 **REPASO ACTIVO**\nTratamiento predominante\nHipovolémico → expansión con líquidos.\nCardiogénico → inotrópicos.\nObstructivo → aliviar la obstrucción.\nDistributivo → líquidos + vasopresores.\nDisociativo → tratamiento específico.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl tratamiento fundamental del shock obstructivo consiste en eliminar la causa mecánica que impide el llenado o la eyección cardíaca, como un neumotórax a tensión o un taponamiento cardíaco.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Corregir primero la obstrucción.\r\n- Los líquidos son solo una medida de apoyo.\r\n- Tratar la causa mejora el gasto cardíaco.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tratamiento predominante**\r\n- Hipovolémico → expansión con líquidos.\r\n- Cardiogénico → inotrópicos.\r\n- Obstructivo → aliviar la obstrucción.\r\n- Distributivo → líquidos + vasopresores.\r\n- Disociativo → tratamiento específico.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 602.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1589,7 +1589,7 @@ export const questionsSemana13: Question[] = [
       "Shock disociativo."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa vasodilatación es la característica principal del shock distributivo, por lo que la poscarga disminuye, a diferencia de los demás tipos de shock.\n🟩 **CONCEPTOS CLAVE**\nVasodilatación sistémica.\nDisminución de la resistencia vascular.\nGasto cardíaco inicialmente elevado.\n💡 **REPASO ACTIVO**\nPoscarga\nHipovolémico: ↑\nCardiogénico: ↑\nObstructivo: ↑\nDistributivo: ↓\nDisociativo: ↑ o ↓",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa vasodilatación es la característica principal del shock distributivo, por lo que la poscarga disminuye, a diferencia de los demás tipos de shock.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Vasodilatación sistémica.\r\n- Disminución de la resistencia vascular.\r\n- Gasto cardíaco inicialmente elevado.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Poscarga**\r\n- Hipovolémico: ↑\r\n- Cardiogénico: ↑\r\n- Obstructivo: ↑\r\n- Distributivo: ↓\r\n- Disociativo: ↑ o ↓",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 602.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1608,7 +1608,7 @@ export const questionsSemana13: Question[] = [
       "Shock disociativo."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn el shock cardiogénico, la disminución de la contractilidad hace que los inotrópicos sean una parte fundamental del tratamiento para mejorar el gasto cardíaco.\n🟩 **CONCEPTOS CLAVE**\nContractilidad disminuida.\nGasto cardíaco bajo.\nInotrópicos como tratamiento principal.\n💡 **REPASO ACTIVO**\nImportancia de los tratamientos\nLíquidos: principalmente en shock hipovolémico y distributivo.\nInotrópicos: principalmente en shock cardiogénico.\nVasopresores: distributivo y algunos cardiogénicos.\nAliviar la obstrucción: shock obstructivo.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn el shock cardiogénico, la disminución de la contractilidad hace que los inotrópicos sean una parte fundamental del tratamiento para mejorar el gasto cardíaco.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Contractilidad disminuida.\r\n- Gasto cardíaco bajo.\r\n- Inotrópicos como tratamiento principal.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Importancia de los tratamientos**\r\n- Líquidos: principalmente en shock hipovolémico y distributivo.\r\n- Inotrópicos: principalmente en shock cardiogénico.\r\n- Vasopresores: distributivo y algunos cardiogénicos.\r\n- Aliviar la obstrucción: shock obstructivo.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 602.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1627,7 +1627,7 @@ export const questionsSemana13: Question[] = [
       "Shock distributivo."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nDurante la fase inicial del shock distributivo, la vasodilatación provoca una disminución de la resistencia vascular sistémica con aumento del gasto cardíaco, a diferencia de los demás tipos de shock.\n🟩 **CONCEPTOS CLAVE**\nGasto cardíaco ↑ en el shock distributivo.\nGasto cardíaco ↓ en el hipovolémico, cardiogénico y obstructivo.\nEl shock disociativo puede presentar gasto cardíaco aumentado, pero la alteración principal es el transporte o la utilización del oxígeno.\n💡 **REPASO ACTIVO**\nCambios hemodinámicos por tipo de shock\nHipovolémico: ↓ precarga, ↑ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\nCardiogénico: ↑ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\nObstructivo: ↓ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\nDistributivo: ↓ precarga, ↑ contractilidad, ↑ gasto cardíaco, ↓ poscarga.\nDisociativo: precarga y poscarga variables, con gasto cardíaco generalmente aumentado.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nDurante la fase inicial del shock distributivo, la vasodilatación provoca una disminución de la resistencia vascular sistémica con aumento del gasto cardíaco, a diferencia de los demás tipos de shock.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Gasto cardíaco ↑ en el shock distributivo.\r\n- Gasto cardíaco ↓ en el hipovolémico, cardiogénico y obstructivo.\r\n- El shock disociativo puede presentar gasto cardíaco aumentado, pero la alteración principal es el transporte o la utilización del oxígeno.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Cambios hemodinámicos por tipo de shock**\r\n- Hipovolémico: ↓ precarga, ↑ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n- Cardiogénico: ↑ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n- Obstructivo: ↓ precarga, ↓ contractilidad, ↓ gasto cardíaco, ↑ poscarga.\r\n- Distributivo: ↓ precarga, ↑ contractilidad, ↑ gasto cardíaco, ↓ poscarga.\r\n- Disociativo: precarga y poscarga variables, con gasto cardíaco generalmente aumentado.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 602.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1646,7 +1646,7 @@ export const questionsSemana13: Question[] = [
       "Accidentes deportivos."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEl ahogamiento constituye la segunda causa de muerte por lesiones no intencionales en niños, solo superada por los accidentes de tránsito.\n🟩 **CONCEPTOS CLAVE**\nEs un importante problema de salud pública.\nLa reanimación cardiopulmonar precoz mejora el pronóstico.\nLa prevención es la estrategia más efectiva.\n💡 **REPASO ACTIVO**\nEpidemiología\n2.ª causa de muerte por lesiones no intencionales en niños.\nSolo es superada por los accidentes de tránsito.\nLa prevención y la RCP precoz disminuyen la mortalidad.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEl ahogamiento constituye la segunda causa de muerte por lesiones no intencionales en niños, solo superada por los accidentes de tránsito.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Es un importante problema de salud pública.\r\n- La reanimación cardiopulmonar precoz mejora el pronóstico.\r\n- La prevención es la estrategia más efectiva.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Epidemiología**\r\n- 2.ª causa de muerte por lesiones no intencionales en niños.\r\n- Solo es superada por los accidentes de tránsito.\r\n- La prevención y la RCP precoz disminuyen la mortalidad.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 637.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1665,7 +1665,7 @@ export const questionsSemana13: Question[] = [
       "10–14 años."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas tasas más elevadas de muerte por ahogamiento se observan en los niños de 1 a 4 años, principalmente por accidentes en piscinas y recipientes con agua.\n🟩 **CONCEPTOS CLAVE**\nMayor riesgo entre 1 y 4 años.\nLos lactantes también presentan riesgo importante.\nLa mortalidad disminuye con la edad.\n💡 **REPASO ACTIVO**\nRiesgo por edad\n<1 año: bañeras y baldes.\n1–4 años: piscinas.\n5–13 años: lagos, ríos y piscinas.\n14–17 años: aguas naturales y conductas de riesgo.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas tasas más elevadas de muerte por ahogamiento se observan en los niños de 1 a 4 años, principalmente por accidentes en piscinas y recipientes con agua.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Mayor riesgo entre 1 y 4 años.\r\n- Los lactantes también presentan riesgo importante.\r\n- La mortalidad disminuye con la edad.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Riesgo por edad**\r\n- <1 año: bañeras y baldes.\r\n- 1–4 años: piscinas.\r\n- 5–13 años: lagos, ríos y piscinas.\r\n- 14–17 años: aguas naturales y conductas de riesgo.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 637.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1684,7 +1684,7 @@ export const questionsSemana13: Question[] = [
       "Playas."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nEn los niños de 1 a 4 años, la mayoría de los ahogamientos ocurre en piscinas, generalmente por falta de supervisión.\n🟩 **CONCEPTOS CLAVE**\nSupervisión constante.\nCercado de piscinas.\nPrevención ambiental.\n💡 **REPASO ACTIVO**\nSitio más frecuente según la edad\n<1 año: bañeras y baldes.\n1–4 años: piscinas.\nEdad escolar: lagos, ríos, estanques y canales.\nAdolescentes: aguas naturales.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nEn los niños de 1 a 4 años, la mayoría de los ahogamientos ocurre en piscinas, generalmente por falta de supervisión.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Supervisión constante.\r\n- Cercado de piscinas.\r\n- Prevención ambiental.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Sitio más frecuente según la edad**\r\n- <1 año: bañeras y baldes.\r\n- 1–4 años: piscinas.\r\n- Edad escolar: lagos, ríos, estanques y canales.\r\n- Adolescentes: aguas naturales.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 637.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1703,7 +1703,7 @@ export const questionsSemana13: Question[] = [
       "Varones."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas tasas de mortalidad por ahogamiento son consistentemente más altas en los varones que en las mujeres en todos los grupos etarios.\n🟩 **CONCEPTOS CLAVE**\nMayor riesgo en varones.\nRelacionado con mayor exposición y conductas de riesgo.\nTendencia descendente de la mortalidad en los últimos años.\n💡 **REPASO ACTIVO**\nDatos epidemiológicos de alto rendimiento\nSegunda causa de muerte por lesiones no intencionales.\nMayor riesgo: 1–4 años.\nMayor mortalidad: varones.\nSitio más frecuente:\n<1 año: bañeras y baldes.\n1–4 años: piscinas.\nEscolares y adolescentes: aguas naturales.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas tasas de mortalidad por ahogamiento son consistentemente más altas en los varones que en las mujeres en todos los grupos etarios.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Mayor riesgo en varones.\r\n- Relacionado con mayor exposición y conductas de riesgo.\r\n- Tendencia descendente de la mortalidad en los últimos años.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Datos epidemiológicos de alto rendimiento**\r\n- Segunda causa de muerte por lesiones no intencionales.\r\n- Mayor riesgo: 1–4 años.\r\n- Mayor mortalidad: varones.\r\n\r\n**Sitio más frecuente:**\r\n- <1 año: bañeras y baldes.\r\n- 1–4 años: piscinas.\r\n- Escolares y adolescentes: aguas naturales.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 637.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1722,7 +1722,7 @@ export const questionsSemana13: Question[] = [
       "Quemaduras por fricción."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas quemaduras por escaldadura son las más frecuentes en niños menores de 4 años y representan aproximadamente el 65% de los ingresos hospitalarios por quemaduras en este grupo etario.\n🟩 **CONCEPTOS CLAVE**\nPredominan en menores de 4 años.\nGeneralmente ocurren en el hogar.\nSon prevenibles.\n💡 **REPASO ACTIVO**\nTipos de quemaduras según la edad\n<4 años: escaldaduras (≈65%).\n5 años o más: quemaduras por llama.\nEléctricas y químicas: más frecuentes en niños mayores.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas quemaduras por escaldadura son las más frecuentes en niños menores de 4 años y representan aproximadamente el 65% de los ingresos hospitalarios por quemaduras en este grupo etario.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Predominan en menores de 4 años.\r\n- Generalmente ocurren en el hogar.\r\n- Son prevenibles.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tipos de quemaduras según la edad**\r\n- <4 años: escaldaduras (≈65%).\r\n- 5 años o más: quemaduras por llama.\r\n- Eléctricas y químicas: más frecuentes en niños mayores.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 646.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1741,7 +1741,7 @@ export const questionsSemana13: Question[] = [
       "Quemaduras por vapor."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas escaldaduras por líquidos calientes constituyen la principal causa de hospitalización por quemaduras en menores de 4 años.\n🟩 **CONCEPTOS CLAVE**\nLos líquidos calientes son el mecanismo predominante.\nEl riesgo es mayor en el hogar.\nLa prevención reduce significativamente la incidencia.\n💡 **REPASO ACTIVO**\nMecanismos frecuentes\nLíquidos calientes.\nContacto con superficies calientes.\nVapor.\nLlama.\nSustancias químicas.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas escaldaduras por líquidos calientes constituyen la principal causa de hospitalización por quemaduras en menores de 4 años.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Los líquidos calientes son el mecanismo predominante.\r\n- El riesgo es mayor en el hogar.\r\n- La prevención reduce significativamente la incidencia.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Mecanismos frecuentes**\r\n- Líquidos calientes.\r\n- Contacto con superficies calientes.\r\n- Vapor.\r\n- Llama.\r\n- Sustancias químicas.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 646.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1760,7 +1760,7 @@ export const questionsSemana13: Question[] = [
       "Las quemaduras por llama son el mecanismo predominante a partir de los 5 años."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nA partir de los 5 años, las quemaduras por llama superan a las escaldaduras como mecanismo más frecuente de lesión.\n🟩 **CONCEPTOS CLAVE**\n<4 años: escaldaduras.\n≥5 años: quemaduras por llama.\nEl patrón cambia con la edad.\n💡 **REPASO ACTIVO**\nDatos de alto rendimiento\n<4 años: escaldaduras (≈65%).\n≥5 años: quemaduras por llama.\nEléctricas y químicas: más frecuentes en niños mayores.\nPrevención (Tabla 89.1)\nDetectores de humo.\nAgua caliente ≤48,9 °C.\nFósforos y encendedores fuera del alcance.\nNo dejar velas encendidas.\nAlejar objetos calientes de los niños.\nDetenerse, tirarse al suelo y rodar.\nPracticar evacuación y gatear bajo el humo.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nA partir de los 5 años, las quemaduras por llama superan a las escaldaduras como mecanismo más frecuente de lesión.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- <4 años: escaldaduras.\r\n- ≥5 años: quemaduras por llama.\r\n- El patrón cambia con la edad.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Datos de alto rendimiento**\r\n- <4 años: escaldaduras (≈65%).\r\n- ≥5 años: quemaduras por llama.\r\n- Eléctricas y químicas: más frecuentes en niños mayores.\r\n- Prevención (Tabla 89.1)\r\n- Detectores de humo.\r\n- Agua caliente ≤48,9 °C.\r\n- Fósforos y encendedores fuera del alcance.\r\n- No dejar velas encendidas.\r\n- Alejar objetos calientes de los niños.\r\n- Detenerse, tirarse al suelo y rodar.\r\n- Practicar evacuación y gatear bajo el humo.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 646.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1779,7 +1779,7 @@ export const questionsSemana13: Question[] = [
       "Quemaduras por cigarrillo en un niño pequeño."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas quemaduras por salpicaduras suelen corresponder a un mecanismo accidental, ya que producen un patrón irregular. En cambio, las quemaduras por guante o calcetín, las quemaduras profundas del tronco, espalda o nalgas y las quemaduras por cigarrillo son altamente sugestivas de maltrato infantil.\n🟩 **CONCEPTOS CLAVE**\nLas lesiones deben concordar con el mecanismo referido.\nLos patrones uniformes o bien delimitados aumentan la sospecha de maltrato.\nLas quemaduras por salpicaduras suelen ser accidentales.\n💡 **REPASO ACTIVO**\nPatrones compatibles con accidente\nDistribución en \"V\" en tórax y abdomen por derrame de líquido caliente.\nQuemaduras por salpicaduras.\nQuemaduras aisladas en la palma por contacto con estufa o radiador.\nPatrones sugestivos de maltrato\nQuemaduras por guante o calcetín.\nQuemaduras profundas en tronco, espalda o nalgas.\nQuemaduras en áreas pequeñas y de espesor total (p. ej., cigarrillo).",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas quemaduras por salpicaduras suelen corresponder a un mecanismo accidental, ya que producen un patrón irregular. En cambio, las quemaduras por guante o calcetín, las quemaduras profundas del tronco, espalda o nalgas y las quemaduras por cigarrillo son altamente sugestivas de maltrato infantil.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Las lesiones deben concordar con el mecanismo referido.\r\n- Los patrones uniformes o bien delimitados aumentan la sospecha de maltrato.\r\n- Las quemaduras por salpicaduras suelen ser accidentales.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Patrones compatibles con accidente**\r\n- Distribución en \"V\" en tórax y abdomen por derrame de líquido caliente.\r\n- Quemaduras por salpicaduras.\r\n- Quemaduras aisladas en la palma por contacto con estufa o radiador.\r\n\r\n**Patrones sugestivos de maltrato**\r\n- Quemaduras por guante o calcetín.\r\n- Quemaduras profundas en tronco, espalda o nalgas.\r\n- Quemaduras en áreas pequeñas y de espesor total (p. ej., cigarrillo).",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 646.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1798,7 +1798,7 @@ export const questionsSemana13: Question[] = [
       "Solo adultos mayores de 18 años."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa regla de los nueve no es precisa en niños pequeños por las diferencias en las proporciones corporales. El Nelson indica que puede utilizarse en niños mayores de 14 años o con peso >20 kg como una estimación inicial.\n🟩 **CONCEPTOS CLAVE**\nLa regla de los nueve tiene uso limitado en pediatría.\nEn niños pequeños se prefieren tablas específicas.\nPuede emplearse como cálculo aproximado inicial en mayores de 14 años o >20 kg.\n💡 **REPASO ACTIVO**\nMétodos para calcular la SCTQ\nTablas de Lund y Browder: método más preciso en pediatría.\nRegla de la palma: la palma (incluidos los dedos) ≈ 1% de la SCTQ.\nRegla de los nueve: útil en >14 años o >20 kg.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa regla de los nueve no es precisa en niños pequeños por las diferencias en las proporciones corporales. El Nelson indica que puede utilizarse en niños mayores de 14 años o con peso >20 kg como una estimación inicial.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La regla de los nueve tiene uso limitado en pediatría.\r\n- En niños pequeños se prefieren tablas específicas.\r\n- Puede emplearse como cálculo aproximado inicial en mayores de 14 años o >20 kg.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Métodos para calcular la SCTQ**\r\n- Tablas de Lund y Browder: método más preciso en pediatría.\r\n- Regla de la palma: la palma (incluidos los dedos) ≈ 1% de la SCTQ.\r\n- Regla de los nueve: útil en >14 años o >20 kg.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1817,7 +1817,7 @@ export const questionsSemana13: Question[] = [
       "9%."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa regla de la palma establece que la palma de la mano del paciente, incluyendo los dedos, corresponde aproximadamente al 1% de la superficie corporal total, siendo útil para quemaduras pequeñas.\n🟩 **CONCEPTOS CLAVE**\nMétodo rápido para quemaduras pequeñas.\nUtiliza la palma del propio paciente.\nIncluye los dedos.\n💡 **REPASO ACTIVO**\nMétodos para calcular la SCTQ\nLund y Browder: mayor precisión.\nPalma: 1% de SCTQ.\nRegla de los nueve: >14 años o >20 kg.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa regla de la palma establece que la palma de la mano del paciente, incluyendo los dedos, corresponde aproximadamente al 1% de la superficie corporal total, siendo útil para quemaduras pequeñas.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Método rápido para quemaduras pequeñas.\r\n- Utiliza la palma del propio paciente.\r\n- Incluye los dedos.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Métodos para calcular la SCTQ**\r\n- Lund y Browder: mayor precisión.\r\n- Palma: 1% de SCTQ.\r\n- Regla de los nueve: >14 años o >20 kg.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1836,7 +1836,7 @@ export const questionsSemana13: Question[] = [
       "Escala de Baux."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nDebido a que las proporciones corporales cambian con la edad, la tabla de Lund y Browder modificada es el método más preciso para estimar la superficie corporal quemada en niños.\n🟩 **CONCEPTOS CLAVE**\nConsidera los cambios corporales con el crecimiento.\nEs el método de elección en pediatría.\nPermite una estimación más exacta.\n💡 **REPASO ACTIVO**\nEstimación de la SCTQ\nLund y Browder: método de elección.\nPalma: 1%.\nRegla de los nueve: estimación rápida en adolescentes mayores.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nDebido a que las proporciones corporales cambian con la edad, la tabla de Lund y Browder modificada es el método más preciso para estimar la superficie corporal quemada en niños.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Considera los cambios corporales con el crecimiento.\r\n- Es el método de elección en pediatría.\r\n- Permite una estimación más exacta.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Estimación de la SCTQ**\r\n- Lund y Browder: método de elección.\r\n- Palma: 1%.\r\n- Regla de los nueve: estimación rápida en adolescentes mayores.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1855,7 +1855,7 @@ export const questionsSemana13: Question[] = [
       "Tiene aspecto blanco y seco."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas quemaduras de primer grado afectan solo la epidermis, producen eritema y dolor, no forman ampollas y suelen curar sin secuelas.\n🟩 **CONCEPTOS CLAVE**\nSolo epidermis.\nEritema y dolor.\nSin ampollas.\n💡 **REPASO ACTIVO**\nClasificación de las quemaduras\nPrimer grado: epidermis, eritema, dolor, sin ampollas, curación en 48–72 horas, sin cicatriz.\nSegundo grado superficial: epidermis + dermis superficial, ampollas, muy dolorosa, rosada, cura en 7–14 días.\nSegundo grado profundo: dermis profunda, menos dolor, aspecto pálido o blanco, cura en 14–21 días, puede requerir injerto.\nTercer grado: destrucción completa de epidermis y dermis, piel seca, blanca o carbonizada, insensible, requiere injerto.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas quemaduras de primer grado afectan solo la epidermis, producen eritema y dolor, no forman ampollas y suelen curar sin secuelas.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Solo epidermis.\r\n- Eritema y dolor.\r\n- Sin ampollas.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Clasificación de las quemaduras**\r\n- Primer grado: epidermis, eritema, dolor, sin ampollas, curación en 48–72 horas, sin cicatriz.\r\n- Segundo grado superficial: epidermis + dermis superficial, ampollas, muy dolorosa, rosada, cura en 7–14 días.\r\n- Segundo grado profundo: dermis profunda, menos dolor, aspecto pálido o blanco, cura en 14–21 días, puede requerir injerto.\r\n- Tercer grado: destrucción completa de epidermis y dermis, piel seca, blanca o carbonizada, insensible, requiere injerto.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1874,7 +1874,7 @@ export const questionsSemana13: Question[] = [
       "Ausencia de relleno capilar."
     ],
     "correctOptionIndex": 0,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas quemaduras de segundo grado superficial presentan ampollas, abundantes terminaciones nerviosas viables y, por ello, son muy dolorosas.\n🟩 **CONCEPTOS CLAVE**\nAmpollas.\nMuy dolorosas.\nCuración espontánea.\n💡 **REPASO ACTIVO**\nSegundo grado\nSuperficial: rosada, húmeda, ampollas, muy dolorosa, 7–14 días.\nProfunda: pálida o blanca, menos dolor, 14–21 días, cicatriz frecuente.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas quemaduras de segundo grado superficial presentan ampollas, abundantes terminaciones nerviosas viables y, por ello, son muy dolorosas.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Ampollas.\r\n- Muy dolorosas.\r\n- Curación espontánea.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Segundo grado**\r\n- Superficial: rosada, húmeda, ampollas, muy dolorosa, 7–14 días.\r\n- Profunda: pálida o blanca, menos dolor, 14–21 días, cicatriz frecuente.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1893,7 +1893,7 @@ export const questionsSemana13: Question[] = [
       "Puede requerir injerto cutáneo."
     ],
     "correctOptionIndex": 3,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLa curación en 48–72 horas corresponde a una quemadura de primer grado. Las quemaduras de segundo grado profundo cicatrizan lentamente y pueden requerir injerto.\n🟩 **CONCEPTOS CLAVE**\nPiel pálida.\nMenos dolor.\nCicatriz frecuente.\n💡 **REPASO ACTIVO**\nTiempo de cicatrización\nPrimer grado: 48–72 horas.\nSegundo grado superficial: 7–14 días.\nSegundo grado profundo: 14–21 días.\nTercer grado: no cicatriza espontáneamente.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa curación en 48–72 horas corresponde a una quemadura de primer grado. Las quemaduras de segundo grado profundo cicatrizan lentamente y pueden requerir injerto.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Piel pálida.\r\n- Menos dolor.\r\n- Cicatriz frecuente.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Tiempo de cicatrización**\r\n- Primer grado: 48–72 horas.\r\n- Segundo grado superficial: 7–14 días.\r\n- Segundo grado profundo: 14–21 días.\r\n- Tercer grado: no cicatriza espontáneamente.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
@@ -1912,7 +1912,7 @@ export const questionsSemana13: Question[] = [
       "Destrucción completa de la epidermis y la dermis."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\nLas quemaduras de tercer grado destruyen toda la epidermis y la dermis, no quedan células capaces de regenerar la piel y, por lo general, requieren injerto.\n🟩 **CONCEPTOS CLAVE**\nEspesor total.\nSin capacidad de regeneración.\nInjerto cutáneo.\n💡 **REPASO ACTIVO**\nQuemadura de tercer grado\nEpidermis y dermis destruidas.\nPiel blanca, marrón o negra.\nInsensible en el centro.\nRequiere injerto o cierre quirúrgico.",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLas quemaduras de tercer grado destruyen toda la epidermis y la dermis, no quedan células capaces de regenerar la piel y, por lo general, requieren injerto.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Espesor total.\r\n- Sin capacidad de regeneración.\r\n- Injerto cutáneo.\r\n\r\n💡 **REPASO ACTIVO**\r\n\r\n**Quemadura de tercer grado**\r\n- Epidermis y dermis destruidas.\r\n- Piel blanca, marrón o negra.\r\n- Insensible en el centro.\r\n- Requiere injerto o cierre quirúrgico.",
     "pagina": "📖 Referencia: Nelson Textbook of Pediatrics, 22.ª edición, pág. 649.",
     "materia": "Pediatría",
     "semana": 13,
