@@ -1,0 +1,9 @@
+# Rules for Cursor AI
+You are working on the official CONAREM Simulator (Simulador Emma / Dr. Rodney).
+- Official local directory: C:\Users\Rodney Duarte\Documents\APPS\Simulator
+- Git remotes: origin https://github.com/emaob7/simulador.git, myrepo https://github.com/roeyduary-creator/Simulator.git
+- Production URL: https://simulator-5ff8c.web.app
+- Firebase Project: simulator-5ff8c
+- Scope: 18 study weeks of medical questions (semana1 to semana18 in src/data/).
+- Never overwrite this project with generic templates.
+- Always use cmd.exe /c "npm run build" and .\node_modules\.bin\firebase.cmd deploy --project simulator-5ff8c --only hosting.

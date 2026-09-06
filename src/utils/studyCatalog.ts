@@ -48,6 +48,8 @@ const topics: StudyTopicDefinition[] = [
   { id: 'cir-estomago', materia: 'Cirugía', label: 'Estómago' },
   { id: 'cir-toracica', materia: 'Cirugía', label: 'Cirugía Torácica' },
   { id: 'cir-mamas', materia: 'Cirugía', label: 'Mamas' },
+  { id: 'cir-higado', materia: 'Cirugía', label: 'Hígado' },
+  { id: 'cir-vesicula-biliar', materia: 'Cirugía', label: 'Vesícula biliar y sistema biliar extrahepático' },
 
   { id: 'gyo-anatomia', materia: 'Ginecología y Obstetricia', label: 'Anatomía' },
   { id: 'gyo-trastornos-desarrollo', materia: 'Ginecología y Obstetricia', label: 'Trastornos anatómicos y del desarrollo' },
@@ -141,6 +143,10 @@ function resolveTopicId(question: Question): string {
     case 17: return 'ped-infectologia';
     case 18:
       return question.tema.toLowerCase().includes('nefro') ? 'mi-nefrologia' : 'mi-neurologia';
+    case 19:
+      return (question.tema.toLowerCase().includes('higado') || question.tema.toLowerCase().includes('hígado'))
+        ? 'cir-higado'
+        : 'cir-vesicula-biliar';
     default:
       throw new Error(`Semana sin taxonomía: ${question.semana} (${question.id})`);
   }
@@ -352,6 +358,7 @@ function resolveSubtopic(question: Question, topicId: string): string {
   if (topicId === 'cir-traumatismos') return resolveTraumaSubtopic(question);
   if (topicId === 'cir-quemaduras') return resolveBurnSubtopic(question);
   if (topicId === 'cir-esofago' || topicId === 'cir-estomago') return resolveDigestiveSurgerySubtopic(question, topicId);
+  if (topicId === 'cir-higado' || topicId === 'cir-vesicula-biliar') return question.subtema?.trim() || info.grupo || question.tema.trim();
   if (topicId === 'gyo-dolor-pelvico') return resolvePelvicPainSubtopic(question);
 
   if (topicId === 'cir-toracica') {

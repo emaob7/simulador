@@ -1278,6 +1278,11 @@ function normalizeS18(rawSubtema: string, questionText: string, questionId?: str
   return { grupo: rawSubtema.trim(), normalizado: norm };
 }
 
+function normalizeS19(rawSubtema: string, questionText: string, questionId?: string): { grupo: string, normalizado: string } {
+  const norm = toTitleCase(rawSubtema.trim());
+  return { grupo: rawSubtema.trim(), normalizado: norm };
+}
+
 function analyzeSubtemaRaw(
   rawSubtema: string | undefined,
   materia?: string,
@@ -1353,6 +1358,7 @@ function analyzeSubtemaRaw(
     else if (lower.includes("poliqu") || lower.includes("sop") || lower.includes("sangrado") || lower.includes("sua") || lower.includes("leiomioma") || lower.includes("adenomiosis")) activeSemana = 16;
     else if (lower.includes("infectologia") || lower.includes("dengue") || lower.includes("chikungunya") || lower.includes("tétanos") || lower.includes("tuberculosis") || lower.includes("leishmania") || lower.includes("ascaris")) activeSemana = 17;
     else if (lower.includes("nefro") || lower.includes("neuro") || lower.includes("renal") || lower.includes("epilep") || lower.includes("apoplejía") || lower.includes("cefalea")) activeSemana = 18;
+    else if (lower.includes("higado") || lower.includes("hígado") || lower.includes("biliar") || lower.includes("vesícula") || lower.includes("vesicula")) activeSemana = 19;
   }
 
   let mod: { grupo: string, normalizado: string } | null = null;
@@ -1374,6 +1380,7 @@ function analyzeSubtemaRaw(
   else if (activeSemana === 16) mod = normalizeS16(rawSubtema, questionText || "", questionId);
   else if (activeSemana === 17) mod = normalizeS17(rawSubtema, questionText || "", questionId);
   else if (activeSemana === 18) mod = normalizeS18(rawSubtema, questionText || "", questionId);
+  else if (activeSemana === 19) mod = normalizeS19(rawSubtema, questionText || "", questionId);
 
   if (mod) {
     return { normalizado: mod.normalizado, grupo: mod.grupo };
