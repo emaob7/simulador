@@ -1,116 +1,72 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-
-    // ---------------------------------------------------------
-    // PILLAR 0: Global Safety Net
-    // ---------------------------------------------------------
+    // 0. Default Deny
     match /{document=**} {
       allow read, write: if false;
     }
 
-    // ---------------------------------------------------------
-    // Phase 3: Primitive Definitions & Helpers
-    // ---------------------------------------------------------
+    // --- Helpers ---
     function isSignedIn() { return request.auth != null; }
-    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function isOwner(userId) { return isSignedIn() && request.auth.uid == userId; }
+    function isEmailVerified() { return request.auth.token.email_verified == true; }
+    function isAdmin() { return isSignedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid)) && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'; }
     function incoming() { return request.resource.data; }
     function existing() { return resource.data; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
 
-    // PILLAR 4: Tiered Identity Logic
-    function isOwner(userId) { return isSignedIn() && request.auth.uid == userId; }
+    // --- Validation Blueprints ---
     
-    // Auth tokens never contain roles. Explicitly look up role from trusted source.
-    function isAdmin() { 
-      return isSignedIn() && 
-             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'; 
-    }
-    
-    // Approval Gate
-    function isApproved() {
-      return isSignedIn() && 
-             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isApproved == true;
+    function isValidUser(data) {
+      return data.keys().hasAll(['displayName', 'email', 'role', 'isApproved']) &&
+             data.keys().size() <= 6 &&
+             data.displayName is string && data.displayName.size() <= 100 &&
+             data.email is string && data.email.size() <= 100 &&
+             data.role in ['admin', 'aspirante'] &&
+             data.isApproved is bool;
     }
 
-    // ---------------------------------------------------------
-    // PILLAR 1 & 2: Collection Rules & Validation Blueprints
-    // ---------------------------------------------------------
+    function isValidSession(data) {
+      return data.keys().hasAll(['user_id', 'materia', 'score', 'total_questions', 'date']) &&
+             data.user_id == request.auth.uid &&
+             data.materia is string && data.materia.size() <= 100 &&
+             data.score is int && data.score >= 0 &&
+             data.total_questions is int && data.total_questions > 0 &&
+             data.score <= data.total_questions &&
+             data.date is string; // Date stored as ISO string per DataService
+    }
 
-    // USERS COLLECTION
+    function isValidProgress(data) {
+      return data.keys().hasAll(['user_id', 'question_id', 'materia', 'tema', 'is_correct', 'date']) &&
+             data.user_id == request.auth.uid &&
+             data.question_id is string && data.question_id.size() <= 128 &&
+             data.materia is string && data.materia.size() <= 100 &&
+             data.tema is string && data.tema.size() <= 200 &&
+             data.is_correct is bool &&
+             data.date is string;
+    }
+
+    // --- Collection Rules ---
+
     match /users/{userId} {
-      function isValidUser(data) {
-        return data.keys().hasAll(['email', 'role', 'isApproved']) && 
-               data.keys().size() <= 6 && // displayName, photoURL, uid (stored as doc id)
-               data.email is string && data.email.size() <= 100 &&
-               data.role in ['admin', 'aspirante'] &&
-               data.isApproved is bool;
-      }
-
       allow get: if isOwner(userId) || isAdmin();
-      
-      // ADMINS can list all users to approve them
-      // EVALUATION WARNING: O(N) cost if many results, but required for AdminView
-      allow list: if isAdmin(); 
-
-      allow create: if isOwner(userId) && 
-                      isValidUser(incoming()) && 
-                      incoming().role == 'aspirante' && 
-                      incoming().isApproved == false;
-      
-      allow update: if (
-        isSignedIn() && (
-          // ACTION: Admin Management (Approve/Revoke)
-          (isAdmin() && incoming().diff(existing()).affectedKeys().hasOnly(['isApproved', 'role'])) ||
-          
-          // ACTION: User Profile Edit
-          (isOwner(userId) && 
-           incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL']) &&
-           incoming().role == existing().role && 
-           incoming().isApproved == existing().isApproved)
-        )
-      );
+      allow list: if isAdmin();
+      allow create: if isOwner(userId) && isValidUser(incoming()) && incoming().role == 'aspirante' && incoming().isApproved == false;
+      allow update: if (isOwner(userId) && isValidUser(incoming()) && incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL', 'email'])) || isAdmin();
     }
 
-    // SESSIONS COLLECTION
     match /sessions/{sessionId} {
-      function isValidSession(data) {
-        return data.keys().hasAll(['user_id', 'materia', 'tema', 'total_questions', 'score', 'date']) &&
-               data.user_id == request.auth.uid &&
-               data.materia is string && data.materia.size() <= 100 &&
-               data.total_questions is int && data.total_questions >= 0 &&
-               data.score is int && data.score >= 0 &&
-               data.date is string && data.date.size() <= 100;
-      }
-
-      // PILLAR 8: Secure List Queries
-      // Evaluation order: 1. Auth, 2. Owner, 3. Admin (DB Read)
       allow list: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
       allow get: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
-
-      allow create: if isApproved() && isValidId(sessionId) && isValidSession(incoming());
-      
-      // PILLAR 3: Path Variable Hardening
-      allow delete: if (isAdmin() || (isSignedIn() && existing().user_id == request.auth.uid));
-      
-      // Terminal State: Sessions are immutable after creation
-      allow update: if false;
+      allow create: if isSignedIn() && isValidSession(incoming()) && incoming().user_id == request.auth.uid;
+      allow delete: if isSignedIn() && existing().user_id == request.auth.uid;
     }
 
-    // PROGRESS COLLECTION
     match /progress/{progressId} {
       allow list: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
       allow get: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
-      allow create: if isApproved() && incoming().user_id == request.auth.uid;
-      allow delete: if isAdmin() || (isSignedIn() && existing().user_id == request.auth.uid);
-      allow update: if false;
-    }
-
-    // BOOKMARKS COLLECTION
-    match /bookmarks/{bookmarkId} {
-      allow list: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
-      allow get: if isSignedIn() && (resource.data.user_id == request.auth.uid || isAdmin());
-      allow create, write: if isApproved() && incoming().user_id == request.auth.uid;
-      allow delete: if isAdmin() || (isSignedIn() && existing().user_id == request.auth.uid);
+      allow create: if isSignedIn() && isValidProgress(incoming()) && incoming().user_id == request.auth.uid;
+      allow delete: if isSignedIn() && existing().user_id == request.auth.uid;
     }
   }
 }
