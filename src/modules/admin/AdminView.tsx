@@ -12,6 +12,7 @@ export function AdminView() {
   const [allSessions, setAllSessions] = useState<Session[]>([]);
   const [allProgress, setAllProgress] = useState<UserProgress[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'pending' | 'approved'>('all');
@@ -28,9 +29,16 @@ export function AdminView() {
 
   const loadUsers = async () => {
     setLoading(true);
-    const data = await AuthService.getUsers();
-    setUsers(data);
-    setLoading(false);
+    setError(null);
+    try {
+      const data = await AuthService.getUsers();
+      setUsers(data);
+    } catch (error) {
+      console.error('Error al cargar usuarios:', error);
+      setError('No se pudieron cargar los usuarios. Revisá tu conexión y que tu perfil tenga el rol admin en Firebase.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const loadAnalytics = async () => {
@@ -61,8 +69,13 @@ export function AdminView() {
   };
 
   const toggleApproval = async (uid: string, currentStatus: boolean) => {
-    await AuthService.toggleUserApproval(uid, currentStatus);
-    loadUsers(); // reload
+    try {
+      await AuthService.toggleUserApproval(uid, currentStatus);
+      await loadUsers();
+    } catch (error) {
+      console.error('Error al actualizar usuario:', error);
+      setError('No se pudo actualizar la aprobación del usuario. Revisá los permisos de Firebase.');
+    }
   };
 
   const pendingUsersCount = useMemo(() => {
@@ -156,6 +169,12 @@ export function AdminView() {
 
   return (
     <div className="flex flex-col gap-6">
+      {error && <p role="alert" className="rounded-xl border border-red-500/30 p-4 text-red-300">{error}</p>}
+      {activeTab === 'users' && (
+        <button onClick={loadUsers} disabled={loading} className="self-end text-sm text-primary disabled:opacity-50">
+          {loading ? 'Actualizando…' : 'Actualizar usuarios'}
+        </button>
+      )}
       {/* TABS & TOOLS */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-white/5 pb-4">
         <div className="flex gap-2 md:gap-4 w-full md:w-auto overflow-x-auto pb-2 md:pb-0 scrollbar-hide">

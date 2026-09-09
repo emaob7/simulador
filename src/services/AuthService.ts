@@ -1,5 +1,5 @@
 import { auth, db } from '../firebase';
-import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup, signOut, type User } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc, collection, getDocs } from 'firebase/firestore';
 import { handleFirestoreError } from '../lib/firebaseUtils';
 
@@ -10,29 +10,28 @@ export const AuthService = {
     try {
       localStorage.removeItem('dr_rodney_guest_user');
       const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-      
+      return result.user;
+    } catch (error) {
+      console.error("Error logging in with Google", error);
+      throw error;
+    }
+  },
+  // Also runs for restored sessions, repairing profiles missing after a failed signup.
+  ensureUserProfile: async (user: User) => {
       const userRef = doc(db, 'users', user.uid);
       const userSnap = await getDoc(userRef).catch(e => handleFirestoreError(e, 'get', `users/${user.uid}`));
       
       if (!userSnap.exists()) {
-        const isAdmin = user.email === 'roeyduary@gmail.com' || user.email === 'emanuelob7@gmail.com';
         await setDoc(userRef, {
           uid: user.uid,
           email: user.email,
           displayName: user.displayName,
           photoURL: user.photoURL,
-          isApproved: isAdmin,
-          role: isAdmin ? 'admin' : 'aspirante',
-          createdAt: new Date().toISOString()
+          // Roles are granted by a trusted administrator, never by the client.
+          isApproved: false,
+          role: 'aspirante'
         }).catch(e => handleFirestoreError(e, 'create', `users/${user.uid}`));
       }
-      return user;
-    } catch (error) {
-      if (error instanceof Error && error.message.includes('FirestoreErrorInfo')) throw error;
-      console.error("Error logging in with Google", error);
-      throw error;
-    }
   },
   loginAsGuest: async () => {
     // Para modo demo sin Firebase configurado
@@ -56,7 +55,7 @@ export const AuthService = {
   getUsers: async () => {
     try {
       const querySnapshot = await getDocs(collection(db, 'users')).catch(e => handleFirestoreError(e, 'list', 'users'));
-      return querySnapshot.docs.map(doc => doc.data());
+      return querySnapshot.docs.map(doc => ({ ...doc.data(), uid: doc.id }));
     } catch (e) {
       if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
       throw e;

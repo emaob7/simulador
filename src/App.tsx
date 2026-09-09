@@ -32,6 +32,7 @@ import { Button } from './components/ui/Button';
 import { DataService } from './services/DataService';
 import { ChevronRight, ChevronDown, Check, BookmarkCheck, Play, RotateCcw, Sliders, Sparkles } from 'lucide-react';
 import { auth, db } from './firebase';
+import { AuthService } from './services/AuthService';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
 import { analyzeSubtema } from './utils/normalizer';
@@ -92,6 +93,7 @@ export default function App() {
   const [user, setUser] = useState<User | null>(null);
   const [userData, setUserData] = useState<any>(null);
   const [loadingAuth, setLoadingAuth] = useState(true);
+  const [profileError, setProfileError] = useState(false);
   const [loadingAction, setLoadingAction] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -169,16 +171,16 @@ export default function App() {
   }, [user, view]);
 
   useEffect(() => {
-    const isLocalPreview = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
-    if (isLocalPreview && !localStorage.getItem('dr_rodney_guest_user')) {
-      localStorage.setItem('dr_rodney_guest_user', JSON.stringify({
-        uid: 'guest',
-        email: 'local@drrodney.test',
-        displayName: 'Dr. Rodney',
-        photoURL: null,
-        role: 'aspirante',
-        isApproved: true,
-      }));
+    // Clear the automatic preview account left by older local builds.
+    const savedGuest = localStorage.getItem('dr_rodney_guest_user');
+    if (savedGuest) {
+      try {
+        if (JSON.parse(savedGuest).email === 'local@drrodney.test') {
+          localStorage.removeItem('dr_rodney_guest_user');
+        }
+      } catch {
+        localStorage.removeItem('dr_rodney_guest_user');
+      }
     }
     const guestUserStr = localStorage.getItem('dr_rodney_guest_user');
     if (guestUserStr) {
@@ -195,24 +197,44 @@ export default function App() {
     }
 
     let unsubDoc: (() => void) | null = null;
+    let generation = 0;
 
-    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      const currentGeneration = ++generation;
+      setUserData(null);
+      setProfileError(false);
       if (unsubDoc) {
         unsubDoc();
         unsubDoc = null;
       }
 
       if (firebaseUser) {
+        setLoadingAuth(true);
         setUser(firebaseUser);
+        try {
+          await AuthService.ensureUserProfile(firebaseUser);
+        } catch (error) {
+          if (currentGeneration !== generation) return;
+          console.error('Error al crear el perfil del usuario:', error);
+          setProfileError(true);
+          setLoadingAuth(false);
+          return;
+        }
+        if (currentGeneration !== generation) return;
         const docRef = doc(db, 'users', firebaseUser.uid);
         unsubDoc = onSnapshot(docRef, (docSnap) => {
+          if (currentGeneration !== generation) return;
+          setProfileError(!docSnap.exists());
           if (docSnap.exists()) {
             setUserData(docSnap.data());
+          } else {
+            setUserData(null);
           }
           setLoadingAuth(false);
         }, (error) => {
+          if (currentGeneration !== generation) return;
           console.error("Error al obtener datos del usuario:", error);
-          // Si hay error de permisos, igual quitamos el loading para no trabar la app
+          setProfileError(true);
           setLoadingAuth(false); 
         });
       } else {
@@ -223,6 +245,7 @@ export default function App() {
     });
 
     return () => {
+      generation++;
       unsubscribe();
       if (unsubDoc) {
         unsubDoc();
@@ -875,6 +898,16 @@ export default function App() {
 
   if (!user) {
     return <LoginView />;
+  }
+
+  if (profileError || !userData) {
+    return (
+      <main className="min-h-screen bg-[#0A0A0A] text-white flex flex-col items-center justify-center gap-4 p-6">
+        <p role="alert">No pudimos guardar o cargar tu perfil. Revisá la conexión y los permisos de Firebase.</p>
+        <button onClick={() => window.location.reload()}>Reintentar</button>
+        <button onClick={() => AuthService.logout()}>Cerrar sesión</button>
+      </main>
+    );
   }
 
   if (userData && !userData.isApproved) {
