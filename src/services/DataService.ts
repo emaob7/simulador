@@ -1,37 +1,69 @@
 import { Session, UserProgress, QuestionBookmark } from '../types';
 import { auth, db } from '../firebase';
 import { collection, addDoc, getDocs, query, where, deleteDoc, doc, setDoc, writeBatch } from 'firebase/firestore';
-import { handleFirestoreError } from '../lib/firebaseUtils';
 
 const isGuest = () => !auth.currentUser && !!localStorage.getItem('dr_rodney_guest_user');
 
+// Variable en memoria para no reintentar lecturas costosas si la cuota de Firestore fue superada
+let quotaExceeded = false;
+
+// Helpers de caché local ultra-rápido y a prueba de cuota
+const getCache = <T>(key: string): T[] => {
+  try {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : [];
+  } catch (e) {
+    return [];
+  }
+};
+
+const setCache = <T>(key: string, data: T[]) => {
+  try {
+    localStorage.setItem(key, JSON.stringify(data));
+  } catch (e) {
+    console.warn("LocalStorage no disponible o lleno:", e);
+  }
+};
+
 export const DataService = {
   saveSession: async (session: Session) => {
-    if (isGuest()) {
-      const sessions = JSON.parse(localStorage.getItem('dr_sessions') || '[]');
-      sessions.push({ ...session, id: `s_${Date.now()}` });
-      localStorage.setItem('dr_sessions', JSON.stringify(sessions));
+    const uid = auth.currentUser?.uid || 'guest';
+    const cacheKey = `dr_sessions_${uid}`;
+    const localSessions = getCache<any>(cacheKey);
+    const newSession = { ...session, id: session.id || `s_${Date.now()}` };
+    localSessions.push(newSession);
+    setCache(cacheKey, localSessions);
+
+    if (isGuest() || quotaExceeded) {
       return;
     }
+
     try {
       await addDoc(collection(db, "sessions"), {
         ...session,
         date: session.date.toISOString() 
-      }).catch(e => handleFirestoreError(e, 'create', 'sessions'));
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error adding session document: ", e);
+      });
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+        console.warn("Firestore cuota diaria agotada (sesión guardada localmente)");
+      } else {
+        console.warn("Error guardando sesión en Firestore (guardada localmente):", e);
+      }
     }
   },
   
   getSessions: async (userId: string): Promise<Session[]> => {
-    if (isGuest()) {
-        const sessions = JSON.parse(localStorage.getItem('dr_sessions') || '[]');
-        return sessions.map((s: any) => ({ ...s, date: new Date(s.date) }));
+    const cacheKey = `dr_sessions_${userId}`;
+    const cached = getCache<any>(cacheKey).map((s: any) => ({ ...s, date: new Date(s.date) }));
+
+    if (isGuest() || quotaExceeded) {
+      return cached;
     }
+
     try {
       const q = query(collection(db, "sessions"), where("user_id", "==", userId));
-      const querySnapshot = await getDocs(q).catch(e => handleFirestoreError(e, 'list', 'sessions'));
+      const querySnapshot = await getDocs(q);
       const sessions: Session[] = [];
       querySnapshot.forEach((doc) => {
         const data = doc.data();
@@ -40,86 +72,69 @@ export const DataService = {
           date: new Date(data.date)
         } as Session);
       });
+      setCache(cacheKey, sessions);
       return sessions;
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error getting sessions: ", e);
-      return [];
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+        console.warn("Firestore cuota diaria superada, cargando sesiones desde caché local.");
+      } else {
+        console.warn("Error obteniendo sesiones de Firestore, usando caché local:", e);
+      }
+      return cached;
     }
   },
 
   getAllSessions: async (): Promise<Session[]> => {
-    if (isGuest()) {
-        const sessions = JSON.parse(localStorage.getItem('dr_sessions') || '[]');
-        return sessions.map((s: any) => ({ ...s, date: new Date(s.date) }));
-    }
-    try {
-      const querySnapshot = await getDocs(collection(db, "sessions")).catch(e => handleFirestoreError(e, 'list', 'sessions'));
-      const sessions: Session[] = [];
-      querySnapshot.forEach((doc) => {
-        const data = doc.data();
-        sessions.push({
-          ...data,
-          date: new Date(data.date)
-        } as Session);
-      });
-      return sessions;
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error getting all sessions: ", e);
-      return [];
-    }
+    const uid = auth.currentUser?.uid || 'guest';
+    return DataService.getSessions(uid);
   },
   
   saveProgress: async (userProgress: UserProgress) => {
-    if (isGuest()) {
-        const progress = JSON.parse(localStorage.getItem('dr_progress') || '[]');
-        progress.push({ ...userProgress, id: `p_${Date.now()}` });
-        localStorage.setItem('dr_progress', JSON.stringify(progress));
-        return;
+    const uid = userProgress.user_id || auth.currentUser?.uid || 'guest';
+    const cacheKey = `dr_progress_${uid}`;
+    const localProgress = getCache<any>(cacheKey);
+    
+    // Evitar duplicados por question_id en caché local
+    const filtered = localProgress.filter((p: any) => p.question_id !== userProgress.question_id);
+    filtered.push({ ...userProgress, id: `p_${Date.now()}` });
+    setCache(cacheKey, filtered);
+
+    if (isGuest() || quotaExceeded) {
+      return;
     }
+
     try {
       await addDoc(collection(db, "progress"), {
         ...userProgress,
         date: userProgress.date.toISOString()
-      }).catch(e => handleFirestoreError(e, 'create', 'progress'));
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error adding progress document: ", e);
+      });
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+        console.warn("Firestore cuota diaria agotada (progreso guardado localmente)");
+      } else {
+        console.warn("Error guardando progreso en Firestore (guardado localmente):", e);
+      }
     }
   },
 
   saveProgressList: async (progressList: UserProgress[]) => {
     if (!progressList || progressList.length === 0) return;
-    if (isGuest()) {
-        const progress = JSON.parse(localStorage.getItem('dr_progress') || '[]');
-        const withIds = progressList.map((p, idx) => ({ ...p, id: `p_${Date.now()}_${idx}` }));
-        progress.push(...withIds);
-        localStorage.setItem('dr_progress', JSON.stringify(progress));
-        return;
-    }
-    try {
-      const promises = progressList.map(item => 
-        addDoc(collection(db, "progress"), {
-          ...item,
-          date: item.date.toISOString()
-        }).catch(e => handleFirestoreError(e, 'create', 'progress'))
-      );
-      await Promise.all(promises);
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error batch saving progress: ", e);
-    }
+    return DataService.saveProgressBatch(progressList);
   },
   
   getProgress: async (userId: string): Promise<UserProgress[]> => {
-    if (isGuest()) {
-        const progress = JSON.parse(localStorage.getItem('dr_progress') || '[]');
-        return progress.map((p: any) => ({ ...p, date: new Date(p.date) }));
+    const cacheKey = `dr_progress_${userId}`;
+    const cached = getCache<any>(cacheKey).map((p: any) => ({ ...p, date: new Date(p.date) }));
+
+    if (isGuest() || quotaExceeded) {
+      return cached;
     }
+
     try {
       const q = query(collection(db, "progress"), where("user_id", "==", userId));
-      const querySnapshot = await getDocs(q).catch(e => handleFirestoreError(e, 'list', 'progress'));
+      const querySnapshot = await getDocs(q);
       const progress: UserProgress[] = [];
       querySnapshot.forEach((doc) => {
         const data = doc.data();
@@ -128,73 +143,84 @@ export const DataService = {
           date: new Date(data.date)
         } as UserProgress);
       });
+
+      // Sincronizar elementos locales que falten
+      const seen = new Set(progress.map(p => p.question_id));
+      cached.forEach(c => {
+        if (!seen.has(c.question_id)) {
+          progress.push(c);
+        }
+      });
+
+      setCache(cacheKey, progress);
       return progress;
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error getting progress: ", e);
-      return [];
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+        console.warn("Firestore cuota diaria superada, cargando progreso desde caché local.");
+      } else {
+        console.warn("Error obteniendo progreso de Firestore, usando caché local:", e);
+      }
+      return cached;
     }
   },
 
   getAllProgress: async (): Promise<UserProgress[]> => {
-    if (isGuest()) {
-        const progress = JSON.parse(localStorage.getItem('dr_progress') || '[]');
-        return progress.map((p: any) => ({ ...p, date: new Date(p.date) }));
-    }
-    try {
-      const querySnapshot = await getDocs(collection(db, "progress")).catch(e => handleFirestoreError(e, 'list', 'progress'));
-      const progress: UserProgress[] = [];
-      querySnapshot.forEach((doc) => {
-        const data = doc.data();
-        progress.push({
-          ...data,
-          date: new Date(data.date)
-        } as UserProgress);
-      });
-      return progress;
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error getting all progress: ", e);
-      return [];
-    }
+    const uid = auth.currentUser?.uid || 'guest';
+    return DataService.getProgress(uid);
   },
 
   resetUserData: async (userId: string) => {
-    if (isGuest()) {
-        localStorage.removeItem('dr_sessions');
-        localStorage.removeItem('dr_progress');
-        return;
+    const sessionsKey = `dr_sessions_${userId}`;
+    const progressKey = `dr_progress_${userId}`;
+    const bookmarksKey = `dr_bookmarks_${userId}`;
+    localStorage.removeItem(sessionsKey);
+    localStorage.removeItem(progressKey);
+    localStorage.removeItem(bookmarksKey);
+    localStorage.removeItem('dr_sessions');
+    localStorage.removeItem('dr_progress');
+    localStorage.removeItem('dr_bookmarks');
+
+    if (isGuest() || quotaExceeded) {
+      return;
     }
+
     try {
       const sessionsQuery = query(collection(db, "sessions"), where("user_id", "==", userId));
-      const sessionsSnapshot = await getDocs(sessionsQuery).catch(e => handleFirestoreError(e, 'list', 'sessions'));
-      const sessionDeletes = sessionsSnapshot.docs.map(d => deleteDoc(doc(db, "sessions", d.id)).catch(e => handleFirestoreError(e, 'delete', `sessions/${d.id}`)));
+      const sessionsSnapshot = await getDocs(sessionsQuery);
+      const sessionDeletes = sessionsSnapshot.docs.map(d => deleteDoc(doc(db, "sessions", d.id)));
 
       const progressQuery = query(collection(db, "progress"), where("user_id", "==", userId));
-      const progressSnapshot = await getDocs(progressQuery).catch(e => handleFirestoreError(e, 'list', 'progress'));
-      const progressDeletes = progressSnapshot.docs.map(d => deleteDoc(doc(db, "progress", d.id)).catch(e => handleFirestoreError(e, 'delete', `progress/${d.id}`)));
+      const progressSnapshot = await getDocs(progressQuery);
+      const progressDeletes = progressSnapshot.docs.map(d => deleteDoc(doc(db, "progress", d.id)));
 
-      // Also reset bookmarks
       const bookmarksQuery = query(collection(db, "bookmarks"), where("user_id", "==", userId));
-      const bookmarksSnapshot = await getDocs(bookmarksQuery).catch(e => handleFirestoreError(e, 'list', 'bookmarks'));
-      const bookmarkDeletes = bookmarksSnapshot.docs.map(d => deleteDoc(doc(db, "bookmarks", d.id)).catch(e => handleFirestoreError(e, 'delete', `bookmarks/${d.id}`)));
+      const bookmarksSnapshot = await getDocs(bookmarksQuery);
+      const bookmarkDeletes = bookmarksSnapshot.docs.map(d => deleteDoc(doc(db, "bookmarks", d.id)));
 
-      await Promise.all([...sessionDeletes, ...progressDeletes, ...bookmarkDeletes]);
-      console.log('User data reset successfully.');
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error resetting user data: ", e);
-      throw e;
+      await Promise.allSettled([...sessionDeletes, ...progressDeletes, ...bookmarkDeletes]);
+    } catch (e: any) {
+      console.warn("Error reseteando datos remotos:", e);
     }
   },
 
   saveProgressBatch: async (progressRecords: UserProgress[]) => {
-    if (isGuest()) {
-      const progress = JSON.parse(localStorage.getItem('dr_progress') || '[]');
-      const newProgress = progressRecords.map((p, idx) => ({ ...p, id: `p_${Date.now()}_${idx}`, date: p.date.toISOString() }));
-      localStorage.setItem('dr_progress', JSON.stringify([...progress, ...newProgress]));
+    if (!progressRecords || progressRecords.length === 0) return;
+    const uid = progressRecords[0]?.user_id || auth.currentUser?.uid || 'guest';
+    const cacheKey = `dr_progress_${uid}`;
+    const localProgress = getCache<any>(cacheKey);
+    
+    const incomingMap = new Map(progressRecords.map(p => [p.question_id, p]));
+    const updated = localProgress.filter((p: any) => !incomingMap.has(p.question_id));
+    progressRecords.forEach((p, idx) => {
+      updated.push({ ...p, id: `p_${Date.now()}_${idx}`, date: p.date.toISOString() });
+    });
+    setCache(cacheKey, updated);
+
+    if (isGuest() || quotaExceeded) {
       return;
     }
+
     try {
       const batchLimit = 400;
       for (let i = 0; i < progressRecords.length; i += batchLimit) {
@@ -207,60 +233,77 @@ export const DataService = {
             date: record.date.toISOString()
           });
         });
-        await batch.commit().catch(e => handleFirestoreError(e, 'write', 'progress'));
+        await batch.commit();
       }
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error committing progress batch: ", e);
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+        console.warn("Firestore cuota agotada al guardar batch (guardado localmente con éxito)");
+      } else {
+        console.warn("Error al guardar lote en Firestore (guardado en caché local):", e);
+      }
     }
   },
 
   addBookmark: async (userId: string, questionId: string) => {
-    if (isGuest()) {
-      const bookmarks = JSON.parse(localStorage.getItem('dr_bookmarks') || '[]');
-      if (!bookmarks.some((b: any) => b.question_id === questionId)) {
-        bookmarks.push({ user_id: userId, question_id: questionId, date: new Date().toISOString() });
-        localStorage.setItem('dr_bookmarks', JSON.stringify(bookmarks));
-      }
+    const cacheKey = `dr_bookmarks_${userId}`;
+    const bookmarks = getCache<any>(cacheKey);
+    if (!bookmarks.some((b: any) => b.question_id === questionId)) {
+      bookmarks.push({ user_id: userId, question_id: questionId, date: new Date().toISOString() });
+      setCache(cacheKey, bookmarks);
+    }
+
+    if (isGuest() || quotaExceeded) {
       return;
     }
+
     try {
       const docId = `${userId}_${questionId}`;
       await setDoc(doc(db, "bookmarks", docId), {
         user_id: userId,
         question_id: questionId,
         date: new Date().toISOString()
-      }).catch(e => handleFirestoreError(e, 'create', 'bookmarks'));
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error adding bookmark: ", e);
+      });
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+      }
+      console.warn("Error agregando marcador a Firestore (guardado localmente):", e);
     }
   },
 
   removeBookmark: async (userId: string, questionId: string) => {
-    if (isGuest()) {
-      const bookmarks = JSON.parse(localStorage.getItem('dr_bookmarks') || '[]');
-      const filtered = bookmarks.filter((b: any) => b.question_id !== questionId);
-      localStorage.setItem('dr_bookmarks', JSON.stringify(filtered));
+    const cacheKey = `dr_bookmarks_${userId}`;
+    const bookmarks = getCache<any>(cacheKey);
+    const filtered = bookmarks.filter((b: any) => b.question_id !== questionId);
+    setCache(cacheKey, filtered);
+
+    if (isGuest() || quotaExceeded) {
       return;
     }
+
     try {
       const docId = `${userId}_${questionId}`;
-      await deleteDoc(doc(db, "bookmarks", docId)).catch(e => handleFirestoreError(e, 'delete', `bookmarks/${docId}`));
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error removing bookmark: ", e);
+      await deleteDoc(doc(db, "bookmarks", docId));
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+      }
+      console.warn("Error eliminando marcador de Firestore (eliminado localmente):", e);
     }
   },
 
   getBookmarks: async (userId: string): Promise<QuestionBookmark[]> => {
-    if (isGuest()) {
-      const bookmarks = JSON.parse(localStorage.getItem('dr_bookmarks') || '[]');
-      return bookmarks.map((b: any) => ({ ...b, date: new Date(b.date) }));
+    const cacheKey = `dr_bookmarks_${userId}`;
+    const cached = getCache<any>(cacheKey).map((b: any) => ({ ...b, date: new Date(b.date) }));
+
+    if (isGuest() || quotaExceeded) {
+      return cached;
     }
+
     try {
       const q = query(collection(db, "bookmarks"), where("user_id", "==", userId));
-      const querySnapshot = await getDocs(q).catch(e => handleFirestoreError(e, 'list', 'bookmarks'));
+      const querySnapshot = await getDocs(q);
       const bookmarks: QuestionBookmark[] = [];
       querySnapshot.forEach((doc) => {
         const data = doc.data();
@@ -269,11 +312,16 @@ export const DataService = {
           date: new Date(data.date)
         } as QuestionBookmark);
       });
+      setCache(cacheKey, bookmarks);
       return bookmarks;
-    } catch (e) {
-      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
-      console.error("Error getting bookmarks: ", e);
-      return [];
+    } catch (e: any) {
+      if (e?.code === 'resource-exhausted' || String(e).includes('resource-exhausted')) {
+        quotaExceeded = true;
+        console.warn("Firestore cuota diaria superada, cargando marcadores desde caché local.");
+      } else {
+        console.warn("Error obteniendo marcadores de Firestore, usando caché local:", e);
+      }
+      return cached;
     }
   }
 };

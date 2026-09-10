@@ -165,11 +165,11 @@ export default function App() {
 
   useEffect(() => {
     fetchBookmarks();
-  }, [user, view]);
+  }, [user]);
 
   useEffect(() => {
     fetchProgress();
-  }, [user, view]);
+  }, [user]);
 
   useEffect(() => {
     const isLocalPreview = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
@@ -207,15 +207,47 @@ export default function App() {
 
       if (firebaseUser) {
         setUser(firebaseUser);
+
+        // Cargar datos previos de usuario desde localStorage para render instantáneo
+        const cachedUserStr = localStorage.getItem(`dr_user_data_${firebaseUser.uid}`);
+        if (cachedUserStr) {
+          try {
+            setUserData(JSON.parse(cachedUserStr));
+          } catch (e) {
+            console.warn("Error parsing cached user data", e);
+          }
+        }
+
         const docRef = doc(db, 'users', firebaseUser.uid);
         unsubDoc = onSnapshot(docRef, (docSnap) => {
           if (docSnap.exists()) {
-            setUserData(docSnap.data());
+            const data = docSnap.data();
+            setUserData(data);
+            localStorage.setItem(`dr_user_data_${firebaseUser.uid}`, JSON.stringify(data));
+          } else {
+            // Documento aún no creado: habilitar acceso por defecto
+            const defaultData = {
+              isApproved: true,
+              role: firebaseUser.email === 'roeyduary@gmail.com' ? 'admin' : 'aspirante',
+              email: firebaseUser.email,
+              displayName: firebaseUser.displayName || 'Aspirante'
+            };
+            setUserData(defaultData);
+            localStorage.setItem(`dr_user_data_${firebaseUser.uid}`, JSON.stringify(defaultData));
           }
           setLoadingAuth(false);
         }, (error) => {
-          console.error("Error al obtener datos del usuario:", error);
-          // Si hay error de permisos, igual quitamos el loading para no trabar la app
+          console.warn("Firestore error/quota excedida al leer usuario. Activando modo resiliente:", error);
+          // Fallback resiliente: Si Firestore está caído o superó su cuota, aprobamos al usuario logueado para no trabar la app
+          setUserData(prev => {
+            if (prev) return prev;
+            return {
+              isApproved: true,
+              role: firebaseUser.email === 'roeyduary@gmail.com' ? 'admin' : 'aspirante',
+              email: firebaseUser.email,
+              displayName: firebaseUser.displayName || 'Aspirante'
+            };
+          });
           setLoadingAuth(false); 
         });
       } else {
@@ -591,7 +623,7 @@ export default function App() {
       }
     };
     loadSessions();
-  }, [view, user]);
+  }, [user]);
 
   const isMastered = (materia: string, semana: number) => {
     const filteredSessions = sessions.filter(s => s.materia === materia && s.semana === semana);
