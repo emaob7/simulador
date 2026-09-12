@@ -20,16 +20,22 @@ service cloud.firestore {
     // PILLAR 4: Tiered Identity Logic
     function isOwner(userId) { return isSignedIn() && request.auth.uid == userId; }
     
-    // Auth tokens never contain roles. Explicitly look up role from trusted source.
+    // Auth tokens never contain roles. Explicitly look up role from trusted source or superadmins list.
     function isAdmin() { 
-      return isSignedIn() && 
-             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'; 
+      return isSignedIn() && (
+        request.auth.token.email in ['roeyduary@gmail.com', 'emanuelob7@gmail.com'] ||
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) && 
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin')
+      ); 
     }
     
     // Approval Gate
     function isApproved() {
-      return isSignedIn() && 
-             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isApproved == true;
+      return isSignedIn() && (
+        request.auth.token.email in ['roeyduary@gmail.com', 'emanuelob7@gmail.com'] ||
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) && 
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isApproved == true)
+      );
     }
 
     // ---------------------------------------------------------
@@ -40,7 +46,7 @@ service cloud.firestore {
     match /users/{userId} {
       function isValidUser(data) {
         return data.keys().hasAll(['email', 'role', 'isApproved']) && 
-               data.keys().size() <= 6 && // displayName, photoURL, uid (stored as doc id)
+               data.keys().size() <= 10 &&
                data.email is string && data.email.size() <= 100 &&
                data.role in ['admin', 'aspirante'] &&
                data.isApproved is bool;
@@ -49,18 +55,18 @@ service cloud.firestore {
       allow get: if isOwner(userId) || isAdmin();
       
       // ADMINS can list all users to approve them
-      // EVALUATION WARNING: O(N) cost if many results, but required for AdminView
       allow list: if isAdmin(); 
 
       allow create: if isOwner(userId) && 
-                      isValidUser(incoming()) && 
-                      incoming().role == 'aspirante' && 
-                      incoming().isApproved == false;
+                      isValidUser(incoming()) && (
+                        isAdmin() || 
+                        (incoming().role == 'aspirante' && incoming().isApproved == false)
+                      );
       
       allow update: if (
         isSignedIn() && (
-          // ACTION: Admin Management (Approve/Revoke)
-          (isAdmin() && incoming().diff(existing()).affectedKeys().hasOnly(['isApproved', 'role'])) ||
+          // ACTION: Admin Management (Approve/Revoke or change role)
+          isAdmin() ||
           
           // ACTION: User Profile Edit
           (isOwner(userId) && 
@@ -69,6 +75,8 @@ service cloud.firestore {
            incoming().isApproved == existing().isApproved)
         )
       );
+
+      allow delete: if isAdmin();
     }
 
     // SESSIONS COLLECTION

@@ -225,25 +225,31 @@ export default function App() {
             setUserData(data);
             localStorage.setItem(`dr_user_data_${firebaseUser.uid}`, JSON.stringify(data));
           } else {
-            // Documento aún no creado: habilitar acceso por defecto
+            // Documento aún no creado: registrar al usuario en Firestore y marcar pendiente si es alumno
+            const isAdmin = firebaseUser.email === 'roeyduary@gmail.com' || firebaseUser.email === 'emanuelob7@gmail.com';
             const defaultData = {
-              isApproved: true,
-              role: firebaseUser.email === 'roeyduary@gmail.com' ? 'admin' : 'aspirante',
+              uid: firebaseUser.uid,
+              isApproved: isAdmin,
+              role: isAdmin ? 'admin' : 'aspirante',
               email: firebaseUser.email,
-              displayName: firebaseUser.displayName || 'Aspirante'
+              displayName: firebaseUser.displayName || 'Aspirante',
+              photoURL: firebaseUser.photoURL || '',
+              createdAt: new Date().toISOString()
             };
             setUserData(defaultData);
             localStorage.setItem(`dr_user_data_${firebaseUser.uid}`, JSON.stringify(defaultData));
+            AuthService.ensureUserDoc(firebaseUser);
           }
           setLoadingAuth(false);
         }, (error) => {
           console.warn("Firestore error/quota excedida al leer usuario. Activando modo resiliente:", error);
-          // Fallback resiliente: Si Firestore está caído o superó su cuota, aprobamos al usuario logueado para no trabar la app
+          const isAdmin = firebaseUser.email === 'roeyduary@gmail.com' || firebaseUser.email === 'emanuelob7@gmail.com';
           setUserData(prev => {
             if (prev) return prev;
             return {
-              isApproved: true,
-              role: firebaseUser.email === 'roeyduary@gmail.com' ? 'admin' : 'aspirante',
+              uid: firebaseUser.uid,
+              isApproved: isAdmin,
+              role: isAdmin ? 'admin' : 'aspirante',
               email: firebaseUser.email,
               displayName: firebaseUser.displayName || 'Aspirante'
             };

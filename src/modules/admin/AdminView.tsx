@@ -4,7 +4,7 @@ import { DataService } from '../../services/DataService';
 import { MockDataService } from '../../services/MockDataService';
 import { Session, UserProgress } from '../../types';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, CartesianGrid } from 'recharts';
-import { Search, Clock, CheckCircle2, Users } from 'lucide-react';
+import { Search, Clock, CheckCircle2, Users, RefreshCw } from 'lucide-react';
 
 export function AdminView() {
   const [activeTab, setActiveTab] = useState<'users' | 'analytics'>('users');
@@ -28,9 +28,14 @@ export function AdminView() {
 
   const loadUsers = async () => {
     setLoading(true);
-    const data = await AuthService.getUsers();
-    setUsers(data);
-    setLoading(false);
+    try {
+      const data = await AuthService.getUsers();
+      setUsers(data);
+    } catch (e) {
+      console.error("Error al cargar usuarios en AdminView:", e);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const loadAnalytics = async () => {
@@ -199,39 +204,50 @@ export function AdminView() {
               </p>
             </div>
 
-            {/* Quick Status Filter Tabs */}
-            <div className="flex items-center gap-2 bg-white/5 p-1 rounded-2xl border border-white/5">
+            <div className="flex items-center gap-3">
+              {/* Quick Status Filter Tabs */}
+              <div className="flex items-center gap-2 bg-white/5 p-1 rounded-2xl border border-white/5">
+                <button
+                  onClick={() => setStatusFilter('all')}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                    statusFilter === 'all'
+                      ? 'bg-primary text-[#0A0A0A] shadow-md'
+                      : 'text-[#A0A0A0] hover:text-white'
+                  }`}
+                >
+                  Todos ({users.length})
+                </button>
+                <button
+                  onClick={() => setStatusFilter('pending')}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    statusFilter === 'pending'
+                      ? 'bg-amber-400 text-black shadow-md font-black'
+                      : 'text-amber-400/80 hover:text-amber-300'
+                  }`}
+                >
+                  <Clock className="w-3.5 h-3.5" />
+                  Pendientes ({pendingUsersCount})
+                </button>
+                <button
+                  onClick={() => setStatusFilter('approved')}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    statusFilter === 'approved'
+                      ? 'bg-emerald-400 text-black shadow-md font-black'
+                      : 'text-emerald-400/80 hover:text-emerald-300'
+                  }`}
+                >
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  Aprobados ({approvedUsersCount})
+                </button>
+              </div>
+
               <button
-                onClick={() => setStatusFilter('all')}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
-                  statusFilter === 'all'
-                    ? 'bg-primary text-[#0A0A0A] shadow-md'
-                    : 'text-[#A0A0A0] hover:text-white'
-                }`}
+                onClick={loadUsers}
+                title="Actualizar lista"
+                disabled={loading}
+                className="p-2.5 bg-white/5 hover:bg-white/10 text-[#A0A0A0] hover:text-white rounded-2xl border border-white/5 transition-all flex items-center justify-center disabled:opacity-50"
               >
-                Todos ({users.length})
-              </button>
-              <button
-                onClick={() => setStatusFilter('pending')}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
-                  statusFilter === 'pending'
-                    ? 'bg-amber-400 text-black shadow-md font-black'
-                    : 'text-amber-400/80 hover:text-amber-300'
-                }`}
-              >
-                <Clock className="w-3.5 h-3.5" />
-                Pendientes ({pendingUsersCount})
-              </button>
-              <button
-                onClick={() => setStatusFilter('approved')}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
-                  statusFilter === 'approved'
-                    ? 'bg-emerald-400 text-black shadow-md font-black'
-                    : 'text-emerald-400/80 hover:text-emerald-300'
-                }`}
-              >
-                <CheckCircle2 className="w-3.5 h-3.5" />
-                Aprobados ({approvedUsersCount})
+                <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-primary' : ''}`} />
               </button>
             </div>
           </div>
