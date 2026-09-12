@@ -157,6 +157,24 @@ export function AdminView() {
     });
   }, [users, searchTerm, statusFilter]);
 
+  const sortedAndFilteredUsers = useMemo(() => {
+    return [...filteredUsers].sort((a, b) => {
+      const statusA = getUserStatus(a);
+      const statusB = getUserStatus(b);
+      // 1. Pendientes SIEMPRE PRIMERO en la lista
+      if (statusA === 'pending' && statusB !== 'pending') return -1;
+      if (statusA !== 'pending' && statusB === 'pending') return 1;
+      // 2. Rechazados al final
+      if (statusA === 'rejected' && statusB !== 'rejected') return 1;
+      if (statusA !== 'rejected' && statusB === 'rejected') return -1;
+      // 3. Más recientes primero
+      const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+      const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+      if (dateA !== dateB) return dateB - dateA;
+      return (a.displayName || a.email || '').localeCompare(b.displayName || b.email || '');
+    });
+  }, [filteredUsers]);
+
   // --- ANALÍTICAS GLOBALES ---
   
   // 1. Precisión Global de la Academia
@@ -340,6 +358,24 @@ export function AdminView() {
             </div>
           </div>
 
+          {/* Alert banner for pending users */}
+          {pendingUsers.length > 0 && statusFilter !== 'pending' && (
+            <div className="mb-6 p-4 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="flex items-center gap-3 text-amber-400">
+                <Clock className="w-5 h-5 flex-shrink-0 animate-pulse" />
+                <span className="text-sm font-semibold">
+                  Tienes <strong className="font-black underline">{pendingUsers.length} aspirantes</strong> esperando aprobación para ingresar.
+                </span>
+              </div>
+              <button
+                onClick={() => setStatusFilter('pending')}
+                className="px-4 py-1.5 bg-amber-400 text-black rounded-xl font-bold text-xs uppercase tracking-wider hover:bg-amber-300 transition-all shadow-md flex-shrink-0"
+              >
+                Ver Pendientes ({pendingUsers.length})
+              </button>
+            </div>
+          )}
+
           {/* Search Bar */}
           <div className="relative mb-6">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A0A0A0]" />
@@ -372,12 +408,18 @@ export function AdminView() {
                 </tr>
               </thead>
               <tbody>
-                {filteredUsers.map(user => {
+                {sortedAndFilteredUsers.map(user => {
                   const status = getUserStatus(user);
                   const isBusy = actionLoading === user.uid || actionLoading === 'all';
+                  const isPending = status === 'pending';
 
                   return (
-                    <tr key={user.uid} className="border-b border-white/5 last:border-0 hover:bg-white/[0.02] transition-colors">
+                    <tr 
+                      key={user.uid} 
+                      className={`border-b border-white/5 last:border-0 hover:bg-white/[0.02] transition-colors ${
+                        isPending ? 'bg-amber-500/[0.04]' : ''
+                      }`}
+                    >
                       <td className="py-4">
                         <div className="flex items-center gap-3">
                           <img 

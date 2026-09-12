@@ -44,35 +44,21 @@ service cloud.firestore {
 
     // USERS COLLECTION
     match /users/{userId} {
-      function isValidUser(data) {
-        return data.keys().hasAll(['email', 'role', 'isApproved']) && 
-               data.keys().size() <= 10 &&
-               data.email is string && data.email.size() <= 100 &&
-               data.role in ['admin', 'aspirante'] &&
-               data.isApproved is bool;
-      }
-
       allow get: if isOwner(userId) || isAdmin();
-      
-      // ADMINS can list all users to approve them
       allow list: if isAdmin(); 
 
-      allow create: if isOwner(userId) && 
-                      isValidUser(incoming()) && (
-                        isAdmin() || 
-                        (incoming().role == 'aspirante' && incoming().isApproved == false)
-                      );
+      // Permite a cualquier usuario registrado crear su perfil (como pendiente si no es admin)
+      allow create: if isOwner(userId) && (
+        isAdmin() || incoming().isApproved == false
+      );
       
+      // Admin tiene permisos totales. El usuario sólo puede actualizar campos no sensibles.
       allow update: if (
         isSignedIn() && (
-          // ACTION: Admin Management (Approve/Revoke or change role)
           isAdmin() ||
-          
-          // ACTION: User Profile Edit
           (isOwner(userId) && 
-           incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL']) &&
-           incoming().role == existing().role && 
-           incoming().isApproved == existing().isApproved)
+           incoming().isApproved == existing().isApproved && 
+           incoming().role == existing().role)
         )
       );
 
