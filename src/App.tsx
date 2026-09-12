@@ -919,7 +919,8 @@ export default function App() {
   }
 
   if (userData && !userData.isApproved) {
-    return <PendingApprovalView />;
+    const isRejected = userData.status === 'rejected' || userData.isRejected === true;
+    return <PendingApprovalView isRejected={isRejected} />;
   }
 
   return (

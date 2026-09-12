@@ -1,6 +1,6 @@
 import { auth, db } from '../firebase';
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc, collection, getDocs } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, deleteDoc, collection, getDocs } from 'firebase/firestore';
 import { handleFirestoreError } from '../lib/firebaseUtils';
 
 const provider = new GoogleAuthProvider();
@@ -23,6 +23,7 @@ export const AuthService = {
           displayName: user.displayName || 'Aspirante',
           photoURL: user.photoURL || '',
           isApproved: isAdmin,
+          status: isAdmin ? 'approved' : 'pending',
           role: isAdmin ? 'admin' : 'aspirante',
           createdAt: new Date().toISOString()
         };
@@ -33,6 +34,7 @@ export const AuthService = {
         if (isAdmin && (!data?.isApproved || data?.role !== 'admin')) {
           await updateDoc(userRef, {
             isApproved: true,
+            status: 'approved',
             role: 'admin'
           }).catch(e => console.warn("Could not update admin role:", e));
         }
@@ -96,8 +98,64 @@ export const AuthService = {
     try {
       const userRef = doc(db, 'users', uid);
       await updateDoc(userRef, {
-        isApproved: !currentStatus
+        isApproved: !currentStatus,
+        status: !currentStatus ? 'approved' : 'rejected'
       }).catch(e => handleFirestoreError(e, 'update', `users/${uid}`));
+    } catch (e) {
+      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
+      throw e;
+    }
+  },
+
+  approveUser: async (uid: string) => {
+    try {
+      const userRef = doc(db, 'users', uid);
+      await updateDoc(userRef, {
+        isApproved: true,
+        status: 'approved',
+        isRejected: false
+      }).catch(e => handleFirestoreError(e, 'update', `users/${uid}`));
+    } catch (e) {
+      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
+      throw e;
+    }
+  },
+
+  rejectUser: async (uid: string) => {
+    try {
+      const userRef = doc(db, 'users', uid);
+      await updateDoc(userRef, {
+        isApproved: false,
+        status: 'rejected',
+        isRejected: true
+      }).catch(e => handleFirestoreError(e, 'update', `users/${uid}`));
+    } catch (e) {
+      if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
+      throw e;
+    }
+  },
+
+  approveAllPending: async (uids: string[]) => {
+    try {
+      const promises = uids.map(uid => {
+        const userRef = doc(db, 'users', uid);
+        return updateDoc(userRef, {
+          isApproved: true,
+          status: 'approved',
+          isRejected: false
+        }).catch(e => console.warn(`Error approving ${uid}`, e));
+      });
+      await Promise.all(promises);
+    } catch (e) {
+      console.error("Error approving all pending:", e);
+      throw e;
+    }
+  },
+
+  deleteUserPermanently: async (uid: string) => {
+    try {
+      const userRef = doc(db, 'users', uid);
+      await deleteDoc(userRef).catch(e => handleFirestoreError(e, 'delete', `users/${uid}`));
     } catch (e) {
       if (e instanceof Error && e.message.includes('FirestoreErrorInfo')) throw e;
       throw e;

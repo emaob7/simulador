@@ -4,7 +4,7 @@ import { DataService } from '../../services/DataService';
 import { MockDataService } from '../../services/MockDataService';
 import { Session, UserProgress } from '../../types';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, CartesianGrid } from 'recharts';
-import { Search, Clock, CheckCircle2, Users, RefreshCw } from 'lucide-react';
+import { Search, Clock, CheckCircle2, Users, RefreshCw, Trash2, Ban, CheckCheck } from 'lucide-react';
 
 export function AdminView() {
   const [activeTab, setActiveTab] = useState<'users' | 'analytics'>('users');
@@ -12,9 +12,10 @@ export function AdminView() {
   const [allSessions, setAllSessions] = useState<Session[]>([]);
   const [allProgress, setAllProgress] = useState<UserProgress[]>([]);
   const [loading, setLoading] = useState(true);
+  const [actionLoading, setActionLoading] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [statusFilter, setStatusFilter] = useState<'all' | 'pending' | 'approved'>('all');
+  const [statusFilter, setStatusFilter] = useState<'all' | 'pending' | 'approved' | 'rejected'>('all');
 
   useEffect(() => {
     loadUsers();
@@ -65,17 +66,80 @@ export function AdminView() {
     }
   };
 
-  const toggleApproval = async (uid: string, currentStatus: boolean) => {
-    await AuthService.toggleUserApproval(uid, currentStatus);
-    loadUsers(); // reload
+  const getUserStatus = (user: any): 'approved' | 'rejected' | 'pending' => {
+    if (user.status === 'rejected' || user.isRejected === true) return 'rejected';
+    if (user.isApproved === true || user.status === 'approved') return 'approved';
+    return 'pending';
   };
 
-  const pendingUsersCount = useMemo(() => {
-    return users.filter(u => !u.isApproved).length;
+  const handleApprove = async (uid: string) => {
+    setActionLoading(uid);
+    try {
+      await AuthService.approveUser(uid);
+      setUsers(prev => prev.map(u => u.uid === uid ? { ...u, isApproved: true, status: 'approved', isRejected: false } : u));
+    } catch (e) {
+      console.error("Error al aprobar aspirante:", e);
+      alert("Hubo un error al aprobar al aspirante.");
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleReject = async (uid: string) => {
+    setActionLoading(uid);
+    try {
+      await AuthService.rejectUser(uid);
+      setUsers(prev => prev.map(u => u.uid === uid ? { ...u, isApproved: false, status: 'rejected', isRejected: true } : u));
+    } catch (e) {
+      console.error("Error al rechazar aspirante:", e);
+      alert("Hubo un error al rechazar al aspirante.");
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleDeletePermanently = async (uid: string, name: string) => {
+    if (!confirm(`¿Estás completamente seguro de ELIMINAR PERMANENTEMENTE a "${name}"?\n\nEsta acción es irreversible y borrará por completo al usuario de la base de datos.`)) {
+      return;
+    }
+    setActionLoading(uid);
+    try {
+      await AuthService.deleteUserPermanently(uid);
+      setUsers(prev => prev.filter(u => u.uid !== uid));
+    } catch (e) {
+      console.error("Error al eliminar permanentemente:", e);
+      alert("Hubo un error al eliminar al usuario permanentemente.");
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleApproveAllPending = async () => {
+    if (pendingUsers.length === 0) return;
+    if (!confirm(`¿Aprobar a los ${pendingUsers.length} aspirantes pendientes de una sola vez?`)) return;
+    setActionLoading('all');
+    try {
+      const uids = pendingUsers.map(u => u.uid);
+      await AuthService.approveAllPending(uids);
+      setUsers(prev => prev.map(u => uids.includes(u.uid) ? { ...u, isApproved: true, status: 'approved', isRejected: false } : u));
+    } catch (e) {
+      console.error("Error al aprobar a todos los pendientes:", e);
+      alert("Hubo un error al aprobar a los aspirantes pendientes.");
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const pendingUsers = useMemo(() => {
+    return users.filter(u => getUserStatus(u) === 'pending');
   }, [users]);
 
-  const approvedUsersCount = useMemo(() => {
-    return users.filter(u => u.isApproved).length;
+  const approvedUsers = useMemo(() => {
+    return users.filter(u => getUserStatus(u) === 'approved');
+  }, [users]);
+
+  const rejectedUsers = useMemo(() => {
+    return users.filter(u => getUserStatus(u) === 'rejected');
   }, [users]);
 
   const filteredUsers = useMemo(() => {
@@ -84,10 +148,10 @@ export function AdminView() {
         (user.displayName || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
         (user.email || '').toLowerCase().includes(searchTerm.toLowerCase());
       
+      const status = getUserStatus(user);
       const matchesStatus = 
         statusFilter === 'all' ? true :
-        statusFilter === 'pending' ? !user.isApproved :
-        user.isApproved;
+        statusFilter === status;
 
       return matchesSearch && matchesStatus;
     });
@@ -204,12 +268,12 @@ export function AdminView() {
               </p>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2 md:gap-3">
               {/* Quick Status Filter Tabs */}
-              <div className="flex items-center gap-2 bg-white/5 p-1 rounded-2xl border border-white/5">
+              <div className="flex flex-wrap items-center gap-1.5 bg-white/5 p-1 rounded-2xl border border-white/5">
                 <button
                   onClick={() => setStatusFilter('all')}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
                     statusFilter === 'all'
                       ? 'bg-primary text-[#0A0A0A] shadow-md'
                       : 'text-[#A0A0A0] hover:text-white'
@@ -219,27 +283,51 @@ export function AdminView() {
                 </button>
                 <button
                   onClick={() => setStatusFilter('pending')}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
                     statusFilter === 'pending'
                       ? 'bg-amber-400 text-black shadow-md font-black'
                       : 'text-amber-400/80 hover:text-amber-300'
                   }`}
                 >
                   <Clock className="w-3.5 h-3.5" />
-                  Pendientes ({pendingUsersCount})
+                  Pendientes ({pendingUsers.length})
                 </button>
                 <button
                   onClick={() => setStatusFilter('approved')}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
                     statusFilter === 'approved'
                       ? 'bg-emerald-400 text-black shadow-md font-black'
                       : 'text-emerald-400/80 hover:text-emerald-300'
                   }`}
                 >
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  Aprobados ({approvedUsersCount})
+                  Aprobados ({approvedUsers.length})
+                </button>
+                <button
+                  onClick={() => setStatusFilter('rejected')}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    statusFilter === 'rejected'
+                      ? 'bg-red-500 text-white shadow-md font-black'
+                      : 'text-red-400/80 hover:text-red-300'
+                  }`}
+                >
+                  <Ban className="w-3.5 h-3.5" />
+                  Rechazados ({rejectedUsers.length})
                 </button>
               </div>
+
+              {/* Botón de Aprobar Todos los Pendientes */}
+              {pendingUsers.length > 0 && (
+                <button
+                  onClick={handleApproveAllPending}
+                  disabled={actionLoading !== null}
+                  className="px-3.5 py-1.5 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 hover:text-emerald-300 border border-emerald-500/30 rounded-2xl text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95 disabled:opacity-50"
+                  title="Aprobar a todos los aspirantes pendientes a la vez"
+                >
+                  <CheckCheck className="w-3.5 h-3.5" />
+                  Aprobar Todos ({pendingUsers.length})
+                </button>
+              )}
 
               <button
                 onClick={loadUsers}
@@ -280,51 +368,103 @@ export function AdminView() {
                   <th className="pb-4 font-bold">Email</th>
                   <th className="pb-4 font-bold">Rol</th>
                   <th className="pb-4 font-bold">Estado</th>
-                  <th className="pb-4 font-bold text-right">Acción</th>
+                  <th className="pb-4 font-bold text-right">Acciones</th>
                 </tr>
               </thead>
               <tbody>
-                {filteredUsers.map(user => (
-                  <tr key={user.uid} className="border-b border-white/5 last:border-0 hover:bg-white/[0.02] transition-colors">
-                    <td className="py-4">
-                      <div className="flex items-center gap-3">
-                        <img 
-                          src={user.photoURL || 'https://via.placeholder.com/40'} 
-                          alt="avatar" 
-                          className="w-10 h-10 rounded-full border-2 border-white/10 shadow-lg" 
-                          referrerPolicy="no-referrer"
-                        />
-                        <span className="font-bold text-white whitespace-nowrap">{user.displayName || 'Sin nombre'}</span>
-                      </div>
-                    </td>
-                    <td className="py-4 text-[#A0A0A0] text-sm">{user.email}</td>
-                    <td className="py-4">
-                      <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest ${user.role === 'admin' ? 'bg-primary/20 text-primary' : 'bg-white/5 text-[#A0A0A0]'}`}>
-                        {user.role}
-                      </span>
-                    </td>
-                    <td className="py-4">
-                      <span className={`flex items-center gap-2 text-sm font-bold ${user.isApproved ? 'text-emerald-400' : 'text-amber-400'}`}>
-                        <span className={`w-2 h-2 rounded-full ${user.isApproved ? 'bg-emerald-400' : 'bg-amber-400'} shadow-[0_0_10px_rgba(52,211,153,0.3)]`}></span>
-                        {user.isApproved ? 'Aprobado' : 'Pendiente'}
-                      </span>
-                    </td>
-                    <td className="py-4 text-right">
-                      {user.role !== 'admin' && (
-                        <button 
-                          onClick={() => toggleApproval(user.uid, user.isApproved)}
-                          className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest transition-all ${
-                            user.isApproved 
-                              ? 'bg-red-950/20 text-red-400 hover:bg-red-900/20 border border-red-500/20' 
-                              : 'bg-emerald-950/20 text-emerald-400 hover:bg-emerald-900/20 border border-emerald-500/20'
-                          }`}
-                        >
-                          {user.isApproved ? 'Revocar' : 'Aprobar'}
-                        </button>
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                {filteredUsers.map(user => {
+                  const status = getUserStatus(user);
+                  const isBusy = actionLoading === user.uid || actionLoading === 'all';
+
+                  return (
+                    <tr key={user.uid} className="border-b border-white/5 last:border-0 hover:bg-white/[0.02] transition-colors">
+                      <td className="py-4">
+                        <div className="flex items-center gap-3">
+                          <img 
+                            src={user.photoURL || 'https://via.placeholder.com/40'} 
+                            alt="avatar" 
+                            className="w-10 h-10 rounded-full border-2 border-white/10 shadow-lg object-cover" 
+                            referrerPolicy="no-referrer"
+                          />
+                          <div className="flex flex-col">
+                            <span className="font-bold text-white whitespace-nowrap">{user.displayName || 'Sin nombre'}</span>
+                            {user.createdAt && (
+                              <span className="text-[10px] text-[#666666]">
+                                Reg: {new Date(user.createdAt).toLocaleDateString('es-PY')}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </td>
+                      <td className="py-4 text-[#A0A0A0] text-sm">{user.email}</td>
+                      <td className="py-4">
+                        <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest ${user.role === 'admin' ? 'bg-primary/20 text-primary border border-primary/30' : 'bg-white/5 text-[#A0A0A0]'}`}>
+                          {user.role}
+                        </span>
+                      </td>
+                      <td className="py-4">
+                        {status === 'approved' && (
+                          <span className="flex items-center gap-2 text-xs font-bold text-emerald-400">
+                            <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.5)]"></span>
+                            Aprobado
+                          </span>
+                        )}
+                        {status === 'pending' && (
+                          <span className="flex items-center gap-2 text-xs font-bold text-amber-400">
+                            <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.5)]"></span>
+                            Pendiente
+                          </span>
+                        )}
+                        {status === 'rejected' && (
+                          <span className="flex items-center gap-2 text-xs font-bold text-red-400">
+                            <span className="w-2 h-2 rounded-full bg-red-400 shadow-[0_0_10px_rgba(248,113,113,0.5)]"></span>
+                            Rechazado
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-4 text-right">
+                        {user.role !== 'admin' ? (
+                          <div className="flex items-center justify-end gap-2">
+                            {status !== 'approved' && (
+                              <button 
+                                onClick={() => handleApprove(user.uid)}
+                                disabled={isBusy}
+                                title="Aprobar aspirante"
+                                className="px-3 py-1.5 bg-emerald-950/40 hover:bg-emerald-900/60 text-emerald-400 hover:text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/50 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 disabled:opacity-50"
+                              >
+                                <CheckCircle2 className="w-3.5 h-3.5" />
+                                <span>Aprobar</span>
+                              </button>
+                            )}
+                            {status !== 'rejected' && (
+                              <button 
+                                onClick={() => handleReject(user.uid)}
+                                disabled={isBusy}
+                                title="Rechazar aspirante"
+                                className="px-3 py-1.5 bg-amber-950/40 hover:bg-amber-900/60 text-amber-400 hover:text-amber-300 border border-amber-500/30 hover:border-amber-500/50 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 disabled:opacity-50"
+                              >
+                                <Ban className="w-3.5 h-3.5" />
+                                <span>Rechazar</span>
+                              </button>
+                            )}
+                            <button 
+                              onClick={() => handleDeletePermanently(user.uid, user.displayName || user.email)}
+                              disabled={isBusy}
+                              title="Eliminar permanentemente de la base de datos"
+                              className="p-1.5 bg-red-950/40 hover:bg-red-900/80 text-red-400 hover:text-red-200 border border-red-500/30 hover:border-red-500/60 rounded-xl transition-all active:scale-95 disabled:opacity-50"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        ) : (
+                          <span className="text-[10px] font-bold text-primary/70 uppercase tracking-widest px-2.5 py-1 bg-primary/10 rounded-lg border border-primary/20">
+                            Super Admin
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
 
                 {filteredUsers.length === 0 && (
                   <tr>
