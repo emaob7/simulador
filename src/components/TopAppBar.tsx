@@ -32,6 +32,11 @@ export function TopAppBar({
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
+  const totalQuestionsFormatted = React.useMemo(() => {
+    const count = allQuestions.length || 2405;
+    return count.toLocaleString('es-PY');
+  }, [allQuestions]);
+
   const searchResults = searchQuery.trim().length >= 2 
     ? allQuestions.filter(q => 
         q.text.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -48,25 +53,18 @@ export function TopAppBar({
         {/* Toggle Button for Sidebar (Always Active & Visible) */}
         <button 
           onClick={onToggleSidebar}
-          className="p-2.5 rounded-xl bg-[#2E2E2E] hover:bg-[#2E2E2E]/80 text-[#A6A6A6] hover:text-[#E0AF26] border border-[#424242] hover:border-[#C6A84A]/40 transition-all duration-200 cursor-pointer flex items-center gap-2 group shadow-sm shrink-0"
+          className="p-2 text-[#A6A6A6] hover:text-[#FFFFFF] hover:bg-[#1E1E1E] rounded-xl transition-colors border border-[#424242]"
           title={isSidebarCollapsed ? "Expandir barra lateral" : "Colapsar barra lateral"}
         >
           {isSidebarCollapsed ? (
-            <PanelLeftOpen className="w-5 h-5 group-hover:scale-110 transition-transform text-[#E0AF26]" />
+            <PanelLeftOpen className="w-5 h-5 text-[#E0AF26]" />
           ) : (
-            <PanelLeftClose className="w-5 h-5 group-hover:scale-110 transition-transform text-[#E0AF26]" />
+            <PanelLeftClose className="w-5 h-5" />
           )}
-          <span className="hidden sm:inline text-[11px] font-bold uppercase tracking-wider text-[#A6A6A6] group-hover:text-[#E0AF26]">
-            Menú
-          </span>
         </button>
-
-        <div className="flex items-center gap-2 truncate">
-          <span className="w-2 h-2 rounded-full bg-[#C6A84A] animate-pulse shrink-0 hidden sm:block"></span>
-          <span className="text-[#FFFFFF] font-manrope font-extrabold text-sm md:text-base truncate">
-            {title}
-          </span>
-        </div>
+        <h1 className="text-sm md:text-base font-black tracking-wider uppercase text-white truncate">
+          {title}
+        </h1>
       </div>
 
       {/* RIGHT: SEARCH, BOOKMARKS & PROFILE */}
@@ -83,7 +81,7 @@ export function TopAppBar({
               }}
               onFocus={() => setIsSearchOpen(true)}
               className="bg-[#1C1C1C] border border-[#424242] focus:border-[#C6A84A] focus:ring-1 focus:ring-[#C6A84A] text-xs py-2 pl-9 pr-8 w-36 sm:w-56 md:w-72 rounded-xl text-[#FFFFFF] placeholder:text-[#A6A6A6] transition-all outline-none shadow-inner" 
-              placeholder="Buscar en 2.298 preguntas..." 
+              placeholder={`Buscar en ${totalQuestionsFormatted} preguntas...`} 
               type="text" 
             />
             <Search className="w-4 h-4 absolute left-3 text-[#A6A6A6] pointer-events-none" />

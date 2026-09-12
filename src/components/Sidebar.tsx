@@ -45,6 +45,16 @@ export function Sidebar({
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
+  const totalWeeks = React.useMemo(() => {
+    const weeksSet = new Set(allQuestions.map(q => q.semana).filter(Boolean));
+    return weeksSet.size || 19;
+  }, [allQuestions]);
+
+  const totalQuestionsFormatted = React.useMemo(() => {
+    const count = allQuestions.length || 2405;
+    return count.toLocaleString('es-PY');
+  }, [allQuestions]);
+
   const searchResults = searchQuery.trim().length >= 2 
     ? allQuestions.filter(q => 
         q.text.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -220,7 +230,7 @@ export function Sidebar({
             {!collapsed && (
               <div className="text-left">
                 <span className="block text-xs font-black uppercase tracking-wider">Simulador</span>
-                <span className="block text-[10px] text-[#A6A6A6] font-normal">18 Semanas • 2.298 Preguntas</span>
+                <span className="block text-[10px] text-[#A6A6A6] font-normal">{totalWeeks} Semanas • {totalQuestionsFormatted} Preguntas</span>
               </div>
             )}
           </button>
