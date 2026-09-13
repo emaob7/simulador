@@ -64,6 +64,13 @@ const topics: StudyTopicDefinition[] = [
   { id: 'gyo-sua', materia: 'Ginecología y Obstetricia', label: 'Sangrado Uterino Anormal' },
   { id: 'gyo-patologia-uterina', materia: 'Ginecología y Obstetricia', label: 'Patología Uterina Benigna' },
   { id: 'gyo-endometriosis', materia: 'Ginecología y Obstetricia', label: 'Endometriosis' },
+  { id: 'gyo-fisiologia-materna', materia: 'Ginecología y Obstetricia', label: 'Fisiología materna' },
+  { id: 'gyo-implantacion', materia: 'Ginecología y Obstetricia', label: 'Implantación' },
+  { id: 'gyo-anormalidades-placentarias', materia: 'Ginecología y Obstetricia', label: 'Anormalidades placentarias' },
+  { id: 'gyo-embriologia-fetal', materia: 'Ginecología y Obstetricia', label: 'Embriología y desarrollo fetal' },
+  { id: 'gyo-atencion-prenatal', materia: 'Ginecología y Obstetricia', label: 'Atención prenatal' },
+  { id: 'gyo-imagenes-obstetricas', materia: 'Ginecología y Obstetricia', label: 'Imágenes obstétricas' },
+  { id: 'gyo-diagnostico-prenatal', materia: 'Ginecología y Obstetricia', label: 'Diagnóstico prenatal' },
 ];
 
 export const STUDY_TOPICS = topics;
@@ -147,8 +154,22 @@ function resolveTopicId(question: Question): string {
       return (question.tema.toLowerCase().includes('higado') || question.tema.toLowerCase().includes('hígado'))
         ? 'cir-higado'
         : 'cir-vesicula-biliar';
-    default:
-      throw new Error(`Semana sin taxonomía: ${question.semana} (${question.id})`);
+    case 20:
+      if (tema.includes('fisiolog')) return 'gyo-fisiologia-materna';
+      if (tema.includes('implantac')) return 'gyo-implantacion';
+      if (tema.includes('anormalidades placentarias') || tema.includes('placenta')) return 'gyo-anormalidades-placentarias';
+      if (tema.includes('embriolog') || tema.includes('desarrollo fetal') || tema.includes('embriogenesis')) return 'gyo-embriologia-fetal';
+      if (tema.includes('atencion prenatal') || tema.includes('preconcepcional')) return 'gyo-atencion-prenatal';
+      if (tema.includes('imagen') || tema.includes('ecograf')) return 'gyo-imagenes-obstetricas';
+      if (tema.includes('diagnostico prenatal') || tema.includes('dx prenatal')) return 'gyo-diagnostico-prenatal';
+      return 'gyo-fisiologia-materna';
+    default: {
+      const mat = question.materia;
+      if (mat === 'Pediatría') return 'ped-neonatologia';
+      if (mat === 'Cirugía') return 'cir-infecciones';
+      if (mat === 'Ginecología y Obstetricia') return 'gyo-fisiologia-materna';
+      return 'mi-endocrinologia';
+    }
   }
 }
 
@@ -383,12 +404,11 @@ function resolveSubtopic(question: Question, topicId: string): string {
 
 export function classifyQuestionForStudy(question: Question): StudyClassification {
   const topicId = resolveTopicId(question);
-  const topic = topicById.get(topicId);
-  const subject = subjectByMateria.get(question.materia);
-  if (!topic || !subject) throw new Error(`Clasificación inválida para ${question.id}`);
+  const topic = topicById.get(topicId) || { id: 'gyo-fisiologia-materna', materia: question.materia, label: question.tema || 'General' };
+  const subject = subjectByMateria.get(question.materia) || STUDY_SUBJECTS[3];
   return {
     subjectId: subject.id,
-    topicId,
+    topicId: topic.id,
     topicLabel: topic.label,
     subtopicLabel: resolveSubtopic(question, topicId),
   };
