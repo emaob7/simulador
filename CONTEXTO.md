@@ -210,7 +210,51 @@ Cuando el usuario pida integrar una nueva semana, seguir este procedimiento exac
 
 ---
 
-## 10. Trato y Comunicación
+## 10. Calidad del Banco de Preguntas — Reglas y Auditoría (2026-09-17)
+
+Estas reglas salen de una auditoría completa de las 2.618 preguntas (20 semanas). Cualquier IA que toque `src/data/` debe respetarlas.
+
+### 10.1 Regla de oro: la explicación manda
+
+La clave (`correctOptionIndex`) tiene que coincidir con lo que afirma el propio desarrollo (`explanation`). Si no coinciden, la explicación es la fuente de verdad y la clave es la que se corrige. No inventar claves ni explicaciones: la fuente para completar cualquier texto es siempre uno de los archivos de Rodney (ver 10.4).
+
+### 10.2 Bugs de carga detectados y corregidos (no repetirlos)
+
+1. **Clave fijada en E por lote.** Al importar desde `.docx`, hubo lotes enteros donde `correctOptionIndex` quedó en `4` para todas las preguntas. Se corrigieron 79 claves:
+   - S11 `cx_estomago_q60`–`q106` (44 de 47), S4 `gyo_s4_q39`–`q74` (31 de 36), S10 `mi_cardio_w_q103/105/119`, S14 `reumato_q79`.
+   - **Detector**: si en un lote (mismo prefijo de `id`) más del 60 % de las claves cae en la misma letra, sospechar error de carga y cruzar contra el docx fuente.
+2. **Truncado en la letra "Z".** El parser original cortaba cada explicación en la primera **Z mayúscula** (Zollinger-Ellison, Zenker, Zoster, Zika, Ziehl-Neelsen, Zuska, "puntaje Z", "PiMZ"). Se restauraron 46 explicaciones desde la bóveda de Obsidian y los docx. Señal de alarma: explicación que termina en "síndrome de", "divertículo de", "Varicela-", "VV", "PiM".
+3. **Basura pegada.** Algunas explicaciones traían al final el enunciado y las opciones `a)…e)` de la pregunta siguiente del docx; y algunos enunciados/opciones traían prefijos residuales ("Pregunta 1 ", "Caso clínico 1 ", "3. ", "e) "). Se limpiaron. Al importar, verificar que ninguna opción empiece con `[a-e]) ` (ojo: "E. coli" es legítimo).
+
+### 10.3 Barajado de opciones y letras en las explicaciones
+
+- La app baraja el orden de las opciones en cada intento (`src/utils/quizShuffler.ts`) para que la respuesta no caiga siempre en la misma letra.
+- **Problema**: ~116 explicaciones analizan las opciones por letra ("a) [Incorrecta]: …", "C (Correcta)", "La e es correcta", "(a), (c)", "opciones a y c"). Si esas preguntas se barajan, la letra de la explicación deja de corresponder con la pantalla y confunde al alumno.
+- **Regla vigente**: `explanationReferencesLetters()` en `quizShuffler.ts` detecta esos patrones y esas preguntas **conservan el orden original** (igual que las que tienen opciones tipo "A y B son correctas"). Las demás se barajan.
+- **Al escribir explicaciones nuevas**: NO referirse a las opciones por letra. Citar el texto de la opción entre comillas angulares («…») o describirla. Así la pregunta puede barajarse sin problema.
+- Test: `npx tsx scripts/test-shuffler.ts` (7 tests, incluye la regla de letras). Correrlo después de tocar el shuffler o el banco.
+
+### 10.4 Fuentes para verificar y restaurar contenido
+
+| Fuente | Qué aporta | Ruta |
+|---|---|---|
+| Docx de tests de Rodney | Enunciado, opciones y línea `✅ Respuesta correcta: x) …` de 1.678 preguntas (28 archivos) | `C:\Users\Rodney Duarte\Documents\Conarem 2027\{Cx,GYO,MI,PED}\test *.docx` |
+| Bóveda de Obsidian | Explicaciones completas por `id` de pregunta (semanas 1–18), bloques `> [!tip]` | `C:\Users\Rodney Duarte\Documents\Banco_Preguntas_CONAREM\` (scripts: `scripts/import-obsidian-explanations.ts`, `npm run sync:obsidian`) |
+| La propia explicación | Muchas empiezan con «texto de la opción» es la correcta/incorrecta | `src/data/semanaN/questions.ts` |
+
+Método de verificación usado (reutilizable): (1) cruzar cada pregunta con la línea `✅ Respuesta correcta` del docx por enunciado o por texto de la opción; (2) cruzar la opción citada entre «…» en la explicación; (3) para lo que no cubren esos dos métodos, leer el desarrollo pregunta por pregunta (se hizo con subagentes en bloques de ~60).
+
+### 10.5 Pendientes conocidos (criterio médico de Rodney, no tocar sin su OK)
+
+- Opciones con más de una respuesta defendible según la propia explicación: `q9` (S2), `q7_s3`, `q4_s4`, `semana10_cardio_q97` y `q102`, `semana13_pediatria_q82` y `q86`, `semana20_gyo_q130` (la respuesta S1 no está entre las opciones) y `q154` ("debe" 7 mm vs "puede" 2 mm).
+- Preguntas duplicadas: `gyo_s4_q44/45`, `q46/47`, `q49/50`; `neo_q3/15`; `semana5_ped_q23/26`.
+- `semana18_med_q036` termina cortada también en Obsidian (sin fuente para completar).
+- Enunciados con metadatos pegados: `semana17_ped_q208`, `semana18_med_q163`, `semana20_gyo_q152/154`.
+- `App.tsx` llama a `AuthService.ensureUserDoc` sin importar `AuthService` (error de `tsc` preexistente; Vite compila igual).
+
+---
+
+## 11. Trato y Comunicación
 
 - **Tono:** Cercano, profesional, directo y resolutivo.
 - **Forma verbal:** Español con voseo rioplatense/paraguayo (*"vos"*, *"mirá"*, *"acordate"*, *"fijate"*).

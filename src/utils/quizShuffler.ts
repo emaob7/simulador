@@ -10,6 +10,26 @@ function hasPositionalLetterReferences(options: string[]): boolean {
 }
 
 /**
+ * Checks whether the explanation refers to options by their letter (e.g. "a) [Incorrecta]: ...",
+ * "C (Correcta)", "La e es correcta", "las opciones a y c", "(d)", "«e) ...»").
+ * Those explanations only make sense with the original option order, so the question must not be shuffled.
+ */
+export function explanationReferencesLetters(explanation: string | undefined): boolean {
+  if (!explanation) return false;
+  const patterns: RegExp[] = [
+    /(?:^|\n)\s*[-•*]?\s*\(?[a-eA-E][\)\.]\s+\S/,                                   // "a) texto" / "- b. texto" at line start
+    /\b[A-Ea-e]\s*[\(\[]\s*(?:correcta|incorrecta|falsa|verdadera|excepci[oó]n)/i,     // "C (Correcta)" / "b) [Incorrecta]"
+    /\b(?:opci[oó]n|alternativa|inciso|letra)\s+(?:es\s+la\s+)?\(?[A-Ea-e]\)?(?![\p{L}\d])/iu, // "la opción b"
+    /respuesta\s+correcta\s*:?\s*\**\s*`?\(?[A-Ea-e][\)\.\s]/i,                        // "Respuesta correcta: d)"
+    /\b(?:la|el)\s+\(?[A-Ea-e]\)?\s+(?:es|son|ser[ií]a|corresponde|constituye|resulta|queda)\b/i, // "La e es correcta"
+    /(?<![\p{L}\d])\([a-e]\)/u,                                                         // "(a)", "(c)" — but not "Lp(a)"
+    /[«“"]\s*[a-eA-E]\)\s/,                                                              // "«e) texto»"
+    /\b(?:opciones|alternativas|las|los)\s+\(?[A-Ea-e]\)?\s*(?:,\s*\(?[A-Ea-e]\)?\s*)*(?:,|y|e|o)\s+\(?[A-Ea-e]\)?(?![\p{L}\d])/iu, // "opciones a y c"
+  ];
+  return patterns.some(re => re.test(explanation));
+}
+
+/**
  * Checks if an option is a bottom-catchall like "Todas las anteriores" or "Ninguna de las anteriores"
  */
 function isCatchAllOption(opt: string): boolean {
@@ -27,6 +47,12 @@ export function shuffleQuestionOptions(question: Question): Question {
 
   // If question options contain cross-letter references like "A y B son correctas", preserve original order
   if (hasPositionalLetterReferences(question.options)) {
+    return question;
+  }
+
+  // If the explanation analyses the options by letter ("a) ...", "C (Correcta)"), shuffling would
+  // make those letters point to the wrong option on screen, so keep the original order.
+  if (explanationReferencesLetters(question.explanation)) {
     return question;
   }
 

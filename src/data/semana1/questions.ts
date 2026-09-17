@@ -2227,7 +2227,7 @@ export const questionsSemana1: Question[] = [
       "Indometacin"
     ],
     "correctOptionIndex": 2,
-    "explanation": "**Respuesta:** `C)",
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa zidovudina (AZT) es el medicamento indicado en el esquema de monoterapia profiláctica del recién nacido expuesto al VIH. Debe iniciarse durante las primeras 4–6 horas de vida.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La profilaxis neonatal descrita puede realizarse mediante:**\r\n- Monoterapia: zidovudina (AZT).\r\n- Triple terapia: zidovudina (AZT) + lamivudina (3TC) + nevirapina (NVP).\r\n- La triple terapia se ofrece en situaciones maternas asociadas a mayor riesgo de transmisión, como ausencia de tratamiento antirretroviral durante el embarazo.\r\n- Durante la lactancia, la alimentación con leche de fórmula evita la exposición del RN al VIH a través de la leche materna.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Monoterapia del RN expuesto al VIH → Zidovudina (AZT).\r\n- Triple terapia → AZT + 3TC + NVP.",
     "pagina": "Manual de Atención Neonatal, 2.ª edición, pág. 364.",
     "materia": "Pediatría",
     "semana": 1,

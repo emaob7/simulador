@@ -297,7 +297,7 @@ export const questionsSemana8: Question[] = [
       "La zona pelúcida desaparece por completo antes de la ovulación."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 **ANÁLISIS DE PREGUNTA**\r\n\r\nLa zona pelúcida persiste alrededor del ovocito y participa en el reconocimiento espermático y en la fecundación.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- La zona pelúcida es una estructura acelular.\r\n- Está compuesta por",
+    "explanation": "🧠 **ANÁLISIS DE PREGUNTA**\r\n\r\nLa zona pelúcida persiste alrededor del ovocito y participa en el reconocimiento espermático y en la fecundación.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- La zona pelúcida es una estructura acelular.\r\n- Está compuesta por ZP1, ZP2 y ZP3.\r\n- ZP3 participa en el reconocimiento del espermatozoide.\r\n- La unión espermática desencadena la reacción acrosómica.\r\n- La reacción acrosómica facilita la penetración de la zona pelúcida.\r\n- La zona pelúcida participa en la fecundación.",
     "pagina": "Williams Obstetricia, 4.ª ed., pág. 355",
     "materia": "Ginecología y Obstetricia",
     "semana": 8,

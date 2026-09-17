@@ -620,7 +620,7 @@ export const questionsSemana14: Question[] = [
       "La concentración sérica inmunitaria es la prueba inicial más utilizada."
     ],
     "correctOptionIndex": 3,
-    "explanation": "**Respuesta:** `D) Los sujetos PiM",
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa terapia de aumento de α1-antitripsina no se recomienda en sujetos heterocigotos PiMZ. Este tratamiento está disponible para pacientes con deficiencia grave, mientras que el tabaquismo aumenta especialmente el riesgo de EPOC temprana en individuos PiZZ.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- El alelo M se asocia con valores normales de α1-antitripsina.\r\n- El genotipo PiZZ constituye la forma grave más frecuente.\r\n- El tabaquismo acelera la aparición de EPOC en pacientes con deficiencia grave.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- **Variantes alélicas:**\r\n- Alelo M: concentración normal.\r\n- Alelo S: reducción leve.\r\n- Alelo Z: reducción marcada.\r\n- Alelo nulo: ausencia de producción.\r\n- **Deficiencia grave:**\r\n- Genotipo PiZZ.\r\n- Combinación de alelo Z y alelo nulo.\r\n- Puede causar EPOC de inicio temprano.\r\n- **Factores relacionados con EPOC:**\r\n- Tabaquismo.\r\n- Sexo masculino.\r\n- Otros factores genéticos o ambientales.\r\n- **Diagnóstico y tratamiento:**\r\n- Medición sérica inmunitaria de α1-antitripsina.\r\n- Terapia de aumento intravenosa semanal en deficiencia grave.\r\n- No se recomienda terapia de aumento en sujetos PiMZ.\r\n- 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.",
     "materia": "Medicina Interna",
     "semana": 14,
     "tema": "Neumología",
@@ -734,7 +734,7 @@ export const questionsSemana14: Question[] = [
       "Paciente con enfisema aislado y niveles séricos normales de α1-antitripsina."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa terapia de aumento se reserva para deficiencia grave. La elegibilidad requiere una concentración sérica inferior a 11 μM y un fenotipo compatible.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Se administra por vía intravenosa.\r\n- Está dirigida a la deficiencia grave.\r\n- No se recomienda en sujetos PiM",
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa terapia de aumento se reserva para deficiencia grave. La elegibilidad requiere una concentración sérica inferior a 11 μM y un fenotipo compatible.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Se administra por vía intravenosa.\r\n- Está dirigida a la deficiencia grave.\r\n- No se recomienda en sujetos PiMZ.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- Concentración sérica menor de 11 μM.\r\n- Fenotipo PiZZ como grupo típico.\r\n- Posibles genotipos raros o nulos.\r\n- Administración intravenosa.\r\n- No indicada con función pulmonar e imagen normales.\r\n- 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, capítulo 292.",
     "materia": "Medicina Interna",
     "semana": 14,
     "tema": "Neumología",
@@ -2672,7 +2672,7 @@ export const questionsSemana14: Question[] = [
       "La articulación interfalángica distal es la localización más característica y constante de la artritis reumatoide."
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa afectación de las DIP no es característica de la artritis reumatoide y suele sugerir osteoartritis concomitante.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Carpo, MCP y PIP.\r\n- DIP → pensar en osteoartritis.\r\n- Tenosinovitis frecuente.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- Articulaciones más afectadas: carpo, MCP y PIP.\r\n- DIP generalmente respetadas.\r\n- Tenosinovitis de flexores con disminución de fuerza y dedo en gatillo.\r\n- Puede haber rotura tendinosa y deformidades irreversibles (cuello de cisne, boutonnière y deformidad en",
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa afectación de las DIP no es característica de la artritis reumatoide y suele sugerir osteoartritis concomitante.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Carpo, MCP y PIP.\r\n- DIP → pensar en osteoartritis.\r\n- Tenosinovitis frecuente.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- Articulaciones más afectadas: carpo, MCP y PIP.\r\n- DIP generalmente respetadas.\r\n- Tenosinovitis de flexores con disminución de fuerza y dedo en gatillo.\r\n- Puede haber rotura tendinosa y deformidades irreversibles (cuello de cisne, boutonnière y deformidad en Z).\r\n- 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 359.",
     "materia": "Medicina Interna",
     "semana": 14,
     "tema": "Reumatología",
@@ -3165,7 +3165,7 @@ export const questionsSemana14: Question[] = [
       "Entre sus efectos adversos se describen aumento de transaminasas y elevación de creatinina.",
       "Estudios recientes han mostrado mayor riesgo de trombosis y eventos cardiovasculares con tofacitinib."
     ],
-    "correctOptionIndex": 1,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nEl texto señala que tofacitinib inhibe principalmente JAK1 y JAK3, con menor efecto sobre JAK2 y Tyk2; por tanto, no es un inhibidor selectivo exclusivo de JAK2.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Tofacitinib = JAK1/JAK3.\r\n- Riesgo de herpes zóster.\r\n- Riesgo de trombosis.\r\n- Puede combinarse con metotrexato.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- Los inhibidores de JAK son DMARD sintéticos dirigidos.\r\n- Pueden utilizarse solos o con metotrexato.\r\n- Tofacitinib inhibe principalmente JAK1 y JAK3.\r\n- Se asocian con elevación de transaminasas, creatinina, mayor riesgo de infecciones (incluido herpes zóster), trombosis y eventos cardiovasculares.\r\n- 📖 Referencia: Harrison, Principios de Medicina Interna, 21.ª edición, Capítulo 359.",
     "materia": "Medicina Interna",
     "semana": 14,

@@ -1827,7 +1827,7 @@ export const questionsSemana9: Question[] = [
   },
   {
     "id": "semana9_vac_q04",
-    "text": "4. ¿Cuál es la vía de administración de la vacuna BCG en el recién nacido según el Esquema Nacional de Vacunación del Paraguay?",
+    "text": "¿Cuál es la vía de administración de la vacuna BCG en el recién nacido según el Esquema Nacional de Vacunación del Paraguay?",
     "options": [
       "Intramuscular en el muslo derecho",
       "Subcutánea en el brazo izquierdo",
@@ -1846,7 +1846,7 @@ export const questionsSemana9: Question[] = [
   },
   {
     "id": "semana9_vac_q05",
-    "text": "5. ¿Cuál de las siguientes vacunas se administra por vía oral a los 2 meses de edad según el Esquema Nacional de Vacunación del Paraguay?",
+    "text": "¿Cuál de las siguientes vacunas se administra por vía oral a los 2 meses de edad según el Esquema Nacional de Vacunación del Paraguay?",
     "options": [
       "IPV (Poliomielitis inactivada)",
       "Pentavalente acelular (FIPV)",
@@ -2074,7 +2074,7 @@ export const questionsSemana9: Question[] = [
   },
   {
     "id": "semana9_vac_q17",
-    "text": "17. ¿Cuál de los siguientes componentes está incluido en la vacuna hexavalente?",
+    "text": "¿Cuál de los siguientes componentes está incluido en la vacuna hexavalente?",
     "options": [
       "Virus vivos atenuados de poliovirus.",
       "Antígeno de superficie de hepatitis B (HBsAg).",
@@ -2273,7 +2273,7 @@ export const questionsSemana9: Question[] = [
       "Solo después de 14 días de la exposición."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE PREGUNTA**\r\n\r\nLa vacuna contra varicela puede utilizarse como profilaxis posexposición en personas susceptibles, idealmente dentro de los primeros 3 días y posiblemente hasta el quinto día.\r\n\r\n🟩 **CONCEPTO CLAVE**\r\n\r\n- La vacuna de la varicela es efectiva en aproximadamente el 90% para prevenir o modificar la severidad de la varicela, si es aplicada a una persona susceptible, dentro de los 3 días y posiblemente hasta el 5to. día de la exposición al caso de varicela.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n**Indicaciones de vacuna VV",
+    "explanation": "🧠 **ANÁLISIS DE PREGUNTA**\r\n\r\nLa vacuna contra varicela puede utilizarse como profilaxis posexposición en personas susceptibles, idealmente dentro de los primeros 3 días y posiblemente hasta el quinto día.\r\n\r\n🟩 **CONCEPTO CLAVE**\r\n\r\n- La vacuna de la varicela es efectiva en aproximadamente el 90% para prevenir o modificar la severidad de la varicela, si es aplicada a una persona susceptible, dentro de los 3 días y posiblemente hasta el 5to. día de la exposición al caso de varicela.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n**Indicaciones de vacuna VVZ:**\r\n- 12 meses de edad, adolescentes y adultos.\r\n\r\n**Situaciones especiales:**\r\n- Personal de salud. Sin antecedentes de varicela y serología negativa (IgG negativa para varicela).\r\n- Convivientes de inmunocomprometidos.\r\n- Inmunocomprometidos: menores con VIH y contaje de CD4 > 15% adolescentes y adultos con CD4 > 200/mm3 pacientes con deterioro de la inmunidad humoral.\r\n- Antes de recibir trasplantes de órganos sólidos (al menos tres semanas antes del tratamiento inmunosupresor).\r\n- Pacientes con leucemia, linfomas y otras enfermedades malignas en remisión\r\n- Síndrome nefrótico.",
     "pagina": "Normas Nacionales de Vacunación – Paraguay (PAI). Vacuna VVZ. Indicación y vacunación posexposición. Pág. 161.",
     "materia": "Pediatría",
     "semana": 9,

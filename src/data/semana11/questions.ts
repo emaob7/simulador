@@ -354,7 +354,7 @@ export const questionsSemana11: Question[] = [
       "La erradicación de Helicobacter pylori es fundamental para prevenir la recurrencia de la enfermedad ulcerosa."
     ],
     "correctOptionIndex": 3,
-    "explanation": "El principio clásico de la enfermedad ulcerosa péptica sigue vigente: \"Sin ácido no hay úlcera\". Aunque H. pylori y los AINE son las principales causas, ambos producen lesión sobre una mucosa expuesta al ácido y la pepsina.🟩 **CONCEPTOS CLAVE** Helicobacter pylori y los AINE son las principales causas de úlcera péptica. La lesión final resulta del daño acidopéptico sobre la mucosa. La supresión del ácido favorece la cicatrización y reduce las recurrencias. La erradicación de H. pylori disminuye de forma importante las recaídas.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- Las úlceras duodenales se relacionan más con hipersecreción ácida, mientras que las gástricas predominan por disminución de las defensas mucosas, aunque ambos mecanismos pueden coexistir.\r\n- Otras causas de úlcera péptica incluyen síndrome de",
+    "explanation": "El principio clásico de la enfermedad ulcerosa péptica sigue vigente: \"Sin ácido no hay úlcera\". Aunque H. pylori y los AINE son las principales causas, ambos producen lesión sobre una mucosa expuesta al ácido y la pepsina.🟩 **CONCEPTOS CLAVE** Helicobacter pylori y los AINE son las principales causas de úlcera péptica. La lesión final resulta del daño acidopéptico sobre la mucosa. La supresión del ácido favorece la cicatrización y reduce las recurrencias. La erradicación de H. pylori disminuye de forma importante las recaídas.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- Las úlceras duodenales se relacionan más con hipersecreción ácida, mientras que las gástricas predominan por disminución de las defensas mucosas, aunque ambos mecanismos pueden coexistir.\r\n- Otras causas de úlcera péptica incluyen síndrome de Zollinger-Ellison, mastocitosis sistémica, traumatismos, quemaduras y estrés fisiológico intenso.\r\n- El tabaquismo es un importante factor de riesgo para complicaciones ulcerosas.\r\n- Helicobacter pylori también participa en la gastritis crónica, el linfoma MALT y el adenocarcinoma gástrico.",
     "pagina": "📖 Referencia: Schwartz, Principios de Cirugía, 10.ª edición, Cap. 26. Estómago, pág. 1053.",
     "materia": "Cirugía",
     "semana": 11,
@@ -490,7 +490,7 @@ export const questionsSemana11: Question[] = [
     "pagina": "📖 Referencia: Schwartz, Principios de Cirugía, 10.ª edición, Cap. 26. Estómago, pág. 1084.",
     "materia": "Cirugía",
     "semana": 11,
-    "tema": "Esófago y Hernia Diafragmática",
+    "tema": "Estómago",
     "subtema": "Linfoma Gástrico",
     "module": "Semana 11 - Cirugía",
     "id": "semana11_cirugia_q26"
@@ -505,11 +505,11 @@ export const questionsSemana11: Question[] = [
       "Hipersecreción ácida."
     ],
     "correctOptionIndex": 1,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa enfermedad de Ménétrier se caracteriza por una gastropatía perdedora de proteínas, lo que produce hipoproteinemia. Además, existe hiperplasia de las células mucosas superficiales y disminución de las células parietales, lo que condiciona hipoclorhidria, no hipersecreción ácida.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- la enfermedad cursa con hipoclorhidria, no con aumento de la secreción ácida.\r\n- la hipergastrinemia es característica del síndrome de",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa enfermedad de Ménétrier se caracteriza por una gastropatía perdedora de proteínas, lo que produce hipoproteinemia. Además, existe hiperplasia de las células mucosas superficiales y disminución de las células parietales, lo que condiciona hipoclorhidria, no hipersecreción ácida.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- la enfermedad cursa con hipoclorhidria, no con aumento de la secreción ácida.\r\n- la hipergastrinemia es característica del síndrome de Zollinger-Ellison, no de Ménétrier.\r\n- el compromiso predominante afecta el cuerpo y fondo gástricos, con conservación relativa del antro.\r\n- Existe hiperplasia de células mucosas y disminución de células parietales.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- La sobreexpresión del factor de transformación del crecimiento α (TGF-α) participa en su fisiopatología.\r\n- El cetuximab ha mostrado beneficio en algunos pacientes al bloquear el receptor del factor de crecimiento epidérmico.\r\n- Los síntomas habituales incluyen dolor epigástrico, pérdida de peso y diarrea.\r\n- La gastrectomía se reserva para hemorragia, hipoproteinemia grave o cáncer.\r\n- Se relaciona con mayor riesgo de cáncer gástrico.",
     "pagina": "📖 Referencia: Schwartz, Principios de Cirugía, 10.ª edición, Cap. 26. Estómago, pág. 1088.",
     "materia": "Cirugía",
     "semana": 11,
-    "tema": "Esófago y Hernia Diafragmática",
+    "tema": "Estómago",
     "subtema": "Gastropatía Hipertrófica (Enfermedad de Ménétrier)",
     "module": "Semana 11 - Cirugía",
     "id": "semana11_cirugia_q27"
@@ -528,7 +528,7 @@ export const questionsSemana11: Question[] = [
     "pagina": "📖 Referencia: Schwartz, Principios de Cirugía, 10.ª edición, Cap. 26. Estómago, pág. 1090.",
     "materia": "Cirugía",
     "semana": 11,
-    "tema": "Esófago y Hernia Diafragmática",
+    "tema": "Estómago",
     "subtema": "Síndrome de Vaciamiento Rápido (dumping)",
     "module": "Semana 11 - Cirugía",
     "id": "semana11_cirugia_q28"
@@ -547,7 +547,7 @@ export const questionsSemana11: Question[] = [
     "pagina": "📖 Referencia: Schwartz, Principios de Cirugía, 10.ª edición, Cap. 26. Estómago, pág. 1094.",
     "materia": "Cirugía",
     "semana": 11,
-    "tema": "Esófago y Hernia Diafragmática",
+    "tema": "Estómago",
     "subtema": "Gastritis y Esofagitis por Reflujo Biliar",
     "module": "Semana 11 - Cirugía",
     "id": "semana11_cirugia_q29"
@@ -566,7 +566,7 @@ export const questionsSemana11: Question[] = [
     "pagina": "📖 Referencia: Schwartz, Principios de Cirugía, 10.ª edición, Cap. 26. Estómago, pág. 1094.",
     "materia": "Cirugía",
     "semana": 11,
-    "tema": "Esófago y Hernia Diafragmática",
+    "tema": "Estómago",
     "subtema": "Diarrea Posquirúrgica",
     "module": "Semana 11 - Cirugía",
     "id": "semana11_cirugia_q30"
@@ -943,7 +943,7 @@ export const questionsSemana11: Question[] = [
       "La compresión extrínseca del esófago cervical puede ocasionar disfagia de tránsito."
     ],
     "correctOptionIndex": 2,
-    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa videocineradiografía (videofluoroscopia) es la prueba más útil para evaluar la fase orofaríngea. La manometría convencional tiene limitaciones debido a la rapidez de esta fase de la deglución.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La disfagia de tránsito compromete la fase orofaríngea de la deglución.\r\n- La videofluoroscopia es el estudio inicial de elección.\r\n- Puede identificar divertículo de",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa videocineradiografía (videofluoroscopia) es la prueba más útil para evaluar la fase orofaríngea. La manometría convencional tiene limitaciones debido a la rapidez de esta fase de la deglución.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- La disfagia de tránsito compromete la fase orofaríngea de la deglución.\r\n- La videofluoroscopia es el estudio inicial de elección.\r\n- Puede identificar divertículo de Zenker, barra cricofaríngea y alteraciones de la relajación cricofaríngea.\r\n- Las enfermedades neurológicas son las causas más frecuentes.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- La disfagia de tránsito puede deberse a alteraciones del transporte del bolo, disminución de la presión faríngea, falta de elevación laríngea, incoordinación faringocricofaríngea o disminución de la distensibilidad del segmento faringoesofágico.\r\n- Entre las causas se incluyen ACV, tumores del tronco encefálico, esclerosis múltiple, enfermedad de Parkinson, polimiositis, miastenia gravis y lesión de nervios craneales.\r\n- La videofluoroscopia evalúa el transporte del bolo, la relajación del cricofaríngeo y la protección de la vía aérea durante la deglución.\r\n- La combinación de videofluoroscopia y manometría permite identificar alteraciones como relajación incompleta del cricofaríngeo y aumento de la resistencia al paso del bolo.\r\n- En pacientes con divertículo de Zenker, la miotomía cricofaríngea puede estar indicada cuando existe obstrucción funcional del segmento faringoesofágico.",
     "pagina": "📖 Referencia: Schwartz. Principios de Cirugía, 11.ª edición.",
     "materia": "Cirugía",
     "semana": 11,
@@ -962,7 +962,7 @@ export const questionsSemana11: Question[] = [
       "Espasmo esofágico difuso."
     ],
     "correctOptionIndex": 0,
-    "explanation": "**Respuesta:** `A) Divertículo de",
+    "explanation": "🧠 **ANÁLISIS DE LA PREGUNTA**\r\n\r\nLa combinación de disfagia, regurgitación de alimentos no digeridos y aspiración recurrente en un adulto mayor es característica del divertículo de Zenker.\r\n\r\n🟩 **CONCEPTOS CLAVE**\r\n\r\n- Se presenta principalmente en adultos mayores.\r\n- Produce disfagia y regurgitación de alimentos no digeridos.\r\n- Se asocia con aspiración crónica e infecciones respiratorias recurrentes.\r\n- El estudio diagnóstico de elección es el esofagograma con bario.\r\n\r\n💡 **PUNTOS CLAVE (REPASO ACTIVO)**\r\n\r\n- El divertículo de Zenker es un divertículo faringoesofágico asociado a disfunción del músculo cricofaríngeo.\r\n- Tiende a aumentar de tamaño progresivamente con el envejecimiento.\r\n- La endoscopia debe realizarse con precaución, ya que existe riesgo de perforación por la dificultad para identificar la verdadera luz esofágica.\r\n- Los pacientes pueden presentar pérdida de peso cuando la disfagia es avanzada.\r\n- La regurgitación de alimentos no digeridos es una perla clínica que ayuda a diferenciarlo de otros trastornos motores esofágicos.",
     "pagina": "📖 Referencia: Schwartz. Principios de Cirugía, 11.ª edición.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1132,8 +1132,8 @@ export const questionsSemana11: Question[] = [
       "La mayoría de los pacientes con linfoma gástrico primario requieren resección gástrica como parte fundamental de su tratamiento.",
       "Los tumores estromales gastrointestinales localizados en el estómago se tratan mediante escisión de grosor total."
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEs la afirmación incorrecta y, por tanto, la respuesta del EXCEPTO. El fragmento señala exactamente lo contrario: la mayoría de los pacientes con linfoma gástrico primario puede tratarse sin resección gástrica.\r\n\r\nLas demás afirmaciones corresponden a los puntos clave mostrados en el cuadro.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Del cuadro deben retenerse especialmente estas asociaciones:**\r\n- H. pylori → tratar cuando las pruebas sugieran infección y confirmar la erradicación.\r\n- Úlcera péptica en paciente asténico/de alto riesgo → evitar resección gástrica si es posible.\r\n- Linfoma gástrico primario → la mayoría puede tratarse sin resección gástrica.\r\n- Tumor estromal gastrointestinal gástrico localizado → escisión de grosor total.\r\n- Imatinib adyuvante o neoadyuvante → indicado en lesiones de mayor riesgo.\r\n- Tumor neuroendocrino gástrico tipo 3 → generalmente gastrectomía subtotal + linfadenectomía regional.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Linfoma gástrico ≠ gastrectomía obligatoria.\r\n- Si en un EXCEPTO aparece que “la mayoría requiere resección gástrica”, sospecha inmediatamente que es la falsa.\r\n- Con respecto a la vascularización arterial y venosa del estómago, todas las siguientes afirmaciones son correctas, EXCEPTO:\r\n- a) La arteria gastroepiploica derecha surge de la arteria gastroduodenal detrás de la primera porción del duodeno.\r\n- b) La arteria gastroepiploica izquierda se origina habitualmente de la arteria hepática común y drena hacia la vena mesentérica superior.\r\n- c) La arteria gástrica derecha surge por lo general de la arteria hepática cerca del píloro y se extiende en sentido proximal por la curvatura menor.\r\n- d) Las arterias y venas gástricas cortas surgen de la circulación esplénica a lo largo de la curvatura mayor proximal.\r\n- e) Las venas gástricas izquierda y derecha generalmente drenan hacia la vena porta, aunque en ocasiones la gástrica izquierda drena hacia la vena esplénica.",
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEs la afirmación incorrecta y, por tanto, la respuesta del EXCEPTO. El fragmento señala exactamente lo contrario: la mayoría de los pacientes con linfoma gástrico primario puede tratarse sin resección gástrica.\r\n\r\nLas demás afirmaciones corresponden a los puntos clave mostrados en el cuadro.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Del cuadro deben retenerse especialmente estas asociaciones:**\r\n- H. pylori → tratar cuando las pruebas sugieran infección y confirmar la erradicación.\r\n- Úlcera péptica en paciente asténico/de alto riesgo → evitar resección gástrica si es posible.\r\n- Linfoma gástrico primario → la mayoría puede tratarse sin resección gástrica.\r\n- Tumor estromal gastrointestinal gástrico localizado → escisión de grosor total.\r\n- Imatinib adyuvante o neoadyuvante → indicado en lesiones de mayor riesgo.\r\n- Tumor neuroendocrino gástrico tipo 3 → generalmente gastrectomía subtotal + linfadenectomía regional.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Linfoma gástrico ≠ gastrectomía obligatoria.\r\n- Si en un EXCEPTO aparece que “la mayoría requiere resección gástrica”, sospecha inmediatamente que es la falsa.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1151,8 +1151,8 @@ export const questionsSemana11: Question[] = [
       "Las arterias y venas gástricas cortas surgen de la circulación esplénica a lo largo de la curvatura mayor proximal.",
       "Las venas gástricas izquierda y derecha generalmente drenan hacia la vena porta, aunque en ocasiones la gástrica izquierda drena hacia la vena esplénica."
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEs la afirmación incorrecta, por lo tanto corresponde al EXCEPTO.\r\n\r\nEl fragmento establece que la arteria gastroepiploica izquierda surge de la arteria esplénica. Además, su vena correspondiente, la vena gastroepiploica izquierda, drena hacia la vena esplénica.\r\n\r\nEn cambio, la vena gastroepiploica derecha es la que drena hacia la vena mesentérica superior, cerca del borde inferior del cuello pancreático.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Irrigación arterial:**\r\n- Gastroepiploica derecha → nace de la arteria gastroduodenal.\r\n- Gastroepiploica izquierda → nace de la arteria esplénica.\r\n- Ambas forman la rica arcada gastroepiploica de la curvatura mayor.\r\n- Gástrica derecha → generalmente nace de la arteria hepática cerca del píloro y discurre proximalmente por la curvatura menor.\r\n- Arterias gástricas cortas → proceden de la circulación esplénica y se encuentran en la curvatura mayor proximal.\r\n\r\n**Drenaje venoso:**\r\n- Venas gástricas izquierda y derecha → generalmente → vena porta.\r\n- Vena gástrica izquierda → ocasionalmente → vena esplénica.\r\n- Gastroepiploica derecha → vena mesentérica superior.\r\n- Gastroepiploica izquierda → vena esplénica.\r\n\r\n**Importancia quirúrgica:**\r\n- La abundancia de anastomosis permite que al menos dos de las cuatro arterias gástricas nombradas puedan ocluirse o ligarse sin producir isquemia gástrica.\r\n- Después de una gastrectomía subtotal radical, incluso tras ligar las arterias gástricas derecha e izquierda y ambas gastroepiploicas, el remanente gástrico puede irrigarse adecuadamente mediante las arterias gástricas cortas, siempre que la arteria esplénica permanezca patente e intacta.\r\n- La riqueza de las conexiones venosas también permite que una derivación portosistémica intrahepática transyugular pueda descomprimir eficazmente las várices gastroesofágicas en pacientes con hipertensión portal.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Regla rápida para las gastroepiploicas:**\r\n- Derecha → gastroduodenal → vena mesentérica superior.\r\n- Izquierda → esplénica → vena esplénica.\r\n- La trampa clásica es intercambiar el origen o el drenaje de la derecha con la izquierda.\r\n- ¿Cuál de las siguientes afirmaciones respecto al drenaje linfático del estómago es CORRECTA?\r\n- a) El cardias y la mitad medial del cuerpo gástrico drenan principalmente hacia los ganglios pilóricos derechos.\r\n- b) La mitad de la curvatura mayor del estómago distal drena principalmente hacia los ganglios del hilio esplénico.\r\n- c) Los vasos linfáticos gástricos siguen un patrón completamente predecible, por lo que los ganglios afectados siempre son los más cercanos al tumor.\r\n- d) Los ganglios linfáticos positivos pueden encontrarse a muchos centímetros del tumor primario, incluso con ganglios más cercanos no afectados.\r\n- e) Los nodos situados a lo largo de las curvaturas mayor y menor nunca drenan hacia la cuenca nodal celíaca.",
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEs la afirmación incorrecta, por lo tanto corresponde al EXCEPTO.\r\n\r\nEl fragmento establece que la arteria gastroepiploica izquierda surge de la arteria esplénica. Además, su vena correspondiente, la vena gastroepiploica izquierda, drena hacia la vena esplénica.\r\n\r\nEn cambio, la vena gastroepiploica derecha es la que drena hacia la vena mesentérica superior, cerca del borde inferior del cuello pancreático.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Irrigación arterial:**\r\n- Gastroepiploica derecha → nace de la arteria gastroduodenal.\r\n- Gastroepiploica izquierda → nace de la arteria esplénica.\r\n- Ambas forman la rica arcada gastroepiploica de la curvatura mayor.\r\n- Gástrica derecha → generalmente nace de la arteria hepática cerca del píloro y discurre proximalmente por la curvatura menor.\r\n- Arterias gástricas cortas → proceden de la circulación esplénica y se encuentran en la curvatura mayor proximal.\r\n\r\n**Drenaje venoso:**\r\n- Venas gástricas izquierda y derecha → generalmente → vena porta.\r\n- Vena gástrica izquierda → ocasionalmente → vena esplénica.\r\n- Gastroepiploica derecha → vena mesentérica superior.\r\n- Gastroepiploica izquierda → vena esplénica.\r\n\r\n**Importancia quirúrgica:**\r\n- La abundancia de anastomosis permite que al menos dos de las cuatro arterias gástricas nombradas puedan ocluirse o ligarse sin producir isquemia gástrica.\r\n- Después de una gastrectomía subtotal radical, incluso tras ligar las arterias gástricas derecha e izquierda y ambas gastroepiploicas, el remanente gástrico puede irrigarse adecuadamente mediante las arterias gástricas cortas, siempre que la arteria esplénica permanezca patente e intacta.\r\n- La riqueza de las conexiones venosas también permite que una derivación portosistémica intrahepática transyugular pueda descomprimir eficazmente las várices gastroesofágicas en pacientes con hipertensión portal.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Regla rápida para las gastroepiploicas:**\r\n- Derecha → gastroduodenal → vena mesentérica superior.\r\n- Izquierda → esplénica → vena esplénica.\r\n- La trampa clásica es intercambiar el origen o el drenaje de la derecha con la izquierda.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1170,8 +1170,8 @@ export const questionsSemana11: Question[] = [
       "Los ganglios linfáticos positivos pueden encontrarse a muchos centímetros del tumor primario, incluso con ganglios más cercanos no afectados.",
       "Los nodos situados a lo largo de las curvaturas mayor y menor nunca drenan hacia la cuenca nodal celíaca."
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl fragmento destaca que existe una rica red anastomótica de linfáticos gástricos, cuyo drenaje puede ser impredecible. Esto explica que aparezcan ganglios linfáticos positivos alejados del tumor primario mientras ganglios más cercanos permanecen no afectados.\r\n\r\nLas demás son incorrectas porque:\r\n\r\na) Cardias y mitad medial del cuerpo → drenan hacia nodos del eje gástrico y celíaco izquierdo.\r\n\r\nb) Curvatura mayor distal → drena hacia la cadena gastroepiploica derecha.\r\n\r\nc) El drenaje no es completamente predecible; existe una rica red anastomótica.\r\n\r\ne) Los nodos de las curvaturas mayor y menor drenan con frecuencia hacia la cuenca nodal celíaca.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Drenaje linfático según localización:**\r\n- Cardias + mitad medial del cuerpo → eje gástrico y celíaco izquierdo.\r\n- Mitad menor de la curvatura del antro → ganglios gástricos y pilóricos derechos.\r\n- Curvatura mayor del estómago distal → cadena gastroepiploica derecha.\r\n- Curvatura mayor proximal → nodos del hilio gastroepiploico o esplénico izquierdo.\r\n- Curvaturas mayor y menor → frecuentemente terminan drenando hacia la cuenca nodal celíaca.\r\n- El rico plexo intramural de vasos linfáticos y venas también explica que puedan encontrarse células malignas microscópicas en la pared gástrica varios centímetros más allá del tumor maligno palpable.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Cáncer gástrico = drenaje linfático rico, anastomótico e impredecible.\r\n- Perla de examen: un ganglio cercano negativo NO implica que uno más distante también sea negativo. Incluso un tumor del estómago distal puede producir ganglios positivos en el hilio esplénico.\r\n- Con respecto a la inervación del estómago, ¿cuál de las siguientes afirmaciones es CORRECTA?\r\n- a) El vago anterior envía una rama al plexo celíaco y continúa por la curvatura menor posterior.\r\n- b) La inervación simpática extrínseca del estómago se origina exclusivamente en los niveles espinales T10 a T12.\r\n- c) El nervio criminal de Grassi es una rama del vago anterior que se encuentra por debajo del hiato esofágico.\r\n- d) Los nervios de Latarjet envían ramas segmentarias al cuerpo gástrico y terminan cerca de la incisura angular como la «pata de cuervo», enviando ramas a la región antropilórica.\r\n- e) La mayoría de los axones contenidos en los troncos vagales son eferentes y conducen estímulos desde el cerebro hacia el estómago.",
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl fragmento destaca que existe una rica red anastomótica de linfáticos gástricos, cuyo drenaje puede ser impredecible. Esto explica que aparezcan ganglios linfáticos positivos alejados del tumor primario mientras ganglios más cercanos permanecen no afectados.\r\n\r\nLas demás son incorrectas porque:\r\n\r\na) Cardias y mitad medial del cuerpo → drenan hacia nodos del eje gástrico y celíaco izquierdo.\r\n\r\nb) Curvatura mayor distal → drena hacia la cadena gastroepiploica derecha.\r\n\r\nc) El drenaje no es completamente predecible; existe una rica red anastomótica.\r\n\r\ne) Los nodos de las curvaturas mayor y menor drenan con frecuencia hacia la cuenca nodal celíaca.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Drenaje linfático según localización:**\r\n- Cardias + mitad medial del cuerpo → eje gástrico y celíaco izquierdo.\r\n- Mitad menor de la curvatura del antro → ganglios gástricos y pilóricos derechos.\r\n- Curvatura mayor del estómago distal → cadena gastroepiploica derecha.\r\n- Curvatura mayor proximal → nodos del hilio gastroepiploico o esplénico izquierdo.\r\n- Curvaturas mayor y menor → frecuentemente terminan drenando hacia la cuenca nodal celíaca.\r\n- El rico plexo intramural de vasos linfáticos y venas también explica que puedan encontrarse células malignas microscópicas en la pared gástrica varios centímetros más allá del tumor maligno palpable.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Cáncer gástrico = drenaje linfático rico, anastomótico e impredecible.\r\n- Perla de examen: un ganglio cercano negativo NO implica que uno más distante también sea negativo. Incluso un tumor del estómago distal puede producir ganglios positivos en el hilio esplénico.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1189,7 +1189,7 @@ export const questionsSemana11: Question[] = [
       "Los nervios de Latarjet envían ramas segmentarias al cuerpo gástrico y terminan cerca de la incisura angular como la «pata de cuervo», enviando ramas a la región antropilórica.",
       "La mayoría de los axones contenidos en los troncos vagales son eferentes y conducen estímulos desde el cerebro hacia el estómago."
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, los nervios de Latarjet proporcionan ramas segmentarias al cuerpo del estómago y terminan cerca de la incisura angular, formando la característica «pata de cuervo» y enviando ramas hacia la región antropilórica.\r\n\r\nLas demás son incorrectas:\r\n\r\na) Es el vago posterior, no el anterior, el que envía ramas al plexo celíaco y continúa por la curvatura menor posterior.\r\n\r\nb) La inervación simpática se origina en los niveles espinales T5 a T10.\r\n\r\nc) El nervio criminal de Grassi es una rama que el vago posterior envía al fundus posterior; suele surgir por encima del hiato esofágico.\r\n\r\ne) La mayoría de los axones de los troncos vagales son aferentes, es decir, llevan estímulos desde las vísceras hacia el cerebro.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Inervación parasimpática:**\r\n- Depende de los nervios vagos.\r\n- La acetilcolina es el neurotransmisor más importante.\r\n- Vago izquierdo → tronco vagal anterior.\r\n- Vago derecho → tronco vagal posterior.\r\n- Vago anterior → envía rama(s) hacia el hígado por el ligamento gastrohepático.\r\n- Vago posterior → envía ramas al plexo celíaco y continúa por la curvatura menor posterior.\r\n- Nervios de Latarjet → ramas segmentarias al cuerpo gástrico → terminan como «pata de cuervo» → ramas hacia la región antropilórica.\r\n- Nervio criminal de Grassi → rama del vago posterior hacia el fundus posterior.\r\n- En aproximadamente 50% de los pacientes existen más de dos nervios vagales en el hiato esofágico.\r\n- Funciones vagales descritas en el fragmento: secreción, incluida la de ácido; función motora; flujo sanguíneo de la mucosa; citoprotección; control del apetito; inmunidad e inflamación de la mucosa.\r\n\r\n**Inervación simpática:**\r\n- T5–T10 → nervios esplácnicos → ganglio celíaco → fibras posganglionares → estómago siguiendo los vasos sanguíneos.\r\n- Sistema nervioso intrínseco: constituido por las neuronas de los plexos mientérico y submucoso.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Memoriza estas asociaciones:**\r\n- Vago izquierdo = anterior → hígado.\r\n- Vago derecho = posterior → plexo celíaco.\r\n- Latarjet = «pata de cuervo» → región antropilórica.\r\n- Grassi = vago posterior → fundus posterior.\r\n- Trampa quirúrgica: el nervio criminal de Grassi puede pasarse por alto fácilmente durante una vagotomía troncal o altamente selectiva.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1200,7 +1200,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q64",
-    "text": "3. ¿Cuál de las siguientes asociaciones entre una célula epitelial gástrica y su función es CORRECTA?",
+    "text": "¿Cuál de las siguientes asociaciones entre una célula epitelial gástrica y su función es CORRECTA?",
     "options": [
       "Célula principal — producción de factor intrínseco",
       "Célula mucosa del cuello — célula progenitora de las demás células epiteliales gástricas",
@@ -1208,8 +1208,8 @@ export const questionsSemana11: Question[] = [
       "Célula mucosa superficial — producción principal de histamina",
       "Célula mucosa cardiopilórica — producción de ácido clorhídrico"
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl cuadro identifica a la célula mucosa del cuello como progenitora de las demás células epiteliales gástricas. También participa en la producción de glucoproteínas y pepsinógenos I y II.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Asociaciones del cuadro:**\r\n- Mucosas superficiales y de las criptas → glucoproteína + bicarbonato → gel superficial y neutralización del HCl.\r\n- Mucosa del cuello → progenitora + glucoproteínas + pepsinógenos I y II.\r\n- Oxíntica/parietal → HCl + factor intrínseco + bicarbonato.\r\n- Principal → pepsinógenos I y II + lipasa.\r\n- Mucosa cardiopilórica → glucoproteína + pepsinógeno II.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Para memorizar las dos células clásicas:**\r\n- Parietal → ácido + factor intrínseco.\r\n- Principal → pepsinógenos + lipasa.\r\n- Con respecto a la regulación de la secreción de ácido clorhídrico por la célula parietal, todas las siguientes afirmaciones son correctas, EXCEPTO:\r\n- a) La somatostatina estimula directamente la secreción de ácido al unirse a receptores de la célula parietal y favorece la liberación de histamina por las células ECL.\r\n- b) La histamina se une a receptores H₂ de la célula parietal, estimula la adenilato ciclasa y aumenta el AMPc.\r\n- c) La acetilcolina se une a receptores muscarínicos M₃ de la célula parietal y activa la vía de la fosfolipasa C.\r\n- d) La gastrina estimula la liberación de histamina por las células ECL mediante su unión a receptores CCK2.\r\n- e) La H⁺/K⁺-ATPasa constituye la vía final común para la secreción de ácido gástrico por la célula parietal.",
+    "correctOptionIndex": 1,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl cuadro identifica a la célula mucosa del cuello como progenitora de las demás células epiteliales gástricas. También participa en la producción de glucoproteínas y pepsinógenos I y II.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Asociaciones del cuadro:**\r\n- Mucosas superficiales y de las criptas → glucoproteína + bicarbonato → gel superficial y neutralización del HCl.\r\n- Mucosa del cuello → progenitora + glucoproteínas + pepsinógenos I y II.\r\n- Oxíntica/parietal → HCl + factor intrínseco + bicarbonato.\r\n- Principal → pepsinógenos I y II + lipasa.\r\n- Mucosa cardiopilórica → glucoproteína + pepsinógeno II.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Para memorizar las dos células clásicas:**\r\n- Parietal → ácido + factor intrínseco.\r\n- Principal → pepsinógenos + lipasa.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1227,8 +1227,8 @@ export const questionsSemana11: Question[] = [
       "La gastrina estimula la liberación de histamina por las células ECL mediante su unión a receptores CCK2.",
       "La H⁺/K⁺-ATPasa constituye la vía final común para la secreción de ácido gástrico por la célula parietal."
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEs el EXCEPTO porque la afirmación es exactamente opuesta a lo descrito en el fragmento.\r\n\r\nLa somatostatina INHIBE la secreción de ácido gástrico mediante tres acciones señaladas en el texto:\r\n\r\nSe une a receptores SSTR2 de las células parietales → inhibe directamente la liberación de ácido.\r\n\r\nActúa sobre las células ECL → disminuye la liberación de histamina.\r\n\r\nActúa sobre las células G antrales → inhibe la liberación de gastrina.\r\n\r\nLas demás alternativas son correctas según el fragmento.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La célula parietal tiene tres estímulos fundamentales para secretar HCl:**\r\n- 1. Histamina\r\n- Célula de origen → ECL.\r\n- Receptor en célula parietal → H₂.\r\n- Activa → adenilato ciclasa.\r\n- ↑ AMPc → activa proteínas cinasas → activa H⁺/K⁺-ATPasa.\r\n- 2. Acetilcolina\r\n- Procede de neuronas intrínsecas.\r\n- Receptor → muscarínico M₃.\r\n- Activa → fosfolipasa C.\r\n- ↑ trifosfato de inositol → liberación de Ca²⁺ intracelular → activación de H⁺/K⁺-ATPasa.\r\n- 3. Gastrina\r\n- Se une a receptores CCK2 de las células ECL.\r\n- Estimula la liberación de histamina.\r\n- La histamina actúa posteriormente sobre el receptor H₂ de la célula parietal.\r\n- La gastrina también puede actuar sobre receptores CCK2 de la propia célula parietal, aunque el texto señala que esta acción es menos importante.\r\n- Inhibidor → somatostatina\r\n- Células de origen → células D.\r\n- ↓ ácido directamente.\r\n- ↓ histamina.\r\n- ↓ gastrina.\r\n- Finalmente, todos los estímulos convergen en la H⁺/K⁺-ATPasa, la bomba de protones de la célula parietal.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Memorizá:**\r\n- “A-G-H estimulan; S inhibe”\r\n- Acetilcolina → M₃\r\n- Gastrina → CCK2\r\n- Histamina → H₂\r\n- Somatostatina → inhibe\r\n\r\n**Y la vía final común es:**\r\n- H⁺/K⁺-ATPasa = bomba de protones.\r\n- Trampa frecuente: la gastrina estimula gran parte de la secreción ácida indirectamente, mediante la célula ECL → histamina → H₂ → célula parietal.\r\n- Con respecto a las fases fisiológicas de la secreción de ácido gástrico inducida por los alimentos, ¿cuál de las siguientes afirmaciones es CORRECTA?\r\n- a) La fase cefálica representa aproximadamente 60% de la secreción ácida total y comienza cuando los alimentos llegan al estómago.\r\n- b) La fase intestinal representa aproximadamente 30% de la secreción ácida y depende principalmente de la distensión gástrica proximal.\r\n- c) La fase gástrica representa aproximadamente 60% de la secreción total de ácido en respuesta a una comida.\r\n- d) La fase cefálica comienza con el vaciamiento gástrico y continúa mientras existan nutrientes en el intestino delgado proximal.\r\n- e) La fase intestinal constituye la principal fuente de secreción ácida después de una comida.",
+    "correctOptionIndex": 0,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEs el EXCEPTO porque la afirmación es exactamente opuesta a lo descrito en el fragmento.\r\n\r\nLa somatostatina INHIBE la secreción de ácido gástrico mediante tres acciones señaladas en el texto:\r\n\r\nSe une a receptores SSTR2 de las células parietales → inhibe directamente la liberación de ácido.\r\n\r\nActúa sobre las células ECL → disminuye la liberación de histamina.\r\n\r\nActúa sobre las células G antrales → inhibe la liberación de gastrina.\r\n\r\nLas demás alternativas son correctas según el fragmento.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La célula parietal tiene tres estímulos fundamentales para secretar HCl:**\r\n- 1. Histamina\r\n- Célula de origen → ECL.\r\n- Receptor en célula parietal → H₂.\r\n- Activa → adenilato ciclasa.\r\n- ↑ AMPc → activa proteínas cinasas → activa H⁺/K⁺-ATPasa.\r\n- 2. Acetilcolina\r\n- Procede de neuronas intrínsecas.\r\n- Receptor → muscarínico M₃.\r\n- Activa → fosfolipasa C.\r\n- ↑ trifosfato de inositol → liberación de Ca²⁺ intracelular → activación de H⁺/K⁺-ATPasa.\r\n- 3. Gastrina\r\n- Se une a receptores CCK2 de las células ECL.\r\n- Estimula la liberación de histamina.\r\n- La histamina actúa posteriormente sobre el receptor H₂ de la célula parietal.\r\n- La gastrina también puede actuar sobre receptores CCK2 de la propia célula parietal, aunque el texto señala que esta acción es menos importante.\r\n- Inhibidor → somatostatina\r\n- Células de origen → células D.\r\n- ↓ ácido directamente.\r\n- ↓ histamina.\r\n- ↓ gastrina.\r\n- Finalmente, todos los estímulos convergen en la H⁺/K⁺-ATPasa, la bomba de protones de la célula parietal.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Memorizá:**\r\n- “A-G-H estimulan; S inhibe”\r\n- Acetilcolina → M₃\r\n- Gastrina → CCK2\r\n- Histamina → H₂\r\n- Somatostatina → inhibe\r\n\r\n**Y la vía final común es:**\r\n- H⁺/K⁺-ATPasa = bomba de protones.\r\n- Trampa frecuente: la gastrina estimula gran parte de la secreción ácida indirectamente, mediante la célula ECL → histamina → H₂ → célula parietal.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1246,7 +1246,7 @@ export const questionsSemana11: Question[] = [
       "La fase cefálica comienza con el vaciamiento gástrico y continúa mientras existan nutrientes en el intestino delgado proximal.",
       "La fase intestinal constituye la principal fuente de secreción ácida después de una comida."
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa secreción ácida inducida por una comida se divide tradicionalmente en tres fases: cefálica, gástrica e intestinal.\r\n\r\nSegún el fragmento:\r\n\r\nFase cefálica: hasta 30%.\r\n\r\nFase gástrica: aproximadamente 60%.\r\n\r\nFase intestinal: aproximadamente 10%.\r\n\r\nLa fase gástrica comienza cuando la comida llega al estómago y persiste hasta que este se vacía. Es, por tanto, la fase que aporta la mayor proporción de secreción ácida en respuesta a una comida.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**1. Fase cefálica → hasta 30%**\r\n- Comienza antes de que el alimento llegue al estómago.\r\n\r\n**Estímulos:**\r\n- Pensamiento.\r\n- Vista.\r\n- Olfato.\r\n- Sabor de los alimentos.\r\n- Estos estímulos activan sitios corticales e hipotalámicos y las señales llegan al estómago por los nervios vagales.\r\n\r\n**El vago:**\r\n- Libera acetilcolina → estimula la secreción ácida de la célula parietal.\r\n- Favorece la liberación de gastrina por las células G antrales.\r\n- Sensibiliza las células ECL a la gastrina.\r\n- La alimentación simulada, es decir, masticar y escupir, estimula la secreción de ácido exclusivamente mediante esta fase.\r\n\r\n**2. Fase gástrica → aproximadamente 60%**\r\n- Comienza cuando la comida llega al estómago y dura hasta que este se vacía.\r\n\r\n**Principales estímulos:**\r\n- Aminoácidos y pequeños péptidos → estimulan células G antrales → gastrina → células ECL y parietales → ↑ secreción ácida.\r\n- Distensión gástrica proximal → arco reflejo vagovagal → ↑ secreción ácida.\r\n- Distensión antral → ↑ gastrina antral → ↑ secreción ácida.\r\n- Además, la entrada vagal cefálica en curso estimula gastrina, que favorece la liberación de histamina por las células ECL.\r\n\r\n**3. Fase intestinal → aproximadamente 10%**\r\n- Comienza con el vaciamiento gástrico de los alimentos y continúa mientras permanezcan nutrientes en el intestino delgado proximal.\r\n- El texto señala que se cree que está mediada por una hormona liberada por la mucosa del intestino delgado proximal en respuesta al quimo luminal.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Para examen:**\r\n- Cefálica 30% → Gástrica 60% → Intestinal 10%.\r\n- La trampa más frecuente es intercambiar 30% y 60%.\r\n- Mayor secreción posprandial = fase GÁSTRICA (60%).",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1265,7 +1265,7 @@ export const questionsSemana11: Question[] = [
       "Acetilcolina",
       "Pepsina"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl estímulo fisiológico más potente para la secreción de pepsinógeno es la ingesta de alimentos; sin embargo, el fragmento especifica que la acetilcolina es el mediador más importante de esta secreción.\r\n\r\nEn contraste, la somatostatina inhibe la secreción de pepsinógeno.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Estímulo fisiológico más potente: ingesta de alimentos.\r\n- Mediador más importante: acetilcolina.\r\n- Inhibidor: somatostatina.\r\n- Pepsinógeno I: producido por células principales de las glándulas productoras de ácido.\r\n- Pepsinógeno II: producido por células principales y células epiteliales superficiales (SEC), tanto en glándulas productoras de ácido como antrales.\r\n- En medio ácido, el pepsinógeno se convierte en pepsina activa.\r\n- Activación máxima → aproximadamente pH 2,5.\r\n- Por encima de pH 5, la pepsina se inactiva.\r\n- La pepsina participa en la hidrólisis de proteínas y se desnaturaliza a pH alcalino.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**No confundas:**\r\n- “Estímulo más potente” → comida.\r\n- “Mediador más importante” → acetilcolina.\r\n- “Inhibidor” → somatostatina.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1284,8 +1284,8 @@ export const questionsSemana11: Question[] = [
       "Acetilcolina",
       "Pepsina"
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa gastrina, producida por las células G antrales, es el principal estimulante hormonal de la secreción ácida durante la fase gástrica.\r\n\r\nSu acción ocurre principalmente de manera indirecta:\r\n\r\nGastrina → células ECL → histamina → estimulación de la secreción ácida.\r\n\r\nEl fragmento destaca que este efecto endocrino sobre las células ECL es más importante que el efecto directo de la gastrina sobre las células parietales.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Origen: células G del antro.\r\n- Principal función: estímulo hormonal de la secreción ácida durante la fase gástrica.\r\n- La mayor parte de la gastrina liberada por el antro humano es G17 (gastrina pequeña).\r\n- Estímulos más potentes: péptidos y aminoácidos luminales.\r\n- Inhibidor más potente: ácido luminal.\r\n- La inhibición producida por el ácido está mediada en gran parte por somatostatina de las células D antrales.\r\n- La gastrina actúa principalmente → células ECL → histamina → secreción ácida.\r\n- La hipergastrinemia crónica se relaciona con hiperplasia de células ECL y, raramente, tumores neuroendocrinos gástricos tipo I.\r\n- El fragmento menciona como causas importantes de hipergastrinemia: anemia perniciosa, medicación supresora de ácido, gastrinoma, antro retenido después de gastrectomía distal y cirugía Billroth II, y vagotomía.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Gastrina = principal estimulante HORMONAL del ácido en la fase gástrica.\r\n\r\n**Ruta de examen:**\r\n- Célula G → gastrina → célula ECL → histamina → ↑ ácido.\r\n- Trampa: si preguntan por el principal estimulante hormonal, la respuesta es gastrina, no acetilcolina.\r\n- Con respecto a la grelina, ¿cuál de las siguientes afirmaciones es CORRECTA?\r\n- a) Es producida principalmente en el duodeno y sus niveles aumentan después de las comidas.\r\n- b) Es una hormona anorexígena cuyos niveles aumentan con la hiperglucemia.\r\n- c) Se produce principalmente en el estómago y actúa como un potente regulador orexigénico del apetito.\r\n- d) Su principal efecto endocrino consiste en inhibir la secreción de hormona de crecimiento.\r\n- e) La extirpación del estómago produce un aumento persistente de sus concentraciones plasmáticas.",
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa gastrina, producida por las células G antrales, es el principal estimulante hormonal de la secreción ácida durante la fase gástrica.\r\n\r\nSu acción ocurre principalmente de manera indirecta:\r\n\r\nGastrina → células ECL → histamina → estimulación de la secreción ácida.\r\n\r\nEl fragmento destaca que este efecto endocrino sobre las células ECL es más importante que el efecto directo de la gastrina sobre las células parietales.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Origen: células G del antro.\r\n- Principal función: estímulo hormonal de la secreción ácida durante la fase gástrica.\r\n- La mayor parte de la gastrina liberada por el antro humano es G17 (gastrina pequeña).\r\n- Estímulos más potentes: péptidos y aminoácidos luminales.\r\n- Inhibidor más potente: ácido luminal.\r\n- La inhibición producida por el ácido está mediada en gran parte por somatostatina de las células D antrales.\r\n- La gastrina actúa principalmente → células ECL → histamina → secreción ácida.\r\n- La hipergastrinemia crónica se relaciona con hiperplasia de células ECL y, raramente, tumores neuroendocrinos gástricos tipo I.\r\n- El fragmento menciona como causas importantes de hipergastrinemia: anemia perniciosa, medicación supresora de ácido, gastrinoma, antro retenido después de gastrectomía distal y cirugía Billroth II, y vagotomía.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Gastrina = principal estimulante HORMONAL del ácido en la fase gástrica.\r\n\r\n**Ruta de examen:**\r\n- Célula G → gastrina → célula ECL → histamina → ↑ ácido.\r\n- Trampa: si preguntan por el principal estimulante hormonal, la respuesta es gastrina, no acetilcolina.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1303,7 +1303,7 @@ export const questionsSemana11: Question[] = [
       "Su principal efecto endocrino consiste en inhibir la secreción de hormona de crecimiento.",
       "La extirpación del estómago produce un aumento persistente de sus concentraciones plasmáticas."
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa grelina es un pequeño péptido producido principalmente en el estómago por células endocrinas especializadas P/D1 de las glándulas oxínticas gástricas.\r\n\r\nEs un importante regulador orexigénico, es decir, estimula el apetito. Puede actuar atravesando la barrera hematoencefálica y estimulando receptores hipotalámicos, además de estimular fibras aferentes vagales en la pared gástrica.\r\n\r\nLas demás son incorrectas porque el fragmento indica que aproximadamente 90% de los depósitos de grelina se encuentran en estómago y duodeno, aumenta antes de las comidas y disminuye después de ellas; además, es un potente secretagogo de la hormona de crecimiento.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Principal sitio de producción: estómago.\r\n- Células: endocrinas P/D1 de las glándulas oxínticas.\r\n- Aproximadamente 90% de los depósitos se encuentran en estómago y duodeno.\r\n- Efecto sobre el apetito: orexigénico → ↑ apetito.\r\n- Hormona hipofisaria: potente secretagogo de hormona de crecimiento.\r\n- Es un secretagogo débil para ACTH y prolactina.\r\n- Antes de comer: ↑ grelina.\r\n- Después de comer: ↓ grelina.\r\n- Inanición: niveles elevados.\r\n- Hiperglucemia: niveles disminuidos.\r\n- Obesidad y resistencia a la insulina: asociadas con niveles bajos.\r\n- La extirpación de su fuente primaria, el estómago, puede explicar parcialmente la anorexia y pérdida de peso observadas después de algunas resecciones gástricas.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Grelina = “hambre”.\r\n\r\n**Para examen:**\r\n- Ayuno/inanición → ↑ grelina → ↑ apetito.\r\n- Comida/hiperglucemia → ↓ grelina.\r\n\r\n**Y otra asociación de alta rentabilidad:**\r\n- Grelina → ↑ hormona de crecimiento.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1322,7 +1322,7 @@ export const questionsSemana11: Question[] = [
       "Somatostatina",
       "Gastrina"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el cuadro, la eritromicina acelera el vaciamiento gástrico actuando como agonista de la motilina.\r\n\r\nEn cambio:\r\n\r\nMetoclopramida → antagonista de la dopamina.\r\n\r\nDomperidona → antagonista de la dopamina.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Los tres procinéticos mencionados para el retraso del vaciamiento gástrico son:**\r\n- Metoclopramida: 10 mg VO cuatro veces al día → antagonista de la dopamina.\r\n- Eritromicina: 25 mg VO cuatro veces al día → agonista de la motilina.\r\n- Domperidona: 10 mg VO cuatro veces al día → antagonista de la dopamina.\r\n- El tiempo medio de vaciamiento gástrico de sólidos es, por lo general, inferior a 2 horas.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Eritromicina = agonista de motilina = procinético.\r\n- Trampa frecuente: tanto metoclopramida como domperidona aparecen en el mismo cuadro, pero ambas actúan como antagonistas de la dopamina.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1341,7 +1341,7 @@ export const questionsSemana11: Question[] = [
       "Obtener una biopsia aislada de la mucosa gástrica normal",
       "Realizar únicamente una prueba de ureasa tisular"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 0,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, todos los pacientes con úlcera gástrica diagnosticada en estudios gastrointestinales superiores o encontrada durante la esofagogastroduodenoscopia deben tener múltiples muestras de biopsia de la base y del borde de la lesión para descartar cáncer con un alto grado de precisión.\r\n\r\nLa citología de cepillado también debe considerarse, pero no sustituye las múltiples biopsias indicadas en el texto.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Úlcera gástrica → múltiples biopsias de base + borde para descartar cáncer.\r\n- En gastritis → biopsia para histología y para valoración de H. pylori.\r\n- Para H. pylori, el fragmento menciona prueba de ureasa tisular + valoración histológica.\r\n- Si se detecta H. pylori → debe tratarse.\r\n- Complicaciones más graves de la EGD → perforación, aspiración y depresión respiratoria por sedación excesiva.\r\n- La EGD es más sensible que las series gastrointestinales superiores de doble contraste, aunque se consideran complementarias.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Úlcera gástrica = biopsiar BASE + BORDE, con MÚLTIPLES muestras.\r\n- Trampa frecuente: elegir solamente biopsia del borde o solamente citología de cepillado.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1360,7 +1360,7 @@ export const questionsSemana11: Question[] = [
       "Obtención de biopsias de la base y el borde de una úlcera gástrica",
       "Valoración histológica de la mucosa gástrica"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, las series gastrointestinales superiores de doble contraste pueden ser mejores que la esofagogastroduodenoscopia para explicar o definir:\r\n\r\nDivertículos gástricos\r\n\r\nFístulas\r\n\r\nTortuosidad\r\n\r\nLocalización de estenosis\r\n\r\nTamaño o morfología de la hernia hiatal\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**También debe diferenciarse del uso de una radiografía simple de abdomen, que puede ser útil para:**\r\n- Perforación gástrica → neumoperitoneo.\r\n- Vaciamiento gástrico retardado → nivel elevado de aire y líquido.\r\n- Aunque una úlcera presente características radiológicas que sugieran benignidad o malignidad, el fragmento enfatiza que toda úlcera gástrica requiere una biopsia adecuada.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Doble contraste → anatomía/morfología: divertículos, fístulas, tortuosidad, estenosis y hernia hiatal.\r\n- Úlcera gástrica → siempre biopsia, independientemente de su aspecto radiológico.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1379,7 +1379,7 @@ export const questionsSemana11: Question[] = [
       "Ecografía endoscópica",
       "Citología por cepillado"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa ecografía endoscópica permite una estadificación local bastante precisa del adenocarcinoma gástrico y puede utilizarse para planificar el tratamiento. El fragmento la considera la mejor manera de realizar la estadificación clínica locorregional.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La ecografía endoscópica permite:**\r\n- Estadificar locorregionalmente el adenocarcinoma gástrico.\r\n- Evaluar lesiones de masa gástrica.\r\n- Obtener muestras de ganglios sospechosos mediante biopsia con aguja guiada.\r\n- Evaluar masas submucosas y várices submucosas.\r\n- Valorar tumores confinados a la mucosa susceptibles de extirpación endoscópica.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Cáncer gástrico + estadificación LOCAL/LOCORREGIONAL → ecografía endoscópica.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1398,8 +1398,8 @@ export const questionsSemana11: Question[] = [
       "Proporción BAO/MAO superior a 0,6",
       "Disminución de 50% del polipéptido pancreático"
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, en pacientes con gastrinoma, la proporción entre la producción de ácido basal (BAO) y la producción máxima de ácido (MAO) es superior a 0,6.\r\n\r\nAdemás, estos pacientes presentan con frecuencia una BAO elevada, a menudo por encima de 30 mEq/h.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**El análisis de secreción gástrica puede ser útil en pacientes con:**\r\n- Hipergastrinemia, incluido el síndrome de",
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, en pacientes con gastrinoma, la proporción entre la producción de ácido basal (BAO) y la producción máxima de ácido (MAO) es superior a 0,6.\r\n\r\nAdemás, estos pacientes presentan con frecuencia una BAO elevada, a menudo por encima de 30 mEq/h.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**El análisis de secreción gástrica puede ser útil en pacientes con:**\r\n- Hipergastrinemia, incluido el síndrome de Zollinger-Ellison.\r\n- Úlcera resistente al tratamiento.\r\n- Enfermedad por reflujo gastroesofágico.\r\n- Úlcera recurrente después de una operación.\r\n\r\n**Datos de alta rentabilidad del fragmento:**\r\n- Gastrinoma → BAO elevada + relación BAO/MAO > 0,6.\r\n- La alimentación simulada también permite valorar la función vagal: un aumento >50% del polipéptido pancreático durante 30 minutos sugiere una función vagal intacta.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Gastrinoma → BAO/MAO > 0,6.\r\n- Si aparece esa relación en las opciones, asociarla directamente con gastrinoma.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1417,7 +1417,7 @@ export const questionsSemana11: Question[] = [
       "Estudio gastrointestinal con bario",
       "Tomografía por emisión de positrones"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa escintigrafía constituye el método descrito para la valoración estándar del vaciamiento gástrico. Implica la ingestión de una comida de prueba con uno o dos isótopos, seguida de la exploración mediante una cámara gamma.\r\n\r\nCon los resultados se traza una curva de vaciamiento gástrico y se calcula su tiempo medio.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Escintigrafía → valoración del vaciamiento gástrico.\r\n- Utiliza una comida de prueba marcada con isótopos.\r\n- El paciente es estudiado mediante cámara gamma.\r\n- Permite construir una curva de vaciamiento y calcular el tiempo medio de vaciamiento gástrico.\r\n- El fragmento también señala que el reflujo duodenogástrico puede cuantificarse mediante exploración HIDA.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Vaciamiento gástrico + comida marcada con isótopos + cámara gamma = ESCINTIGRAFÍA.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1436,7 +1436,7 @@ export const questionsSemana11: Question[] = [
       "Valoración histológica de biopsia gástrica",
       "Prueba rápida de ureasa en biopsia"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa prueba del aliento con urea es un método no invasivo con sensibilidad y especificidad superiores al 90%. Según el fragmento, sirve tanto para el diagnóstico inicial como para el seguimiento después del tratamiento de erradicación, porque solo resulta positiva cuando existe infección activa.\r\n\r\nLa serología es una trampa frecuente: puede permanecer positiva después de la erradicación, por lo que no resulta útil para confirmar el éxito del tratamiento.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Métodos no invasivos mencionados:**\r\n- Prueba del aliento con urea → infección activa; diagnóstico y seguimiento.\r\n- Antígeno en heces → prueba no invasiva para infección activa.\r\n- Serología → útil, pero menos precisa; puede persistir positiva tras la erradicación.\r\n\r\n**Métodos invasivos:**\r\n- Histología de biopsias gástricas.\r\n- Prueba rápida de ureasa en biopsias recientes.\r\n- Cultivo → no es sistemático; se reserva principalmente para infecciones recurrentes y pruebas de sensibilidad cuando fracasa el tratamiento de segunda línea.\r\n- Todo paciente con una prueba positiva debe recibir tratamiento y posteriormente debe confirmarse la erradicación.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Diagnóstico + control de erradicación → prueba del aliento con urea.\r\n- Serología positiva ≠ infección activa, porque puede continuar positiva después de eliminar H. pylori.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1447,7 +1447,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q77",
-    "text": "Pregunta 1 ¿Cuál es el tipo más frecuente de úlcera gástrica según la clasificación de Johnson?",
+    "text": "¿Cuál es el tipo más frecuente de úlcera gástrica según la clasificación de Johnson?",
     "options": [
       "Tipo V",
       "Tipo III",
@@ -1455,7 +1455,7 @@ export const questionsSemana11: Question[] = [
       "Tipo IV",
       "Tipo II"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa úlcera gástrica tipo I es la más frecuente. Se encuentra casi siempre cerca de la incisura angular, en la curvatura menor, próxima a la frontera entre la mucosa antral y la del cuerpo. Estos pacientes suelen presentar una secreción ácida normal o reducida.\r\n\r\n📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA\r\n\r\n- Tipo I: cerca de la incisura angular en la curvatura menor → más frecuente → ácido normal o reducido.\r\n- Tipo II: asociada con enfermedad ulcerosa duodenal activa o inactiva → secreción ácida normal o elevada.\r\n- Tipo III: úlcera prepilórica → secreción ácida normal o elevada.\r\n- Tipo IV: cerca de la unión gastroesofágica → secreción ácida normal o disminuida.\r\n- Tipo V: inducida por fármacos → puede aparecer en cualquier parte del estómago.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Tipo I = la más frecuente + incisura angular + curvatura menor.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1474,7 +1474,7 @@ export const questionsSemana11: Question[] = [
       "Tipo I",
       "Tipo III"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 0,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa úlcera gástrica tipo II se relaciona con la presencia de enfermedad ulcerosa duodenal activa o inactiva. Se asocia con una secreción de ácido gástrico normal o elevada.\r\n\r\n📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA\r\n\r\n- Tipo I: incisura angular/curvatura menor → más frecuente → ácido normal o ↓.\r\n- Tipo II: asociada a úlcera duodenal → ácido normal o ↑.\r\n- Tipo III: prepilórica → ácido normal o ↑.\r\n- Tipo IV: próxima a la unión gastroesofágica → ácido normal o ↓.\r\n- Tipo V: inducida por fármacos → cualquier localización gástrica.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Tipo II = gástrica + duodenal.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1493,7 +1493,7 @@ export const questionsSemana11: Question[] = [
       "Tipo III",
       "Tipo II"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa úlcera gástrica tipo III corresponde a la úlcera prepilórica. Al igual que la tipo II, se relaciona con una secreción de ácido normal o elevada.\r\n\r\n📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA\r\n\r\n- Tipo I: incisura angular/curvatura menor → más frecuente → ácido normal o ↓.\r\n- Tipo II: asociada a úlcera duodenal → ácido normal o ↑.\r\n- Tipo III: prepilórica → ácido normal o ↑.\r\n- Tipo IV: unión gastroesofágica → ácido normal o ↓.\r\n- Tipo V: inducida por fármacos → cualquier parte del estómago.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Tipo III = prepilórica.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1512,7 +1512,7 @@ export const questionsSemana11: Question[] = [
       "Tipo V",
       "Tipo III"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLas úlceras gástricas tipo IV aparecen cerca de la unión gastroesofágica. Según el fragmento, presentan una secreción ácida normal o por debajo de lo normal.\r\n\r\n📚 CONCEPTOS CLAVE – CLASIFICACIÓN COMPLETA\r\n\r\n- Tipo I: incisura angular/curvatura menor → más frecuente → ácido normal o ↓.\r\n- Tipo II: úlcera gástrica asociada a úlcera duodenal → ácido normal o ↑.\r\n- Tipo III: prepilórica → ácido normal o ↑.\r\n- Tipo IV: unión gastroesofágica → ácido normal o ↓.\r\n- Tipo V: inducida por fármacos → cualquier localización.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Tipo IV = alta, cerca de la unión gastroesofágica.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1542,7 +1542,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q82",
-    "text": "Caso clínico 1 Un hombre consulta por dolor urente localizado en epigastrio, sin irradiación. Refiere que el dolor aparece habitualmente 2 a 3 horas después de las comidas y con frecuencia lo despierta durante la noche. ¿Cuál es el diagnóstico más probable?",
+    "text": "Un hombre consulta por dolor urente localizado en epigastrio, sin irradiación. Refiere que el dolor aparece habitualmente 2 a 3 horas después de las comidas y con frecuencia lo despierta durante la noche. ¿Cuál es el diagnóstico más probable?",
     "options": [
       "Úlcera gástrica",
       "Úlcera duodenal",
@@ -1550,7 +1550,7 @@ export const questionsSemana11: Question[] = [
       "Gastrinoma",
       "Neoplasia gástrica"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl patrón descrito es característico de úlcera duodenal: dolor epigástrico que aparece 2 a 3 horas después de una comida y que puede presentarse durante la noche.\r\n\r\nEl fragmento señala que aproximadamente dos tercios de los pacientes con úlcera duodenal presentan dolor que los despierta.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Más del 90% de los pacientes con enfermedad ulcerosa péptica presentan dolor abdominal.\r\n- Características habituales → urente, no irradiado y epigástrico.\r\n- Úlcera duodenal: dolor 2-3 horas después de comer y frecuentemente nocturno.\r\n- Úlcera gástrica: dolor relacionado más frecuentemente con la alimentación.\r\n- Otros hallazgos posibles → náuseas, distensión abdominal, pérdida de peso, sangre oculta positiva y anemia.\r\n- La úlcera duodenal es casi dos veces más frecuente en hombres que en mujeres.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Dolor 2-3 h después de comer + despierta de noche → ÚLCERA DUODENAL.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1569,7 +1569,7 @@ export const questionsSemana11: Question[] = [
       "Úlcera gástrica",
       "Neoplasia gástrica"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, el dolor de la úlcera gástrica ocurre más comúnmente con la alimentación, lo que permite diferenciarla clínicamente del patrón típico de la úlcera duodenal.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La comparación de alta rentabilidad es:**\r\n- Úlcera gástrica → dolor más comúnmente con la alimentación.\r\n- Úlcera duodenal → dolor 2-3 horas después de comer y frecuentemente nocturno.\r\n- Ambas pueden producir dolor epigástrico, urente y no irradiado.\r\n- La incidencia de úlcera gástrica es similar entre hombres y mujeres.\r\n- En promedio, los pacientes con úlcera gástrica son mayores que aquellos con úlcera duodenal.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Dolor con comida → GÁSTRICA.\r\n- Dolor 2-3 horas después + nocturno → DUODENAL.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1588,7 +1588,7 @@ export const questionsSemana11: Question[] = [
       "Choque",
       "Anemia"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa hemorragia es la complicación más frecuente de la enfermedad ulcerosa péptica. Según el fragmento, las tres complicaciones principales, en orden decreciente de frecuencia, son:\r\n\r\nHemorragia → perforación → obstrucción.\r\n\r\nAdemás, la mayoría de las muertes relacionadas con úlceras pépticas mencionadas en el texto se deben a la hemorragia.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La úlcera péptica hemorrágica suele manifestarse con:**\r\n- Melena y/o hematemesis.\r\n- El dolor abdominal es relativamente infrecuente.\r\n- Puede producir choque y requerir reanimación intensiva y transfusión.\r\n- La endoscopia temprana es importante para determinar la causa del sangrado y valorar la necesidad de tratamiento hemostático.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n**Complicaciones de la úlcera péptica por frecuencia:**\r\n- 1.º Hemorragia → 2.º Perforación → 3.º Obstrucción.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1607,7 +1607,7 @@ export const questionsSemana11: Question[] = [
       "Úlcera gástrica no complicada",
       "Hemorragia digestiva oculta"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa úlcera péptica perforada suele presentarse como un abdomen agudo, con dolor de inicio intenso que puede ser tan brusco que el paciente identifica el momento exacto de aparición.\r\n\r\nInicialmente se produce una peritonitis química por las secreciones gástricas o duodenales y, pocas horas después, puede sobrevenir una peritonitis bacteriana.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Los hallazgos característicos descritos son:**\r\n- Dolor abdominal intenso de inicio brusco.\r\n- Abdomen rígido.\r\n- Defensa involuntaria marcada.\r\n- Sensibilidad a la descompresión.\r\n- Radiografía de tórax de pie: muestra aire libre en aproximadamente 80% de los pacientes.\r\n- Una vez establecido el diagnóstico → analgesia, antibióticos, reanimación con líquido isotónico y traslado a quirófano.\r\n- El tratamiento no quirúrgico solo es apropiado cuando existen pruebas objetivas de que la perforación se ha cerrado y no hay peritonitis clínica.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Úlcera + dolor súbito intenso + abdomen rígido + aire libre = PERFORACIÓN.\r\n- Dato de examen: aire libre en radiografía de tórax de pie ≈ 80%.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1626,7 +1626,7 @@ export const questionsSemana11: Question[] = [
       "Perforación",
       "Inestabilidad"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, las indicaciones para cirugía de la enfermedad ulcerosa péptica, en orden decreciente de frecuencia, son:\r\n\r\nPerforación → obstrucción → hemorragia → inestabilidad o falta de cicatrización.\r\n\r\nPor lo tanto, la perforación constituye la indicación quirúrgica más frecuente.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**En la actualidad, la mayoría de los pacientes sometidos a una operación de emergencia reciben:**\r\n- Parche simple de una úlcera perforada.\r\n- Sobrehilado de una úlcera sangrante.\r\n\r\n**Las tres operaciones básicas descritas tradicionalmente para la enfermedad ulcerosa péptica son:**\r\n- Vagotomía de células parietales, también denominada vagotomía altamente selectiva.\r\n- Vagotomía gástrica proximal.\r\n- Vagotomía y drenaje.\r\n- Vagotomía y gastrectomía distal.\r\n- El fragmento señala que la vagotomía + gastrectomía distal presenta las tasas de recurrencia más bajas, pero una mayor morbilidad; con la vagotomía altamente selectiva ocurre lo contrario.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Indicación quirúrgica más frecuente de úlcera péptica = PERFORACIÓN.\r\n\r\n**Orden para memorizar:**\r\n- Perforación → Obstrucción → Hemorragia → Inestabilidad/no cicatrización.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1645,7 +1645,7 @@ export const questionsSemana11: Question[] = [
       "Respuesta favorable al tratamiento médico",
       "Sangrado autolimitado sin transfusiones"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nActualmente, la mayoría de las hemorragias por úlcera péptica pueden controlarse mediante tratamiento médico y endoscópico, por lo que la cirugía queda reservada para pacientes seleccionados de alto riesgo.\r\n\r\nUna indicación señalada específicamente en el fragmento es la hemorragia recurrente que requiere múltiples transfusiones después de dos intentos de control endoscópico.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Las indicaciones de cirugía mencionadas en el fragmento incluyen:**\r\n- Hemorragia masiva que no responde al control endoscópico inicial.\r\n- Hemorragia recurrente con múltiples transfusiones después de dos intentos endoscópicos.\r\n- Hemorragia en curso con disponibilidad limitada de sangre o sin endoscopista terapéutico.\r\n- Rehospitalización temprana por hemorragia.\r\n- Indicación simultánea de cirugía por perforación u obstrucción.\r\n- Lesiones de alto riesgo, como úlcera duodenal posterior con erosión de la arteria gastroduodenal.\r\n- Úlcera gástrica de curvatura menor con erosión de la arteria o rama gástrica izquierda.\r\n- Presentación con choque.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Úlcera hemorrágica → primero control endoscópico.\r\n- Fracaso o recurrencia importante tras control endoscópico → considerar cirugía.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1664,7 +1664,7 @@ export const questionsSemana11: Question[] = [
       "Extirpación gástrica distal",
       "Vagotomía altamente selectiva"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSegún el fragmento, la extirpación gástrica distal que incluya la úlcera hemorrágica es el procedimiento de elección para la úlcera gástrica sangrante.\r\n\r\nLa resección permite además abordar una consideración fundamental de la úlcera gástrica: descartar cáncer.\r\n\r\nEn pacientes de alto riesgo o inestables, el sobrehilado del vaso sangrante acompañado de biopsia y supresión ácida prolongada constituye una alternativa razonable.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Úlcera gástrica hemorrágica:**\r\n- Elección: extirpación gástrica distal incluyendo la úlcera.\r\n- Segunda opción señalada → vagotomía + drenaje con sobrehilado y biopsia.\r\n- Alto riesgo/inestabilidad → sobrehilado del vaso + biopsia + supresión ácida.\r\n- Si la úlcera gástrica no se extirpa → requiere biopsia.\r\n\r\n**Úlcera duodenal hemorrágica:**\r\n- Las operaciones más frecuentes son sobrehilado, con o sin vagotomía y drenaje, o vagotomía + antrectomía.\r\n- El sobrehilado aislado tiene más riesgo de resangrado, pero menor mortalidad operatoria que una operación definitiva.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Úlcera GÁSTRICA sangrante + candidato quirúrgico adecuado → resección gástrica distal incluyendo la úlcera.\r\n- Si no se extirpa una úlcera gástrica → BIOPSIA.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1683,7 +1683,7 @@ export const questionsSemana11: Question[] = [
       "Extirpación en cuña",
       "Vagotomía altamente selectiva"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEn pacientes con choque o inestabilidad médica no debe realizarse extirpación gástrica. En una úlcera duodenal hemorrágica, el sobrehilado permite controlar el vaso sangrante evitando una operación definitiva más extensa en un paciente de alto riesgo.\r\n\r\nEl fragmento señala que el sobrehilado aislado presenta mayor tasa de resangrado, pero menor mortalidad operatoria que una operación definitiva.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Úlcera duodenal hemorrágica: sobrehilado con o sin vagotomía y drenaje, o vagotomía + antrectomía.\r\n- Paciente en choque/inestable: evitar extirpación gástrica.\r\n- Paciente estable: puede considerarse vagotomía si es sencilla y el cirujano tiene experiencia.\r\n- Úlcera gástrica sangrante: la extirpación gástrica distal incluyendo la úlcera es el procedimiento de elección.\r\n- Úlcera gástrica no extirpada: debe realizarse biopsia para descartar cáncer.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Hemorragia + inestabilidad/choque → cirugía rápida y limitada: sobrehilado.\r\n- Úlcera gástrica sangrante + paciente adecuado → extirpación gástrica distal.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1702,7 +1702,7 @@ export const questionsSemana11: Question[] = [
       "Vagotomía altamente selectiva",
       "Extirpación en cuña"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl cierre simple con parche es la operación realizada con mayor frecuencia para la úlcera péptica perforada y constituye el procedimiento de elección cuando existe:\r\n\r\nInestabilidad hemodinámica.\r\n\r\nPeritonitis exhaustiva.\r\n\r\nPerforación de más de 24 horas de evolución.\r\n\r\nEn este contexto se evita una operación definitiva más extensa.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La conducta depende del estado del paciente:**\r\n- Inestable/alto riesgo/perforación >24 h + úlcera duodenal: parche.\r\n- Inestable/alto riesgo + úlcera gástrica: biopsia + parche o extirpación en cuña.\r\n- Estable + úlcera duodenal: puede considerarse parche + vagotomía altamente selectiva o vagotomía y drenaje.\r\n- Estable, sin múltiples factores de riesgo + úlcera gástrica: se trata mejor con extirpación gástrica distal.\r\n- Todas las úlceras gástricas perforadas deben biopsiarse si no son extirpadas.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Perforación + inestabilidad/peritonitis extensa/>24 h → PARCHE SIMPLE.\r\n- Úlcera gástrica perforada que no se extirpa → siempre biopsia.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1721,8 +1721,8 @@ export const questionsSemana11: Question[] = [
       "Ecografía endoscópica",
       "Escintigrafía con octreótido"
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl diagnóstico del síndrome de",
+    "correctOptionIndex": 2,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl diagnóstico del síndrome de Zollinger-Ellison se confirma mediante la prueba de estimulación con secretina. Según el fragmento, un aumento de la gastrina sérica ≥200 pg/mL después de administrar secretina sugiere la presencia de un gastrinoma.\r\n\r\nLos estudios de imagen mencionados son útiles principalmente para localizar el tumor, no para confirmar inicialmente el síndrome.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- ZES → hipersecreción de gastrina por un gastrinoma.\r\n- Gastrinoma → tumor neuroendocrino duodenal o pancreático.\r\n- 80% esporádicos y 20% hereditarios.\r\n- La forma hereditaria se asocia a NEM 1.\r\n- Más del 90% presentan úlceras pépticas.\r\n- Manifestaciones frecuentes → dolor epigástrico, ERGE y diarrea.\r\n- Debe sospecharse ante úlceras recurrentes, resistentes, múltiples o de localización atípica.\r\n- Todos los gastrinomas presentan gastrina elevada.\r\n- Aproximadamente 80% de los tumores primarios están en el triángulo del gastrinoma.\r\n- Aproximadamente 50-60% de los gastrinomas son malignos.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Úlceras recurrentes/múltiples + diarrea + hipergastrinemia → pensar en ZES.\r\n- Confirmación → prueba de secretina.\r\n- Localización → estudios de imagen.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1740,7 +1740,7 @@ export const questionsSemana11: Question[] = [
       "Alteración primaria del vaciamiento gástrico",
       "Aumento de la producción de bicarbonato"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 0,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa gastritis y la úlcera por estrés probablemente se deben a un flujo sanguíneo inadecuado de la mucosa gástrica durante períodos de estrés fisiológico intenso.\r\n\r\nLa perfusión adecuada es necesaria para mantener la barrera de la mucosa y eliminar los iones de hidrógeno que difunden hacia los tejidos. Cuando el flujo disminuye, estos mecanismos fallan y se produce degradación de la mucosa.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Mecanismo principal → hipoperfusión de la mucosa gástrica.\r\n- Una perfusión y oxigenación tisular adecuadas disminuyen la gravedad de la lesión.\r\n- La supresión ácida continúa siendo importante, especialmente en pacientes gravemente enfermos.\r\n- La supresión ácida rutinaria puede favorecer un crecimiento excesivo de bacterias gástricas.\r\n- La cirugía por gastritis por estrés hemorrágica es actualmente muy infrecuente.\r\n- También pueden considerarse embolización angiográfica y tratamiento hemostático endoscópico.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Estrés fisiológico intenso → ↓ flujo sanguíneo mucoso → falla de la barrera → lesión gástrica por estrés.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1759,7 +1759,7 @@ export const questionsSemana11: Question[] = [
       "Reflujo biliar persistente",
       "Metaplasia intestinal"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa causa más frecuente de gastritis atrófica es la infección crónica por H. pylori, especialmente cuando presenta una distribución corporal.\r\n\r\nLa destrucción autoinmune y la irritación química, como el reflujo biliar, también pueden producir gastritis atrófica, pero no constituyen la causa más frecuente según el fragmento.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Gastritis atrófica → atrofia o desaparición de las glándulas gástricas.\r\n- Se pierden células parietales y principales.\r\n- Causa más frecuente → H. pylori crónico.\r\n- Otras causas → destrucción autoinmune e irritación química.\r\n- Puede progresar: metaplasia intestinal → displasia → cáncer gástrico.\r\n- Pérdida de células parietales → ↓ ácido, ↓ factor intrínseco y deficiencia de B12.\r\n- Pérdida de células principales → ↓ pepsinógeno I.\r\n- Son frecuentes la hipoclorhidria o aclorhidria y la hipergastrinemia.\r\n- La gastritis atrófica aumenta el riesgo de cáncer gástrico.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Gastritis atrófica: causa más frecuente = H. pylori crónico.\r\n\r\n**Secuencia de riesgo para recordar:**\r\n- Atrofia → metaplasia → displasia → cáncer.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1770,7 +1770,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q94",
-    "text": "Pregunta 1 El cáncer gástrico se relaciona con los siguientes factores, EXCEPTO:",
+    "text": "El cáncer gástrico se relaciona con los siguientes factores, EXCEPTO:",
     "options": [
       "Infección por Helicobacter pylori",
       "Antecedente familiar",
@@ -1797,7 +1797,7 @@ export const questionsSemana11: Question[] = [
       "Vitamina C",
       "Vitamina K"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl fragmento señala específicamente que una dieta rica en vitamina C disminuye el riesgo de cáncer gástrico. También menciona que una dieta rica en frutas y verduras frescas ejerce un efecto protector.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**En la dieta:**\r\n- Aumentan el riesgo → nitratos, sal y grasa.\r\n- Disminuyen el riesgo → frutas, verduras frescas y vitamina C.\r\n- El texto señala que las bacterias gástricas pueden convertir el nitrato en nitrito, un carcinógeno conocido.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Vitamina C = factor protector frente al cáncer gástrico.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1816,7 +1816,7 @@ export const questionsSemana11: Question[] = [
       "Virus del papiloma humano",
       "Virus de hepatitis C"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 0,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nAproximadamente 10% de los adenocarcinomas gástricos son portadores del virus de Epstein-Barr (VEB).\r\n\r\nEl fragmento señala que se ha sugerido que la infección por VEB constituye un paso tardío en la carcinogénesis gástrica.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- VEB: presente en alrededor del 10% de los adenocarcinomas gástricos.\r\n- Sus transcriptos se encuentran en las células cancerosas, pero no en las células metaplásicas del epitelio precursor.\r\n- Esto apoya su posible participación tardía en la carcinogénesis.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Adenocarcinoma gástrico + virus + 10% → VEB.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1835,7 +1835,7 @@ export const questionsSemana11: Question[] = [
       "Adenocarcinoma sin compromiso de ganglios linfáticos",
       "Adenocarcinoma superficial menor de 3 mm"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl cáncer gástrico temprano se define como un adenocarcinoma limitado a la mucosa (T1a) y submucosa (T1b) del estómago.\r\n\r\nEl fragmento señala que cerca del 10% de los pacientes clínicamente estadificados como cáncer gástrico temprano presentan metástasis ganglionares; por lo tanto, la ausencia de compromiso ganglionar no forma parte de su definición.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Tipos macroscópicos de cáncer gástrico superficial:**\r\n- Tipo 0-I (prominente): tumor polipoide.\r\n- Tipo 0-II (superficial): elevación o depresión mínima respecto a la mucosa circundante.\r\n- 0-IIa: ligeramente elevado.\r\n- 0-IIb: plano, sin elevación ni depresión.\r\n- 0-IIc: ligeramente deprimido.\r\n- Tipo 0-III (excavado): depresión profunda.\r\n- Una elevación <3 mm generalmente se clasifica como 0-IIa; si es mayor, como 0-I.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Cáncer gástrico temprano = T1 = mucosa (T1a) ± submucosa (T1b).\r\n- No confundir “temprano” con “sin ganglios”: puede existir metástasis ganglionar.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1854,8 +1854,8 @@ export const questionsSemana11: Question[] = [
       "Tipo I — Anemia perniciosa",
       "Tipo III — Lesiones pequeñas y múltiples"
     ],
-    "correctOptionIndex": 4,
-    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLos tumores neuroendocrinos gástricos tipo I son los más frecuentes, representan aproximadamente 75% de los casos y aparecen en el contexto de hipergastrinemia crónica, principalmente asociada con anemia perniciosa o gastritis atrófica.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Tipo I**\r\n- Más frecuente: ≈75%.\r\n- Asociado a anemia perniciosa/gastritis atrófica.\r\n- Hipergastrinemia.\r\n- Más frecuente en mujeres.\r\n- Múltiples y pequeños.\r\n- Bajo potencial maligno: <5% de metástasis.\r\n- Supervivencia a 5 años cercana al 100%.\r\n\r\n**Tipo II**\r\n- Asociado con NEM 1 y",
+    "correctOptionIndex": 3,
+    "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLos tumores neuroendocrinos gástricos tipo I son los más frecuentes, representan aproximadamente 75% de los casos y aparecen en el contexto de hipergastrinemia crónica, principalmente asociada con anemia perniciosa o gastritis atrófica.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Tipo I**\r\n- Más frecuente: ≈75%.\r\n- Asociado a anemia perniciosa/gastritis atrófica.\r\n- Hipergastrinemia.\r\n- Más frecuente en mujeres.\r\n- Múltiples y pequeños.\r\n- Bajo potencial maligno: <5% de metástasis.\r\n- Supervivencia a 5 años cercana al 100%.\r\n\r\n**Tipo II**\r\n- Asociado con NEM 1 y ZES.\r\n- Hipergastrinemia.\r\n- Pequeños y múltiples.\r\n- Mayor potencial maligno que tipo I: ≈10% de metástasis.\r\n\r\n**Tipo III**\r\n- Esporádico.\r\n- No asociado a hipergastrinemia.\r\n- Generalmente solitario y >2 cm.\r\n- Más frecuente en hombres.\r\n- Frecuentemente presenta metástasis ganglionares o distantes al diagnóstico.\r\n- Supervivencia a 5 años <50%.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- I = gastritis atrófica/anemia perniciosa → mejor pronóstico.\r\n- II = ZES + NEM 1.\r\n- III = esporádico, solitario, grande → peor pronóstico.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
     "semana": 11,
@@ -1873,7 +1873,7 @@ export const questionsSemana11: Question[] = [
       "La octreótida puede disminuir la hemorragia aguda",
       "La esplenectomía puede controlar el sangrado en casos seleccionados"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nAunque existe un riesgo significativo de hemorragia durante el seguimiento a largo plazo, el fragmento señala que no existe indicación para aplicar sistemáticamente medidas profilácticas a las várices gástricas aisladas.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Várices gástricas aisladas → aparecen sin várices esofágicas.\r\n- Tipo I: fúndicas.\r\n- Tipo II: distales al fundus, incluido el duodeno proximal.\r\n- Asociadas generalmente a hipertensión portal o trombosis de la vena esplénica.\r\n- Hemorragia aguda → paciente de alto riesgo.\r\n- Octreótida/vasopresina pueden disminuir la hemorragia si se toleran.\r\n- El taponamiento con balón puede proporcionar control temporal.\r\n- La escleroterapia o ligadura es menos exitosa que en várices esofágicas.\r\n- Si existe trombosis esplénica e hipertensión portal izquierda/segmentaria → la esplenectomía es eficaz para controlar la hemorragia.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Várices gástricas aisladas + trombosis de vena esplénica → pensar en hipertensión portal izquierda; la esplenectomía puede controlar el sangrado.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1892,7 +1892,7 @@ export const questionsSemana11: Question[] = [
       "Estimulación excesiva de células ECL por histamina",
       "Inhibición de las células mucosas superficiales"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl cuadro corresponde a enfermedad de Ménétrier. El mecanismo propuesto es la sobreexpresión local del factor de crecimiento transformante α en la mucosa gástrica, que estimula al receptor del factor de crecimiento epidérmico.\r\n\r\nEsto provoca una expansión selectiva de las células mucosas superficiales del cuerpo gástrico y fundus. Histológicamente se observa hiperplasia difusa de las células secretoras de moco y una disminución general de las células parietales.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Grandes pliegues gástricos → principalmente estómago proximal.\r\n- El antro casi siempre está respetado.\r\n- Hiperplasia de células secretoras de moco.\r\n- ↓ células parietales → hipoclorhidria.\r\n- Característicamente produce gastropatía perdedora de proteínas → hipoproteinemia.\r\n- Clínica: dolor epigástrico, pérdida de peso y diarrea.\r\n- Existe mayor riesgo de cáncer gástrico.\r\n- El fragmento menciona tratamiento exitoso en algunos pacientes con cetuximab, que bloquea el receptor del factor de crecimiento epidérmico.\r\n- La gastrectomía total puede indicarse ante hemorragia, hipoproteinemia grave o cáncer.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Ménétrier = pliegues gigantes + pérdida de proteínas + hipoclorhidria.\r\n- Mecanismo: ↑ factor de crecimiento transformante α → activación del receptor del factor de crecimiento epidérmico → hiperplasia de células mucosas superficiales.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1911,7 +1911,7 @@ export const questionsSemana11: Question[] = [
       "Lesión de Dieulafoy",
       "Adenocarcinoma gástrico"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 3,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nLa lesión de Dieulafoy es una malformación arteriovenosa congénita caracterizada por una arteria submucosa tortuosa inusualmente grande.\r\n\r\nCuando esta arteria se erosiona, puede producir una hemorragia pulsátil importante. El dato característico en la endoscopia es observar sangre arterial que parece surgir de una mucosa gástrica normal, sin una lesión ulcerosa evidente.\r\n\r\nAdemás, el sangrado puede ser intermitente, por lo que la lesión puede pasar inadvertida si no está sangrando activamente durante la endoscopia.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Lesión vascular congénita.\r\n- Arteria submucosa tortuosa y de gran calibre.\r\n- Más frecuente en hombres de mediana edad o ancianos.\r\n- Produce hemorragia digestiva alta, frecuentemente intermitente.\r\n- Endoscopia → hemorragia arterial sobre mucosa aparentemente normal.\r\n\r\n**Tratamiento:**\r\n- Hemostasia endoscópica.\r\n- Embolización angiográfica.\r\n- Cirugía si es necesaria → sobrehilado o extirpación.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Hemorragia digestiva alta + sangrado arterial pulsátil + mucosa aparentemente normal = lesión de Dieulafoy.\r\n- La trampa es buscar necesariamente una úlcera: en Dieulafoy, el sangrado puede parecer provenir de mucosa normal.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1930,7 +1930,7 @@ export const questionsSemana11: Question[] = [
       "Pacientes con gastroparesia",
       "Pacientes con cáncer gástrico"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl síndrome de Mallory-Weiss se observa generalmente en pacientes alcohólicos y consiste en un desgarro longitudinal de la mucosa de la unión gastroesofágica, provocado típicamente por vómitos o arcadas enérgicas.\r\n\r\nSu presentación característica es la hemorragia digestiva alta, frecuentemente con hematemesis.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Lesión → desgarro longitudinal de la mucosa.\r\n- Localización → unión gastroesofágica.\r\n- Mecanismo → vómitos/arcadas enérgicas.\r\n- Asociación característica → alcoholismo.\r\n- Presentación → hemorragia digestiva alta, generalmente hematemesis.\r\n- Diagnóstico → endoscopia.\r\n- Aproximadamente 90% de las hemorragias se detienen espontáneamente.\r\n- Si persiste → tratamiento endoscópico; también pueden considerarse embolización angiográfica, vasopresina u operación.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Alcohólico + vómitos/arcadas intensas + hematemesis → Mallory-Weiss.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1960,7 +1960,7 @@ export const questionsSemana11: Question[] = [
   },
   {
     "id": "cx_estomago_q104",
-    "text": "Caso clínico 1 — Diagnóstico Un paciente sometido a piloroplastia consulta porque, 20 minutos después de las comidas, presenta episodios de diaforesis, debilidad, aturdimiento y taquicardia. ¿Cuál es el diagnóstico más probable?",
+    "text": "Un paciente sometido a piloroplastia consulta porque, 20 minutos después de las comidas, presenta episodios de diaforesis, debilidad, aturdimiento y taquicardia. ¿Cuál es el diagnóstico más probable?",
     "options": [
       "Evacuación gástrica temprana",
       "Evacuación gástrica tardía",
@@ -1968,7 +1968,7 @@ export const questionsSemana11: Question[] = [
       "Obstrucción pilórica",
       "Hipoglucemia posprandial"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 0,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl cuadro es característico del síndrome de evacuación gástrica temprana. Según el fragmento, aparece generalmente 15-30 minutos después de una comida y se manifiesta con diaforesis, debilidad, aturdimiento y taquicardia.\r\n\r\nSe relaciona con el suministro abrupto de una carga hiperosmolar al intestino delgado, favorecido por la ablación del píloro o la disminución del cumplimiento gástrico.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n- Puede aparecer después de piloroplastia, piloromiotomía o gastrectomía.\r\n- Frecuencia clínicamente significativa: 5-10%.\r\n- Temprana → 15-30 min después de comer.\r\n- Síntomas → diaforesis, debilidad, aturdimiento y taquicardia.\r\n- Puede acompañarse de dolor abdominal tipo cólico y diarrea.\r\n- Los síntomas pueden mejorar con posición reclinada o infusión de solución salina.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Posgastrectomía + síntomas vasomotores a los 15-30 min = evacuación temprana.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -1987,7 +1987,7 @@ export const questionsSemana11: Question[] = [
       "Hiperglucemia persistente",
       "Disminución de insulina"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 2,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nSe trata de evacuación gástrica tardía, también denominada hipoglucemia posprandial reactiva.\r\n\r\nA diferencia de la forma temprana, ocurre aproximadamente 2-3 horas después de una comida y se relaciona con hipoglucemia e hiperinsulinemia. Un dato orientador es que los síntomas mejoran con el consumo de azúcar.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**La distinción fundamental es:**\r\n- Evacuación temprana: 15-30 minutos → carga hiperosmolar intestinal.\r\n- Evacuación tardía: 2-3 horas → hipoglucemia + hiperinsulinemia.\r\n- Para la forma tardía, el fragmento señala que la acarbosa puede ser particularmente útil.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- 15-30 min = temprana.\r\n- 2-3 h + mejora con azúcar = tardía.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",
@@ -2006,7 +2006,7 @@ export const questionsSemana11: Question[] = [
       "Vasopresina",
       "Histamina"
     ],
-    "correctOptionIndex": 4,
+    "correctOptionIndex": 1,
     "explanation": "🧠 ¿POR QUÉ ES LA CORRECTA?\r\n\r\nEl tratamiento médico se basa inicialmente en la modificación dietética. Si esta fracasa, el fragmento indica comenzar con octreótido, un análogo de la somatostatina.\r\n\r\nEl octreótido mejora el patrón hormonal anormal y también estimula la restauración del patrón de motilidad intestinal en ayunas.\r\n\r\n📚 CONCEPTOS CLAVE\r\n\r\n**Manejo descrito en el fragmento:**\r\n- 1. Modificación dietética\r\n- Evitar líquidos durante las comidas.\r\n- Evitar especialmente líquidos hiperosmolares.\r\n- Puede ser útil añadir fibra dietética.\r\n- 2. Si fracasa → octreótido.\r\n- 3. Evacuación tardía → acarbosa puede ser particularmente útil.\r\n- 4. Cirugía → solo un porcentaje muy pequeño la requiere; primero debe optimizarse el tratamiento no quirúrgico.\r\n\r\n⚡ CLAVE CONAREM\r\n\r\n- Síndrome de evacuación gástrica: dieta primero → si persiste, octreótido.\r\n- Si predomina la forma tardía con hipoglucemia, recordar acarbosa.",
     "pagina": "Schwartz, Principios de Cirugía, 11.ª edición, Capítulo 26: Estómago.",
     "materia": "Cirugía",

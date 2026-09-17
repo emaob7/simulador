@@ -1,14 +1,14 @@
-import { shuffleQuestionOptions, shuffleQuizQuestions } from '../src/utils/quizShuffler';
+import { shuffleQuestionOptions, shuffleQuizQuestions, explanationReferencesLetters } from '../src/utils/quizShuffler';
 import type { Question } from '../src/types';
 
 const catalog: Question[] = [];
-for (let week = 1; week <= 18; week += 1) {
+for (let week = 1; week <= 20; week += 1) {
   const module = await import(`../src/data/semana${week}/questions.ts`);
   catalog.push(...module[`questionsSemana${week}`] as Question[]);
 }
 
-if (catalog.length !== 2342) {
-  throw new Error(`FAIL: El catálogo tiene ${catalog.length} preguntas; se esperaban 2342.`);
+if (catalog.length !== 2618) {
+  throw new Error(`FAIL: El catálogo tiene ${catalog.length} preguntas; se esperaban 2618.`);
 }
 
 // Sample mock question
@@ -17,7 +17,7 @@ const mockQ1: Question = {
   text: '¿Cuál es el tratamiento de primera línea?',
   options: ['Amoxicilina', 'Ceftriaxona', 'Azitromicina', 'Penicilina G Benzatínica'],
   correctOptionIndex: 3, // Penicilina G Benzatínica
-  explanation: '✅ Respuesta correcta: d) Penicilina G Benzatínica. Es el tratamiento de elección.',
+  explanation: '✅ Respuesta correcta: Penicilina G Benzatínica. Es el tratamiento de elección.',
   materia: 'Pediatría',
   semana: 17,
   tema: 'Infectología',
@@ -30,7 +30,7 @@ const mockQ2: Question = {
   text: '¿Cuáles de los siguientes son criterios?',
   options: ['Criterio 1', 'Criterio 2', 'Criterio 3', 'Todas las anteriores'],
   correctOptionIndex: 3,
-  explanation: '✅ Respuesta correcta: d) Todas las anteriores son correctas.',
+  explanation: '✅ Respuesta correcta: Todas las anteriores son correctas.',
   materia: 'Pediatría',
   semana: 1,
   tema: 'Neonatología',
@@ -94,7 +94,7 @@ if (unchanged.options[2] !== 'A y B son correctas') {
 }
 console.log('✅ TEST 4 PASADO: Opciones dependientes conservan su orden original.');
 
-console.log('--- TEST 5: Integridad de las 2.342 preguntas reales ---');
+console.log('--- TEST 5: Integridad de las 2.618 preguntas reales ---');
 for (const question of catalog) {
   const originalOptions = [...question.options];
   const originalCorrectText = question.options[question.correctOptionIndex];
@@ -122,7 +122,7 @@ for (const question of catalog) {
     throw new Error(`FAIL [${question.id}]: las opciones de origen fueron mutadas.`);
   }
 }
-console.log('✅ TEST 5 PASADO: respuesta, explicación y objeto fuente íntegros en 23.420 shuffles.');
+console.log('✅ TEST 5 PASADO: respuesta, explicación y objeto fuente íntegros en 26.180 shuffles.');
 
 console.log('--- TEST 6: Integridad del quiz completo ---');
 const originalById = new Map(catalog.map(question => [question.id, question]));
@@ -139,5 +139,28 @@ for (const shuffled of shuffledQuiz) {
   }
 }
 console.log('✅ TEST 6 PASADO: el quiz completo conserva IDs, respuestas y explicaciones.');
+
+console.log('--- TEST 7: Explicaciones que citan opciones por letra no se barajan ---');
+const letterExplanations = [
+  'a) [Incorrecta]: texto.\nb) [CORRECTA]: texto.',
+  'A (Incorrecta): texto.\nB (Correcta): texto.',
+  'La e es correcta y combina varios puntos.',
+  'La tirotoxicosis (a) y el beriberi (c) son causas típicas.',
+  'Las opciones a y c describen mecanismos distintos.',
+  '✅ Respuesta correcta: d) Penicilina.',
+];
+for (const explanation of letterExplanations) {
+  if (!explanationReferencesLetters(explanation)) throw new Error(`FAIL: no se detectó la letra en: ${explanation}`);
+  const q: Question = { ...mockQ1, explanation };
+  for (let i = 0; i < 50; i++) {
+    const shuffled = shuffleQuestionOptions(q);
+    if (shuffled.options.some((option, index) => option !== q.options[index])) {
+      throw new Error(`FAIL: se barajó una pregunta cuya explicación cita letras: ${explanation}`);
+    }
+  }
+}
+if (explanationReferencesLetters('La Lp(a) es un factor de riesgo.')) throw new Error('FAIL: falso positivo con Lp(a)');
+if (explanationReferencesLetters('Es la respuesta a la pregunta clínica.')) throw new Error('FAIL: falso positivo con "respuesta a la"');
+console.log('✅ TEST 7 PASADO: las explicaciones con letras conservan el orden original.');
 
 console.log('\n🎉 TODOS LOS TESTS DE SHUFFLER PASARON CON ÉXITO.');
