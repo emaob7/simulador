@@ -1,42 +1,22 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { questionsSemana1 } from './data/semana1/questions';
-import { questionsSemana2 } from './data/semana2/questions';
-import { questionsSemana3 } from './data/semana3/questions';
-import { questionsSemana4 } from './data/semana4/questions';
-import { questionsSemana5 } from './data/semana5/questions';
-import { questionsSemana6 } from './data/semana6/questions';
-import { questionsSemana7 } from './data/semana7/questions';
-import { questionsSemana8 } from './data/semana8/questions';
-import { questionsSemana9 } from './data/semana9/questions';
-import { questionsSemana10 } from './data/semana10/questions';
-import { questionsSemana11 } from './data/semana11/questions';
-import { questionsSemana12 } from './data/semana12/questions';
-import { questionsSemana13 } from './data/semana13/questions';
-import { questionsSemana14 } from './data/semana14/questions';
-import { questionsSemana15 } from './data/semana15/questions';
-import { questionsSemana16 } from './data/semana16/questions';
-import { questionsSemana17 } from './data/semana17/questions';
-import { questionsSemana18 } from './data/semana18/questions';
-import { questionsSemana19 } from './data/semana19/questions';
-import { questionsSemana20 } from './data/semana20/questions';
+import React, { lazy, Suspense, useState, useMemo, useEffect } from 'react';
 import { Question, AnswerRecord, QuizScope } from './types';
+import { TOTAL_QUESTIONS, WEEK_CATALOG, getWeekDefinition, loadAllQuestions, loadWeeksQuestions } from './data/weekCatalog';
 import { QuizView } from './modules/simulator/QuizView';
 import { SubjectCatalog } from './modules/simulator/SubjectCatalog';
 import { ResultsView } from './modules/results/ResultsView';
 import { DashboardView } from './modules/dashboard/DashboardView';
 import { LoginView } from './modules/auth/LoginView';
 import { PendingApprovalView } from './modules/auth/PendingApprovalView';
-import { AdminView } from './modules/admin/AdminView';
 import { SavedQuestionsView } from './modules/saved/SavedQuestionsView';
 import { CustomQuizModal } from './modules/simulator/CustomQuizModal';
 import { Sidebar } from './components/Sidebar';
 import { Button } from './components/ui/Button';
 import { DataService } from './services/DataService';
+import { AuthService } from './services/AuthService';
 import { ChevronRight, ChevronDown, Check, BookmarkCheck, Play, RotateCcw, Sliders, Sparkles } from 'lucide-react';
 import { auth, db } from './firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { doc, onSnapshot, collection, getDocs, query, where } from 'firebase/firestore';
-import { analyzeSubtema } from './utils/normalizer';
 import { classifyQuestionForStudy } from './utils/studyCatalog';
 import { shuffleQuizQuestions, shuffleQuestionOptions } from './utils/quizShuffler';
 
@@ -44,52 +24,10 @@ import { shuffleQuizQuestions, shuffleQuestionOptions } from './utils/quizShuffl
 
 type ViewState = 'dashboard' | 'simulator' | 'quiz' | 'results' | 'quiz-config' | 'admin' | 'saved';
 
-const allQuestions: Question[] = [
-  ...questionsSemana1,
-  ...questionsSemana2,
-  ...questionsSemana3,
-  ...questionsSemana4,
-  ...questionsSemana5,
-  ...questionsSemana6,
-  ...questionsSemana7,
-  ...questionsSemana8,
-  ...questionsSemana9,
-  ...questionsSemana10,
-  ...questionsSemana11,
-  ...questionsSemana12,
-  ...questionsSemana13,
-  ...questionsSemana14,
-  ...questionsSemana15,
-  ...questionsSemana16,
-  ...questionsSemana17,
-  ...questionsSemana18,
-  ...questionsSemana19,
-  ...questionsSemana20,
-];
+const AdminView = lazy(() => import('./modules/admin/AdminView').then(module => ({ default: module.AdminView })));
 
 export const getWeekThemeTitle = (materia: string, semana: number): string => {
-  const s = Number(semana);
-  if (s === 1) return "Neonatología";
-  if (s === 2) return "Endocrinología";
-  if (s === 3) return "Infecciones, cicatrización y piel";
-  if (s === 4) return "Anatomía, trastornos anatómicos y prolapsos de órganos pélvicos";
-  if (s === 5) return "Nutrición, desnutrición y antropometría";
-  if (s === 6) return "Oncohematología y Cuidados Críticos";
-  if (s === 7) return "Traumatismos y Quemaduras";
-  if (s === 8) return "Endocrinología de la reproducción, infecciones ginecológicas y dolor pélvico crónico";
-  if (s === 9) return "Vacunas y Crecimiento y Desarrollo";
-  if (s === 10) return "Cardiología";
-  if (s === 11) return "Esófago y Estómago";
-  if (s === 12) return "Amenorreas, Anticonceptivos y Menopausia";
-  if (s === 13) return "Urgencias y Emergencias Pediátricas";
-  if (s === 14) return "Neumología y Reumatología";
-  if (s === 15) return "Cirugía Torácica y Mamas (Pared torácica, pulmón, mediastino, pleura y mamas)";
-  if (s === 16) return "Síndrome de Ovarios Poliquísticos, Sangrado Uterino Anormal, Patología Uterina Benigna y Endometriosis";
-  if (s === 17) return "Infectología";
-  if (s === 18) return "Nefrología y Neurología";
-  if (s === 19) return "Hígado, Vesícula Biliar y Vías Biliares Extrahepáticas";
-  if (s === 20) return "Fisiología Materna, Embriogénesis, Placenta, Diagnóstico Prenatal e Imágenes";
-  return "";
+  return getWeekDefinition(Number(semana))?.title || '';
 };
 
 // Study materials removed
@@ -116,6 +54,35 @@ export default function App() {
   const [expandedGroups, setExpandedGroups] = useState<string[]>([]);
   const [showSubthemesInConfig, setShowSubthemesInConfig] = useState(true);
   const [expandedSubthemes, setExpandedSubthemes] = useState<string[]>([]);
+  const [loadedQuestions, setLoadedQuestions] = useState<Question[]>([]);
+
+  const mergeLoadedQuestions = (incoming: Question[]) => {
+    setLoadedQuestions(current => {
+      const byId = new Map(current.map(question => [question.id, question]));
+      incoming.forEach(question => byId.set(question.id, question));
+      return [...byId.values()];
+    });
+    return incoming;
+  };
+
+  const ensureWeeksLoaded = async (weeks: readonly number[]) => {
+    setLoadingAction(true);
+    try {
+      return mergeLoadedQuestions(await loadWeeksQuestions(weeks));
+    } finally {
+      setLoadingAction(false);
+    }
+  };
+
+  const ensureAllQuestions = async () => {
+    if (loadedQuestions.length === TOTAL_QUESTIONS) return loadedQuestions;
+    setLoadingAction(true);
+    try {
+      return mergeLoadedQuestions(await loadAllQuestions());
+    } finally {
+      setLoadingAction(false);
+    }
+  };
 
   const toggleSubthemeExpanded = (st: string) => {
     setExpandedSubthemes(prev =>
@@ -274,31 +241,17 @@ export default function App() {
     };
   }, []);
 
-  const toggleWeek = (materia: string, semana: string) => {
+  const toggleWeek = async (materia: string, semana: string) => {
     const key = `${materia}-${semana}`;
+    if (!expandedWeeks[key]) await ensureWeeksLoaded([Number(semana)]);
     setExpandedWeeks(prev => ({ ...prev, [key]: !prev[key] }));
-  };
-
-  const getEffectiveTema = (q: Question) => {
-    const { grupo } = analyzeSubtema(q.subtema, q.materia, q.semana, q.text, q.id);
-    return grupo;
   };
 
   const subjectsByMateria = useMemo(() => {
     const grouped: Record<string, Record<number, string[]>> = {};
-    allQuestions.forEach(q => {
-      if (!grouped[q.materia]) {
-        grouped[q.materia] = {};
-      }
-      if (!grouped[q.materia][q.semana]) {
-        grouped[q.materia][q.semana] = [];
-      }
-      
-      const effectiveTema = getEffectiveTema(q);
-
-      if (!grouped[q.materia][q.semana].includes(effectiveTema)) {
-        grouped[q.materia][q.semana].push(effectiveTema);
-      }
+    WEEK_CATALOG.forEach(entry => {
+      if (!grouped[entry.materia]) grouped[entry.materia] = {};
+      grouped[entry.materia][entry.week] = [entry.title];
     });
     return grouped;
   }, []);
@@ -306,11 +259,11 @@ export default function App() {
   const baseQuestionsForScope = useMemo(() => {
     if (scopeQuestionIds.length > 0) {
       const allowedIds = new Set(scopeQuestionIds);
-      return allQuestions.filter(question => allowedIds.has(question.id));
+      return loadedQuestions.filter(question => allowedIds.has(question.id));
     }
     if (!selectedMateria || selectedSemana === null) return [];
-    return allQuestions.filter(question => question.materia === selectedMateria && question.semana === selectedSemana);
-  }, [scopeQuestionIds, selectedMateria, selectedSemana]);
+    return loadedQuestions.filter(question => question.materia === selectedMateria && question.semana === selectedSemana);
+  }, [loadedQuestions, scopeQuestionIds, selectedMateria, selectedSemana]);
 
   const getConfigSubtopicKey = (question: Question) => {
     const classification = classifyQuestionForStudy(question);
@@ -385,7 +338,7 @@ export default function App() {
 
   const handleAnswerImmediate = (questionId: string, isCorrect: boolean, timeSpent: number) => {
     if (!user) return;
-    const question = allQuestions.find(q => q.id === questionId);
+    const question = loadedQuestions.find(q => q.id === questionId);
     const classification = question ? classifyQuestionForStudy(question) : null;
     
     const newRecord = {
@@ -472,8 +425,8 @@ export default function App() {
     setView('quiz-config');
   };
 
-  const handlePrepareQuiz = (materia: string, semana: number, _tema: string, showSubthemes: boolean = true) => {
-    const filtered = allQuestions.filter(question => question.materia === materia && question.semana === semana);
+  const handlePrepareQuiz = async (materia: string, semana: number, _tema: string, showSubthemes: boolean = true) => {
+    const filtered = (await ensureWeeksLoaded([semana])).filter(question => question.materia === materia);
     handlePrepareScope({
       type: 'week',
       id: `week-${semana}`,
@@ -484,12 +437,12 @@ export default function App() {
     }, filtered, showSubthemes);
   };
 
-  const handleQuickStartQuiz = (materia: string, semana: number) => {
+  const handleQuickStartQuiz = async (materia: string, semana: number) => {
     setSelectedMateria(materia);
     setSelectedSemana(semana);
     setSelectedTema('Todos los Temas');
     
-    const filtered = allQuestions.filter(q => q.materia === materia && q.semana === semana);
+    const filtered = (await ensureWeeksLoaded([semana])).filter(q => q.materia === materia);
     const preparedQuestions = shuffleQuizQuestions(filtered, { shuffleQuestions: false, shuffleOptions: true });
     setQuizScope({
       type: 'week',
@@ -506,7 +459,7 @@ export default function App() {
   };
 
   const handleStartQuiz = () => {
-    const ordered = allQuestions.filter(q => selectedQuestionIds.includes(q.id));
+    const ordered = loadedQuestions.filter(q => selectedQuestionIds.includes(q.id));
     const questionsToRun = ordered.length > 0 
       ? ordered 
       : baseQuestionsForScope;
@@ -532,11 +485,11 @@ export default function App() {
     setView('quiz');
   };
 
-  const handleReforzar = (materia: string, subtemaQuery: string) => {
+  const handleReforzar = async (materia: string, subtemaQuery: string) => {
     setLoadingAction(true);
     try {
       // 1. Find all questions matching the subtopic normalized name
-      const matchingQuestions = allQuestions.filter(q => {
+      const matchingQuestions = (await ensureAllQuestions()).filter(q => {
         if (q.materia !== materia) return false;
         const classification = classifyQuestionForStudy(q);
         return classification.subtopicLabel === subtemaQuery || classification.topicLabel === subtemaQuery;
@@ -592,7 +545,7 @@ export default function App() {
 
   const handleRetryFailed = () => {
     const failedIds = answers.filter(a => !a.isCorrect).map(a => a.questionId);
-    const failedQuestions = allQuestions.filter(q => failedIds.includes(q.id));
+    const failedQuestions = loadedQuestions.filter(q => failedIds.includes(q.id));
     const preparedQuestions = shuffleQuizQuestions(failedQuestions, { shuffleQuestions: true, shuffleOptions: true });
     setQuestionsState(preparedQuestions);
     setView('quiz');
@@ -641,7 +594,7 @@ export default function App() {
     return avg >= 0.9;
   };
 
-  const [questionsState, setQuestionsState] = useState<Question[]>(allQuestions);
+  const [questionsState, setQuestionsState] = useState<Question[]>([]);
   const [pendingDraft, setPendingDraft] = useState<any>(null);
 
   const checkPendingDraft = () => {
@@ -666,11 +619,21 @@ export default function App() {
     checkPendingDraft();
   }, [view]);
 
-  const handleResumeDraft = () => {
+  useEffect(() => {
+    if (view === 'saved') void ensureAllQuestions();
+  }, [view]);
+
+  const handleResumeDraft = async () => {
     if (!pendingDraft) return;
+    const sourceWeeks: number[] = pendingDraft.sourceWeeks?.length
+      ? pendingDraft.sourceWeeks
+      : pendingDraft.semana ? [Number(pendingDraft.semana)] : WEEK_CATALOG.map(entry => entry.week);
+    const questionPool = pendingDraft.questionsSnapshot?.length
+      ? pendingDraft.questionsSnapshot
+      : await ensureWeeksLoaded(sourceWeeks);
     const questionsForDraft = pendingDraft.questionsSnapshot && pendingDraft.questionsSnapshot.length > 0
       ? pendingDraft.questionsSnapshot
-      : allQuestions.filter(q => pendingDraft.questionIds.includes(q.id));
+      : questionPool.filter((q: Question) => pendingDraft.questionIds.includes(q.id));
     if (questionsForDraft.length > 0) {
       setQuestionsState(questionsForDraft);
       setSelectedMateria(pendingDraft.materia || '');
@@ -719,7 +682,7 @@ export default function App() {
     let correctCount = 0;
 
     answeredQuestionIds.forEach(qId => {
-      const q = allQuestions.find(x => x.id === qId);
+      const q = loadedQuestions.find(x => x.id === qId);
       const selectedIndex = answersMap[qId];
       const isCorrect = q ? selectedIndex === q.correctOptionIndex : false;
       if (isCorrect) correctCount++;
@@ -840,7 +803,7 @@ export default function App() {
         // Save individual progress records in batch ONLY in exam mode
         if (quizConfig.mode === 'exam') {
           const progressRecords = results.map(result => {
-            const question = allQuestions.find(q => q.id === result.questionId);
+            const question = loadedQuestions.find(q => q.id === result.questionId);
             const classification = question ? classifyQuestionForStudy(question) : null;
             return {
               user_id: user.uid, 
@@ -876,8 +839,9 @@ export default function App() {
     setView('results');
   };
 
-  const handleQuestionSelect = (questionId: string) => {
-    const q = allQuestions.find(x => x.id === questionId);
+  const handleQuestionSelect = async (questionId: string) => {
+    const q = loadedQuestions.find(x => x.id === questionId)
+      || (await ensureAllQuestions()).find(x => x.id === questionId);
     if (q) {
       const classification = classifyQuestionForStudy(q);
       setQuestionsState([shuffleQuestionOptions(q)]);
@@ -938,7 +902,10 @@ export default function App() {
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
         savedCount={savedQuestionIds.length}
         onStartBookmarksQuiz={handleStartBookmarksQuiz}
-        allQuestions={allQuestions}
+        allQuestions={loadedQuestions}
+        totalWeeks={WEEK_CATALOG.length}
+        totalQuestions={TOTAL_QUESTIONS}
+        onSearchStart={ensureAllQuestions}
         onQuestionSelect={handleQuestionSelect}
       />
       
@@ -1002,7 +969,10 @@ export default function App() {
             <DashboardView 
               userId={user.uid} 
               onReforzar={handleReforzar} 
-              allQuestions={allQuestions} 
+              allQuestions={loadedQuestions}
+              totalQuestions={TOTAL_QUESTIONS}
+              onLoadWeek={(week) => ensureWeeksLoaded([week])}
+              onLoadQuestions={ensureAllQuestions}
               onQuestionSelect={handleQuestionSelect} 
               savedQuestionIds={savedQuestionIds}
               onStartBookmarksQuiz={handleStartBookmarksQuiz}
@@ -1015,7 +985,11 @@ export default function App() {
               onNewSession={() => setView('simulator')}
             />
           )}
-          {view === 'admin' && userData?.role === 'admin' && <AdminView />}
+          {view === 'admin' && userData?.role === 'admin' && (
+            <Suspense fallback={<div className="py-16 text-center text-sm text-[#A0A0A0]">Cargando administración…</div>}>
+              <AdminView />
+            </Suspense>
+          )}
 
           
           {view === 'quiz-config' && (
@@ -1345,7 +1319,7 @@ export default function App() {
                 </div>
                 <div className="relative z-10 flex items-center justify-center">
                   <button 
-                    onClick={() => setIsCustomQuizOpen(true)}
+                    onClick={async () => { await ensureAllQuestions(); setIsCustomQuizOpen(true); }}
                     className="px-8 py-4 bg-primary text-[#0A0A0A] font-black rounded-xl uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-[0_0_30px_rgba(198,168,74,0.3)] hover:shadow-[0_0_50px_rgba(198,168,74,0.5)] flex items-center gap-2.5 cursor-pointer"
                   >
                     <Sliders className="w-4 h-4" />
@@ -1369,14 +1343,14 @@ export default function App() {
                     type="button"
                     role="tab"
                     aria-selected={catalogView === 'subjects'}
-                    onClick={() => setCatalogView('subjects')}
+                    onClick={async () => { await ensureAllQuestions(); setCatalogView('subjects'); }}
                     className={`px-4 py-3 text-xs font-bold border-b-2 transition-colors ${catalogView === 'subjects' ? 'border-primary text-primary' : 'border-transparent text-[#858585] hover:text-white'}`}
                   >
                     Por materias
                   </button>
                 </div>
                 <p className="hidden sm:block text-[10px] text-[#777]">
-                  {catalogView === 'weeks' ? '18 semanas activas' : 'Materia, tema o subtema'}
+                  {catalogView === 'weeks' ? `${WEEK_CATALOG.length} semanas activas` : 'Materia, tema o subtema'}
                 </p>
               </div>
 
@@ -1396,8 +1370,8 @@ export default function App() {
                     <div className="flex flex-col flex-grow">
                       {Object.entries(semanas).sort(([a], [b]) => Number(a) - Number(b)).map(([semana, temas]) => {
                         const isExpanded = !!expandedWeeks[`${materia}-${semana}`];
-                        const questionsInWeek = allQuestions.filter(q => q && q.materia === materia && q.semana === Number(semana));
-                        const count = questionsInWeek.length;
+                        const questionsInWeek = loadedQuestions.filter(q => q && q.materia === materia && q.semana === Number(semana));
+                        const count = getWeekDefinition(Number(semana))?.count || questionsInWeek.length;
                         
                         const qIds = new Set(questionsInWeek.map(q => q.id));
                         const validProgress = (userProgress || []).filter(p => p && p.question_id && qIds.has(p.question_id));
@@ -1513,14 +1487,14 @@ export default function App() {
                 ))}
               </div>
               ) : (
-                <SubjectCatalog questions={allQuestions} progress={userProgress || []} onPrepare={handlePrepareScope} />
+                <SubjectCatalog questions={loadedQuestions} progress={userProgress || []} onPrepare={handlePrepareScope} />
               )}
             </div>
           )}
 
           {view === 'saved' && (
             <SavedQuestionsView 
-              allQuestions={allQuestions}
+              allQuestions={loadedQuestions}
               savedQuestionIds={savedQuestionIds}
               onToggleBookmark={handleToggleBookmark}
               onStartQuizWithQuestions={handleStartQuizWithQuestions}
@@ -1574,7 +1548,7 @@ export default function App() {
       <CustomQuizModal
         isOpen={isCustomQuizOpen}
         onClose={() => setIsCustomQuizOpen(false)}
-        allQuestions={allQuestions}
+        allQuestions={loadedQuestions}
         onStartQuiz={handleStartCustomQuiz}
       />
     </div>

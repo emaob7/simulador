@@ -29,6 +29,7 @@ const topics: StudyTopicDefinition[] = [
   { id: 'ped-crecimiento-desarrollo', materia: 'Pediatría', label: 'Crecimiento y Desarrollo' },
   { id: 'ped-urgencias', materia: 'Pediatría', label: 'Urgencias Pediátricas' },
   { id: 'ped-infectologia', materia: 'Pediatría', label: 'Infectología' },
+  { id: 'ped-aiepi', materia: 'Pediatría', label: 'Manual AIEPI' },
 
   { id: 'mi-endocrinologia', materia: 'Medicina Interna', label: 'Endocrinología' },
   { id: 'mi-oncohematologia', materia: 'Medicina Interna', label: 'Oncohematología' },
@@ -163,6 +164,8 @@ function resolveTopicId(question: Question): string {
       if (tema.includes('imagen') || tema.includes('ecograf')) return 'gyo-imagenes-obstetricas';
       if (tema.includes('diagnostico prenatal') || tema.includes('dx prenatal')) return 'gyo-diagnostico-prenatal';
       return 'gyo-fisiologia-materna';
+    case 21:
+      return 'ped-aiepi';
     default: {
       const mat = question.materia;
       if (mat === 'Pediatría') return 'ped-neonatologia';

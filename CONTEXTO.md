@@ -10,7 +10,8 @@
 
 - **Nombre Oficial:** Simulador de Exámenes Médicos CONAREM (Simulador Emma / Simulator).
 - **Propietario / Autor:** Dr. Rodney Duarte.
-- **Ruta Local Oficial (Workspace Principal):** `C:\Users\Rodney Duarte\Documents\APPS\Simulator`
+- **Ruta Local Oficial (Workspace Principal):** `C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\Simulator`
+- **Copia retirada:** `C:\Users\Rodney Duarte\Documents\APPS\Simulator` queda como respaldo histórico de solo lectura. Todo cambio, validación y despliegue debe partir del workspace principal.
 - **Ruta Espejo Codex:** `C:\Users\Rodney Duarte\Documents\Codex\2026-08-21\hola-chatgpt-te-pongo-en-contexto\work\simulador`
 - **Carpeta de Contexto Compartido:** `C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\`
 - **Repositorios Git:**
@@ -26,7 +27,7 @@
 
 | Aplicación | URL de Producción | Repositorio / Ruta Local | Propósito y Función |
 | :--- | :--- | :--- | :--- |
-| **Simulador de Exámenes (Este Proyecto)** | `https://simulator-5ff8c.web.app` | `C:\Users\Rodney Duarte\Documents\APPS\Simulator` | **Simulador de Exámenes por Semanas (1 a 20+):** Modo examen real cronometrado, modo práctica por temas, scoring, percentil y guardado en Firestore. |
+| **Simulador de Exámenes (Este Proyecto)** | `https://simulator-5ff8c.web.app` | `C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\Simulator` | **Simulador de Exámenes por Semanas (1 a 20+):** Modo examen real cronometrado, modo práctica por temas, scoring, percentil y guardado en Firestore. |
 | **Banco de Preguntas MBARETE (BancaDate)** | `https://bancadate.web.app` | `C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\MbareteBank` | **Banco Histórico Oficial (2019–2026):** 2.064 preguntas históricas reales del CONAREM clasificadas por año y subtema. |
 | **Portal de Alumnos (Sistema CONAREM)** | `https://portal-conarem-dr-rodney.vercel.app` | `C:\Users\Rodney Duarte\Documents\portal-conarem-dr-rodney` | **Dashboard / Hub Central de Estudio:** Cronograma de 32 semanas, clases, slides, resúmenes, y accesos a Drive/Anki. |
 | **Fanpage de Venta Dr. Rodney** | `https://fanpage-dr-rodney.vercel.app` | `C:\Users\Rodney Duarte\Documents\fanpage-dr-rodney` | **Página de Conversión y Captación:** Información del curso, beneficios y enlace a WhatsApp. |
@@ -117,6 +118,7 @@ export interface Question {
 | **S18** | Medicina Interna | Neurología (ACV, Cefaleas, Epilepsia) y Nefrología (IRA, ERC, Glomerulopatías, Trastornos hidroelectrolíticos). |
 | **S19** | Cirugía General | Patología quirúrgica de Hígado, Vías Biliares y Páncreas (Colelitiasis, Coledocolitiasis, Colecistitis, Pancreatitis). |
 | **S20** | Ginecología y Obstetricia | Fisiología materna, Implantación, Anormalidades placentarias, Embriología y desarrollo fetal, Atención prenatal, Imágenes obstétricas y Diagnóstico prenatal (**169 preguntas oficiales**). |
+| **S21** | Pediatría | Manual AIEPI: Reanimación neonatal, Cuidados inmediatos, Pesquisa e infecciones congénitas, Ictericia neonatal, Diarrea y Planes A/C, Antropometría/Desnutrición, Escalas de Tal/Wood-Downes, Esquema Regular PAI (**76 preguntas oficiales**). |
 
 ---
 
@@ -239,7 +241,7 @@ La clave (`correctOptionIndex`) tiene que coincidir con lo que afirma el propio 
 | Fuente | Qué aporta | Ruta |
 |---|---|---|
 | Docx de tests de Rodney | Enunciado, opciones y línea `✅ Respuesta correcta: x) …` de 1.678 preguntas (28 archivos) | `C:\Users\Rodney Duarte\Documents\Conarem 2027\{Cx,GYO,MI,PED}\test *.docx` |
-| Bóveda de Obsidian | Explicaciones completas por `id` de pregunta (semanas 1–18), bloques `> [!tip]` | `C:\Users\Rodney Duarte\Documents\Banco_Preguntas_CONAREM\` (scripts: `scripts/import-obsidian-explanations.ts`, `npm run sync:obsidian`) |
+| Bóveda de Obsidian | Explicaciones completas por `id` de pregunta (semanas 1–20), bloques `> [!tip]` | `C:\Users\Rodney Duarte\Documents\Banco_Preguntas_CONAREM\` (scripts: `scripts/import-obsidian-explanations.ts`, `npm run sync:obsidian`) |
 | La propia explicación | Muchas empiezan con «texto de la opción» es la correcta/incorrecta | `src/data/semanaN/questions.ts` |
 
 Método de verificación usado (reutilizable): (1) cruzar cada pregunta con la línea `✅ Respuesta correcta` del docx por enunciado o por texto de la opción; (2) cruzar la opción citada entre «…» en la explicación; (3) para lo que no cubren esos dos métodos, leer el desarrollo pregunta por pregunta (se hizo con subagentes en bloques de ~60).
@@ -249,8 +251,6 @@ Método de verificación usado (reutilizable): (1) cruzar cada pregunta con la l
 - Opciones con más de una respuesta defendible según la propia explicación: `q9` (S2), `q7_s3`, `q4_s4`, `semana10_cardio_q97` y `q102`, `semana13_pediatria_q82` y `q86`, `semana20_gyo_q130` (la respuesta S1 no está entre las opciones) y `q154` ("debe" 7 mm vs "puede" 2 mm).
 - Preguntas duplicadas: `gyo_s4_q44/45`, `q46/47`, `q49/50`; `neo_q3/15`; `semana5_ped_q23/26`.
 - `semana18_med_q036` termina cortada también en Obsidian (sin fuente para completar).
-- Enunciados con metadatos pegados: `semana17_ped_q208`, `semana18_med_q163`, `semana20_gyo_q152/154`.
-- `App.tsx` llama a `AuthService.ensureUserDoc` sin importar `AuthService` (error de `tsc` preexistente; Vite compila igual).
 
 ---
 

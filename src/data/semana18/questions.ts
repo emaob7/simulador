@@ -663,7 +663,7 @@ export const questionsSemana18: Question[] = [
   },
   {
     "id": "semana18_med_q034",
-    "text": "ema: NefrologíaSubtema: Lesión renal aguda\nTodas las siguientes constituyen complicaciones de la lesión renal aguda, EXCEPTO:",
+    "text": "Todas las siguientes constituyen complicaciones de la lesión renal aguda, EXCEPTO:",
     "options": [
       "Hiperpotasemia",
       "Acidosis metabólica",
@@ -863,7 +863,7 @@ export const questionsSemana18: Question[] = [
   },
   {
     "id": "semana18_med_q044",
-    "text": "ema: Nefrología\n¿Cuál es la principal causa de muerte en pacientes con enfermedad renal crónica?",
+    "text": "¿Cuál es la principal causa de muerte en pacientes con enfermedad renal crónica?",
     "options": [
       "Enfermedad cardiovascular",
       "Síndrome urémico",
@@ -903,7 +903,7 @@ export const questionsSemana18: Question[] = [
   },
   {
     "id": "semana18_med_q046",
-    "text": "ema: Nefrología\n¿A partir de qué etapa de la enfermedad renal crónica suelen evidenciarse las manifestaciones clínicas sutiles de la enfermedad neuromuscular de origen urémico?",
+    "text": "¿A partir de qué etapa de la enfermedad renal crónica suelen evidenciarse las manifestaciones clínicas sutiles de la enfermedad neuromuscular de origen urémico?",
     "options": [
       "Etapa 5",
       "Etapa 2",
@@ -3203,7 +3203,7 @@ export const questionsSemana18: Question[] = [
   },
   {
     "id": "semana18_med_q161",
-    "text": "ema: Cefalalgias autonómicas del trigéminoSubtema: Tratamiento de la cefalea en racimos\nUn paciente presenta una crisis aguda de cefalea en racimos, con dolor retroorbitario unilateral de gran intensidad que alcanza rápidamente su máxima intensidad. ¿Cuál es una medida terapéutica indicada para abortar la crisis?",
+    "text": "Un paciente presenta una crisis aguda de cefalea en racimos, con dolor retroorbitario unilateral de gran intensidad que alcanza rápidamente su máxima intensidad. ¿Cuál es una medida terapéutica indicada para abortar la crisis?",
     "options": [
       "Amitriptilina por vía oral",
       "Oxígeno al 100% a alto flujo",
@@ -3243,7 +3243,7 @@ export const questionsSemana18: Question[] = [
   },
   {
     "id": "semana18_med_q163",
-    "text": "ema: Otras cefaleas primariasSubtema: Cefalea primaria de esfuerzo\nUn paciente presenta cefalea bilateral y pulsátil durante el ejercicio, de menos de 48 h de duración. Tras descartar causas secundarias, se diagnostica cefalea primaria de esfuerzo. ¿Cuál de los siguientes fármacos suele ser eficaz para su tratamiento?",
+    "text": "Un paciente presenta cefalea bilateral y pulsátil durante el ejercicio, de menos de 48 h de duración. Tras descartar causas secundarias, se diagnostica cefalea primaria de esfuerzo. ¿Cuál de los siguientes fármacos suele ser eficaz para su tratamiento?",
     "options": [
       "Lamotrigina",
       "Verapamilo",

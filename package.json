@@ -2,12 +2,16 @@
   "name": "react-example",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "npm@11.12.1",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "build": "npm run validate:catalog && vite build",
     "validate:catalog": "tsx scripts/validate-question-catalog.ts",
     "sync:obsidian": "tsx scripts/sync-obsidian-weeks.ts",
+    "test:catalog-audit": "tsx scripts/test-catalog-audit.ts",
+    "test:parser": "tsx scripts/test-obsidian-explanation-parser.ts",
+    "test:shuffler": "tsx scripts/test-shuffler.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"

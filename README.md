@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Simulador CONAREM — Dr. Rodney
 
-# Run and deploy your AI Studio app
+Aplicación React/TypeScript para prácticas y simulacros de las semanas CONAREM.
 
-This contains everything you need to run your app locally.
+La única carpeta local de trabajo es:
 
-View your app in AI Studio: https://ai.studio/apps/90b0667a-e023-4414-9c0b-404a21a4522a
+`C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\Simulator`
 
-## Run Locally
+La copia situada en `Documents\APPS\Simulator` se conserva únicamente como respaldo histórico y no debe recibir cambios.
 
-**Prerequisites:**  Node.js
+## Desarrollo
 
+El gestor de paquetes oficial es **npm**. `package-lock.json` es el único lockfile mantenido.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```powershell
+npm install
+npm run dev
+npm run lint
+npm run validate:catalog
+npm run build
+```
+
+El build ejecuta primero el validador permanente de las 2.618 preguntas. La sincronización de Obsidian funciona en modo simulación por defecto; requiere `--apply` para escribir y crea un respaldo fechado.
+
+```powershell
+npm run sync:obsidian -- --weeks=19,20
+npm run sync:obsidian -- --weeks=19,20 --apply
+```
+
+Consultá [CONTEXTO.md](./CONTEXTO.md) antes de modificar el banco y su sección 10 para las reglas de calidad y barajado.

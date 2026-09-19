@@ -65,10 +65,11 @@ export const DataService = {
       const q = query(collection(db, "sessions"), where("user_id", "==", userId));
       const querySnapshot = await getDocs(q);
       const sessions: Session[] = [];
-      querySnapshot.forEach((doc) => {
-        const data = doc.data();
+      querySnapshot.forEach((snapshotDoc) => {
+        const data = snapshotDoc.data();
         sessions.push({
           ...data,
+          id: snapshotDoc.id,
           date: new Date(data.date)
         } as Session);
       });

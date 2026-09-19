@@ -2943,7 +2943,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q148",
-    "text": "Sí, faltaron esas asociaciones de alto rendimiento. Las agregaría así, manteniendo solo lo que aparece en el material:\nPregunta 15\nUn paciente desarrolla neumonía luego de un episodio de aspiración. El grupo etiológico más relacionado es:",
+    "text": "Un paciente desarrolla neumonía luego de un episodio de aspiración. El grupo etiológico más relacionado es:",
     "options": [
       "Enterobacterias gramnegativas",
       "Anaerobios mixtos",
@@ -3923,7 +3923,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q197",
-    "text": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico , 2012. Sección I: Introducción y Sección II: Fases de la enfermedad.\nPREGUNTA 1 (Caso Clínico Corto)\nUn paciente de 24 años con diagnóstico de dengue acude a consulta en su 4.° día de evolución refiriéndose que la fiebre ocurrió bruscamente a 37,2 °C. Al examen físico presenta PA: 100/85 mmHg, extremidades frías, llenado capilar lento y pulso débil y rápido. El laboratorio muestra un aumento progresivo del hematocrito con leucopenia y placatopenia marcadas. ¿Cuál es la conducta fisiopatológica y clínica prioritaria según la guía?",
+    "text": "Un paciente de 24 años con diagnóstico de dengue acude a consulta en su 4.° día de evolución refiriendo que la fiebre cayó bruscamente a 37,2 °C. Al examen físico presenta PA: 100/85 mmHg, extremidades frías, llenado capilar lento y pulso débil y rápido. El laboratorio muestra un aumento progresivo del hematocrito con leucopenia y plaquetopenia marcadas. ¿Cuál es la conducta fisiopatológica y clínica prioritaria según la guía?",
     "options": [
       "Iniciar antibioticoterapia profiláctica por riesgo inminente de sobreinfección bacteriana.",
       "Indicar reposo domiciliario y paracetamol, ya que la caída de la fiebre indica resolución del cuadro.",
@@ -3943,7 +3943,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q198",
-    "text": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico , 2012. Sección II: Fases de la enfermedad (Fase crítica).\nPREGUNTA 2 (Directa / Laboratorio y Evolución)\nEn un paciente con dengue que evoluciona favorablemente y entra en la fase de recuperación, ¿cuál es el comportamiento hematológico y cardiovascular característico descrito en la guía?",
+    "text": "En un paciente con dengue que evoluciona favorablemente y entra en la fase de recuperación, ¿cuál es el comportamiento hematológico y cardiovascular característico descrito en la guía?",
     "options": [
       "Aumento brusco del hematocrito con persistencia de taquicardia sinusal refleja.",
       "Elevación de los leucocitos que precede característicamente al aumento de las plaquetas.",
@@ -3963,7 +3963,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q199",
-    "text": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico , 2012. Sección II: Fases de la enfermedad (Fase de recuperación).\nPREGUNTA 3 (Pregunta tipo EXCEPTO)\nEn relación con las manifestaciones clínicas, semiológicas y laboratoriales de la fase febril del dengue, todas las afirmaciones son correctas, EXCEPTO :",
+    "text": "En relación con las manifestaciones clínicas, semiológicas y laboratoriales de la fase febril del dengue, todas las afirmaciones son correctas, EXCEPTO:",
     "options": [
       "La duración habitual del periodo febril oscila entre 2 y 7 días, iniciando de forma brusca.",
       "Es común constatar náuseas, vómitos, artralgias, mialgias difusas, cefalea y enrojecimiento facial.",
@@ -4123,7 +4123,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q207",
-    "text": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico , 2012. Sección IV: Diagnóstico del Dengue, pág. 13.\nPREGUNTA 2 (Directa / Laboratorio y Métodos de Diagnóstico)\nDe acuerdo con la tabla comparativa de métodos de diagnóstico del dengue, ¿cuál es el espécimen requerido y el momento oportuno de toma de muestra para la confirmación mediante IgG pareado por ELISA, IH o prueba de neutralización ?",
+    "text": "De acuerdo con la tabla comparativa de métodos de diagnóstico del dengue, ¿cuál es el espécimen requerido y el momento oportuno de toma de muestra para la confirmación mediante IgG pareado por ELISA, IH o prueba de neutralización?",
     "options": [
       "Suero tomado exclusivamente durante los primeros 3 días de la fase febril",
       "Tejido para histoquímica obtenido antes del quinto día de inicio de síntomas",
@@ -4143,7 +4143,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q208",
-    "text": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico , 2012. Tabla 3: Comparación de los diferentes métodos de diagnóstico del dengue, pág. 14.\nPREGUNTA 3 (Pregunta tipo EXCEPTO)\nPara establecer la definición de caso probable de dengue , el paciente debe presentar aparición aguda de fiebre de hasta 7 días de duración sin afección de vías aéreas superiores ni foco aparente, residir o haber viajado a área endémica, y presentar dos o más de las siguientes manifestaciones, EXCEPTO :",
+    "text": "Para establecer la definición de caso probable de dengue, el paciente debe presentar aparición aguda de fiebre de hasta 7 días de duración sin afección de vías aéreas superiores ni foco aparente, residir o haber viajado a área endémica, y presentar dos o más de las siguientes manifestaciones, EXCEPTO:",
     "options": [
       "Mialgias difusas o artralgias",
       "Cefalea o dolor retroorbitario",
@@ -4152,14 +4152,14 @@ export const questionsSemana17: Question[] = [
       "Aislamiento viral positivo o seroconversión de IgG"
     ],
     "correctOptionIndex": 4,
-    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa opción y es la excepción porque el aislamiento viral y la seroconversión de anticuerpos constituyen criterios para definir un caso confirmado por laboratorio, no forman parte del listado de signos y síntomas clínicos requeridos para catalogar a un paciente como caso probable .\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Criterios clínicos de caso probable: Requiere el síndrome febril agudo característico (< 7 días sin foco ni compromiso de vía aérea superior) más al menos 2 signos/síntomas cardinales.\r\n- Manifestaciones clínicas consideradas: Cefalea, dolor retroorbitario, mialgia, artralgia, erupción cutánea y manifestaciones hemorrágicas leves.\r\n- Utilidad del aislamiento viral: Aunque de infraestructura compleja y lenta (1 a 2 semanas), se realiza principalmente para determinar el serotipo causal en el contexto de un brote.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n**Manifestaciones que integran el caso probable (requiere≥2):**\r\n- Cefalea.\r\n- Dolor retro-orbitario.\r\n- Mialgia.\r\n- Artralgia.\r\n- Erupción cutánea.\r\n- Manifestaciones hemorrágicas leves.\r\n- Requisitos adicionales de caso probable: Fiebre aguda≤7 días sin afección de vías aéreas superiores y sin foco aparente, más antecedente de residencia o viaje a área endémica, transmisión activa o presencia de vector.\r\n\r\n**📖 Referencia:**",
+    "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\nLa opción «Aislamiento viral positivo o seroconversión de IgG» es la excepción porque el aislamiento viral y la seroconversión de anticuerpos constituyen criterios para definir un caso confirmado por laboratorio, no forman parte del listado de signos y síntomas clínicos requeridos para catalogar a un paciente como caso probable .\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Criterios clínicos de caso probable: Requiere el síndrome febril agudo característico (< 7 días sin foco ni compromiso de vía aérea superior) más al menos 2 signos/síntomas cardinales.\r\n- Manifestaciones clínicas consideradas: Cefalea, dolor retroorbitario, mialgia, artralgia, erupción cutánea y manifestaciones hemorrágicas leves.\r\n- Utilidad del aislamiento viral: Aunque de infraestructura compleja y lenta (1 a 2 semanas), se realiza principalmente para determinar el serotipo causal en el contexto de un brote.\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n**Manifestaciones que integran el caso probable (requiere≥2):**\r\n- Cefalea.\r\n- Dolor retro-orbitario.\r\n- Mialgia.\r\n- Artralgia.\r\n- Erupción cutánea.\r\n- Manifestaciones hemorrágicas leves.\r\n- Requisitos adicionales de caso probable: Fiebre aguda≤7 días sin afección de vías aéreas superiores y sin foco aparente, más antecedente de residencia o viaje a área endémica, transmisión activa o presencia de vector.\r\n\r\n**📖 Referencia:**",
     "materia": "Pediatría",
     "semana": 17,
     "tema": "Infectología",
     "subtema": "Dengue",
     "subtema_grupo": "Guías Nacionales",
     "module": "Semana 17 - Pediatría",
-    "pagina": "📖 Referencia:"
+    "pagina": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico, 2012, tabla 3, pág. 14."
   },
   {
     "id": "semana17_ped_q209",
@@ -4183,7 +4183,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q210",
-    "text": "Ministerio de Salud Pública y Bienestar Social (MSPyBS). Dengue: Guía de Manejo Clínico , 2012. Tabla 4: Interpretación de los diferentes métodos diagnósticos en dengue (adaptados del Estudio DENCO), pág. 15.\nPREGUNTA 2 (Caso Clínico Corto / Inmunocromatografía)\nUn paciente con cuadro febril agudo de 4 días de evolución se realiza una prueba rápida inmunocromatográfica de dengue que incluye antígeno NS1, IgM e IgG. El informe del laboratorio reporta: NS1 (+), IgM (-) e IgG (+) . Según la tabla de interpretación oficial de la guía, ¿a qué diagnóstico corresponde este patrón serológico?",
+    "text": "Un paciente con cuadro febril agudo de 4 días de evolución se realiza una prueba rápida inmunocromatográfica de dengue que incluye antígeno NS1, IgM e IgG. El informe del laboratorio reporta: NS1 (+), IgM (-) e IgG (+). Según la tabla de interpretación oficial de la guía, ¿a qué diagnóstico corresponde este patrón serológico?",
     "options": [
       "Dengue pasado o curado",
       "Probable dengue primario agudo",
@@ -4263,7 +4263,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q214",
-    "text": "Instituto de Medicina Tropical/MSPyBS. CORONAVIRUS COVID-19: Manejo Clínico en Pediatría , 2020. Sección B: Criterios clínicos y Sección C: Criterio de laboratorio, pág. 7.\nPediatría / Enfermedades Infecciosas\nPREGUNTA 1 (Escenario 1 / Grupo",
+    "text": "Un niño de 6 años previamente sano consulta por un cuadro de 24 horas de rinorrea y fiebre de 38,2 °C compatible con sospecha de COVID-19. No presenta factores de riesgo, signos de alarma ni insuficiencia respiratoria (Escenario 1 - Grupo A). Según la guía clínica, ¿cuál es la conducta terapéutica y pauta de alarma correcta?",
     "options": [
       "Un niño de 6 años previamente sano consulta por cuadro de 24 horas de rinorrea y fiebre de 38,2 °C compatible con sospecha de COVID-19. No presenta factores de riesgo, signos de alarma ni insuficiencia respiratoria (Escenario 1 - Grupo A). Según la guía clínica, ¿cuál es la conducta terapéutica y pausa de alarma correcta?\na) Hospitalización en sala de aislamiento individual y administración de ácido acetilsalicílico cada 8 horas.",
       "Manejo ambulatorio en el hogar con paracetamol 15 mg/kg cada 6 horas y control si la fiebre persiste más de 48 horas.",
@@ -4283,7 +4283,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q215",
-    "text": "Instituto de Medicina Tropical/MSPyBS. CORONAVIRUS COVID-19: Manejo Clínico en Pediatría , 2020. Escenario 1 / Grupo A, pág. 11.\nPREGUNTA 2 (Escenario 2 / Grupo B)\nUn lactante de 18 meses con sospecha de COVID-19 es evaluado en urgencias. Presenta fiebre y tos sin signos de alarma ni insuficiencia respiratoria. Por presentar un factor de riesgo (edad≤2 años), se clasifica en el Escenario 2 (Grupo B). ¿Cuál es la disposición de internación y el panel de laboratorio inicial indicado en la guía?",
+    "text": "Un lactante de 18 meses con sospecha de COVID-19 es evaluado en urgencias. Presenta fiebre y tos sin signos de alarma ni insuficiencia respiratoria. Por presentar un factor de riesgo (edad ≤2 años), se clasifica en el Escenario 2 (Grupo B). ¿Cuál es la disposición de internación y el panel de laboratorio inicial indicado en la guía?",
     "options": [
       "Hospitalización en UTI con aislamiento y solicitud de CK, aldolasa, LDH y crasis sanguínea.",
       "Alta domiciliaria directa sin seguimiento debido a la ausencia total de signos de dificultad respiratoria.",
@@ -4303,7 +4303,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q216",
-    "text": "Instituto de Medicina Tropical/MSPyBS. CORONAVIRUS COVID-19: Manejo Clínico en Pediatría , 2020. Escenario 2 / Grupo B, págs. 11-12.\nPREGUNTA 3 (Escenario 3 / Grupo C)\nUn escolar de 7 años con sospecha de COVID-19 ingresa por presentar dificultad respiratoria, quejido intermitente, crepitantes pulmonares y una saturación de oxígeno ambiental del 91% (Escenario 3 - Grupo C). Con respecto al tratamiento inicial establecido en la guía para este grupo, señale la afirmación CORRECTA :",
+    "text": "Un escolar de 7 años con sospecha de COVID-19 ingresa por presentar dificultad respiratoria, quejido intermitente, crepitantes pulmonares y una saturación de oxígeno ambiental del 91% (Escenario 3 - Grupo C). Con respecto al tratamiento inicial establecido en la guía para este grupo, señale la afirmación CORRECTA:",
     "options": [
       "Debe iniciarse inmediatamente ventilación mecánica invasiva con intubación orotraqueal reglada.",
       "Se administra oxígeno por mascarilla si requiere más de 2 L/min para mantener la saturación por encima del 95%.",
@@ -4323,7 +4323,7 @@ export const questionsSemana17: Question[] = [
   },
   {
     "id": "semana17_ped_q217",
-    "text": "Instituto de Medicina Tropical/MSPyBS. CORONAVIRUS COVID-19: Manejo Clínico en Pediatría , 2020. Escenario 3 / Grupo C, págs. 13-14.\nPREGUNTA 4 (Escenario 4 / Grupo D)\nUn lactante con sospecha de COVID-19 presenta dificultad respiratoria grave con aleteo nasal, tiraje generalizado, incapacidad para mantener una SaO2.≥92% con aporte de oxígeno > 60%, y una gasometría arterial con relaciónP a O2​/ FiO​​2​≤175con máscara de reservorio, catalogándose en el Escenario 4 (Grupo D). Según la siguiente guía, ¿cuál de los estudios complementarios y conductas terapéuticas está específicamente indicado para este nivel de atención?",
+    "text": "Un lactante con sospecha de COVID-19 presenta dificultad respiratoria grave con aleteo nasal, tiraje generalizado, incapacidad para mantener una SaO₂ ≥92% con aporte de oxígeno >60%, y una gasometría arterial con relación PaO₂/FiO₂ ≤175 con máscara de reservorio, catalogándose en el Escenario 4 (Grupo D). Según la guía, ¿cuál de los estudios complementarios y conductas terapéuticas está específicamente indicado para este nivel de atención?",
     "options": [
       "Manejo conservador con cánula nasal a bajo flujo y evitar intubación orotraqueal.",
       "Investigación de rabdomiólisis mediante dosaje de CK, aldolasa y LDH, y asistencia respiratoria mecánica.",
@@ -6004,13 +6004,7 @@ export const questionsSemana17: Question[] = [
   {
     "id": "semana17_ped_q301",
     "text": "Al relacionar el helminto con su esquema terapéutico de elección o de manejo según el texto de referencia, ¿cuál de las siguientes aseveraciones es INCORRECTA?",
-    "options": [
-      "Ascaris lumbricoides $\\rightarrow$Albendazol 400 mg vía oral en dosis única para todas las edades o Mebendazol 100 mg dos veces al día por 3 días.",
-      "Enterobius vermicularis $\\rightarrow$Albendazol 400 mg vía oral con una dosis de repetición a las 2 semanas, administrada a todos los contactos del hogar.",
-      "Trichuris trichiura $\\rightarrow$Albendazol 400 mg vía oral en dosis única diaria durante 3 días para todas las edades.",
-      "Strongyloides stercoralis (no complicado)$\\rightarrow$Ivermectina 200 mcg/kg/día vía oral una vez al día durante 2 días.",
-      "Larva migrans cutánea ( Ancylostoma braziliense )$\\rightarrow$Mebendazol 500 mg vía oral en dosis única obligatoria para menores de 15 kg."
-    ],
+    "options": ["Ascaris lumbricoides → Albendazol 400 mg vía oral en dosis única para todas las edades o Mebendazol 100 mg dos veces al día por 3 días.","Enterobius vermicularis → Albendazol 400 mg vía oral con una dosis de repetición a las 2 semanas, administrada a todos los contactos del hogar.","Trichuris trichiura → Albendazol 400 mg vía oral en dosis única diaria durante 3 días para todas las edades.","Strongyloides stercoralis (no complicado) → Ivermectina 200 mcg/kg/día vía oral una vez al día durante 2 días.","Larva migrans cutánea ( Ancylostoma braziliense ) → Mebendazol 500 mg vía oral en dosis única obligatoria para menores de 15 kg."],
     "correctOptionIndex": 4,
     "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\n- **Incorrecta:** «Larva migrans cutánea ( Ancylostoma braziliense ) → Mebendazol 500 mg vía oral en dosis única obligatoria para menores de 15 kg» — Para la larva migrans cutánea, el texto describe el uso de ivermectina (200 mcg/kg VO en dosis única para niños > 15 kg) , albendazol (400 mg VO al día por 3 días en > 2 años) o tiabendazol tópico . No se indica mebendazol 500 mg monodosis y la ivermectina no tiene seguridad establecida en menores de 15 kg.\r\n- **Correcta:** «Ascaris lumbricoides  → Albendazol 400 mg vía oral en dosis única para todas las edades o Mebendazol 100 mg dos veces al día por 3 días» — Para ascariasis gastrointestinal se indica albendazol 400 mg dosis única o mebendazol 100 mg cada 12 horas por 3 días (o 500 mg dosis única).\r\n- **Correcta:** «Enterobius vermicularis  → Albendazol 400 mg vía oral con una dosis de repetición a las 2 semanas, administrada a todos los contactos del hogar» — Para oxiuriasis se pauta albendazol 400 mg con repetición a las 2 semanas, extendiendo el tratamiento a los miembros del núcleo familiar.\r\n- **Correcta:** «Trichuris trichiura  → Albendazol 400 mg vía oral en dosis única diaria durante 3 días para todas las edades» — En tricocefalosis el fármaco de elección es el albendazol a 400 mg/día durante 3 días consecutivos (las dosis únicas tienen bajo porcentaje de curación).\r\n- **Correcta:** «Strongyloides stercoralis (no complicado) → Ivermectina 200 mcg/kg/día vía oral una vez al día durante 2 días» — En estrongiloidiasis no complicada la primera línea es ivermectina a 200 mcg/kg/día por 2 días.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Tratamientos de dosis única: Ascaris (albendazol 400 mg DU), Enterobius (albendazol 400 mg DU, pero requiere repetir a las 2 semanas).\r\n- Tratamientos de 3 días requeridos: Trichuris (albendazol 400 mg/día x 3 días) y Larva migrans cutánea alternativa (albendazol 400 mg/día x 3 días).\r\n- Tratamientos de 2 días: Strongyloides no complicada (ivermectina 200 mcg/kg/día x 2 días).\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- Ascaris: Albendazol 400 mg DU o Mebendazol 100 mg c/12h x 3 d.\r\n- Enterobius: Albendazol 400 mg DU (repetir a las 2 semanas + tratar a la familia).\r\n- Trichuris: Albendazol 400 mg/día x 3 días (evitar monodosis por baja tasa de curación).\r\n- Strongyloides: Ivermectina 200 mcg/kg/día x 2 días.\r\n- Larva migrans cutánea: Ivermectina 200 mcg/kg DU (> 15 kg) o Albendazol 400 mg/día x 3 d (> 2 años) o Tiabendazol tópico.\r\n- Neurocisticercosis (lesión única): Corticoides previos + Albendazol 15 mg/kg/día (dividido c/12h) x 7 días.\r\n- 📖 Referencia: Nelson Textbook of Pediatrics, 22.ª Edición,, Parte XV, Capítulos 337 (p. 2199), 338.1 (p. 2202), 339 (p. 2203), 340 (p. 2204), 341 (p. 2205) y 349 (p. 2219).",
     "materia": "Pediatría",
@@ -6024,13 +6018,7 @@ export const questionsSemana17: Question[] = [
   {
     "id": "semana17_ped_q302",
     "text": "Al relacionar el agente etiológico con sus características morfológicas, de diagnóstico y patogenia, ¿cuál de las siguientes aseveraciones es INCORRECTA?",
-    "options": [
-      "Enterobius vermicularis →Huevos asimétricos convexos de un lado y aplanados del otro, diagnosticados mediante cinta adhesiva matutina.",
-      "Ascaris lumbricoides →Huevos fértiles ovales con una cubierta gruesa y mamelonada, eliminados en número de 200.000 al día por hembra.",
-      "Trichuris trichiura →Huevos característicos en forma de barril ( barril-formado ) con vermes adultos cuyas tres cuartas partes anteriores finas se insertan en la mucosa colónica.",
-      "Necator americanus →Cápsula bucal provista de dientes puntiagudos que producen sangrado de 2.0 ml de sangre al día por verm",
-      "Taenia solium →Quistes tisulares de 0,2 a 2,0 cm que contienen un único escólex invaginado de 1 a 2 mm visible en neuroimagen."
-    ],
+    "options": ["Enterobius vermicularis →Huevos asimétricos convexos de un lado y aplanados del otro, diagnosticados mediante cinta adhesiva matutina.","Ascaris lumbricoides →Huevos fértiles ovales con una cubierta gruesa y mamelonada, eliminados en número de 200.000 al día por hembra.","Trichuris trichiura →Huevos característicos en forma de barril ( barril-formado ) con vermes adultos cuyas tres cuartas partes anteriores finas se insertan en la mucosa colónica.","Necator americanus →Cápsula bucal provista de dientes puntiagudos que producen sangrado de 2.0 ml de sangre al día por verme","Taenia solium →Quistes tisulares de 0,2 a 2,0 cm que contienen un único escólex invaginado de 1 a 2 mm visible en neuroimagen."],
     "correctOptionIndex": 3,
     "explanation": "🧠 ANÁLISIS DE LA PREGUNTA\r\n\r\n- **Incorrecta:** «Necator americanus →Cápsula bucal provista de dientes puntiagudos que producen sangrado de 2.0 ml de sangre al día por verme» — Necator americanus posee placas cortantes en su cápsula bucal (los dientes corresponden a Ancylostoma duodenale ) . Además, la pérdida sanguínea diaria por adulto de A. duodenale es de 0,2 ml/día, siendo aún menor para N. americanus (no de 2,0 ml/día).\r\n- **Correcta:** «Enterobius vermicularis →Huevos asimétricos convexos de un lado y aplanados del otro, diagnosticados mediante cinta adhesiva matutina» — Los huevos de oxiuro son característicamente ovoides/asimétricos (planos en una cara y convexos en la otra) y su método de elección es la cinta adhesiva sobre el periné.\r\n- **Correcta:** «Ascaris lumbricoides →Huevos fértiles ovales con una cubierta gruesa y mamelonada, eliminados en número de 200.000 al día por hembra» — Los huevos de Ascaris tienen la clásica cubierta mamelonada y la hembra producen unos 200.000 huevos diarios.\r\n- **Correcta:** «Trichuris trichiura →Huevos característicos en forma de barril ( barril-formado ) con vermes adultos cuyas tres cuartas partes anteriores finas se insertan en la mucosa colónica» — El tricocéfalo posee huevos en forma de barril y el parásito adulto clava sus 3/4 anteriores en la pared cecal/colónica.\r\n- **Correcta:** «Taenia solium →Quistes tisulares de 0,2 a 2,0 cm que contienen un único escólex invaginado de 1 a 2 mm visible en neuroimagen» — El cisticerco en neurocisticercosis se visualiza enormemente como una vesícula de 0,2 a 2 cm con un nódulo mural hiperdenso de 1 a 2 mm correspondiente al escólex.\r\n\r\n🔑 CONCEPTOS CLAVE\r\n\r\n- Morfología bucal: Placas cortantes ( Necator ) vs. Dientes ( Ancylostoma ).\r\n- Morfología de huevos: Mamelonados ( Ascaris ), Forma de barril ( Trichuris ), Planoconvexos ( Enterobius ), Cáscara fina indistinguible entre sí (Uncinarias).\r\n\r\n⚡ REPASO ACTIVO\r\n\r\n- Necator americanus: Placas cortantes + pérdida < 0,2 ml/día/gusano.\r\n- Ancylostoma duodenale: Dientes + pérdida de aprox. 0,2 ml/día/gusano.\r\n- Trichuris trichiura: Huevos en barril + pérdida aprox. 0,005 ml/día/gusano.\r\n- 📖 Referencia: Nelson Textbook of Pediatrics, 22.ª Edición,, Parte XV, Capítulos 337, 338, 339, 340 y 349.",
     "materia": "Pediatría",

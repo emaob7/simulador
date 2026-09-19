@@ -9,7 +9,9 @@ const q5: Question = {
   explanation: 'Prueba',
   materia: 'Medicina Interna',
   semana: 1,
-  tema: 'Test'
+  tema: 'Test',
+  subtema: 'Test',
+  module: 'Test'
 };
 
 const counts = [0, 0, 0, 0, 0];

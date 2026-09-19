@@ -554,7 +554,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q030",
-    "text": "En raras ocasiones aparece crecimiento patológico denominado gigantomastia. El tamaño mamario previo al embarazo no se correlaciona con el volumen final de leche materna producido. 📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna. Tema: Fisiología materna\nSubtema: Piel — Hiperpigmentación 1. ¿Hasta qué porcentaje de las mujeres puede desarrollar hiperpigmentación durante el embarazo?",
+    "text": "¿Hasta qué porcentaje de las mujeres puede desarrollar hiperpigmentación durante el embarazo?",
     "options": [
       "50%",
       "60%",
@@ -630,7 +630,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q034",
-    "text": "En embarazos gemelares aumenta otro 10%. ⚡ REPASO ACTIVO\nEl embarazo produce numerosos cambios metabólicos para responder a las demandas del feto y la placenta en rápido crecimiento. Durante el tercer trimestre, la tasa metabólica basal materna aumenta un 20% respecto de la mujer no embarazada. Embarazo único, tercer trimestre: +20%. Embarazo gemelar: incremento adicional de 10%. Requerimientos adicionales: 85, 285 y 475 kcal/día durante el primero, segundo y tercer trimestres, respectivamente. El almacenamiento energético durante el embarazo se hace más eficiente. 📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna. Tema: Fisiología materna\nSubtema: Cambios metabólicos — Metabolismo del agua 1. Respecto al metabolismo del agua durante el embarazo, señale la afirmación INCORRECTA:",
+    "text": "Respecto al metabolismo del agua durante el embarazo, señale la afirmación INCORRECTA:",
     "options": [
       "La osmolalidad plasmática disminuye unos 10 mosm/kg.",
       "Los umbrales osmóticos para la sed se restablecen.",
@@ -1466,7 +1466,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q078",
-    "text": "En las etapas iniciales del embarazo, el saco gestacional (o celoma extraembrionario) no ocupa la totalidad de la cavidad uterina, persistiendo un espacio real entre la decidua capsular que envuelve al producto y la decidua parietal que recubre el resto del útero. Conforme avanza el desarrollo fetal, el saco continúa su crecimiento expansivo hasta que, entre las 14 y 16 semanas de gestación, llena por completo el espacio intrauterino. En ese momento, la decidua capsular entra en contacto íntimo y aposición con la decidua parietal, dando origen a la denominada decidua verdadera y obliterando la cavidad uterina desde el punto de vista funcional. 🔑 CONCEPTOS CLAVE El saco gestacional (cavidad coriónica o celoma extraembrionario) lleno por completo la cavidad uterina entre las 14 y 16 semanas de gestación. La aposición entre la decidua capsular y la decidua parietal conforma la decidua verdadera. Esta fusión tisular oblitera funcionalmente la cavidad uterina a partir del segundo trimestre temprano. ⚡ REPASO ACTIVO La decidua constituye un endometrio especializado indispensable para la placentación hemocorial. Su diferenciación (decidualización) depende de estrógenos, progesterona, andrógenos y factores derivados del blastocisto; su relación inmunológica con el trofoblasto invasor es mediada por linfocitos citolíticos naturales (NK) para proteger el semialoinjerto. Anatómicamente se divide en tres porciones: basal, capsular y parietal. En fases tempranas, la decidua alcanza un espesor de 5 a 10 mm con aberturas glandulares visibles y posteriormente se adelgaza por la presión expansiva del feto. Histológicamente, las deciduas parietales y basales presentan tres capas (zona compacta, zona esponjosa y zona basal); las dos primeras forman la zona funcional, mientras que la zona basal persiste posparto para regenerar el endometrio. Durante la invasión trofoblástica, las arterias espirales que irrigan la decidua basal pierden su músculo liso y endotelio, quedando desprovistas de respuesta a agentes vasoactivos, a diferencia de las arterias de la decidua parietal y los vasos coriónicos fetales que sí conservan dicha reactividad. Tema: Implantación Subtema: Decidua / Prolactina decidual La prolactina producida por la decidua entra de manera preferente al líquido amniótico durante la gestación. ¿Qué concentración máxima puede alcanzar en este compartimento entre las semanas 20 y 24 de embarazo?",
+    "text": "La prolactina producida por la decidua entra de manera preferente al líquido amniótico durante la gestación. ¿Qué concentración máxima puede alcanzar en este compartimento entre las semanas 20 y 24 de embarazo?",
     "options": [
       "1 000 ng/mL",
       "5 000 ng/mL",
@@ -2150,7 +2150,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q114",
-    "text": "En ecografía, el pliegue circunvalado puede aparecer como una banda lineal gruesa de ecos que se extiende de un margen placentario al otro. En corte transversal puede verse como dos “repisas” situadas sobre márgenes placentarios opuestos. Estudios observacionales pequeños relacionaron la placenta circunvalada diagnosticada después del parto con mayor riesgo de hemorragia prenatal, desprendimiento, muerte fetal y parto prematuro. Una investigación prospectiva ecográfica de 17 casos encontró que la mayoría de las placentas circunvaladas eran transitorias. Los casos persistentes fueron benignos. En general, sin complicaciones adicionales, la placentación extracorial presenta resultados normales y no suele requerir mayor vigilancia. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 6, pág. 109. Subtema: Placentación extracorial — Bandas ecográficas durante el embarazo Respecto a las bandas ecográficas observadas durante el embarazo, señale la asociación CORRECTA:",
+    "text": "Respecto a las bandas ecográficas observadas durante el embarazo, señale la asociación CORRECTA:",
     "options": [
       "Hematoma subcoriónico → banda de 2,5 a 4,0 mm, de base amplia, que simula una repisa.",
       "Placenta circunvalada → bandas delgadas cruzadas que parecen fijar partes fetales.",
@@ -2264,7 +2264,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q120",
-    "text": "En un feto anormal, la SUA aumenta mucho el riesgo de aneuploidía. En una SUA aislada con anatomía normal, el riesgo de aneuploidía fetal no aumenta de manera significativa. La SUA aislada se ha relacionado en algunos estudios con restricción del crecimiento fetal y muerte perinatal. Los cordones con cuatro vasos son raros y a menudo se relacionan con anomalías congénitas. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 6. Tema: Anormalidades placentarias Subtema: Cordón umbilical — Anastomosis de Hyrtl ¿Qué es la anastomosis de Hyrtl?",
+    "text": "¿Qué es la anastomosis de Hyrtl?",
     "options": [
       "Una comunicación entre la vena umbilical y una arteria umbilical cerca del feto",
       "Una unión entre los vasos fetales dentro de las membranas placentarias",
@@ -2302,7 +2302,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q122",
-    "text": "En gemelos monocoriónicos puede relacionarse con discordancia de peso. Inserción velamentosa → los vasos umbilicales casi siempre discurren dentro de las membranas antes de alcanzar el borde placentario. Incidencia de inserción velamentosa → aproximadamente 1%. En gemelos → aproximadamente 6%. Es más frecuente en placenta previa. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 6. Tema: Embriogénesis y desarrollo fetal Subtema: Edad gestacional ¿Cuál es el método más preciso para establecer o confirmar la edad gestacional?",
+    "text": "¿Cuál es el método más preciso para establecer o confirmar la edad gestacional?",
     "options": [
       "Ecografía en el tercer trimestre",
       "Ecografía en el segundo trimestre",
@@ -2321,7 +2321,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q123",
-    "text": "En FIV → se utiliza la fecha de inseminación. El mejor cálculo obstétrico de la edad gestacional al momento del parto se registra en el certificado de nacimiento. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 7, pág. 121. Tema: Embriogénesis y desarrollo fetal Subtema: Edad gestacional Antes de las 9 semanas de embarazo, ¿qué diferencia entre la edad gestacional ecográfica determinada por la longitud coronilla-rabadilla y la edad menstrual justifica cambiar la fecha probable de parto?",
+    "text": "Antes de las 9 semanas de embarazo, ¿qué diferencia entre la edad gestacional ecográfica determinada por la longitud coronilla-rabadilla y la edad menstrual justifica cambiar la fecha probable de parto?",
     "options": [
       "Más de 3 días",
       "Más de 4 días",
@@ -2397,7 +2397,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q127",
-    "text": "En la cuarta semana se forma la placa neural. Al final de la quinta semana desde el último periodo menstrual, el saco coriónico mide casi 1 cm de diámetro. El embrión mide 3 mm de largo. Al final de la sexta semana, el embrión mide aproximadamente 9 mm. Al final de la octava semana, la longitud coronilla-rabadilla es de casi 22 mm. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 7, pág. 122. Tema: Embriogénesis y desarrollo fetal Subtema: Desarrollo fetal y fisiología — Etapas del periodo fetal Respecto al desarrollo fetal entre las 12 y 20 semanas de gestación, señale la afirmación INCORRECTA (EXCEPTO):",
+    "text": "Respecto al desarrollo fetal entre las 12 y 20 semanas de gestación, señale la afirmación INCORRECTA (EXCEPTO):",
     "options": [
       "A las 12 semanas, la longitud coronilla-rabadilla fetal es de 5 a 6 cm.",
       "A las 16 semanas, el crecimiento fetal se identifica y el peso fetal se aproxima a 150 g.",
@@ -2473,7 +2473,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q131",
-    "text": "En el adulto → aproximadamente hasta L1. Mielinización de la médula espinal → comienza a mediados de la gestación. Continúa durante el primer año de vida. Durante el tercer trimestre → la integración de la función nerviosa y muscular avanza con rapidez. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 7, pág. 126. Tema: Embriogénesis y desarrollo fetal Subtema: Desarrollo fetal y fisiología — Circulación fetal Respecto a la circulación fetal, señale la afirmación INCORRECTA (EXCEPTO):",
+    "text": "Respecto a la circulación fetal, señale la afirmación INCORRECTA (EXCEPTO):",
     "options": [
       "La placenta oxigena la sangre fetal, por lo que esta no necesita ingresar en la vasculatura pulmonar para oxigenarse.",
       "Las cavidades cardiacas fetales funcionan en paralelo y no en serie.",
@@ -2492,7 +2492,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q132",
-    "text": "En la placenta recibe oxígeno y nutrientes y vuelve a circular mediante la vena umbilical. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 7, págs. 126-128. Tema: Embriogénesis y desarrollo fetal Subtema: Desarrollo fetal y fisiología — Cambios circulatorios al nacimiento ¿Qué ocurre con los vasos umbilicales, el conducto arterioso, el agujero oval y el conducto venoso después del nacimiento?",
+    "text": "¿Qué ocurre con los vasos umbilicales, el conducto arterioso, el agujero oval y el conducto venoso después del nacimiento?",
     "options": [
       "Se dilatan para mantener temporalmente la circulación fetal.",
       "Se contraen o sufren colapso en condiciones normales.",
@@ -2872,7 +2872,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q152",
-    "text": "Para documentar la frecuencia cardiaca embrionaria o fetal → se utiliza el modo de movimiento (modo M) en lugar de imágenes Doppler en pulsos. Índice mecánico → relacionado con efectos por presión de rarefacción, como la cavitación, relevante solo en tejidos que contienen aire. Los agentes de contraste ecográfico por microburbujas → no se utilizan en el embarazo por esta razón. Los tejidos de mamíferos sin acumulaciones de gas no han mostrado efectos adversos con exposiciones en intervalos relevantes para el diagnóstico. Los fetos no pueden contener acumulaciones de gas, por lo que no se consideran en riesgo por este mecanismo. La ecografía para fines no médicos, como las “imágenes fetales de recuerdo”, se considera contraria a la práctica médica responsable y no está permitida. Las imágenes o videos de estudios ecográficos realizados por indicación médica pueden compartirse con las pacientes. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 14, págs. 246-247. Subtema: Valoración de la edad gestacional ¿Cuál es la medición ecográfica más adecuada para establecer o confirmar la edad gestacional antes de las 14 semanas?",
+    "text": "¿Cuál es la medición ecográfica más adecuada para establecer o confirmar la edad gestacional antes de las 14 semanas?",
     "options": [
       "Diámetro biparietal",
       "Perímetro cefálico",
@@ -2885,9 +2885,9 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Seguridad embrionaria y fetal",
+    "subtema": "Valoración de la edad gestacional",
     "module": "Semana 20 - Ginecología y Obstetricia",
-    "pagina": "📖 Referencia:"
+    "pagina": "Williams Obstetricia, 26.ª edición, capítulo 14, pág. 248."
   },
   {
     "id": "semana20_gyo_q153",
@@ -2910,7 +2910,7 @@ export const questionsSemana20: Question[] = [
   },
   {
     "id": "semana20_gyo_q154",
-    "text": "En embarazos multifetales → la corionicidad se determina con mayor exactitud en el primer trimestre. 📖 Referencia:\nWilliams Obstetricia, 26.ª edición, capítulo 14, pág. 248. Tema: Imágenes obstétricas Subtema: Ecografía en el primer trimestre — viabilidad embrionaria En la ecografía transvaginal, ¿a partir de qué longitud embrionaria debe ser visible el movimiento cardiaco?",
+    "text": "En la ecografía transvaginal, ¿a partir de qué longitud embrionaria puede ser visible el movimiento cardiaco?",
     "options": [
       "1 mm",
       "2 mm",
@@ -2925,7 +2925,7 @@ export const questionsSemana20: Question[] = [
     "tema": "Imágenes obstétricas",
     "subtema": "Ecografía en el primer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
-    "pagina": "📖 Referencia:"
+    "pagina": "Williams Obstetricia, 26.ª edición, capítulo 14, págs. 248-249."
   },
   {
     "id": "semana20_gyo_q155",

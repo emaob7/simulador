@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { Question } from '../../types';
 import { classifyQuestionForStudy } from '../../utils/studyCatalog';
+import { WEEK_CATALOG } from '../../data/weekCatalog';
 
 const MATERIAS = ['Pediatría', 'Medicina Interna', 'Cirugía', 'Ginecología y Obstetricia'] as const;
 type Materia = typeof MATERIAS[number];
@@ -17,6 +18,9 @@ interface DashboardViewProps {
   userId?: string;
   onReforzar?: (materia: string, subtema: string) => void;
   allQuestions: Question[];
+  totalQuestions: number;
+  onLoadWeek?: (week: number) => void | Promise<unknown>;
+  onLoadQuestions?: () => void | Promise<unknown>;
   onQuestionSelect?: (id: string) => void;
   savedQuestionIds?: string[];
   onStartBookmarksQuiz?: () => void;
@@ -41,6 +45,9 @@ const normalizeMateriaName = (materia: string): Materia => {
 export function DashboardView({
   onReforzar,
   allQuestions,
+  totalQuestions,
+  onLoadWeek,
+  onLoadQuestions,
   onQuestionSelect,
   savedQuestionIds = [],
   onStartBookmarksQuiz,
@@ -69,7 +76,11 @@ export function DashboardView({
     return MATERIAS.map(materia => {
       const questions = allQuestions.filter(question => normalizeMateriaName(question.materia) === materia);
       const ids = new Set(questions.map(question => question.id));
-      const seen = new Set(progress.filter(item => ids.has(item.question_id)).map(item => item.question_id)).size;
+      const seen = new Set(progress.filter(item =>
+        ids.has(item.question_id) || normalizeMateriaName(item.materia || '') === materia
+      ).map(item => item.question_id)).size;
+      const catalogTotal = WEEK_CATALOG.filter(entry => normalizeMateriaName(entry.materia) === materia)
+        .reduce((sum, entry) => sum + entry.count, 0);
 
       const materiaSessions = sessions.filter(session => normalizeMateriaName(session.materia) === materia);
       const attempts = materiaSessions.reduce((sum, session) => sum + (session.total_questions || 0), 0);
@@ -77,21 +88,18 @@ export function DashboardView({
 
       return {
         materia,
-        total: questions.length,
+        total: catalogTotal,
         vistas: seen,
-        porcentaje: questions.length > 0 ? Math.round((seen / questions.length) * 100) : 0,
+        porcentaje: catalogTotal > 0 ? Math.round((seen / catalogTotal) * 100) : 0,
         precision: attempts > 0 ? Math.round((correct / attempts) * 100) : 0
       };
     });
   }, [allQuestions, progress, sessions]);
 
   const availableSemanas = useMemo(() => {
-    return Array.from(new Set(
-      allQuestions
-        .filter(question => normalizeMateriaName(question.materia) === selectedMateria)
-        .map(question => question.semana)
-    )).sort((a, b) => a - b);
-  }, [allQuestions, selectedMateria]);
+    return WEEK_CATALOG.filter(entry => normalizeMateriaName(entry.materia) === selectedMateria)
+      .map(entry => entry.week).sort((a, b) => a - b);
+  }, [selectedMateria]);
 
   const subtopicMap = useMemo(() => {
     const map: Record<string, {
@@ -156,10 +164,13 @@ export function DashboardView({
       const seen = Object.keys(statusById).length;
       return {
         semana,
-        total: questions.length,
+        total: WEEK_CATALOG.find(entry => entry.week === semana)?.count || questions.length,
         vistas: seen,
-        porcentaje: questions.length > 0 ? Math.round((seen / questions.length) * 100) : 0,
-        temas: Array.from(new Set(questions.map(question => question.tema).filter(Boolean))),
+        porcentaje: (WEEK_CATALOG.find(entry => entry.week === semana)?.count || questions.length) > 0
+          ? Math.round((seen / (WEEK_CATALOG.find(entry => entry.week === semana)?.count || questions.length)) * 100) : 0,
+        temas: questions.length > 0
+          ? Array.from(new Set(questions.map(question => question.tema).filter(Boolean)))
+          : [WEEK_CATALOG.find(entry => entry.week === semana)?.title || ''],
         questionsData: questions.map(question => ({
           id: question.id,
           resolved: Boolean(statusById[question.id]?.resolved),
@@ -170,6 +181,7 @@ export function DashboardView({
   }, [allQuestions, availableSemanas, progress, selectedMateria]);
 
   const toggleWeek = (semana: number) => {
+    if (!expandedWeeks[semana]) void onLoadWeek?.(semana);
     setExpandedWeeks(current => ({ ...current, [semana]: !current[semana] }));
   };
 
@@ -182,8 +194,8 @@ export function DashboardView({
     }).format(new Date());
     return label.charAt(0).toUpperCase() + label.slice(1);
   }, []);
-  const coverage = allQuestions.length > 0
-    ? Math.round((totalQuestionsAnswered / allQuestions.length) * 100)
+  const coverage = totalQuestions > 0
+    ? Math.round((totalQuestionsAnswered / totalQuestions) * 100)
     : 0;
 
   return (
@@ -251,7 +263,7 @@ export function DashboardView({
             <p className="text-[10px] font-medium text-[#77766F]">Banco resuelto</p>
             <p className="mt-3 font-manrope text-2xl font-semibold text-[#F4F2EC]">
               {numberFormatter.format(totalQuestionsAnswered)}
-              <span className="ml-1.5 text-xs font-medium text-[#686760]">/ {numberFormatter.format(allQuestions.length)}</span>
+              <span className="ml-1.5 text-xs font-medium text-[#686760]">/ {numberFormatter.format(totalQuestions)}</span>
             </p>
             <p className="mt-1 text-[10px] text-[#77766F]">{coverage}% de cobertura oficial</p>
           </div>
@@ -359,7 +371,7 @@ export function DashboardView({
               </button>
               <button
                 type="button"
-                onClick={() => setActiveTab('weaknesses')}
+                onClick={() => { void onLoadQuestions?.(); setActiveTab('weaknesses'); }}
                 className={`flex h-9 items-center gap-2 rounded-lg px-3 text-[11px] font-semibold transition-colors ${
                   activeTab === 'weaknesses'
                     ? 'border border-[#34332C] bg-[#191916] text-[#F4F2EC]'

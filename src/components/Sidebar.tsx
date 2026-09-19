@@ -26,6 +26,9 @@ interface SidebarProps {
   savedCount?: number;
   onStartBookmarksQuiz?: () => void;
   allQuestions?: Question[];
+  totalWeeks?: number;
+  totalQuestions?: number;
+  onSearchStart?: () => void | Promise<unknown>;
   onQuestionSelect?: (id: string) => void;
 }
 
@@ -40,20 +43,22 @@ export function Sidebar({
   savedCount = 0,
   onStartBookmarksQuiz,
   allQuestions = [],
+  totalWeeks: catalogWeeks = 20,
+  totalQuestions: catalogQuestions = 2618,
+  onSearchStart,
   onQuestionSelect
 }: SidebarProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const totalWeeks = React.useMemo(() => {
-    const weeksSet = new Set(allQuestions.map(q => q.semana).filter(Boolean));
-    return weeksSet.size || 19;
-  }, [allQuestions]);
+    return catalogWeeks;
+  }, [catalogWeeks]);
 
   const totalQuestionsFormatted = React.useMemo(() => {
-    const count = allQuestions.length || 2405;
+    const count = catalogQuestions;
     return count.toLocaleString('es-PY');
-  }, [allQuestions]);
+  }, [catalogQuestions]);
 
   const searchResults = searchQuery.trim().length >= 2 
     ? allQuestions.filter(q => 
@@ -138,7 +143,7 @@ export function Sidebar({
                   setSearchQuery(e.target.value);
                   setIsSearchOpen(true);
                 }}
-                onFocus={() => setIsSearchOpen(true)}
+                onFocus={() => { setIsSearchOpen(true); void onSearchStart?.(); }}
                 className="w-full bg-[#181818] border border-[#2E2E2E] focus:border-[#C6A84A] focus:ring-1 focus:ring-[#C6A84A] text-xs py-2 pl-8 pr-7 rounded-xl text-white placeholder:text-gray-500 transition-all outline-none" 
                 placeholder="Buscar preguntas..." 
                 type="text" 

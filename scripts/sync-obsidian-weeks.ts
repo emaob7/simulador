@@ -1,24 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { questionsSemana1 } from '../src/data/semana1/questions';
-import { questionsSemana2 } from '../src/data/semana2/questions';
-import { questionsSemana3 } from '../src/data/semana3/questions';
-import { questionsSemana4 } from '../src/data/semana4/questions';
-import { questionsSemana5 } from '../src/data/semana5/questions';
-import { questionsSemana6 } from '../src/data/semana6/questions';
-import { questionsSemana7 } from '../src/data/semana7/questions';
-import { questionsSemana8 } from '../src/data/semana8/questions';
-import { questionsSemana9 } from '../src/data/semana9/questions';
-import { questionsSemana10 } from '../src/data/semana10/questions';
-import { questionsSemana11 } from '../src/data/semana11/questions';
-import { questionsSemana12 } from '../src/data/semana12/questions';
-import { questionsSemana13 } from '../src/data/semana13/questions';
-import { questionsSemana14 } from '../src/data/semana14/questions';
-import { questionsSemana15 } from '../src/data/semana15/questions';
-import { questionsSemana16 } from '../src/data/semana16/questions';
-import { questionsSemana17 } from '../src/data/semana17/questions';
-import { questionsSemana18 } from '../src/data/semana18/questions';
 import type { Question } from '../src/types';
+import { WEEK_CATALOG, loadWeekQuestions } from '../src/data/weekCatalog';
 import { classifyQuestionForStudy } from '../src/utils/studyCatalog';
 
 interface WeekDefinition {
@@ -36,26 +19,13 @@ const weeksArg = process.argv.find(arg => arg.startsWith('--weeks='))?.split('='
 const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const optionLetters = ['A', 'B', 'C', 'D', 'E'];
 
-const weeks: WeekDefinition[] = [
-  { num: 1, folderName: 'Semana 01 - Neonatología (Pediatría)', title: 'Neonatología', materia: 'Pediatría', questions: questionsSemana1 },
-  { num: 2, folderName: 'Semana 02 - Endocrinología (Medicina Interna)', title: 'Endocrinología', materia: 'Medicina Interna', questions: questionsSemana2 },
-  { num: 3, folderName: 'Semana 03 - Infecciones, Cicatrización y Piel (Cirugía General)', title: 'Infecciones, Cicatrización y Piel', materia: 'Cirugía General', questions: questionsSemana3 },
-  { num: 4, folderName: 'Semana 04 - Anatomía y Prolapsos (Ginecología y Obstetricia)', title: 'Anatomía, Trastornos del Desarrollo y Prolapsos', materia: 'Ginecología y Obstetricia', questions: questionsSemana4 },
-  { num: 5, folderName: 'Semana 05 - Nutrición y Antropometría (Pediatría)', title: 'Nutrición y Antropometría', materia: 'Pediatría', questions: questionsSemana5 },
-  { num: 6, folderName: 'Semana 06 - Oncohematología y Cuidados Críticos (Medicina Interna)', title: 'Oncohematología y Cuidados Críticos', materia: 'Medicina Interna', questions: questionsSemana6 },
-  { num: 7, folderName: 'Semana 07 - Traumatismos y Quemaduras (Cirugía General)', title: 'Traumatismos y Quemaduras', materia: 'Cirugía General', questions: questionsSemana7 },
-  { num: 8, folderName: 'Semana 08 - Endocrinología Reproductiva e Infecciones (Ginecología)', title: 'Endocrinología Reproductiva e Infecciones', materia: 'Ginecología y Obstetricia', questions: questionsSemana8 },
-  { num: 9, folderName: 'Semana 09 - Crecimiento, Desarrollo y Vacunas (Pediatría)', title: 'Crecimiento, Desarrollo y Vacunas', materia: 'Pediatría', questions: questionsSemana9 },
-  { num: 10, folderName: 'Semana 10 - Cardiología (Medicina Interna)', title: 'Cardiología', materia: 'Medicina Interna', questions: questionsSemana10 },
-  { num: 11, folderName: 'Semana 11 - Cirugía Digestiva, Esófago y Estómago (Cirugía)', title: 'Esófago y Estómago', materia: 'Cirugía General', questions: questionsSemana11 },
-  { num: 12, folderName: 'Semana 12 - Amenorrea, Anticonceptivos y Menopausia (Ginecología)', title: 'Amenorrea, Anticonceptivos y Menopausia', materia: 'Ginecología y Obstetricia', questions: questionsSemana12 },
-  { num: 13, folderName: 'Semana 13 - Urgencias, Emergencias y RCP (Pediatría)', title: 'Urgencias, Emergencias y RCP', materia: 'Pediatría', questions: questionsSemana13 },
-  { num: 14, folderName: 'Semana 14 - Neumología y Reumatología (Medicina Interna)', title: 'Neumología y Reumatología', materia: 'Medicina Interna', questions: questionsSemana14 },
-  { num: 15, folderName: 'Semana 15 - Tórax, Pulmón, Mediastino y Mamas (Cirugía)', title: 'Tórax, Pulmón, Mediastino y Mamas', materia: 'Cirugía General', questions: questionsSemana15 },
-  { num: 16, folderName: 'Semana 16 - SOP, Hemorragia Uterina e Infertilidad (Ginecología)', title: 'SOP, Sangrado Uterino, Patología Uterina y Endometriosis', materia: 'Ginecología y Obstetricia', questions: questionsSemana16 },
-  { num: 17, folderName: 'Semana 17 - Infectología (Pediatría)', title: 'Infectología', materia: 'Pediatría', questions: questionsSemana17 },
-  { num: 18, folderName: 'Semana 18 - Nefrología y Neurología (Medicina Interna)', title: 'Nefrología y Neurología', materia: 'Medicina Interna', questions: questionsSemana18 },
-];
+const weeks: WeekDefinition[] = await Promise.all(WEEK_CATALOG.map(async definition => ({
+  num: definition.week,
+  folderName: definition.folderName,
+  title: definition.title,
+  materia: definition.materia === 'Cirugía' ? 'Cirugía General' : definition.materia,
+  questions: await loadWeekQuestions(definition.week),
+})));
 
 const selectedWeeks = weeksArg === 'all'
   ? new Set(weeks.map(w => w.num))
@@ -143,16 +113,22 @@ function validateWeek(week: WeekDefinition, output: Map<string, string>): void {
       throw new Error(`Semana ${week.num}: validación fallida en ${label}`);
     }
   }
+  for (const question of week.questions) {
+    const fullExplanation = (question.explanation || 'Sin explicación adicional.').replace(/\r\n/g, '\n').replace(/\n/g, '\n> ');
+    if (!index.replace(/\r\n/g, '\n').includes(fullExplanation)) {
+      throw new Error(`Semana ${week.num}: explicación incompleta o alterada en ${question.id}`);
+    }
+  }
 }
 
 function buildMasterIndex(): string {
   const total = weeks.reduce((sum, week) => sum + week.questions.length, 0);
-  let markdown = `---\ntype: indice_general\ntags:\n  - IndiceGeneral\n  - CONAREM\n  - BancoDePreguntas\n---\n\n# 🏥 Banco de Preguntas CONAREM - Organización por Semanas\n\n## 📊 Balance General\n\n- **Total de Semanas:** \`16 Semanas\`\n- **Total de Preguntas:** \`${total} preguntas\`\n\n## 📂 Navegación por Semanas\n\n| Semana | Especialidad | Tema | Preguntas | Enlace |\n| :---: | :--- | :--- | :---: | :--- |\n`;
+  let markdown = `---\ntype: indice_general\ntags:\n  - IndiceGeneral\n  - CONAREM\n  - BancoDePreguntas\n---\n\n# 🏥 Banco de Preguntas CONAREM - Organización por Semanas\n\n## 📊 Balance General\n\n- **Total de Semanas:** \`${weeks.length} Semanas\`\n- **Total de Preguntas:** \`${total} preguntas\`\n\n## 📂 Navegación por Semanas\n\n| Semana | Especialidad | Tema | Preguntas | Enlace |\n| :---: | :--- | :--- | :---: | :--- |\n`;
   weeks.forEach(week => {
     const pad = String(week.num).padStart(2, '0');
     markdown += `| **Semana ${pad}** | \`${week.materia}\` | ${week.title} | \`${week.questions.length}\` | [[${week.folderName}/📜 Índice - Semana ${pad}\\|Abrir ➔]] |\n`;
   });
-  markdown += `| **TOTAL** | - | **16 módulos** | **\`${total}\`** | - |\n`;
+  markdown += `| **TOTAL** | - | **${weeks.length} módulos** | **\`${total}\`** | - |\n`;
   return markdown;
 }
 

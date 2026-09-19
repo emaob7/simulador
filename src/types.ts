@@ -73,6 +73,7 @@ export interface UserProgress {
 }
 
 export interface Session {
+  id?: string;
   user_id: string;
   score: number;
   total_questions: number;

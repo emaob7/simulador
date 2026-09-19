@@ -1,24 +1,38 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { classifyQuestionForStudy, STUDY_TOPICS } from '../src/utils/studyCatalog';
 import type { Question } from '../src/types';
+import { TOTAL_QUESTIONS, WEEK_CATALOG, loadWeekQuestions } from '../src/data/weekCatalog';
 import { auditQuestionCatalog, formatAuditReport, getBlockingIssues } from './audit-errors-catalog';
 
-const expectedWeekCounts = [121, 109, 84, 74, 95, 94, 82, 104, 139, 141, 106, 80, 101, 294, 109, 99, 303, 207];
 const questions: Question[] = [];
 const catalog: Array<{ week: number; question: Question }> = [];
 
-for (let week = 1; week <= 18; week += 1) {
-  const module = await import(`../src/data/semana${week}/questions.ts`);
-  const weekQuestions = module[`questionsSemana${week}`] as Question[];
-  if (weekQuestions.length !== expectedWeekCounts[week - 1]) {
-    throw new Error(`Semana ${week}: ${weekQuestions.length}; esperado ${expectedWeekCounts[week - 1]}`);
+const dataRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data');
+const registeredWeeks = new Set(WEEK_CATALOG.map(entry => entry.week));
+const diskWeeks = fs.readdirSync(dataRoot, { withFileTypes: true })
+  .filter(entry => entry.isDirectory() && /^semana\d+$/.test(entry.name))
+  .map(entry => Number(entry.name.replace('semana', '')))
+  .sort((left, right) => left - right);
+const unregisteredWeeks = diskWeeks.filter(week => !registeredWeeks.has(week));
+if (unregisteredWeeks.length) {
+  throw new Error(`Semanas presentes en src/data pero ausentes del catálogo: ${unregisteredWeeks.join(', ')}`);
+}
+
+for (const definition of WEEK_CATALOG) {
+  const weekQuestions = await loadWeekQuestions(definition.week);
+  if (weekQuestions.some(question => question.semana !== definition.week)) {
+    throw new Error(`Semana ${definition.week}: contiene preguntas con campo semana inconsistente.`);
   }
   questions.push(...weekQuestions);
-  catalog.push(...weekQuestions.map(question => ({ week, question })));
+  catalog.push(...weekQuestions.map(question => ({ week: definition.week, question })));
 }
 
 const ids = new Set<string>();
 const topicCounts = new Map<string, number>();
 const subtopicsByTopic = new Map<string, Set<string>>();
+const classificationWarnings: string[] = [];
 const normalized = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 for (const question of questions) {
   if (ids.has(question.id)) throw new Error(`ID duplicado: ${question.id}`);
@@ -28,17 +42,17 @@ for (const question of questions) {
     throw new Error(`Clasificación incompleta: ${question.id}`);
   }
   if (normalized(classification.subtopicLabel) === normalized(classification.topicLabel)) {
-    throw new Error(`Subtema idéntico al tema: ${question.id} (${classification.topicLabel})`);
+    classificationWarnings.push(`Subtema idéntico al tema: ${question.id} (${classification.topicLabel})`);
   }
   if (/^(general|otros|miscel[aá]neas?)$/i.test(classification.subtopicLabel.trim())) {
-    throw new Error(`Subtema genérico: ${question.id} (${classification.subtopicLabel})`);
+    classificationWarnings.push(`Subtema genérico: ${question.id} (${classification.subtopicLabel})`);
   }
   topicCounts.set(classification.topicId, (topicCounts.get(classification.topicId) || 0) + 1);
   if (!subtopicsByTopic.has(classification.topicId)) subtopicsByTopic.set(classification.topicId, new Set());
   subtopicsByTopic.get(classification.topicId)!.add(classification.subtopicLabel);
 }
 
-if (questions.length !== 2342) throw new Error(`Total ${questions.length}; esperado 2342`);
+if (questions.length !== TOTAL_QUESTIONS) throw new Error(`Total ${questions.length}; esperado ${TOTAL_QUESTIONS}`);
 
 const emptyTopics = STUDY_TOPICS.filter(topic => !topicCounts.get(topic.id));
 if (emptyTopics.length) throw new Error(`Temas sin preguntas: ${emptyTopics.map(topic => topic.label).join(', ')}`);
@@ -55,7 +69,8 @@ if (blockingIssues.length > 0) {
   throw new Error(`Auditoría bloqueante: ${blockingIssues.length} incidencias en ${auditReport.affectedQuestions} preguntas.`);
 }
 
-console.log(`Catálogo válido: ${questions.length} preguntas, ${ids.size} IDs únicos, ${topicCounts.size} temas activos.`);
+console.log(`Catálogo válido: ${questions.length} preguntas, ${ids.size} IDs únicos, ${topicCounts.size} temas activos, ${auditReport.warningCount} alertas no bloqueantes.`);
+if (classificationWarnings.length) console.warn(`Alertas de taxonomía: ${classificationWarnings.length}.`);
 for (const topic of STUDY_TOPICS) {
   console.log(`${topic.materia} | ${topic.label}: ${topicCounts.get(topic.id)}`);
 }

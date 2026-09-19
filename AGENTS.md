@@ -8,7 +8,8 @@
 
 ## 1. Identificación y Rutas
 - **Nombre:** Simulador de Exámenes CONAREM (Simulador Emma)
-- **Ruta Local Oficial:** `C:\Users\Rodney Duarte\Documents\APPS\Simulator`
+- **Ruta Local Oficial y única carpeta de trabajo:** `C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\Simulator`
+- **Copia retirada:** `C:\Users\Rodney Duarte\Documents\APPS\Simulator` se conserva solo como respaldo histórico. No editar, compilar ni desplegar desde allí.
 - **Ruta Espejo Codex:** `C:\Users\Rodney Duarte\Documents\Codex\2026-08-21\hola-chatgpt-te-pongo-en-contexto\work\simulador`
 - **Carpeta de Contexto Compartido:** `C:\Users\Rodney Duarte\Documents\Aplicaciones CONAREM\`
 - **Repositorio Git Oficial (Emma):** `https://github.com/emaob7/simulador.git`
@@ -19,7 +20,7 @@
 ## 2. Marcadores Inconfundibles de Verificación
 Antes de compilar o desplegar, verifica SIEMPRE:
 1. `git remote -v` debe contener `emaob7/simulador` o `roeyduary-creator/Simulator`.
-2. `src/data/` DEBE contener desde `semana1` hasta `semana20` (`src/data/semana20/questions.ts`).
+2. `src/data/` DEBE contener desde `semana1` hasta `semana21` (`src/data/semana21/questions.ts`).
 3. `index.html` DEBE tener: `<title>Simulador CONAREM | Dr. Rodney</title>` con tema `#10100F`.
 4. Antes de modificar preguntas, leer la sección 10 de `CONTEXTO.md` (reglas de calidad del banco y barajado).
 
