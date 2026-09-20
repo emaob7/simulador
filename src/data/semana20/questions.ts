@@ -16,7 +16,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -35,7 +35,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -54,7 +54,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -73,7 +73,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -92,7 +92,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -111,7 +111,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -130,7 +130,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -149,7 +149,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -168,7 +168,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -187,7 +187,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -206,7 +206,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -225,7 +225,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Útero",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor."
   },
@@ -244,7 +244,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -263,7 +263,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -282,7 +282,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -301,7 +301,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -320,7 +320,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -339,7 +339,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -358,7 +358,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -377,7 +377,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -396,7 +396,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Cuello uterino",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna, subtema Aparato reproductor — Cuello uterino."
   },
@@ -415,7 +415,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Ovarios",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -434,7 +434,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Relaxina",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -453,7 +453,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Quistes de la teca luteínica",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -472,7 +472,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Quistes de la teca luteínica",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -491,7 +491,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Quistes de la teca luteínica",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -510,7 +510,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Quistes de la teca luteínica",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -529,7 +529,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato reproductor — Vagina y perineo",
+    "subtema": "Aparato reproductor",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -586,7 +586,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Piel — Cambios pilosos",
+    "subtema": "Piel",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -681,7 +681,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios metabólicos — Metabolismo de las grasas",
+    "subtema": "Cambios metabólicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología matern"
   },
@@ -700,7 +700,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios metabólicos — Leptina",
+    "subtema": "Cambios metabólicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -719,7 +719,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios metabólicos — Otras adipocitocinas",
+    "subtema": "Cambios metabólicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -738,7 +738,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios metabólicos — Metabolismo de electrólitos y minerales",
+    "subtema": "Cambios metabólicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -757,7 +757,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Volumen sanguíneo",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -776,7 +776,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Volumen sanguíneo",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -795,7 +795,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Volumen sanguíneo",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -814,7 +814,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Hemoglobina",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -833,7 +833,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Metabolismo del hierro",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -852,7 +852,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Metabolismo del hierro",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -871,7 +871,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Metabolismo del hierro",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -890,7 +890,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Leucocitos y linfocitos",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -909,7 +909,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Marcadores inflamatorios",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -928,7 +928,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Coagulación y fibrinólisis",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -947,7 +947,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Coagulación y fibrinólisis",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -966,7 +966,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Plaquetas",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -985,7 +985,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Cambios hematológicos — Bazo",
+    "subtema": "Cambios hematológicos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1004,7 +1004,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato cardiovascular — Adaptaciones hemodinámicas",
+    "subtema": "Aparato cardiovascular",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1023,7 +1023,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato cardiovascular — Cambios cardíacos y electrocardiográficos",
+    "subtema": "Aparato cardiovascular",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1042,7 +1042,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato cardiovascular — Gasto cardíaco",
+    "subtema": "Aparato cardiovascular",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1061,7 +1061,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato cardiovascular — Circulación y presión arterial",
+    "subtema": "Aparato cardiovascular",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1080,7 +1080,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato cardiovascular — Renina, angiotensina II y volumen plasmático",
+    "subtema": "Aparato cardiovascular",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1099,7 +1099,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato cardiovascular — Prostaglandinas, endotelina y óxido nítrico",
+    "subtema": "Aparato cardiovascular",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1118,7 +1118,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Vías respiratorias — Cambios anatómicos",
+    "subtema": "Vías respiratorias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1137,7 +1137,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Vías respiratorias — Función pulmonar",
+    "subtema": "Vías respiratorias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1156,7 +1156,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Vías respiratorias — Suministro de oxígeno",
+    "subtema": "Vías respiratorias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1175,7 +1175,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Vías respiratorias — Equilibrio acidobásico",
+    "subtema": "Vías respiratorias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1194,7 +1194,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato urinario — Cambios renales en el embarazo normal",
+    "subtema": "Aparato urinario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1213,7 +1213,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato urinario — Función renal",
+    "subtema": "Aparato urinario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1232,7 +1232,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato urinario — Pruebas de función renal y análisis de orina",
+    "subtema": "Aparato urinario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1251,7 +1251,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Aparato urinario — Uréteres",
+    "subtema": "Aparato urinario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1289,7 +1289,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Tubo digestivo — Hígado",
+    "subtema": "Tubo digestivo",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1308,7 +1308,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Tubo digestivo — Vesícula biliar",
+    "subtema": "Tubo digestivo",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1327,7 +1327,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Sistema endocrino — Hipófisis",
+    "subtema": "Sistema endocrino",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1346,7 +1346,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Sistema endocrino — Glándula tiroides",
+    "subtema": "Sistema endocrino",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1365,7 +1365,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Sistema endocrino — Glándulas suprarrenales",
+    "subtema": "Sistema endocrino",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1403,7 +1403,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Fisiología materna",
-    "subtema": "Sistema nervioso central — Memoria, ojos y sueño",
+    "subtema": "Sistema nervioso central",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 4: Fisiología materna."
   },
@@ -1460,7 +1460,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Decidua / Estructura de la decidua",
+    "subtema": "Decidua",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -1479,7 +1479,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Decidua / Estructura de la decidua",
+    "subtema": "Decidua",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1498,7 +1498,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Implantación y formación del trofoblasto temprano / Fecundación",
+    "subtema": "Fecundación e implantación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1517,7 +1517,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Implantación y formación del trofoblasto temprano / Fecundación",
+    "subtema": "Fecundación e implantación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1536,7 +1536,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Implantación y formación del trofoblasto temprano / Implantación",
+    "subtema": "Fecundación e implantación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1555,7 +1555,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Implantación y formación del trofoblasto temprano / Implantación",
+    "subtema": "Fecundación e implantación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1574,7 +1574,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Implantación y formación del trofoblasto temprano / Invasión temprana",
+    "subtema": "Fecundación e implantación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1593,7 +1593,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Implantación y formación del trofoblasto temprano / Vellosidades coriónicas",
+    "subtema": "Fecundación e implantación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1612,7 +1612,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Placenta y corion / Desarrollo del corion",
+    "subtema": "Placenta, corion y circulación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1631,7 +1631,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Placenta y corion / Invasión endometrial",
+    "subtema": "Placenta, corion y circulación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1650,7 +1650,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Placenta y corion / Invasión de las arterias espirales",
+    "subtema": "Placenta, corion y circulación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1669,7 +1669,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Placenta y corion / Crecimiento y maduración placentarios",
+    "subtema": "Placenta, corion y circulación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5"
   },
@@ -1688,7 +1688,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Placenta y corion / Circulación fetal",
+    "subtema": "Placenta, corion y circulación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1707,7 +1707,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Placenta y corion / Circulación materna",
+    "subtema": "Placenta, corion y circulación",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1726,7 +1726,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Amnios / Estructura, desarrollo e histogénesis del amnios",
+    "subtema": "Amnios",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1745,7 +1745,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Amnios / Estructura, desarrollo e histogénesis del amnios",
+    "subtema": "Amnios",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1764,7 +1764,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Biosíntesis",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -1783,7 +1783,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Biosíntesis",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -1802,7 +1802,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Biosíntesis",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -1821,7 +1821,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Biosíntesis y concentraciones",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -1840,7 +1840,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Concentraciones en suero y orina",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -1859,7 +1859,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Regulación de la hCG",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -1878,7 +1878,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Funciones biológicas",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1897,7 +1897,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Gonadotropina coriónica humana: Concentraciones anormales altas o bajas",
+    "subtema": "Gonadotropina coriónica humana (hCG)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1916,7 +1916,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Lactógeno placentario humano",
+    "subtema": "Lactógeno placentario humano (hPL)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1935,7 +1935,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Lactógeno placentario humano",
+    "subtema": "Lactógeno placentario humano (hPL)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1954,7 +1954,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Lactógeno placentario humano",
+    "subtema": "Lactógeno placentario humano (hPL)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1973,7 +1973,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Producción placentaria de progesterona",
+    "subtema": "Esteroidogénesis y hormonas placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -1992,7 +1992,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Leptina",
+    "subtema": "Esteroidogénesis y hormonas placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -2011,7 +2011,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Leptina",
+    "subtema": "Esteroidogénesis y hormonas placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -2030,7 +2030,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Producción placentaria de estrógenos",
+    "subtema": "Esteroidogénesis y hormonas placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -2049,7 +2049,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Producción placentaria de estrógenos",
+    "subtema": "Esteroidogénesis y hormonas placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -2068,7 +2068,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Implantación",
-    "subtema": "Hormonas placentarias / Síntesis placentaria de estriol",
+    "subtema": "Esteroidogénesis y hormonas placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 5."
   },
@@ -2106,7 +2106,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Variantes en la forma y tamaño",
+    "subtema": "Variantes y anomalías placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2125,7 +2125,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Variantes en la forma y tamaño — Placentomegalia",
+    "subtema": "Variantes y anomalías placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2144,7 +2144,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Placentación extracorial",
+    "subtema": "Variantes y anomalías placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2163,7 +2163,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Placentación extracorial",
+    "subtema": "Variantes y anomalías placentarias",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2182,7 +2182,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Trastornos circulatorios — Depósito perivelloso de fibrina",
+    "subtema": "Trastornos vasculares y tumores placentarios",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2201,7 +2201,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Tumores placentarios — Corioangioma",
+    "subtema": "Trastornos vasculares y tumores placentarios",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2220,7 +2220,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Amniocorion — Otras anormalidades de las membranas",
+    "subtema": "Anomalías de las membranas",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2239,7 +2239,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Cordón umbilical — Longitud",
+    "subtema": "Cordón umbilical",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2258,7 +2258,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Cordón umbilical — Número de vasos",
+    "subtema": "Cordón umbilical",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2277,7 +2277,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Cordón umbilical — Número de vasos",
+    "subtema": "Cordón umbilical",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2296,7 +2296,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Cordón umbilical — Inserción",
+    "subtema": "Cordón umbilical",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2315,7 +2315,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Cordón umbilical — Inserción",
+    "subtema": "Cordón umbilical",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2334,7 +2334,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Anormalidades placentarias",
-    "subtema": "Cordón umbilical — Inserción",
+    "subtema": "Cordón umbilical",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2353,7 +2353,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Edad gestacional — Regla de Naegele",
+    "subtema": "Edad gestacional (Regla de Naegele)",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2372,7 +2372,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo embrionario — Desarrollo del cigoto y el blastocisto",
+    "subtema": "Desarrollo embrionario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2391,7 +2391,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo embrionario — Periodo embrionario",
+    "subtema": "Desarrollo embrionario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2410,7 +2410,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo embrionario — Periodo embrionario",
+    "subtema": "Desarrollo embrionario",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2429,7 +2429,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Etapas del periodo fetal",
+    "subtema": "Fisiología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2448,7 +2448,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Desarrollo del sistema nervioso central",
+    "subtema": "Desarrollo del SNC fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2467,7 +2467,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Médula espinal",
+    "subtema": "Desarrollo del SNC fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2486,7 +2486,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Médula espinal",
+    "subtema": "Desarrollo del SNC fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2505,7 +2505,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Médula espinal",
+    "subtema": "Desarrollo del SNC fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2524,7 +2524,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Volumen sanguíneo fetoplacentario",
+    "subtema": "Fisiología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2543,7 +2543,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Hematopoyesis",
+    "subtema": "Hematología e inmunología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2562,7 +2562,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Hemoglobina fetal",
+    "subtema": "Hematología e inmunología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2581,7 +2581,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Factores de la coagulación",
+    "subtema": "Hematología e inmunología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2600,7 +2600,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Maduración pulmonar",
+    "subtema": "Maduración pulmonar y surfactante",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2619,7 +2619,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Sustancia tensioactiva y maduración pulmonar",
+    "subtema": "Maduración pulmonar y surfactante",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2638,7 +2638,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Páncreas",
+    "subtema": "Fisiología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 7, pág. 132."
   },
@@ -2657,7 +2657,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Desarrollo fetal y fisiología — Sistema inmunológico",
+    "subtema": "Hematología e inmunología fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 7, pág. 133."
   },
@@ -2676,7 +2676,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Embriología y desarrollo fetal",
-    "subtema": "Energía y nutrición — Transporte de glucosa",
+    "subtema": "Nutrición y transporte fetal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 7, pág. 135."
   },
@@ -2695,7 +2695,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Antecedentes médicos / Defectos del tubo neural",
+    "subtema": "Antecedentes médicos y riesgo",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 9."
   },
@@ -2714,7 +2714,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Antecedentes médicos / Fenilcetonuria",
+    "subtema": "Antecedentes médicos y riesgo",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 9."
   },
@@ -2733,7 +2733,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Diagnóstico del embarazo / Síntomas y signos",
+    "subtema": "Diagnóstico del embarazo",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2752,7 +2752,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Diagnóstico del embarazo / Pruebas de embarazo e identificación ecográfica",
+    "subtema": "Diagnóstico del embarazo",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2771,7 +2771,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Valoración prenatal inicial / Registro prenatal y definiciones",
+    "subtema": "Control prenatal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2790,7 +2790,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Valoración prenatal inicial / Duración normal del embarazo",
+    "subtema": "Control prenatal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2809,7 +2809,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Visitas prenatales subsiguientes / Altura del fondo uterino",
+    "subtema": "Control prenatal",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2828,7 +2828,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Asesoría nutricional / Minerales y vitaminas",
+    "subtema": "Nutrición y estilos de vida",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2847,7 +2847,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Atención prenatal",
-    "subtema": "Preocupaciones frecuentes / Cafeína",
+    "subtema": "Nutrición y estilos de vida",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 10."
   },
@@ -2866,7 +2866,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Seguridad embrionaria y fetal",
+    "subtema": "Ecografía del primer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2885,7 +2885,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Valoración de la edad gestacional",
+    "subtema": "Ecografía del primer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición, capítulo 14, pág. 248."
   },
@@ -2904,7 +2904,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Ecografía en el primer trimestre",
+    "subtema": "Ecografía del primer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición."
   },
@@ -2923,7 +2923,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Ecografía en el primer trimestre",
+    "subtema": "Ecografía del primer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "Williams Obstetricia, 26.ª edición, capítulo 14, págs. 248-249."
   },
@@ -2942,7 +2942,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Ecografía en el primer trimestre — criterios de viabilidad embrionaria",
+    "subtema": "Ecografía del primer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -2999,7 +2999,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Ecografía del segundo y tercer trimestres",
+    "subtema": "Ecografía del segundo y tercer trimestre",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -3018,7 +3018,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Líquido amniótico — fisiología y regulación del volumen",
+    "subtema": "Líquido amniótico",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -3037,7 +3037,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Doppler de la arteria umbilical",
+    "subtema": "Doppler obstétrico",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -3056,7 +3056,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Doppler de la arteria uterina",
+    "subtema": "Doppler obstétrico",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -3075,7 +3075,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Imágenes obstétricas",
-    "subtema": "Doppler de la arteria cerebral media",
+    "subtema": "Doppler obstétrico",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia:"
   },
@@ -3094,7 +3094,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Edad materna y riesgo de aneuploidía",
+    "subtema": "Cribado de aneuploidías y defectos congénitos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Diagnóstico prenatal, capítulo 17."
   },
@@ -3113,7 +3113,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Elevación de AFP sérica materna y detección de defectos del tubo neural",
+    "subtema": "Cribado de aneuploidías y defectos congénitos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Diagnóstico prenatal, capítulo 17."
   },
@@ -3132,7 +3132,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Elevación de AFP sérica materna y detección de defectos del tubo neural",
+    "subtema": "Cribado de aneuploidías y defectos congénitos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 17: Diagnóstico prenatal."
   },
@@ -3151,7 +3151,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Marcadores ecográficos de trisomía 21 fetal",
+    "subtema": "Cribado de aneuploidías y defectos congénitos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 17: Diagnóstico prenatal."
   },
@@ -3170,7 +3170,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Marcadores ecográficos del segundo trimestre",
+    "subtema": "Cribado de aneuploidías y defectos congénitos",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 17: Diagnóstico prenatal."
   },
@@ -3189,7 +3189,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Fibrosis quística",
+    "subtema": "Enfermedades genéticas",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 17: Diagnóstico prenatal."
   },
@@ -3208,7 +3208,7 @@ export const questionsSemana20: Question[] = [
     "materia": "Ginecología y Obstetricia",
     "semana": 20,
     "tema": "Diagnóstico prenatal",
-    "subtema": "Enfermedad de Tay-Sachs",
+    "subtema": "Enfermedades genéticas",
     "module": "Semana 20 - Ginecología y Obstetricia",
     "pagina": "📖 Referencia: Williams Obstetricia, 26.ª edición, capítulo 17: Diagnóstico prenatal."
   }
